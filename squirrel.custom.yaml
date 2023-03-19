@@ -1,6 +1,6 @@
 patch:
   "preset_color_schemes/MyStyleMi":
-    name: MyStyleMi
+    name: 蓝水鸭／MyStyleMi
     author: Mintimate <"Mintimate's Blog">
     text_color: 0x6495ed #拼音串
     candidate_text_color: 0x424242 # 非第一候选项
@@ -14,7 +14,7 @@ patch:
     comment_text_color: 0xcac9c8 # 注解文字
     label_color: 0xcac9c8 # 预选栏编号颜色
   "preset_color_schemes/MyStyleMiDark":
-    name: MyStyleMiDark
+    name: 黑水鸭／MyStyleMiDark
     author: Mintimate <"Mintimate's Blog">
     text_color: 0x6495ed #拼音串
     candidate_text_color: 0xefefef # 非第一候选项

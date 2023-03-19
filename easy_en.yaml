@@ -1,0 +1,13 @@
+# encoding: utf-8
+---
+patch:
+  schema/dependencies/@next: easy_en
+  engine/translators/@next: table_translator@easy_en
+  easy_en:
+    __include: easy_en.schema:/translator
+    enable_completion: true
+    enable_sentence: true
+    initial_quality: -1 # 对此项的默认设置为 -1，你可以尝试 0 到 0.5 左右的数值。数值越大，英文单词出现的就越靠前
+  recognizer/patterns/uppercase: ''
+  speller/alphabet:
+    __include: easy_en.schema:/speller/alphabet
