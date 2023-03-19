@@ -1,0 +1,11 @@
+---
+name: custom_dict.all ##注意name和文件名一致
+version: "2020.6.7"
+sort: by_weight
+use_preset_vocabulary: true
+# 此处为 输入法所用到的词库，既补充拓展词库的地方
+import_tables:
+  - easy_en # Easy-en基础
+  - dicts/custom_simple # 自定义内容
+  - dicts/en_words # 英文词典
+...

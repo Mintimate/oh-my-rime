@@ -1,3 +1,4 @@
 patch:
   translator/enable_sentence: false # 关闭造句功能
   easy_en/split_sentence: false # 关闭分词功能
+  translator/dictionary: custom_dict_en.all
