@@ -1,0 +1,4977 @@
+# Rime dictionary
+# encoding: utf-8
+
+---
+name: luna_pinyin.emoji
+version: "2017.02.10"
+sort: by_weight
+use_preset_vocabulary: true
+...
+©️	ban quan	1
+©️	ban quan fu hao	1
+©️	fu hao	1
+®️	fu hao	1
+®️	zhu ce	1
+®️	zhu ce biao ji	1
+®️	zhu ce shang biao	1
+‼️	fu hao	1
+‼️	hong se shuang gan tan hao	1
+‼️	jing tan	1
+‼️	jing ya	1
+‼️	shuang gan tan hao	1
+‼️	shuang jing tan hao	1
+⁉️	fu hao	1
+⁉️	gan tan hao jia wen hao	1
+⁉️	jing tan hao jia wen hao	1
+⁉️	jing wen	1
+⁉️	jing ya huai yi	1
+™️	fu hao	1
+™️	shang biao	1
+ℹ️	fu hao	1
+ℹ️	xin xi	1
+ℹ️	zi xun	1
+↔️	fu hao	1
+↔️	zuo you	1
+↔️	zuo you jian tou	1
+↕️	fu hao	1
+↕️	shang xia	1
+↕️	shang xia jian tou	1
+↖️	fu hao	1
+↖️	jian tou	1
+↖️	xi bei zhi xiang de jian tou	1
+↖️	zuo shang	1
+↖️	zuo shang jian tou	1
+↗️	fu hao	1
+↗️	jian tou	1
+↗️	you shang	1
+↗️	you shang jian tou	1
+↘️	dong nan zhi xiang de jian tou	1
+↘️	fu hao	1
+↘️	jian tou	1
+↘️	you xia	1
+↘️	you xia jian tou	1
+↙️	fu hao	1
+↙️	jian tou	1
+↙️	xi nan zhi xiang de jian tou	1
+↙️	zuo xia	1
+↙️	zuo xia jian tou	1
+↩️	fu hao	1
+↩️	xiang zuo hui zhuan	1
+↩️	zuo hui zhuan	1
+↪️	fu hao	1
+↪️	xiang you hui zhuan	1
+↪️	you hui zhuan	1
+∞	wu qiong	1
+∞	wu qiong da	1
+⌚️	biao	1
+⌚️	biao pan	1
+⌚️	ji xie biao	1
+⌚️	ming biao	1
+⌚️	shi jian	1
+⌚️	shi ying biao	1
+⌚️	shou biao	1
+⌚️	wan biao	1
+⌛️	deng dai	1
+⌛️	ji shi	1
+⌛️	sha lou	1
+⌛️	shi jian	1
+⌨️	jian pan	1
+⏩	jia su	1
+⏩	kuai jin	1
+⏩	kuai jin jian	1
+⏩	xiang you fu hao	1
+⏩	you shuang san jiao	1
+⏪	dao tui jian	1
+⏪	jian su	1
+⏪	kuai tui	1
+⏪	xiang zuo fu hao	1
+⏫	fu hao	1
+⏫	shang chuan	1
+⏫	xiang shang fu hao	1
+⏬	fu hao	1
+⏬	xia zai	1
+⏬	xiang xia fu hao	1
+⏭️	kuai jin jian	1
+⏮️	dao tui jian	1
+⏯️	bo fang zan ting jian	1
+⏰	nao ling	1
+⏰	nao zhong	1
+⏰	ti xing	1
+⏱️	miao biao	1
+⏲️	ding shi qi shi zhong	1
+⏲️	shi zhong	1
+⏳	sha lou	1
+⏸️	zan ting	1
+⏸️	zan ting lu zhi	1
+⏹️	ting zhi lu zhi	1
+⏹️	ting zhi mei ti fu hao	1
+⏺️	lu zhi	1
+Ⓜ️	di tie	1
+Ⓜ️	fu hao	1
+▪️	hei dian	1
+▶️	bo fang jian	1
+▶️	san jiao	1
+▶️	xia yi ge	1
+▶️	xiang you	1
+▶️	you san jiao	1
+▼	xia san jiao	1
+◀️	san jiao	1
+◀️	shang yi ge	1
+◀️	xiang zuo	1
+◽️	bai se fang kuai	1
+◾️	hei fang kuai	1
+☀️	qing lang	1
+☀️	qing tian	1
+☀️	ri shi	1
+☀️	tai yang	1
+☀️	tai yang she xian	1
+☀️	tian qi	1
+☀️	yang guang	1
+☁️	duo yun	1
+☁️	fu yun	1
+☁️	tian qi	1
+☁️	wu yun	1
+☁️	yin tian	1
+☁️	yun	1
+☁️	yun cai	1
+☁️	yun duan	1
+☁️	yun duo	1
+☂️	bao hu san	1
+☂️	san	1
+☂️	yu san	1
+☃️	dui xue ren	1
+☃️	xue	1
+☃️	xue ren	1
+☃️	️ xue	1
+☄️	ha lei hui xing	1
+☄️	hui xing	1
+☄️	sao ba xing	1
+☄️	sao zhou xing	1
+☎️	da dian hua	1
+☎️	dian hua	1
+☎️	lai dian	1
+☎️	shang wu	1
+☎️	zhi dian	1
+☎️	zuo ji	1
+☑️	da gou	1
+☑️	fu hao	1
+☑️	fu xuan kuang	1
+☑️	gou xuan	1
+☑️	que ding	1
+☑️	xuan zhong	1
+☑️	yi gou xuan	1
+☔️	cheng san	1
+☔️	da san	1
+☔️	san	1
+☔️	tian qi	1
+☔️	xia yu	1
+☔️	xia yu tian	1
+☔️	yu	1
+☔️	yu di	1
+☔️	yu san	1
+☔️	yu shui	1
+☔️	yu tian	1
+☔️	zhou yu	1
+☕️	can yin	1
+☕️	cha	1
+☕️	he ka fei	1
+☕️	hong cha	1
+☕️	ka bu qi nuo	1
+☕️	ka fei	1
+☕️	ka fei bei	1
+☕️	ka fei dian	1
+☕️	mo ka	1
+☕️	nai cha	1
+☕️	re yin	1
+☕️	re yin liao	1
+☕️	xia wu cha	1
+☕️	yin liao	1
+☘️	san ye cao	1
+☘️	xing yun cao	1
+☝️	di yi	1
+☝️	shi zhi	1
+☝️	shou shi	1
+☝️	yi ge	1
+☟	shi zhi xiang xia	1
+☠️	ju du	1
+☠️	ku lou	1
+☠️	ku lou tou	1
+☢️	fang she xing	1
+☢️	fang she xing biao zhi	1
+☢️	fu she	1
+☣️	sheng wu wei hai	1
+☦️	dong zheng jiao shi zi jia	1
+☦️	zheng jiao hui shi zi	1
+☪️	xing yue	1
+☪️	xing yue biao zhi	1
+☮️	fan zhan	1
+☮️	fan zhan biao zhi	1
+☮️	he ping biao zhi	1
+☯️	tai ji	1
+☯️	yin yang	1
+☸️	fa lun	1
+☹️	bu gao xing de lian	1
+☹️	bu kai xin	1
+☹️	ku nao	1
+☹️	sheng qi de lian	1
+☺️	biao qing	1
+☺️	de yi	1
+☺️	kai xin	1
+☺️	wei xiao	1
+☺️	xiao	1
+☺️	xiao lian	1
+♈️	bai yang zuo	1
+♈️	mu yang zuo	1
+♈️	xing zuo	1
+♉️	jin niu zuo	1
+♉️	xing zuo	1
+♊️	shuang zi zuo	1
+♊️	xing zuo	1
+♋️	ju xie zuo	1
+♋️	xing zuo	1
+♌️	shi zi zuo	1
+♌️	xing zuo	1
+♍️	chu nv zuo	1
+♍️	xing zuo	1
+♎️	tian cheng zuo	1
+♎️	xing zuo	1
+♏️	tian xie zuo	1
+♏️	xing zuo	1
+♐️	she shou zuo	1
+♐️	xing zuo	1
+♑️	mo jie zuo	1
+♑️	xing zuo	1
+♒️	shui ping zuo	1
+♒️	xing zuo	1
+♓️	shuang yu zuo	1
+♓️	xing zuo	1
+♠️	biao zhi	1
+♠️	hei tao	1
+♣️	biao zhi	1
+♣️	cao hua	1
+♣️	hei mei hua	1
+♣️	mei hua	1
+♥️	biao zhi	1
+♥️	hong tao	1
+♥️	hong xin	1
+♥️	tao xin	1
+♦️	biao zhi	1
+♦️	fang kuai	1
+♦️	fang pian	1
+♦️	hong fang kuai	1
+♨️	pao tang	1
+♨️	re shui	1
+♨️	re tang	1
+♨️	wen quan	1
+♨️	xiu xi	1
+♻️	fu hao	1
+♻️	huan bao	1
+♻️	hui shou	1
+♻️	xun huan	1
+♿️	biao zhi	1
+♿️	can ji fu hao	1
+♿️	can zhang	1
+♿️	can zhang ren shi	1
+♿️	lun yi	1
+⚒️	chui zi he gao	1
+⚓️	chuan mao	1
+⚓️	du lun	1
+⚓️	fu hao	1
+⚓️	gang kou	1
+⚓️	hai yun	1
+⚓️	mao	1
+⚔️	jiao cha de jian	1
+⚔️	jue dou	1
+⚖️	gong ping cheng	1
+⚖️	tian cheng	1
+⚖️	tian ping	1
+⚗️	zheng liu qi	1
+⚙️	chi lun	1
+⚙️	ji xie	1
+⚛️	wu li	1
+⚛️	yuan zi fu hao	1
+⚜️	jin bai he	1
+⚜️	xiang gen yuan wei	1
+⚜️	yuan wei	1
+⚜️	yuan wei hua	1
+⚠️	biao zhi	1
+⚠️	jin ji tong zhi	1
+⚠️	jing gao	1
+⚠️	jing shi	1
+⚠️	wei xian	1
+⚠️	zhu yi	1
+⚠️	zhu yi shi xiang	1
+⚡️	biao zhi	1
+⚡️	gao ya fu hao	1
+⚡️	shan dian	1
+⚡️	shou cheng shan dian	1
+⚪️	bai se yuan quan	1
+⚫️	hei se yuan quan	1
+⚰️	guan cai	1
+⚰️	guan guo	1
+⚰️	ling jiu	1
+⚱️	gu hui guan	1
+⚱️	gu hui he	1
+⚱️	gu hui tan	1
+⚽️	guo zu	1
+⚽️	ti qiu	1
+⚽️	yun dong	1
+⚽️	zu qiu	1
+⚽️	zu qiu dui	1
+⚽️	zu qiu sai	1
+⚾️	bang qiu	1
+⚾️	yun dong	1
+⛄️	dui xue ren	1
+⛄️	tian qi	1
+⛄️	xue	1
+⛄️	xue ren	1
+⛅️	duo yun	1
+⛅️	duo yun zhuan qing	1
+⛅️	qing jian duo yun	1
+⛅️	tian qi	1
+⛅️	yin tian	1
+⛈️	bao yu	1
+⛈️	dian shan lei ming	1
+⛈️	lei yu jiao jia	1
+⛈️	lei yu yun	1
+⛈️	yu	1
+⛎	she fu zuo	1
+⛎	xing zuo	1
+⛏️	chu tou	1
+⛏️	tie gao	1
+⛑️	an quan mao	1
+⛑️	jiu sheng an quan mao	1
+⛓️	lian tiao	1
+⛔️	biao zhi	1
+⛔️	jin xing	1
+⛔️	jin zhi	1
+⛔️	jin zhi jin ru	1
+⛔️	jin zhi shi ru	1
+⛩️	niao ju	1
+⛩️	ri ben shen she	1
+⛩️	shen she	1
+⛪️	jian zhu	1
+⛪️	jiao tang	1
+⛪️	jie hun	1
+⛪️	li bai tang	1
+⛪️	sheng tang	1
+⛪️	zuo li bai	1
+⛰️	gao shan	1
+⛰️	shan feng	1
+⛱️	du jia	1
+⛱️	san	1
+⛱️	tai yang san	1
+⛱️	zhe yang san	1
+⛲️	gong yuan	1
+⛲️	huo dong	1
+⛲️	pen quan	1
+⛲️	pen shui chi	1
+⛳️	da gao er fu	1
+⛳️	gao er fu	1
+⛳️	gao er fu qiu	1
+⛳️	gao er fu qiu dong	1
+⛳️	yun dong	1
+⛴️	du chuan	1
+⛴️	du lun	1
+⛴️	shui shang ba shi	1
+⛵️	fan chuan	1
+⛵️	hai shang huo dong	1
+⛵️	jiao tong	1
+⛵️	ma tou	1
+⛵️	you ting	1
+⛷️	hua xue	1
+⛷️	hua xue yun dong yuan	1
+⛷️	shuang ban	1
+⛸️	bing dao xie	1
+⛸️	hua bing	1
+⛸️	liu bing xie	1
+⛹️	da lan qiu	1
+⛹️	lan qiu bi sai	1
+⛹️	yun dong	1
+⛹️	zai yun qiu de ren	1
+⛹️‍♀️	da lan qiu	1
+⛹️‍♀️	lan qiu bi sai	1
+⛹️‍♀️	yun dong	1
+⛹️‍♀️	zai yun qiu de ren	1
+⛺️	huo dong	1
+⛺️	lu ying	1
+⛺️	ye ying	1
+⛺️	zhang peng	1
+⛽️	huo dong	1
+⛽️	jia you	1
+⛽️	jia you zhan	1
+⛽️	ran liao	1
+⛽️	ran liao beng	1
+⛽️	xiu xi qu	1
+✂️	gong ju	1
+✂️	jian dao	1
+✂️	jian zi	1
+✂️	xiu jian	1
+✅	biao zhi	1
+✅	gou hao	1
+✅	que ding	1
+✅	wan cheng	1
+✅	yun xu	1
+✅	zheng que	1
+✈️	fei ji	1
+✈️	fei wang	1
+✈️	fei xing	1
+✈️	guo hang	1
+✈️	hang kong	1
+✈️	ji chang	1
+✈️	jiao tong	1
+✈️	lv xing	1
+✉️	shang wu	1
+✉️	xie xin	1
+✉️	xin feng	1
+✉️	xin jian	1
+✉️	xun xi	1
+✉️	you jian	1
+✊	jian chi	1
+✊	jian chi xia qu	1
+✊	quan tou	1
+✊	shi tou	1
+✊	shou shi	1
+✊	xuan shi	1
+✋	bu xing	1
+✋	ji zhang	1
+✋	ru lai shen zhang	1
+✋	shou shi	1
+✋	shou zhang	1
+✋	zhang	1
+✌️	jian dao	1
+✌️	jian dao shou	1
+✌️	sheng li	1
+✌️	shou shi	1
+✌️	ye	1
+✌️	ying le	1
+✍️	shu xie	1
+✍️	xie zi	1
+✏️	qian bi	1
+✏️	xie zuo	1
+✒️	gang bi	1
+✔️	da gou	1
+✔️	fu hao	1
+✔️	gou hao	1
+✔️	zheng que	1
+✖️	cheng	1
+✖️	cheng hao	1
+✖️	cuo wu	1
+✖️	da cha	1
+✖️	fu hao	1
+✝️	ji du jiao	1
+✝️	shi zi jia	1
+✡️	da wei zhi xing	1
+✡️	liu mang xing	1
+✡️	suo luo men feng yin	1
+✡️	you tai xing	1
+✡️	you tai xing hui	1
+✨	liang jing jing	1
+✨	shan liang	1
+✨	shan liang de	1
+✨	shan shuo de xing xing	1
+✨	tian wen	1
+✨	xing xing	1
+✳️	fu hao	1
+✳️	lv xing hao	1
+✳️	xing hao	1
+✳️	xing xing fu hao	1
+✴️	ba jiao xing	1
+✴️	da cha fu hao	1
+✴️	fu hao	1
+❄️	chu xue	1
+❄️	di yi chang xue	1
+❄️	jiang xue	1
+❄️	rui xue	1
+❄️	tian qi	1
+❄️	xia xue	1
+❄️	xue	1
+❄️	xue hua	1
+❇️	qing zhu	1
+❇️	tiao fu xing	1
+❌	cuo	1
+❌	cuo wu	1
+❌	fu hao	1
+❌	hong cha	1
+❌	jin zhi	1
+❌	ju jue	1
+❎	bu yun xu	1
+❎	cha hao	1
+❎	da cha fu hao	1
+❎	fu hao	1
+❎	wei wan cheng	1
+❓	fu hao	1
+❓	hong se wen hao	1
+❓	wen hao	1
+❓	yi wen	1
+❔	bai se wen hao	1
+❔	fu hao	1
+❔	wen hao	1
+❔	yi wen	1
+❕	bai se gan tan hao	1
+❕	fu hao	1
+❕	gan tan hao	1
+❕	jing tan	1
+❕	jing tan hao	1
+❕	jing ya	1
+❗️	fu hao	1
+❗️	hong se gan tan hao	1
+❗️	jing tan	1
+❗️	jing tan hao	1
+❗️	jing ya	1
+❣️	xin qing gan tan hao	1
+❤️	ai	1
+❤️	ai xin	1
+❤️	fu hao	1
+❤️	hong se de xin	1
+❤️	re qing	1
+❤️	tao xin	1
+❤️	xi huan	1
+❤️	xin	1
+➕	fu hao	1
+➕	guan zhu	1
+➕	jia	1
+➕	jia hao	1
+➖	fu hao	1
+➖	jian	1
+➖	jian hao	1
+➗	chu	1
+➗	chu hao	1
+➗	fu hao	1
+➡️	fu hao	1
+➡️	jian tou	1
+➡️	xiang you jian tou	1
+➡️	you	1
+➡️	you jian tou	1
+➡️	you zhuan	1
+➰	fu hao	1
+➰	juan qu huan	1
+➰	wan qu xian	1
+➿	biao zhi	1
+➿	fu hao	1
+➿	shuang juan qu huan	1
+➿	shuang wan qu xian	1
+⤴️	fu hao	1
+⤴️	zhuan xiang qian fang	1
+⤵️	fu hao	1
+⤵️	zhuan xiang hou fang	1
+⬅️	fu hao	1
+⬅️	jian tou	1
+⬅️	xiang zuo jian tou	1
+⬅️	zuo	1
+⬅️	zuo jian tou	1
+⬅️	zuo zhuan	1
+⬆️	fu hao	1
+⬆️	jian tou	1
+⬆️	shang	1
+⬆️	shang jian tou	1
+⬆️	xiang shang jian tou	1
+⬇️	fu hao	1
+⬇️	jian tou	1
+⬇️	xia	1
+⬇️	xiang xia jian tou	1
+⬛️	hei xian da fang kuang	1
+⬜️	bai xian da fang kuang	1
+⭐️	dan huang xing xing	1
+⭐️	fu hao	1
+⭐️	wu jiao xing	1
+⭐️	xing xing	1
+⭕️	fu hao	1
+⭕️	hong se yuan quan	1
+⭕️	quan quan	1
+⭕️	yuan quan	1
+⭕️	yuan xing	1
+⭕️	zheng que	1
+〰️	bo lang	1
+〰️	bo lang xian	1
+〰️	bo lang xing po zhe hao	1
+〰️	fu hao	1
+〽️	chang ge fu hao	1
+〽️	fu hao	1
+〽️	ge ji hao	1
+〽️	ge yao kai shi ji hao	1
+〽️	zhong ri han biao dian	1
+㊗️	fu hao	1
+㊗️	gong he	1
+㊗️	qing zhu	1
+㊗️	zhu	1
+㊗️	zhu an kang	1
+㊗️	zhu fu	1
+㊗️	zhu he	1
+㊙️	fu hao	1
+㊙️	mi	1
+㊙️	mi fang	1
+㊙️	mi mi	1
+㊙️	yin si	1
+🀄️	hong zhong	1
+🀄️	huo dong	1
+🀄️	ma jiang	1
+🀄️	zhong	1
+🃏	huo dong	1
+🃏	pu ke pai	1
+🃏	wan pai	1
+🃏	wang pai	1
+🃏	xiao chou	1
+🃏	xiao wang	1
+🃏	zhi pai	1
+🅰️	biao zhi	1
+🅰️	xue xing	1
+🅱️	biao zhi	1
+🅱️	xue xing	1
+🅾️	biao zhi	1
+🅾️	xue xing	1
+🅿️	biao zhi	1
+🅿️	ting che	1
+🅿️	ting che chang	1
+🆎	biao zhi	1
+🆎	xue xing	1
+🆑	fu hao	1
+🆑	qing chu	1
+🆑	qing ling	1
+🆑	qing ling jian	1
+🆒	fu hao	1
+🆒	ku	1
+🆒	qing liang	1
+🆓	fu hao	1
+🆓	mian fei	1
+🆓	zi you	1
+🆔	fu hao	1
+🆔	shen fen	1
+🆔	shen fen zheng	1
+🆕	fu hao	1
+🆕	xin	1
+🆕	xin jian	1
+🆖	bu gan	1
+🆖	bu hao	1
+🆖	bu xing	1
+🆖	fu hao	1
+🆗	fu hao	1
+🆗	hao	1
+🆗	mei wen ti	1
+🆘	fu hao	1
+🆘	hu jiu	1
+🆘	jiu ming	1
+🆘	qiu jiu	1
+🆙	ding	1
+🆙	fu hao	1
+🆚	bi	1
+🆚	bi sai	1
+🆚	dui bi	1
+🆚	dui kang	1
+🆚	fu hao	1
+🇦🇨	a sen song dao	1
+🇦🇩	an dao er	1
+🇦🇩	an dao er gong he guo	1
+🇦🇪	a la bo lian he da gong guo	1
+🇦🇪	a la bo lian he qiu zhang guo	1
+🇦🇪	a lian qiu	1
+🇦🇫	a fu han	1
+🇦🇬	an de ka ji ba bu da	1
+🇦🇬	an ti gua he ba bu da	1
+🇦🇮	an gui la	1
+🇦🇱	a er ba ni ya	1
+🇦🇲	ya mei ni ya	1
+🇦🇴	an ge la	1
+🇦🇶	nan ji zhou	1
+🇦🇷	a gen ting	1
+🇦🇷	nan mei tan ge	1
+🇦🇸	mei shu sa mo ya	1
+🇦🇹	ao di li	1
+🇦🇹	yin yue zhi bang	1
+🇦🇺	ao da li ya	1
+🇦🇺	dai shu guo	1
+🇦🇼	a lu ba	1
+🇦🇽	ao lan qun dao	1
+🇦🇿	a sai bai jiang	1
+🇦🇿	ya sai bai ran	1
+🇧🇦	bo shi ni ya	1
+🇧🇦	bo si ni ya	1
+🇧🇦	bo si ni ya he hei sai ge wei	1
+🇧🇧	ba ba duo si	1
+🇧🇧	ba bei duo	1
+🇧🇩	meng jia la	1
+🇧🇩	meng jia la guo	1
+🇧🇪	bi li shi	1
+🇧🇫	bu ji na fa suo	1
+🇧🇬	bao jia li ya	1
+🇧🇬	mei gui wang guo	1
+🇧🇭	ba lin	1
+🇧🇮	bu long di	1
+🇧🇮	pu long de	1
+🇧🇯	bei nan	1
+🇧🇯	bei ning	1
+🇧🇯	you zong zhi guo	1
+🇧🇱	sheng ba tai lei mi dao	1
+🇧🇲	bai mu da	1
+🇧🇳	wen lai	1
+🇧🇴	bo li wei ya	1
+🇧🇶	he lan jia lei bi qu	1
+🇧🇷	ba xi	1
+🇧🇷	sang ba wu zhe	1
+🇧🇷	sen ba wu zhe	1
+🇧🇸	ba ha ma	1
+🇧🇹	bu dan	1
+🇧🇻	bu wei dao	1
+🇧🇼	bo ci wa na	1
+🇧🇼	bo zha na	1
+🇧🇼	bo zi wa na	1
+🇧🇾	bai e luo si	1
+🇧🇿	bei li si	1
+🇧🇿	bo li zi	1
+🇨🇦	feng ye zhi guo	1
+🇨🇦	jia na da	1
+🇨🇩	gang guo min zhu gong he guo	1
+🇨🇫	zhong fei gong he guo	1
+🇨🇬	gang guo gong he guo	1
+🇨🇭	rui shi	1
+🇨🇮	ke te di wa	1
+🇨🇮	xiang ya hai an	1
+🇨🇰	ku ke qun dao	1
+🇨🇱	zhi li	1
+🇨🇲	ka mai long	1
+🇨🇳	wu xing hong qi	1
+🇨🇳	zhong guo	1
+🇨🇳	zhong guo guo qi	1
+🇨🇳	zhong hua ren min gong he guo	1
+🇨🇳	zhong hua ren min gong he guo guo qi	1
+🇨🇴	ge lun bi ya	1
+🇨🇵	ke li po dun dao	1
+🇨🇷	ge si da li jia	1
+🇨🇺	gu ba	1
+🇨🇻	fu de jiao	1
+🇨🇻	wei de jiao	1
+🇨🇼	ku la suo	1
+🇨🇽	sheng dan dao	1
+🇨🇾	sai pu lei si	1
+🇨🇾	sai pu lu si	1
+🇨🇿	jie ke	1
+🇨🇿	jie ke gong he guo	1
+🇩🇪	de guo	1
+🇩🇪	de guo guo qi	1
+🇩🇪	ri er man zhan che	1
+🇩🇬	di ge jia xi ya dao	1
+🇩🇯	ji bu de	1
+🇩🇯	ji bu ti	1
+🇩🇰	dan mai	1
+🇩🇲	duo mi ni ke	1
+🇩🇴	duo mi ni jia gong he guo	1
+🇩🇴	duo ming ni jia gong he guo	1
+🇩🇿	a er ji li ya	1
+🇪🇦	xiu da he mei li li ya	1
+🇪🇨	e gua duo er	1
+🇪🇪	ai sha ni ya	1
+🇪🇬	ai ji	1
+🇪🇭	xi sa ha la	1
+🇪🇷	e li chui ya	1
+🇪🇷	e li te li ya	1
+🇪🇸	xi ban ya	1
+🇪🇸	xi ban ya guo qi	1
+🇪🇹	ai sai e bi ya	1
+🇪🇹	yi suo bi ya	1
+🇪🇺	ou meng	1
+🇫🇮	fen lan	1
+🇫🇮	he lan	1
+🇫🇯	fei ji	1
+🇫🇰	fu ke lan qun dao	1
+🇫🇲	mi ke luo ni xi ya	1
+🇫🇴	fa luo qun dao	1
+🇫🇷	fa guo	1
+🇫🇷	fa guo guo qi	1
+🇫🇷	gao lu xiong ji	1
+🇬🇦	jia peng	1
+🇬🇧	bu lie dian	1
+🇬🇧	da bu lie dian	1
+🇬🇧	ying guo	1
+🇬🇧	ying guo guo qi	1
+🇬🇩	ge lin na da	1
+🇬🇩	ge rui na da	1
+🇬🇪	ge lu ji ya	1
+🇬🇪	qiao zhi ya gong he guo	1
+🇬🇫	fa shu gui ya na	1
+🇬🇬	ge en xi dao	1
+🇬🇭	jia na	1
+🇬🇮	zhi bu luo tuo	1
+🇬🇱	ge ling lan	1
+🇬🇲	gan bi ya	1
+🇬🇲	gang bi ya	1
+🇬🇳	ji nei ya	1
+🇬🇵	gua de luo pu	1
+🇬🇵	gua de luo pu dao	1
+🇬🇶	chi dao ji nei ya	1
+🇬🇷	xi la	1
+🇬🇸	nan qiao zhi ya dao he nan sang wei qi qun dao	1
+🇬🇹	gua de ma la	1
+🇬🇹	wei de ma la	1
+🇬🇺	guan dao	1
+🇬🇼	ji nei ya bi shao	1
+🇬🇼	ji nei ya bi suo	1
+🇬🇾	gai ya na	1
+🇬🇾	gui ya na	1
+🇭🇰	xiang gang	1
+🇭🇰	zhong guo xiang gang te bie xing zheng qu	1
+🇭🇰	zi jing hua qi	1
+🇭🇲	he de dao he mai ke tang na qun dao	1
+🇭🇳	hong dou la si	1
+🇭🇷	ge zi jun	1
+🇭🇷	ke luo ai xi ya	1
+🇭🇷	ke luo de ya	1
+🇭🇹	hai di	1
+🇭🇺	xiong ya li	1
+🇮🇨	jia na li qun dao	1
+🇮🇩	yin du ni xi ya	1
+🇮🇩	yin ni	1
+🇮🇪	ai er lan	1
+🇮🇱	yi se lie	1
+🇮🇲	man en dao	1
+🇮🇳	kong que zhi guo	1
+🇮🇳	yin du	1
+🇮🇴	ying shu yin du yang ling di	1
+🇮🇶	yi la ke	1
+🇮🇷	yi lang	1
+🇮🇸	bing dao	1
+🇮🇹	yi da li	1
+🇮🇹	yi da li guo qi	1
+🇯🇪	ze xi dao	1
+🇯🇲	ya mai jia	1
+🇯🇴	yue dan	1
+🇯🇵	ri ben	1
+🇯🇵	ri ben guo qi	1
+🇯🇵	ri zhang qi	1
+🇯🇵	ying hua zhi guo	1
+🇰🇪	ken ni ya	1
+🇰🇪	ken ya	1
+🇰🇬	ji er ji si	1
+🇰🇬	ji er ji si si tan	1
+🇰🇭	jian bu zhai	1
+🇰🇮	ji li ba si	1
+🇰🇲	ge mo	1
+🇰🇲	ke mo luo	1
+🇰🇲	xiang dao	1
+🇰🇳	sheng ji ci he ni wei si	1
+🇰🇳	sheng ke li si duo fu ji ni wei si	1
+🇰🇵	bei han	1
+🇰🇵	chao xian	1
+🇰🇷	han guo	1
+🇰🇷	han guo guo qi	1
+🇰🇷	nan han	1
+🇰🇷	tai ji hu	1
+🇰🇷	tai ji qi	1
+🇰🇼	ke wei te	1
+🇰🇾	kai man qun dao	1
+🇰🇿	ha sa ke	1
+🇰🇿	ha sa ke si tan	1
+🇱🇦	lao wo	1
+🇱🇦	liao guo	1
+🇱🇧	li ba nen	1
+🇱🇨	sheng lu xi ya	1
+🇱🇮	lie zhi dun shi deng	1
+🇱🇮	lie zhi dun si deng	1
+🇱🇰	si li lan ka	1
+🇱🇷	lai bi rui ya	1
+🇱🇷	li bi li ya	1
+🇱🇸	lai suo tuo	1
+🇱🇹	li tao wan	1
+🇱🇺	lu sen bao	1
+🇱🇻	la tuo wei ya	1
+🇱🇾	li bi ya	1
+🇲🇦	mo luo ge	1
+🇲🇨	mo na ge	1
+🇲🇩	mo er duo wa	1
+🇲🇪	hei shan	1
+🇲🇫	sheng ma ding	1
+🇲🇬	ma da jia si jia	1
+🇲🇭	ma shao er qun dao	1
+🇲🇰	ma qi dun	1
+🇲🇱	ma li	1
+🇲🇲	mian dian	1
+🇲🇳	meng gu	1
+🇲🇴	ao men	1
+🇲🇴	zhong guo ao men te bie xing zheng qu	1
+🇲🇵	bei ma li ya na qun dao	1
+🇲🇶	ma ding ni ke	1
+🇲🇶	ma ti ni ke	1
+🇲🇷	mao li ta ni ya	1
+🇲🇸	meng te sai la te	1
+🇲🇸	meng te sai la te dao	1
+🇲🇸	meng te se la te dao	1
+🇲🇹	ma er ta	1
+🇲🇺	mao li qiu si	1
+🇲🇻	ma er dai fu	1
+🇲🇻	ma er de fu	1
+🇲🇼	ma la wei	1
+🇲🇽	gao yuan xiong ying	1
+🇲🇽	mo xi ge	1
+🇲🇾	ma lai xi ya	1
+🇲🇾	xi he xiang jiao wang guo	1
+🇲🇿	mo san bi ke	1
+🇲🇿	mo sang bi ke	1
+🇳🇦	na mi bi ya	1
+🇳🇨	xin ka li duo ni ya	1
+🇳🇨	xin ka li duo ni ya qun dao	1
+🇳🇪	ni ri er	1
+🇳🇪	sha zhong zhi guo	1
+🇳🇫	nuo fu ke dao	1
+🇳🇬	fei zhou xiong ying	1
+🇳🇬	nai ji li ya	1
+🇳🇬	ni ri li ya	1
+🇳🇮	ni jia la gua	1
+🇳🇱	feng che zhi guo	1
+🇳🇱	he lan	1
+🇳🇴	nuo wei	1
+🇳🇴	wan dao guo	1
+🇳🇵	ni po er	1
+🇳🇵	si miao zhi guo	1
+🇳🇷	nao lu	1
+🇳🇺	niu ai	1
+🇳🇿	niu xi lan	1
+🇳🇿	xin xi lan	1
+🇴🇲	a man	1
+🇵🇦	ba na ma	1
+🇵🇪	bi lu	1
+🇵🇪	mi lu	1
+🇵🇫	fa shu bo li ni xi ya	1
+🇵🇬	ba bu ya niu ji nei ya	1
+🇵🇬	ba bu ya xin ji nei ya	1
+🇵🇭	fei lv bin	1
+🇵🇰	ba ji si tan	1
+🇵🇱	bo lan	1
+🇵🇲	sheng pi ai er he mi ke long	1
+🇵🇳	pi te ke en	1
+🇵🇷	bo duo li ge	1
+🇵🇸	ba le si tan	1
+🇵🇹	pu tao ya	1
+🇵🇼	bo liu	1
+🇵🇼	pa lao	1
+🇵🇾	ba la gui	1
+🇶🇦	ka da	1
+🇶🇦	ka ta er	1
+🇷🇪	liu ni wang	1
+🇷🇪	liu ni wang dao	1
+🇷🇴	luo ma ni ya	1
+🇷🇸	sai er wei ya	1
+🇷🇺	e guo	1
+🇷🇺	e guo guo qi	1
+🇷🇺	e luo si	1
+🇷🇼	lu an da	1
+🇷🇼	lu wang da	1
+🇸🇦	sha te a la bai	1
+🇸🇦	sha te a la bo	1
+🇸🇦	sha wu de a la bo	1
+🇸🇧	suo luo men qun dao	1
+🇸🇨	sai she er	1
+🇸🇨	sai xi er	1
+🇸🇩	huo lu guo	1
+🇸🇩	su dan	1
+🇸🇪	rui dian	1
+🇸🇬	shi cheng	1
+🇸🇬	xin jia po	1
+🇸🇭	sheng he lei na	1
+🇸🇮	si luo wei ni ya	1
+🇸🇮	si luo wen ni ya	1
+🇸🇯	si wa er ba te he yang ma yan qun dao	1
+🇸🇰	si luo fa ke	1
+🇸🇱	sai la li ang	1
+🇸🇲	sheng ma li nuo	1
+🇸🇳	sai nei jia er	1
+🇸🇴	fei zhou zhi jiao	1
+🇸🇴	suo ma li	1
+🇸🇴	suo ma li ya	1
+🇸🇷	su li nan	1
+🇸🇸	nan su dan	1
+🇸🇸	nan su dan gong he guo	1
+🇸🇹	sheng duo mei he pu lin xi bi	1
+🇸🇹	sheng duo mei ji pu lin xi bi	1
+🇸🇻	sa er wa duo	1
+🇸🇻	sa er wa duo gong he guo	1
+🇸🇽	he shu sheng ma ding	1
+🇸🇽	sheng ma ding dao	1
+🇸🇾	xu li ya	1
+🇸🇿	shi wa ji lan	1
+🇸🇿	si wei shi lan	1
+🇹🇦	te li si tan da ku ni ya	1
+🇹🇨	te ke si he kai ke si qun dao	1
+🇹🇨	tu ke si ji kai ke si qun dao	1
+🇹🇩	zha de	1
+🇹🇫	fa shu nan bu ling di	1
+🇹🇬	duo ge	1
+🇹🇭	tai guo	1
+🇹🇭	wan fu zhi guo	1
+🇹🇯	ta ji ke	1
+🇹🇯	ta ji ke si tan	1
+🇹🇰	tuo ke lao	1
+🇹🇱	dong di wen	1
+🇹🇲	tu ku man	1
+🇹🇲	tu ku man si tan	1
+🇹🇳	gan lan zhi guo	1
+🇹🇳	tu ni si	1
+🇹🇳	tu ni xi ya	1
+🇹🇴	dong jia	1
+🇹🇴	tang jia	1
+🇹🇷	tu er qi	1
+🇹🇷	xing yue qi	1
+🇹🇹	qian li da ji tuo ba ge	1
+🇹🇹	te li ni da he duo ba ge	1
+🇹🇻	tu wa lu	1
+🇹🇿	tan sang ni ya	1
+🇹🇿	tan shang ni ya	1
+🇺🇦	wu ke lan	1
+🇺🇬	wu gan da	1
+🇺🇲	mei guo ben tu wai xiao dao yu	1
+🇺🇸	mei guo	1
+🇺🇸	mei guo guo qi	1
+🇺🇸	shan mu da shu	1
+🇺🇸	xing tiao qi	1
+🇺🇾	wu la gui	1
+🇺🇿	wu zi bie ke	1
+🇺🇿	wu zi bie ke si tan	1
+🇻🇦	fan di gang	1
+🇻🇦	luo ma jiao ting	1
+🇻🇨	sheng wen sen	1
+🇻🇨	sheng wen sen te	1
+🇻🇨	sheng wen sen te he ge lin na ding si	1
+🇻🇪	wei nei rui la	1
+🇻🇬	ying shu wei er jing qun dao	1
+🇻🇬	ying shu wei jing qun dao	1
+🇻🇮	mei shu wei er jing qun dao	1
+🇻🇮	mei shu wei jing qun dao	1
+🇻🇳	yue nan	1
+🇻🇺	wa nu a tu	1
+🇻🇺	wan na du	1
+🇼🇫	wa li si he fu tu na qun dao	1
+🇼🇸	sa mo ya	1
+🇼🇸	sa mo ya qun dao	1
+🇽🇰	ke suo wo	1
+🇾🇪	ye men	1
+🇾🇹	ma yue te dao	1
+🇿🇦	nan fei	1
+🇿🇲	shang bi ya	1
+🇿🇲	zan bi ya	1
+🇿🇼	jin ba bu wei	1
+🇿🇼	xin ba wei	1
+🈂️	xiao fei	1
+🈚️	fu hao	1
+🈚️	mei you	1
+🈚️	mian fei	1
+🈚️	wu	1
+🈯️	fu hao	1
+🈯️	yu ding	1
+🈯️	zhi	1
+🈯️	zhi ding	1
+🈲️	fu hao	1
+🈲️	jin	1
+🈲️	jin zhi	1
+🈳️	fu hao	1
+🈳️	kong	1
+🈳️	kong wei	1
+🈳️	you kong wei	1
+🈴️	fu hao	1
+🈴️	he	1
+🈴️	he ge	1
+🈴️	shi he	1
+🈵️	fu hao	1
+🈵️	man	1
+🈵️	yi man	1
+🈶️	fu hao	1
+🈶️	shou fei	1
+🈶️	you	1
+🈷️	fu hao	1
+🈷️	yue	1
+🈷️	yue fei	1
+🈷️	yue fen	1
+🈸️	fu hao	1
+🈸️	shen	1
+🈸️	shen qing	1
+🈹️	da zhe	1
+🈹️	fu hao	1
+🈹️	ge	1
+🈹️	ge rou	1
+🈹️	rang li	1
+🈺️	fu hao	1
+🈺️	ying	1
+🈺️	ying ye	1
+🈺️	ying ye zhong	1
+🉐️	de	1
+🉐️	fu hao	1
+🉐️	huo de	1
+🉐️	shou yi	1
+🉐️	te jia	1
+🉑️	fu hao	1
+🉑️	jie shou	1
+🉑️	ke	1
+🉑️	xu ke	1
+🌀	long juan feng	1
+🌀	tai feng	1
+🌀	tian qi	1
+🌀	xuan wo	1
+🌁	tian qi	1
+🌁	wu mai	1
+🌁	wu meng meng	1
+🌁	wu qi	1
+🌁	wu suo jin men	1
+🌂	san	1
+🌂	tian qi	1
+🌂	yu san	1
+🌃	wan shang	1
+🌃	xing kong	1
+🌃	xing ye	1
+🌃	ye jing	1
+🌃	ye se	1
+🌃	zi ran	1
+🌄	ri chu	1
+🌄	ri chu feng	1
+🌄	ri luo	1
+🌄	ri luo shan gu	1
+🌄	shan jian ri chu	1
+🌄	zi ran	1
+🌅	hai shang ri chu	1
+🌅	ri chu	1
+🌅	zi ran	1
+🌆	bang wan	1
+🌆	du shi	1
+🌆	huang hun	1
+🌆	mu se	1
+🌆	xi yang	1
+🌆	zi ran	1
+🌇	huang hun	1
+🌇	xi yang	1
+🌇	xi yang xi xia	1
+🌇	zi ran	1
+🌈	cai hong	1
+🌈	hong	1
+🌈	zi ran	1
+🌉	da qiao	1
+🌉	ye jing	1
+🌉	zi ran	1
+🌊	bo lang	1
+🌊	chao xi	1
+🌊	hai lang	1
+🌊	hai shui	1
+🌊	ju lang	1
+🌊	lang	1
+🌊	lang hua	1
+🌊	zi ran	1
+🌋	huo huo shan	1
+🌋	huo shan	1
+🌋	huo shan pen fa	1
+🌋	zi ran	1
+🌌	hei ye	1
+🌌	tian wen	1
+🌌	yin he	1
+🌌	yin he xi	1
+🌌	zi ran	1
+🌍	di qiu	1
+🌍	fei zhou	1
+🌍	fei zhou da lu	1
+🌍	jia yuan	1
+🌍	ou zhou fei zhou	1
+🌍	xing qiu	1
+🌎	bei ban qiu	1
+🌎	di qiu	1
+🌎	mei zhou	1
+🌏	di qiu	1
+🌏	dong ban qiu	1
+🌏	ya zhou	1
+🌏	ya zhou ao zhou	1
+🌐	di qiu	1
+🌐	zi wu xian	1
+🌑	tian wen	1
+🌑	xin yue	1
+🌒	mei yue	1
+🌒	tian wen	1
+🌓	shang xian yue	1
+🌓	tian wen	1
+🌔	tian wen	1
+🌔	ying tu yue	1
+🌕	man yue	1
+🌕	tian wen	1
+🌖	kui tu yue	1
+🌖	tian wen	1
+🌗	tian wen	1
+🌗	xia xian yue	1
+🌘	can yue	1
+🌘	tian wen	1
+🌙	can yue	1
+🌙	e mei yue	1
+🌙	tian wen	1
+🌙	xin yue	1
+🌙	yue liang	1
+🌙	yue ya	1
+🌚	tian wen	1
+🌚	xin yue	1
+🌛	shang xian yue	1
+🌛	tian wen	1
+🌛	yue liang	1
+🌜	tian wen	1
+🌜	xia xian yue	1
+🌜	yue liang	1
+🌝	man yue	1
+🌝	tian wen	1
+🌝	yue liang	1
+🌞	nuan yang yang	1
+🌞	shai tai yang	1
+🌞	tai yang	1
+🌞	tai yang shen	1
+🌞	tian wen	1
+🌟	shan yao de xing xing	1
+🌟	tian wen	1
+🌟	xing	1
+🌟	xing guang	1
+🌟	xing mang	1
+🌟	xing xing	1
+🌠	hui xing	1
+🌠	liu xing	1
+🌠	tian wen	1
+🌡️	wen du ji	1
+🌤️	duo yun	1
+🌥️	yin tian	1
+🌦️	tai yang yu	1
+🌦️	yu	1
+🌦️	zhen yu	1
+🌧️	xia yu	1
+🌧️	yu	1
+🌨️	xia xue	1
+🌩️	shan dian	1
+🌪️	long juan feng	1
+🌫️	wu	1
+🌫️	wu mai	1
+🌬️	chui qi	1
+🌭️	re gou	1
+🌮️	mo xi ge juan	1
+🌮️	ta ke	1
+🌯️	mo xi ge juan bing	1
+🌰	ban li	1
+🌰	jian guo	1
+🌰	li	1
+🌰	li zi	1
+🌰	song zi	1
+🌰	zhen zi	1
+🌰	zhi wu	1
+🌱	qing miao	1
+🌱	xiao shu miao	1
+🌱	you miao	1
+🌱	zhi wu	1
+🌲	chang lv qiao mu	1
+🌲	chang qing shu	1
+🌲	shu	1
+🌲	shu mu	1
+🌲	song shu	1
+🌲	xiao shu	1
+🌲	yi ke shu	1
+🌲	zhi wu	1
+🌳	da shu	1
+🌳	luo ye qiao mu	1
+🌳	luo ye shu	1
+🌳	shu	1
+🌳	zhi wu	1
+🌴	shu	1
+🌴	zhi wu	1
+🌴	zong lv	1
+🌴	zong lv shu	1
+🌵	xian ren zhang	1
+🌵	zhi wu	1
+🌶️	hong la jiao	1
+🌶️	la jiao	1
+🌷	hu die lan	1
+🌷	hua	1
+🌷	yu jin xiang	1
+🌷	zhi wu	1
+🌸	hua	1
+🌸	ying hua	1
+🌸	zhi wu	1
+🌹	hua	1
+🌹	lang man	1
+🌹	mei gui	1
+🌹	mei gui hua	1
+🌹	yue ji	1
+🌹	zhi wu	1
+🌺	fu rong	1
+🌺	fu sang hua	1
+🌺	hua	1
+🌺	hua duo	1
+🌺	zhi wu	1
+🌻	kui hua	1
+🌻	xiang ri kui	1
+🌻	xiao kui	1
+🌻	zhi wu	1
+🌼	chu ju	1
+🌼	feng xin zi	1
+🌼	hua	1
+🌼	hua duo	1
+🌼	kai hua	1
+🌼	qun hua	1
+🌼	zhi wu	1
+🌽	yu mi	1
+🌽	yu mi sui	1
+🌽	zhi wu	1
+🌾	dao sui	1
+🌾	shui dao	1
+🌾	zhi wu	1
+🌿	cao yao	1
+🌿	shu zhi	1
+🌿	xiang cao	1
+🌿	zhi wu	1
+🌿	zhong yao	1
+🍀	hao yun	1
+🍀	si ye cao	1
+🍀	xing yun cao	1
+🍀	zhi wu	1
+🍁	feng ye	1
+🍁	hong ye	1
+🍁	zhi wu	1
+🍂	huang ye	1
+🍂	ku ye	1
+🍂	luo ye	1
+🍂	shu ye	1
+🍂	zhi wu	1
+🍃	feng chui luo ye	1
+🍃	luo ye	1
+🍃	lv ye	1
+🍃	ye pian	1
+🍃	ye zi	1
+🍃	zhi wu	1
+🍄	gu	1
+🍄	mo gu	1
+🍄	xun lei	1
+🍄	zhi wu	1
+🍅	fan jia	1
+🍅	fan qie	1
+🍅	shui guo	1
+🍅	xi hong shi	1
+🍆	jia	1
+🍆	jia zi	1
+🍆	shui guo	1
+🍇	pu tao	1
+🍇	shui guo	1
+🍇	ti zi	1
+🍈	ha mi gua	1
+🍈	shui guo	1
+🍈	tian gua	1
+🍉	gua gua	1
+🍉	shui guo	1
+🍉	xi gua	1
+🍊	cheng	1
+🍊	cheng zi	1
+🍊	gan ju	1
+🍊	jin ju	1
+🍊	ju	1
+🍊	ju zi	1
+🍊	mi ju	1
+🍊	shui guo	1
+🍊	tian cheng	1
+🍊	tian mi ju	1
+🍊	xiang cheng	1
+🍋	ning	1
+🍋	ning meng	1
+🍋	shui guo	1
+🍌	shui guo	1
+🍌	xiang jiao	1
+🍍	bo luo	1
+🍍	feng li	1
+🍍	shui guo	1
+🍎	hong fu shi	1
+🍎	hong ping guo	1
+🍎	ping guo	1
+🍎	she guo	1
+🍎	shui guo	1
+🍏	da qing guo	1
+🍏	ping guo	1
+🍏	qing guo	1
+🍏	qing ping guo	1
+🍏	shui guo	1
+🍐	li	1
+🍐	li zi	1
+🍐	shui guo	1
+🍐	xiang li	1
+🍐	xue li	1
+🍐	ya li	1
+🍑	mi tao	1
+🍑	shui guo	1
+🍑	shui mi tao	1
+🍑	tao	1
+🍑	tao zi	1
+🍒	guo shi	1
+🍒	shui guo	1
+🍒	ying tao	1
+🍓	cao mei	1
+🍓	hong mei	1
+🍓	jiang guo	1
+🍓	shui guo	1
+🍔	han bao	1
+🍔	han bao bao	1
+🍔	han pu bao	1
+🍔	mai dang lao	1
+🍔	shi wu	1
+🍔	su shi dian	1
+🍕	bi sa	1
+🍕	bi sa pian	1
+🍕	chi pi sa	1
+🍕	pi sa	1
+🍕	pi sa bing	1
+🍕	pi sa pian	1
+🍕	shi wu	1
+🍖	gu tou rou	1
+🍖	rou chuan	1
+🍖	rou gu	1
+🍖	rou gu tou	1
+🍖	shi wu	1
+🍗	ji tui	1
+🍗	shi wu	1
+🍗	zha ji	1
+🍘	shi wu	1
+🍙	fan tuan	1
+🍙	shi wu	1
+🍚	bai mi fan	1
+🍚	shi wu	1
+🍛	ga li	1
+🍛	ga li fan	1
+🍛	ka li fan	1
+🍛	shi wu	1
+🍜	ban mian	1
+🍜	chi mian	1
+🍜	fang bian mian	1
+🍜	ji dan mian	1
+🍜	la mian	1
+🍜	leng mian	1
+🍜	mian tiao	1
+🍜	pao mian	1
+🍜	shi wu	1
+🍜	tang mian	1
+🍜	wan mian	1
+🍜	yi wan mian tiao	1
+🍜	zheng wan	1
+🍝	mian tiao	1
+🍝	shi wu	1
+🍝	yi da li mian	1
+🍝	yi da li mian tiao	1
+🍝	yi mian	1
+🍞	mian bao	1
+🍞	shi wu	1
+🍞	tu si	1
+🍟	ken de ji	1
+🍟	shi wu	1
+🍟	shu tiao	1
+🍠	di gua	1
+🍠	fan shu	1
+🍠	hong shu	1
+🍠	kao di gua	1
+🍠	kao hong shu	1
+🍠	shi wu	1
+🍠	shu	1
+🍠	zi shu	1
+🍡	nuo mi tuan	1
+🍡	rou wan	1
+🍡	shi wu	1
+🍡	tuan zi	1
+🍡	wan zi	1
+🍡	xiao wan zi	1
+🍢	chuan chuan	1
+🍢	guan dong zhu	1
+🍢	shi wu	1
+🍣	san wen yu	1
+🍣	shi wu	1
+🍣	shou si	1
+🍤	chao xia	1
+🍤	da xia	1
+🍤	shi wu	1
+🍤	tian fu luo	1
+🍤	xia ren	1
+🍤	zha xia	1
+🍥	niu er bing	1
+🍥	shi wu	1
+🍥	xue bing	1
+🍥	yu ban	1
+🍦	bing ji ling	1
+🍦	bing qi lin	1
+🍦	ha gen da si	1
+🍦	sheng dai	1
+🍦	shi wu	1
+🍦	shuang qi lin	1
+🍦	tian tong	1
+🍦	xue gao	1
+🍧	bao bing	1
+🍧	shi wu	1
+🍨	bing ji ling	1
+🍨	bing qi lin	1
+🍨	shi wu	1
+🍨	xue gao	1
+🍩	duo na quan	1
+🍩	mian bao quan	1
+🍩	shi wu	1
+🍩	tian tian quan	1
+🍪	ao li ao	1
+🍪	bing gan	1
+🍪	qu qi	1
+🍪	qu qi bing	1
+🍪	shi wu	1
+🍪	su bing	1
+🍫	de fu	1
+🍫	mai li su	1
+🍫	qiao ke li	1
+🍫	shi wu	1
+🍬	mi tang	1
+🍬	nai tang	1
+🍬	niu ya tang	1
+🍬	shi wu	1
+🍬	tang	1
+🍬	tang guo	1
+🍭	bang bang tang	1
+🍭	shi wu	1
+🍮	bu ding	1
+🍮	jiao tang bu ding	1
+🍮	shi wu	1
+🍮	tian dian	1
+🍮	tian pin	1
+🍯	feng mi guan	1
+🍯	mi guan	1
+🍯	shi wu	1
+🍰	cao mei dan gao	1
+🍰	dan gao	1
+🍰	dan gao dian	1
+🍰	mu si	1
+🍰	shi wu	1
+🍰	tian shi	1
+🍱	bian dang	1
+🍱	he fan	1
+🍱	jian can	1
+🍱	kuai can	1
+🍱	shi wu	1
+🍲	bao tang	1
+🍲	chi huo guo	1
+🍲	dong tian chi huo guo	1
+🍲	huo guo	1
+🍲	nong tang	1
+🍲	re qi teng teng	1
+🍲	re tang	1
+🍲	shi wu	1
+🍳	jian dan	1
+🍳	jian ji dan	1
+🍳	peng ren	1
+🍳	shi wu	1
+🍴	can ju	1
+🍴	can ting	1
+🍴	dao cha	1
+🍴	shi wu	1
+🍴	xi can	1
+🍴	yong can	1
+🍵	cha	1
+🍵	cha bei	1
+🍵	cha dao	1
+🍵	cha shui	1
+🍵	cha tang	1
+🍵	cha wei	1
+🍵	cha yi	1
+🍵	he cha	1
+🍵	lv cha	1
+🍵	mo cha	1
+🍵	pin cha	1
+🍵	yin liao	1
+🍶	bai jiu	1
+🍶	jiu ping he jiu bei	1
+🍶	qing jiu	1
+🍶	yin liao	1
+🍷	gan hong	1
+🍷	hong jiu	1
+🍷	hong jiu bei	1
+🍷	jiu bei	1
+🍷	mei jiu	1
+🍷	pin jiu	1
+🍷	pu tao jiu	1
+🍷	yin liao	1
+🍸	ji wei jiu	1
+🍸	ji wei jiu bei	1
+🍸	ji wei jiu jiu bei	1
+🍸	jiu bei	1
+🍸	yin liao	1
+🍹	guo zhi	1
+🍹	leng yin	1
+🍹	re dai yin pin	1
+🍹	xian zha	1
+🍹	yin liao	1
+🍺	gan bei	1
+🍺	he pi jiu	1
+🍺	he yi bei	1
+🍺	pi jiu	1
+🍺	pi jiu bei	1
+🍺	yin liao	1
+🍻	bu zui bu gui	1
+🍻	gan bei	1
+🍻	jing jiu	1
+🍻	ju bei	1
+🍻	peng bei	1
+🍻	pi jiu	1
+🍻	pi jiu bei	1
+🍻	su zui	1
+🍻	yin jiu	1
+🍻	yin liao	1
+🍼	nai ping	1
+🍼	wei nai	1
+🍽️	dao cha he can pan	1
+🍽️	xi shi can ju	1
+🍾️	ruan mu sai ping	1
+🍾️	xiang bin jiu	1
+🍿️	bao mi hua	1
+🎀	duan dai	1
+🎀	hu die jie	1
+🎀	qing zhu	1
+🎀	si dai	1
+🎁	hui li	1
+🎁	li he	1
+🎁	li pin	1
+🎁	li wu	1
+🎁	qing zhu	1
+🎁	sheng dan li wu	1
+🎁	shou dao li wu	1
+🎁	zhan yi	1
+🎂	cao mei dan gao	1
+🎂	da shou	1
+🎂	dan gao	1
+🎂	mei wei dan gao	1
+🎂	qing zhu	1
+🎂	sheng kuai	1
+🎂	sheng ri	1
+🎂	sheng ri dan gao	1
+🎂	sheng ri kuai le	1
+🎂	sheng ri pa	1
+🎃	nan gua	1
+🎃	nan gua deng	1
+🎃	nan gua deng long	1
+🎃	qing zhu	1
+🎃	wan sheng jie	1
+🎄	qing zhu	1
+🎄	sheng dan	1
+🎄	sheng dan jie	1
+🎄	sheng dan shu	1
+🎄	sheng dan ye	1
+🎅	qing zhu	1
+🎅	sheng dan kuai le	1
+🎅	sheng dan lao gong gong	1
+🎅	sheng dan lao ren	1
+🎅	sheng dan lao ye ye	1
+🎅	sheng dan qi xi	1
+🎆	hua huo	1
+🎆	ji dian	1
+🎆	li hua	1
+🎆	qing zhu	1
+🎆	xuan lan	1
+🎆	yan hua	1
+🎆	yan huo	1
+🎇	hua huo	1
+🎇	li hua	1
+🎇	qing zhu	1
+🎇	xian nv bang	1
+🎇	yan hua	1
+🎇	yan huo	1
+🎈	qi qiu	1
+🎈	qing dian	1
+🎈	qing zhu	1
+🎉	gou wu kuang huan jie	1
+🎉	kuang huan	1
+🎉	kuang huan jie	1
+🎉	la pao	1
+🎉	li bin hua	1
+🎉	pai dui	1
+🎉	pai dui li bin hua	1
+🎉	qing dian	1
+🎉	qing zhu	1
+🎊	cai se sui zhi	1
+🎊	qing zhu	1
+🎊	sui hua cai qiu	1
+🎊	tang guo qiu	1
+🎋	qi xi	1
+🎋	qi xi jie	1
+🎋	qi xi shu	1
+🎋	qing zhu	1
+🎋	xu yuan	1
+🎍	men song	1
+🎍	pen zai	1
+🎍	ri ben xin nian	1
+🎍	zhi wu	1
+🎍	zhu jie	1
+🎍	zhu shi pin	1
+🎎	fu fu	1
+🎎	fu qi	1
+🎎	hun li	1
+🎎	hun qing	1
+🎎	jie hun	1
+🎎	qing zhu	1
+🎎	ri ben nv er jie	1
+🎎	ri shi ren ou	1
+🎎	xin hun fu fu	1
+🎎	yong yuan xing fu	1
+🎏	li yu qi	1
+🎏	qing zhu	1
+🎏	ri ben nan er jie	1
+🎐	feng ling	1
+🎐	feng ling jie	1
+🎐	qing zhu	1
+🎑	qing zhu	1
+🎑	zhong qiu	1
+🎑	zhong qiu jie	1
+🎒	bei bao	1
+🎒	huo dong	1
+🎒	shang xue	1
+🎒	shi ye shi	1
+🎒	shu bao	1
+🎒	shuang jian bao	1
+🎓	bi ye	1
+🎓	bi ye mao	1
+🎓	bi ye sheng	1
+🎓	bi ye zhao	1
+🎓	jie ye shi	1
+🎓	qing zhu	1
+🎖️	jun gong xun zhang	1
+🎖️	jun gong zhang	1
+🎗️	huang si dai	1
+🎗️	ti xing dai	1
+🎙️	hua tong	1
+🎙️	mai ke feng	1
+🎚️	dian ping hua kuai	1
+🎚️	shui ping hua kuai	1
+🎛️	kong zhi xuan niu	1
+🎞️	dian ying jiao juan hua mian	1
+🎞️	jiao pian	1
+🎟️	ru chang quan	1
+🎠	er tong le yuan	1
+🎠	huo dong	1
+🎠	xuan mu	1
+🎠	xuan zhuan mu ma	1
+🎠	you le chang	1
+🎠	you le yuan	1
+🎡	huo dong	1
+🎡	mo tian lun	1
+🎡	you le chang	1
+🎢	guo shan che	1
+🎢	huo dong	1
+🎢	yu le	1
+🎢	yun xiao fei che	1
+🎣	diao yu	1
+🎣	diao yu chang	1
+🎣	huo dong	1
+🎣	yun dong	1
+🎤	chang ge	1
+🎤	huo dong	1
+🎤	mai ke feng	1
+🎤	yin yue	1
+🎤	yu le	1
+🎥	dian ying	1
+🎥	fang ying	1
+🎥	huo dong	1
+🎥	she xiang ji	1
+🎥	she ying ji	1
+🎦	dian ying yuan	1
+🎦	fang ying shi	1
+🎦	huo dong	1
+🎦	kan dian ying	1
+🎦	ying yuan	1
+🎧	er ji	1
+🎧	yin yue	1
+🎨	diao se ban	1
+🎨	hui hua	1
+🎨	huo dong	1
+🎨	mei shu	1
+🎨	shang se	1
+🎨	tiao se ban	1
+🎨	yan liao	1
+🎨	yi shu	1
+🎩	fu zhuang	1
+🎩	li mao	1
+🎩	mao	1
+🎩	mao zi	1
+🎩	xi ju	1
+🎪	huo dong	1
+🎪	ma xi tuan	1
+🎫	huo dong	1
+🎫	men piao	1
+🎫	piao	1
+🎫	piao ju	1
+🎫	ru chang quan	1
+🎬	chang ji ban	1
+🎬	dian ying	1
+🎬	dian ying da ban	1
+🎬	huo dong	1
+🎬	ju zu	1
+🎬	pai she	1
+🎭	biao yan yi shu	1
+🎭	jia mian	1
+🎭	jue se	1
+🎭	mian ju	1
+🎭	shuang huang	1
+🎭	tou xiang	1
+🎭	xiang sheng	1
+🎮	da you xi	1
+🎮	dian shi you le qi	1
+🎮	shi pin you xi	1
+🎮	shou bing	1
+🎮	wan you xi	1
+🎮	yao gan	1
+🎮	you xi	1
+🎮	you xi ji	1
+🎮	you xi shou bing	1
+🎯	ba xin	1
+🎯	biao ba	1
+🎯	ming zhong	1
+🎯	zheng zhong hong xin	1
+🎯	zhi jie ming zhong	1
+🎰	chi jiao zi lao hu	1
+🎰	du chang	1
+🎰	lao hu ji	1
+🎰	you xi	1
+🎱	tai qiu	1
+🎱	zhuang qiu	1
+🎱	zhuo qiu	1
+🎲	du bo	1
+🎲	tou zi	1
+🎳	bao ling qiu	1
+🎴	hua pu ke pai	1
+🎴	hua zha pai	1
+🎴	pu ke pai	1
+🎴	zhi pai	1
+🎵	bei jing yin yue	1
+🎵	bo fang qi	1
+🎵	qu mu	1
+🎵	xiao ye qu	1
+🎵	yin fu	1
+🎵	yin yue	1
+🎵	yin yue ju	1
+🎵	yin yue ke	1
+🎶	xuan lv	1
+🎶	yin fu	1
+🎶	yin yue	1
+🎷	sa ke si	1
+🎷	sa ke si feng	1
+🎷	sa ke si guan	1
+🎷	yin yue	1
+🎸	ji ta	1
+🎸	yin yue	1
+🎹	dan gang qin	1
+🎹	dian zi qin	1
+🎹	gang qin	1
+🎹	jian pan	1
+🎹	qin	1
+🎹	qin jian	1
+🎹	yin yue	1
+🎹	yin yue jian pan	1
+🎺	la ba	1
+🎺	xiao hao	1
+🎺	yin yue	1
+🎻	xiao ti qin	1
+🎻	yin yue	1
+🎼	yin yue hui	1
+🎼	yin yue	1
+🎼	yue pu	1
+🎽	bei xin	1
+🎽	wang qiu shan	1
+🎽	yun dong	1
+🎽	yun dong bei xin	1
+🎽	yun dong shan	1
+🎾	wang qiu	1
+🎾	yun dong	1
+🎿	hua bing	1
+🎿	hua xue	1
+🎿	hua xue chang	1
+🎿	hua xue xie	1
+🎿	shuang ban	1
+🎿	yun dong	1
+🏀	da qiu	1
+🏀	kou lan	1
+🏀	lan qiu	1
+🏀	lan qiu sai	1
+🏀	qiu sai	1
+🏀	yun dong	1
+🏁	ge zi qi	1
+🏁	sai che	1
+🏁	yun dong	1
+🏁	zhong dian	1
+🏂	dan ban	1
+🏂	dan ban hua xue	1
+🏂	hua xue	1
+🏂	hua xue ban	1
+🏂	xue ban	1
+🏂	xue de hua ban	1
+🏂	yun dong	1
+🏃	ben pao	1
+🏃	chen pao	1
+🏃	kai pao	1
+🏃	ma la song	1
+🏃	pao bu	1
+🏃	pao bu zhe	1
+🏃	sai pao	1
+🏃	yun dong	1
+🏃‍♀️	ben pao	1
+🏃‍♀️	chen pao	1
+🏃‍♀️	kai pao	1
+🏃‍♀️	ma la song	1
+🏃‍♀️	pao bu	1
+🏃‍♀️	pao bu zhe	1
+🏃‍♀️	sai pao	1
+🏃‍♀️	yun dong	1
+🏄	chong lang	1
+🏄	chong lang zhe	1
+🏄	yun dong	1
+🏄‍♀️	chong lang	1
+🏄‍♀️	chong lang zhe	1
+🏄‍♀️	yun dong	1
+🏅️	jin pai	1
+🏅️	yun dong hui jiang pai	1
+🏅️	yun dong jiang pai	1
+🏆	duo guan	1
+🏆	guan jun	1
+🏆	huo jiang	1
+🏆	jiang bei	1
+🏆	yun dong	1
+🏇	sai ma	1
+🏇	sai ma qi shi	1
+🏇	yun dong	1
+🏈	gan lan qiu	1
+🏈	mei shi gan lan qiu	1
+🏈	mei shi zu qiu	1
+🏈	yun dong	1
+🏉	gan lan qiu	1
+🏉	yun dong	1
+🏊	you shui	1
+🏊	you yong	1
+🏊	you yong chi	1
+🏊	you yong guan	1
+🏊	you yong zhe	1
+🏊	yun dong	1
+🏊‍♀️	you shui	1
+🏊‍♀️	you yong	1
+🏊‍♀️	you yong chi	1
+🏊‍♀️	you yong guan	1
+🏊‍♀️	you yong zhe	1
+🏊‍♀️	yun dong	1
+🏋️	ju zhong yuan	1
+🏋️	ju zhong zhe	1
+🏋️‍♀️	ju zhong yuan	1
+🏋️‍♀️	ju zhong zhe	1
+🏌️	da gao er fu	1
+🏌️	gao er fu qiu shou	1
+🏌️	yun dong	1
+🏌️‍♀️	da gao er fu	1
+🏌️‍♀️	gao er fu qiu shou	1
+🏌️‍♀️	yun dong	1
+🏍️	mo tuo che	1
+🏎️	sai che	1
+🏏️	ban qiu	1
+🏐️	pai qiu	1
+🏑️	qu gun qiu	1
+🏒️	bing qiu	1
+🏒️	bing shang qu gun qiu	1
+🏓️	ping pang qiu	1
+🏔️	xue shan	1
+🏕️	lu ying	1
+🏕️	lu ying hua ka	1
+🏖️	hai bin	1
+🏖️	sha tan	1
+🏗️	fang wu gou zao	1
+🏘️	zhu zhai jian zhu	1
+🏙️	cheng shi hua ka	1
+🏙️	du shi feng guang	1
+🏚️	fei qi jian zhu	1
+🏚️	wei fang	1
+🏛️	gu dian jian zhu	1
+🏜️	sha mo	1
+🏜️	sha mo hua ka	1
+🏝️	huang dao	1
+🏝️	huang dao hua ka	1
+🏝️	wu ren dao	1
+🏞️	guo jia gong yuan	1
+🏟️	ti yu chang	1
+🏠	bie shu	1
+🏠	fang wu	1
+🏠	fang zi	1
+🏠	jia	1
+🏠	jian zhu	1
+🏠	lou fang	1
+🏠	wu qi	1
+🏠	zhu jia	1
+🏠	zhu zhai	1
+🏠	zhu zhai lou	1
+🏡	bie shu	1
+🏡	fang wu	1
+🏡	fang zi	1
+🏡	jia	1
+🏡	jian zhu	1
+🏡	mu wu	1
+🏡	ting yuan	1
+🏡	wu qi	1
+🏡	yang fang	1
+🏡	zhu jia	1
+🏡	zhu zhai	1
+🏢	ban gong da lou	1
+🏢	ban gong lou	1
+🏢	jian zhu	1
+🏣	jian zhu	1
+🏣	ri ben you ju	1
+🏣	you ju	1
+🏤	jian zhu	1
+🏤	ou zhou you ju	1
+🏤	you ju	1
+🏥	jian zhu	1
+🏥	kan bing	1
+🏥	yi yuan	1
+🏦	jian zhu	1
+🏦	yin xing	1
+🏧	jian zhu	1
+🏧	qu kuan ji	1
+🏧	ti kuan ji	1
+🏧	zi dong gui yuan ji	1
+🏧	zi dong qu kuan ji	1
+🏨	bin guan	1
+🏨	fan dian	1
+🏨	jian zhu	1
+🏨	jiu dian	1
+🏨	lv guan	1
+🏩	ai qing lv guan	1
+🏩	bin guan	1
+🏩	jian zhu	1
+🏩	lian ai lv guan	1
+🏩	qing ren jiu dian	1
+🏪	bian li dian	1
+🏪	bian li shang dian	1
+🏪	jian zhu	1
+🏪	shi duo dian	1
+🏫	jian zhu	1
+🏫	xue xiao	1
+🏬	bai huo da lou	1
+🏬	bai huo gong si	1
+🏬	bai huo shang dian	1
+🏬	jian zhu	1
+🏭	gong chang	1
+🏭	gong ye qu	1
+🏭	jian zhu	1
+🏮	deng long	1
+🏮	jiu guan	1
+🏮	ju jiu wu	1
+🏮	ju jiu wu deng long	1
+🏮	qing zhu	1
+🏯	cheng bao	1
+🏯	jian zhu	1
+🏯	ri ben cheng bao	1
+🏰	cheng bao	1
+🏰	jian zhu	1
+🏰	ou zhou cheng bao	1
+🏳️	bai se qi zhi	1
+🏳️	ju bai qi	1
+🏳️	tou xiang	1
+🏳️‍🌈	cai hong qi	1
+🏳️‍🌈	tong xing lian jiao ao	1
+🏳️‍🌈	tong xing lian jiao ao qi	1
+🏳️‍🌈	tong xing lian jiao ao ri	1
+🏳️‍🌈	tong xing lian jiao ao you xing	1
+🏳️‍🌈	tong xing lian you xing	1
+🏳️‍🌈	tong xing lian zi hao	1
+🏳️‍🌈	tong xing lian zi hao qi	1
+🏳️‍🌈	tong xing lian zi hao ri	1
+🏳️‍🌈	tong xing lian zi hao you xing	1
+🏴️	hei se qi zhi	1
+🏴️	ju hei qi	1
+🏴️	piao yang de hai dao qi	1
+🏴️	si wang zhi qi	1
+🏵️	mei gui hua jie	1
+🏵️	qiang wei hua shi	1
+🏵️	yuan hua shi	1
+🏷️	biao qian	1
+🏸️	yu mao qiu	1
+🏹️	gong jian	1
+🏹️	gong nu	1
+🏺️	liang er xi jing guan	1
+🏺️	shuang er ping	1
+🏺️	shuang er xi jing tuo yuan tu guan	1
+🏻	qian fu se	1
+🏻	qian se	1
+🏼	fu se	1
+🏼	rou se	1
+🏽	shen rou se	1
+🏾	zong he fu se	1
+🏾	zong se	1
+🏿	shen se	1
+🏿	shen zong se	1
+🐀	dong wu	1
+🐀	lao shu	1
+🐁	bai lao shu	1
+🐁	bai shu	1
+🐁	dong wu	1
+🐁	lao shu	1
+🐁	xiao bai shu	1
+🐂	dong wu	1
+🐂	gong niu	1
+🐂	niu	1
+🐃	dong wu	1
+🐃	niu	1
+🐃	shui niu	1
+🐄	dong wu	1
+🐄	mu niu	1
+🐄	nai niu	1
+🐄	niu	1
+🐅	dong wu	1
+🐅	lao hu	1
+🐆	bao	1
+🐆	dong wu	1
+🐆	hua bao	1
+🐇	dong wu	1
+🐇	tu zi	1
+🐈	dong wu	1
+🐈	jia mao	1
+🐈	mao	1
+🐈	mao mi	1
+🐉	dong wu	1
+🐉	long	1
+🐉	qing long	1
+🐊	dong wu	1
+🐊	e yu	1
+🐋	dong wu	1
+🐋	jing yu	1
+🐋	mo xiang jing	1
+🐌	dong wu	1
+🐌	wo niu	1
+🐍	da mang	1
+🐍	dong wu	1
+🐍	mang	1
+🐍	she	1
+🐎	dong wu	1
+🐎	ma	1
+🐎	ma er	1
+🐎	sai ma	1
+🐎	shen ma	1
+🐎	xiao ma	1
+🐏	dong wu	1
+🐏	gong yang	1
+🐐	dong wu	1
+🐐	shan yang	1
+🐐	yang	1
+🐑	dong wu	1
+🐑	fang yang	1
+🐑	gao	1
+🐑	jin yang	1
+🐑	mian yang	1
+🐑	mie mie	1
+🐑	yang	1
+🐑	yang gao	1
+🐑	yang yang	1
+🐒	dong wu	1
+🐒	hou	1
+🐒	hou er	1
+🐒	hou wang	1
+🐒	hou zi	1
+🐓	da ming	1
+🐓	dong wu	1
+🐓	gong ji	1
+🐔	dong wu	1
+🐔	ji	1
+🐔	xiao ji	1
+🐔	xiao ji tou	1
+🐕	dong wu	1
+🐕	gou	1
+🐖	dong wu	1
+🐖	zhu	1
+🐗	dong wu	1
+🐗	gong zhu	1
+🐗	ye zhu	1
+🐗	ye zhu tou	1
+🐗	zhu	1
+🐗	zhu tou	1
+🐘	da xiang	1
+🐘	dong wu	1
+🐘	xiang	1
+🐘	xiao xiang	1
+🐙	ba zhao yu	1
+🐙	dong wu	1
+🐙	you yu	1
+🐙	zhang yu	1
+🐚	bei ke	1
+🐚	dong wu	1
+🐚	hai bei	1
+🐚	hai luo	1
+🐚	shan bei	1
+🐛	chong	1
+🐛	chong zi	1
+🐛	dong wu	1
+🐛	mao chong	1
+🐛	mao mao chong	1
+🐛	qing chong	1
+🐛	tang bao	1
+🐜	chong zi	1
+🐜	dong wu	1
+🐜	ma yi	1
+🐝	dong wu	1
+🐝	mi feng	1
+🐝	qin lao de mi feng	1
+🐞	dong wu	1
+🐞	jia ke chong	1
+🐞	piao chong	1
+🐟	bu yu	1
+🐟	dong wu	1
+🐟	ji yu	1
+🐟	li yu	1
+🐟	lu yu	1
+🐟	xue yu	1
+🐟	yin yu	1
+🐟	yu	1
+🐠	da yu	1
+🐠	dong wu	1
+🐠	hai yu	1
+🐠	re dai yu	1
+🐠	xiao yu er	1
+🐠	yu	1
+🐠	yu er	1
+🐡	dong wu	1
+🐡	he tun	1
+🐢	dong wu	1
+🐢	gui	1
+🐢	shen gui	1
+🐢	wu gui	1
+🐣	chu sheng	1
+🐣	dong wu	1
+🐣	fu hua	1
+🐣	fu xiao ji	1
+🐣	po ke	1
+🐣	po ke er chu	1
+🐣	tuo ke er chu	1
+🐣	tuo qiao er chu	1
+🐣	xiao ji	1
+🐤	dong wu	1
+🐤	ji bao bao	1
+🐤	ji zai lian	1
+🐤	xiao ji	1
+🐤	xiao ji bao bao	1
+🐥	dong wu	1
+🐥	xiao ji	1
+🐥	zheng mian de ji bao bao	1
+🐥	zheng mian de xiao ji	1
+🐥	zheng mian de xiao ji bao bao	1
+🐦	dong wu	1
+🐦	ge zi	1
+🐦	niao	1
+🐦	niao er	1
+🐦	xiao niao	1
+🐦	xiao niao lian	1
+🐧	dong wu	1
+🐧	qi e	1
+🐧	qi e lian	1
+🐨	dong wu	1
+🐨	kao la	1
+🐨	ke la xiong	1
+🐨	shu dai xiong	1
+🐨	wu wei xiong	1
+🐩	dong wu	1
+🐩	gou	1
+🐩	gui bin gou	1
+🐩	gui fu quan	1
+🐩	juan mao gou	1
+🐩	juan mao shi zi gou	1
+🐩	quan	1
+🐩	shi zi gou	1
+🐪	dan feng luo tuo	1
+🐪	dan feng tuo	1
+🐪	dong wu	1
+🐪	luo tuo	1
+🐫	dong wu	1
+🐫	luo tuo	1
+🐫	shuang feng luo tuo	1
+🐫	shuang feng tuo	1
+🐬	dong wu	1
+🐬	hai tun	1
+🐭	dong wu	1
+🐭	hao zi	1
+🐭	lao shu	1
+🐭	lao shu lian	1
+🐭	shu	1
+🐭	shu lian	1
+🐮	da niu	1
+🐮	dong wu	1
+🐮	dong wu biao qing	1
+🐮	mu niu	1
+🐮	niu	1
+🐮	niu lian	1
+🐮	niu niu	1
+🐯	dong wu	1
+🐯	hu	1
+🐯	hu lian	1
+🐯	hu tou	1
+🐯	lao hu	1
+🐯	lao hu lian	1
+🐯	xiao hu	1
+🐰	bai tu	1
+🐰	da bai tu	1
+🐰	dong wu	1
+🐰	tu	1
+🐰	tu lian	1
+🐰	tu tu	1
+🐰	tu zi	1
+🐰	tu zi lian	1
+🐰	xiao bai tu	1
+🐰	yang tu zi	1
+🐱	da lian mao	1
+🐱	dong wu	1
+🐱	jia fei mao	1
+🐱	mao	1
+🐱	mao er	1
+🐱	mao lian	1
+🐱	mao mao	1
+🐱	miao	1
+🐱	miao miao	1
+🐱	miao wu	1
+🐱	miao xing ren	1
+🐱	yang mao	1
+🐲	dong wu	1
+🐲	long	1
+🐲	long lian	1
+🐲	long tou	1
+🐲	long wang	1
+🐲	zhong guo long	1
+🐳	dong wu	1
+🐳	jing	1
+🐳	jing yu	1
+🐳	pen shui	1
+🐳	pen shui jing yu	1
+🐴	dong wu	1
+🐴	ma	1
+🐴	ma lian	1
+🐴	ma tou	1
+🐴	shen ma	1
+🐵	dong wu	1
+🐵	hou	1
+🐵	hou lian	1
+🐵	hou zi	1
+🐵	hou zi lian	1
+🐶	a gou	1
+🐶	ai quan	1
+🐶	dong wu	1
+🐶	fei	1
+🐶	gong gou	1
+🐶	gou	1
+🐶	gou er	1
+🐶	gou gai bu le chi shi	1
+🐶	gou lian	1
+🐶	gou zai	1
+🐶	gou zi	1
+🐶	huang gou	1
+🐶	ji wa wa	1
+🐶	kan men gou	1
+🐶	ke ai	1
+🐶	la bu la duo	1
+🐶	mai meng	1
+🐶	wang wang	1
+🐶	xiao gou	1
+🐶	yang gou	1
+🐶	you quan	1
+🐷	ba jie	1
+🐷	da zhu	1
+🐷	dong wu	1
+🐷	hong zhu	1
+🐷	lan zhu	1
+🐷	mai dou	1
+🐷	mu zhu	1
+🐷	pang cheng zhu	1
+🐷	xiao zhu	1
+🐷	zhu	1
+🐷	zhu lian	1
+🐷	zhu tou	1
+🐷	zhu yi yang de dui you	1
+🐷	zhu zhu	1
+🐸	dong wu	1
+🐸	dong wu biao qing	1
+🐸	qing wa	1
+🐸	qing wa lian	1
+🐸	wa	1
+🐸	xiao qing wa	1
+🐹	cang shu	1
+🐹	cang shu lian	1
+🐹	dong wu	1
+🐺	dong wu	1
+🐺	lang	1
+🐺	lang lian	1
+🐻	da xiong	1
+🐻	dong wu	1
+🐻	gou xiong	1
+🐻	tai di	1
+🐻	xiao xiong	1
+🐻	xiong	1
+🐻	xiong lian	1
+🐻	xiong xiong	1
+🐻	xiong yang	1
+🐼	da xiong mao	1
+🐼	dong wu	1
+🐼	guo bao	1
+🐼	mao xiong	1
+🐼	xiao xiong mao	1
+🐼	xiong mao	1
+🐼	xiong mao lian	1
+🐽	dong wu	1
+🐽	zhu bi	1
+🐾	dong wu	1
+🐾	dong wu zu yin	1
+🐾	zhang yin	1
+🐾	zhao yin	1
+🐿️	hua li shu	1
+🐿️	jin hua shu	1
+🐿️	jin li shu	1
+🐿️	song shu	1
+👀	ca liang yan jing	1
+👀	deng yan	1
+👀	hei yan quan	1
+👀	kan	1
+👀	mu	1
+👀	qi guan	1
+👀	yan	1
+👀	yan jing	1
+👀	zheng kai yan	1
+👁️	yan jing	1
+👂	er	1
+👂	er dong	1
+👂	er duo	1
+👂	lian bu qi guan	1
+👂	long	1
+👂	qi guan	1
+👂	qing ting	1
+👂	ting	1
+👃	bi	1
+👃	bi kong	1
+👃	bi liang	1
+👃	bi sai	1
+👃	bi tou	1
+👃	bi yan	1
+👃	bi yi	1
+👃	bi zi	1
+👃	hu xi	1
+👃	long bi	1
+👃	qi guan	1
+👃	wen	1
+👄	chun	1
+👄	hong chun	1
+👄	lian bu qi guan	1
+👄	qi guan	1
+👄	qin zui	1
+👄	shuo hua	1
+👄	xiang wen	1
+👄	zui	1
+👄	zui ba	1
+👄	zui chun	1
+👅	chang	1
+👅	qi guan	1
+👅	she tou	1
+👆	shang mian	1
+👆	shi zhi	1
+👆	shou shi	1
+👆	xiang shang	1
+👆	xiang shang shou shi	1
+👇	chuo	1
+👇	shou shi	1
+👇	xia mian	1
+👇	xiang xia	1
+👇	xiang xia shou shi	1
+👈	shou shi	1
+👈	xiang zuo	1
+👈	xiang zuo shou shi	1
+👈	zuo bian	1
+👉	shou shi	1
+👉	xiang you	1
+👉	xiang you shou shi	1
+👉	you bian	1
+👊	da ji	1
+👊	hui quan	1
+👊	quan tou	1
+👊	quan tou shou shi	1
+👊	shou shi	1
+👊	ying zhan	1
+👋	bai bai	1
+👋	hui shou	1
+👋	ni hao	1
+👋	shou	1
+👋	shou shi	1
+👋	zai jian	1
+👋	zhao shou	1
+👌	hao	1
+👌	mei wen ti	1
+👌	que ren shou shi	1
+👌	shou shi	1
+👍	biao yang	1
+👍	cheng zan	1
+👍	dian zan	1
+👍	ding gua gua	1
+👍	fei chang hao	1
+👍	shen de ren xin	1
+👍	shou shi	1
+👍	shu mu zhi	1
+👍	shu qi mu zhi	1
+👍	te zan	1
+👍	ting zan	1
+👍	yi bai ge zan	1
+👍	zan	1
+👎	bi shi	1
+👎	bu hao	1
+👎	cai	1
+👎	cha jin	1
+👎	chao feng	1
+👎	mu zhi chao xia	1
+👎	qie	1
+👎	shou shi	1
+👏	ci chu ying you zhang sheng	1
+👏	ci wai ying you zhang sheng	1
+👏	gu gu zhang	1
+👏	gu zhang	1
+👏	huan ying	1
+👏	pai shou	1
+👏	shou shi	1
+👏	zhang sheng	1
+👐	mei ban fa	1
+👐	shou	1
+👐	shou shi	1
+👐	shuang shou zhang kai	1
+👐	shuang zhang	1
+👐	tan kai shou	1
+👐	wu neng wei li	1
+👐	zhang kai shuang shou	1
+👑	fu zhuang	1
+👑	huang guan	1
+👑	huang zu	1
+👑	wang guan	1
+👒	fu zhuang	1
+👒	li mao	1
+👒	mao	1
+👒	mao zi	1
+👒	shi nv mao	1
+👓	fu zhuang	1
+👓	jin shi	1
+👓	jing kuang	1
+👓	yan jing	1
+👔	chen shan	1
+👔	chen shan ling dai	1
+👔	fu zhuang	1
+👔	ling dai	1
+👔	yi fu	1
+👔	zheng zhuang	1
+👕	chen shan	1
+👕	fu zhuang	1
+👕	shan	1
+👕	shang yi	1
+👕	xiu xian zhuang	1
+👕	yuan ling shan	1
+👖	chang ku	1
+👖	fu zhuang	1
+👖	ku	1
+👖	ku zi	1
+👖	niu zai ku	1
+👗	fu zhuang	1
+👗	lian yi qun	1
+👗	qun zi	1
+👗	yang zhuang	1
+👗	yi fu	1
+👘	fu zhuang	1
+👘	he fu	1
+👘	ri shi fu zhuang	1
+👘	yu yi	1
+👙	bi ji ni	1
+👙	fu zhuang	1
+👙	nei yi	1
+👙	san dian shi	1
+👙	yong zhuang	1
+👚	fu zhuang	1
+👚	shang yi	1
+👛	fu zhuang	1
+👛	ling qian bao	1
+👛	qian bao	1
+👜	fu zhuang	1
+👜	kua bao	1
+👜	shou ti bao	1
+👜	ti bao	1
+👝	fu zhuang	1
+👝	he bao	1
+👝	pi bao	1
+👝	qian bao	1
+👝	xiao bao bao	1
+👞	fu zhuang	1
+👞	pi xie	1
+👟	chao xie	1
+👟	fu zhuang	1
+👟	xie	1
+👟	xiu xian xie	1
+👟	yun dong xie	1
+👠	fu zhuang	1
+👠	gao gen	1
+👠	gao gen xie	1
+👠	xie	1
+👡	fu zhuang	1
+👡	liang xie	1
+👢	fu zhuang	1
+👢	xue	1
+👢	xue zi	1
+👢	zhang xue	1
+👣	jiao bu	1
+👣	jiao yin	1
+👣	qi guan	1
+👣	shuang jiao	1
+👣	zu ji	1
+👣	zu yin	1
+👤	ban shen xiang	1
+👤	dan ren	1
+👤	ge ren	1
+👤	ke ren zhang hu	1
+👤	ren wu jian ying	1
+👤	tou xiang	1
+👥	duo ren	1
+👥	shuang ren	1
+👥	tou xiang	1
+👦	er zi	1
+👦	tou xiang	1
+👧	tou xiang	1
+👧	xiao luo li	1
+👨	fu qin	1
+👨	lao die	1
+👨	tou xiang	1
+👨‍⚕️	wei sheng gong zuo zhe	1
+👨‍⚕️	yi hu ren yuan	1
+👨‍⚕️	yi wu ren yuan	1
+👨‍⚖️	fa guan	1
+👨‍✈️	fei ji jia shi yuan	1
+👨‍✈️	fei xing yuan	1
+👨‍❤️‍👨	xiong di qing shen	1
+👨‍❤️‍💋‍👨	qin wen	1
+👨‍🌾	nong fu	1
+👨‍🌾	nong min	1
+👨‍🍳	chu shi	1
+👨‍🍳	chu zi	1
+👨‍🎓	tong xue	1
+👨‍🎓	xue sheng	1
+👨‍🎤	ge shou	1
+👨‍🎤	ge xing	1
+👨‍🎤	ge zhe	1
+👨‍🎨	yi shu da shi	1
+👨‍🎨	yi shu gong zuo zhe	1
+👨‍🎨	yi shu jia	1
+👨‍🏫	lao shi	1
+👨‍🏭	gong ren	1
+👨‍👨‍👦	liang ba yi wa	1
+👨‍👨‍👦	yi jia san kou	1
+👨‍👨‍👦‍👦	liang ba liang er	1
+👨‍👨‍👦‍👦	yi jia si kou	1
+👨‍👨‍👧	liang ba yi wa	1
+👨‍👨‍👧	yi jia san kou	1
+👨‍👨‍👧‍👦	yi jia si kou	1
+👨‍👨‍👧‍👧	liang ge ba ba he liang ge nv er	1
+👨‍👨‍👧‍👧	yi jia si kou	1
+👨‍👩‍👦	yi jia san kou	1
+👨‍👩‍👦	yi suo de nan	1
+👨‍👩‍👦‍👦	ba ba ma ma he liang ge er zi	1
+👨‍👩‍👦‍👦	shuang long zhi jia	1
+👨‍👩‍👦‍👦	yi jia si kou	1
+👨‍👩‍👧	yi jia san kou	1
+👨‍👩‍👧‍👦	er nv shuang quan	1
+👨‍👩‍👧‍👦	jia you er nv	1
+👨‍👩‍👧‍👦	yi jia si kou	1
+👨‍👩‍👧‍👦	you er you nv	1
+👨‍👩‍👧‍👧	ba ma he liang ge nv er	1
+👨‍👩‍👧‍👧	shuang feng zhi jia	1
+👨‍👩‍👧‍👧	yi jia ren	1
+👨‍👩‍👧‍👧	yi jia si kou	1
+👨‍💻	ji shi	1
+👨‍💼	shang ban zu	1
+👨‍💼	zhi yuan	1
+👨‍🔧	ji gong	1
+👨‍🔧	ji xie shi	1
+👨‍🔬	ke xue jia	1
+👨‍🚀	yu hang yuan	1
+👨‍🚒	jiu huo dui yuan	1
+👨‍🚒	xiao fang yuan	1
+👩	mu qin	1
+👩	tou xiang	1
+👩‍⚕️	wei sheng gong zuo zhe	1
+👩‍⚕️	yi hu ren yuan	1
+👩‍⚕️	yi wu ren yuan	1
+👩‍⚖️	fa guan	1
+👩‍✈️	fei ji jia shi yuan	1
+👩‍✈️	fei xing yuan	1
+👩‍❤️‍👩	gui mi qing yi	1
+👩‍❤️‍👩	jie mei qing shen	1
+👩‍❤️‍👩	la la	1
+👩‍❤️‍💋‍👩	la la zhi wen	1
+👩‍❤️‍💋‍👩	qin wen	1
+👩‍🌾	nong fu	1
+👩‍🌾	nong min	1
+👩‍🍳	chu shi	1
+👩‍🍳	chu zi	1
+👩‍🎓	tong xue	1
+👩‍🎓	xue sheng	1
+👩‍🎤	ge shou	1
+👩‍🎤	ge xing	1
+👩‍🎤	ge zhe	1
+👩‍🎨	yi shu da shi	1
+👩‍🎨	yi shu gong zuo zhe	1
+👩‍🎨	yi shu jia	1
+👩‍🏫	lao shi	1
+👩‍🏭	gong ren	1
+👩‍👩‍👦	liang ge ma ma he er zi	1
+👩‍👩‍👦	yi jia san kou	1
+👩‍👩‍👦‍👦	liang ma liang wa	1
+👩‍👩‍👦‍👦	yi jia si kou	1
+👩‍👩‍👧	liang ma yi wa	1
+👩‍👩‍👧	yi jia san kou	1
+👩‍👩‍👧‍👦	liang ma liang wa	1
+👩‍👩‍👧‍👦	yi jia si kou	1
+👩‍👩‍👧‍👧	liang ma liang nv er	1
+👩‍👩‍👧‍👧	yi jia si kou	1
+👩‍💻	ji shi	1
+👩‍💼	shang ban zu	1
+👩‍💼	zhi yuan	1
+👩‍🔧	ji gong	1
+👩‍🔧	ji xie shi	1
+👩‍🔬	ke xue jia	1
+👩‍🚀	yu hang yuan	1
+👩‍🚒	jiu huo dui yuan	1
+👩‍🚒	xiao fang yuan	1
+👪	fu mu yu er zi	1
+👪	jia ren	1
+👪	jia ting	1
+👪	quan jia fu	1
+👪	tuan ju	1
+👪	tuan yuan	1
+👪	xing fu jia ting	1
+👪	yi jia ren	1
+👪	yi jia san kou	1
+👫	jia ren	1
+👫	qian shou	1
+👫	qing lv	1
+👬	ge lia	1
+👬	hao ji you	1
+👬	jia ren	1
+👬	peng you	1
+👬	qian shou	1
+👬	xiong di	1
+👬	you hao	1
+👬	you qing	1
+👭	gui mi	1
+👭	hao gui mi	1
+👭	hao peng you	1
+👭	jia ren	1
+👭	jie mei	1
+👭	lia jie mei	1
+👭	peng you	1
+👭	qian shou	1
+👭	you qing	1
+👮	jing cha	1
+👮	jing cha ge ge	1
+👮	jing cha shu shu	1
+👮	jing guan	1
+👮	min jing	1
+👮	tou xiang	1
+👮‍♀️	jing cha	1
+👮‍♀️	jing cha a yi	1
+👮‍♀️	jing cha jie jie	1
+👮‍♀️	jing guan	1
+👮‍♀️	min jing	1
+👮‍♀️	tou xiang	1
+👯	tiao wu de tu nv lang	1
+👯	tou xiang	1
+👯	tu nv lang	1
+👯‍♂️	tiao wu de tu nan lang	1
+👯‍♂️	tou xiang	1
+👯‍♂️	tu nan lang	1
+👰	hun sha	1
+👰	jie hun	1
+👰	niang zi	1
+👰	tou xiang	1
+👰	xin niang	1
+👱	jin fa	1
+👱	jin fa de nan ren	1
+👱	jin fa de ren	1
+👱	jin fa nan zi	1
+👱	nian qing ren	1
+👱	tou xiang	1
+👱	xi fang nan ren	1
+👱	xi fang ren	1
+👱‍♀️	jin fa	1
+👱‍♀️	jin fa de nv ren	1
+👱‍♀️	jin fa de ren	1
+👱‍♀️	jin fa nv lang	1
+👱‍♀️	nian qing ren	1
+👱‍♀️	tou xiang	1
+👱‍♀️	xi fang nv ren	1
+👱‍♀️	xi fang ren	1
+👲	di zhu	1
+👲	gua pi mao	1
+👲	tou xiang	1
+👲	tu hao	1
+👳	bao tou jin	1
+👳	bao tou jin de nan ren	1
+👳	tou jin	1
+👳	tou xiang	1
+👳‍♀️	bao tou jin	1
+👳‍♀️	bao tou jin de nv ren	1
+👳‍♀️	tou jin	1
+👳‍♀️	tou xiang	1
+👴	lao nian	1
+👴	lao ren	1
+👴	lao tou	1
+👴	lao tou zi	1
+👴	lao ye ye	1
+👴	tou xiang	1
+👴	ye	1
+👴	ye ye	1
+👴	zhang bei	1
+👴	zu fu	1
+👵	lao ban	1
+👵	lao fu ren	1
+👵	lao nai nai	1
+👵	lao tai tai	1
+👵	nai nai	1
+👵	tou xiang	1
+👵	wai po	1
+👵	zu mu	1
+👶	bao bao	1
+👶	guai bao bao	1
+👶	tou xiang	1
+👶	xin sheng er	1
+👶	ying er	1
+👶	ying you er	1
+👶	you er	1
+👶	yu er	1
+👷	gong ren	1
+👷	jian zhu gong ren	1
+👷	shi gong	1
+👷	tou xiang	1
+👷‍♀️	gong ren	1
+👷‍♀️	jian zhu gong ren	1
+👷‍♀️	shi gong	1
+👷‍♀️	tou xiang	1
+👸	bai xue gong zhu	1
+👸	gong zhu	1
+👸	hui gu niang	1
+👸	tong hua	1
+👸	tou xiang	1
+👹	e gui	1
+👹	guai wu	1
+👹	gui guai	1
+👹	mo gui	1
+👹	shi ren mo mian ju	1
+👹	tou xiang	1
+👺	tian gou	1
+👺	tou xiang	1
+👺	yao guai	1
+👻	gui hun	1
+👻	gui lian	1
+👻	tou xiang	1
+👻	yao guai	1
+👻	you ling	1
+👼	tian shi	1
+👼	tian shi bao bao	1
+👼	tou xiang	1
+👽	tou xiang	1
+👽	wai xing ren	1
+👾	guai shou	1
+👾	tou xiang	1
+👾	xiao jing ling	1
+👿	e mo	1
+👿	mao huo	1
+👿	tong hua	1
+👿	tou xiang	1
+👿	xiao e mo	1
+💀	ku lou	1
+💀	ku lou tou	1
+💀	si wang	1
+💀	tou gu	1
+💀	tou xiang	1
+💁	chan pin ming xing	1
+💁	fu wu yuan	1
+💁	ke fu	1
+💁	tou xiang	1
+💁‍♂️	chan pin ming xing	1
+💁‍♂️	fu wu yuan	1
+💁‍♂️	ke fu	1
+💁‍♂️	tou xiang	1
+💂	tou xiang	1
+💂	wei bing	1
+💂	wei shi	1
+💂‍♀️	tou xiang	1
+💂‍♀️	wei bing	1
+💂‍♀️	wei shi	1
+💃	tan ge	1
+💃	tiao wu	1
+💃	tiao wu zhe	1
+💃	tou xiang	1
+💃	wu dao jia	1
+💃	wu nv	1
+💃	wu xie	1
+💃	wu zhe	1
+💄	bian se chun gao	1
+💄	chun cai	1
+💄	chun gao	1
+💄	chun mi	1
+💄	chun zhuang	1
+💄	huo dong	1
+💄	kou hong	1
+💅	huo dong	1
+💅	mei jia	1
+💅	mo zhi jia you	1
+💅	zhi jia you	1
+💆	an mo	1
+💆	mei rong	1
+💆	tou bu an mo	1
+💆	tou xiang	1
+💆‍♂️	an mo	1
+💆‍♂️	mei rong	1
+💆‍♂️	tou bu an mo	1
+💆‍♂️	tou xiang	1
+💇	chang fa	1
+💇	jian fa	1
+💇	jian liu hai	1
+💇	jian tou	1
+💇	jian tou fa	1
+💇	li fa	1
+💇	li fa shi	1
+💇	ti tou	1
+💇	tou xiang	1
+💇‍♂️	chang fa	1
+💇‍♂️	jian fa	1
+💇‍♂️	jian liu hai	1
+💇‍♂️	jian tou	1
+💇‍♂️	jian tou fa	1
+💇‍♂️	li fa	1
+💇‍♂️	li fa shi	1
+💇‍♂️	ti tou	1
+💇‍♂️	tou xiang	1
+💈	fa lang	1
+💈	huo dong	1
+💈	li fa	1
+💈	li fa dian	1
+💉	chou xue	1
+💉	da zhen	1
+💉	huo dong	1
+💉	yi liao	1
+💉	zhen ji	1
+💉	zhen tong	1
+💉	zhu she	1
+💉	zhu she qi	1
+💊	chi yao	1
+💊	huo dong	1
+💊	jiao nang	1
+💊	yao	1
+💊	yao wan	1
+💊	yao xiao	1
+💊	yi liao	1
+💋	chun yin	1
+💋	hong chun	1
+💋	jie wen	1
+💋	lang man	1
+💋	qin yi kou	1
+💋	qin zui	1
+💋	wen	1
+💌	lang man	1
+💌	qing shu	1
+💌	yi wen feng zhen	1
+💍	hun jie	1
+💍	jie zhi	1
+💍	ke la	1
+💍	lang man	1
+💍	shou shi	1
+💍	zhi huan	1
+💍	zuan jie	1
+💎	bao shi	1
+💎	lang man	1
+💎	zhu bao	1
+💎	zuan shi	1
+💏	ai qing tian mi	1
+💏	jie wen	1
+💏	lang man	1
+💏	qin wen	1
+💐	cha hua	1
+💐	hua	1
+💐	hua shu	1
+💐	hua yi	1
+💐	lang man	1
+💐	peng hua	1
+💐	xian hua	1
+💑	ai qing	1
+💑	ai qing tian mi	1
+💑	fu fu	1
+💑	lang man	1
+💑	lian ren	1
+💑	qing lv	1
+💑	tian chang di jiu	1
+💑	tian mi ai qing	1
+💑	xiang xin ai qing	1
+💒	hun li	1
+💒	jiao tang	1
+💒	lang man	1
+💓	ai	1
+💓	ai qing	1
+💓	lang man	1
+💓	tiao dong de xin	1
+💓	xi huan	1
+💓	xin dong	1
+💓	xin tiao	1
+💔	lang man	1
+💔	shang xin	1
+💔	shi lian	1
+💔	xin sui	1
+💕	lang man	1
+💕	liang ke xin	1
+💕	xin	1
+💕	xin xin xiang yin	1
+💖	lang man	1
+💖	shan liang de xin	1
+💖	shan yao de xin	1
+💖	xin	1
+💗	ai	1
+💗	ai xin	1
+💗	jin zhang	1
+💗	lang man	1
+💗	xin dong	1
+💗	xin tiao	1
+💗	yue dong de xin	1
+💘	lang man	1
+💘	yi jian chuan xin	1
+💘	yi jian zhong qing	1
+💙	cai xin	1
+💙	lan se de xin	1
+💙	lan se xin xing	1
+💙	lan xin	1
+💙	lang man	1
+💚	cai xin	1
+💚	lang man	1
+💚	lv se de xin	1
+💚	lv se xin xing	1
+💚	lv xin	1
+💛	cai xin	1
+💛	huang se de xin	1
+💛	huang se xin xing	1
+💛	huang xin	1
+💛	lang man	1
+💜	cai xin	1
+💜	lang man	1
+💜	zi se de xin	1
+💜	zi se xin xing	1
+💜	zi xin	1
+💝	ai xin li wu	1
+💝	bang shang duan dai de xin	1
+💝	lang man	1
+💝	shi yi si dai de xin	1
+💞	lang man	1
+💞	wu dong de xin	1
+💞	xin xin xiang yin	1
+💞	xuan zhuan de xin	1
+💞	xuan zhuan de xin xing	1
+💟	lang man	1
+💟	xin xing zhuang shi	1
+💠	zuan shi	1
+💡	deng pao	1
+💡	dian deng	1
+💡	dian deng pao	1
+💡	dian zi	1
+💡	xiang fa	1
+💢	fen nu	1
+💢	qi fen	1
+💢	qing jin	1
+💢	sheng qi	1
+💢	xin qing	1
+💢	xin qing bu hao	1
+💣	hong	1
+💣	xin qing	1
+💣	zha dan	1
+💤	chen shui	1
+💤	han sheng	1
+💤	han shui	1
+💤	shen shui	1
+💤	shu shui	1
+💤	shui jiao	1
+💤	shui mian	1
+💤	wan an	1
+💤	xin qing	1
+💥	bao zha	1
+💥	peng zhuang	1
+💥	xin qing	1
+💦	bu shui	1
+💦	chao qiang bu shui	1
+💦	han	1
+💦	han shui	1
+💦	hui han ru yu	1
+💦	liu han	1
+💦	shui di	1
+💦	shui zhu	1
+💦	xin ku	1
+💦	xin qing	1
+💧	han di	1
+💧	han yan	1
+💧	shui di	1
+💧	tian shi zhi lei	1
+💧	xiao di	1
+💧	xin qing	1
+💧	yan lei	1
+💨	ji pao	1
+💨	kuai pao	1
+💨	tao li	1
+💨	tao pao	1
+💨	xin qing	1
+💨	zhen feng	1
+💩	ba	1
+💩	bian bian	1
+💩	chou wei	1
+💩	da bian	1
+💩	fen bian	1
+💩	gou shi	1
+💩	la du zi	1
+💩	la shi	1
+💩	la xi	1
+💩	pai bian	1
+💩	shi	1
+💩	su bian	1
+💩	xin qing	1
+💪	er tou ji	1
+💪	ji rou	1
+💪	jia you	1
+💪	nu li	1
+💪	qiang zhuang	1
+💪	shou bi	1
+💪	xin qing	1
+💪	xiu ji rou	1
+💫	liu xing	1
+💫	tou yun mu xuan	1
+💫	xin qing	1
+💫	yun tou zhuan xiang	1
+💫	yun xuan	1
+💬	dui hua qi pao	1
+💬	fa yan	1
+💬	fa yan qi qiu	1
+💬	fa yan zhong	1
+💬	shuo hua	1
+💬	xin qing	1
+💭	biao zhi	1
+💭	kao lv	1
+💭	si kao	1
+💭	si kao zhong	1
+💭	xiang fa	1
+💭	xiang xiang zhong	1
+💯	bai dian	1
+💯	man fen	1
+💯	xin qing	1
+💯	yi bai fen	1
+💰	jin qian	1
+💰	jin ri te jia	1
+💰	ling qian	1
+💰	qian	1
+💰	qian dai	1
+💰	xian yi	1
+💰	yin zi	1
+💱	huo bi dui huan	1
+💱	shang wu	1
+💲	jin qian	1
+💲	mei jin	1
+💲	mei yuan	1
+💲	mei yuan fu hao	1
+💳	jin qian	1
+💳	xin yong ka	1
+💴	jin qian	1
+💴	ri yuan	1
+💴	yi die ri yuan	1
+💵	jin qian	1
+💵	mei yuan	1
+💵	yi die mei yuan	1
+💶	jin qian	1
+💶	ou yuan	1
+💶	yi die ou yuan	1
+💷	jin qian	1
+💷	ying bang	1
+💸	jin qian	1
+💸	kui sun	1
+💸	po cai	1
+💸	po chan	1
+💸	qian fei le	1
+💹	zhang	1
+💺	fei ji zuo yi	1
+💺	jiao tong	1
+💺	yi zi	1
+💺	zuo wei	1
+💺	zuo yi	1
+💻	bi ji ben dian nao	1
+💻	dian nao	1
+💻	ge ren dian nao	1
+💻	ge ren ji suan ji	1
+💻	xin xi	1
+💻	ying mu	1
+💼	gong shi bao	1
+💼	gong wen bao	1
+💼	shang ban	1
+💼	shang wu	1
+💼	xin xi	1
+💽	die pian	1
+💽	guang die	1
+💽	mi ni guang die	1
+💽	xin xi	1
+💽	zhuan ji	1
+💾	ruan die	1
+💾	ruan pan	1
+💾	xin xi	1
+💾	zi liao	1
+💿	guang die	1
+💿	guang pan	1
+💿	xin xi	1
+📀	guang die	1
+📀	guang pan	1
+📀	xin xi	1
+📁	guan wen jian jia	1
+📁	shang wu	1
+📁	wen jian jia	1
+📁	zi liao jia	1
+📂	kai qi zi liao jia	1
+📂	kai wen jian jia	1
+📂	shang wu	1
+📂	wen jian jia	1
+📃	dang an	1
+📃	shang wu	1
+📃	wen jian	1
+📃	wen shu	1
+📃	xin zhi	1
+📃	ye mian	1
+📃	zi liao	1
+📄	dang an	1
+📄	shang wu	1
+📄	wen jian	1
+📄	xin zhi	1
+📄	ye mian	1
+📄	zheng shu	1
+📄	zhi	1
+📄	zi liao	1
+📅	ri li	1
+📅	ri qi	1
+📅	shang wu	1
+📆	ri li	1
+📆	shang wu	1
+📆	si kai de ri li	1
+📇	ka pian suo yin	1
+📇	ming pian	1
+📇	ming pian jia	1
+📇	ming pian zhi zuo	1
+📇	shang wu	1
+📇	suo yin ka	1
+📈	shang wu	1
+📈	shou yi bao biao	1
+📈	tu biao	1
+📈	xiang shang qu shi tu	1
+📈	ye ji shang zhang	1
+📈	zhang	1
+📈	zhang shi	1
+📉	die	1
+📉	die shi	1
+📉	kui sun bao biao	1
+📉	shang wu	1
+📉	tu biao	1
+📉	xiang xia qu shi tu	1
+📉	ye ji xia hua	1
+📊	chang tiao tu	1
+📊	shang wu	1
+📊	tiao xing tu	1
+📊	zhang tiao tu	1
+📊	zhi fang tu	1
+📋	jian qie ban	1
+📋	jian tie ban	1
+📋	shang wu	1
+📋	zhan tie ban	1
+📋	zhu yi shi xiang	1
+📌	shang wu	1
+📌	tu ding	1
+📍	da tou ding	1
+📍	shang wu	1
+📍	yuan tu ding	1
+📎	fu jian	1
+📎	hui wen zhen	1
+📎	hui xing zhen	1
+📎	shang wu	1
+📎	zhi jia	1
+📏	shang wu	1
+📏	zhi chi	1
+📐	san jiao chi	1
+📐	shang wu	1
+📑	biao qian ye	1
+📑	shang wu	1
+📑	shu qian	1
+📑	shu qian biao qian	1
+📒	ben zi	1
+📒	bi ji	1
+📒	ji shi bu	1
+📒	shang wu	1
+📒	zhang ben	1
+📓	bi ji ben	1
+📓	shang wu	1
+📓	ying ke bi ji ben	1
+📔	bi ji ben	1
+📔	huang pi bi ji ben	1
+📔	shang wu	1
+📕	bei wang lu	1
+📕	hong pi shu	1
+📕	hong se shu ben	1
+📕	shang wu	1
+📖	cha xun	1
+📖	da kai de shu ben	1
+📖	fan shu	1
+📖	shang wu	1
+📖	shu	1
+📖	shu ben	1
+📖	tu shu	1
+📗	jiao ke shu	1
+📗	lv se shu ben	1
+📗	shang wu	1
+📘	lan pi shu	1
+📘	lan se shu ben	1
+📘	shang wu	1
+📙	bi ji ben	1
+📙	cheng pi shu	1
+📙	ju se shu ben	1
+📙	shang wu	1
+📚	shang wu	1
+📚	shu ben	1
+📚	shu dui	1
+📚	shu ji	1
+📛	ming pai	1
+📛	shang wu	1
+📛	xing ming pai	1
+📜	juan zhou	1
+📜	juan zong	1
+📜	shang wu	1
+📜	yang pi zhi juan	1
+📝	bei wang	1
+📝	bei wang lu	1
+📝	bi lu	1
+📝	ji lu	1
+📝	ji shi	1
+📝	xin xi	1
+📞	dian hua	1
+📞	dian hua ting tong	1
+📞	shang wu	1
+📞	ting tong	1
+📞	tong xun	1
+📟	chuan hu ji	1
+📟	hu ji	1
+📟	shang wu	1
+📠	chuan zhen	1
+📠	chuan zhen ji	1
+📠	xin xi	1
+📡	tong xun	1
+📡	wei xing tian xian	1
+📡	wei xing tong xun	1
+📡	xin xi	1
+📢	guang bo	1
+📢	kuo yin la ba	1
+📢	kuo yin qi	1
+📢	la ba	1
+📢	xin xi	1
+📣	chuan bo	1
+📣	chuan sheng tong	1
+📣	da la ba	1
+📣	da sheng gong	1
+📣	jia you	1
+📣	la ba	1
+📣	la ba tong	1
+📣	la la dui	1
+📣	xin xi	1
+📤	fa jian xiang	1
+📤	fa jian xiang tuo pan	1
+📤	shang wu	1
+📥	shang wu	1
+📥	shou jian xiang	1
+📥	shou jian xiang tuo pan	1
+📦	bao guo	1
+📦	da bao	1
+📦	feng zhuang	1
+📦	huo wu	1
+📦	li pin	1
+📦	shou jian	1
+📦	xiang zi	1
+📦	zhi xiang	1
+📧	dian you	1
+📧	dian zi you jian	1
+📧	shang wu	1
+📧	you jian	1
+📨	lai xin	1
+📨	shang wu	1
+📨	shou jian xia	1
+📨	yue du you jian	1
+📩	dian zi you jian	1
+📩	fa song you jian	1
+📩	fa you jian	1
+📩	xin xi	1
+📪	shang wu	1
+📪	shou xin	1
+📪	xin xiang	1
+📪	you xiang	1
+📫	ji xin	1
+📫	xin xi	1
+📫	xin xiang	1
+📫	you xiang	1
+📫	you xin ji chu	1
+📬	shang wu	1
+📬	you lai xin	1
+📬	you xiang	1
+📭	da kai de you xiang	1
+📭	mei you lai xin	1
+📭	shang wu	1
+📭	you xiang	1
+📮	xin xi	1
+📮	you tong	1
+📮	you xiang	1
+📯	hao jiao	1
+📯	yin yue	1
+📯	you zheng hao jiao	1
+📯	you zheng la ba	1
+📰	bao kan	1
+📰	bao zhi	1
+📰	xin wen	1
+📰	xin xi	1
+📱	shou ji	1
+📱	shou ji ke	1
+📱	xin xi	1
+📱	xing dong dian hua	1
+📱	yi dong dian hua	1
+📱	zhi neng ji	1
+📲	da dian hua	1
+📲	dian hua	1
+📲	jie dian hua	1
+📲	xin xi	1
+📳	xin xi	1
+📳	zhen dong	1
+📳	zhen dong mo shi	1
+📴	dian hua guan ji	1
+📴	guan ji	1
+📴	guan ji mo shi	1
+📴	shou ji guan ji	1
+📴	xin xi	1
+📴	yi dong dian hua guan ji	1
+📵	biao zhi	1
+📵	jin yong shou ji	1
+📵	jin zhi tong hua	1
+📶	shou xun	1
+📶	xin hao	1
+📶	xin hao qiang du	1
+📶	xin hao zhuang kuang	1
+📶	xin xi	1
+📷	dan fan	1
+📷	mei yan xiang ji	1
+📷	pai zhao	1
+📷	xiang ji	1
+📷	xin xi	1
+📷	zhao xiang	1
+📷	zhao xiang ji	1
+📸️	shan guang deng	1
+📸️	xiang ji shan guang deng	1
+📹	lu xiang	1
+📹	lu ying	1
+📹	she xiang	1
+📹	she xiang ji	1
+📹	she ying	1
+📹	she ying ji	1
+📹	xin xi	1
+📺	dian shi	1
+📺	dian shi ji	1
+📺	mei ti	1
+📺	xin xi	1
+📻	guang bo	1
+📻	mei ti	1
+📻	shou yin ji	1
+📻	ting guang bo	1
+📻	xin xi	1
+📼	lu xiang dai	1
+📼	lu ying dai	1
+📼	xin xi	1
+📽️	dian ying fang ying ji	1
+📿️	nian zhu	1
+🔀	fu hao	1
+🔀	sui ji bo fang	1
+🔁	dan qu bo fang	1
+🔁	fu hao	1
+🔁	xun huan	1
+🔁	xun huan bo fang	1
+🔂	bo fang yi ci	1
+🔂	dan qu xun huan	1
+🔂	fu hao	1
+🔃	chong xin bo fang	1
+🔃	chong xin du qu	1
+🔃	chong xin zai ru	1
+🔃	shang wu	1
+🔃	xun huan	1
+🔃	chong zai	1
+🔄	fu hao	1
+🔄	lie biao xun huan	1
+🔄	xun huan	1
+🔄	zhong xin zheng li	1
+🔅	di liang du	1
+🔆	gao liang du	1
+🔇	jing yin	1
+🔈	di yin liang yang sheng qi	1
+🔉	yang sheng qi	1
+🔊	gao yin la ba	1
+🔊	sheng yin	1
+🔊	xin xi	1
+🔊	yang sheng qi	1
+🔊	yin liang	1
+🔋	chong dian	1
+🔋	dian chi	1
+🔋	dian liang	1
+🔋	gong ju	1
+🔌	cha tou	1
+🔌	dian cha tou	1
+🔌	dian yuan	1
+🔌	gong ju	1
+🔍	cha xun	1
+🔍	fang da jing	1
+🔍	gong ju	1
+🔍	sou suo	1
+🔍	sou xun	1
+🔎	fang da jing	1
+🔎	gong ju	1
+🔎	qing bao	1
+🔎	xiang qing	1
+🔎	xiang xi	1
+🔏	gong ju	1
+🔏	yin mi	1
+🔏	yin si	1
+🔐	an quan	1
+🔐	gong ju	1
+🔐	jia mi	1
+🔑	gong ju	1
+🔑	jin yao shi	1
+🔑	yao shi	1
+🔒	gong ju	1
+🔒	shang suo	1
+🔒	suo	1
+🔒	suo ding	1
+🔒	suo tou	1
+🔓	gong ju	1
+🔓	jie suo	1
+🔓	kai suo	1
+🔔	ding	1
+🔔	gong ju	1
+🔔	ling dang	1
+🔔	ti xing	1
+🔔	xiang ling	1
+🔔	zhong sheng	1
+🔕	jin zhi xiang ling	1
+🔖	gong ju	1
+🔖	shu qian	1
+🔗	gong ju	1
+🔗	huan kou	1
+🔗	lian jie	1
+🔗	tie suo	1
+🔘	an niu	1
+🔘	dan xuan an niu	1
+🔘	gong ju	1
+🔘	yuan xing an niu	1
+🔙	fan hui	1
+🔙	fu hao	1
+🔙	hou tui	1
+🔙	tui hui	1
+🔚	fu hao	1
+🔚	jie shu	1
+🔚	mo wei	1
+🔚	zhi ban	1
+🔛	fu hao	1
+🔛	kai qi	1
+🔛	qi yong	1
+🔜	fu hao	1
+🔜	kuai jin	1
+🔜	kuai su	1
+🔝	fu hao	1
+🔝	shang fang	1
+🔝	shang sheng	1
+🔝	zhi ding	1
+🔞	biao zhi	1
+🔞	cheng ren	1
+🔞	cheng ren jie mu	1
+🔞	shao er bu yi	1
+🔞	shi ba jin	1
+🔞	wei cheng nian	1
+🔞	wei cheng nian jin zhi	1
+🔟	fu hao	1
+🔟	shi	1
+🔠	da xie zi mu	1
+🔠	fu hao	1
+🔠	ying wen da xie	1
+🔡	fu hao	1
+🔡	xiao xie zi mu	1
+🔡	ying wen xiao xie	1
+🔢	fu hao	1
+🔢	shu zi	1
+🔣	fu hao	1
+🔣	te shu fu hao	1
+🔤	fu hao	1
+🔤	qie huan shu ru	1
+🔤	ying wen shu ru fa	1
+🔤	ying wen zi	1
+🔥	chai huo	1
+🔥	dian huo	1
+🔥	dian ran	1
+🔥	huo	1
+🔥	huo miao	1
+🔥	huo re	1
+🔥	huo yan	1
+🔥	huo zhong	1
+🔥	lie huo	1
+🔥	ran shao	1
+🔥	shao	1
+🔥	shi huo	1
+🔥	ye huo	1
+🔥	zi ran	1
+🔦	gong ju	1
+🔦	shou dian tong	1
+🔦	zhao ming	1
+🔧	gong ju	1
+🔧	xiu li	1
+🔨	chui zi	1
+🔨	gong ju	1
+🔨	qiao da	1
+🔨	tie chui	1
+🔩	gong ju	1
+🔩	luo mu ji luo shuan	1
+🔩	luo shuan tao jian	1
+🔩	luo si	1
+🔪	cai dao	1
+🔪	dao	1
+🔪	gong ju	1
+🔪	kan	1
+🔪	qie	1
+🔪	qie rou dao	1
+🔪	shui guo dao	1
+🔪	xiao dao	1
+🔫	gong ju	1
+🔫	she ji	1
+🔫	shui qiang	1
+🔬	gong ju	1
+🔬	ke xue	1
+🔬	xian wei jing	1
+🔬	zuo shi yan	1
+🔭	gong ju	1
+🔭	tian wen	1
+🔭	tian wen guan cha	1
+🔭	wang yuan jing	1
+🔮	fu hao	1
+🔮	shui jing qiu	1
+🔮	zhan bu	1
+🔮	zi shui jing	1
+🔯	fu hao	1
+🔯	liu jiao xing	1
+🔯	liu mang xing	1
+🔰	chu xin zhe	1
+🔰	dun pai	1
+🔰	fu hao	1
+🔱	fu hao	1
+🔱	hai wang ji	1
+🔱	san cha ji	1
+🔲	hei xian fang kuang	1
+🔳	bai xian fang kuang	1
+🔴	hong se yuan quan	1
+🔵	lan se yuan quan	1
+🔷	lan se da ling xing	1
+🔹	lan se xiao ling xing	1
+🔼	fu hao	1
+🔼	xiang shang	1
+🔽	fu hao	1
+🔽	xiang xia	1
+🕉️	ao mu fu hao	1
+🕉️	fan wen fu hao	1
+🕊️	ge zi	1
+🕊️	he ping ge	1
+🕋️	ka ba sheng tang	1
+🕋️	ke er bai	1
+🕌️	hui jiao tang	1
+🕌️	qing zhen si	1
+🕍️	you tai jiao tang	1
+🕎️	duo lian deng zhu tai	1
+🕎️	you tai jiao deng tai	1
+🕎️	you tai jiao jiu deng zhu tai	1
+🕐	shi jian	1
+🕐	yi dian	1
+🕐	yi dian zhong	1
+🕑	liang dian	1
+🕑	liang dian zhong	1
+🕑	shi jian	1
+🕒	san dian	1
+🕒	san dian zhong	1
+🕒	shi jian	1
+🕓	shi jian	1
+🕓	si dian	1
+🕓	si dian zhong	1
+🕔	shi jian	1
+🕔	wu dian	1
+🕔	wu dian zhong	1
+🕕	liu dian	1
+🕕	liu dian zhong	1
+🕕	shi jian	1
+🕖	qi dian	1
+🕖	qi dian zhong	1
+🕖	shi jian	1
+🕗	ba dian	1
+🕗	ba dian zhong	1
+🕗	shi jian	1
+🕘	jiu dian	1
+🕘	jiu dian zhong	1
+🕘	shi jian	1
+🕙	shi dian	1
+🕙	shi dian zhong	1
+🕙	shi jian	1
+🕙	zhong biao	1
+🕚	shi jian	1
+🕚	shi yi dian	1
+🕚	shi yi dian zhong	1
+🕛	ling chen	1
+🕛	shi er dian	1
+🕛	shi er dian zhong	1
+🕛	shi jian	1
+🕜	yi dian ban	1
+🕝	er dian ban	1
+🕝	liang dian ban	1
+🕞	san dian ban	1
+🕟	si dian ban	1
+🕠	wu dian ban	1
+🕡	liu dian ban	1
+🕢	qi dian ban	1
+🕣	ba dian ban	1
+🕤	jiu dian ban	1
+🕤	shi zhong	1
+🕥	shi dian ban	1
+🕦	shi yi dian ban	1
+🕧	shi er dian ban	1
+🕯️	la zhu	1
+🕯️	zhu guang	1
+🕰️	bi lu zhong	1
+🕰️	tai zhong	1
+🕳️	di dong	1
+🕳️	dong	1
+🕴️	xi zhuang nan	1
+🕵️	zhen tan	1
+🕵️‍♀️	zhen tan	1
+🕶️	hei chao	1
+🕶️	hei se tai yang jing	1
+🕶️	mo jing	1
+🕶️	tai yang jing	1
+🕷️	zhi zhu	1
+🕸️	zhi zhu wang	1
+🕹️	cao zong gan	1
+🕹️	you xi cao zong gan	1
+🕹️	you xi gan	1
+🕺	tiao wu	1
+🕺	wu zhe	1
+🖇️	hui xing zhen	1
+🖇️	lian jie de hui xing zhen	1
+🖊️	yuan zhu bi	1
+🖋️	gang bi	1
+🖌️	hua bi	1
+🖍️	la bi	1
+🖐️	ju qi shou bing shen wu zhi	1
+🖐️	shou zhang	1
+🖕️	shu zhong zhi	1
+🖖	wa ken ju shou li	1
+🖖	wa ken shou shi	1
+🖤	hei xin	1
+🖥️	tai shi dian nao	1
+🖥️	tai shi ji	1
+🖥️	zhuo shang xing dian nao	1
+🖨️	da yin ji	1
+🖨️	yin biao ji	1
+🖱️	dian nao shu biao	1
+🖱️	san jian shu biao	1
+🖱️	shu biao	1
+🖲️	gui ji qiu	1
+🖼️	xiang kuang	1
+🗂️	ka pian suo yin qi	1
+🗃️	ka pian cun dang he	1
+🗃️	ka pian wen jian he	1
+🗄️	dang an gui	1
+🗄️	wen jian gui	1
+🗑️	fei zhi lou	1
+🗒️	ji shi ben	1
+🗒️	luo xuan xian quan bi ji ben	1
+🗒️	xian quan bi ji ben	1
+🗓️	luo xuan xian quan ri li	1
+🗓️	ri li	1
+🗓️	xian quan ri li	1
+🗜️	jia qian	1
+🗜️	ya suo	1
+🗝️	gu lao de yao shi	1
+🗝️	jiu yao shi	1
+🗞️	juan qi de bao zhi	1
+🗡️	bi shou	1
+🗡️	duan dao	1
+🗡️	duan jian	1
+🗣️	da sheng rang rang	1
+🗣️	da sheng shuo hua	1
+🗣️	shuo hua de lun kuo	1
+🗯️	you ce fen nu qi pao kuang	1
+🗳️	tou piao xiang	1
+🗺️	shi jie de tu	1
+🗻	fu shi shan	1
+🗼	dian shi ta	1
+🗼	fa she ta	1
+🗼	tie ta	1
+🗽	huo dong	1
+🗽	mei guo	1
+🗽	zi you nv shen	1
+🗾	ri ben	1
+🗿	diao xiang	1
+🗿	fu huo jie dao shi xiang	1
+🗿	shi xiang	1
+😀	biao zhun xiao	1
+😀	kai kou xiao	1
+😀	lu chi xiao	1
+😁	biao qing	1
+😁	hei hei	1
+😁	ku xiao	1
+😁	lie zui xiao	1
+😁	lu chi da xiao	1
+😁	lu chi er xiao	1
+😁	lu chi xiao	1
+😁	wei xiao	1
+😁	xi xi	1
+😁	xiao	1
+😂	biao qing	1
+😂	da xiao	1
+😂	ku xiao	1
+😂	po ti wei xiao	1
+😂	xi ji er qi	1
+😂	xiao bu ke yi	1
+😂	xiao chu yan lei	1
+😂	xiao ku	1
+😃	biao qing	1
+😃	da xiao	1
+😃	gao xing	1
+😃	kai huai da xiao	1
+😃	kai xin	1
+😃	wei xiao	1
+😃	wu fang	1
+😃	xiao	1
+😃	xiao lian	1
+😃	xiao rong	1
+😃	zhang zui xiao	1
+😄	biao qing	1
+😄	gao xing	1
+😄	ha ha	1
+😄	ha ha ha	1
+😄	ha ha ha ha	1
+😄	he he	1
+😄	kai xin	1
+😄	mi mi xiao	1
+😄	mi yan xiao	1
+😄	wei xiao	1
+😄	xi xi	1
+😄	xiao	1
+😄	xiao lian	1
+😄	xiao yan	1
+😄	zhen gao xiao	1
+😅	biao qing	1
+😅	gan ga	1
+😅	han	1
+😅	han yan	1
+😅	leng han	1
+😅	liu han	1
+😅	mao leng han	1
+😆	biao qing	1
+😆	da xiao	1
+😆	kai huai da xiao	1
+😆	kai xin	1
+😆	mi yan xiao	1
+😆	sha xiao	1
+😆	xiao	1
+😆	xiao bu jian yan	1
+😇	biao qing	1
+😇	chun jie	1
+😇	tian shi	1
+😇	tian shi de wei xiao	1
+😈	biao qing	1
+😈	e mo	1
+😈	xiao e mo	1
+😈	xie e	1
+😉	biao qing	1
+😉	qing song	1
+😉	shi yan se	1
+😉	zha yan	1
+😊	biao qing	1
+😊	gao xing	1
+😊	hai xiu	1
+😊	ke ai	1
+😊	mi yan wei xiao	1
+😊	wei xiao	1
+😊	xiao	1
+😊	xiao lian	1
+😊	xiao rong	1
+😋	biao qing	1
+😋	hao chi	1
+😋	tu she tou	1
+😋	yan chan	1
+😋	zui chan	1
+😌	biao qing	1
+😌	fang song	1
+😌	shi ran	1
+😌	shu fu	1
+😍	ai	1
+😍	ai ni	1
+😍	biao qing	1
+😍	xi huan	1
+😍	xin xin yan	1
+😍	zhao mi	1
+😎	ban ku	1
+😎	biao qing	1
+😎	de yi	1
+😎	ku	1
+😎	mo jing	1
+😏	biao qing	1
+😏	chi xiao	1
+😏	de yi de xiao	1
+😏	jia xiao	1
+😏	leng xiao	1
+😏	tou xiao	1
+😏	zui jiao shang yang	1
+😐	biao qing	1
+😐	dai ran	1
+😐	dan mo	1
+😐	mo ran	1
+😐	wu biao qing	1
+😑	mian wu biao qing	1
+😒	ba bu de	1
+😒	bi shi	1
+😒	biao qing	1
+😒	bu gao xing	1
+😒	bu kai xin	1
+😒	chou mei ku lian	1
+😒	leng mo	1
+😒	yu men	1
+😓	biao qing	1
+😓	chu leng han	1
+😓	dan xin	1
+😓	dao mei	1
+😓	du nang	1
+😓	han	1
+😓	han yan	1
+😓	jin zhang	1
+😓	leng han	1
+😓	wu yu	1
+😔	biao qing	1
+😔	bu kai xin	1
+😔	bu ru yi	1
+😔	chen si	1
+😔	dan you	1
+😔	fa	1
+😔	hao xin suan	1
+😔	hao xin teng	1
+😔	mei you dong li	1
+😔	nan guo	1
+😔	shen shang	1
+😔	shen si	1
+😔	si kao	1
+😔	xin suan	1
+😔	you lv	1
+😔	you shang	1
+😔	you yu	1
+😔	zhen de hao lei	1
+😕	biao qing	1
+😕	bu shuang	1
+😕	bu xie	1
+😕	kun huo	1
+😕	pie zui	1
+😖	biao qing	1
+😖	ku nao	1
+😖	kun huo	1
+😖	tong ku	1
+😖	yi wen	1
+😗	qin wen	1
+😘	ai	1
+😘	ai ni	1
+😘	biao qing	1
+😘	chuan qing	1
+😘	fei wen	1
+😘	qin qin	1
+😘	shi ai	1
+😙	qin qin	1
+😚	biao qing	1
+😚	du zui	1
+😚	qin qin	1
+😚	qin wen	1
+😚	qin yi kou	1
+😛	mai meng	1
+😛	tu she	1
+😜	ban gui lian	1
+😜	biao qing	1
+😜	gui lian	1
+😜	jian xiao	1
+😜	mai meng	1
+😜	shi yan se	1
+😜	xi xi	1
+😜	zha yan	1
+😜	zuo gui lian	1
+😝	bi yan	1
+😝	biao qing	1
+😝	chao nong	1
+😝	chao xiao	1
+😝	diao pi	1
+😝	kai wan xiao	1
+😝	tiao pi	1
+😝	tu she	1
+😞	biao qing	1
+😞	bu kai xin	1
+😞	di luo	1
+😞	di luo de xin qing	1
+😞	nan guo	1
+😞	shi wang	1
+😞	yi yu zheng	1
+😟	dan you	1
+😠	bi zui	1
+😠	biao qing	1
+😠	bu gao xing	1
+😠	bu kai xin	1
+😠	jue zui	1
+😠	nao xin	1
+😠	qi fen	1
+😠	re wo sheng qi	1
+😠	sheng qi	1
+😠	yan su	1
+😠	zhou mei	1
+😡	bai lei	1
+😡	biao qing	1
+😡	fan	1
+😡	fan si	1
+😡	fen nu	1
+😡	jue zui	1
+😡	nu qi	1
+😡	qi fen	1
+😡	qi ren	1
+😡	qi si le	1
+😡	qi si ren	1
+😡	ren rang	1
+😡	sheng qi	1
+😡	si fan	1
+😡	wo huo	1
+😡	zhen shi gou le	1
+😢	bei shang	1
+😢	bei tong	1
+😢	biao qing	1
+😢	chuai qi	1
+😢	ku	1
+😢	ku qi	1
+😢	liu lei	1
+😢	shang xin	1
+😣	biao qing	1
+😣	fu zui gan	1
+😣	jian ren	1
+😣	nan shou	1
+😣	ren nai	1
+😣	shang xin	1
+😣	zhe ji	1
+😤	biao qing	1
+😤	de yi	1
+😤	qi si wo le	1
+😤	sheng qi	1
+😥	biao qing	1
+😥	han	1
+😥	shi ran	1
+😥	shi wang	1
+😦	jing ya	1
+😦	ju sang	1
+😧	jing e	1
+😨	biao qing	1
+😨	hai pa	1
+😨	jing kong	1
+😨	ke pa	1
+😩	biao qing	1
+😩	pi juan	1
+😩	yan juan	1
+😩	zhua kuang	1
+😪	biao qing	1
+😪	da ke shui	1
+😪	fan kun	1
+😪	han shui	1
+😪	kun juan	1
+😪	kun kun	1
+😪	pi lao	1
+😪	shui jiao	1
+😪	wan an	1
+😫	biao qing	1
+😫	nan guo	1
+😫	nao huo	1
+😫	pi bei	1
+😫	zhua kuang	1
+😬	gui lian	1
+😭	bei shang	1
+😭	biao qing	1
+😭	da ku	1
+😭	ku	1
+😭	ku qi	1
+😭	lei liu man mian	1
+😭	lei ru yu xia	1
+😭	liu lei	1
+😮	jing ya	1
+😯	o	1
+😯	tiao mei jing ya	1
+😯	yi wai	1
+😰	biao qing	1
+😰	han	1
+😰	jiao ji	1
+😰	jing hun	1
+😰	leng han	1
+😰	mao leng han	1
+😱	biao qing	1
+😱	chi jing	1
+😱	hai pa	1
+😱	jing kong	1
+😱	ke pa	1
+😱	kong bu	1
+😱	kong ju	1
+😱	pa pa	1
+😱	xia niao	1
+😲	biao qing	1
+😲	chi jing	1
+😲	tong ku	1
+😳	biao qing	1
+😳	gan ga	1
+😳	hai sao	1
+😳	hai xiu	1
+😳	hong lian	1
+😳	hu che	1
+😳	jiong	1
+😳	lian hong	1
+😳	xiu kui	1
+😴	kun juan	1
+😴	wan an	1
+😵	biao qing	1
+😵	tou yun yan hua	1
+😵	yan mao jin xing	1
+😶	biao qing	1
+😶	bu ke shuo	1
+😶	wu hua ke shuo	1
+😶	wu kou	1
+😶	wu yu	1
+😷	ai bo la	1
+😷	bi sai	1
+😷	biao qing	1
+😷	bing dao	1
+😷	chuan ran gan mao	1
+😷	dai kou zhao	1
+😷	gan mao	1
+😷	gan mao liu bi ti	1
+😷	kou zhao	1
+😷	liu gan	1
+😷	meng mian	1
+😷	pen ti	1
+😷	sang zi teng	1
+😷	sheng bing	1
+😷	yan zhong gan mao	1
+😷	yun	1
+😷	zhong gan mao	1
+😸	biao qing	1
+😸	gao xing	1
+😸	kai xin mao	1
+😸	wei xiao	1
+😹	biao qing	1
+😹	gan dong	1
+😹	xi ji er qi	1
+😹	xiao bu ke yi	1
+😺	biao qing	1
+😺	jing ya	1
+😺	kai xin	1
+😺	kai xin mao	1
+😺	mao	1
+😻	biao qing	1
+😻	xi huan	1
+😻	zhao mi	1
+😼	biao qing	1
+😼	bu huai hao yi	1
+😼	ku mao	1
+😼	ku xiao	1
+😼	mao lian	1
+😼	xiao	1
+😼	xiong you cheng zhu	1
+😼	zi xin	1
+😽	biao qing	1
+😽	qin ni	1
+😽	qin qin	1
+😽	qin qin mao	1
+😽	qin yi kou	1
+😾	biao qing	1
+😾	jue zui	1
+😾	min zui	1
+😾	nu mu	1
+😾	sheng qi	1
+😾	wu shi	1
+😿	biao qing	1
+😿	ku	1
+😿	ku qi	1
+😿	shang xin	1
+🙀	biao qing	1
+🙀	jing xia	1
+🙀	jing ya	1
+🙀	kun juan	1
+🙀	mao lian	1
+🙀	pa pa	1
+🙀	pi juan	1
+🙀	shou dao jing xia	1
+🙁️	biao qing	1
+🙁️	nan guo	1
+🙂️	biao qing	1
+🙂️	wei xiao	1
+🙂️	xiao	1
+🙃️	biao qing	1
+🙃️	dian dao	1
+🙃️	wo dao	1
+🙄️	bai yan	1
+🙄️	biao qing	1
+🙄️	yan jing gun dong biao qing	1
+🙅	biao yi bu hao	1
+🙅	bu ke	1
+🙅	bu xing	1
+🙅	cuo wu	1
+🙅	fan dui	1
+🙅	fou jue	1
+🙅	mei ke neng	1
+🙅	mei men	1
+🙅	tou xiang	1
+🙅	wu de	1
+🙅‍♂️	biao yi bu hao	1
+🙅‍♂️	bu ke	1
+🙅‍♂️	bu xing	1
+🙅‍♂️	cuo wu	1
+🙅‍♂️	fan dui	1
+🙅‍♂️	fou jue	1
+🙅‍♂️	mei ke neng	1
+🙅‍♂️	mei men	1
+🙅‍♂️	tou xiang	1
+🙅‍♂️	wu de	1
+🙆	bao tou	1
+🙆	biao yi hao	1
+🙆	ken ding	1
+🙆	tong yi	1
+🙆	tou xiang	1
+🙆	zheng que	1
+🙆	zhun xu	1
+🙆‍♂️	bao tou	1
+🙆‍♂️	biao yi hao	1
+🙆‍♂️	ken ding	1
+🙆‍♂️	tong yi	1
+🙆‍♂️	tou xiang	1
+🙆‍♂️	zheng que	1
+🙆‍♂️	zhun xu	1
+🙇	dao qian	1
+🙇	ju gong	1
+🙇	ken qiu	1
+🙇	shen ju gong de nan ren	1
+🙇	shen ju gong de ren	1
+🙇	tou xiang	1
+🙇‍♀️	dao qian	1
+🙇‍♀️	ju gong	1
+🙇‍♀️	ken qiu	1
+🙇‍♀️	shen ju gong de nv ren	1
+🙇‍♀️	shen ju gong de ren	1
+🙇‍♀️	tou xiang	1
+🙈	bu kan	1
+🙈	fei li wu shi	1
+🙈	kan bu jian	1
+🙈	mao yan di	1
+🙈	tou xiang	1
+🙈	wu yan	1
+🙉	bu ting	1
+🙉	fei li wu ting	1
+🙉	shen ting	1
+🙉	ting bu dao	1
+🙉	tou xiang	1
+🙊	bi zui	1
+🙊	bu gan shuo	1
+🙊	bu neng shuo	1
+🙊	bu shuo	1
+🙊	bu shuo hua	1
+🙊	fei li wu yan	1
+🙊	jin yan	1
+🙊	tou xiang	1
+🙋	da zhao hu	1
+🙋	hui shou	1
+🙋	ju shou	1
+🙋	tou xiang	1
+🙋	zhao shou	1
+🙋‍♂️	da zhao hu	1
+🙋‍♂️	hui shou	1
+🙋‍♂️	ju shou	1
+🙋‍♂️	tou xiang	1
+🙋‍♂️	zhao shou	1
+🙌	shou shi	1
+🙌	ting zhi	1
+🙌	yang shou huan hu	1
+🙍	di luo	1
+🙍	ju sang	1
+🙍	qi nei	1
+🙍	shi wang	1
+🙍	tou xiang	1
+🙍‍♂️	di luo	1
+🙍‍♂️	ju sang	1
+🙍‍♂️	qi nei	1
+🙍‍♂️	shi wang	1
+🙍‍♂️	tou xiang	1
+🙎	dan mo	1
+🙎	du zui	1
+🙎	tou xiang	1
+🙎‍♂️	dan mo	1
+🙎‍♂️	du zui	1
+🙎‍♂️	tou xiang	1
+🙏	bai tuo	1
+🙏	bao en	1
+🙏	bao you	1
+🙏	chao bai	1
+🙏	chao du	1
+🙏	duo xie	1
+🙏	fo men	1
+🙏	gan xie	1
+🙏	ge lu shen xian bao you	1
+🙏	gong de wu liang	1
+🙏	he shi	1
+🙏	he zhang	1
+🙏	huan yuan	1
+🙏	ji bai	1
+🙏	ji fu	1
+🙏	ken qiu	1
+🙏	kou bai	1
+🙏	lao tian bao you	1
+🙏	nian fo	1
+🙏	nian zhou	1
+🙏	pu sa bao you	1
+🙏	qi zhu	1
+🙏	qiu gao zhi	1
+🙏	shang di bao you	1
+🙏	shi zhe an xi	1
+🙏	shou shi	1
+🙏	shuang shou he shi	1
+🙏	song jing	1
+🙏	wan fen gan ji	1
+🙏	xie xie	1
+🙏	xin feng	1
+🙏	yuan li	1
+🙏	yuan shi jie he ping	1
+🙏	zha xi de lei	1
+🙏	zhai jie	1
+🙏	zhi xie	1
+🚀	huo jian	1
+🚀	jiao tong	1
+🚁	jiao tong	1
+🚁	zhi sheng ji	1
+🚂	huo che	1
+🚂	jiao tong	1
+🚂	zheng qi huo che	1
+🚂	zheng qi ji che	1
+🚃	dian che	1
+🚃	jiao tong	1
+🚃	tie dao che	1
+🚃	you gui dian che	1
+🚄	dong che	1
+🚄	dong che zu	1
+🚄	gao su lie che	1
+🚄	gao tie	1
+🚄	he xie hao	1
+🚄	huo che	1
+🚄	jiao tong	1
+🚄	jiao tong gong ju	1
+🚄	lie che	1
+🚄	xiao huo che	1
+🚄	xin gan xian	1
+🚄	zi dan tou	1
+🚅	dong che	1
+🚅	dong che zu	1
+🚅	gao su lie che	1
+🚅	gao tie	1
+🚅	he xie hao	1
+🚅	huo che	1
+🚅	jiao tong	1
+🚅	xin gan xian	1
+🚅	zi dan lie che	1
+🚆	huo che lai le	1
+🚆	huo che tou	1
+🚇	che xiang	1
+🚇	di tie	1
+🚇	di tie biao ji	1
+🚇	jiao tong	1
+🚇	jie yun	1
+🚇	zuo di tie	1
+🚈	di tie	1
+🚈	jiao tong	1
+🚈	qing gui dian che	1
+🚉	che zhan	1
+🚉	di tie zhan	1
+🚉	huo che	1
+🚉	huo che zhan	1
+🚉	jiao tong	1
+🚉	zhan tai	1
+🚊	dian che	1
+🚊	huo che	1
+🚊	jiao tong	1
+🚋	you gui dian che	1
+🚌	ba shi	1
+🚌	ban che	1
+🚌	che shang	1
+🚌	da ba	1
+🚌	gong che	1
+🚌	gong gong qi che	1
+🚌	gong jiao	1
+🚌	gong jiao che	1
+🚌	jiao tong	1
+🚌	jiao tong gong ju	1
+🚍	ba shi	1
+🚍	da ba che	1
+🚍	gong che	1
+🚍	gong gong qi che	1
+🚍	jiao tong	1
+🚎	ba shi	1
+🚎	dian che	1
+🚎	ding ding	1
+🚎	gong che	1
+🚎	gong gong qi che	1
+🚎	jiao tong	1
+🚎	wu gui dian che	1
+🚎	you gui dian che	1
+🚏	gong che zhan	1
+🚏	gong gong qi che zhan	1
+🚏	gong jiao che zhan	1
+🚏	jiao tong	1
+🚐	ba shi	1
+🚐	gong che	1
+🚐	gong gong qi che	1
+🚐	gong gong xiao ba	1
+🚐	jiao tong	1
+🚐	mian bao che	1
+🚐	xiao ba	1
+🚐	xiao ba shi	1
+🚑	ji jiu che	1
+🚑	jiao tong	1
+🚑	jiu hu che	1
+🚑	yi liao che	1
+🚒	jiao tong	1
+🚒	xiao fang che	1
+🚓	jiao tong	1
+🚓	jing che	1
+🚔	bao jing	1
+🚔	jiao tong	1
+🚔	jing cha	1
+🚔	jing che	1
+🚕	chu zu che	1
+🚕	di shi	1
+🚕	ji cheng che	1
+🚕	jiao tong	1
+🚖	chu zu che	1
+🚖	da che	1
+🚖	da di	1
+🚖	di shi	1
+🚖	ji cheng che	1
+🚖	jiao tong	1
+🚗	ai che	1
+🚗	che	1
+🚗	che che	1
+🚗	che dui	1
+🚗	che liang	1
+🚗	che zi	1
+🚗	dao che	1
+🚗	jia che	1
+🚗	jiao che	1
+🚗	jiao tong	1
+🚗	qi che	1
+🚗	si jia che	1
+🚗	xiao che	1
+🚗	xiao jiao che	1
+🚗	xiao qi che	1
+🚗	xin che	1
+🚗	xing che	1
+🚘	che	1
+🚘	che zi	1
+🚘	jiao che	1
+🚘	jiao tong	1
+🚘	qi che	1
+🚘	si jia che	1
+🚘	xiao jiao che	1
+🚙	jiao tong	1
+🚙	xiu lv che	1
+🚙	xiu xian che	1
+🚙	yue ye che	1
+🚚	huo che	1
+🚚	jiao tong	1
+🚜	huo gui che	1
+🚜	jiao tong	1
+🚜	tuo la ji	1
+🚝	ci xuan fu lie che	1
+🚝	dan gui dian che	1
+🚝	dan gui lie che	1
+🚝	jiao tong	1
+🚞	deng shan lie che	1
+🚞	huo che	1
+🚞	jiao tong	1
+🚞	tie lu	1
+🚟	guan guang lie che	1
+🚟	jiao tong	1
+🚟	kong zhong tie lu	1
+🚟	xuan fu lie che	1
+🚠	gao shan suo dao	1
+🚠	jiao tong	1
+🚠	lan che	1
+🚠	shan ding lan che	1
+🚡	jiao tong	1
+🚡	kong zhong lan che	1
+🚡	lan che	1
+🚢	chu hai	1
+🚢	chuan	1
+🚢	hai yun	1
+🚢	jiao tong	1
+🚢	lun chuan	1
+🚢	you lun	1
+🚣	fan zhou	1
+🚣	hua chuan	1
+🚣	hua ting	1
+🚣	jiao tong	1
+🚣	xiao chuan	1
+🚣‍♀️	fan zhou	1
+🚣‍♀️	hua chuan	1
+🚣‍♀️	hua ting	1
+🚣‍♀️	jiao tong	1
+🚣‍♀️	xiao chuan	1
+🚤	jiao tong	1
+🚤	kuai ting	1
+🚤	qi ting	1
+🚤	sai ting	1
+🚥	hong lv deng	1
+🚥	jiao tong	1
+🚥	jiao tong biao zhi	1
+🚥	jiao tong deng	1
+🚥	jiao tong hao zhi	1
+🚥	jiao tong xin hao deng	1
+🚥	xin hao deng	1
+🚦	hong lv deng	1
+🚦	jiao tong	1
+🚦	jiao tong deng	1
+🚦	jiao tong hao zhi	1
+🚦	jiao tong xin hao deng	1
+🚦	xin hao deng	1
+🚧	dao lu shi gong	1
+🚧	jiao tong	1
+🚧	jiao tong biao zhi	1
+🚧	ju ma	1
+🚧	lu zhang	1
+🚧	shi gong	1
+🚨	jiao tong	1
+🚨	jing che deng	1
+🚨	jing deng	1
+🚨	jing shi deng	1
+🚩	hong qi	1
+🚩	qi gan	1
+🚩	qi zhi	1
+🚩	san jiao qi	1
+🚩	zhong dian	1
+🚪	men	1
+🚫	biao zhi	1
+🚫	bu de ru nei	1
+🚫	bu ke yong	1
+🚫	jin zhi	1
+🚫	xian zhi	1
+🚬	biao zhi	1
+🚬	chou yan	1
+🚬	xi yan	1
+🚬	xi yan qu	1
+🚬	xiang yan	1
+🚬	yan	1
+🚬	yan wei	1
+🚭	biao zhi	1
+🚭	jin yan	1
+🚭	jin zhi xi yan	1
+🚭	wu yan qu	1
+🚮	biao zhi	1
+🚮	la ji ru lou	1
+🚮	la ji tong	1
+🚮	reng la ji	1
+🚯	biao zhi	1
+🚯	jin diu la ji	1
+🚯	qing wu luan reng	1
+🚰	biao zhi	1
+🚰	shui long tou	1
+🚰	yin shui qu	1
+🚰	yin yong shui	1
+🚱	biao zhi	1
+🚱	fei yin yong shui	1
+🚱	jin zhi yin shui	1
+🚲	dan che	1
+🚲	jiao ta che	1
+🚲	jiao tong	1
+🚲	zi xing che	1
+🚳	biao zhi	1
+🚳	jin xing dan che	1
+🚳	jin zhi qi che	1
+🚴	dan che	1
+🚴	jiao ta che	1
+🚴	jiao tong	1
+🚴	shan di che	1
+🚴	zi xing che	1
+🚴	zi xing che shou	1
+🚴‍♀️	dan che	1
+🚴‍♀️	jiao ta che	1
+🚴‍♀️	jiao tong	1
+🚴‍♀️	shan di che	1
+🚴‍♀️	zi xing che	1
+🚴‍♀️	zi xing che shou	1
+🚵	dan che	1
+🚵	deng shan zi xing che shou	1
+🚵	jiao ta che	1
+🚵	qi che deng shan	1
+🚵	yun dong	1
+🚵	zi xing che	1
+🚵‍♀️	dan che	1
+🚵‍♀️	deng shan zi xing che shou	1
+🚵‍♀️	jiao ta che	1
+🚵‍♀️	qi che deng shan	1
+🚵‍♀️	yun dong	1
+🚵‍♀️	zi xing che	1
+🚶	jiao tong	1
+🚶	lu ren	1
+🚶	san bu	1
+🚶	xing ren	1
+🚶‍♀️	jiao tong	1
+🚶‍♀️	lu ren	1
+🚶‍♀️	san bu	1
+🚶‍♀️	xing ren	1
+🚷	biao zhi	1
+🚷	jin zhi xing ren	1
+🚸	biao zhi	1
+🚸	dang xin er tong	1
+🚸	xue tong guo jie	1
+🚸	zhu yi er tong	1
+🚹	biao zhi	1
+🚺	biao zhi	1
+🚻	biao zhi	1
+🚻	guan xi jian	1
+🚻	guan xi shi	1
+🚻	hua zhuang shi	1
+🚻	wei sheng jian	1
+🚻	xi shou jian	1
+🚼	bao bao	1
+🚼	biao zhi	1
+🚼	mu ying shi	1
+🚼	ying er	1
+🚽	biao zhi	1
+🚽	ce suo	1
+🚽	chou shui ma tong	1
+🚽	ma tong	1
+🚽	wei sheng jian	1
+🚾	biao zhi	1
+🚾	ce suo	1
+🚾	guan xi jian	1
+🚾	wei sheng jian	1
+🚾	xi shou jian	1
+🚿	chong liang	1
+🚿	chong zao	1
+🚿	hua sa	1
+🚿	lian peng tou	1
+🚿	lin yu	1
+🚿	lin yu tou	1
+🚿	xi zao	1
+🛀	huo dong	1
+🛀	pao ge zao	1
+🛀	pao zao	1
+🛀	xi zao	1
+🛀	yu gang	1
+🛀	yu shi	1
+🛁	xi zao	1
+🛁	yu chi	1
+🛁	yu gang	1
+🛁	zao	1
+🛂	an jian	1
+🛂	an jian chu	1
+🛂	biao zhi	1
+🛂	cha zheng	1
+🛂	tong guan jian cha	1
+🛂	zheng jian jian cha	1
+🛃	biao zhi	1
+🛃	cha bao	1
+🛃	cha xing li	1
+🛃	hai guan	1
+🛃	xing li jian cha	1
+🛄	biao zhi	1
+🛄	cha xing li	1
+🛄	ti qu xing li	1
+🛄	xing li guo ji	1
+🛄	xing li ling qu chu	1
+🛄	xing li tong cha	1
+🛅	biao zhi	1
+🛅	chu fang xing li	1
+🛅	cun bao	1
+🛅	ji cun	1
+🛅	xing li ji cun chu	1
+🛅	xing li tuo guan	1
+🛋️	sha fa he deng	1
+🛌️	wo pu	1
+🛍️	gou wu dai	1
+🛎️	fu wu ling	1
+🛎️	fu wu yuan ling dang	1
+🛏️	chuang	1
+🛐️	zong jiao chang suo	1
+🛑	ba bian xing	1
+🛒	gou wu che	1
+🛠️	chui zi he ban shou	1
+🛡️	dun pai	1
+🛢️	you tong	1
+🛣️	gao su gong lu	1
+🛣️	gao su lu	1
+🛤️	tie gui	1
+🛤️	tie lu gui dao	1
+🛥️	kuai ting	1
+🛥️	mo tuo ting	1
+🛥️	you ting	1
+🛩️	xiao xing fei ji	1
+🛫️	fei ji qi fei	1
+🛬️	fei ji dao da	1
+🛬️	fei ji di da	1
+🛬️	fei ji zhuo lu	1
+🛰️	ren zao wei xing	1
+🛰️	wei xing	1
+🛳️	ke chuan	1
+🛳️	ke lun	1
+🛴	hua ban che	1
+🛴	ta ban che	1
+🛵	dian dan che	1
+🛵	dian dong che	1
+🛶	du mu zhou	1
+🛶	hua ting	1
+🛶	sai ting	1
+🤐️	bi zui	1
+🤐️	biao qing	1
+🤐️	la lian kou biao qing	1
+🤑️	biao qing	1
+🤑️	jian qian yan kai	1
+🤒️	biao qing	1
+🤒️	fa shao	1
+🤒️	liang ti wen	1
+🤓️	biao qing	1
+🤓️	shu dai zi	1
+🤓️	yan jing nan	1
+🤔️	biao qing	1
+🤔️	si kao yi xia	1
+🤔️	wo xiang xiang	1
+🤔️	xiang yi xiang	1
+🤕️	biao qing	1
+🤕️	shou shang	1
+🤕️	tou bu shou shang	1
+🤕️	tou shou shang da bang dai	1
+🤖️	ji qi ren	1
+🤗️	ai de bao bao	1
+🤗️	biao qing	1
+🤗️	bu yue	1
+🤗️	gei ni yi ge yong bao	1
+🤗️	gei wo yi ge yong bao	1
+🤘️	e mo zhi jiao	1
+🤘️	shu qi shi zhi yu xiao zhi	1
+🤘️	shu shi zhi yu xiao zhi	1
+🤙	da dian hua	1
+🤙	dian hua lian xi	1
+🤚	ting	1
+🤚	ting zhi	1
+🤛	you gou quan	1
+🤜	zuo gou quan	1
+🤝	wo shou	1
+🤞	hao yun	1
+🤠	niu zai	1
+🤡	chou jue	1
+🤡	xiao chou	1
+🤢	e xin	1
+🤢	fan wei	1
+🤢	zuo ou	1
+🤣	xiao chou	1
+🤣	xiao de man di da gun	1
+🤤	chui xian	1
+🤤	chui xian san chi	1
+🤤	liu kou shui	1
+🤥	pi nuo cao	1
+🤥	chang bi zi	1
+🤦‍♀️	wu lian	1
+🤦‍♀️	wu lian de nv ren	1
+🤦‍♀️	yan mian	1
+🤦‍♀️	yan mian de nv ren	1
+🤦‍♂️	wu lian	1
+🤦‍♂️	wu lian de nan ren	1
+🤦‍♂️	yan mian	1
+🤦‍♂️	yan mian de nan ren	1
+🤧	da pen ti	1
+🤧	pen ti	1
+🤰	huai yun	1
+🤰	yun fu	1
+🤳	zi pai	1
+🤳	zi pai zhao	1
+🤴	wang zi	1
+🤵	li fu	1
+🤵	xi fu	1
+🤵	xi fu ge lv	1
+🤵	xi zhuang	1
+🤵	xi zhuang ge lv	1
+🤵	yan wei fu	1
+🤶	sheng dan lao po po	1
+🤷‍♀️	song jian	1
+🤷‍♀️	song jian de nv ren	1
+🤷‍♀️	tan shou	1
+🤷‍♀️	tan shou de nv ren	1
+🤷‍♂️	song jian	1
+🤷‍♂️	song jian de nan ren	1
+🤷‍♂️	tan shou	1
+🤷‍♂️	tan shou de nan ren	1
+🤸‍♀️	ce shou fan	1
+🤸‍♀️	ce shou fan de nv ren	1
+🤸‍♀️	fan gen dou	1
+🤸‍♀️	fan gen dou de nv ren	1
+🤸‍♀️	fan gen tou	1
+🤸‍♀️	fan gen tou de nv ren	1
+🤸‍♂️	ce shou fan	1
+🤸‍♂️	ce shou fan de nan ren	1
+🤸‍♂️	fan gen dou	1
+🤸‍♂️	fan gen dou de nan ren	1
+🤸‍♂️	fan gen tou	1
+🤸‍♂️	fan gen tou de nan ren	1
+🤹‍♀️	bian xi fa	1
+🤹‍♀️	wan za ji	1
+🤹‍♀️	wan za shua	1
+🤹‍♀️	za ji	1
+🤹‍♀️	za shua	1
+🤹‍♀️	za shua biao yan	1
+🤹‍♂️	bian xi fa	1
+🤹‍♂️	wan za ji	1
+🤹‍♂️	wan za shua	1
+🤹‍♂️	za ji	1
+🤹‍♂️	za shua	1
+🤹‍♂️	za shua biao yan	1
+🤺	ji jian	1
+🤺	ji jian yun dong	1
+🤺	ji jian yun dong yuan	1
+🤼‍♀️	shuai jiao	1
+🤼‍♀️	shuai jiao shou	1
+🤼‍♀️	shuai jiao xuan shou	1
+🤼‍♀️	shuai jiao yun dong yuan	1
+🤼‍♂️	shuai jiao	1
+🤼‍♂️	shuai jiao shou	1
+🤼‍♂️	shuai jiao xuan shou	1
+🤼‍♂️	shuai jiao yun dong yuan	1
+🤽‍♀️	shui qiu	1
+🤽‍♀️	shui qiu xuan shou	1
+🤽‍♀️	shui qiu yun dong	1
+🤽‍♀️	shui qiu yun dong yuan	1
+🤽‍♂️	shui qiu	1
+🤽‍♂️	shui qiu xuan shou	1
+🤽‍♂️	shui qiu yun dong	1
+🤽‍♂️	shui qiu yun dong yuan	1
+🤾‍♀️	shou qiu	1
+🤾‍♀️	shou qiu xuan shou	1
+🤾‍♀️	shou qiu yun dong	1
+🤾‍♀️	shou qiu yun dong yuan	1
+🤾‍♂️	shou qiu	1
+🤾‍♂️	shou qiu xuan shou	1
+🤾‍♂️	shou qiu yun dong	1
+🤾‍♂️	shou qiu yun dong yuan	1
+🥀	ku wei	1
+🥀	nian	1
+🥁	da gu	1
+🥁	gu	1
+🥁	gu chui	1
+🥁	ji gu	1
+🥂	gan bei	1
+🥂	peng bei	1
+🥄	shao zi	1
+🥄	chi	1
+🥄	tang chi	1
+🥄	tiao geng	1
+🥅	qiu men	1
+🥅	qiu men wang	1
+🥅	qiu wang	1
+🥇	di yi ming	1
+🥇	guan jun	1
+🥇	guan jun jiang pai	1
+🥇	jin pai	1
+🥇	yi deng jiang	1
+🥇	zhuang yuan	1
+🥈	bang yan	1
+🥈	di er ming	1
+🥈	er deng jiang	1
+🥈	ya jun	1
+🥈	ya jun jiang pai	1
+🥈	yin pai	1
+🥉	di san ming	1
+🥉	ji jun	1
+🥉	ji jun jiang pai	1
+🥉	san deng jiang	1
+🥉	tan hua	1
+🥉	tong pai	1
+🥊	da quan	1
+🥊	quan ji	1
+🥊	quan ji bi sai	1
+🥊	quan ji shou tao	1
+🥊	quan ji yun dong	1
+🥋	wu shu	1
+🥋	wu shu fu	1
+🥋	wu shu fu zhuang	1
+🥐	ke song	1
+🥐	ke song mian bao	1
+🥐	niu jiao bao	1
+🥐	niu jiao mian bao	1
+🥐	yang jiao mian bao	1
+🥑	e li	1
+🥑	lao li	1
+🥑	niu you guo	1
+🥒	huang gua	1
+🥓	pei gen	1
+🥓	pei gen rou	1
+🥓	xun rou	1
+🥔	ma ling shu	1
+🥔	tu dou	1
+🥕	hong luo bo	1
+🥕	hu luo bo	1
+🥖	fa gun	1
+🥖	fa shi gun zi mian bao	1
+🥖	fa shi chang gun mian bao	1
+🥖	gun zi mian bao	1
+🥗	se la	1
+🥗	sha la	1
+🥗	sha lv	1
+🥗	shu cai se la	1
+🥗	shu cai sha la	1
+🥗	shu cai sha lv	1
+🥘	pan zi	1
+🥘	peng ren	1
+🥙	jiu cai he zi	1
+🥙	rou jia mo	1
+🥙	xian bing	1
+🥚	dan	1
+🥚	ji dan	1
+🥛	niu nai	1
+🥛	niu nai bei	1
+🥛	yi bei niu nai	1
+🥜	hua sheng	1
+🥜	hua sheng guo	1
+🥜	luo hua sheng	1
+🥝	mi hou tao	1
+🥝	qi yi guo	1
+🥞	dan bing	1
+🥞	hong bing	1
+🥞	jian bing	1
+🥞	lao bing	1
+🦀️	pang xie	1
+🦁️	shi zi	1
+🦂️	xie zi	1
+🦃️	huo ji	1
+🦃️	tu shou ji	1
+🦄️	du jiao shou	1
+🦅	diao	1
+🦅	lao ying	1
+🦅	xiong ying	1
+🦅	ying	1
+🦆	ya zi	1
+🦇	bian fu	1
+🦇	bian fu xia	1
+🦈	da bai sha	1
+🦈	sha yu	1
+🦉	mao tou ying	1
+🦉	xiao	1
+🦊	hu	1
+🦊	hu li	1
+🦋	hu die	1
+🦌	lu	1
+🦍	da xing xing	1
+🦍	xing xing	1
+🦎	shi long zi	1
+🦎	si jiao she	1
+🦎	xi yi	1
+🦏	xi niu	1
+🦐	xia	1
+🦐	xia mi	1
+🦐	xiao xia	1
+🦑	wu zei	1
+🦑	you yu	1
+🧀️	nai lao	1
+🧀️	qi si	1
+	ping guo	1

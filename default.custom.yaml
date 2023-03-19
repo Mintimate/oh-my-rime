@@ -1,0 +1,28 @@
+patch:
+  "ascii_composer/good_old_caps_lock": true
+  "ascii_composer/switch_key":
+    Caps_Lock: commit_code
+    Control_L: noop # 不做任何操作
+    Control_R: noop # 不做任何操作
+    Shift_L: commit_code
+    Shift_R: inline_ascii
+  "key_binder/bindings":
+    - {accept: "Control+Shift+E", toggle: es_conversion, when: always}
+    - {accept: bracketleft, send: Page_Up, when: paging}
+    - {accept: bracketright, send: Page_Down, when: has_menu}
+  "menu/page_size": 9
+  schema_list:
+    - {schema: terra_pinyin}
+    - {schema: luna_pinyin_simp}
+  "switcher/hotkeys":
+    - "Control+grave"
+  "switcher/save_options":
+    - full_shape
+    - ascii_punct
+    - simplification
+    - zh_hans
+    - emoji_suggestion
+  "translator/enable_encoder": true
+  "translator/enable_sentence": true
+  "translator/enable_user_dict": true
+  "translator/encode_commit_history": true

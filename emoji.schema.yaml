@@ -1,0 +1,66 @@
+# emoji.schema.yaml
+
+schema:
+  schema_id: emoji
+  name: Emoji
+  version: "2.2"
+  description: |
+    由Unicode中「Emoticons」部份和「Miscellaneous Symbols and Pictographs」部份合成。
+    可在Mac中輸入iOS設備通用的Emoji表情，其他系統可能需安装專門字體。
+  author:
+    - 雪齋 <leoyoontsaw@gmail.com>
+
+switches:
+  - name: ascii_mode
+
+engine:
+  processors:
+    - ascii_composer
+    - key_binder
+    - speller
+    - recognizer
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - matcher
+    - ascii_segmentor
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+  filters:
+    - uniquifier
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  algebra:
+    - "abbrev/^.+$/all/"
+    - "abbrev/^[a-z,]+;([a-z])[a-z]*'?([a-z])?[a-z]*'?([a-z])?[a-z]*`?[a-z]*$/$1$2$3/"
+    - "derive/^[a-z,]+;([a-z]+)'?([a-z]*)'?([a-z]*)`?[a-z]*$/$1$2$3/"
+    - "derive/^[^`]+`([a-z]+)$/$1/"
+    - "derive/^[a-z]+,([a-z]+)(;[a-z'`]+)?$/$1/"
+    - "derive/^([a-z]+),?[a-z]*;[a-z'`]+$/$1/"
+    - "xform/^([a-z]+),?([a-z]*);[a-z'`]+$/$1$2/"
+
+translator:
+  dictionary: emoji
+  spelling_hints: 1
+  comment_format:
+    - "xform/;[a-z'`]*$//"
+    - "xform/^/ /"
+    - "xform/,/ (/"
+    - xform/\((.*)$/\($1\)/
+
+key_binder:
+  import_preset: default
+
+punctuator:
+  import_preset: default
+
+recognizer:
+  import_preset: default

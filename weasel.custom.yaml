@@ -1,0 +1,55 @@
+patch:
+  app_options/cmd.exe:           #特定程序使用指定输入法(英文)
+    ascii_mode: true             #应用名称在进程查看
+  app_options/photoshop.exe:
+    ascii_mode: true
+  app_options/idea64.exe:
+    ascii_mode: true
+  app_options/pycharm64.exe:
+    ascii_mode: true
+  "preset_color_schemes/MyStyleMi":
+    name: MyStyleMi
+    author: Mintimate <"Mintimate's Blog">
+    text_color: 0x6495ed #拼音串
+    candidate_text_color: 0x424242 # 非第一候选项
+    back_color: 0xefefef # 背景
+    border_color: 0xefefef # 边框
+    hilited_text_color: 0xed9564 # 拼音串高亮
+    hilited_back_color: 0xefefef # 拼音串高亮背景
+    hilited_candidate_back_color: 0xed9564 # 第一候选项背景
+    hilited_candidate_text_color: 0xefefef # 第一候选项
+    hilited_comment_text_color: 0xefefef # 注解文字高亮
+    comment_text_color: 0xcac9c8 # 注解文字
+    label_color: 0xcac9c8 # 预选栏编号颜色
+  "preset_color_schemes/MyStyleMiDark":
+    name: MyStyleMiDark
+    author: Mintimate <"Mintimate's Blog">
+    text_color: 0x6495ed #拼音串
+    candidate_text_color: 0xefefef # 非第一候选项
+    back_color: 0x424242 # 背景
+    border_color: 0x424242 # 边框
+    hilited_text_color: 0xc6c01a # 拼音串高亮
+    hilited_back_color: 0x424242 # 拼音串高亮背景
+    hilited_candidate_back_color: 0xc6c01a # 第一候选项背景
+    hilited_candidate_text_color: 0xefefef # 第一候选项
+    hilited_comment_text_color: 0xffffff # 注解文字高亮
+    comment_text_color: 0xefefef #注解文字
+    label_color: 0xefefef # 预选栏编号颜色
+  "style/color_scheme_dark": MyStyleMiDark
+  "style/color_scheme": MyStyleMi
+  "style/display_tray_icon": true
+  "style/font_face": "Microsoft YaHei"
+  "style/font_point": 12
+  "style/label_font_point": 12 # 候选词数字大小
+  "style/horizontal": true # 横向展示
+  "style/inline_preedit": false # 内嵌预编辑
+  "style/corner_radius": 15 # 窗口圆角半径
+  "style/layout/border": 0 # 窗口边界高度，大于圆角半径才有效果
+  "style/layout/border_width": 0 # 窗口边界宽度，大于圆角半径才有效果
+  "style/layout/candidate_spacing": 12
+  "style/layout/hilite_padding": 8
+  "style/layout/hilite_spacing": 3
+  "style/layout/margin_x": 8
+  "style/layout/margin_y": 8
+  "style/layout/round_corner": 7
+  "style/layout/spacing": 10

@@ -1,0 +1,16 @@
+# Rime dictionary
+# encoding: utf-8
+#
+# 个性化词语 - by @Mintimate
+---
+name: custom_simple
+version: "2023.03.15"
+sort: by_weight
+use_preset_vocabulary: true
+...
+
+# 人名
+# 常用语
+哈哈	hh
+macOS   mac
+可以	ky
