@@ -16,7 +16,7 @@ rime配置教程：
 
 0. 安裝[Rime輸入法](https://rime.im/)並註銷或重啟電腦；
 1. 下載本倉庫所有配置文件到本地rime配置文件；
-2. 重新部署Rime（Windows、Linux可能需要配置分詞依賴才可以使用EasyEN，參考：[EasyEn](https://github.com/BlindingDark/rime-easy-en)）
+2. 重新部署Rime（Windows、Linux可能需要配置分詞依賴才可以使用EasyEN，參考：[EasyEn](https://github.com/BlindingDark/rime-easy-en)）　
 3. 開始使用
 
 ## Tips
