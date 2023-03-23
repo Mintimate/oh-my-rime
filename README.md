@@ -5,12 +5,12 @@
 - [中文 - 繁體文檔](README_zh-CHT.md)
 - [English - Documentation](README_en.md)
 
-# Oh-my-rime指南
+## Oh-my-rime指南
 
 rime配置教程：
 - [跨平台的开源输入法Rime定制指南，打造强大的个性化输入法](https://www.mintimate.cn/2023/03/18/rimeQuickInit)
 
-## 安装
+### 安装
 
 以下教程，适用于Linux、macOS和Windows（Xp~）
 
@@ -51,6 +51,12 @@ rime配置教程：
 
 ------
 
+## 支持
+
+- [Mintimate's Blog: https://www.mintimate.cn](https://www.mintimate.cn)
+- [Mintimate的爱发电: 加入电圈，支持创造!](https://afdian.net/a/mintimate)
+- [Bilibili：@Mintimate](https://space.bilibili.com/355567627)
+- [Youtube：@Mintimate](https://www.youtube.com/channel/UCI7LLdUGNzkcKOE7grAqCoA)
 
 ## 参考/致谢
 

@@ -5,12 +5,12 @@
 - [中文 - 繁體文檔](README_zh-CHT.md)
 - [English - Documentation](README_en.md)
 
-#Oh-my-rime guide
+## Oh-my-rime guide
 
 rime configuration tutorial:
 - [Cross-platform open source input method Rime customization guide, create a powerful personalized input method] (https://www.mintimate.cn/2023/03/18/rimeQuickInit)
 
-## Install
+### Install
 
 The following tutorials are available for Linux, macOS and Windows (Xp~)
 
@@ -50,6 +50,13 @@ The default address of the local rime log file is as follows:
 Most of the configuration files are commented.
 
 ------
+
+## Support
+
+- [Mintimate's Blog: https://www.mintimate.cn](https://www.mintimate.cn)
+- [Mintimate's 爱发电: Join the electric circle and support creation!](https://afdian.net/a/mintimate)
+- [Bilibili: @Mintimate](https://space.bilibili.com/355567627)
+- [Youtube: @Mintimate](https://www.youtube.com/channel/UCI7LLdUGNzkcKOE7grAqCoA)
 
 
 ## References/Acknowledgments

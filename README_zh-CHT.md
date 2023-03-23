@@ -5,12 +5,12 @@
 - [中文 - 繁體文檔](README_zh-CHT.md)
 - [English - Documentation](README_en.md)
 
-# Oh-my-rime指南
+## Oh-my-rime指南
 
 rime配置教程：
 - [跨平臺的開源輸入法Rime定製指南，打造強大的個性化輸入法](https://www.mintimate.cn/2023/03/18/rimeQuickInit)
 
-## 安裝
+### 安裝
 
 以下教程，適用於Linux、macOS和Windows（Xp~）
 
@@ -50,6 +50,13 @@ rime配置教程：
 配置文件中大部分都有註釋。
 
 ------
+
+## 支持
+
+- [Mintimate's Blog: https://www.mintimate.cn](https://www.mintimate.cn)
+- [Mintimate的爱发电: 加入电圈，支持创造!](https://afdian.net/a/mintimate)
+- [Bilibili：@Mintimate](https://space.bilibili.com/355567627)
+- [Youtube：@Mintimate](https://www.youtube.com/channel/UCI7LLdUGNzkcKOE7grAqCoA)
 
 
 ## 參考/致謝
