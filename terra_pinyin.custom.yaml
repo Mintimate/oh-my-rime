@@ -1,12 +1,213 @@
-patch: 
-  'translator/dictionary': custom_dict.all
-  'speller/algebra': 
-    - erase/^xx$/
-    - abbrev/^([az]).+$/$1/ #简拼（首字母）
-    - abbrev/^([zcs]h).+$/$1/ #简拼（zh, ch, sh） 
-    - derive/^([zcs])h/$1/ # zh, ch, sh => z, c, s
-    - derive/^([zcs])([^h])/$1h$2/ # z, c, s => zh, ch, sh
-    - derive/([aei])n$/$1ng/ # en => eng, in => ing
-    - derive/([aei])ng$/$1n/ # eng => en, ing => in
-    - derive/([iu])an$/$lang/ # ian => iang, uan => uang
-    - derive/([iu])ang$/$lan/ # iang => ian, uang => uan
+patch:
+  __include: easy_en:/patch_terra_pinyin
+  schema:
+    schema_id: terra_pinyin
+    name: 地球拼音
+    version: '0.20'
+    author:
+      - 佛振 <chen.sst@gmail.com>
+    description: |
+      「漢語拼音」，以符號按鍵 - / < \ 輸入四聲
+      拼音碼表根據 CC-CEDICT 改編
+    dependencies:
+      - stroke
+  
+  switches:
+    - name: ascii_mode
+      reset: 0
+      states: [ 中文, 英文 ]
+    - name: emoji_suggestion
+      reset: 0
+      states: [ "😣️","😁️"]
+    - name: full_shape
+      states: [ 半角, 全角 ]
+    - name: simplification
+      reset: 1
+      states: [ 繁体, 简体 ]
+    - name: ascii_punct
+      states: [ 。，, ．， ]
+  
+  engine:
+    processors:
+      - ascii_composer
+      - recognizer
+      - key_binder
+      - speller
+      - punctuator
+      - selector
+      - navigator
+      - express_editor
+    segmentors:
+      - ascii_segmentor
+      - matcher
+      - abc_segmentor
+      - punct_segmentor
+      - fallback_segmentor
+    translators:
+      - lua_translator@date_translator
+      - lua_translator@time_translator
+      - lua_translator@week_translator
+      - lua_translator@easy_en_translator
+      - punct_translator
+      - table_translator@custom_phrase
+      - reverse_lookup_translator
+      - script_translator
+    filters:
+      - simplifier@emoji_suggestion
+      - simplifier
+      - uniquifier
+    emoji_suggestion:
+      opencc_config: emoji.json
+      option_name: emoji_suggestion
+  
+  speller:
+    alphabet: 'zyxwvutsrqponmlkjihgfedcba-;/<,>\'
+    initials: zyxwvutsrqponmlkjihgfedcba
+    delimiter: " '"
+    algebra:
+      - xform/^r5$/er5/
+      - abbrev/^([a-z]).+$/$1/
+      - abbrev/^([zcs]h).+$/$1/
+      - derive/^([nl])ve/$1ue/
+      - derive/^([jqxy])u/$1v/
+      - derive/([dtnlgkhrzcs])un/$1uen/
+      - derive/ui/uei/
+      - derive/iu/iou/
+      - derive/ao/oa/
+      - derive/([aeiou])ng/$1gn/
+      - derive/([iu])a(o|ng?)/a$1$2/
+      - derive/^([a-z]+)[0-5]$/$1/
+      - derive/([dtngkhrzcs])o(u|ng)$/$1o/
+      - derive/ong$/on/
+      - 'erase/^.*5$/'
+      - 'xlit 1234 -/<\'
+      - 'derive/^(.*)-$/$1;/'
+      - 'derive/^(.*)<$/$1,/'
+      - 'derive/^(.*)\\$/$1>/'
+  
+  translator:
+    dictionary: custom_dict_terra.all
+    spelling_hints: 5  # ～字以內候選標註完整帶調拼音
+    preedit_format:
+      - xform/([nl])v/$1ü/
+      - xform/([nl])ue/$1üe/
+      - xform/([nl])üen/$1uen/
+      - xform/([jqxy])v/$1u/
+      - xform/eh/ê/
+      - 'xform ([aeiou])(ng?|r)([-;/<,>\\]) $1$3$2'
+      - 'xform ([aeo])([iuo])([-;/<,>\\]) $1$3$2'
+      - 'xform a[-;] ā'
+      - 'xform a/ á'
+      - 'xform a[<,] ǎ'
+      - 'xform a[>\\] à'
+      - 'xform e[-;] ē'
+      - 'xform e/ é'
+      - 'xform e[<,] ě'
+      - 'xform e[>\\] è'
+      - 'xform o[-;] ō'
+      - 'xform o/ ó'
+      - 'xform o[<,] ǒ'
+      - 'xform o[>\\] ò'
+      - 'xform i[-;] ī'
+      - 'xform i/ í'
+      - 'xform i[<,] ǐ'
+      - 'xform i[>\\] ì'
+      - 'xform u[-;] ū'
+      - 'xform u/ ú'
+      - 'xform u[<,] ǔ'
+      - 'xform u[>\\] ù'
+      - 'xform ü[-;] ǖ'
+      - 'xform ü/ ǘ'
+      - 'xform ü[<,] ǚ'
+      - 'xform ü[>\\] ǜ'
+    comment_format:
+      - xform ([aeiou])(ng?|r)([1234]) $1$3$2
+      - xform ([aeo])([iuo])([1234]) $1$3$2
+      - xform a1 ā
+      - xform a2 á
+      - xform a3 ǎ
+      - xform a4 à
+      - xform e1 ē
+      - xform e2 é
+      - xform e3 ě
+      - xform e4 è
+      - xform o1 ō
+      - xform o2 ó
+      - xform o3 ǒ
+      - xform o4 ò
+      - xform i1 ī
+      - xform i2 í
+      - xform i3 ǐ
+      - xform i4 ì
+      - xform u1 ū
+      - xform u2 ú
+      - xform u3 ǔ
+      - xform u4 ù
+      - xform v1 ǖ
+      - xform v2 ǘ
+      - xform v3 ǚ
+      - xform v4 ǜ
+      - xform/([nljqxy])v/$1ü/
+      - xform/eh[0-5]?/ê/
+      - xform/([a-z]+)[0-5]/$1/
+  
+  custom_phrase:
+    dictionary: ""
+    user_dict: custom_phrase
+    db_class: stabledb
+    enable_completion: false
+    enable_sentence: false
+    initial_quality: 1
+  
+  reverse_lookup:
+    dictionary: stroke
+    enable_completion: true
+    prefix: "`"
+    suffix: "'"
+    tips: 〔筆畫〕
+    preedit_format:
+      - xlit/hspnz/一丨丿丶乙/
+    comment_format:
+      - xform ([aeiou])(ng?|r)([1234]) $1$3$2
+      - xform ([aeo])([iuo])([1234]) $1$3$2
+      - xform a1 ā
+      - xform a2 á
+      - xform a3 ǎ
+      - xform a4 à
+      - xform e1 ē
+      - xform e2 é
+      - xform e3 ě
+      - xform e4 è
+      - xform o1 ō
+      - xform o2 ó
+      - xform o3 ǒ
+      - xform o4 ò
+      - xform i1 ī
+      - xform i2 í
+      - xform i3 ǐ
+      - xform i4 ì
+      - xform u1 ū
+      - xform u2 ú
+      - xform u3 ǔ
+      - xform u4 ù
+      - xform v1 ǖ
+      - xform v2 ǘ
+      - xform v3 ǚ
+      - xform v4 ǜ
+      - xform/([nljqxy])v/$1ü/
+      - xform/eh[0-5]?/ê/
+      - xform/([a-z]+)[0-5]/$1/
+  
+  punctuator:
+    import_preset: default
+  
+  key_binder:
+    import_preset: default
+    bindings:
+      - { when: has_menu, accept: minus, send: minus }  # tone 1
+      - { when: paging, accept: minus, send: Page_Up }
+  
+  recognizer:
+    import_preset: default
+    patterns:
+      reverse_lookup: "`[a-z]*'?$"

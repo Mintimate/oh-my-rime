@@ -8,8 +8,7 @@ import_tables:
   - luna_pinyin
   - dicts/luna_pinyin.chaizi # 拆字词库
   - dicts/custom_simple # 自定义
-  - dicts/luna_pinyin.sougou  # 搜狗词库
-  - dicts/luna_pinyin.xiandaihanyu # 现代汉语词典
+  - dicts/luna_pinyin.sg.xdhy  # 搜狗词库和现代汉语合并
   - dicts/se_words # 互联网网络词汇
   - dicts/luna_pinyin.biaoqing # 表情
   - dicts/luna_pinyin.emoji # emoji Ext
