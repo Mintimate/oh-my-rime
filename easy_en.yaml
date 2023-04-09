@@ -1,5 +1,18 @@
 # encoding: utf-8
 ---
+
+patch_double_pinyin_mspy:
+  __include: patch
+  speller/alphabet:
+    "zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA;"
+
+patch_terra_pinyin:
+  __include: patch
+  speller/alphabet: >-
+      zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA-;/<,>\
+  speller/initials: >-
+      zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+
 patch:
   schema/dependencies/@next: easy_en
   engine/translators/@next: table_translator@easy_en

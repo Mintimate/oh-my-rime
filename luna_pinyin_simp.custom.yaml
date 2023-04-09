@@ -1,5 +1,9 @@
 # encoding: utf-8
 patch:
+  # 引入EasyEn
+  __include: easy_en:/patch
+  # 关闭EasyEN造句功能
+  'easy_en/enable_sentence': false
   schema:
     name: 明月拼音-简化字
   'translator/dictionary': custom_dict.all
@@ -70,6 +74,7 @@ patch:
   
   punctuator:
     import_preset: symbols
+    recognizer/patterns/punct: "^/([0-9]0?|[A-Za-z]+)$"
     # 自定义快捷符号输入
     symbols:
       "/fs": [½, ‰, ¼, ⅓, ⅔, ¾, ⅒ ]
@@ -90,8 +95,3 @@ patch:
       "$": ["¥", "$", "€", "£", "¢", "¤"]
       "<": ["《", "〈", "«", "<"]
       ">": ["》", "〉", "»", ">"]
-  recognizer/patterns/punct: "^/([0-9]0?|[A-Za-z]+)$"
-  # 关闭EasyEN造句功能
-  'easy_en/enable_sentence': false
-  # 引入EasyEn
-  __include: easy_en:/patch
