@@ -9,6 +9,11 @@
 
 rime配置教程：
 - [跨平台的开源输入法Rime定制指南，打造强大的个性化输入法](https://www.mintimate.cn/2023/03/18/rimeQuickInit)
+- [Bilibili視頻: https://www.bilibili.com/video/BV12M411T7gf](https://www.bilibili.com/video/BV12M411T7gf)
+- [Youtube視頻: https://www.youtube.com/watch?v=yc4AivDDpMM](https://www.youtube.com/watch?v=yc4AivDDpMM)
+
+如果你有QQ帐号，可以加入群聊（禁止广告）: 703260572
+(哈哈，QQ群我才创建，目前人很少；甚至可能就我一个人(╯—﹏—)╯（ ┷━━━┷ )
 
 ### 安装
 

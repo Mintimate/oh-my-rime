@@ -9,6 +9,10 @@
 
 rime configuration tutorial:
 - [Cross-platform open source input method Rime customization guide, create a powerful personalized input method] (https://www.mintimate.cn/2023/03/18/rimeQuickInit)
+- [Bilibili Video: https://www.bilibili.com/video/BV12M411T7gf](https://www.bilibili.com/video/BV12M411T7gf)
+- [Youtube Video: https://www.youtube.com/watch?v=yc4AivDDpMM](https://www.youtube.com/watch?v=yc4AivDDpMM)
+
+You have a QQ account, you can join the group chat(No Ads!): 703260572
 
 ### Install
 
