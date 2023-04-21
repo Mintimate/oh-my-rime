@@ -2,6 +2,8 @@
 patch:
   # 引入EasyEn
   __include: easy_en:/patch
+  # 输入长度限制，避免卡死；参考：https://github.com/LawssssCat/rime-aurora
+  __include: code_limit:/patch
   # 关闭EasyEN造句功能
   'easy_en/enable_sentence': false
   schema:

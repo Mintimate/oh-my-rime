@@ -1,0 +1,5 @@
+# 编码设置
+patch:
+  engine/processors/@after 0: lua_processor@code_length_limit_processor@code # 限制输入长度
+  code:
+    length_limit: 25 # 限制输入长度
