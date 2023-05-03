@@ -12,8 +12,8 @@ patch:
     - {accept: bracketright, send: Page_Down, when: has_menu}
   "menu/page_size": 9
   schema_list:
-    - {schema: terra_pinyin}
-    - {schema: luna_pinyin_simp}
+    - {schema: luna_pinyin_minti} # 定制版本明月拼音
+    - {schema: terra_pinyin} # 地球拼音
   "switcher/hotkeys":
     - "Control+grave"
   "switcher/save_options":
