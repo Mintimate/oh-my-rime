@@ -13,6 +13,7 @@ rime配置教程：
 - [Youtube視頻: https://www.youtube.com/watch?v=yc4AivDDpMM](https://www.youtube.com/watch?v=yc4AivDDpMM)
 
 如果你有QQ帐号，可以加入群聊（禁止广告）: 703260572
+
 (哈哈，QQ群我才创建，目前人很少；甚至可能就我一个人(╯—﹏—)╯（ ┷━━━┷ )
 
 ### 安装
@@ -68,3 +69,7 @@ rime配置教程：
 1. [Rime-RimeWithSchemata](https://github.com/rime/home/wiki/RimeWithSchemata)
 2. [Rime/小狼豪/鼠须管 输入法配置记](https://chenhe.me/post/oh-my-rime)
 3. [rime-setting](https://github.com/Iorest/rime-setting)
+
+## 推荐项目
+- [98五笔，十分好用的五笔输入方案](http://www.98wubi.com/)
+- [雾凇拼音，很优秀的中文词库](https://github.com/iDvel/rime-ice)
