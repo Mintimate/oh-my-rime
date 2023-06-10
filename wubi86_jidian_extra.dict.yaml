@@ -1,0 +1,800 @@
+---
+name: wubi86_jidian_extra
+note: "扩展词库"
+version: "2019-09-06"
+last_edit_time: "2020-04-19"
+dict_grouped: true # 词库管理应用识别：标记该码表为分组模式
+sort: original
+# 码表的排序方式: by_weight 权重，original 原始顺序
+
+# 码表内容格式：字词 键码  权重 （中间是tab，不是空格）
+# '#'开头的只是注释， 注释只能另起一行写，不能在词条后面写
+# `##` 两个 # 开头的会被识别为分组名，其后跟的词条就是该组的内容
+
+...
+## 通用短语
+一两个月	ggwe
+母胎	xgec
+网抑云	mrfc
+动效	fcuq
+底库	yqyl
+旁通	upce
+延长线	ttxg	1
+　	cokg		全角空格 co空格
+√	qctf		勾选
+困意	lsuj
+小笼包	itqn
+一泻千里	gitj
+夜猫	ywqt
+绿幕	xvaj
+U盘	utel
+水基	iiad
+灭火器	gokk
+水基灭火器	iagk
+看一下	rggh
+毫安时	ypjf
+雷雳	flfd
+前叉	uecy
+随机数	bsov
+运存	fcdh
+后视	rgpy
+红轴	xalm
+青轴	gelm
+茶轴	awlm	1
+黑轴	lflm	1
+白轴	rrlm
+博主	fgyg
+德邦	tfdt
+楼道	sout	1
+摊小便宜吃大亏	riwf
+懵逼	nagk
+滴滴	iuiu
+逢集	tdwy
+煎包	ueqn
+守岁	pfmq
+烤串	ofkk
+笑死	ttgq
+医保卡	awhh
+社保卡	pwhh
+烤肠	ofen
+螺蛳粉	jjow
+简简单单	ttuu
+竖版	jcth
+城东	fdai
+至亲	gcus
+生不如死	tgvg
+自理	thgj
+虚头巴脑	huce
+炸串	otkk
+顺风车	kmlg
+同款	mgff
+结痂	xful
+无氧运动	frff
+有氧运动	drff
+有氧	dern
+无氧	fqrn
+陀螺仪	bjwy
+无穷大	fpdd
+无穷小	fpih
+斗鸡眼	uchv
+炸货	otwx
+亲娘	usvy
+声线	fnxg	1
+惊悚	nyng
+静好	gevb
+岁月静好	megv
+买车	nulg
+卖车	fnlg
+广场舞	yfrl
+短链	tdql
+透明度	tjya
+充电线	yjxg
+也就是	byjg
+虚化	hawx
+亡命天涯	ywgi
+武士刀	gfvn
+电锯	jnqn
+手机卡	rshh
+占比	hkxx
+鬼压床	rdys
+纯音乐	xuqi
+美缝	ugxt
+稍安勿躁	tpqk
+翻找	tora
+吱嘎	kfkd
+落格	aist
+热力图	rllt
+知书达理	tndg
+常亮	ipyp
+浴火重生	iott
+沉得住气	itwr
+幸存者偏差	fdfu
+米粉节	ooab
+
+## 汽车
+朗逸	yvqk
+验车	cwlg
+一汽	ggir
+一汽大众	gidw
+速腾	gkeu
+上汽	hhir
+上汽大众	hidw
+科三	tudg
+科二	tufg
+科一	tugg	1
+科四	tulh
+凌渡	ufiy
+迈腾	dneu
+自驾	thlk
+自驾游	tliy
+宝来	pggo
+手动挡	rfri
+新能源	ucid
+插电	rtjn
+混动	ijfc
+插混	rtij	1
+荣威	apdg
+哈弗	kwxj
+埃安	fcpv
+AION	aion
+记录仪	yvwy
+好猫	vbqt
+欧拉	aqru
+帝豪	upyp
+名爵	qkel
+纯电	xgjn	1
+零跑	fwkh
+奥特能	ttce
+改款	ntff
+高配	ymsg
+低配	wqsg	1
+车商	lgum
+朗行	yvtf
+三厢	dgds
+行车记录仪	tlyw
+CarPlay	carp
+挡位	riwu
+自动挡	tfri
+防滑链	biql
+临牌	jtth
+加满	lkia
+内饰	mwqn
+车损	lgrk
+授理	regj
+三者	dgft
+三者险	dfbw	1
+车标	lgsf
+全合成	wwdn
+底壳	yqfp
+点烟器	hokk
+区间测速	auig
+静电贴	gjmh
+高速费	ygxj
+过路费	fkxj
+途观	wtcm
+后备箱	rtts
+
+## 口语
+姐们	vewu	1
+爷们儿	wwqt
+爷们	wqwu
+姐们儿	vwqt
+
+## 汽车
+烧胎	oaec
+前刹	ueqs
+后刹	rgqs
+车展	lgna
+火花塞	oapf
+滤芯	ihan
+
+## 摩托车
+单盘	ujte
+双盘	ccte
+胎压	ecdf
+CBR500R	cbr
+GoPro	gop
+GSX250R	gsx
+曼岛TT	jqtt
+排量	rdjg
+护杠	rysa
+摩托范	yrai
+摩托邦	yrdt
+
+## 软件开发
+伪类	wyod
+西数	sgov
+外键	qhqv
+数据源	orid
+七牛云	arfc
+闪退	uwve
+axios	axio
+保活	wkit
+
+## 小吃
+蒸饺	abqn
+
+## 王者荣耀
+黄忠	amkh
+太乙真人	dnfw
+蔡文姬	ayva
+虞姬	hava
+李元芳	sfay
+刘备	yjtl
+橘右京	sdyi
+安琪拉	pgru
+项羽	adnn
+甄姬	sfva
+扁鹊	ynaj
+赢政	yngh
+妲己	vjnn
+小乔	ihtd
+元歌	fqsk
+娜可露露	vsff
+典韦	mafn
+钟无艳	qfdh
+赵云	fhfc
+关羽	udnn
+杨戬	sngo
+露娜	fkvv
+兰陵王	ubgg
+程咬金	tkqq
+白起	rrfh
+牛魔	rhys
+亚瑟	gogg
+夏侯惇	dwny
+韩信	fjwy
+老夫子	ffbb
+宫本武藏	psga
+阿轲	bsls
+不知火舞	gtor
+武则天	gmgd
+王昭君	gjvt
+高渐离	yiyb
+东皇太一	ardg
+狄仁杰	qwso
+鲁班七号	qgak
+百里守约	djpx
+百里玄策	djyt
+上官婉儿	hpvq
+公孙离	wbyb
+马超	cnfh
+芈月	gjee
+干将莫邪	fuaa
+沈梦溪	isie
+盾山	rfmm
+蒙犽	apqt
+鲁班大师	qgdj
+云中君	fkvt
+盘古	tedg
+李信	sbwy
+伽罗	wllq
+司马懿	ncfp
+孙策	bitg
+米莱狄	oaqt
+狂铁	qtqr
+弈星	yojt
+裴擒虎	drha
+杨玉环	sggg
+明世隐	jabq
+梦奇	ssds
+苏烈	algq
+大乔	ddtd
+桑启	ccyn
+戈娅	agvg
+海月	itee
+莱西奥	astm
+司空震	npfd
+云樱	fcsm
+
+## 影视
+黑镜	lfqu
+夏洛特烦恼	ditn
+你好，李焕英	soam
+危情三日	qndj
+时间旅行者的妻子	juyb
+星际穿越	jbpf
+无敌破坏王	ftdg
+盗梦空间	uspu
+黑客帝国	lpul
+利刃出鞘	tvba
+电锯惊魂	jqnf
+阿凡达	bmdp
+切尔诺贝利	aqyt
+极盗者	suft
+王牌特工	gtta
+暮光之城	aipf
+狼嚎	qtky
+冰海陷落	uiba
+灰猎犬号	dqdk
+触不可及	qgse
+铁齿铜牙纪晓岚	qhqm
+纪晓岚	xjmm
+和珅	tkgj
+男人帮	lwdt
+夏洛特烦恼	ditn
+莫娣	ajvu
+隐入烟尘	btoi
+西虹市首富	sjyp
+满江红	iixa	1
+武林外传	gsqw
+
+## 歌手
+谢春花	ydaw
+王贰浪	gaiy
+王筝	ggtq
+阿悄	bsni
+薛之谦	apyu
+张碧晨	xgjd
+那英	vfam
+王菲	ggad
+庆庆	ydyd
+周杰伦	msww
+陈粒	baou
+解忧邵帅	qnvj
+龙梅子	dsbb
+张峰奇	xmds
+莫艳琳	adgs
+陈雪凝	bfux
+李荣浩	sait
+陈慧娴	bdvu
+郑源	udid
+华晨宇	wjpg
+邓紫棋	chsa
+张蔷	xtaf
+王心凌	gnuf
+蔡依林	awss
+孙燕姿	bauq
+莫叫姐姐	akvv
+徐怀钰	tnqg
+
+## 演员
+周韵	mfuj
+姜文	ugyy
+姜武	ugga
+舒淇	wfia
+赵薇	fhat
+葛尤	ajdn
+甄子丹	sbmy
+李连杰	slso
+姚晨	vijd
+王洛丹	gimy
+孙红雷	bxfl
+沙溢	iiiu
+
+## 歌曲
+寄居蟹	pnqe
+斑马	gycn
+醉清风	simq
+借我	watr
+无骨无花，无我无他	fmfw
+大天篷	dgtt
+孤芒	bray
+伊兰爱情故事	wueg
+千千阙歌	ttus
+
+## 游戏名
+刺客信条	gpwt
+极品飞车	sknl
+塞尔达	pqdp
+英灵殿	avna
+双人成行	cwdt
+
+## 物联网
+通断	ceon
+动环	fcgg
+声光报警器	firk
+声光	fniq
+天诚	gdyd
+列头柜	gusa
+一体机	gwsm
+风机	mqsm
+恒湿机	nism
+烟感	oldg
+灯带	osgk
+密集架	pwlk
+机柜	smsa
+音柱	ujsy
+新风机	umsm
+漏水绳	iixk
+微模块	tsfn	1
+
+## 游戏名
+皇牌空战	rtph
+
+## 物联网
+逆变器	uykk
+
+## 品牌
+美特斯邦威	utad
+薛记炒货	ayow
+泰迅	dwnf
+五菱	ggaf
+小鹏汽车	ieil
+小鹏	ihee
+江小白	iirr
+果唯依	jkwy
+凯迪拉克	mmrd
+迪卡侬	mhwp
+超意兴	fuiw
+迈森兰	dsuf
+恒源祥	nipy
+赛羽	pfnn
+捷酷	rgsg
+海澜之家	iipp
+海澜	itiu
+千图	tflt
+华莱士	wafg
+舒尔	wfqi
+维迈通	xdce
+戴森	fass
+格力	stlt
+科大讯飞	tdyn
+
+## 软件名
+懂车帝	nlup
+阿里云盘	bjft
+百度云	dyfc
+百度网盘	dymt
+欧路	aqkh
+点音	hkuj
+
+## 品牌
+圣豪	cfyp
+良品	yvkk
+罗德	lqtf
+
+## 区域
+莒县	akeg
+孙家庄	bpyf
+马家	cnpe
+马家小区	cpia
+台儿庄	cqyf
+万达	dndp
+雪野湖	fjid
+下屯	ghgb
+沂水	irii
+蟠龙山	jdmm
+果庄	jsyf
+泉城广场	rfyf
+领秀城	wtfd
+台儿庄	cqyf
+槐荫区	saaq
+济宁	iyps
+章丘	ujrg
+
+## 医学
+直肠癌	feuk
+肛痿炎	euoo
+肝硬化	edwx
+褥疮	puuw
+窦道	pwut
+复方角菜酸脂软膏	tyqy
+安乃近	perp
+腰椎间盘突出	esub
+微创	tmwb
+
+## 三四叠字
+众	cccc
+厽	cccc
+刕	cccc
+㐂	cccc
+孨	cccc
+品	cccc
+姦	cccc
+森	cccc
+歮	cccc
+鑫	cccc
+淼	cccc
+尛	cccc
+焱	cccc
+垚	cccc
+壵	cccc
+惢	cccc
+𡘙	cccc
+猋	cccc
+犇	cccc
+掱	cccc
+舙	cccc
+晶	cccc
+瞐	cccc
+𤾩	cccc
+皛	cccc
+畾	cccc
+磊	cccc
+毳	cccc
+鱻	cccc
+驫	cccc
+骉	cccc
+羴	cccc
+矗	cccc
+䆐	cccc
+飝	cccc
+龘	cccc
+麤	cccc
+叕	cccc
+
+## 化妆品
+奥洛菲	tiad
+欧莱雅	aaah
+韩芬娜	favv
+春纪	dwxn
+碧思泉	glri
+魅力可诗	rlsy
+美肌颜	ueut
+
+## 社会事件
+新型冠状病毒	ugpg
+小汤山	iimm
+火神山	opmm
+雷神山	fpmm
+汶川	iykt
+N号房	nkyn
+时空伴随者	jpwf
+健康码	wydc
+封控	ffrp
+
+## emoji
+🙂	tmtt		微笑
+🙃	tmtt		微笑
+😆	ddtt		大笑
+😂	ttkk		笑哭
+🤣	ttkk		笑哭
+🥰	ep		爱
+🤩	kffg		哇
+🥶	dndn		尴尬
+🤗	tada		tada
+👍	xk		强
+👍	rhk		牛
+😭	ddkk		大哭
+🥳	ydpy		庆祝
+😎	tdgk		智囊
+😉	ryhv		挤眼
+😉	ryhv		眨眼
+😊	skep		可爱
+😏	klkl		嘿嘿
+😝	kftd		吐舌
+😛	kftd		吐舌
+😋	vbkt		好吃
+😚	usus		亲亲
+😘	epwq		爱你
+😗	usus		亲亲
+😙	usus		亲亲
+🤩	wow		wow
+😤	tgrn		生气
+😳	ks		呆
+😡	tgrn		生气
+🤬	kkww		骂人
+🤫	khag		嘘
+🤔	lnft		思考
+🤗	tada		tada
+🤗	wala		wala
+😓	ifh		汗
+🤮	tgug		生病
+🤒	ntoa		发烧
+🤧	thiu		鼻涕
+🤧	dgjh		感冒
+👽	qjww		外星人
+🤐	ufkh		闭嘴
+🥱	kwqw		哈欠
+🥱	lsbn		困了
+😴	htip		睡觉
+😪	htip		睡觉
+😪	htud		睡着
+💀	meme		骷髅
+💩	ococ		粑粑
+💩	wgwg		便便
+👻	rqc		鬼
+🙂	tmtt		微笑
+🙃	tmtt		微笑
+😆	ddtt		大笑
+😂	ttkk		笑哭
+🤣	ttkk		笑哭
+🥰	ep		爱
+🤩	kffg		哇
+🥶	dndn		尴尬
+🤗	tada		tada
+👍	xk		强
+👍	rhk		牛
+😭	ddkk		大哭
+🥳	ydpy		庆祝
+😎	tdgk		智囊
+😉	ryhv		挤眼
+😉	ryhv		眨眼
+😊	skep		可爱
+😏	klkl		嘿嘿
+😝	kftd		吐舌
+😛	kftd		吐舌
+😋	vbkt		好吃
+😚	usus		亲亲
+😘	epwq		爱你
+😗	usus		亲亲
+😙	usus		亲亲
+🤩	wow		wow
+😤	tgrn		生气
+😳	ks		呆
+😡	tgrn		生气
+🤬	kkww		骂人
+🤫	khag		嘘
+🤔	lnft		思考
+🤗	tada		tada
+🤗	wala		wala
+😓	ifh		汗
+🤮	tgug		生病
+🤒	ntoa		发烧
+🤧	thiu		鼻涕
+🤧	dgjh		感冒
+👽	qjww		外星人
+🤐	ufkh		闭嘴
+🥱	kwqw		哈欠
+🥱	lsbn		困了
+😴	htip		睡觉
+😪	htip		睡觉
+😪	htud		睡着
+💀	meme		骷髅
+💩	ococ		粑粑
+💩	wgwg		便便
+👻	rqc		鬼
+😈	ahgo		邪恶
+✌🏻	bbh		耶
+✌🏻	yeah		耶
+🤦🏻‍♂️	kdb		呃
+🙏🏻	pypy		祈祷
+⭐	ggjt		五星
+⭐	jtjt
+
+## emoji动物
+🐶	qtqk		狗
+🐱	qtal		猫
+🐭	vnu		鼠
+🐠	qgf		鱼
+🐯	ftha		虎
+🦖	amdx		恐龙
+🐞	jsjh		螵虫
+🐙	ujqg		章鱼
+🐔	wccq		公鸡
+🦃	oocq		火鸡
+🐑	xrud		绵羊
+🐬	itee		海豚
+🐘	ddqj		大象
+🦎	nkha		壁虎
+🦌	ynj		鹿
+🐵	qtbb		猴子
+🐺	qty		狼
+🦉	quyw		猫头鹰
+🐳	qgqg		鲸鱼
+🐛	ttjh		毛毛虫
+🐜	jcjy		蚂蚁
+🦇	jyjg		蝙蝠
+🦕	amdx		恐龙
+🦒	tcyn		长颈鹿
+🕸	jjmq		蜘蛛网
+🦜	mmga		鹦鹉
+🐤	ihcq		小鸡
+🐡	isee		河豚
+🦞	dxjg		龙虾
+🦘	wavn		袋鼠
+🦙	udcp		羊驼
+🐪	ctcp		骆驼
+🦐	jghy		虾
+🐊	qgqg		鳄鱼
+🐲	dxn		龙
+🦓	gycn		斑马
+🦏	iscn		河马
+🦑	qnma		乌贼
+🦂	jjbb		蝎子
+🦛	iscn		河马
+🐏	xrud		绵羊
+🦈	iiqg		鲨鱼
+🦭	itee		海豹
+🐉	dxn		龙
+🦬	rhk		牛
+🦫	vnu		鼠
+🦩	mspt		丹顶鹤
+🦧	qtqt		猩猩
+🐆	eeqy		豹
+🦚	bniw		孔雀
+🐻‍❄️	ceqt		熊猫
+🦢	trng		鹅
+🐋	qgqg		鲸鱼
+🦦	scng		树懒
+🐈‍⬛	qtal		猫
+🐚	itjl		海螺
+🏇🏻	pfnc		赛马
+🐢	qnqj		乌龟
+🦆	lqbb		鸭子
+🕊	wgbb		鸽子
+🦍	qtqt		猩猩
+🐐	mmud		山羊
+🦄	qqul		独角兽
+🦋	jdja		蝴蝶
+🐄	verh		奶牛
+🐮	rhk		牛
+🐕‍🦺	nydg		导盲犬
+🦮	qtqk		狗
+🐕	qtqk		狗
+🐹	vnu		鼠
+🐹	wbvn		仓鼠
+🐽	qtfj		猪
+🐷	qtfj		猪
+🙈	rddm		掩面
+🙈	rgew		捂脸
+🦔	gmqt		刺猬
+
+## emoji水果
+🍏	agjs		苹果
+🍎	agjs		苹果
+🍐	tjs		梨
+🍊	swbb		橙子
+🍋	spsa		柠檬
+🍌	tjaw		香蕉
+🍇	aqaq		葡萄
+🍓	ajat		草莓
+🫐	ajat		蓝莓
+🍈	kprc		哈密瓜
+🍒	smsi		樱桃
+🍑	sibb		桃子
+🥭	ayjs		芒果
+🍍	aial		菠萝
+🥥	sbbb		椰子
+🥝	qqsi		猕猴桃
+🍆	albb		茄子
+🥑	rijs		牛油果
+🥦	suaw		西兰花
+🥦	aeaw		菜花
+🥬	imae		油菜
+🥒	amrc		黄瓜
+🌶	ugsh		辣椒
+🫑	aesu		菜椒
+🌽	gyoy		玉米
+🥕	dahh		胡萝卜
+🧄	ddaf		大蒜
+🧄	afi		蒜
+🧅	iuaq		洋葱
+🥔	ffgk		土豆
+🍠	xaal		红薯
+🍠	fbrc		地瓜
+🥚	cqnh		鸡蛋
+🍗	cqev		鸡腿
+🍭	ssoy		棒棒糖
+🥢	tnbb		筷子
+🍺	kris		啤酒
+🍻	kris		啤酒
+🥂	kjis		啤酒
+🥂	kjis		干杯
+🥮	eeqn		月饼
+
+## emoji运动
+⚽️	khgf		足球
+🏀	tjgf		篮球
+🏈	ssgf		橄榄球
+⚾️	sdgf		棒球
+🥎	sdgf		棒球
+🎾	mqgf		网球
+🏐	rdgf		排球
+🏉	ssgf		橄榄球
+🥏	nute		飞盘
+🎱	ckgf		台球
+🏓	rrgf		乒乓球
+🏸	ntgf		羽毛球
+⛳️	yqfw		高尔夫
+🪁	mqtq		风筝
+🤿	ifii		潜水
+⛷	imfv		滑雪
+🎿	imfv		滑雪
+🏂	imfv		滑雪
+🏂	ujsr		单板
+🥌	uifp		冰壶
+⛸	imui		滑冰
+🛹	imsr		滑板
+🥊	udfm		拳击
+🥋	kuut		跆拳道
+🎮	iyca		游戏
+
+## 特殊字符
+✓	qctf
+✓	cfkg
+²	guyy
+³	uuyy
+Ω	aqvx
+

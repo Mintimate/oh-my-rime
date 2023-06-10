@@ -4,7 +4,7 @@
 schema:
   schema_id: luna_pinyin_minti
   name: 明月拼音-定制版
-  version: "1.01"
+  version: "1.10"
   author:
     - mintimate < @Mintimate|https://www.mintimate.cn >
   description: |
@@ -14,7 +14,8 @@ schema:
       * rime wiki: https://github.com/rime/home/wiki
       * Chewing - 新酷音
       * opencc - 開放中文轉換
-  dependencies:
+  dependencies: # 参考 https://github.com/MaxChang3/rime-chaizi
+    - wubi86_jidian
     - stroke
 
 switches:
@@ -34,9 +35,9 @@ switches:
 
 engine:
   processors:
-    - ascii_composer
-    - recognizer
-    - key_binder
+    - ascii_composer # ※ 處理西文模式及中西文切換
+    - recognizer # ※ 與 matcher 搭配，處理符合特定規則的輸入碼，如網址、反查等
+    - key_binder # ※ 在特定條件下將按鍵綁定到其他按鍵，如重定義逗號、句號爲候選翻頁鍵
     - speller
     - punctuator
     - selector
@@ -45,6 +46,8 @@ engine:
   segmentors:
     - ascii_segmentor # 標識西文段落
     - matcher # 標識符合特定規則的段落，如網址、反查等
+    - affix_segmentor@wubi86_jidian
+    - affix_segmentor@stroke
     - abc_segmentor # 標識常規的文字段落
     - punct_segmentor # 標識句讀段落
     - fallback_segmentor # 標識其他未標識段落
@@ -53,8 +56,10 @@ engine:
     - lua_translator@time_translator # 时间Lua
     - lua_translator@week_translator # 星期Lua
     - lua_translator@easy_en_translator # 输入截断
-    - punct_translator
-    - table_translator@custom_phrase
+    - echo_translator      # ※ 沒有其他候選字時，回顯輸入碼
+    - punct_translator  # ※ 轉換標點符號
+    - table_translator@wubi86_jidian
+    - table_translator@stroke
     - reverse_lookup_translator
     - script_translator
   filters:
@@ -75,7 +80,7 @@ translator:
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
 
-speller: 
+speller:
   # 拼写匹配
   algebra:
     - erase/^xx$/ # 首选保留
@@ -93,24 +98,29 @@ speller:
     - abbrev/^([a-z]).+$/$1/ #简拼（首字母）
     - abbrev/^([zcs]h).+$/$1/ #简拼（zh, ch, sh）
 
-custom_phrase:
-  dictionary: ""
-  user_dict: custom_phrase
-  db_class: stabledb
-  enable_completion: false
-  enable_sentence: false
-  initial_quality: 1
-
-reverse_lookup:
-  dictionary: stroke
+wubi86_jidian:
+  tag: wubi86_jidian
+  dictionary: wubi86_jidian
+  enable_user_dict: false
   enable_completion: true
   prefix: "`"
   suffix: "'"
-  tips: 〔筆畫〕
+  tips: 〔五笔〕
+
+stroke:
+  tag: stroke
+  dictionary: stroke
+  enable_user_dict: false
+  prefix: 'i'
+  suffix: "'"
+  tips: 〔笔画〕
   preedit_format:
     - xlit/hspnz/一丨丿丶乙/
-  comment_format:
-    - xform/([nl])v/$1ü/
+
+reverse_lookup:
+  tags: [wubi86_jidian,stroke]
+  overwrite_comment: true
+  dictionary: luna_pinyin
 
 punctuator:
   import_preset: symbols
@@ -139,5 +149,6 @@ key_binder:
 recognizer:
   import_preset: default
   patterns:
-    punct: '^/([0-9]0?|[A-Za-z]+)$'
-    reverse_lookup: "`[a-z]*'?$"
+    punct: "^/([0-9]0?|[a-z]+)$"
+    wubi86_jidian: "`[a-z]*'?$"
+    stroke: "i[a-z]*'?$"
