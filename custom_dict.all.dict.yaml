@@ -6,7 +6,6 @@ use_preset_vocabulary: true
 # 此处为 输入法所用到的词库，既补充拓展词库的地方
 import_tables:
   - luna_pinyin
-  - dicts/luna_pinyin.chaizi # 拆字词库
   - dicts/custom_simple # 自定义
   - dicts/luna_pinyin.sg.xdhy  # 搜狗词库和现代汉语合并
   - dicts/se_words # 互联网网络词汇
