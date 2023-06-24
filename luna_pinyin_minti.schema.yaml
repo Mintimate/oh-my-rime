@@ -14,7 +14,8 @@ schema:
       * rime wiki: https://github.com/rime/home/wiki
       * Chewing - 新酷音
       * opencc - 開放中文轉換
-  dependencies: # 参考 https://github.com/MaxChang3/rime-chaizi
+  dependencies:
+    - chaizi# 参考 https://github.com/MaxChang3/rime-chaizi
     - wubi86_jidian
     - stroke
 
@@ -59,8 +60,9 @@ engine:
     - echo_translator      # ※ 沒有其他候選字時，回顯輸入碼
     - punct_translator  # ※ 轉換標點符號
     - table_translator@wubi86_jidian
+    - table_translator@chaizi
     - table_translator@stroke
-    - reverse_lookup_translator
+    # - reverse_lookup_translator # 反查模块，多标签情况下去除
     - script_translator
   filters:
     - simplifier@emoji_suggestion
@@ -116,9 +118,20 @@ stroke:
   tips: 〔笔画〕
   preedit_format:
     - xlit/hspnz/一丨丿丶乙/
+    
+chaizi:
+  tag: chaizi
+  dictionary: chaizi
+  enable_completion: true
+  prefix: "u"
+  preedit_format:
+    - xform/([nljqxy])v/$1ü/
+  comment_format:
+    - xform/([nljqxy])v/$1ü/
+  tips: 〔拆字〕
 
 reverse_lookup:
-  tags: [wubi86_jidian,stroke]
+  tags: [wubi86_jidian,stroke,chaizi]
   overwrite_comment: true
   dictionary: luna_pinyin
 
@@ -152,3 +165,4 @@ recognizer:
     punct: "^/([0-9]0?|[a-z]+)$"
     wubi86_jidian: "`[a-z]*'?$"
     stroke: "i[a-z]*'?$"
+    chaizi: "u[a-z]*'?$"
