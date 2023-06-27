@@ -15,7 +15,7 @@ schema:
       * Chewing - 新酷音
       * opencc - 開放中文轉換
   dependencies:
-    - chaizi# 参考 https://github.com/MaxChang3/rime-chaizi
+    - chaizi # 参考 https://github.com/MaxChang3/rime-chaizi
     - wubi86_jidian
     - stroke
 
@@ -49,6 +49,7 @@ engine:
     - matcher # 標識符合特定規則的段落，如網址、反查等
     - affix_segmentor@wubi86_jidian
     - affix_segmentor@stroke
+    - affix_segmentor@chaizi
     - abc_segmentor # 標識常規的文字段落
     - punct_segmentor # 標識句讀段落
     - fallback_segmentor # 標識其他未標識段落

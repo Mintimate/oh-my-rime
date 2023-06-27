@@ -63,7 +63,7 @@ translator:
   enable_user_dict: true
 
 reverse_lookup:
-  dictionary: dicts/luna_pinyin
+  dictionary: luna_pinyin
   prefix: "`"
   tips: 〔PinYin〕
   preedit_format:
