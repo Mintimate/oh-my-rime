@@ -68,6 +68,7 @@ rime配置教程：
 1. [Rime-RimeWithSchemata](https://github.com/rime/home/wiki/RimeWithSchemata)
 2. [Rime/小狼豪/鼠須管 輸入法配置記](https://chenhe.me/post/oh-my-rime)
 3. [rime-setting](https://github.com/Iorest/rime-setting)
+4. [雾凇拼音 | 长期维护的简体词库](https://github.com/iDvel/rime-ice)
 
 ## 推薦項目
 - [98五筆，十分好用的五筆輸入方案](http://www.98wubi.com/)

@@ -68,6 +68,7 @@ Most of the configuration files are commented.
 1. [Rime-RimeWithSchemata](https://github.com/rime/home/wiki/RimeWithSchemata)
 2. [Rime/Xiaolanghao/Shuxuguan Input Method Configuration Notes](https://chenhe.me/post/oh-my-rime)
 3. [rime-setting](https://github.com/Iorest/rime-setting)
+4. [rime-ice | The long-term maintenance version of Simplified Chinese Characters](https://github.com/iDvel/rime-ice)
 
 ## Other Recommended
 - [98 Wubi, a very useful Wubi input program](http://www.98wubi.com/)
