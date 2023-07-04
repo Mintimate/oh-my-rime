@@ -60,9 +60,9 @@ engine:
     - lua_translator@easy_en_translator # 输入截断
     - echo_translator      # ※ 沒有其他候選字時，回顯輸入碼
     - punct_translator  # ※ 轉換標點符號
-    - table_translator@wubi86_jidian
-    - table_translator@chaizi
-    - table_translator@stroke
+    - reverse_lookup_translator@wubi86_jidian
+    - reverse_lookup_translator@chaizi
+    - reverse_lookup_translator@stroke
     # - reverse_lookup_translator # 反查模块，多标签情况下去除
     - script_translator
   filters:
