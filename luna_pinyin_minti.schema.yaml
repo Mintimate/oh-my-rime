@@ -58,6 +58,7 @@ engine:
     - lua_translator@time_translator # 时间Lua
     - lua_translator@week_translator # 星期Lua
     - lua_translator@easy_en_translator # 输入截断
+    - lua_translator@number_translator # 金额大小写
     - echo_translator      # ※ 沒有其他候選字時，回顯輸入碼
     - punct_translator  # ※ 轉換標點符號
     - reverse_lookup_translator@wubi86_jidian
@@ -119,7 +120,7 @@ stroke:
   tips: 〔笔画〕
   preedit_format:
     - xlit/hspnz/一丨丿丶乙/
-    
+
 chaizi:
   tag: chaizi
   dictionary: chaizi
@@ -167,3 +168,4 @@ recognizer:
     wubi86_jidian: "`[a-z]*'?$"
     stroke: "i[a-z]*'?$"
     chaizi: "u[a-z]*'?$"
+    number: "^R[0-9]+[.]?[0-9]*"
