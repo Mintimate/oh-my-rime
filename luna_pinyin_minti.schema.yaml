@@ -18,6 +18,7 @@ schema:
     - chaizi # 参考 https://github.com/MaxChang3/rime-chaizi
     - wubi86_jidian
     - stroke
+    - easy_en
 
 switches:
   - name: ascii_mode
@@ -48,27 +49,27 @@ engine:
     - ascii_segmentor # 標識西文段落
     - matcher # 標識符合特定規則的段落，如網址、反查等
     - affix_segmentor@wubi86_jidian
-    - affix_segmentor@stroke
     - affix_segmentor@chaizi
+    - affix_segmentor@stroke
     - abc_segmentor # 標識常規的文字段落
     - punct_segmentor # 標識句讀段落
     - fallback_segmentor # 標識其他未標識段落
   translators:
+    - punct_translator  # ※ 轉換標點符號
+    - script_translator
     - lua_translator@date_translator # 日期Lua
     - lua_translator@time_translator # 时间Lua
     - lua_translator@week_translator # 星期Lua
     - lua_translator@easy_en_translator # 输入截断
     - lua_translator@number_translator # 金额大小写
-    - echo_translator      # ※ 沒有其他候選字時，回顯輸入碼
-    - punct_translator  # ※ 轉換標點符號
+    - table_translator@easy_en  # 英文输入（作为子翻译器，优先级需要比原生的低）
+    # - echo_translator      # ※ 没有候选词，返回字符
     - reverse_lookup_translator@wubi86_jidian
     - reverse_lookup_translator@chaizi
     - reverse_lookup_translator@stroke
     # - reverse_lookup_translator # 反查模块，多标签情况下去除
-    - script_translator
   filters:
     - simplifier@emoji_suggestion
-    - simplifier@zh_simp # 简体
     - simplifier
     - uniquifier
   # Emoji模块
@@ -83,6 +84,13 @@ translator:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
+  initial_quality: 1.2
+
+easy_en:
+  dictionary: custom_dict_en.all # 设置EasyEn的字典
+  enable_sentence: false         # 关闭自动造句
+  enable_completion: false       # 关闭自动提示
+  initial_quality: 0.8
 
 speller:
   # 拼写匹配
@@ -92,7 +100,7 @@ speller:
     - derive/^([zcs])([^h])/$1h$2/ # z, c, s => zh, ch, sh
     - derive/([aei])n$/$1ng/ # en => eng, in => ing
     - derive/([aei])ng$/$1n/ # eng => en, ing => in
-    - derive/([iu])an$/$lang/ # ian => iang, uan => uang
+    - derive/([iu])an$/$lan/ # ian => iang, uan => uang
     - derive/([iu])ang$/$lan/ # iang => ian, uang => uan
     - derive/([aeiou])ng$/$1gn/        # dagn => dang
     - derive/([dtngkhrzcs])o(u|ng)$/$1o/  # zho => zhong|zhou
@@ -101,6 +109,82 @@ speller:
     - derive/([iu])a(o|ng?)$/a$1$2/    # tain => tian
     - abbrev/^([a-z]).+$/$1/ #简拼（首字母）
     - abbrev/^([zcs]h).+$/$1/ #简拼（zh, ch, sh）
+     ### 自动纠错
+    # 有些规则对全拼简拼混输有副作用：如「x'ai 喜爱」被纠错为「xia 下」
+    # zh、ch、sh
+    - derive/([zcs])h(a|e|i|u|ai|ei|an|en|ou|uo|ua|un|ui|uan|uai|uang|ang|eng|ong)$/h$1$2/  # hzi → zhi
+    - derive/([zcs])h([aeiu])$/$1$2h/  # zih → zhi
+    # ai
+    - derive/^([wghk])ai$/$1ia/  # wia → wai
+    # ia
+    - derive/([qjx])ia$/$1ai/  # qai → qia
+    # ei
+    - derive/([wtfghkz])ei$/$1ie/
+    # ie
+    - derive/([jqx])ie$/$1ei/
+    # ao
+    - derive/([rtypsdghklzcbnm])ao$/$1oa/
+    # ou
+    - derive/([ypfm])ou$/$1uo/
+    # uo（无）
+    # an
+    - derive/([wrtypsdfghklzcbnm])an$/$1na/
+    # en
+    - derive/([wrpsdfghklzcbnm])en$/$1ne/
+    # ang
+    - derive/([wrtypsdfghklzcbnm])ang$/$1nag/
+    - derive/([wrtypsdfghklzcbnm])ang$/$1agn/
+    # eng
+    - derive/([wrtpsdfghklzcbnm])eng$/$1neg/
+    - derive/([wrtpsdfghklzcbnm])eng$/$1egn/
+    # ing
+    - derive/([qtypdjlxbnm])ing$/$1nig/
+    - derive/([qtypdjlxbnm])ing$/$1ign/
+    # ong
+    - derive/([rtysdghklzcn])ong$/$1nog/
+    - derive/([rtysdghklzcn])ong$/$1ogn/
+    # iao
+    - derive/([qtpdjlxbnm])iao$/$1ioa/
+    - derive/([qtpdjlxbnm])iao$/$1oia/
+    # ui
+    - derive/([rtsghkzc])ui$/$1iu/
+    # iu
+    - derive/([qjlxnm])iu$/$1ui/
+    # ian
+    - derive/([qtpdjlxbnm])ian$/$1ain/
+    # - derive/([qtpdjlxbnm])ian$/$1ina/ # 和「李娜、蒂娜、缉拿」等常用词有冲突
+    # in
+    - derive/([qypjlxbnm])in$/$1ni/
+    # iang
+    - derive/([qjlxn])iang$/$1aing/
+    - derive/([qjlxn])iang$/$1inag/
+    # ua
+    - derive/([g|k|h|zh|sh])ua$/$1au/
+    # uai
+    - derive/([g|h|k|zh|ch|sh])uai$/$1aui/
+    - derive/([g|h|k|zh|ch|sh])uai$/$1uia/
+    # uan
+    - derive/([qrtysdghjklzxcn])uan$/$1aun/
+    # - derive/([qrtysdghjklzxcn])uan$/$1una/ # 和「去哪、露娜」等常用词有冲突
+    # un
+    - derive/([qrtysdghjklzxc])un$/$1nu/
+    # ue
+    - derive/([nlyjqx])ue$/$1eu/
+    # uang
+    - derive/([g|h|k|zh|ch|sh])uang$/$1aung/
+    - derive/([g|h|k|zh|ch|sh])uang$/$1uagn/
+    - derive/([g|h|k|zh|ch|sh])uang$/$1unag/
+    - derive/([g|h|k|zh|ch|sh])uang$/$1augn/
+    # iong
+    - derive/([jqx])iong$/$1inog/
+    - derive/([jqx])iong$/$1oing/
+    - derive/([jqx])iong$/$1iogn/
+    - derive/([jqx])iong$/$1oign/
+    # 其他
+    - derive/([rtsdghkzc])o(u|ng)$/$1o/ # do → dou|dong
+    - derive/ong$/on/ # lon → long
+    - derive/([tl])eng$/$1en/ # ten → teng
+    - derive/([qwrtypsdfghjklzxcbnm])([aeio])ng$/$1ng/ # lng → lang、leng、ling、long
 
 wubi86_jidian:
   tag: wubi86_jidian
