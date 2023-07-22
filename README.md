@@ -1,5 +1,5 @@
 
-![样式](demo.jpg)
+![样式](demo.webp)
 
 - [中文 - 简体文档](README.md)
 - [中文 - 繁體文檔](README_zh-CHT.md)
