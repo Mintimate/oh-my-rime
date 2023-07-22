@@ -1,9 +1,11 @@
 
-![style](demo.jpg)
+![style](demo.webp)
 
 - [中文 - 简体文档](README.md)
 - [中文 - 繁體文檔](README_zh-CHT.md)
 - [English - Documentation](README_en.md)
+
+A template for quickly initializing Rime. Since I use `oh-my-zsh` normally and get a similar feeling when using Rime, I named it `oh-my-rime`. You can also call it `BoHe PinYin` or `Mint`.
 
 ## Oh-my-rime guide
 
@@ -37,7 +39,7 @@ The default address of the local rime log file is as follows:
 -Windows
   - Weasel: `%TEMP%`
 -Mac OS X
-  - Squirrel: `$TEMPDIR`
+  - Squirrel: `$TMPDIR`
 - Linux
   -iBus:`/tmp`
 

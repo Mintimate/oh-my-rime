@@ -2,16 +2,17 @@
 # encoding: utf-8
 
 schema:
-  schema_id: luna_pinyin_minti
-  name: 明月拼音-定制版
-  version: "1.10"
+  schema_id: rime_mint
+  name: 薄荷拼音
+  version: "1.11"
   author:
     - mintimate < @Mintimate|https://www.mintimate.cn >
   description: |
-    Mintimate的明月拼音方案。
+    Mintimate的薄荷拼音方案。
     除了参考官方明月拼音，还参考：
       * chenhe: https://chenhe.me
       * rime wiki: https://github.com/rime/home/wiki
+      * rime ice: https://github.com/iDvel/rime-ice
       * Chewing - 新酷音
       * opencc - 開放中文轉換
   dependencies:

@@ -1,7 +1,7 @@
 patch:
   schema:
     schema_id: terra_pinyin
-    name: 地球拼音
+    name: 地球拼音-薄荷定制
     version: '0.20'
     author:
       - 佛振 <chen.sst@gmail.com>

@@ -1,9 +1,11 @@
 
-![样式](demo.jpg)
+![样式](demo.webp)
 
 - [中文 - 简体文档](README.md)
 - [中文 - 繁體文檔](README_zh-CHT.md)
 - [English - Documentation](README_en.md)
+
+一套快速初始化rime的模闆，因為平時我使用`oh-my-zsh`，在使用rime時候，有種用`omz`的感覺；所以我給它取名叫`oh-my-rime`，妳也可以叫它`薄荷拼音`，亦或者`Mint`。
 
 ## Oh-my-rime指南
 
@@ -37,7 +39,7 @@ rime配置教程：
 - Windows
   - Weasel: `%TEMP%`
 - Mac OS X
-  - Squirrel: `$TEMPDIR`
+  - Squirrel: `$TMPDIR`
 - Linux
   - iBus:` /tmp`
 
