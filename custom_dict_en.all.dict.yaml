@@ -5,6 +5,6 @@ sort: by_weight
 use_preset_vocabulary: true
 # 此处为 输入法所用到的词库，既补充拓展词库的地方
 import_tables:
-  - rime_ice.en # 雾凇拼音-英文Base
+  - dicts/rime_ice.en # 雾凇拼音-英文Base
  # - easy_en # Easy-en基础
 ...

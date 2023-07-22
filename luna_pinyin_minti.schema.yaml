@@ -18,7 +18,7 @@ schema:
     - chaizi # 参考 https://github.com/MaxChang3/rime-chaizi
     - wubi86_jidian
     - stroke
-    - easy_en
+    - melt_eng # 英文方案
 
 switches:
   - name: ascii_mode
@@ -60,9 +60,8 @@ engine:
     - lua_translator@date_translator # 日期Lua
     - lua_translator@time_translator # 时间Lua
     - lua_translator@week_translator # 星期Lua
-    - lua_translator@easy_en_translator # 输入截断
     - lua_translator@number_translator # 金额大小写
-    - table_translator@easy_en  # 英文输入（作为子翻译器，优先级需要比原生的低）
+    - table_translator@melt_eng  # 英文输入（作为子翻译器，优先级需要比原生的低）
     # - echo_translator      # ※ 没有候选词，返回字符
     - reverse_lookup_translator@wubi86_jidian
     - reverse_lookup_translator@chaizi
@@ -86,8 +85,8 @@ translator:
     - xform/([jqxy])v/$1u/
   initial_quality: 1.2
 
-easy_en:
-  dictionary: custom_dict_en.all # 设置EasyEn的字典
+melt_eng:
+  dictionary: custom_dict_en.all # 英文词典
   enable_sentence: false         # 关闭自动造句
   enable_completion: false       # 关闭自动提示
   initial_quality: 0.8

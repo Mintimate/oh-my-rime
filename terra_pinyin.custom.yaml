@@ -1,9 +1,4 @@
 patch:
-  # 引入EasyEn
-  __include: easy_en:/patch_terra_pinyin
-  # 关闭EasyEN造句功能
-  'easy_en/enable_sentence': false
-  "menu/page_size": 6
   schema:
     schema_id: terra_pinyin
     name: 地球拼音
@@ -18,6 +13,7 @@ patch:
       - wubi86_jidian
       - stroke
       - chaizi # https://github.com/MaxChang3/rime-chaizi
+      - melt_eng # 英文方案
   
   switches:
     - name: ascii_mode
@@ -57,9 +53,9 @@ patch:
       - lua_translator@date_translator
       - lua_translator@time_translator
       - lua_translator@week_translator
-      - lua_translator@easy_en_translator
       - punct_translator
       - table_translator@custom_phrase
+      - table_translator@melt_eng  # 英文输入（作为子翻译器，优先级需要比原生的低）
       - reverse_lookup_translator@wubi86_jidian
       - reverse_lookup_translator@chaizi
       - reverse_lookup_translator@stroke
@@ -182,6 +178,12 @@ patch:
     enable_completion: false
     enable_sentence: false
     initial_quality: 1
+
+  melt_eng:
+    dictionary: custom_dict_en.all # 英文词典
+    enable_sentence: false         # 关闭自动造句
+    enable_completion: false       # 关闭自动提示
+    initial_quality: 0.8
 
   wubi86_jidian:
     tag: wubi86_jidian
