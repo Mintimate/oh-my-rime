@@ -1,0 +1,3 @@
+patch:
+  # 输入长度限制，避免卡死；参考：https://github.com/LawssssCat/rime-aurora
+  __include: code_limit:/patch

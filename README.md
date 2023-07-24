@@ -1,9 +1,11 @@
 
-![样式](demo.jpg)
+![样式](demo.webp)
 
 - [中文 - 简体文档](README.md)
 - [中文 - 繁體文檔](README_zh-CHT.md)
 - [English - Documentation](README_en.md)
+
+一套快速初始化rime的模板，因为平时我使用`oh-my-zsh`，在使用rime时候，有种用`omz`的感觉；所以我给它取名叫`oh-my-rime`，你也可以叫它`薄荷拼音`，亦或者`Mint`。
 
 ## Oh-my-rime指南
 
@@ -13,8 +15,6 @@ rime配置教程：
 - [Youtube視頻: https://www.youtube.com/watch?v=yc4AivDDpMM](https://www.youtube.com/watch?v=yc4AivDDpMM)
 
 如果你有QQ帐号，可以加入群聊（禁止广告）: 703260572
-
-(哈哈，QQ群我才创建，目前人很少；甚至可能就我一个人(╯—﹏—)╯（ ┷━━━┷ )
 
 ### 安装
 
@@ -39,7 +39,7 @@ rime配置教程：
 - Windows
   - Weasel: `%TEMP%`
 - Mac OS X
-  - Squirrel: `$TEMPDIR`
+  - Squirrel: `$TMPDIR`
 - Linux
   - iBus:` /tmp`
 
