@@ -216,7 +216,7 @@ wubi86_jidian:
   dictionary: wubi86_jidian
   enable_user_dict: false
   enable_completion: true
-  prefix: "`"
+  prefix: "uw"
   suffix: "'"
   tips: 〔五笔〕
 
@@ -224,7 +224,7 @@ stroke:
   tag: stroke
   dictionary: stroke
   enable_user_dict: false
-  prefix: 'i'
+  prefix: 'ui'
   suffix: "'"
   tips: 〔笔画〕
   preedit_format:
@@ -234,7 +234,7 @@ chaizi:
   tag: chaizi
   dictionary: chaizi
   enable_completion: true
-  prefix: "u"
+  prefix: "uu"
   preedit_format:
     - xform/([nljqxy])v/$1ü/
   comment_format:
@@ -274,7 +274,7 @@ recognizer:
   import_preset: default
   patterns:
     punct: "^/([0-9]0?|[a-z]+)$"
-    wubi86_jidian: "`[a-z]*'?$"
-    stroke: "i[a-z]*'?$"
-    chaizi: "u[a-z]*'?$"
+    wubi86_jidian: "uw[a-z]*'?$"
+    stroke: "ui[a-z]*'?$"
+    chaizi: "uu[a-z]*'?$"
     number: "^R[0-9]+[.]?[0-9]*"

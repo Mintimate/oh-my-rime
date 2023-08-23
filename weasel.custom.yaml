@@ -43,7 +43,7 @@ patch:
   "style/label_font_point": 12 # 候选词数字大小
   "style/horizontal": true # 横向展示
   "style/inline_preedit": false # 内嵌预编辑
-  "style/corner_radius": 15 # 窗口圆角半径
+  "style/layout/corner_radius": 15 # 窗口圆角半径
   "style/layout/border": 0 # 窗口边界高度，大于圆角半径才有效果
   "style/layout/border_width": 0 # 窗口边界宽度，大于圆角半径才有效果
   "style/layout/candidate_spacing": 12
