@@ -14,7 +14,7 @@ patch:
       - stroke
       - chaizi # https://github.com/MaxChang3/rime-chaizi
       - melt_eng # 英文方案
-  
+
   switches:
     - name: ascii_mode
       reset: 0
@@ -29,7 +29,7 @@ patch:
       states: [ 繁体, 简体 ]
     - name: ascii_punct
       states: [ 。，, ．， ]
-  
+
   engine:
     processors:
       - ascii_composer
@@ -50,9 +50,9 @@ patch:
       - punct_segmentor
       - fallback_segmentor
     translators:
-      - lua_translator@date_translator
-      - lua_translator@time_translator
-      - lua_translator@week_translator
+      # - lua_translator@date_translator
+      # - lua_translator@time_translator
+      # - lua_translator@week_translator
       - punct_translator
       - table_translator@custom_phrase
       - table_translator@melt_eng  # 英文输入（作为子翻译器，优先级需要比原生的低）
@@ -67,7 +67,7 @@ patch:
     emoji_suggestion:
       opencc_config: emoji.json
       option_name: emoji_suggestion
-  
+
   speller:
     alphabet: 'zyxwvutsrqponmlkjihgfedcba-;/<,>\'
     initials: zyxwvutsrqponmlkjihgfedcba
@@ -104,7 +104,7 @@ patch:
       - 'derive/^(.*)-$/$1;/'
       - 'derive/^(.*)<$/$1,/'
       - 'derive/^(.*)\\$/$1>/'
-  
+
   translator:
     dictionary: custom_dict_terra.all
     spelling_hints: 3  # ～字以內候選標註完整帶調拼音
@@ -170,7 +170,7 @@ patch:
       - xform/([nljqxy])v/$1ü/
       - xform/eh[0-5]?/ê/
       - xform/([a-z]+)[0-5]/$1/
-  
+
   custom_phrase:
     dictionary: ""
     user_dict: custom_phrase
@@ -310,16 +310,16 @@ patch:
     tags: [wubi86_jidian,stroke,chaizi]
     overwrite_comment: false
 
-  
+
   punctuator:
     import_preset: default
-  
+
   key_binder:
     import_preset: default
     bindings:
       - { when: has_menu, accept: minus, send: minus }  # tone 1
       - { when: paging, accept: minus, send: Page_Up }
-  
+
   recognizer:
     import_preset: default
     patterns:
