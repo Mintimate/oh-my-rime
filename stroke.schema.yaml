@@ -1,0 +1,113 @@
+# Rime schema settings
+# encoding: utf-8
+
+schema:
+  schema_id: stroke
+  name: "五筆畫"
+  version: "0.5"
+  author:
+    - 四季的風
+    - 雪齋
+    - Kunki Chou
+  description: |
+    五筆畫
+    h,s,p,n,z 代表橫、豎、撇、捺、折
+  dependencies:
+    - luna_pinyin
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - reverse_lookup_translator
+    - table_translator
+
+speller:
+  alphabet: "abcdefghijklmnopqrstuvwxyz"
+  delimiter: " '"
+
+menu:
+  page_size: 9
+
+translator:
+  dictionary: stroke
+  preedit_format:
+#   - xlit/hspnz/㇐㇑㇒㇏㇠/   # 中日韓筆畫（橫豎撇捺折）
+    - xlit/hspnz/⼀⼁⼃⼂⼄/   # 康熙部首（橫豎撇點折）
+  comment_format:
+    - xform/~//
+#   - xlit/hspnz/㇐㇑㇒㇏㇠/   # 中日韓筆畫（橫豎撇捺折）
+    - xlit/hspnz/⼀⼁⼃⼂⼄/   # 康熙部首（橫豎撇點折）
+
+abc_segmentor:
+  extra_tags:
+    - reverse_lookup
+
+reverse_lookup:
+  dictionary: luna_pinyin
+  prefix: "`"
+  suffix: "'"
+  tips: 〔拼音〕
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+  comment_format:
+#   - xlit/hspnz/㇐㇑㇒㇏㇠/   # 中日韓筆畫（橫豎撇捺折）
+    - xlit/hspnz/⼀⼁⼃⼂⼄/   # 康熙部首（橫豎撇點折）
+
+punctuator:
+  import_preset: default
+
+key_binder:
+  import_preset: default
+  bindings:
+    # 兼容其他筆畫名稱（捺屬點部、提屬橫部）
+    - { when: always, accept: "d", send: "n" }
+    - { when: always, accept: "t", send: "h" }
+    # 兼容Mac筆畫輸入法按鍵：🅹⼀, 🅺⼁, 🅻⼃, 🆄⼂, 🅸⺂
+    - { when: always, accept: "j", send: "h" }
+    - { when: always, accept: "k", send: "s" }
+    - { when: always, accept: "l", send: "p" }
+    - { when: always, accept: "u", send: "n" }
+    - { when: always, accept: "i", send: "z" }
+    # 兼容Mac筆畫輸入法小鍵盤按鍵：1︎⃣⼀, 2︎⃣⼁, 3︎⃣⼃, 4︎⃣⼂, 5︎⃣⺂
+    - { when: always, accept: "KP_1", send: "h" }
+    - { when: always, accept: "KP_2", send: "s" }
+    - { when: always, accept: "KP_3", send: "p" }
+    - { when: always, accept: "KP_4", send: "n" }
+    - { when: always, accept: "KP_5", send: "z" }
+    # 禁用小鍵盤其他數字按鍵，以防誤觸
+    - { when: has_menu, accept: "KP_6", send: Select }
+    - { when: has_menu, accept: "KP_7", send: Select }
+    - { when: has_menu, accept: "KP_8", send: Select }
+    - { when: has_menu, accept: "KP_9", send: Select }
+    - { when: has_menu, accept: "KP_0", send: Select }
+
+recognizer:
+  import_preset: default
+  patterns:
+    reverse_lookup: "`[a-z]*'?$"
