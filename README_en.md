@@ -16,6 +16,8 @@ rime configuration tutorial:
 
 You have a QQ account, you can join the group chat(No Ads!): 703260572
 
+**It is strongly recommended to refer to the [documentation ↗](https://www.mintimate.cc) for operation!!!**
+
 ### Install
 
 The following tutorials are available for Linux, macOS and Windows (Xp~)
@@ -75,3 +77,7 @@ Most of the configuration files are commented.
 ## Other Recommended
 - [98 Wubi, a very useful Wubi input program](http://www.98wubi.com/)
 - [Rime Pinyin, an excellent Chinese thesaurus](https://github.com/iDvel/rime-ice)
+
+## ⭐⭐⭐
+
+[![⭐⭐⭐](https://starchart.cc/Mintimate/oh-my-rime.svg)](https://starchart.cc/Mintimate/oh-my-rime)

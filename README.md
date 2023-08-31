@@ -16,6 +16,8 @@ rime配置教程：
 
 如果你有QQ帐号，可以加入群聊（禁止广告）: 703260572
 
+**强烈建议[配合文档](https://www.mintimate.cc)进行操作!!!**
+
 ### 安装
 
 以下教程，适用于Linux、macOS和Windows（Xp~）
@@ -74,3 +76,8 @@ rime配置教程：
 ## 推荐项目
 - [98五笔，十分好用的五笔输入方案](http://www.98wubi.com/)
 - [雾凇拼音，很优秀的中文词库](https://github.com/iDvel/rime-ice)
+
+
+## ⭐⭐⭐
+
+[![⭐⭐⭐](https://starchart.cc/Mintimate/oh-my-rime.svg)](https://starchart.cc/Mintimate/oh-my-rime)
