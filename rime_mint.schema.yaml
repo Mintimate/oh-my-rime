@@ -21,6 +21,15 @@ schema:
     - stroke
     - melt_eng # 英文方案
 
+key_binder:
+  bindings:
+    - {accept: "Control+Shift+E", toggle: emoji_suggestion, when: always}
+    - {accept: "Control+Shift+1", toggle: simplification, when: has_menu}
+    - {accept: bracketleft, send: Page_Up, when: paging}      # 使用`[`进行向上翻页（第一页时候无效）
+    - {accept: bracketright, send: Page_Down, when: has_menu} # 使用`]`进行向下翻页
+    - {accept: minus, send: Page_Up, when: paging}     # 使用`-`进行向上翻页（第一页时候无效）
+    - {accept: equal, send: Page_Down, when: has_menu} # 使用`=`进行向下翻页
+
 switches:
   - name: ascii_mode
     reset: 0

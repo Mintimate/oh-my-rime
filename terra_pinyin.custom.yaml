@@ -20,7 +20,7 @@ patch:
       reset: 0
       states: [ 中文, 英文 ]
     - name: emoji_suggestion
-      reset: 0
+      reset: 1
       states: [ "😣️","😁️"]
     - name: full_shape
       states: [ 半角, 全角 ]
@@ -29,6 +29,15 @@ patch:
       states: [ 繁体, 简体 ]
     - name: ascii_punct
       states: [ 。，, ．， ]
+
+  key_binder:
+    bindings:
+      - {accept: "Control+Shift+E", toggle: emoji_suggestion, when: always}
+      - {accept: "Control+Shift+1", toggle: simplification, when: has_menu}
+      - {accept: bracketleft, send: Page_Up, when: paging}      # 使用`[`进行向上翻页（第一页时候无效）
+      - {accept: bracketright, send: Page_Down, when: has_menu} # 使用`]`进行向下翻页
+      - {accept: minus, send: Page_Up, when: paging}     # 使用`-`进行向上翻页（第一页时候无效）
+      - {accept: equal, send: Page_Down, when: has_menu} # 使用`=`进行向下翻页
   
   engine:
     processors:
@@ -62,11 +71,19 @@ patch:
       - script_translator
     filters:
       - simplifier@emoji_suggestion
+      - simplifier@simplification
       - simplifier
       - uniquifier
     emoji_suggestion:
       opencc_config: emoji.json
       option_name: emoji_suggestion
+
+  # 简繁切换
+  simplification:
+    option_name: simplification
+    opencc_config: s2t.json             # s2t.json | s2hk.json | s2tw.json | s2twp.json
+    tips: none                          # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
+    excluded_types: [ reverse_lookup ]  # 不转换反查（两分拼字）的内容
   
   speller:
     alphabet: 'zyxwvutsrqponmlkjihgfedcba-;/<,>\'

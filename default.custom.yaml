@@ -6,10 +6,6 @@ patch:
     Control_R: noop # 不做任何操作
     Shift_L: commit_code
     Shift_R: inline_ascii
-  "key_binder/bindings":
-    - {accept: "Control+Shift+E", toggle: es_conversion, when: always}
-    - {accept: bracketleft, send: Page_Up, when: paging}
-    - {accept: bracketright, send: Page_Down, when: has_menu}
   "menu/page_size": 9
   schema_list:
     - {schema: rime_mint} # 薄荷拼音
