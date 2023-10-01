@@ -2,7 +2,6 @@
 name: se_words
 version: "2023.03.15"
 sort: by_weight
-use_preset_vocabulary: true
 ...
 
 阿姆达尔定律	a mu da er ding lv	1

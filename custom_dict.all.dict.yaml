@@ -2,10 +2,10 @@
 name: custom_dict.all ##注意name和文件名一致
 version: "2020.6.7"
 sort: by_weight
-use_preset_vocabulary: true
 # 此处为 输入法所用到的词库，既补充拓展词库的地方
 import_tables:
-  - luna_pinyin
+  - dicts/rime_ice.8105 # 霧凇拼音 常用字集合
+  - dicts/rime_ice.41448 # 霧凇拼音 完整字集合
   - dicts/custom_simple # 自定义
   - dicts/rime_ice.base  # 雾凇拼音 https://github.com/iDvel/rime-ice
   - dicts/se_words # 互联网网络词汇

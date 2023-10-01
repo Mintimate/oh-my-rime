@@ -22,9 +22,10 @@ schema:
     - melt_eng # 英文方案
 
 key_binder:
+  import_preset: default
   bindings:
     - {accept: "Control+Shift+E", toggle: emoji_suggestion, when: always}
-    - {accept: "Control+Shift+1", toggle: simplification, when: has_menu}
+    - {accept: "Control+Shift+1", toggle: transcription, when: has_menu}
     - {accept: bracketleft, send: Page_Up, when: paging}      # 使用`[`进行向上翻页（第一页时候无效）
     - {accept: bracketright, send: Page_Down, when: has_menu} # 使用`]`进行向下翻页
     - {accept: minus, send: Page_Up, when: paging}     # 使用`-`进行向上翻页（第一页时候无效）
@@ -39,9 +40,9 @@ switches:
     states: [ "😣️","😁️"]
   - name: full_shape
     states: [ 半角, 全角 ]
-  - name: simplification
-    reset: 1
-    states: [ 繁体, 简体 ]
+  - name: transcription
+    reset: 0
+    states: [ 简体 , 繁体 ]
   - name: ascii_punct
     states: [ 。，, ．， ]
 
@@ -78,15 +79,15 @@ engine:
     - reverse_lookup_translator@stroke
     # - reverse_lookup_translator # 反查模块，多标签情况下去除
   filters:
-    - simplifier@emoji_suggestion
-    - simplifier@simplification
-    - lua_filter@reduce_english_filter    # 降低部分英语单词在候选项的位置
     - simplifier
-    - uniquifier
+    - simplifier@emoji_suggestion
+    - simplifier@transcription_cc
+    - lua_filter@reduce_english_filter    # 降低部分英语单词在候选项的位置
+    - uniquifier                          # 去重
 
 # 简繁切换
-simplification:
-  option_name: simplification
+transcription_cc:
+  option_name: transcription
   opencc_config: s2t.json             # s2t.json | s2hk.json | s2tw.json | s2twp.json
   tips: none                          # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
   excluded_types: [ reverse_lookup ]  # 不转换反查（两分拼字）的内容
@@ -252,7 +253,7 @@ chaizi:
 reverse_lookup:
   tags: [wubi86_jidian,stroke,chaizi]
   overwrite_comment: true
-  dictionary: luna_pinyin
+  dictionary: dicts/rime_ice.8105
 
 punctuator:
   import_preset: symbols
@@ -274,9 +275,6 @@ punctuator:
       "$": ["¥", "$", "€", "£", "¢", "¤"]
       "<": ["《", "〈", "«", "<"]
       ">": ["》", "〉", "»", ">"]
-
-key_binder:
-  import_preset: default
 
 recognizer:
   import_preset: default
