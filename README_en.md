@@ -80,4 +80,8 @@ Most of the configuration files are commented.
 
 ## ⭐⭐⭐
 
-[![⭐⭐⭐](https://starchart.cc/Mintimate/oh-my-rime.svg)](https://starchart.cc/Mintimate/oh-my-rime)
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Mintimate/oh-my-rime&type=Timeline&theme=dark" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Mintimate/oh-my-rime&type=Timeline" />
+<img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Mintimate/oh-my-rime&type=Timeline" />
+</picture>
