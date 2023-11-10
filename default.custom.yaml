@@ -10,6 +10,7 @@ patch:
   schema_list:
     - {schema: rime_mint} # 薄荷拼音
     - {schema: terra_pinyin} # 地球拼音-薄荷定制
+    - {schema: wubi98_mint} # 五笔98-薄荷简版
   "switcher/hotkeys":
     - "Control+grave"
   "switcher/save_options":

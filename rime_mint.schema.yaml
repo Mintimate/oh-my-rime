@@ -17,7 +17,7 @@ schema:
       * opencc - 開放中文轉換
   dependencies:
     - chaizi # 参考 https://github.com/MaxChang3/rime-chaizi
-    - wubi86_jidian
+    - wubi98_mint # 98五笔库 https://github.com/yanhuacuo/98wubi-tables
     - stroke
     - melt_eng # 英文方案
 
@@ -59,7 +59,7 @@ engine:
   segmentors:
     - ascii_segmentor # 標識西文段落
     - matcher # 標識符合特定規則的段落，如網址、反查等
-    - affix_segmentor@wubi86_jidian
+    - affix_segmentor@wubi98_mint
     - affix_segmentor@chaizi
     - affix_segmentor@stroke
     - abc_segmentor # 標識常規的文字段落
@@ -220,15 +220,15 @@ speller:
     - derive/([tl])eng$/$1en/ # ten → teng
     - derive/([qwrtypsdfghjklzxcbnm])([aeio])ng$/$1ng/ # lng → lang、leng、ling、long
 
-wubi86_jidian:
-  tag: wubi86_jidian
-  dictionary: wubi86_jidian
+wubi98_mint:
+  tag: wubi98_mint
+  dictionary: custom_dict.wubi
   enable_user_dict: false
   enable_completion: true
   prefix: "uw"
   suffix: "'"
   tips: 〔五笔〕
-
+  
 stroke:
   tag: stroke
   dictionary: stroke
@@ -251,7 +251,7 @@ chaizi:
   tips: 〔拆字〕
 
 reverse_lookup:
-  tags: [wubi86_jidian,stroke,chaizi]
+  tags: [wubi98_mint,stroke,chaizi]
   overwrite_comment: true
   dictionary: dicts/rime_ice.8105
 
@@ -280,7 +280,7 @@ recognizer:
   import_preset: default
   patterns:
     punct: "^/([0-9]0?|[a-z]+)$"
-    wubi86_jidian: "uw[a-z]*'?$"
+    wubi98_mint: "uw[a-z]*'?$"
     stroke: "ui[a-z]*'?$"
     chaizi: "uu[a-z]*'?$"
     number: "^R[0-9]+[.]?[0-9]*"
