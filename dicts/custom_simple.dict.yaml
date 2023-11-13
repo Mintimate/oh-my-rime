@@ -4,9 +4,8 @@
 # 个性化词语 - by @Mintimate
 ---
 name: custom_simple
-version: "2023.03.15"
+version: "2023.09.15"
 sort: by_weight
-use_preset_vocabulary: true
 ...
 
 # 人名

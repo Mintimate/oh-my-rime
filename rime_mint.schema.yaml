@@ -74,7 +74,7 @@ engine:
     - lua_translator@number_translator # 金额大小写
     - table_translator@melt_eng  # 英文输入（作为子翻译器，优先级需要比原生的低）
     # - echo_translator      # ※ 没有候选词，返回字符
-    - reverse_lookup_translator@wubi86_jidian
+    - reverse_lookup_translator@wubi98_mint
     - reverse_lookup_translator@chaizi
     - reverse_lookup_translator@stroke
     # - reverse_lookup_translator # 反查模块，多标签情况下去除
@@ -228,7 +228,7 @@ wubi98_mint:
   prefix: "uw"
   suffix: "'"
   tips: 〔五笔〕
-  
+
 stroke:
   tag: stroke
   dictionary: stroke
