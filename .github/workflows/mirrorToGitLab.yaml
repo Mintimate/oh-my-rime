@@ -1,0 +1,23 @@
+name: Sync Repo To GitLab
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  SSH_KEY: ${{ secrets.GITLAB_DEPLOY_KEY }} # 服务器私钥
+  DEPLOY_REPO: ${{ secrets.GITLAB_DEPLOY_REPO }} # 服务器部署仓库地址
+
+jobs:
+  git-mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: yesolutions/mirror-action@master
+        with:
+          REMOTE: ${{ env.DEPLOY_REPO }}
+          GIT_SSH_PRIVATE_KEY: ${{ env.SSH_KEY }}
+          GIT_SSH_NO_VERIFY_HOST: "true"
