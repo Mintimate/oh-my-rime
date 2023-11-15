@@ -12,6 +12,7 @@ env:
 jobs:
   git-mirror:
     runs-on: ubuntu-latest
+    if: github.repository_owner == 'Mintimate'
     steps:
       - uses: actions/checkout@v3
         with:
