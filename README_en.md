@@ -1,11 +1,14 @@
 
 ![style](demo.webp)
 
-- [中文 - 简体文档](README.md)
-- [中文 - 繁體文檔](README_zh-CHT.md)
-- [English - Documentation](README_en.md)
+- [中文 - 简体简介](README.md)
+- [中文 - 繁體簡介](README_zh-CHT.md)
+- [English - Brief](README_en.md)
 
-A template for quickly initializing Rime. Since I use `oh-my-zsh` normally and get a similar feeling when using Rime, I named it `oh-my-rime`. You can also call it `BoHe PinYin` or `Mint`.
+A template for quickly initializing Rime. Since I use `oh-my-zsh` normally and get a similar feeling when using Rime, I named it `oh-my-rime`. You can also call it `Mint IME` or `Mint`.
+
+If you encounter difficulties with downloading, use the mirrored repository pushed by GitHub Action:
+- [oh-my-rime: https://gitlab.mintimate.cn/Mintimate/oh-my-rime](https://gitlab.mintimate.cn/Mintimate/oh-my-rime)
 
 ## Oh-my-rime guide
 
@@ -17,6 +20,8 @@ rime configuration tutorial:
 You have a QQ account, you can join the group chat(No Ads!): 703260572
 
 **It is strongly recommended to refer to the [documentation ↗](https://www.mintimate.cc) for operation!!!**
+
+This input method package includes: "Mint Pinyin," "Earth Pinyin - Mint Custom," and "98 Wubi - Mint Lite." After installation, you can switch between them using "Ctrl" + "~" (The default active input method is "Mint Pinyin").
 
 ### Install
 
@@ -36,7 +41,7 @@ The default address of the local rime configuration file is as follows
   - Squirrel: `~/Library/Rime`
 - Linux
   - iBus: `~/.config/ibus/rime`
-  
+
 The default address of the local rime log file is as follows:
 -Windows
   - Weasel: `%TEMP%`
@@ -50,10 +55,8 @@ The default address of the local rime log file is as follows:
 ## Configuration file description
 
 - `default.custom.yaml` set the input method, how to switch the input method, turn the page, etc.
-- `double_pinyin_flypy.custom.yaml` double pinyin scheme,
 - `squirrel.custom.yaml` mouse whisker tube (Mac version) to set which software defaults to English input, input method skin, etc.
 - `weasel.custom.yaml` Xiaolanghao (Win version) sets which software defaults to English input, input method skin, etc.
-- `custom_phrase.txt` set shortcut input, after the modification is completed, it needs to be re-deployed to take effect
 
 Most of the configuration files are commented.
 

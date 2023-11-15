@@ -5,7 +5,10 @@
 - [中文 - 繁體文檔](README_zh-CHT.md)
 - [English - Documentation](README_en.md)
 
-一套快速初始化rime的模闆，因為平時我使用`oh-my-zsh`，在使用rime時候，有種用`omz`的感覺；所以我給它取名叫`oh-my-rime`，妳也可以叫它`薄荷拼音`，亦或者`Mint`。
+一套快速初始化rime的模闆，因為平時我使用`oh-my-zsh`，在使用rime時候，有種用`omz`的感覺；所以我給它取名叫`oh-my-rime`，妳也可以叫它`薄荷輸入法`，亦或者`Mint`。
+
+如果妳下載遇到睏難，使用GitHub Action推送的鏡像倉庫：
+- [oh-my-rime: https://gitlab.mintimate.cn/Mintimate/oh-my-rime](https://gitlab.mintimate.cn/Mintimate/oh-my-rime)
 
 ## Oh-my-rime指南
 
@@ -18,6 +21,7 @@ rime配置教程：
 
 **強烈建議[配合文檔](https://www.mintimate.cc)進行操作!!!**
 
+本輸入方案內包含： 『薄荷拼音』、『地球拼音-薄荷定制』和『98五筆-薄荷簡版』，妳可以在安裝後，使用『Ctrl』+『~』進行切換。（預設激活的是『薄荷拼音』）。
 
 ### 安裝
 
@@ -37,7 +41,7 @@ rime配置教程：
   - Squirrel: `~/Library/Rime`
 - Linux
   - iBus:` ~/.config/ibus/rime`
-  
+
 本地rime日誌文件默認地址如下：
 - Windows
   - Weasel: `%TEMP%`
@@ -51,10 +55,8 @@ rime配置教程：
 ## 配置文件說明
 
 - `default.custom.yaml` 設置輸入法、如何切換輸入法、翻頁等
-- `double_pinyin_flypy.custom.yaml` 雙拼方案，
 - `squirrel.custom.yaml` 鼠須管( Mac 版本 )設置哪些軟件默認英文輸入，輸入法皮膚等
 - `weasel.custom.yaml` 小狼毫( Win 版本 )設置哪些軟件默認英文輸入，輸入法皮膚等
-- `custom_phrase.txt` 設置快捷輸入，修改完成後要重新部署才能生效
 
 配置文件中大部分都有註釋。
 
