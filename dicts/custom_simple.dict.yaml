@@ -2,18 +2,19 @@
 # encoding: utf-8
 #
 # 个性化词语 - by @Mintimate
+# 建议自定义短语或者词语追加在这里
 ---
 name: custom_simple
-version: "2023.11.27"
+version: "2023.11.30"
 sort: by_weight
 ...
 
 # 人名
 # 常用语
 哈哈	ha ha	99
-macOS	m a c	99
+macOS	mac	99
 可以	ke yi	99
 # (｡>ㅅ<｡)
-Mintimate	m i n t i m a t e	1
-https://www.mintimate.cn	m i n t i m a t e	2
-Mintimate's Blog	m i n t i m a t e	3
+Mintimate	mintimate	1
+https://www.mintimate.cn	mintimate	2
+Mintimate's Blog	mintimate	3
