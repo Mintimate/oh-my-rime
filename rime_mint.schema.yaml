@@ -79,7 +79,6 @@ engine:
     - reverse_lookup_translator@stroke
     # - reverse_lookup_translator # 反查模块，多标签情况下去除
   filters:
-    - lua_filter@corrector                # 错音错字提示
     - simplifier
     - simplifier@emoji_suggestion
     - simplifier@transcription_cc
@@ -115,8 +114,6 @@ reduce_english_filter:
 translator:
   # 字典文件
   dictionary: custom_dict.all
-  spelling_hints: 8              # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
-  always_show_comments: true     # corrector.lua ：Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供 corrector.lua 做判断用。
   preedit_format:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/

@@ -1,6 +1,6 @@
 ---
 name: chaizi
-version: "2023.12.06"
+version: "2022.09.20"
 sort: by_weight
 use_preset_vocabulary: true
 ...
@@ -16719,11 +16719,3 @@ use_preset_vocabulary: true
 巭	gongfu
 䜥	yanyindan
 䲞	yuli
-# 2023.12.06增加内容
-龘	longlonglong
-㵘	shuishuishuishui
-𨰻	jinjinjinjin
-㙓	tutututu
-靁	leitiantian
-饕	haohushi
-餮	daizhenshi
