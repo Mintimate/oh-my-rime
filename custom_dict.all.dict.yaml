@@ -1,6 +1,6 @@
 ---
 name: custom_dict.all ##注意name和文件名一致
-version: "2020.6.7"
+version: "2023.12.06"
 sort: by_weight
 # 此处为 输入法所用到的词库，既补充拓展词库的地方
 import_tables:
@@ -11,4 +11,5 @@ import_tables:
   - dicts/se_words # 互联网网络词汇
   - dicts/luna_pinyin.biaoqing # 表情
   - dicts/luna_pinyin.emoji # emoji Ext
+  - dicts/rime_ice.others   # 雾凇拼音others词库（用于自动纠错）
 ...

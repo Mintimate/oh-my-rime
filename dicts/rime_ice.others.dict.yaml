@@ -1,0 +1,375 @@
+# Rime dictionary
+# encoding: utf-8
+#
+#
+# https://github.com/iDvel/rime-ice
+# ------- 一些杂项，按需选择 -------
+#
+#
+---
+name: rime_ice.others
+version: "2023-11-29"
+sort: by_weight
+...
+##### 容错词
+# 「阿房宫」的注音争议比较大
+阿房宫	e pang gong
+阿房宫	a pang gong
+阿房宫	e fang gong
+阿房宫	a fang gong
+阿房宫赋	e pang gong fu
+阿房宫赋	a pang gong fu
+阿房宫赋	e fang gong fu
+阿房宫赋	a fang gong fu
+# 「伯伯」方言
+伯伯	bo bo
+伯伯	bai bai
+# 「斜」的古音
+远上寒山石径斜	yuan shang han shan shi jing xie
+远上寒山石径斜	yuan shang han shan shi jing xia
+# 「骑」目前统读 qi
+坐骑	zuo qi
+坐骑	zuo ji
+铁骑	tie qi
+铁骑	tie ji
+一骑绝尘	yi qi jue chen
+一骑绝尘	yi ji jue chen
+一骑当千	yi qi dang qian
+一骑当千	yi ji dang qian
+一骑红尘妃子笑	yi qi hong chen fei zi xiao
+一骑红尘妃子笑	yi ji hong chen fei zi xiao
+走单骑	zou dan qi
+走单骑	zou dan ji
+千里走单骑	qian li zou dan qi
+千里走单骑	qian li zou dan ji
+# 「街」的粤语和东北话读音及常见的两种写法
+仆街	pu jie
+仆街	pu gai
+扑街	pu jie
+扑街	pu gai
+扑街仔	pu jie zai
+扑街仔	pu gai zai
+仆街仔	pu jie zai
+仆街仔	pu gai zai
+街溜子	jie liu zi
+街溜子	gai liu zi
+
+
+##### 错音错字提示。与 corrector.lua 配合，上面的是正确的，下面是错误的
+### 错音
+馄饨	hun tun
+馄饨	hun dun
+主角	zhu jue
+主角	zhu jiao
+角色	jue se
+角色	jiao se
+说服	shuo fu
+说服	shui fu
+道行	dao heng
+道行	dao hang
+模样	mu yang
+模样	mo yang
+有模有样	you mu you yang
+有模有样	you mo you yang
+一模一样	yi mu yi yang
+一模一样	yi mo yi yang
+装模作样	zhuang mu zuo yang
+装模作样	zhuang mo zuo yang
+人模狗样	ren mu gou yang
+人模狗样	ren mo gou yang
+模板	mu ban
+模板	mo ban
+阿弥陀佛	e mi tuo fo
+阿弥陀佛	a mi tuo fo
+南无阿弥陀佛	na mo e mi tuo fo
+南无阿弥陀佛	na mo a mi tuo fo
+南无阿弥陀佛	nan wu e mi tuo fo
+南无阿弥陀佛	nan wu a mi tuo fo
+给予	ji yu
+给予	gei yu
+槟榔	bing lang
+槟榔	bin lang
+张柏芝	zhang bo zhi
+张柏芝	zhang bai zhi
+藤蔓	teng wan
+藤蔓	teng man
+弄堂	long tang
+弄堂	nong tang
+心宽体胖	xin kuan ti pan
+心宽体胖	xin kuan ti pang
+埋怨	man yuan
+埋怨	mai yuan
+虚与委蛇	xu yu wei yi
+虚与委蛇	xu yu wei she
+木讷	mu ne
+木讷	mu na
+独乐乐	du yue le
+独乐乐	du le le
+众乐乐	zhong yue le
+众乐乐	zhong le le
+荨麻	qian ma
+荨麻	xun ma
+荨麻疹	xun ma zhen
+荨麻疹	qian ma zhen
+模具	mu ju
+模具	mo ju
+草薙	cao ti
+草薙	cao zhi
+草薙京	cao ti jing
+草薙京	cao zhi jing
+草薙剑	cao ti jian
+草薙剑	cao zhi jian
+贾平凹	jia ping wa
+贾平凹	jia ping ao
+雪佛兰	xue fu lan
+雪佛兰	xue fo lan
+强劲	qiang jing
+强劲	qiang jin
+胴体	dong ti
+胴体	tong ti
+力能扛鼎	li neng gang ding
+力能扛鼎	li neng kang ding
+鸭绿江	ya lu jiang
+鸭绿江	ya lv jiang
+大腹便便	da fu pian pian
+大腹便便	da fu bian bian
+卡脖子	qia bo zi
+卡脖子	ka bo zi
+吱声	zi sheng
+吱声	zhi sheng
+掺和	chan huo
+掺和	chan he
+掺和	can huo
+掺和	can he
+称职	chen zhi
+称职	cheng zhi
+螺蛳粉	luo si fen
+螺蛳粉	luo shi fen
+调换	diao huan
+调换	tiao huan
+太行山	tai hang shan
+太行山	tai xing shan
+歇斯底里	xie si di li
+歇斯底里	jie si di li
+暖和	nuan huo
+暖和	nuan he
+模棱两可	mo leng liang ke
+模棱两可	mo ling liang ke
+鄱阳湖	po yang hu
+鄱阳湖	pan yang hu
+脖颈	bo geng
+脖颈	bo jing
+脖颈儿	bo geng er
+脖颈儿	bo jing er
+结扎	jie za
+结扎	jie zha
+### 错字
+曾经	ceng jing
+曾今	ceng jin
+按捺	an na
+按耐	an nai
+按捺不住	an na bu zhu
+按耐不住	an nai bu zhu
+别价	bie jie
+别介	bie jie
+甭价	beng jie
+甭介	beng jie
+血脉贲张	xue mai ben zhang
+血脉偾张	xue mai fen zhang
+血脉喷张	xue mai pen zhang
+契诃夫	qi he fu
+契科夫	qi ke fu
+龇牙	zi ya
+龇牙	ci ya
+龇着牙	zi zhe ya
+龇着牙	ci zhe ya
+龇牙咧嘴	zi ya lie zui
+龇牙咧嘴	ci ya lie zui
+凑合	cou he
+凑活	cou huo
+
+
+##### 叠字
+# 数据来源：https://zh.wikipedia.org/wiki/%E4%B8%89%E5%8F%A0%E5%AD%97 https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%8F%A0%E5%AD%97
+# 三叠字
+三个生
+三个秦
+三个若
+三个雲	san ge yun
+三个人
+三个刀
+三个十
+三个力
+三个原
+三个厶	san ge si
+三个厶	san ge mou
+三个又
+三个口
+三个七
+三个吉
+三个土
+三个士
+三个女
+三个子
+三个小
+三个心
+三个手
+三个日
+三个木
+三个止
+三个毛
+三个水
+三个泉
+三个火
+三个牛
+三个犬
+三个田
+三个白
+三个目
+三个直
+三个石
+三个羊
+三个耳
+三个舌
+三个屮	san ge che
+三个屮	san ge cao
+三个虫
+三个言
+三个贝
+三个車	san ge che
+三个金
+三个隹	san ge zhui
+三个雷
+三个風	san ge feng
+三个飛	san ge fei
+三个香
+三个马
+三个魚	san ge yu
+三个鹿
+三个龍	san ge long
+三个个
+三个丶	san ge zhu
+三个丶	san ge dian
+三个了
+三个介
+三个企
+三个舍
+三个圥	san ge lu
+三个光
+三个兔
+三个全
+三个𠙽	san ge kuai
+三个𠧪	san ge tiao
+三个𠧪	san ge you
+三个㔾	san ge jie
+三个厡	san ge yuan
+三个可
+三个因
+三个夏
+三个大
+三个天
+三个太
+三个𦉼	san ge ku
+三个宝
+三个宜
+三个客
+三个寒
+三个少
+三个山
+三个市
+三个文
+三个斗
+三个朿	san ge ci
+三个束
+三个林
+三个果
+三个欠
+三个𣥚	san ge zou
+三个爪
+三个妥
+三个用
+三个甲
+三个百
+三个盖
+三个県	san ge xian
+三个空
+三个亇	san ge ge
+三个竹
+三个罒	san ge mu
+三个羗	san ge qiang
+三个老
+三个月
+三个至
+三个興	san ge xing
+三个足
+三个㖖	san ge nie
+三个門	san ge men
+三个面
+三个頁	san ge ye
+三个鳥	san ge niao
+三个男
+三个立
+三个九
+三个也
+三个加
+三个動	san ge dong
+三个千
+三个方
+三个朔
+三个玉
+三个申
+三个𡿨	san ge quan
+三个去
+三个弓
+三个䖝	san ge chong
+三个丿	san ge pie
+三个户
+三个瓜
+三个鸟
+三个米
+# 四叠字
+四个乂	si ge yi
+四个人
+四个厶	si ge si
+四个厶	si ge mou
+四个又
+四个匕
+四个工
+四个口
+四个天
+四个小
+四个屮	si ge che
+四个屮	si ge cao
+四个火
+四个牛
+四个魚	si ge yu
+四个月
+四个日
+四个林
+四个水
+四个石
+四个田
+四个甲
+四个且
+四个囚
+四个困
+四个竹
+四个老
+四个朿	si ge ci
+四个先
+四个金
+四个泉
+四个言
+四个門	si ge men
+四个果
+四个春
+四个車	si ge che
+四个風	si ge feng
+四个雷
+四个雲	si ge yun
+四个興	si ge xing
+四个龍	si ge long
+四个土
+# 其他。。。
+男女男
+女男女
