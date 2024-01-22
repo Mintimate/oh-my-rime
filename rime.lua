@@ -7,3 +7,5 @@ code_length_limit_processor = require("code_limit")
 reduce_english_filter = require("reduce_english_filter")
 -- 错音错字提示
 corrector = require("corrector")
+-- 中国农历
+Chinese_lunar_calendar = require("chineseLunarCalendar")
