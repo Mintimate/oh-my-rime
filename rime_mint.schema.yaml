@@ -4,7 +4,7 @@
 schema:
   schema_id: rime_mint
   name: 薄荷拼音
-  version: "1.11"
+  version: "24.01.22"
   author:
     - mintimate < @Mintimate|https://www.mintimate.cn >
   description: |
@@ -134,6 +134,8 @@ melt_eng:
   initial_quality: 0.8
 
 speller:
+  # 第一位 「空格」是拼音之间的默认分隔符；第二位「`」表示可以手动输入单引号来分割拼音
+  delimiter: " `"
   # 拼写匹配
   algebra:
     - erase/^xx$/ # 首选保留
