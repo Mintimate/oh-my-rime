@@ -48,6 +48,7 @@ switches:
 
 engine:
   processors:
+    - lua_processor@select_character      # 以词定字
     - ascii_composer # ※ 處理西文模式及中西文切換
     - recognizer # ※ 與 matcher 搭配，處理符合特定規則的輸入碼，如網址、反查等
     - key_binder # ※ 在特定條件下將按鍵綁定到其他按鍵，如重定義逗號、句號爲候選翻頁鍵

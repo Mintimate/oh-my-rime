@@ -9,3 +9,5 @@ reduce_english_filter = require("reduce_english_filter")
 corrector = require("corrector")
 -- 中国农历
 Chinese_lunar_calendar = require("chineseLunarCalendar")
+-- 以词定字（默认为「[」和「]」；在 key_binder 下配置快捷键
+select_character = require("select_character")
