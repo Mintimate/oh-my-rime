@@ -48,6 +48,7 @@ switches:
 
 engine:
   processors:
+    - lua_processor@select_character      # 以词定字
     - ascii_composer # ※ 處理西文模式及中西文切換
     - recognizer # ※ 與 matcher 搭配，處理符合特定規則的輸入碼，如網址、反查等
     - key_binder # ※ 在特定條件下將按鍵綁定到其他按鍵，如重定義逗號、句號爲候選翻頁鍵
@@ -290,5 +291,5 @@ recognizer:
     wubi98_mint: "uw[a-z]*'?$"
     stroke: "ui[a-z]*'?$"
     chaizi: "uu[a-z]*'?$"
-    number: "^R[0-9]+[.]?[0-9]*"        # 响应 lua_translator@number_translator 脚本将自动获取第 2 个字符作为触发前缀
+    rmb: "^R[0-9]+[.]?[0-9]*"        # 响应 lua_translator@number_translator 脚本将自动获取第 2 个字符作为触发前缀
     gregorian_to_lunar: "^N[0-9]{1,8}"  # 响应 lua_translator@Chinese_lunar_calendar 公历转农历，输入 N20240115 得到「二〇二四年腊月初五」，脚本将自动获取第 2 个字符作为触发前缀
