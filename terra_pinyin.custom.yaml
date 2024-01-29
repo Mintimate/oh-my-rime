@@ -74,9 +74,13 @@ patch:
       - simplifier@simplification
       - simplifier
       - uniquifier
-    emoji_suggestion:
-      opencc_config: emoji.json
-      option_name: emoji_suggestion
+
+  # Emoji模块
+  emoji_suggestion:
+    opencc_config: emoji.json
+    option_name: emoji_suggestion
+    tips: all
+    inherit_comment: false
 
   # 简繁切换
   simplification:
