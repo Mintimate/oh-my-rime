@@ -64,7 +64,7 @@ patch:
       - lua_translator@week_translator
       - punct_translator
       - table_translator@custom_phrase
-      - table_translator@melt_eng  # 英文输入（作为子翻译器，优先级需要比原生的低）
+      - table_translator@melt_eng           # 英文输入（作为子翻译器，优先级需要比原生的低）
       - reverse_lookup_translator@wubi86_jidian
       - reverse_lookup_translator@chaizi
       - reverse_lookup_translator@stroke
@@ -88,8 +88,27 @@ patch:
   # 正常情况： 输入 rug 得到 「1.rug 2.如果 …… 」
   # 降低之后： 输入 rug 得到 「1.如果 2.rug …… 」
   reduce_english_filter:
-    # 降低到第 idx 个位置
-    idx: 2
+      mode: all  # all | none | custom | 『留白』
+      idx: 2        # 降低到第 idx 个位置
+      # 自定义的单词列表，示例列表没有降低部分常用单词，如 and cat mail Mac but bad shit ……
+      words: [aid, ann,
+      bail, bait, bam, band, bans, bat, bay, bend, bent, benz, bib, bid, bien, biz, boc, bop, bos, bud, buf,
+      cab, cad, cain, cam, cans, cap, cas, cef, chad, chan, chap, chef, cher, chew, chic, chin, chip, chit, coup, cum, cunt, cur,
+      dab, dag, dal, dam, dent, dew, dial, diet, dim, din, dip, dis, dit, doug, dub, dug, dunn,
+      fab, fax, fob, fog, foul, fur,
+      gag, gail, gain, gal, gam, gaol, ged, gel, ger, guam, gus, gut,
+      hail, ham, hank, hans, hat, hay, heil, heir, hem, hep, hud, hum, hung, hunk, hut,
+      jim, jug,
+      kat,
+      lab, lad, lag, laid, lam, laos, lap, lat, lax, lay, led, leg, lex, liam, lib, lid, lied, lien, lies, linn, lip, lit, liz, lob, lug, lund, lung, lux,
+      mag, maid, mann, mar, mat, med, mel, mend, mens, ment, mil, mins, mint, mob, moc, mop, mos, mot, mud, mug, mum, nail,
+      nap, nat, nay, neil, nib, nip, noun, nous, nun, nut,
+      pac, paid, pail, pain, pair, pak, pal, pam, pans, pant, pap, par, pat, paw, pax, pens, pic, pier, pies, pins, pint, pit, pix, pod, pop, pos, pot, pour, pow, pub,
+      rand, rant, rent, rep, res, ret, rex, rib, rid, rig, rim, rub, rug, rum, runc, runs,
+      sac, sail, sal, sam, sans, sap, saw, sax, sew, sham, shaw, shin, sig, sin, sip, sis, suit, sung, suns, sup, sur, sus,
+      tad, tail, taj, tar, tax, tec, ted, tel, ter, tex, tic, tied, tier, ties, tim, tin, tit, tour, tout, tum, me, 
+      wag, wand, womens, wap, wax, weir, won,
+      yan, yen]
 
   # 简繁切换
   simplification:
@@ -137,6 +156,7 @@ patch:
   
   translator:
     dictionary: custom_dict_terra.all
+    initial_quality: 1.2
     spelling_hints: 3  # ～字以內候選標註完整帶調拼音
     preedit_format:
       - xform/([nl])v/$1ü/
@@ -220,7 +240,7 @@ patch:
     dictionary: wubi86_jidian
     enable_user_dict: false
     enable_completion: true
-    prefix: "`"
+    prefix: "uw"
     suffix: "'"
     tips: 〔五笔〕
     comment_format:
@@ -258,7 +278,7 @@ patch:
     tag: stroke
     dictionary: stroke
     enable_user_dict: false
-    prefix: 'i'
+    prefix: 'ui'
     suffix: "'"
     tips: 〔笔画〕
     preedit_format:
@@ -299,7 +319,7 @@ patch:
     tag: chaizi
     dictionary: chaizi
     enable_completion: true
-    prefix: "u"
+    prefix: "uu"
     preedit_format:
       - xform/([nljqxy])v/$1ü/
     comment_format:
@@ -342,21 +362,30 @@ patch:
 
   
   punctuator:
-    import_preset: default
-  
-  key_binder:
-    import_preset: default
-    bindings:
-      - { when: has_menu, accept: minus, send: minus }  # tone 1
-      - { when: paging, accept: minus, send: Page_Up }
+    import_preset: symbols
+    # 定义部分半角字符
+    half_shape:
+        "#": "#"
+        "*": "*"
+        '.' : ["。"]
+        "`": "`"
+        "~": "~"
+        "@": "@"
+        "=": "="
+        "/": ["/", "÷",]
+        '\': "、"
+        "_" : "──"
+        "'": {pair: ["「", "」"]}
+        "[": ["【", "["]
+        "]": ["】", "]"]
+        "$": ["¥", "$", "€", "£", "¢", "¤"]
+        "<": ["《", "〈", "«", "<"]
+        ">": ["》", "〉", "»", ">"]
   
   recognizer:
     import_preset: default
     patterns:
       punct: "^/([0-9]0?|[a-z]+)$"
-      wubi86_jidian: "`[a-z]*'?$"
-      stroke: "i[a-z]*'?$"
-      chaizi: "u[a-z]*'?$"
-
-  __patch:
-    - terra_symbols:/patch?
+      wubi86_jidian: "uw[a-z]*'?$"
+      stroke: "ui[a-z]*'?$"
+      chaizi: "uu[a-z]*'?$"
