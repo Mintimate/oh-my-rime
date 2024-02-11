@@ -13,7 +13,7 @@
 #
 
 ---
-name: luna_pinyin.biaoqing
+name: other_kaomoji
 version: "2014.09.07"
 sort: by_weight
 ...

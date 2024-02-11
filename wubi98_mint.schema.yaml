@@ -82,7 +82,7 @@ transcription_cc:
   excluded_types: [ reverse_lookup ]  # 不转换反查（两分拼字）的内容
   
 translator:
-  dictionary: custom_dict.wubi
+  dictionary: wubi98_mint
   db_class: tabledb
   initial_quality: 100000
   enable_charset_filter: false
@@ -96,7 +96,7 @@ translator:
     - "^z.*$"
 
 melt_eng:
-  dictionary: custom_dict_en.all # 英文词典
+  dictionary: melt_eng           # 英文词典
   enable_sentence: false         # 关闭自动造句
   enable_completion: false       # 关闭自动提示
   initial_quality: 0.8

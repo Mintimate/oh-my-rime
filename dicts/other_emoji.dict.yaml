@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 ---
-name: luna_pinyin.emoji
+name: other_emoji
 version: "2017.02.10"
 sort: by_weight
 ...

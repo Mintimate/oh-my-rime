@@ -1,5 +1,5 @@
 ---
-name: custom_dict_en.all ##注意name和文件名一致
+name: melt_eng         # 注意name和文件名一致
 version: "2020.6.7"
 sort: by_weight
 use_preset_vocabulary: true

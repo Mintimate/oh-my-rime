@@ -1,0 +1,9 @@
+---
+name: wubi98_mint                # 注意name和文件名一致
+version: "2024.02.11"
+sort: by_weight
+# 此处为 输入法所用到的词库，既补充拓展词库的地方
+import_tables:
+  - dicts/wubi98_base            # wubi98基础词典
+  - dicts/other_kaomoji          # 颜文字表情（按`vv`呼出)
+...

@@ -10,7 +10,7 @@ patch:
       「漢語拼音」，以符號按鍵 - / < \ 輸入四聲
       拼音碼表根據 CC-CEDICT 改編
     dependencies:
-      - wubi86_jidian
+      - wubi98_mint
       - stroke
       - chaizi # https://github.com/MaxChang3/rime-chaizi
       - melt_eng # 英文方案
@@ -51,7 +51,7 @@ patch:
     segmentors:
       - ascii_segmentor
       - matcher
-      - affix_segmentor@wubi86_jidian
+      - affix_segmentor@wubi98_mint
       - affix_segmentor@chaizi
       - affix_segmentor@stroke
       - abc_segmentor
@@ -64,7 +64,7 @@ patch:
       - punct_translator
       - table_translator@custom_phrase
       - table_translator@melt_eng           # 英文输入（作为子翻译器，优先级需要比原生的低）
-      - reverse_lookup_translator@wubi86_jidian
+      - reverse_lookup_translator@wubi98_mint
       - reverse_lookup_translator@chaizi
       - reverse_lookup_translator@stroke
       - script_translator
@@ -154,7 +154,7 @@ patch:
       - 'derive/^(.*)\\$/$1>/'
   
   translator:
-    dictionary: custom_dict_terra.all
+    dictionary: terra_pinyin
     initial_quality: 1.2
     spelling_hints: 3  # ～字以內候選標註完整帶調拼音
     preedit_format:
@@ -229,14 +229,14 @@ patch:
     initial_quality: 1
 
   melt_eng:
-    dictionary: custom_dict_en.all # 英文词典
+    dictionary: melt_eng           # 英文词典
     enable_sentence: false         # 关闭自动造句
     enable_completion: false       # 关闭自动提示
     initial_quality: 0.8
 
-  wubi86_jidian:
-    tag: wubi86_jidian
-    dictionary: wubi86_jidian
+  wubi98_mint:
+    tag: wubi98_mint
+    dictionary: wubi98_mint
     enable_user_dict: false
     enable_completion: true
     prefix: "uw"
@@ -356,7 +356,7 @@ patch:
 
 
   reverse_lookup:
-    tags: [wubi86_jidian,stroke,chaizi]
+    tags: [wubi98_mint,stroke,chaizi]
     overwrite_comment: false
 
   
@@ -385,6 +385,6 @@ patch:
     import_preset: default
     patterns:
       punct: "^/([0-9]0?|[a-z]+)$"
-      wubi86_jidian: "uw[a-z]*'?$"
+      wubi98_mint: "uw[a-z]*'?$"
       stroke: "ui[a-z]*'?$"
       chaizi: "uu[a-z]*'?$"
