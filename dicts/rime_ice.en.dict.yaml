@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: rime_ice.en
-version: "2023-11-29"
+version: "2024-02-10"
 sort: by_weight
 ...
 # +_+
@@ -3561,7 +3561,7 @@ clutch	clutch
 clutter	clutter
 Clyde	Clyde
 # cm	cm
-Cmd	Cmd
+cmd	cmd
 # cme	cme
 # cmos	cmos
 # cmp	cmp
@@ -6551,6 +6551,7 @@ estrogen	estrogen
 # et	et
 eta	eta
 etc	etc
+etc.	etc.
 eternal	eternal
 eternity	eternity
 Ethan	Ethan
@@ -11427,11 +11428,11 @@ marcel	marcel
 March	March
 march	march
 marching	marching
-marcia	marcia
-marco	marco
+Marcia	Marcia
+Marco	Marco
 Marcos	Marcos
 marcus	marcus
-mardi	mardi
+# mardi	mardi
 mare	mare
 Margaret	Margaret
 margin	margin
@@ -11903,8 +11904,8 @@ mileage	mileage
 miles	miles
 milestone	milestone
 milestones	milestones
-milf	milf
-milfhunter	milfhunter
+# milf	milf
+# milfhunter	milfhunter
 Milford	Milford
 milfs	milfs
 milfseeker	milfseeker
@@ -12927,6 +12928,7 @@ observing	observing
 obsessed	obsessed
 obsession	obsession
 obsolete	obsolete
+obsidian	obsidian
 obstacle	obstacle
 obstacles	obstacles
 obstetrics	obstetrics
@@ -14335,7 +14337,7 @@ posterior	posterior
 posters	posters
 postfix	postfix
 postgraduate	postgraduate
-postgresql	postgresql
+PostgreSQL	PostgreSQL
 posting	posting
 postings	postings
 postman	postman
@@ -18437,7 +18439,7 @@ systems	systems
 # sz	sz
 # t	t
 # ta	ta
-Tab	Tab
+tab	tab
 table	table
 tables	tables
 tablespoons	tablespoons
@@ -19304,7 +19306,7 @@ travels	travels
 traverse	traverse
 travesti	travesti
 travestis	travestis
-travis	travis
+Travis	Travis
 tray	tray
 trays	trays
 tread	tread
@@ -19855,7 +19857,7 @@ utterly	utterly
 # uv	uv
 # uw	uw
 # ux	ux
-uzbekistan	uzbekistan
+Uzbekistan	Uzbekistan
 # v	v
 # va	va
 vac	vac
@@ -20602,7 +20604,7 @@ wight	wight
 wigs	wigs
 wiki	wiki
 Wikimedia	Wikimedia
-wikipedia	wikipedia
+Wikipedia	Wikipedia
 # wil	wil
 Wilcox	Wilcox
 wild	wild
