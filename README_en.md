@@ -51,7 +51,6 @@ The default address of the local rime log file is as follows:
   -iBus:`/tmp`
 
 
-
 ## Configuration file description
 
 - `default.custom.yaml` set the input method, how to switch the input method, turn the page, etc.
@@ -59,6 +58,54 @@ The default address of the local rime log file is as follows:
 - `weasel.custom.yaml` Xiaolanghao (Win version) sets which software defaults to English input, input method skin, etc.
 
 Most of the configuration files are commented.
+
+## Customization and Updates of Dictionaries
+
+The dictionary directory [dicts](dicts) in this repository consists of the following:
+
+- [Rime Ice Pinyin Dictionary](https://github.com/iDvel/rime-ice)
+- [98 Wubi Dictionary](https://github.com/yanhuacuo/98wubi-tables)
+
+Detailed explanation:
+```txt
+dicts
+├── custom_simple.dict.yaml    # Custom dictionary (suggested for adding your own dictionaries)
+├── other_emoji.dict.yaml      # Emoji dictionary
+├── other_kaomoji.dict.yaml    # Kaomoji (facial expressions) dictionary (activated by `vv`)
+├── rime_ice.41448.dict.yaml   # Rime Ice dictionary (automatically updated by GitHub Action)
+├── rime_ice.8105.dict.yaml    # Rime Ice dictionary (automatically updated by GitHub Action)
+├── rime_ice.base.dict.yaml    # Rime Ice dictionary (automatically updated by GitHub Action)
+├── rime_ice.cn_en.txt         # Rime Ice dictionary (automatically updated by GitHub Action)
+├── rime_ice.en.dict.yaml      # Rime Ice dictionary (automatically updated by GitHub Action)
+├── rime_ice.en_ext.dict.yaml  # Rime Ice dictionary (automatically updated by GitHub Action)
+├── rime_ice.others.dict.yaml  # Rime Ice dictionary (automatically updated by GitHub Action)
+├── terra_pinyin_base.dict.yaml     # Terra Pinyin default dictionary
+├── terra_rime_ice.base.dict.yaml   # Terra Rime Ice dictionary based on Python script conversion and automatic updating
+└── wubi98_base.dict.yaml           # 98 Wubi basic dictionary
+```
+
+For subsequent updates to the dictionaries, you can download the files inside the `dicts` directory of this repository and replace the existing files, except for the `custom_simple.dict.yaml` file.
+
+If you want to expand the dictionaries on your own, you can import them in the dictionary configuration file of your input method. For example, in the Mint Pinyin dictionary configuration file [rime_mint.dict.yaml](rime_mint.dict.yaml):
+```yaml
+---
+name: rime_mint                  # Make sure the name matches the file name
+version: "2024.02.11"
+sort: by_weight
+# This section is for the dictionaries used by the input method to supplement and expand the vocabulary
+# Rime Ice Pinyin Dictionary, automatically updated by GitHub Robot
+import_tables:
+  - dicts/custom_simple          # Custom
+  - dicts/rime_ice.8105          # Rime Ice commonly used character collection
+  - dicts/rime_ice.41448         # Rime Ice complete character collection
+  - dicts/rime_ice.base          # Rime Ice https://github.com/iDvel/rime-ice
+  - dicts/other_kaomoji          # Kaomoji (facial expressions) (activated by `vv`)
+  - dicts/other_emoji            # Emoji (supplementary, actual usage usually requires OpenCC)
+  - dicts/rime_ice.others        # Rime Ice others dictionary (used for automatic error correction)
+...
+```
+
+------
 
 ------
 

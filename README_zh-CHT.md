@@ -51,7 +51,6 @@ rime配置教程：
   - iBus:` /tmp`
 
 
-
 ## 配置文件說明
 
 - `default.custom.yaml` 設置輸入法、如何切換輸入法、翻頁等
@@ -59,6 +58,54 @@ rime配置教程：
 - `weasel.custom.yaml` 小狼毫( Win 版本 )設置哪些軟件默認英文輸入，輸入法皮膚等
 
 配置文件中大部分都有註釋。
+
+## 詞庫定制以及更新
+
+本倉庫的詞庫目錄[dicts](dicts)，主要由：
+- [霧凇拼音詞庫](https://github.com/iDvel/rime-ice)
+- [98五筆詞庫](https://github.com/yanhuacuo/98wubi-tables)
+
+詳細說明：
+```txt
+dicts
+├── custom_simple.dict.yaml    # 自定義詞庫（建議自己添加的詞庫可以放這裏）
+├── other_emoji.dict.yaml      # emoji 詞庫
+├── other_kaomoji.dict.yaml    # 顏文字詞庫（按vv進行激活）
+├── rime_ice.41448.dict.yaml   # 霧凇詞庫（GitHub action自動更新）
+├── rime_ice.8105.dict.yaml    # 霧凇詞庫（GitHub action自動更新）
+├── rime_ice.base.dict.yaml    # 霧凇詞庫（GitHub action自動更新）
+├── rime_ice.cn_en.txt         # 霧凇詞庫（GitHub action自動更新）
+├── rime_ice.en.dict.yaml      # 霧凇詞庫（GitHub action自動更新）
+├── rime_ice.en_ext.dict.yaml  # 霧凇詞庫（GitHub action自動更新）
+├── rime_ice.others.dict.yaml  # 霧凇詞庫（GitHub action自動更新）
+├── terra_pinyin_base.dict.yaml     # 地球拼音自帶詞庫
+├── terra_rime_ice.base.dict.yaml   # 基於Python腳本自動轉換霧凇併Action自動更新
+└── wubi98_base.dict.yaml           # 五筆基礎詞庫
+```
+
+後續更新詞庫；可以下載本倉庫`dicts`內的文件，除了`custom_simple.dict.yaml`的文件，其他都進行覆蓋替換即可。
+
+如果想自己擴展詞庫，可以在輸入法的字典配置文件內進行導入，比如薄荷拼音字典配置文件[rime_mint.dict.yaml](rime_mint.dict.yaml)內：
+```yaml
+---
+name: rime_mint                  # 註意name和文件名一致
+version: "2024.02.11"
+sort: by_weight
+# 此處為 輸入法所用到的詞庫，既補充拓展詞庫的地方
+# 霧凇拼音詞庫，由Github Robot自動更新
+import_tables:
+  - dicts/custom_simple          # 自定義
+  - dicts/rime_ice.8105          # 霧凇拼音 常用字集合
+  - dicts/rime_ice.41448         # 霧凇拼音 完整字集合
+  - dicts/rime_ice.base          # 霧凇拼音 https://github.com/iDvel/rime-ice
+  - dicts/other_kaomoji          # 顏文字錶情（按`vv`呼出)
+  - dicts/other_emoji            # Emoji(僅僅作為補充，實際使用一般是OpenCC生效)
+  - dicts/rime_ice.others        # 霧凇拼音 others詞庫（用於自動糾錯）
+...
+```
+
+------
+
 
 ------
 
