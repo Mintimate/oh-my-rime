@@ -81,6 +81,7 @@ engine:
     # - reverse_lookup_translator # 反查模块，多标签情况下去除
   filters:
     - lua_filter@corrector                # 错音错字提示
+    - lua_filter@autocap_filter           # 英文自动大写
     - simplifier
     - simplifier@emoji_suggestion
     - simplifier@transcription_cc

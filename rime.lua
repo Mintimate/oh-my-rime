@@ -11,3 +11,5 @@ corrector = require("corrector")
 Chinese_lunar_calendar = require("chineseLunarCalendar")
 -- 以词定字（默认为「[」和「]」；在 key_binder 下配置快捷键
 select_character = require("select_character")
+-- 自动大写英文词汇
+autocap_filter = require("autocap_filter")
