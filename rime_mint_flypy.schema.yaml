@@ -2,13 +2,13 @@
 # encoding: utf-8
 
 schema:
-  schema_id: rime_mint
-  name: 薄荷拼音-全拼输入
-  version: "24.01.22"
+  schema_id: rime_mint_flypy
+  name: 薄荷拼音-小鹤混输
+  version: "24.02.23"
   author:
     - mintimate < @Mintimate|https://www.mintimate.cn >
   description: |
-    Mintimate的薄荷拼音方案。
+    Mintimate的薄荷拼音（小鹤双拼混输）方案。
     除了参考官方明月拼音，还参考：
       * chenhe: https://chenhe.me
       * rime wiki: https://github.com/rime/home/wiki
@@ -141,6 +141,7 @@ Chinese_lunar_calendar: lunar
 translator:
   # 字典文件
   dictionary: rime_mint          # 使用的字典文件
+  prism: rime_mint_flypy     # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
   spelling_hints: 8              # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
   always_show_comments: true     # corrector.lua ：Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供 corrector.lua 做判断用。
   preedit_format:
@@ -174,12 +175,6 @@ speller:
   # 拼写匹配
   algebra:
     - erase/^xx$/ # 首选保留
-    # - derive/^([zcs])h/$1/ # zh, ch, sh => z, c, s
-    # - derive/^([zcs])([^h])/$1h$2/ # z, c, s => zh, ch, sh
-    # - derive/([aei])n$/$1ng/ # en => eng, in => ing
-    # - derive/([aei])ng$/$1n/ # eng => en, ing => in
-    # - derive/([iu])an$/$lan/ # ian => iang, uan => uang
-    # - derive/([iu])ang$/$lan/ # iang => ian, uang => uan
     - derive/([aeiou])ng$/$1gn/        # dagn => dang
     - derive/([dtngkhrzcs])o(u|ng)$/$1o/  # zho => zhong|zhou
     - derive/ong$/on/                  # zhonguo => zhong guo
@@ -261,13 +256,43 @@ speller:
     - derive/ong$/on/ # lon → long
     - derive/([tl])eng$/$1en/ # ten → teng
     - derive/([qwrtypsdfghjklzxcbnm])([aeio])ng$/$1ng/ # lng → lang、leng、ling、long
+    # 双拼适配
+    - derive/^([jqxy])u$/$1v/
+    - derive/^([aoe])([ioun])$/$1$1$2/
+    - derive/^([aoe])(ng)?$/$1$1$2/
+    - derive/iu$/Ⓠ/
+    - derive/(.)ei$/$1Ⓦ/
+    - derive/uan$/Ⓡ/
+    - derive/[uv]e$/Ⓣ/
+    - derive/un$/Ⓨ/
+    - derive/^sh/Ⓤ/
+    - derive/^ch/Ⓘ/
+    - derive/^zh/Ⓥ/
+    - derive/uo$/Ⓞ/
+    - derive/ie$/Ⓟ/
+    - derive/(.)i?ong$/$1Ⓢ/
+    - derive/ing$|uai$/Ⓚ/
+    - derive/(.)ai$/$1Ⓓ/
+    - derive/(.)en$/$1Ⓕ/
+    - derive/(.)eng$/$1Ⓖ/
+    - derive/[iu]ang$/Ⓛ/
+    - derive/(.)ang$/$1Ⓗ/
+    - derive/ian$/Ⓜ/
+    - derive/(.)an$/$1Ⓙ/
+    - derive/(.)ou$/$1Ⓩ/
+    - derive/[iu]a$/Ⓧ/
+    - derive/iao$/Ⓝ/
+    - derive/(.)ao$/$1Ⓒ/
+    - derive/ui$/Ⓥ/
+    - derive/in$/Ⓑ/
+    - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⒿⓀⓁⓏⓍⒸⓋⒷⓃⓂ/qwrtyuiopsdfghjklzxcvbnm/
 
 wubi98_mint:
   tag: wubi98_mint
   dictionary: wubi98_mint
   enable_user_dict: false
   enable_completion: true
-  prefix: "uw"
+  prefix: "uuw"
   suffix: "'"
   tips: 〔五笔〕
 
@@ -275,7 +300,7 @@ stroke:
   tag: stroke
   dictionary: stroke
   enable_user_dict: false
-  prefix: 'ui'
+  prefix: 'uui'
   suffix: "'"
   tips: 〔笔画〕
   preedit_format:
@@ -285,7 +310,7 @@ chaizi:
   tag: chaizi
   dictionary: chaizi
   enable_completion: true
-  prefix: "uu"
+  prefix: "uuu"
   preedit_format:
     - xform/([nljqxy])v/$1ü/
   comment_format:
@@ -322,8 +347,8 @@ recognizer:
   import_preset: default
   patterns:
     punct: "^/([0-9]0?|[a-z]+)$"
-    wubi98_mint: "uw[a-z]*'?$"
-    stroke: "ui[a-z]*'?$"
-    chaizi: "uu[a-z]*'?$"
+    wubi98_mint: "uuw[a-z]*'?$"
+    stroke: "uui[a-z]*'?$"
+    chaizi: "uuu[a-z]*'?$"
     rmb: "^R[0-9]+[.]?[0-9]*"        # 响应 lua_translator@number_translator 脚本将自动获取第 2 个字符作为触发前缀
     gregorian_to_lunar: "^N[0-9]{1,8}"  # 响应 lua_translator@Chinese_lunar_calendar 公历转农历，输入 N20240115 得到「二〇二四年腊月初五」，脚本将自动获取第 2 个字符作为触发前缀
