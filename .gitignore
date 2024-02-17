@@ -1,4 +1,10 @@
-
+# macOS日志文件
 .DS_Store
+
+# 用户配置文件
 user.yaml
 installation.yaml
+
+# 部署生成的文件
+build
+*.userdb

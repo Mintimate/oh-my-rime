@@ -1,8 +1,8 @@
 patch:
   schema:
     schema_id: terra_pinyin
-    name: 地球拼音-薄荷定制
-    version: '0.20'
+    name: "地球拼音-薄荷定制"
+    version: '24.02.15'
     author:
       - 佛振 <chen.sst@gmail.com>
       - mintimate < @Mintimate|https://www.mintimate.cn >
