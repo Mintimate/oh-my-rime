@@ -8,8 +8,8 @@
 # 方案说明
 schema:
   schema_id: double_pinyin_flypy
-  name: 小鹤双拼
-  version: "1"
+  name: "小鹤双拼-薄荷定制"
+  version: "24.02.15"
   author:
     - Mintimate
   description: |
@@ -211,10 +211,11 @@ cn_en:
 # 拼写设定
 speller:
   # 如果不想让什么标点直接上屏，可以加在 alphabet，或者编辑标点符号为两个及以上的映射
-  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA`
-  delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+  delimiter: " `"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
     - erase/^xx$/
+    - abbrev/^([a-z]).+$/$1/ #简拼（首字母）
     - derive/^([jqxy])u$/$1v/
     - derive/^([aoe])([ioun])$/$1$1$2/
     - xform/^([aoe])(ng)?$/$1$1$2/

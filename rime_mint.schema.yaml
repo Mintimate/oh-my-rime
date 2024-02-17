@@ -4,7 +4,7 @@
 schema:
   schema_id: rime_mint
   name: 薄荷拼音-全拼输入
-  version: "24.01.22"
+  version: "24.02.15"
   author:
     - mintimate < @Mintimate|https://www.mintimate.cn >
   description: |
