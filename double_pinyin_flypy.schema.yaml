@@ -52,6 +52,7 @@ switches:
 engine:
   processors:
     - lua_processor@select_character      # 以词定字
+    - lua_processor@*code_length_limit    # 使用Lua限制输入内容的最大长度(防止过长而卡顿)
     - ascii_composer # ※ 處理西文模式及中西文切換
     - recognizer # ※ 與 matcher 搭配，處理符合特定規則的輸入碼，如網址、反查等
     - key_binder # ※ 在特定條件下將按鍵綁定到其他按鍵，如重定義逗號、句號爲候選翻頁鍵
@@ -108,6 +109,8 @@ emoji_suggestion:
   tips: all
   inherit_comment: false
 
+ # 最大输入长度
+code_length_limit: 25
 
 
 # Lua 配置: 降低部分英语单词在候选项的位置。
