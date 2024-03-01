@@ -164,7 +164,7 @@ cn_en:
   dictionary: ""                 # 中英混输，直接使用短语词典，普通字典直接留空即可
   user_dict: dicts/rime_ice.cn_en
   db_class: stabledb
-  enable_completion: true
+  enable_completion: false
   enable_sentence: false
   initial_quality: 0.5
   comment_format:

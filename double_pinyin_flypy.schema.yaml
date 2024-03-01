@@ -205,7 +205,7 @@ cn_en:
   dictionary: ""
   user_dict: dicts/rime_ice.cn_en_flypy
   db_class: stabledb
-  enable_completion: true
+  enable_completion: false
   enable_sentence: false
   initial_quality: 0.5
   comment_format:
