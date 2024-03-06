@@ -34,6 +34,8 @@ patch:
     bindings:
       - {accept: "Control+Shift+E", toggle: emoji_suggestion, when: always}
       - {accept: "Control+Shift+1", toggle: transcription, when: has_menu}
+      - {accept: bracketleft, send: Page_Up, when: paging}      # 使用`[`进行向上翻页（第一页时候无效）
+      - {accept: bracketright, send: Page_Down, when: has_menu} # 使用`]`进行向下翻页
       - {accept: minus, send: Page_Up, when: paging}     # 使用`-`进行向上翻页（第一页时候无效）
       - {accept: equal, send: Page_Down, when: has_menu} # 使用`=`进行向下翻页
   
@@ -59,9 +61,11 @@ patch:
       - punct_segmentor
       - fallback_segmentor
     translators:
-      - lua_translator@date_translator
-      - lua_translator@time_translator
-      - lua_translator@week_translator
+      - lua_translator@date_translator           # 日期 Lua
+      - lua_translator@time_translator           # 时间 Lua
+      - lua_translator@week_translator           # 星期 Lua
+      - lua_translator@number_translator         # 金额大小写 Lua
+      - lua_translator@Chinese_lunar_calendar    # 农历 Lua
       - punct_translator
       - table_translator@custom_phrase
       - table_translator@melt_eng           # 英文输入（作为子翻译器，优先级需要比原生的低）
@@ -70,11 +74,19 @@ patch:
       - reverse_lookup_translator@stroke
       - script_translator
     filters:
-      - simplifier@emoji_suggestion
-      - simplifier
-      - simplifier@transcription_cc
+      - lua_filter@autocap_filter           # 英文自动大写
+      - simplifier@emoji_suggestion         # Emoji OpenCC
+      - simplifier@transcription_cc         # 繁体&简体 OpenCC
       - lua_filter@reduce_english_filter    # 降低部分英语单词在候选项的位置
-      - uniquifier
+      - uniquifier                          # 去重
+
+
+  # 简繁切换
+  transcription_cc:
+    option_name: transcription
+    opencc_config: s2t.json             # s2t.json | s2hk.json | s2tw.json | s2twp.json
+    tips: none                          # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
+    excluded_types: [ reverse_lookup ]  # 不转换反查（两分拼字）的内容
 
   # Emoji模块
   emoji_suggestion:
@@ -112,13 +124,6 @@ patch:
       tad, tail, taj, tar, tax, tec, ted, tel, ter, tex, tic, tied, tier, ties, tim, tin, tit, tour, tout, tum, me, 
       wag, wand, womens, wap, wax, weir, won,
       yan, yen]
-
-  # 简繁切换
-  transcription_cc:
-    option_name: transcription
-    opencc_config: s2t.json             # s2t.json | s2hk.json | s2tw.json | s2twp.json
-    tips: none                          # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
-    excluded_types: [ reverse_lookup ]  # 不转换反查（两分拼字）的内容
   
   speller:
     alphabet: 'zyxwvutsrqponmlkjihgfedcba-;/<,>\'
