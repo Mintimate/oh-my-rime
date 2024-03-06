@@ -90,6 +90,7 @@ engine:
     - lua_filter@autocap_filter           # 英文自动大写
     - simplifier
     - simplifier@emoji_suggestion
+    - lua_filter@*aux_code@flypy_full     # 小鹤双拼辅码(音形)
     - simplifier@transcription_cc
     - lua_filter@reduce_english_filter    # 降低部分英语单词在候选项的位置
     - uniquifier                          # 去重
@@ -111,6 +112,17 @@ emoji_suggestion:
 
  # 最大输入长度
 code_length_limit: 25
+
+
+# 小鹤音形配置
+axu_code:
+  # 激活码
+  trigger_word: ";"
+  # 展示辅码的模式
+  # always:   总是展示(默认)
+  # trigger:  输入激活码后激活辅码
+  # none:     始终不展示辅码
+  show_aux_notice: "trigger"
 
 
 # Lua 配置: 降低部分英语单词在候选项的位置。
@@ -214,7 +226,7 @@ cn_en:
 # 拼写设定
 speller:
   # 如果不想让什么标点直接上屏，可以加在 alphabet，或者编辑标点符号为两个及以上的映射
-  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA;
   delimiter: " `"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
     - erase/^xx$/
