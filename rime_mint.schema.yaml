@@ -68,11 +68,11 @@ engine:
   translators:
     - punct_translator  # ※ 轉換標點符號
     - script_translator
-    - lua_translator@date_translator # 日期Lua
-    - lua_translator@time_translator # 时间Lua
-    - lua_translator@week_translator # 星期Lua
-    - lua_translator@number_translator # 金额大小写
-    - lua_translator@Chinese_lunar_calendar    # 农历
+    - lua_translator@date_translator          # 日期Lua
+    - lua_translator@time_translator          # 时间Lua
+    - lua_translator@week_translator          # 星期Lua
+    - lua_translator@number_translator        # 金额大小写 Lua
+    - lua_translator@Chinese_lunar_calendar   # 农历
     - table_translator@melt_eng  # 英文输入（作为子翻译器，优先级需要比原生的低）
     - table_translator@cn_en     # 中英混合词汇
     # - echo_translator      # ※ 没有候选词，返回字符
@@ -83,9 +83,8 @@ engine:
   filters:
     - lua_filter@corrector                # 错音错字提示
     - lua_filter@autocap_filter           # 英文自动大写
-    - simplifier
-    - simplifier@emoji_suggestion
-    - simplifier@transcription_cc
+    - simplifier@emoji_suggestion         # Emoji OpenCC
+    - simplifier@transcription_cc         # 繁体&简体 OpenCC
     - lua_filter@reduce_english_filter    # 降低部分英语单词在候选项的位置
     - uniquifier                          # 去重
 
