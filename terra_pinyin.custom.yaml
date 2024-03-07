@@ -12,7 +12,7 @@ patch:
     dependencies:
       - wubi98_mint
       - stroke
-      - chaizi # https://github.com/MaxChang3/rime-chaizi
+      - radical_pinyin # 参考 https://github.com/mirtlecn/rime-radical-pinyin
       - melt_eng # 英文方案
   
   switches:
@@ -53,7 +53,7 @@ patch:
       - ascii_segmentor
       - matcher
       - affix_segmentor@wubi98_mint
-      - affix_segmentor@chaizi
+      - affix_segmentor@radical_reverse_lookup
       - affix_segmentor@stroke
       - abc_segmentor
       - punct_segmentor
@@ -66,7 +66,7 @@ patch:
       - table_translator@custom_phrase
       - table_translator@melt_eng           # 英文输入（作为子翻译器，优先级需要比原生的低）
       - reverse_lookup_translator@wubi98_mint
-      - reverse_lookup_translator@chaizi
+      - reverse_lookup_translator@radical_reverse_lookup
       - reverse_lookup_translator@stroke
       - script_translator
     filters:
@@ -318,9 +318,9 @@ patch:
       - xform/eh[0-5]?/ê/
       - xform/([a-z]+)[0-5]/$1/
 
-  chaizi:
-    tag: chaizi
-    dictionary: chaizi
+  radical_reverse_lookup:
+    tag: radical_lookup
+    dictionary: radical_pinyin
     enable_completion: true
     prefix: "uu"
     preedit_format:
@@ -360,7 +360,7 @@ patch:
 
 
   reverse_lookup:
-    tags: [wubi98_mint,stroke,chaizi]
+    tags: [wubi98_mint,stroke,radical_lookup]
     overwrite_comment: false
 
   
@@ -391,4 +391,4 @@ patch:
       punct: "^/([0-9]0?|[a-z]+)$"
       wubi98_mint: "uw[a-z]*'?$"
       stroke: "ui[a-z]*'?$"
-      chaizi: "uu[a-z]*'?$"
+      radical_lookup: "uu[a-z]*'?$"
