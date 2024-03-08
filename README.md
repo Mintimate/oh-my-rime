@@ -4,7 +4,7 @@
 - [中文 - 繁體簡介](README_zh-CHT.md)
 - [English - Brief](README_en.md)
 
-一套快速初始化rime的模板，因为平时我使用`oh-my-zsh`，希望大家在用这个模板的时候，有种用`omz`的感觉；所以我给它取名叫`oh-my-rime`，你也可以叫它`薄荷输入法`，亦或者`Mint`。
+一套快速初始化rime的模板，因为平时我使用`oh-my-zsh`，希望大家在用这个模板的时候，有种用`omz`的感觉；所以我给它取名叫`oh-my-rime`，你也可以叫它`薄荷输入法`，亦或者`Mint Input`。
 
 如果你下载遇到困难，使用GitHub Action推送的镜像仓库：
 - [oh-my-rime: https://gitlab.mintimate.cn/Mintimate/oh-my-rime](https://gitlab.mintimate.cn/Mintimate/oh-my-rime)
@@ -21,7 +21,14 @@ rime配置教程：
 
 **强烈建议[配合文档](https://www.mintimate.cc)进行操作!!!**
 
-本输入方案内包含： 『薄荷拼音』、『地球拼音-薄荷定制』和『98五笔-薄荷简版』，你可以在安装后，使用『Ctrl』+『~』进行切换。（默认激活的是『薄荷拼音』）。
+本输入方案内包含： 
+- 薄荷拼音-全拼输入: 全拼输入，适合的人群最多，所以也是默认的输入；
+- 小鹤双拼-薄荷定制: 基于小鹤双拼，添加定制内容。支持输入音形(形码)；
+- 薄荷拼音-小鹤混输: 全拼输入的同时，支持小鹤双拼；
+- 地球拼音-薄荷定制: 基于地球拼音，添加定制内容，扩展海量词库；
+- 五笔九八-薄荷简版: 基于五笔98的精简版本，期待大家的PR。
+
+你可以在安装后，使用『Ctrl』+『~』进行切换。（默认激活的是『薄荷拼音』）。
 
 ### 安装
 
@@ -29,7 +36,7 @@ rime配置教程：
 
 0. 安装[Rime输入法](https://rime.im/)并注销或重启电脑；
 1. 下载本仓库所有配置文件到本地rime配置文件；
-2. 重新部署Rime（Windows、Linux可能需要配置分词依赖才可以使用EasyEN，参考：[EasyEn](https://github.com/BlindingDark/rime-easy-en)）
+2. 重新部署Rime
 3. 开始使用
 
 ## Tips
@@ -62,7 +69,7 @@ rime配置教程：
 
 ## 词库定制以及更新
 
-本仓库的词库目录[dicts](dicts)，主要由：
+本仓库的词库目录[dicts](dicts)，主要有：
 - [雾凇拼音词库](https://github.com/iDvel/rime-ice)
 - [98五笔词库](https://github.com/yanhuacuo/98wubi-tables)
 
@@ -75,11 +82,13 @@ dicts
 ├── rime_ice.41448.dict.yaml   # 雾凇词库（GitHub action自动更新）
 ├── rime_ice.8105.dict.yaml    # 雾凇词库（GitHub action自动更新）
 ├── rime_ice.base.dict.yaml    # 雾凇词库（GitHub action自动更新）
+├── rime_ice.ext.dict.yaml     # 雾凇词库（GitHub action自动更新）
 ├── rime_ice.cn_en.txt         # 雾凇词库（GitHub action自动更新）
 ├── rime_ice.en.dict.yaml      # 雾凇词库（GitHub action自动更新）
 ├── rime_ice.en_ext.dict.yaml  # 雾凇词库（GitHub action自动更新）
 ├── rime_ice.others.dict.yaml  # 雾凇词库（GitHub action自动更新）
 ├── terra_pinyin_base.dict.yaml     # 地球拼音自带词库
+├── terra_pinyin_ext.dict.yaml      # 地球拼音自带词库
 ├── terra_rime_ice.base.dict.yaml   # 基于Python脚本自动转换雾凇并Action自动更新
 └── wubi98_base.dict.yaml           # 五笔基础词库
 ```
@@ -99,6 +108,7 @@ import_tables:
   - dicts/rime_ice.8105          # 霧凇拼音 常用字集合
   - dicts/rime_ice.41448         # 霧凇拼音 完整字集合
   - dicts/rime_ice.base          # 雾凇拼音 https://github.com/iDvel/rime-ice
+  - dicts/rime_ice.ext           # 雾凇拼音 https://github.com/iDvel/rime-ice
   - dicts/other_kaomoji          # 颜文字表情（按`vv`呼出)
   - dicts/other_emoji            # Emoji(仅仅作为补充，实际使用一般是OpenCC生效)
   - dicts/rime_ice.others        # 雾凇拼音 others词库（用于自动纠错）
@@ -120,6 +130,7 @@ import_tables:
 2. [Rime/小狼豪/鼠须管 输入法配置记](https://chenhe.me/post/oh-my-rime)
 3. [rime-setting](https://github.com/Iorest/rime-setting)
 4. [雾凇拼音 | 长期维护的简体词库](https://github.com/iDvel/rime-ice)
+5. [rime-radical-pinyin | Rime 部件拆字输入方案（全拼双拼）](https://github.com/mirtlecn/rime-radical-pinyin)
 
 ## 推荐项目
 

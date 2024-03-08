@@ -21,7 +21,15 @@ You have a QQ account, you can join the group chat(No Ads!): 703260572
 
 **It is strongly recommended to refer to the [documentation ↗](https://www.mintimate.cc) for operation!!!**
 
-This input method package includes: "Mint Pinyin," "Earth Pinyin - Mint Custom," and "98 Wubi - Mint Lite." After installation, you can switch between them using "Ctrl" + "~" (The default active input method is "Mint Pinyin").
+The input method scheme included:
+
+- Mint Pinyin (薄荷拼音) - Full Spelling Input: Full spelling input, suitable for the largest population, so it's the default input method.
+- Double Pinyin Fly( 小鹤双拼) - Mint Customized: Based on Double Pinyin Fly, with added customizations. Supports input of phonetic and shape (shape code) components.
+- Mint Pinyin (薄荷拼音) - Xiaohe Mixed Input: Supports Double Pinyin Fly input while in full spelling input mode.
+- Terra Pinyin - Mint Customized: Based on Terra Pinyin, with added customizations and extended massive word library.
+- Wubi 98 - Mint Simplified: A simplified version based on Wubi 98, looking forward to your contributions.
+
+You can switch between input methods by pressing "Ctrl" + "~" after installation. (Mint Pinyin is activated by default).
 
 ### Install
 
@@ -29,7 +37,7 @@ The following tutorials are available for Linux, macOS and Windows (Xp~)
 
 0. Install [Rime Input Method](https://rime.im/) and log out or restart the computer;
 1. Download all the configuration files of this warehouse to the local rime configuration file;
-2. Redeploy Rime (Windows and Linux may need to configure word segmentation dependencies to use EasyEN, reference: [EasyEn](https://github.com/BlindingDark/rime-easy-en))
+2. Redeploy Rime;
 3. Get started
 
 ## Tips
@@ -75,11 +83,13 @@ dicts
 ├── rime_ice.41448.dict.yaml   # Rime Ice dictionary (automatically updated by GitHub Action)
 ├── rime_ice.8105.dict.yaml    # Rime Ice dictionary (automatically updated by GitHub Action)
 ├── rime_ice.base.dict.yaml    # Rime Ice dictionary (automatically updated by GitHub Action)
+├── rime_ice.ext.dict.yaml     # Rime Ice dictionary (automatically updated by GitHub Action)
 ├── rime_ice.cn_en.txt         # Rime Ice dictionary (automatically updated by GitHub Action)
 ├── rime_ice.en.dict.yaml      # Rime Ice dictionary (automatically updated by GitHub Action)
 ├── rime_ice.en_ext.dict.yaml  # Rime Ice dictionary (automatically updated by GitHub Action)
 ├── rime_ice.others.dict.yaml  # Rime Ice dictionary (automatically updated by GitHub Action)
 ├── terra_pinyin_base.dict.yaml     # Terra Pinyin default dictionary
+├── terra_pinyin_ext.dict.yaml      # Terra Pinyin default dictionary
 ├── terra_rime_ice.base.dict.yaml   # Terra Rime Ice dictionary based on Python script conversion and automatic updating
 └── wubi98_base.dict.yaml           # 98 Wubi basic dictionary
 ```
@@ -99,6 +109,7 @@ import_tables:
   - dicts/rime_ice.8105          # Rime Ice commonly used character collection
   - dicts/rime_ice.41448         # Rime Ice complete character collection
   - dicts/rime_ice.base          # Rime Ice https://github.com/iDvel/rime-ice
+  - dicts/rime_ice.ext           # Rime Ice https://github.com/iDvel/rime-ice
   - dicts/other_kaomoji          # Kaomoji (facial expressions) (activated by `vv`)
   - dicts/other_emoji            # Emoji (supplementary, actual usage usually requires OpenCC)
   - dicts/rime_ice.others        # Rime Ice others dictionary (used for automatic error correction)
@@ -123,6 +134,7 @@ import_tables:
 2. [Rime/Xiaolanghao/Shuxuguan Input Method Configuration Notes](https://chenhe.me/post/oh-my-rime)
 3. [rime-setting](https://github.com/Iorest/rime-setting)
 4. [rime-ice | The long-term maintenance version of Simplified Chinese Characters](https://github.com/iDvel/rime-ice)
+5. [rime-radical-pinyin | Rime Component-based Character Input Schemes (Full Spelling and Double Pinyin)](https://github.com/mirtlecn/rime-radical-pinyin)
 
 ## Other Recommended
 - [98 Wubi, a very useful Wubi input program](http://www.98wubi.com/)
