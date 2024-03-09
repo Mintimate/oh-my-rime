@@ -16,6 +16,10 @@
 						"type": "text",
 						"file": "emoji.txt"
 					},
+                    {
+                        "type": "text",
+                        "file": "spoken.txt"
+                    },
 					{
 						"type": "text",
 						"file": "others.txt"
