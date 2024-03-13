@@ -375,7 +375,7 @@ patch:
     half_shape:
         "#": "#"
         "*": "*"
-        '.' : ["。"]
+        '.' : { commit: 。 }
         "`": "`"
         "~": "~"
         "@": "@"
@@ -393,6 +393,7 @@ patch:
   recognizer:
     import_preset: default
     patterns:
+      url: "^[a-z]+[.].+$"
       punct: "^/([0-9]0?|[a-z]+)$"
       wubi98_mint: "uw[a-z]*'?$"
       stroke: "ui[a-z]*'?$"

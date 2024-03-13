@@ -333,7 +333,7 @@ punctuator:
   half_shape:
       "#": "#"
       "*": "*"
-      '.' : ["。"]
+      '.' : { commit: 。 }
       "`": "`"
       "~": "~"
       "@": "@"
@@ -351,6 +351,7 @@ punctuator:
 recognizer:
   import_preset: default
   patterns:
+    url: "^[a-z]+[.].+$"
     punct: "^/([0-9]0?|[a-z]+)$"
     wubi98_mint: "uuw[a-z]*'?$"
     stroke: "uui[a-z]*'?$"
