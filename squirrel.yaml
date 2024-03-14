@@ -72,8 +72,8 @@ style:
   # 全局字体及大小
   font_face: 'PingFang SC'
   font_point: 16
-  # 序号字体及大小
-  label_font_face: 'PingFang SC'
+  # 序号字体及大小（建议使用「等宽字体」）
+  label_font_face: 'Lucida Grande'
   label_font_point: 16
   # 注字体及大小
   comment_font_face: 'PingFang SC'
