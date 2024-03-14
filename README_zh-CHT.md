@@ -5,7 +5,7 @@
 - [中文 - 繁體文檔](README_zh-CHT.md)
 - [English - Documentation](README_en.md)
 
-一套快速初始化rime的模闆，因為平時我使用`oh-my-zsh`，在使用rime時候，有種用`omz`的感覺；所以我給它取名叫`oh-my-rime`，妳也可以叫它`薄荷輸入法`，亦或者`Mint Input`。
+一套快速初始化rime的模闆方案，因為平時我使用`oh-my-zsh`，希望大家在用這個模闆的時候，有種用`omz`的感覺；所以我給它取名叫`oh-my-rime`，妳也可以叫它`薄荷輸入法`，亦或者`Mint Input`。
 
 如果妳下載遇到睏難，使用GitHub Action推送的鏡像倉庫：
 - [oh-my-rime: https://gitlab.mintimate.cn/Mintimate/oh-my-rime](https://gitlab.mintimate.cn/Mintimate/oh-my-rime)
@@ -19,7 +19,7 @@ rime配置教程：
 
 如果你有QQ帳號，可以加入群聊（禁止廣告）: 703260572
 
-**強烈建議[配合文檔](https://www.mintimate.cc)進行操作!!!**
+**強烈建議[配合文檔: https://www.mintimate.cc](https://www.mintimate.cc)進行操作!!!**
 
 本輸入方案內包含： 
 - 薄荷拼音-全拼輸入: 全拼輸入，適合的人群最多，所以也是預設的輸入；
@@ -28,16 +28,19 @@ rime配置教程：
 - 地球拼音-薄荷定制: 基於地球拼音，添加定制內容，擴展海量詞庫；
 - 五筆九八-薄荷簡版: 基於五筆98的精簡版本，期待大家的PR。
 
-妳可以在安裝後，使用『Ctrl』+『~』進行切換。（預設激活的是『薄荷拼音』）。
+妳可以在安裝後，使用『Ctrl』+『~』進行切換。（預設激活的是『薄荷拼音-全拼輸入』）。
 
 ### 安裝
 
 以下教程，適用於Linux、macOS和Windows（Xp~）
 
-0. 安裝[Rime輸入法](https://rime.im/)並註銷或重啟電腦；
-1. 下載本倉庫所有配置文件到本地rime配置文件；
-2. 重新部署Rime
-3. 開始使用
+1. 安裝[Rime輸入法](https://rime.im/)並註銷或重啟電腦；
+2. 下載本倉庫所有配置文件到本地rime配置文件；
+3. 重新部署Rime
+4. 開始使用
+5. 根據自己習慣，進行二次修改
+
+> 需要註意: Windows 7 和 Windows Xp只能使用 0.14.3 版本的Weasel，無法使用本輸入方案的全部功能，需要手動更新librime支援庫：[WinXP和Win7使用薄荷輸入法](https://www.mintimate.cc/zh/guide/faQ.html#winxp%E5%92%8Cwin7%E4%BD%BF%E7%94%A8%E8%96%84%E8%8D%B7%E8%BE%93%E5%85%A5%E6%B3%95)
 
 ## Tips
 本地rime配置文件默認地址，如下
@@ -135,6 +138,8 @@ import_tables:
 
 - [98五筆，十分好用的五筆輸入方案](http://www.98wubi.com/)
 - [霧凇拼音，很優秀的中文詞庫](https://github.com/iDvel/rime-ice)
+
+> 尤其是霧凇拼音，本方案项目中，大量參考參考了霧凇拼音。詞庫部分，使用Python同步霧凇拼音的基礎詞庫併啟用霧凇拼音預設沒有啟用的ext擴展詞庫。
 
 ## ⭐⭐⭐
 

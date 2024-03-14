@@ -35,10 +35,11 @@ You can switch between input methods by pressing "Ctrl" + "~" after installation
 
 The following tutorials are available for Linux, macOS and Windows (Xp~)
 
-0. Install [Rime Input Method](https://rime.im/) and log out or restart the computer;
-1. Download all the configuration files of this warehouse to the local rime configuration file;
-2. Redeploy Rime;
-3. Get started
+1. Install [Rime Input Method](https://rime.im/) and log out or restart the computer;
+2. Download all the configuration files of this warehouse to the local rime configuration file;
+3. Redeploy Rime;
+4. Get started
+5. Make secondary modifications according to your own habits
 
 ## Tips
 The default address of the local rime configuration file is as follows
@@ -118,8 +119,6 @@ import_tables:
 
 ------
 
-------
-
 ## Support
 
 - [Mintimate's Blog: https://www.mintimate.cn](https://www.mintimate.cn)
@@ -135,6 +134,8 @@ import_tables:
 3. [rime-setting](https://github.com/Iorest/rime-setting)
 4. [rime-ice | The long-term maintenance version of Simplified Chinese Characters](https://github.com/iDvel/rime-ice)
 5. [rime-radical-pinyin | Rime Component-based Character Input Schemes (Full Spelling and Double Pinyin)](https://github.com/mirtlecn/rime-radical-pinyin)
+
+> Especially rime-ice, this solution project, a large number of references to rime-ice. For the word library part, use Python to synchronize the basic word library of rime-ice and enable the ext extension word library that rime-ice does not enable by default.
 
 ## Other Recommended
 - [98 Wubi, a very useful Wubi input program](http://www.98wubi.com/)
