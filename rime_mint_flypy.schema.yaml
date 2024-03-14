@@ -25,6 +25,7 @@ key_binder:
   import_preset: default
   bindings:
     - {accept: "Control+Shift+E", toggle: emoji_suggestion, when: always}
+    - {accept: "Control+Shift+exclam", toggle: transcription, when: has_menu}
     - {accept: "Control+Shift+1", toggle: transcription, when: has_menu}
     - {accept: minus, send: Page_Up, when: paging}     # 使用`-`进行向上翻页（第一页时候无效）
     - {accept: equal, send: Page_Down, when: has_menu} # 使用`=`进行向下翻页
