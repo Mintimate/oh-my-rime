@@ -46,48 +46,47 @@ switches:
 
 engine:
   processors:
-    - lua_processor@select_character      # 以词定字
-    - lua_processor@*code_length_limit    # 使用Lua限制输入内容的最大长度(防止过长而卡顿)
-    - ascii_composer # ※ 處理西文模式及中西文切換
-    - recognizer # ※ 與 matcher 搭配，處理符合特定規則的輸入碼，如網址、反查等
-    - key_binder # ※ 在特定條件下將按鍵綁定到其他按鍵，如重定義逗號、句號爲候選翻頁鍵
+    - lua_processor@*select_character              # 以词定字
+    - lua_processor@*codeLengthLimit_processor     # 使用Lua限制输入内容的最大长度(防止过长而卡顿)
+    - ascii_composer                               # ※ 處理西文模式及中西文切換
+    - recognizer                                   # ※ 與 matcher 搭配，處理符合特定規則的輸入碼，如網址、反查等
+    - key_binder                                   # ※ 在特定條件下將按鍵綁定到其他按鍵，如重定義逗號、句號爲候選翻頁鍵
     - speller
     - punctuator
     - selector
     - navigator
     - express_editor
   segmentors:
-    - ascii_segmentor # 標識西文段落
-    - matcher # 標識符合特定規則的段落，如網址、反查等
+    - ascii_segmentor                                    # 標識西文段落
+    - matcher                                            # 標識符合特定規則的段落，如網址、反查等
     - affix_segmentor@wubi98_mint
     - affix_segmentor@radical_reverse_lookup
     - affix_segmentor@stroke
-    - abc_segmentor # 標識常規的文字段落
-    - punct_segmentor # 標識句讀段落
-    - fallback_segmentor # 標識其他未標識段落
+    - abc_segmentor                                      # 標識常規的文字段落
+    - punct_segmentor                                    # 標識句讀段落
+    - fallback_segmentor                                 # 標識其他未標識段落
   translators:
-    - punct_translator  # ※ 轉換標點符號
+    - punct_translator                                   # ※ 轉換標點符號
     - script_translator
-    - lua_translator@date_translator          # 日期Lua
-    - lua_translator@time_translator          # 时间Lua
-    - lua_translator@week_translator          # 星期Lua
-    - lua_translator@number_translator        # 金额大小写 Lua
-    - lua_translator@Chinese_lunar_calendar   # 农历
-    - table_translator@melt_eng  # 英文输入（作为子翻译器，优先级需要比原生的低）
-    - table_translator@cn_en     # 中英混合词汇
+    - lua_translator@*date_translator                    # 日期Lua
+    - lua_translator@*time_translator                    # 时间Lua
+    - lua_translator@*week_translator                    # 星期Lua
+    - lua_translator@*number_translator                  # 金额大小写
+    - lua_translator@*chineseLunarCalendar_translator    # 农历
+    - table_translator@melt_eng                          # 英文输入（作为子翻译器，优先级需要比原生的低）
+    - table_translator@cn_en                             # 中英混合词汇
     # - echo_translator      # ※ 没有候选词，返回字符
     - reverse_lookup_translator@wubi98_mint　
     - reverse_lookup_translator@radical_reverse_lookup
     - reverse_lookup_translator@stroke
     # - reverse_lookup_translator # 反查模块，多标签情况下去除
   filters:
-    - lua_filter@corrector                # 错音错字提示
-    - lua_filter@autocap_filter           # 英文自动大写
-    - simplifier
+    - lua_filter@*corrector_filter            # 错音错字提示
+    - lua_filter@*autocap_filter              # 英文自动大写
     - simplifier@emoji_suggestion
     - simplifier@transcription_cc
-    - lua_filter@reduce_english_filter    # 降低部分英语单词在候选项的位置
-    - uniquifier                          # 去重
+    - lua_filter@*reduce_english_filter       # 降低部分英语单词在候选项的位置
+    - uniquifier                              # 去重
 
 # 简繁切换
 transcription_cc:
@@ -97,7 +96,7 @@ transcription_cc:
   excluded_types: [ reverse_lookup ]  # 不转换反查（两分拼字）的内容
 
 # 最大输入长度
-code_length_limit: 25
+codeLengthLimit_processor: 25
 
 # Emoji模块
 emoji_suggestion:
@@ -140,7 +139,7 @@ reduce_english_filter:
   yan, yen]
   
 # 中国农历配置
-Chinese_lunar_calendar: lunar
+chineseLunarCalendar_translator: lunar
 
 translator:
   # 字典文件
