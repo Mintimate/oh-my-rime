@@ -1,0 +1,16 @@
+{
+  "name": "fly_Chaifen",
+  "segmentation": {
+    "type": "mmseg",
+    "dict": {
+      "type": "text",
+      "file": "fly_Chaifen.txt"
+    }
+  },
+  "conversion_chain": [{
+    "dict": {
+      "type": "text",
+      "file": "fly_Chaifen.txt"
+    }
+  }]
+}

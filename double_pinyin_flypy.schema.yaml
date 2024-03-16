@@ -32,6 +32,7 @@ key_binder:
     - {accept: "Control+Shift+E", toggle: emoji_suggestion, when: always}
     - {accept: "Control+Shift+exclam", toggle: transcription, when: has_menu}
     - {accept: "Control+Shift+1", toggle: transcription, when: has_menu}
+    - {accept: "Control+Shift+C", toggle: chaifen, when: has_menu} # 拆字滤镜开关
     - {accept: minus, send: Page_Up, when: paging}     # 使用`-`进行向上翻页（第一页时候无效）
     - {accept: equal, send: Page_Down, when: has_menu} # 使用`=`进行向下翻页
 
@@ -49,6 +50,8 @@ switches:
     states: [ 简体 , 繁体 ]
   - name: ascii_punct
     states: [ 。，, ．， ]
+  - name: chaifen        # 拆字滤镜
+    states: [ 🙈, 🐵 ]     # 快捷键 「Control+Shift+C」
 
 engine:
   processors:
@@ -88,8 +91,9 @@ engine:
     - lua_filter@*corrector_filter            # 错音错字提示
     - lua_filter@*autocap_filter              # 英文自动大写
     - simplifier@emoji_suggestion
-    - lua_filter@*auxCode_filter@flypy_full   # 小鹤双拼辅码(音形)
     - simplifier@transcription_cc
+    - simplifier@chaifen_cc                   # 鹤形拆字辅助滤镜
+    - lua_filter@*auxCode_filter@flypy_full   # 小鹤双拼辅码(音形)
     - lua_filter@*reduce_english_filter       # 降低部分英语单词在候选项的位置
     - uniquifier                              # 去重
 
@@ -107,6 +111,19 @@ emoji_suggestion:
   option_name: emoji_suggestion
   tips: all
   inherit_comment: false
+  
+# 鹤形拆字辅助滤镜
+chaifen_cc:
+  opencc_config: fly_Chaifen.json
+  option_name: chaifen
+  show_in_comment: true  # 是否仅将转换结果显示在备注中
+  comment_format:
+    - "xform/&nbsp;/ /"
+  tags:                  # 设置其作用范围
+    - abc
+    - storkfly
+    - reverse_lookup
+  tips: char             #  单字加滤镜: char; 全部: all，
 
  # 最大输入长度
 codeLengthLimit_processor: 25
