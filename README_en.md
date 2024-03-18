@@ -63,10 +63,10 @@ The default address of the local rime log file is as follows:
 ## Configuration file description
 
 - `default.custom.yaml` set the input method, how to switch the input method, turn the page, etc.
-- `squirrel.custom.yaml` mouse whisker tube (Mac version) to set which software defaults to English input, input method skin, etc.
-- `weasel.custom.yaml` Xiaolanghao (Win version) sets which software defaults to English input, input method skin, etc.
+- `squirrel.yaml` Mac version to set which software defaults to English input, input method skin, etc.
+- `weasel.yaml` Win version to set which software defaults to English input, input method skin, etc.
 
-Most of the configuration files are commented.
+Most of the configuration files are commented. Cooperate with the tutorial: [Configuration Overrides and Customization](https://www.mintimate.cc/en/guide/configurationOverride.html)
 
 ## Customization and Updates of Dictionaries
 
