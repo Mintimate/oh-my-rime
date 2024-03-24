@@ -4314,6 +4314,7 @@ sort: original
 噪	kou'zao
 噫	kou'yi
 噬	kou'shi
+噬	kou'zhu'wu
 噭	kou'bai'fang'wen
 噭	kou'jiao
 噮	kou'qiong
@@ -12309,7 +12310,7 @@ sort: original
 昜	ri'yi'wu
 昝	chu'ri
 昞	ri'bing
-星	sheng'ri
+星	ri'sheng
 映	ri'yang
 昡	ri'xuan
 昢	ri'chu
@@ -12318,6 +12319,7 @@ sort: original
 昤	ri'ling
 春	chun'ri
 春	shou'na'ri
+昦	ri'da'pie'shu
 昦	ri'gao
 昧	ri'wei
 昨	ri'zha
@@ -15915,6 +15917,7 @@ sort: original
 澧	shui'feng
 澧	shui'li
 澨	shui'shi
+澨	shui'zhu'wu
 澩	jiu'yao'bao'shui
 澩	jiu'yao'mi'shui
 澩	xue'shui
@@ -21736,6 +21739,7 @@ sort: original
 簫	zhu'su
 簬	zhu'lu
 簭	zhu'shi'ren'kou
+簭	zhu'zhu'wu'ren'kou
 簮	zhu'fu'fu'ri
 簰	zhu'pai
 簲	zhu'pi
@@ -25141,7 +25145,9 @@ sort: original
 臧	yi'pian'na'pie'dian'chen
 臧	yi'pian'na'pie'na'chen
 臨	chen'ren'pin
+臩	guang'da'pie'shu
 臩	guang'gao
+臩	jiong'da'pie'shu
 臩	jiong'gao
 自	dian'mu
 自	na'mu
@@ -31511,7 +31517,9 @@ sort: original
 遽	chuo'ju
 遽	zhi'ju
 遾	chuo'shi
+遾	chuo'zhu'wu
 遾	zhi'shi
+遾	zhi'zhu'wu
 避	chuo'pi
 避	zhi'pi
 邀	chuo'bai'fang'wen
