@@ -1,19 +1,19 @@
 # Rime dictionary
 # encoding: utf-8
 
-# 码表：[chazi](https://github.com/kfcd/chaizi)
+# 码表：[開放詞典](https://github.com/kfcd/chaizi)
 # 添补：[henrysting](https://github.com/henrysting/chaizi/)
 # 注音、校对、添补：[Mirtle](https://github.com/mirtlecn)
 
 # 修改
 # - 合并繁简两份码表
-# - 手动添补了一些原来没有的字和拆法（如叠字）等
 # - 比照《通用规范汉字表》8105 字字表，添加了数百个原码表缺失的常用字
+# - 手动添补了大量的拆法（如叠字）等
 # - 修正了大量的拆字错误
-# - 移除了所有无法正常显示的汉字
+# - 移除、修正了大量编码错误的汉字
 
 # 收字：码表包含 20,000 繁简汉字
-# 存在拆字错误、漏字，遇见请提 issue 补充
+# 存在拆字错误、漏字，遇见请像 gen 分支提 PR 补充：
 # https://github.com/mirtlecn/rime_radical_pinyin
 
 # 特别注音部件（含有特殊字符，若显示为口或方块，即为显示不正确）
@@ -29,7 +29,7 @@
 # '𠃌': [['zhe2','gou1']], # 折 & 钩
 # '㇉': [['zhe2']], # 折
 # '𠃊': [['zhe2']], # 折
-# '□': [['zhe2']], # 折
+# # '□': [['zhe2']], # 折
 # '𠃍': [['zhe2']], # 折
 # '乛': [['zhe2']], # 折
 # '𠃋': [['zhe2']], # 折
@@ -38,6 +38,7 @@
 # # 巣、尖、尙、尚等字上部，视为「小」
 # '卜': [['bo1','bu3']],
 # '厶': [['si1']],
+# '爿': [['pian4']], # 牁 鼎
 # '乂': [['yi4']],
 # '亠': [['tou2','yi1']],
 # '廾': [['gong4','nong4']],
@@ -71,7 +72,7 @@
 # '囗': [['kou3','wei2','guo2']], # 国，围等字的外框
 # '辶': [['zhi1']],
 # '彡': [['shan1','san1']],
-# '糸': [['mi4']],
+# '糸': [['mi4','si1']],
 # '蟲': [['chong2']],
 # '孱': [['chan2']],
 # '𡕩': [['man3']],
@@ -83,11 +84,13 @@
 # '𤽄': [['quan2']],
 # '𦣞': [['yi2']]
 
+# Release tag
+# v1.0.3 -> 2024.03.20
 
 ---
 name: radical_pinyin
-version: "2024.03.19"
-sort: by_weight
+version: "2024.03.24"
+sort: original
 ...
 
 〇	ling
@@ -291,8 +294,8 @@ sort: by_weight
 㫰	ri'liang
 㬊	ri'yuan
 㬎	ri'yao'yao'huo
-㬚	ri'chi'yu'wen
-㬚	ri'ren'yu'wen
+㬚	ri'yu'wen
+㬜	zhi'zhi'ri
 㭎	mu'gang
 㭏	mu'wei
 㭕	mu'qu
@@ -305,6 +308,7 @@ sort: by_weight
 㱦	dai'qi
 㱩	dai'mai
 㱮	dai'gui
+㲋	dao'kou'bi
 㲎	mao'mao
 㲿	shui'guang
 㳇	shui'fu
@@ -740,7 +744,9 @@ sort: by_weight
 乐	fang'xiao
 乐	kuang'xiao
 乐	pie'shu'deng
+乐	pie'shu'heng'xiao
 乐	pie'shu'mu
+乐	pie'shu'yi'xiao
 乑	pie'shu'pie'pie'dian'na
 乑	pie'shu'pie'pie'na'na
 乒	qiu'pie
@@ -766,6 +772,7 @@ sort: by_weight
 也	zhe'shu'gou
 习	diao'dian
 习	diao'na
+习	zhe'bing
 乡	zhe'zhe'pie
 乢	shan'gou
 乢	shan'yi
@@ -1589,6 +1596,7 @@ sort: by_weight
 偙	ren'di
 做	ren'gu
 偛	ren'cha
+偛	ren'qian'jiu
 停	ren'ting
 偝	ren'bei
 偞	ren'shi'mu
@@ -1600,8 +1608,8 @@ sort: by_weight
 偣	ren'yin
 偤	ren'qiu
 健	ren'jian
-偦	ren'nv'ding
-偦	ren'nv'pi
+偦	ren'ding'yue
+偦	ren'pi'yue
 偧	ren'da'duo
 偧	ren'zha
 偨	ren'chai
@@ -1666,18 +1674,21 @@ sort: by_weight
 傂	ren'chang'hu
 傂	ren'si
 傃	ren'su
+傄	ren'da'ba'mu
 傄	ren'shen
 傅	ren'bu
 傅	ren'fu
 傅	ren'fu'cun
 傅	ren'po
 傆	ren'yuan
+傇	ren'cao'er
 傇	ren'rong
 傈	ren'li
 傉	ren'ru
 傊	ren'yuan
 傊	ren'yun
 傋	ren'gou
+傋	ren'jing'zai
 傌	ren'ma
 傍	ren'pang
 傎	ren'zhen
@@ -1790,6 +1801,7 @@ sort: by_weight
 僓	ren'gui
 僔	ren'zun
 僕	ren'pu
+僕	ren'ye'ba'san'ren
 僖	ren'xi
 僗	ren'lao
 僗	ren'liao
@@ -1856,6 +1868,7 @@ sort: by_weight
 僰	ji'ren
 僱	ren'gu
 僳	ren'su
+僳	ren'xi'mi
 僴	ren'jian
 僵	ren'heng'tian'heng'tian'heng
 僵	ren'heng'tian'heng'tian'yi
@@ -1983,7 +1996,11 @@ sort: by_weight
 儲	ren'chu
 儲	ren'zhu
 儳	ren'chan
+儴	ren'tou'kou'kou'jing'heng'yi
+儴	ren'tou'kou'kou'jing'yi'yi
 儴	ren'xiang
+儴	ren'yi'kou'kou'jing'heng'yi
+儴	ren'yi'kou'kou'jing'yi'yi
 儵	ren'shu'wen'hei
 儵	you'hei
 儶	ren'gui
@@ -2043,7 +2060,9 @@ sort: by_weight
 兕	ao'er
 兖	liu'yun
 兖	tou'dui
+兖	tou'gong'er
 兖	yi'dui
+兖	yi'gong'er
 兗	liu'xiong
 兗	tou'dui
 兗	yi'dui
@@ -2122,9 +2141,11 @@ sort: by_weight
 兼	ba'yi'yu'shu'shu'ba
 兽	ba'tian'heng'kou
 兽	ba'tian'yi'kou
+兾	ba'tian'gong
 兾	ba'yi
 兿	ba'heng'zhi'yun
 兿	ba'yi'zhi'yun
+冀	bei'tian'gong
 冀	bei'yi
 冁	dan'zhan
 冂	shu'yi
@@ -2146,8 +2167,10 @@ sort: by_weight
 冈	tong'yi
 冉	jiong'shi'heng
 冉	jiong'shi'yi
+冉	jiong'tu
 冉	tong'shi'heng
 冉	tong'shi'yi
+冉	tong'tu
 冊	jiong'heng'shu'shu
 冊	jiong'yi'shu'shu
 冊	tong'heng'shu'shu
@@ -2164,14 +2187,18 @@ sort: by_weight
 册	tong'tong'yi
 再	heng'jiong'shi'heng
 再	heng'jiong'shi'yi
+再	heng'jiong'tu
 再	heng'ran
 再	heng'tong'shi'heng
 再	heng'tong'shi'yi
+再	heng'tong'tu
 再	yi'jiong'shi'heng
 再	yi'jiong'shi'yi
+再	yi'jiong'tu
 再	yi'ran
 再	yi'tong'shi'heng
 再	yi'tong'shi'yi
+再	yi'tong'tu
 冏	jiong'ba'kou
 冏	tong'ba'kou
 冐	jiong'er'yue
@@ -2324,8 +2351,12 @@ sort: by_weight
 凙	bing'ze
 凚	bing'jin
 凛	bing'bing
+凛	bing'tou'hui'shi
+凛	bing'yi'hui'shi
 凜	bing'bing
 凜	bing'lin
+凜	bing'tou'hui'he
+凜	bing'yi'hui'he
 凝	bing'yi
 凞	bing'xi
 凟	bing'mai
@@ -2520,6 +2551,10 @@ sort: by_weight
 剙	bing'chuang
 剚	shi'dao
 剛	gang'dao
+剛	jiong'ba'heng'shan'dao
+剛	jiong'ba'yi'shan'dao
+剛	tong'ba'heng'shan'dao
+剛	tong'ba'yi'shan'dao
 剜	wan'dao
 剝	lu'dao
 剞	qi'dao
@@ -2774,7 +2809,13 @@ sort: by_weight
 勵	lai'li
 勵	li'li
 勶	che'li
+勶	chi'yu'wen'li
+勶	ren'yu'wen'li
+勷	tou'kou'kou'jing'heng'yi'li
+勷	tou'kou'kou'jing'yi'yi'li
 勷	xiang'li
+勷	yi'kou'kou'jing'heng'yi'li
+勷	yi'kou'kou'jing'yi'yi'li
 勸	cao'kou'kou'zhui'li
 勸	guan'li
 勸	huan'li
@@ -2847,7 +2888,11 @@ sort: by_weight
 匤	fang'yu
 匤	kuang'yu
 匥	fang'bian
+匥	fang'si'gong
+匥	fang'si'nong
 匥	kuang'bian
+匥	kuang'si'gong
+匥	kuang'si'nong
 匦	fang'gui
 匦	kuang'gui
 匧	fang'ga
@@ -2866,7 +2911,9 @@ sort: by_weight
 匪	fang'fei
 匪	kuang'fei
 匫	fang'hu
+匫	fang'wu'ri
 匫	kuang'hu
+匫	kuang'wu'ri
 匬	fang'yu
 匬	kuang'yu
 匭	fang'gui
@@ -2946,6 +2993,7 @@ sort: by_weight
 卍	zhe'zhe
 华	hua'shi
 协	shi'ban
+卐	zhe'zhe
 卑	dian'tian'pie'shi
 卑	na'tian'pie'shi
 卑	pie'tian'pie'shi
@@ -3222,6 +3270,7 @@ sort: by_weight
 厢	chang'xiang
 厣	chang'quan'jia
 厣	yan'jia
+厤	chang'he'he
 厤	chang'li
 厥	chang'jue
 厦	chang'xia
@@ -3920,6 +3969,7 @@ sort: by_weight
 喡	kou'hui
 喡	kou'wei
 喢	kou'cha
+喢	kou'qian'jiu
 喣	gou'huo
 喣	gu'huo
 喣	hou'huo
@@ -4040,6 +4090,12 @@ sort: by_weight
 嗢	kou'yue'min
 嗣	kou'ce'si
 嗤	kou'chi
+嗤	kou'kan'shu'heng'chong
+嗤	kou'kan'shu'yi'chong
+嗤	kou'shan'heng'chong
+嗤	kou'shan'yi'chong
+嗤	kou'xiong'shu'heng'chong
+嗤	kou'xiong'shu'yi'chong
 嗥	kou'gao
 嗦	kou'suo
 嗨	kou'hai
@@ -4205,6 +4261,7 @@ sort: by_weight
 噌	kou'ceng
 噍	kou'jiao
 噎	kou'yi
+噏	kou'he'yu
 噏	kou'xi
 噐	kou'kou'gong'kou'kou
 噑	kou'gao
@@ -4217,6 +4274,7 @@ sort: by_weight
 噕	wei'kou
 噖	kou'qin
 噗	kou'pu
+噗	kou'ye'ba'san'ren
 噘	kou'chang'jue
 噘	kou'jue
 噙	kou'qin
@@ -4387,7 +4445,11 @@ sort: by_weight
 嚴	kou'kou'chang'gan
 嚵	kou'chan
 嚶	kou'ying
+嚷	kou'tou'kou'kou'jing'heng'yi
+嚷	kou'tou'kou'kou'jing'yi'yi
 嚷	kou'xiang
+嚷	kou'yi'kou'kou'jing'heng'yi
+嚷	kou'yi'kou'kou'jing'yi'yi
 嚸	kou'dian
 嚸	kou'duo
 嚸	kou'zhan
@@ -5099,6 +5161,10 @@ sort: by_weight
 堆	tu'zhui
 堇	nian'zhong'san
 堈	tu'gang
+堈	tu'jiong'ba'heng'shan
+堈	tu'jiong'ba'yi'shan
+堈	tu'tong'ba'heng'shan
+堈	tu'tong'ba'yi'shan
 堉	tu'yu
 堊	e'tu
 堊	ya'tu
@@ -5326,8 +5392,6 @@ sort: by_weight
 墍	ji'tu
 墎	tu'guo
 墏	jiang'tu
-墏	qiang'tu
-墏	yang'tu
 墐	tu'jin
 墐	tu'nian'zhong'san
 墑	tu'di
@@ -5363,6 +5427,7 @@ sort: by_weight
 墢	tu'bo
 墢	tu'fa
 墣	tu'pu
+墣	tu'ye'ba'san'ren
 墤	tu'gui
 墥	tu'tong
 墦	tu'fan
@@ -5440,6 +5505,8 @@ sort: by_weight
 壇	tu'yi'hui'dan
 壈	tu'bing
 壈	tu'lin
+壈	tu'tou'hui'he
+壈	tu'yi'hui'he
 壉	tu'ju
 壊	tu'shi'mu'yi
 壊	tu'shi'si'yi
@@ -5508,7 +5575,11 @@ sort: by_weight
 壡	rui'sheng
 壢	tu'li
 壣	tu'lian
+壤	tu'tou'kou'kou'jing'heng'yi
+壤	tu'tou'kou'kou'jing'yi'yi
 壤	tu'xiang
+壤	tu'yi'kou'kou'jing'heng'yi
+壤	tu'yi'kou'kou'jing'yi'yi
 壦	tu'cao'kou'kou'zhui
 壦	tu'guan
 壦	tu'huan
@@ -5520,7 +5591,7 @@ sort: by_weight
 壬	pie'shi
 壮	jiang'shi
 壮	qiang'shi
-壯	pan'shi
+壯	pian'shi
 声	shi'shi'shu
 壱	shi'bao'bi
 壱	shi'mi'bi
@@ -5728,6 +5799,7 @@ sort: by_weight
 奥	pie'jiong'mi'da
 奥	pie'tong'mi'da
 奦	mao'da
+奦	mao'wen'da
 奦	mao'wu'da
 奦	wu'da
 奧	dian'jiong'bian'da
@@ -5825,7 +5897,7 @@ sort: by_weight
 妚	nv'bu
 妜	nv'guai
 妜	nv'zhe'da
-妝	pan'nv
+妝	pian'nv
 妞	nv'chou
 妟	ri'nv
 妠	nv'nei
@@ -6070,8 +6142,8 @@ sort: by_weight
 婠	nv'guan
 婡	nv'lai
 婢	nv'bei
-婣	nv'pian'heng'pan
-婣	nv'pian'yi'pan
+婣	nv'pian'heng'pian
+婣	nv'pian'yi'pian
 婤	nv'zhou
 婥	nv'zhuo
 婦	nv'shan'bao'jin
@@ -6181,6 +6253,10 @@ sort: by_weight
 媭	xu'nv
 媮	nv'yu
 媯	nv'wei
+媰	nv'bao'cao'bao'cao
+媰	nv'bao'cao'bao'che
+媰	nv'bao'che'bao'cao
+媰	nv'bao'che'bao'che
 媰	nv'chu
 媰	nv'zou
 媱	nv'you
@@ -6194,9 +6270,16 @@ sort: by_weight
 媵	rou'juan'nv
 媵	yue'ba'fu'nv
 媵	yue'juan'nv
+媶	nv'cao'er
 媶	nv'rong
 媷	nv'ru
 媸	nv'chi
+媸	nv'kan'shu'heng'chong
+媸	nv'kan'shu'yi'chong
+媸	nv'shan'heng'chong
+媸	nv'shan'yi'chong
+媸	nv'xiong'shu'heng'chong
+媸	nv'xiong'shu'yi'chong
 媹	nv'liu
 媺	nv'chi'shan'heng'er'pu
 媺	nv'chi'shan'yi'er'pu
@@ -6212,6 +6295,7 @@ sort: by_weight
 媼	nv'yue'min
 媽	nv'ma
 媾	nv'gou
+媾	nv'jing'zai
 媿	nv'gui
 嫀	nv'qin
 嫁	nv'jia
@@ -6310,10 +6394,12 @@ sort: by_weight
 嫿	nv'hua
 嬀	nv'wei
 嬁	nv'deng
+嬂	nv'yin'ge
 嬂	nv'zhi
 嬃	xu'nv
 嬅	nv'hua
 嬅	nv'kua
+嬆	nv'he'yu
 嬆	nv'xi
 嬇	nv'gui
 嬈	nv'tu'tu'tu'wu
@@ -6419,7 +6505,11 @@ sort: by_weight
 孁	ling'nv
 孁	yu'kou'kou'kou'nv
 孂	nv'gui
+孃	nv'tou'kou'kou'jing'heng'yi
+孃	nv'tou'kou'kou'jing'yi'yi
 孃	nv'xiang
+孃	nv'yi'kou'kou'jing'heng'yi
+孃	nv'yi'kou'kou'jing'yi'yi
 孄	nv'lan
 孅	nv'xian
 孆	nv'ying
@@ -6634,9 +6724,9 @@ sort: by_weight
 富	bao'heng'kou'tian
 富	bao'yi'kou'tian
 寍	bao'xin'min
-寎	bao'pan'bing
+寎	bao'pian'bing
 寏	bao'huan
-寐	bao'pan'wei
+寐	bao'pian'wei
 寑	bao'qin
 寒	bao'jing'da'dian'dian
 寒	bao'jing'da'dian'na
@@ -6683,10 +6773,10 @@ sort: by_weight
 寠	bao'lou
 寠	bao'lv
 寡	bao'zhi'fen
-寢	bao'pan'shan'bao'you
-寢	bao'pan'shan'mi'you
-寣	bao'pan'yan
-寤	bao'pan'wu
+寢	bao'pian'shan'bao'you
+寢	bao'pian'shan'mi'you
+寣	bao'pian'yan
+寤	bao'pian'wu
 寥	bao'liu
 寥	bao'lu
 寥	bao'yu'ren'san
@@ -6717,8 +6807,8 @@ sort: by_weight
 寰	bao'si'yi'kou'yi
 寰	bao'wang'heng'kou'yi
 寰	bao'wang'yi'kou'yi
-寱	bao'pan'nie
-寱	bao'pan'zi'mu
+寱	bao'pian'nie
+寱	bao'pian'zi'mu
 寲	bao'yi
 寳	bao'wang'er'bei
 寴	bao'qin
@@ -6750,10 +6840,10 @@ sort: by_weight
 尅	ke'cun
 将	jiang'xi'cun
 将	qiang'xi'cun
-將	pan'rou'cun
-將	pan'xi'dian'cun
-將	pan'xi'na'cun
-將	pan'yue'cun
+將	pian'rou'cun
+將	pian'xi'dian'cun
+將	pian'xi'na'cun
+將	pian'yue'cun
 專	heng'ri'shu'heng'dian'cun
 專	heng'ri'shu'heng'na'cun
 專	heng'ri'shu'yi'dian'cun
@@ -6802,6 +6892,7 @@ sort: by_weight
 尜	xiao'da'xiao
 尝	xiao'bao'yun
 尝	xiao'mi'yun
+尞	da'ba'ri'xiao
 尞	shen'xiao
 尟	shi'shao
 尠	shen'shao
@@ -6819,11 +6910,13 @@ sort: by_weight
 尥	heng'pie'gou'shao
 尥	yi'pie'gou'shao
 尥	you'shao
+尦	ba'er'shao
 尦	wang'shao
 尧	heng'gou'pie'wu
 尧	yi'gou'pie'wu
 尨	you'san
 尨	you'shan
+尩	ba'er'wang
 尩	wang'wang
 尪	heng'pie'gou'wang
 尪	yi'pie'gou'wang
@@ -6923,7 +7016,9 @@ sort: by_weight
 屢	shi'lv
 屣	shi'xi
 層	shi'ceng
+履	shi'chi'fu
 履	shi'fu
+履	shi'ren'fu
 屦	shi'chi'lou
 屦	shi'chi'mi'nv
 屦	shi'ren'lou
@@ -6945,8 +7040,8 @@ sort: by_weight
 屪	shi'da'ba'ri'xiao
 屪	shi'liao
 屪	shi'shen'xiao
-屫	shi'pan'jiao
-屫	shi'pan'qiao
+屫	shi'pian'jiao
+屫	shi'pian'qiao
 屬	shi'er'shu'er'shu
 屭	shi'bi
 屮	kan'shu
@@ -6955,10 +7050,14 @@ sort: by_weight
 屯	pie'xiong'gou
 屰	ba'heng'cao
 屰	ba'heng'che
+屰	ba'heng'kan'shu
 屰	ba'heng'shan
+屰	ba'heng'xiong'shu
 屰	ba'yi'cao
 屰	ba'yi'che
+屰	ba'yi'kan'shu
 屰	ba'yi'shan
+屰	ba'yi'xiong'shu
 山	kan'shu
 山	xiong'shu
 屳	ru'shan
@@ -6997,8 +7096,8 @@ sort: by_weight
 岘	shan'jian
 岙	yao'shan
 岚	shan'feng
-岛	bao'dian'bao'shan
-岛	bao'na'bao'shan
+岛	bao'dian'zhe'shan
+岛	bao'na'zhe'shan
 岜	shan'ba
 岝	shan'zha
 岞	shan'zha
@@ -7040,7 +7139,11 @@ sort: by_weight
 岻	shan'shi'na
 岽	shan'dong
 岿	shan'gui
-峀	shan'tian
+峀	cao'tian
+峀	che'tian
+峀	kan'shu'tian
+峀	shan'you
+峀	xiong'shu'tian
 峁	shan'mao
 峂	shan'dong
 峃	xiao'bao'shan
@@ -7068,6 +7171,7 @@ sort: by_weight
 峗	shan'wei
 峘	shan'gen
 峙	shan'si
+峚	shan'da'tu
 峚	shan'qia
 峛	shan'lie
 峜	shan'qi
@@ -7095,7 +7199,7 @@ sort: by_weight
 峰	shan'feng
 峰	shan'pang
 峰	shan'wen'feng
-峱	chou'shan
+峱	quan'chou'shan
 峲	shan'li
 峳	shan'ren'shu'wen
 峳	shan'you
@@ -7153,6 +7257,10 @@ sort: by_weight
 崖	shan'chang'tu'tu
 崖	shan'ya
 崗	shan'gang
+崗	shan'jiong'ba'heng'shan
+崗	shan'jiong'ba'yi'shan
+崗	shan'tong'ba'heng'shan
+崗	shan'tong'ba'yi'shan
 崘	shan'lun
 崙	shan'lun
 崚	shan'ling
@@ -7310,8 +7418,6 @@ sort: by_weight
 嶇	shan'qiu
 嶇	shan'qu
 嶈	shan'jiang
-嶈	shan'qiang
-嶈	shan'yang
 嶉	shan'wei
 嶊	shan'tui
 嶋	shan'dao
@@ -7326,6 +7432,7 @@ sort: by_weight
 嶔	shan'qin
 嶔	shan'yin
 嶕	shan'jiao
+嶖	shan'he'yu
 嶖	shan'xi
 嶗	shan'lao
 嶗	shan'liao
@@ -7811,6 +7918,8 @@ sort: by_weight
 幝	jin'tan
 幝	jin'zhan
 幞	jin'pu
+幞	jin'ye'ba'san'ren
+幟	jin'yin'ge
 幟	jin'zhi
 幠	jin'mo
 幠	jin'wu
@@ -7997,6 +8106,7 @@ sort: by_weight
 廖	guang'yu'zhen
 廗	guang'dai
 廘	guang'lu
+廙	guang'tian'gong
 廙	guang'yi
 廚	guang'shi'dou'cun
 廚	guang'shu
@@ -8021,7 +8131,11 @@ sort: by_weight
 廨	guang'jie
 廩	guang'bing
 廩	guang'lin
+廩	guang'tou'hui'he
+廩	guang'yi'hui'he
 廪	guang'bing
+廪	guang'tou'hui'shi
+廪	guang'yi'hui'shi
 廫	guang'hao
 廫	guang'jiao
 廫	guang'nao
@@ -8069,8 +8183,10 @@ sort: by_weight
 弁	si'nong
 异	si'gong
 异	si'nong
+弃	tou'bian
 弃	tou'si'gong
 弃	tou'si'nong
+弃	yi'bian
 弃	yi'si'gong
 弃	yi'si'nong
 弄	wang'gong
@@ -8124,7 +8240,9 @@ sort: by_weight
 弡	gong'ju
 弢	gong'cao'you
 弢	gong'che'you
+弢	gong'kan'shu'you
 弢	gong'shan'you
+弢	gong'xiong'shu'you
 弣	gong'fu
 弤	gong'di
 弤	gong'shi'dian
@@ -8596,8 +8714,16 @@ sort: by_weight
 徿	chi'mang
 徿	ren'long
 徿	ren'mang
+忀	chi'tou'kou'kou'jing'heng'yi
+忀	chi'tou'kou'kou'jing'yi'yi
 忀	chi'xiang
+忀	chi'yi'kou'kou'jing'heng'yi
+忀	chi'yi'kou'kou'jing'yi'yi
+忀	ren'tou'kou'kou'jing'heng'yi
+忀	ren'tou'kou'kou'jing'yi'yi
 忀	ren'xiang
+忀	ren'yi'kou'kou'jing'heng'yi
+忀	ren'yi'kou'kou'jing'yi'yi
 忁	chi'ri'chu'da'shui
 忁	ren'ri'chu'da'shui
 忂	chi'mu'mu'zhui
@@ -8641,9 +8767,7 @@ sort: by_weight
 忢	wu'xin
 忣	xin'ji
 忤	xin'wu
-忥	qi'mi'xin
 忥	qi'xin
-忥	xi'xin
 忦	xin'jie
 忧	xin'you
 忨	xin'yuan
@@ -8809,6 +8933,7 @@ sort: by_weight
 息	zi'xin
 恰	xin'he
 恱	xin'dui
+恱	xin'gong'er
 恲	xin'bing
 恳	gen'xin
 恴	tou'ri'xin
@@ -8817,6 +8942,7 @@ sort: by_weight
 恵	yi'you'xin
 恶	ya'xin
 恸	xin'dong
+恹	xin'chang'quan
 恹	xin'yan
 恺	xin'qi
 恻	xin'ze
@@ -9278,6 +9404,7 @@ sort: by_weight
 憝	dun'xin
 憞	xin'dun
 憟	xin'su
+憟	xin'xi'mi
 憠	chang'jue'xin
 憠	jue'xin
 憡	xin'ce
@@ -9374,6 +9501,8 @@ sort: by_weight
 懌	xin'ze
 懍	xin'bing
 懍	xin'lin
+懍	xin'tou'hui'he
+懍	xin'yi'hui'he
 懎	xin'se
 懏	xin'juan
 懏	xin'jun
@@ -9385,6 +9514,8 @@ sort: by_weight
 懒	xin'lai
 懓	xin'ai
 懔	xin'bing
+懔	xin'tou'hui'shi
+懔	xin'yi'hui'shi
 懕	ya'xin
 懕	yan'xin
 懕	yi'xin
@@ -9434,12 +9565,20 @@ sort: by_weight
 懲	zheng'xin
 懴	xin'qian
 懴	xin'xian
+懵	xin'cao'si'bao'mu
+懵	xin'cao'si'mi'mu
+懵	xin'cao'wang'bao'mu
+懵	xin'cao'wang'mi'mu
 懵	xin'meng
 懶	xin'lai
 懷	xin'huai
 懸	xian'xin
 懸	xuan'xin
+懹	xin'tou'kou'kou'jing'heng'yi
+懹	xin'tou'kou'kou'jing'yi'yi
 懹	xin'xiang
+懹	xin'yi'kou'kou'jing'heng'yi
+懹	xin'yi'kou'kou'jing'yi'yi
 懺	xin'xian
 懻	xin'ji
 懼	xin'mu'mu'zhui
@@ -9477,6 +9616,7 @@ sort: by_weight
 戈	heng'gou'pie'na
 戈	yi'gou'pie'dian
 戈	yi'gou'pie'na
+戈	yi'pie
 戉	ge'zhe
 戊	ge'pie
 戋	ge'heng
@@ -9485,27 +9625,26 @@ sort: by_weight
 戌	wu'yi
 戍	wu'dian
 戍	wu'na
-戎	heng'shi'ge
-戎	shi'ge
-戎	yi'shi'ge
+戎	ge'heng'shi
+戎	ge'shi
+戎	ge'yi'shi
 戏	you'ge
 成	wu'zhe
-我	cai'ge
+我	pie'cai'ge
+我	pie'shou'ge
 我	shou'ge
-戒	gong'ge
-戒	nong'ge
+戒	ge'gong
+戒	ge'nong
 戓	ge'kou
 戔	ge'ge
-戕	pan'ge
+戕	pian'ge
 或	ge'kou'heng
 或	ge'kou'yi
-或	kou'heng'ge
-或	kou'yi'ge
 戗	cang'ge
 战	zhan'ge
 戙	tong'ge
 戚	chang'shang'xiao'ge
-戚	pie'shang'xiao'ge
+戚	ge'pie'shang'xiao
 戛	heng'zi'ge
 戛	yi'zi'ge
 戜	ge'cheng
@@ -9548,8 +9687,11 @@ sort: by_weight
 戲	hu'dou'ge
 戳	di'ge
 戳	yu'zhui'ge
+戴	shi'ge'tian'gong
 戴	shi'ge'yi
+戴	tu'ge'tian'gong
 戴	tu'ge'yi
+戴	zai'tian'gong
 戴	zai'yi
 戵	mu'mu'zhui'ge
 戵	qu'ge
@@ -9915,8 +10057,10 @@ sort: by_weight
 拘	shou'ju
 拙	cai'chu
 拙	shou'chu
+拚	cai'bian
 拚	cai'si'gong
 拚	cai'si'nong
+拚	shou'bian
 拚	shou'si'gong
 拚	shou'si'nong
 招	cai'zhao
@@ -10345,7 +10489,15 @@ sort: by_weight
 掅	cai'qing
 掅	shou'qing
 掆	cai'gang
+掆	cai'jiong'ba'heng'shan
+掆	cai'jiong'ba'yi'shan
+掆	cai'tong'ba'heng'shan
+掆	cai'tong'ba'yi'shan
 掆	shou'gang
+掆	shou'jiong'ba'heng'shan
+掆	shou'jiong'ba'yi'shan
+掆	shou'tong'ba'heng'shan
+掆	shou'tong'ba'yi'shan
 掇	cai'shuang'shuang
 掇	cai'you'you'you'you
 掇	cai'zhuo
@@ -10532,6 +10684,7 @@ sort: by_weight
 揑	cai'jiu'gong
 揑	shou'jiu'gong
 插	cai'cha
+插	cai'qian'jiu
 插	shou'cha
 插	shou'qian'jiu
 揓	cai'shi
@@ -10675,15 +10828,25 @@ sort: by_weight
 搅	cai'jue
 搅	shou'jue
 搆	cai'gou
+搆	cai'jing'zai
 搆	shou'gou
+搆	shou'jing'zai
 搇	cai'qin
 搇	shou'qin
 搈	cai'rong
 搈	shou'rong
 搉	cai'hu
 搉	shou'hu
+搊	cai'bao'cao'bao'cao
+搊	cai'bao'cao'bao'che
+搊	cai'bao'che'bao'cao
+搊	cai'bao'che'bao'che
 搊	cai'chu
 搊	cai'zou
+搊	shou'bao'cao'bao'cao
+搊	shou'bao'cao'bao'che
+搊	shou'bao'che'bao'cao
+搊	shou'bao'che'bao'che
 搊	shou'chu
 搊	shou'zou
 搋	cai'chang'hu
@@ -10709,7 +10872,9 @@ sort: by_weight
 搏	shou'po
 搐	cai'chu
 搐	shou'chu
+搑	cai'cao'er
 搑	cai'rong
+搑	shou'cao'er
 搑	shou'rong
 搒	cai'pang
 搒	shou'pang
@@ -10958,7 +11123,9 @@ sort: by_weight
 摢	cai'hu
 摢	shou'hu
 摣	cai'cuo
+摣	cai'hu'qie
 摣	shou'cuo
+摣	shou'hu'qie
 摤	cai'shuang
 摤	shou'shuang
 摥	cai'ren'ri'heng'wu
@@ -10980,11 +11147,7 @@ sort: by_weight
 摩	guang'lin'shou
 摩	ma'shou
 摪	cai'jiang
-摪	cai'qiang
-摪	cai'yang
 摪	shou'jiang
-摪	shou'qiang
-摪	shou'yang
 摫	cai'gui
 摫	cai'xu
 摫	shou'gui
@@ -11054,6 +11217,7 @@ sort: by_weight
 撁	cai'qian
 撁	shou'qian
 撂	cai'lve
+撂	cai'tian'ge
 撂	shou'lve
 撂	shou'tian'ge
 撃	che'ji'you'shou
@@ -11106,6 +11270,7 @@ sort: by_weight
 撏	shou'xin
 撏	shou'xun
 撐	cai'cheng
+撐	cai'shang'ya
 撐	shou'cheng
 撐	shou'shang'ya
 撐	shou'xiao'bao'kou'ya
@@ -11198,7 +11363,9 @@ sort: by_weight
 撫	shou'mo
 撫	shou'wu
 撬	cai'cui
+撬	cai'mao'mao'mao
 撬	shou'cui
+撬	shou'mao'mao'mao
 播	cai'fan
 播	shou'fan
 撮	cai'zui
@@ -11211,16 +11378,22 @@ sort: by_weight
 撱	cai'sui
 撱	shou'sui
 撲	cai'pu
+撲	cai'ye'ba'san'ren
 撲	shou'pu
+撲	shou'ye'ba'san'ren
 撳	cai'qin
 撳	cai'yin
 撳	shou'qin
 撳	shou'yin
 撴	cai'dun
 撴	shou'dun
+撵	cai'fu'fu'che
 撵	cai'nian
+撵	shou'fu'fu'che
 撵	shou'nian
+撷	cai'ji'ye
 撷	cai'jie
+撷	shou'ji'ye
 撷	shou'jie
 撸	shou'lu
 撹	cai'jue
@@ -11522,8 +11695,16 @@ sort: by_weight
 攖	shou'ying
 攗	cai'mi
 攗	shou'mi
+攘	cai'tou'kou'kou'jing'heng'yi
+攘	cai'tou'kou'kou'jing'yi'yi
 攘	cai'xiang
+攘	cai'yi'kou'kou'jing'heng'yi
+攘	cai'yi'kou'kou'jing'yi'yi
+攘	shou'tou'kou'kou'jing'heng'yi
+攘	shou'tou'kou'kou'jing'yi'yi
 攘	shou'xiang
+攘	shou'yi'kou'kou'jing'heng'yi
+攘	shou'yi'kou'kou'jing'yi'yi
 攙	cai'chan
 攙	shou'chan
 攛	cai'cuan
@@ -11751,6 +11932,7 @@ sort: by_weight
 敭	yi'pu
 敭	yi'wen
 敮	cha'pu
+敮	qian'jiu'pu
 敯	hun'pu
 敯	min'ri'pu
 敯	min'yue'pu
@@ -11925,6 +12107,7 @@ sort: by_weight
 斞	yu'dou
 斟	shen'dou
 斠	gou'dou
+斠	jing'zai'dou
 斡	shi'ri'shi'ren'dou
 斢	huang'dou
 斣	shu'dou
@@ -11935,7 +12118,7 @@ sort: by_weight
 斥	jin'na
 斦	jin'jin
 斧	fu'jin
-斨	pan'jin
+斨	pian'jin
 斩	che'jin
 斪	ju'jin
 斫	shi'jin
@@ -12008,6 +12191,7 @@ sort: by_weight
 旔	fang'jian
 旖	fang'ren'qi
 旗	fang'ren'qi
+旘	fang'ren'yin'ge
 旘	fang'ren'zhi
 旙	fang'fan
 旚	fang'ren'piao
@@ -12079,8 +12263,12 @@ sort: by_weight
 旹	cao'yi'ri
 旹	che'heng'ri
 旹	che'yi'ri
+旹	kan'shu'heng'ri
+旹	kan'shu'yi'ri
 旹	shan'heng'ri
 旹	shan'yi'ri
+旹	xiong'shu'heng'ri
+旹	xiong'shu'yi'ri
 旺	ri'wang
 旻	ri'wen
 旼	ri'wen
@@ -12135,6 +12323,8 @@ sort: by_weight
 昨	ri'zha
 昩	ri'mo
 昪	ri'bian
+昪	ri'si'gong
+昪	ri'si'nong
 昫	ri'ju
 昬	min'ri
 昭	ri'zhao
@@ -12433,35 +12623,39 @@ sort: by_weight
 曲	yue'shu'shu
 曳	ri'gou'pie
 曳	yue'gou'pie
-更	heng'ri'ren
-更	heng'shen'ren
-更	heng'tian'ren
-更	heng'yue'ren
-更	yi'ri'ren
-更	yi'shen'ren
-更	yi'tian'ren
-更	yi'yue'ren
-曵	ri'na'pie'dian
-曵	ri'na'pie'na
-曵	yue'na'pie'dian
-曵	yue'na'pie'na
+更	heng'ri'yi
+更	heng'shen'yi
+更	heng'tian'yi
+更	heng'yue'yi
+更	yi'ri'yi
+更	yi'shen'yi
+更	yi'tian'yi
+更	yi'yue'yi
+曵	ri'gou'pie'dian
+曵	ri'gou'pie'na
+曵	ye'dian
+曵	ye'na
 曶	wu'ri
 曶	wu'yue
 曷	ri'bao'zhe'ren
 書	yu'ri
 書	yu'yue
+曹	heng'qu'ri
 曹	heng'shu'shu'ri'ri
 曹	heng'shu'shu'yue'ri
 曹	nian'ri'ri
 曹	nian'yue'ri
+曹	yi'qu'ri
 曹	yi'shu'shu'ri'ri
 曹	yi'shu'shu'yue'ri
 曺	heng'you'ri
 曺	heng'you'yue
 曺	yi'you'ri
 曺	yi'you'yue
-曼	ri'mu'you
-曼	yue'mu'you
+曼	ri'si'you
+曼	ri'wang'you
+曼	yue'si'you
+曼	yue'wang'you
 曽	ba'tian'ri
 曽	ba'tian'yue
 曾	ba'kou'shu'ba'ri
@@ -12584,7 +12778,9 @@ sort: by_weight
 杀	yi'mu
 杀	yi'yi'xiao
 杂	jiu'deng
+杂	jiu'heng'xiao
 杂	jiu'mu
+杂	jiu'yi'xiao
 权	mu'you
 杄	mu'qian
 杅	mu'yu
@@ -13081,6 +13277,10 @@ sort: by_weight
 棠	xiao'mi'dai
 棠	xiao'mi'kou'mu
 棡	mu'gang
+棡	mu'jiong'ba'heng'shan
+棡	mu'jiong'ba'yi'shan
+棡	mu'tong'ba'heng'shan
+棡	mu'tong'ba'yi'shan
 棢	mu'wang
 棣	mu'li
 棤	mu'xi
@@ -13092,8 +13292,8 @@ sort: by_weight
 棧	mu'jian
 棨	hu'wen
 棨	hu'wen'mu
-棩	mu'pian'heng'pan
-棩	mu'pian'yi'pan
+棩	mu'pian'heng'pian
+棩	mu'pian'yi'pian
 棪	mu'yan
 棫	mu'huo
 棬	mu'juan
@@ -13377,6 +13577,7 @@ sort: by_weight
 榲	mu'yue'min
 榳	mu'ting
 榴	mu'liu
+榵	mu'cao'er
 榵	mu'rong
 榶	mu'tang
 榷	mu'hu
@@ -13417,6 +13618,7 @@ sort: by_weight
 槉	mu'ji
 槊	mu'shuo
 構	mu'gou
+構	mu'jing'zai
 槌	mu'zhui
 槍	mu'cang
 槍	mu'chuang
@@ -13462,8 +13664,6 @@ sort: by_weight
 槲	mu'hu
 槲	mu'jiao'dou
 槳	jiang'mu
-槳	qiang'mu
-槳	yang'mu
 槴	mu'hu
 槵	mu'huan
 槶	mu'guo
@@ -13531,6 +13731,7 @@ sort: by_weight
 樛	mu'yu'zhen
 樜	mu'shu
 樝	mu'cuo
+樝	mu'hu'qie
 樞	mu'gou
 樞	mu'kou
 樞	mu'ou
@@ -13570,11 +13771,13 @@ sort: by_weight
 樲	mu'er
 樳	mu'xin
 樳	mu'xun
+樴	mu'yin'ge
 樴	mu'zhi
 樵	mu'jiao
 樶	mu'zui
 樷	lin'qu
 樸	mu'pu
+樸	mu'ye'ba'san'ren
 樹	mu'shu
 樹	mu'zhu
 樺	mu'hua
@@ -13611,6 +13814,7 @@ sort: by_weight
 橆	ren'yi'shu'shu'shu'shu'heng'lin
 橆	ren'yi'shu'shu'shu'shu'yi'lin
 橇	mu'cui
+橇	mu'mao'mao'mao
 橈	mu'tu'tu'tu'wu
 橈	mu'yao
 橈	mu'yao'wu
@@ -13637,6 +13841,7 @@ sort: by_weight
 橓	mu'shun
 橔	mu'dun
 橕	mu'cheng
+橕	mu'shang'ya
 橖	mu'tang
 橗	mu'meng
 橘	mu'mao'jiong
@@ -13716,6 +13921,8 @@ sort: by_weight
 檀	mu'yi'hui'dan
 檁	mu'bing
 檁	mu'lin
+檁	mu'tou'hui'he
+檁	mu'yi'hui'he
 檂	mu'nong
 檂	mu'qu'chen
 檃	zhao'gong'shan'mu
@@ -13785,6 +13992,8 @@ sort: by_weight
 檧	mu'cong
 檨	mu'xian
 檩	mu'bing
+檩	mu'tou'hui'shi
+檩	mu'yi'hui'shi
 檫	mu'cha
 檬	mu'meng
 檭	mu'yin
@@ -13913,7 +14122,11 @@ sort: by_weight
 櫾	mu'zhua'fou'xi
 櫿	mu'cuo
 櫿	mu'ying
+欀	mu'tou'kou'kou'jing'heng'yi
+欀	mu'tou'kou'kou'jing'yi'yi
 欀	mu'xiang
+欀	mu'yi'kou'kou'jing'heng'yi
+欀	mu'yi'kou'kou'jing'yi'yi
 欁	lin'nong
 欁	lin'qu'chen
 欁	mu'nong'mu
@@ -14014,6 +14227,7 @@ sort: by_weight
 歂	duan'qian
 歂	shan'er'qian
 歃	cha'qian
+歃	qian'jiu'qian
 歅	xi'tu'qian
 歅	yin'qian
 歆	yin'qian
@@ -14057,6 +14271,7 @@ sort: by_weight
 歗	su'qian
 歘	huo'huo'huo'qian
 歘	yan'qian
+歙	he'yu'qian
 歙	xi'qian
 歛	qian'qian
 歜	shu'qian
@@ -14123,6 +14338,9 @@ sort: by_weight
 歸	dui'zhi'shan'bao'jin
 歸	dui'zhi'shan'mi'jin
 歸	dui'zhi'zhou
+歸	hu'zhe'zhi'shan'bao'jin
+歸	hu'zhe'zhi'shan'mi'jin
+歸	hu'zhe'zhi'zhou
 歹	heng'xi
 歹	yi'xi
 歺	bo'xi
@@ -14308,8 +14526,12 @@ sort: by_weight
 毊	keng'qiao
 毊	qing'jiao
 毊	qing'qiao
+毊	sheng'ji'you'jiao
+毊	sheng'ji'you'qiao
 毊	sheng'jiao
 毊	sheng'qiao
+毊	sheng'shu'jiao
+毊	sheng'shu'qiao
 毋	zhe'gou'heng'pie
 毋	zhe'gou'yi'pie
 毋	zhe'zhe'heng'pie
@@ -14325,7 +14547,7 @@ sort: by_weight
 母	shu'yi'er'na'na'gou
 毎	ren'wu
 每	ren'mu
-毐	shi'mu
+毐	shi'wu
 毑	mu'ye
 毒	feng'mu
 毒	feng'wu
@@ -14349,6 +14571,7 @@ sort: by_weight
 毢	mao'xi
 毣	yu'mao
 毤	dui'mao
+毤	gong'er'mao
 毥	mao'xun
 毦	er'mao
 毧	mao'rong
@@ -14438,116 +14661,47 @@ sort: by_weight
 气	qi'yi
 气	ren'heng'yi
 气	ren'yi'yi
-氕	qi'mi'pie
 氕	qi'pie
-氕	xi'pie
-氖	qi'mi'nai
 氖	qi'nai
-氖	xi'nai
-気	qi'mi'yi
 気	qi'yi
-気	xi'yi
-氘	qi'mi'pie'shu
 氘	qi'pie'shu
-氘	xi'pie'shu
-氙	qi'mi'shan
 氙	qi'shan
-氙	xi'shan
 氚	qi'chuan
-氚	qi'mi'chuan
-氚	xi'chuan
 氛	qi'fen
-氛	qi'mi'fen
-氛	xi'fen
-氜	qi'mi'ri
 氜	qi'ri
-氜	xi'ri
-氝	qi'mi'nei
 氝	qi'nei
-氝	xi'nei
 氟	qi'fu
-氟	qi'mi'fu
-氟	xi'fu
-氠	qi'mi'shen
 氠	qi'shen
-氠	xi'shen
 氡	qi'dong
-氡	qi'mi'dong
-氡	xi'dong
 氢	qi'jing
 氢	qi'zhe'dian'gong
 氢	qi'zhe'na'gong
-氣	qi'mi
-氤	qi'mi'yin
 氤	qi'yin
-氤	xi'yin
-氥	qi'mi'xi
 氥	qi'xi
-氥	xi'xi
 氦	qi'hai
-氦	qi'mi'hai
-氦	xi'hai
-氧	qi'mi'yang
 氧	qi'yang
-氧	xi'yang
 氨	qi'an
-氨	qi'mi'an
-氨	xi'an
 氩	qi'ya
 氪	qi'ke
-氪	qi'mi'ke
-氪	xi'ke
 氫	qi'jing
-氫	qi'mi'jing
-氫	qi'mi'xing
 氫	qi'xing
-氫	xi'jing
-氫	xi'xing
 氬	qi'e
-氬	qi'mi'e
-氬	qi'mi'ya
 氬	qi'ya
-氬	xi'e
-氬	xi'ya
 氭	qi'dong
-氭	qi'mi'dong
-氭	xi'dong
-氮	qi'mi'yan
 氮	qi'yan
-氮	xi'yan
 氯	qi'lu
-氯	qi'mi'lu
-氯	xi'lu
-氰	qi'mi'qing
 氰	qi'qing
-氰	xi'qing
-氱	qi'mi'ri'heng'wu
-氱	qi'mi'ri'yi'wu
-氱	qi'mi'yang
-氱	qi'mi'yue'heng'wu
-氱	qi'mi'yue'yi'wu
 氱	qi'ri'heng'wu
 氱	qi'ri'yi'wu
 氱	qi'yang
 氱	qi'yue'heng'wu
 氱	qi'yue'yi'wu
-氱	xi'ri'heng'wu
-氱	xi'ri'yi'wu
-氱	xi'yang
-氱	xi'yue'heng'wu
-氱	xi'yue'yi'wu
 氲	qi'ri'min
 氲	qi'wen
 氲	qi'yue'min
-氳	qi'mi'ri'min
-氳	qi'mi'wen
-氳	qi'mi'yue'min
 氳	qi'ri'min
 氳	qi'wen
 氳	qi'yue'min
-氳	xi'ri'min
-氳	xi'wen
-氳	xi'yue'min
 水	zhe'gou'dian'na
 水	zhe'gou'na'na
 氵	dian'dian'heng
@@ -14656,8 +14810,6 @@ sort: by_weight
 決	shui'zhe'da
 汻	shui'wu
 汽	shui'qi
-汽	shui'qi'mi
-汽	shui'xi
 汾	shui'fen
 汿	shui'yu
 沀	shui'yu
@@ -15115,8 +15267,8 @@ sort: by_weight
 淲	shui'hu
 淳	shui'xiang
 淴	shui'hu
-淵	shui'pian'heng'pan
-淵	shui'pian'yi'pan
+淵	shui'pian'heng'pian
+淵	shui'pian'yi'pian
 淶	shui'lai
 混	shui'kun
 淸	shui'qing
@@ -15143,8 +15295,8 @@ sort: by_weight
 渇	shui'ri'bao'bi
 済	shui'qi
 渉	shui'bu
-渊	shui'pian'heng'pan
-渊	shui'pian'yi'pan
+渊	shui'pian'heng'pian
+渊	shui'pian'yi'pian
 渊	shui'pie'mi'shu
 渌	shui'lu
 渍	shui'ze
@@ -15346,6 +15498,7 @@ sort: by_weight
 溛	shui'wa
 溜	shui'liu
 溝	shui'gou
+溝	shui'jing'zai
 溞	shui'zao
 溟	shui'ming
 溠	shui'cha
@@ -15422,6 +15575,12 @@ sort: by_weight
 滋	shui'zi
 滌	shui'tiao
 滍	shui'chi
+滍	shui'kan'shu'heng'chong
+滍	shui'kan'shu'yi'chong
+滍	shui'shan'heng'chong
+滍	shui'shan'yi'chong
+滍	shui'xiong'shu'heng'chong
+滍	shui'xiong'shu'yi'chong
 滎	huo'huo'bao'shui
 滎	huo'huo'mi'shui
 滎	ying'shui
@@ -15440,6 +15599,9 @@ sort: by_weight
 滙	shui'fang'zhui
 滙	shui'kuang'zhui
 滚	shui'gun
+滚	shui'liu'si'yi
+滚	shui'tou'gong'yi
+滚	shui'yi'gong'yi
 滛	shui'zhao'fou
 滛	shui'zhua'fou
 滜	shui'gao
@@ -15487,7 +15649,9 @@ sort: by_weight
 滻	shui'chan
 滼	shui'fan
 滽	shui'yong
+滾	shui'ai'ba
 滾	shui'gun
+滾	shui'liu'kou'yi
 滿	shui'man
 滿	shui'nian'jiong'shu'ru'ru
 滿	shui'nian'tong'shu'ru'ru
@@ -15585,8 +15749,6 @@ sort: by_weight
 漽	shui'xi
 漾	shui'yang
 漿	shui'jiang
-漿	shui'qiang
-漿	shui'yang
 潀	shui'zhong
 潁	bi'shui'xie
 潁	bi'shui'ye
@@ -15633,6 +15795,7 @@ sort: by_weight
 潛	shui'zan'ri
 潛	shui'zan'yue
 潜	shui'ti
+潝	shui'he'yu
 潝	shui'xi
 潞	shui'lu
 潟	shui'jiu'bao'huo
@@ -15643,11 +15806,13 @@ sort: by_weight
 潣	shui'min
 潤	shui'run
 潥	shui'su
+潥	shui'xi'mi
 潦	shui'da'ba'ri'xiao
 潦	shui'liao
 潦	shui'shen'xiao
 潧	shui'ceng
 潨	shui'zhong
+潩	shui'tian'gong
 潩	shui'yi
 潪	shui'zhi
 潫	shui'juan
@@ -15713,7 +15878,9 @@ sort: by_weight
 澐	shui'yun
 澑	shui'liu
 澒	shui'xiang
+澓	shui'chi'fu
 澓	shui'fu
+澓	shui'ren'fu
 澔	shui'hao
 澕	shui'hua
 澕	shui'kua
@@ -15726,6 +15893,8 @@ sort: by_weight
 澞	shui'yu
 澟	shui'bing
 澟	shui'lin
+澟	shui'tou'hui'he
+澟	shui'yi'hui'he
 澠	shui'meng
 澠	shui'mian
 澠	shui'min
@@ -15961,7 +16130,11 @@ sort: by_weight
 瀹	shui'yue
 瀺	shui'chan
 瀻	shui'dai
+瀼	shui'tou'kou'kou'jing'heng'yi
+瀼	shui'tou'kou'kou'jing'yi'yi
 瀼	shui'xiang
+瀼	shui'yi'kou'kou'jing'heng'yi
+瀼	shui'yi'kou'kou'jing'yi'yi
 瀽	shui'jian
 瀾	shui'lan
 瀿	shui'fan
@@ -16305,6 +16478,10 @@ sort: by_weight
 焳	huo'zhui
 焴	huo'yu
 焵	huo'gang
+焵	huo'jiong'ba'heng'shan
+焵	huo'jiong'ba'yi'shan
+焵	huo'tong'ba'heng'shan
+焵	huo'tong'ba'yi'shan
 然	rou'quan'huo
 然	yue'quan'huo
 焷	huo'bei
@@ -16402,8 +16579,13 @@ sort: by_weight
 煵	huo'nan
 煸	huo'bian
 煹	huo'gou
+煹	huo'jing'zai
 煺	huo'tui
 煻	huo'tang
+煼	huo'bao'cao'bao'cao
+煼	huo'bao'cao'bao'che
+煼	huo'bao'che'bao'cao
+煼	huo'bao'che'bao'che
 煼	huo'chu
 煼	huo'zou
 煽	huo'shan
@@ -16420,6 +16602,7 @@ sort: by_weight
 熂	huo'qi'mi
 熂	huo'xi
 熃	mao'huo
+熃	mao'wen'huo
 熃	wu'huo
 熄	huo'xi
 熅	huo'ri'min
@@ -16506,9 +16689,12 @@ sort: by_weight
 熸	huo'zan'yue
 熹	xi'huo
 熺	huo'xi
+熻	huo'he'yu
 熻	huo'xi
+熼	huo'tian'gong
 熼	huo'yi
 熽	huo'su
+熾	huo'yin'ge
 熾	huo'zhi
 熿	huo'huang
 燀	huo'chan
@@ -16586,6 +16772,8 @@ sort: by_weight
 燢	xue'huo
 燣	huo'bing
 燣	huo'lin
+燣	huo'tou'hui'he
+燣	huo'yi'hui'he
 燤	huo'wan
 燥	huo'kou'kou'kou'mu
 燥	huo'pin'mu
@@ -16615,6 +16803,8 @@ sort: by_weight
 燶	huo'nong
 燶	huo'qu'chen
 燷	huo'bing
+燷	huo'tou'hui'shi
+燷	huo'yi'hui'shi
 燸	huo'xu
 燹	shi'shi'huo
 燺	huo'gao
@@ -16664,7 +16854,11 @@ sort: by_weight
 爖	huo'long
 爖	huo'mang
 爗	huo'ye
+爙	huo'tou'kou'kou'jing'heng'yi
+爙	huo'tou'kou'kou'jing'yi'yi
 爙	huo'xiang
+爙	huo'yi'kou'kou'jing'heng'yi
+爙	huo'yi'kou'kou'jing'yi'yi
 爚	huo'huo'yue
 爛	huo'lan
 爜	huo'cong
@@ -16733,15 +16927,15 @@ sort: by_weight
 爿	shu'heng'shu'yi'pie
 爿	shu'yi'shu'heng'pie
 爿	shu'yi'shu'yi'pie
-牀	pan'mu
-牁	pan'ke
-牂	pan'yang
-牃	pan'shi'mu
-牃	pan'ye
-牄	pan'cang
-牄	pan'chuang
-牅	pan'yong
-牆	pan'se
+牀	pian'mu
+牁	pian'ke
+牂	pian'yang
+牃	pian'shi'mu
+牃	pian'ye
+牄	pian'cang
+牄	pian'chuang
+牅	pian'yong
+牆	pian'se
 片	shang'pie'zhe
 片	shu'heng'pie'zhe
 片	shu'yi'pie'zhe
@@ -16756,6 +16950,7 @@ sort: by_weight
 牎	pian'cong
 牏	pian'yu
 牐	pian'cha
+牐	pian'qian'jiu
 牑	pian'bian
 牒	pian'shi'mu
 牒	pian'ye
@@ -16829,6 +17024,10 @@ sort: by_weight
 犃	niu'pou
 犄	niu'qi
 犅	niu'gang
+犅	niu'jiong'ba'heng'shan
+犅	niu'jiong'ba'yi'shan
+犅	niu'tong'ba'heng'shan
+犅	niu'tong'ba'yi'shan
 犆	niu'zhi
 犇	niu'niu'niu
 犈	niu'juan
@@ -16845,6 +17044,10 @@ sort: by_weight
 犑	niu'ju
 犑	niu'mu'quan
 犒	niu'gao
+犓	niu'bao'cao'bao'cao
+犓	niu'bao'cao'bao'che
+犓	niu'bao'che'bao'cao
+犓	niu'bao'che'bao'che
 犓	niu'chu
 犓	niu'zou
 犔	niu'qi
@@ -16928,7 +17131,7 @@ sort: by_weight
 犿	quan'bian
 犿	quan'dian'xia
 犿	quan'na'xia
-狀	pan'quan
+狀	pian'quan
 狁	quan'yun
 狂	quan'wang
 狃	quan'chou
@@ -17109,8 +17312,6 @@ sort: by_weight
 獌	quan'man
 獍	quan'jing
 獎	jiang'quan
-獎	qiang'quan
-獎	yang'quan
 獏	quan'mo
 獐	quan'zhang
 獑	quan'zhan
@@ -17132,6 +17333,7 @@ sort: by_weight
 獙	quan'bi
 獚	quan'huang
 獛	quan'pu
+獛	quan'ye'ba'san'ren
 獜	quan'lin
 獜	quan'mi'chuan
 獜	quan'mi'xi'fang'shu
@@ -17200,7 +17402,11 @@ sort: by_weight
 獻	hu'yi'kou'tong'ya'yi'quan
 獼	quan'mi
 獼	quan'ni
+獽	quan'tou'kou'kou'jing'heng'yi
+獽	quan'tou'kou'kou'jing'yi'yi
 獽	quan'xiang
+獽	quan'yi'kou'kou'jing'heng'yi
+獽	quan'yi'kou'kou'jing'yi'yi
 獾	quan'cao'kou'kou'zhui
 獾	quan'guan
 獾	quan'huan
@@ -17915,7 +18121,9 @@ sort: by_weight
 璝	wang'gui
 璝	yu'gui
 璞	wang'pu
+璞	wang'ye'ba'san'ren
 璞	yu'pu
+璞	yu'ye'ba'san'ren
 璟	wang'jing
 璟	yu'jing
 璠	wang'fan
@@ -18084,8 +18292,16 @@ sort: by_weight
 瓔	yu'ying
 瓕	mi'yu
 瓕	ni'yu
+瓖	wang'tou'kou'kou'jing'heng'yi
+瓖	wang'tou'kou'kou'jing'yi'yi
 瓖	wang'xiang
+瓖	wang'yi'kou'kou'jing'heng'yi
+瓖	wang'yi'kou'kou'jing'yi'yi
+瓖	yu'tou'kou'kou'jing'heng'yi
+瓖	yu'tou'kou'kou'jing'yi'yi
 瓖	yu'xiang
+瓖	yu'yi'kou'kou'jing'heng'yi
+瓖	yu'yi'kou'kou'jing'yi'yi
 瓗	wang'gui
 瓗	wang'juan
 瓗	wang'xi
@@ -18119,7 +18335,11 @@ sort: by_weight
 瓡	xing'gua
 瓢	piao'gua
 瓣	xin'gua'xin
+瓤	tou'kou'kou'jing'heng'yi'gua
+瓤	tou'kou'kou'jing'yi'yi'gua
 瓤	xiang'gua
+瓤	yi'kou'kou'jing'heng'yi'gua
+瓤	yi'kou'kou'jing'yi'yi'gua
 瓥	gua'shi'chong'chong
 瓦	heng'gou'yi'dian
 瓦	heng'gou'yi'na
@@ -18993,8 +19213,12 @@ sort: by_weight
 瘿	ne'ying
 癀	bing'huang
 癀	ne'huang
+癁	bing'chi'fu
 癁	bing'fu
+癁	bing'ren'fu
+癁	ne'chi'fu
 癁	ne'fu
+癁	ne'ren'fu
 療	bing'da'ba'ri'xiao
 療	bing'liao
 療	bing'shen'xiao
@@ -19087,12 +19311,20 @@ sort: by_weight
 癚	ne'zhan
 癛	bing'bing
 癛	bing'lin
+癛	bing'tou'hui'he
+癛	bing'yi'hui'he
 癛	ne'bing
 癛	ne'lin
+癛	ne'tou'hui'he
+癛	ne'yi'hui'he
 癜	bing'dian
 癜	ne'dian
 癝	bing'bing
+癝	bing'tou'hui'shi
+癝	bing'yi'hui'shi
 癝	ne'bing
+癝	ne'tou'hui'shi
+癝	ne'yi'hui'shi
 癞	bing'lai
 癞	ne'lai
 癟	bing'zi'lun
@@ -19187,6 +19419,8 @@ sort: by_weight
 皎	bai'jiao
 皏	bai'bing
 皐	bai'er'shi'er
+皐	bai'shui'heng
+皐	bai'shui'yi
 皑	bai'qi
 皒	bai'wo
 皓	bai'gao
@@ -19246,9 +19480,14 @@ sort: by_weight
 皷	zhu'pi
 皸	jun'pi
 皹	pi'jun
+皺	bao'cao'bao'cao'pi
+皺	bao'cao'bao'che'pi
+皺	bao'che'bao'cao'pi
+皺	bao'che'bao'che'pi
 皺	chu'pi
 皺	zou'pi
 皻	cuo'pi
+皻	hu'qie'pi
 皼	yi'pi
 皽	dan'pi
 皽	tou'hui'dan'pi
@@ -19648,6 +19887,7 @@ sort: by_weight
 瞦	mu'xi
 瞧	mu'jiao
 瞨	mu'pu
+瞨	mu'ye'ba'san'ren
 瞩	mu'shu
 瞪	mu'deng
 瞫	mu'tan
@@ -19718,6 +19958,10 @@ sort: by_weight
 矑	mu'lei
 矑	mu'lu
 矑	mu'lv
+矒	mu'cao'si'bao'mu
+矒	mu'cao'si'mi'mu
+矒	mu'cao'wang'bao'mu
+矒	mu'cao'wang'mi'mu
 矒	mu'meng
 矓	mu'long
 矓	mu'mang
@@ -19973,6 +20217,10 @@ sort: by_weight
 碗	shi'wan
 碘	shi'dian
 碙	shi'gang
+碙	shi'jiong'ba'heng'shan
+碙	shi'jiong'ba'yi'shan
+碙	shi'tong'ba'heng'shan
+碙	shi'tong'ba'yi'shan
 碚	shi'li'kou
 碚	shi'pou
 碛	shi'ze
@@ -20065,6 +20313,9 @@ sort: by_weight
 磘	shi'zhao'fou
 磘	shi'zhua'fou
 磙	shi'gun
+磙	shi'liu'si'yi
+磙	shi'tou'gong'yi
+磙	shi'yi'gong'yi
 磚	shi'shuan
 磚	shi'tuan
 磚	shi'zhuan
@@ -20393,6 +20644,7 @@ sort: by_weight
 禧	shi'xi
 禨	shi'ji
 禨	shi'qi
+禩	shi'tian'gong
 禩	shi'yi
 禪	shi'chan
 禪	shi'dan
@@ -20414,7 +20666,11 @@ sort: by_weight
 禱	shi'shou
 禲	shi'lai
 禲	shi'li
+禳	shi'tou'kou'kou'jing'heng'yi
+禳	shi'tou'kou'kou'jing'yi'yi
 禳	shi'xiang
+禳	shi'yi'kou'kou'jing'heng'yi
+禳	shi'yi'kou'kou'jing'yi'yi
 禴	shi'yue
 禵	shi'di
 禵	shi'ti
@@ -20629,6 +20885,7 @@ sort: by_weight
 穀	shi'bao'he'shu
 穀	shi'mi'he'ji'you
 穀	shi'mi'he'shu
+穁	he'cao'er
 穁	he'rong
 穂	he'hui
 穄	he'ji
@@ -20657,6 +20914,7 @@ sort: by_weight
 穏	he'zhua'shan'xin
 穐	he'gui
 穑	he'se
+穓	he'tian'gong
 穓	he'yi
 穔	he'huang
 穕	he'ji
@@ -20667,6 +20925,7 @@ sort: by_weight
 穘	he'yao
 穘	he'yao'wu
 穙	he'pu
+穙	he'ye'ba'san'ren
 穚	he'jiao
 穚	he'qiao
 穛	he'jiao
@@ -20704,7 +20963,11 @@ sort: by_weight
 穮	he'biao
 穮	he'pao
 穮	he'piao
+穰	he'tou'kou'kou'jing'heng'yi
+穰	he'tou'kou'kou'jing'yi'yi
 穰	he'xiang
+穰	he'yi'kou'kou'jing'heng'yi
+穰	he'yi'kou'kou'jing'yi'yi
 穱	he'jue
 穲	he'li
 穲	he'si
@@ -20894,8 +21157,8 @@ sort: by_weight
 窷	xue'liao
 窸	bao'ba'xi
 窸	xue'xi
-窹	bao'ba'pan'wu
-窹	xue'pan'wu
+窹	bao'ba'pian'wu
+窹	xue'pian'wu
 窺	bao'ba'gui
 窺	bao'ba'xu
 窺	xue'gui
@@ -20914,7 +21177,9 @@ sort: by_weight
 竀	xue'zheng'jian
 竀	xue'zheng'xian
 竁	bao'ba'cui
+竁	bao'ba'mao'mao'mao
 竁	xue'cui
+竁	xue'mao'mao'mao
 竂	bao'ba'da'ba'ri'xiao
 竂	bao'ba'liao
 竂	bao'ba'shen'xiao
@@ -21110,6 +21375,8 @@ sort: by_weight
 笰	zhu'fu
 笱	zhu'ju
 笲	zhu'bian
+笲	zhu'si'gong
+笲	zhu'si'nong
 笳	zhu'jia
 笴	zhu'ke
 笵	zhu'fan
@@ -21331,6 +21598,10 @@ sort: by_weight
 篖	zhu'tang
 篗	zhu'huo
 篗	zhu'zhi
+篘	zhu'bao'cao'bao'cao
+篘	zhu'bao'cao'bao'che
+篘	zhu'bao'che'bao'cao
+篘	zhu'bao'che'bao'che
 篘	zhu'chu
 篘	zhu'zou
 篙	zhu'gao
@@ -21338,6 +21609,7 @@ sort: by_weight
 篛	zhu'ruo
 篜	zhu'zheng
 篝	zhu'gou
+篝	zhu'jing'zai
 篞	zhu'nie
 篞	zhu'shui'ri'gong
 篟	zhu'qian
@@ -22196,7 +22468,15 @@ sort: by_weight
 綰	mi'guan
 綰	si'guan
 綱	mi'gang
+綱	mi'jiong'ba'heng'shan
+綱	mi'jiong'ba'yi'shan
+綱	mi'tong'ba'heng'shan
+綱	mi'tong'ba'yi'shan
 綱	si'gang
+綱	si'jiong'ba'heng'shan
+綱	si'jiong'ba'yi'shan
+綱	si'tong'ba'heng'shan
+綱	si'tong'ba'yi'shan
 網	mi'wang
 網	si'wang
 綳	mi'peng
@@ -22486,8 +22766,16 @@ sort: by_weight
 縎	si'gu
 縏	ban'mi
 縏	ban'si
+縐	mi'bao'cao'bao'cao
+縐	mi'bao'cao'bao'che
+縐	mi'bao'che'bao'cao
+縐	mi'bao'che'bao'che
 縐	mi'chu
 縐	mi'zou
+縐	si'bao'cao'bao'cao
+縐	si'bao'cao'bao'che
+縐	si'bao'che'bao'cao
+縐	si'bao'che'bao'che
 縐	si'chu
 縐	si'zou
 縑	mi'jian
@@ -22510,7 +22798,9 @@ sort: by_weight
 縗	si'shuai
 縘	mi'xi
 縘	si'xi
+縙	mi'cao'er
 縙	mi'rong
+縙	si'cao'er
 縙	si'rong
 縚	mi'yao
 縚	si'yao
@@ -22670,7 +22960,9 @@ sort: by_weight
 繒	si'ceng
 繓	mi'zui
 繓	si'zui
+織	mi'yin'ge
 織	mi'zhi
+織	si'yin'ge
 織	si'zhi
 繕	mi'shan
 繕	si'shan
@@ -22936,8 +23228,16 @@ sort: by_weight
 纓	si'ying
 纔	mi'chan
 纔	si'chan
+纕	mi'tou'kou'kou'jing'heng'yi
+纕	mi'tou'kou'kou'jing'yi'yi
 纕	mi'xiang
+纕	mi'yi'kou'kou'jing'heng'yi
+纕	mi'yi'kou'kou'jing'yi'yi
+纕	si'tou'kou'kou'jing'heng'yi
+纕	si'tou'kou'kou'jing'yi'yi
 纕	si'xiang
+纕	si'yi'kou'kou'jing'heng'yi
+纕	si'yi'kou'kou'jing'yi'yi
 纖	mi'xian
 纖	si'xian
 纗	mi'gui
@@ -23148,6 +23448,7 @@ sort: by_weight
 缪	si'yu'ren'shan
 缪	si'yu'zhen
 缫	si'chao
+缬	si'ji'ye
 缬	si'jie
 缭	si'da'ba'ri'xiao
 缭	si'liao
@@ -23187,6 +23488,10 @@ sort: by_weight
 缾	fou'bing
 缿	fou'hou
 罁	fou'gang
+罁	fou'jiong'ba'heng'shan
+罁	fou'jiong'ba'yi'shan
+罁	fou'tong'ba'heng'shan
+罁	fou'tong'ba'yi'shan
 罂	bei'bei'fou
 罃	huo'huo'bao'fou
 罃	huo'huo'mi'fou
@@ -23555,6 +23860,7 @@ sort: by_weight
 翹	yao'yu
 翺	gao'yu
 翻	fan'yu
+翼	yu'tian'gong
 翼	yu'yi
 翽	sui'yu
 翽	suo'yu
@@ -23644,6 +23950,7 @@ sort: by_weight
 耧	lei'mi'nv
 耨	lei'ru
 耩	lei'gou
+耩	lei'jing'zai
 耪	lei'pang
 耫	lei'ze
 耫	lei'zhai
@@ -23752,6 +24059,7 @@ sort: by_weight
 聴	er'shi'mu'xin
 聵	er'gui
 聶	er'er'er
+職	er'yin'ge
 職	er'zhi
 聸	er'zhan
 聹	er'ning
@@ -23770,9 +24078,9 @@ sort: by_weight
 肂	dai'yu
 肃	yu'ba'pie'shu
 肄	bi'shi'yu
-肅	yu'pian'heng'pan
-肅	yu'pian'pan
-肅	yu'pian'yi'pan
+肅	yu'pian'heng'pian
+肅	yu'pian'pian
+肅	yu'pian'yi'pian
 肆	chang'yu
 肇	hu'pu'yu
 肇	hu'wen'yu
@@ -24636,7 +24944,9 @@ sort: by_weight
 膫	yue'liao
 膫	yue'shen'xiao
 膬	rou'cui
+膬	rou'mao'mao'mao
 膬	yue'cui
+膬	yue'mao'mao'mao
 膭	rou'gui
 膭	yue'gui
 膮	rou'tu'tu'tu'wu
@@ -24649,7 +24959,9 @@ sort: by_weight
 膯	yue'deng
 膰	rou'fan
 膰	yue'fan
+膱	rou'yin'ge
 膱	rou'zhi
+膱	yue'yin'ge
 膱	yue'zhi
 膲	rou'jiao
 膲	yue'jiao
@@ -24823,11 +25135,11 @@ sort: by_weight
 臤	chen'you
 臥	chen'ren
 臦	chen'chen
-臧	heng'pan'na'pie'dian'chen
-臧	heng'pan'na'pie'na'chen
-臧	pan'wu'chen
-臧	yi'pan'na'pie'dian'chen
-臧	yi'pan'na'pie'na'chen
+臧	heng'pian'na'pie'dian'chen
+臧	heng'pian'na'pie'na'chen
+臧	pian'wu'chen
+臧	yi'pian'na'pie'dian'chen
+臧	yi'pian'na'pie'na'chen
 臨	chen'ren'pin
 臩	guang'gao
 臩	jiong'gao
@@ -25132,8 +25444,12 @@ sort: by_weight
 艷	feng'se
 艸	cao'cao
 艸	cao'che
+艸	cao'kan'shu
+艸	cao'xiong'shu
 艸	che'cao
 艸	che'che
+艸	che'kan'shu
+艸	che'xiong'shu
 艸	shan'shan
 艹	heng'shu'shu
 艹	yi'shu'shu
@@ -25167,13 +25483,23 @@ sort: by_weight
 芔	cao'cao
 芔	cao'cao'cao
 芔	cao'cao'che
+芔	cao'cao'kan'shu
+芔	cao'cao'xiong'shu
 芔	cao'che'cao
 芔	cao'che'che
+芔	cao'che'kan'shu
+芔	cao'che'xiong'shu
 芔	che'cao
 芔	che'cao'cao
 芔	che'cao'che
+芔	che'cao'kan'shu
+芔	che'cao'xiong'shu
 芔	che'che'cao
 芔	che'che'che
+芔	che'che'kan'shu
+芔	che'che'xiong'shu
+芔	kan'shu'cao
+芔	xiong'shu'cao
 芕	cao'xi
 芖	cao'da
 芗	cao'xiang
@@ -25218,8 +25544,12 @@ sort: by_weight
 芻	bao'bao'cao'cao
 芻	bao'cao'bao'cao
 芻	bao'cao'bao'che
+芻	bao'cao'bao'kan'shu
+芻	bao'cao'bao'xiong'shu
 芻	bao'che'bao'cao
 芻	bao'che'bao'che
+芻	bao'che'bao'kan'shu
+芻	bao'che'bao'xiong'shu
 芼	cao'mao
 芽	cao'ya
 芾	cao'fu
@@ -25375,20 +25705,36 @@ sort: by_weight
 茻	cao'cao
 茻	cao'cao'cao'cao
 茻	cao'cao'cao'che
+茻	cao'cao'cao'kan'shu
+茻	cao'cao'cao'xiong'shu
 茻	cao'cao'che'cao
 茻	cao'cao'che'che
+茻	cao'cao'che'kan'shu
+茻	cao'cao'che'xiong'shu
 茻	cao'che'cao'cao
 茻	cao'che'cao'che
+茻	cao'che'cao'kan'shu
+茻	cao'che'cao'xiong'shu
 茻	cao'che'che'cao
 茻	cao'che'che'che
+茻	cao'che'che'kan'shu
+茻	cao'che'che'xiong'shu
 茻	che'cao'cao'cao
 茻	che'cao'cao'che
+茻	che'cao'cao'kan'shu
+茻	che'cao'cao'xiong'shu
 茻	che'cao'che'cao
 茻	che'cao'che'che
+茻	che'cao'che'kan'shu
+茻	che'cao'che'xiong'shu
 茻	che'che'cao'cao
 茻	che'che'cao'che
+茻	che'che'cao'kan'shu
+茻	che'che'cao'xiong'shu
 茻	che'che'che'cao
 茻	che'che'che'che
+茻	che'che'che'kan'shu
+茻	che'che'che'xiong'shu
 茼	cao'tong
 茽	cao'zhong
 茿	cao'gong
@@ -25910,6 +26256,10 @@ sort: by_weight
 蒪	cao'po
 蒫	cao'cha
 蒬	cao'yuan
+蒭	cao'bao'cao'bao'cao
+蒭	cao'bao'cao'bao'che
+蒭	cao'bao'che'bao'cao
+蒭	cao'bao'che'bao'che
 蒭	cao'chu
 蒭	cao'zou
 蒮	cao'hu
@@ -25965,8 +26315,12 @@ sort: by_weight
 蓖	cao'xin'bi
 蓗	cao'tu
 蓘	cao'gun
+蓘	cao'liu'si'yi
+蓘	cao'tou'gong'yi
+蓘	cao'yi'gong'yi
 蓚	cao'xiu
 蓛	cao'ce
+蓛	cao'ci'wen
 蓝	cao'jian
 蓟	cao'yu'dao
 蓠	cao'li
@@ -25980,6 +26334,7 @@ sort: by_weight
 蓨	cao'ren'shu'wen'yue
 蓨	cao'you'yue
 蓩	cao'mao
+蓩	cao'mao'wen
 蓩	cao'wu
 蓪	cao'tong
 蓫	cao'zhu
@@ -26026,7 +26381,9 @@ sort: by_weight
 蔆	cao'ling
 蔇	cao'ji
 蔈	cao'piao
+蔉	cao'ai'ba
 蔉	cao'gun
+蔉	cao'liu'kou'yi
 蔊	cao'han
 蔋	cao'shu
 蔌	cao'shu'qian
@@ -26052,11 +26409,13 @@ sort: by_weight
 蔑	cao'wang'wu'dian
 蔑	cao'wang'wu'na
 蔒	cao'hun
+蔒	cao'jun'huo
 蔒	cao'xun
 蔓	cao'man
 蔔	cao'fu
 蔕	cao'dai
 蔖	cao'cuo
+蔖	cao'hu'qie
 蔗	cao'shu
 蔘	cao'can
 蔘	cao'cen
@@ -26076,8 +26435,6 @@ sort: by_weight
 蔡	cao'ji
 蔢	cao'po
 蔣	cao'jiang
-蔣	cao'qiang
-蔣	cao'yang
 蔤	cao'mi
 蔥	cao'cong
 蔦	cao'dao
@@ -26181,7 +26538,9 @@ sort: by_weight
 蕤	cao'shi'sheng
 蕥	cao'ya
 蕦	cao'xu
+蕧	cao'chi'fu
 蕧	cao'fu
+蕧	cao'ren'fu
 蕨	cao'chang'jue
 蕨	cao'jue
 蕩	cao'shang
@@ -26450,7 +26809,11 @@ sort: by_weight
 蘖	cao'bo
 蘖	xue'mu
 蘗	cao'bo
+蘘	cao'tou'kou'kou'jing'heng'yi
+蘘	cao'tou'kou'kou'jing'yi'yi
 蘘	cao'xiang
+蘘	cao'yi'kou'kou'jing'heng'yi
+蘘	cao'yi'kou'kou'jing'yi'yi
 蘙	cao'yi
 蘚	cao'xian
 蘛	cao'shen'yu
@@ -26584,13 +26947,13 @@ sort: by_weight
 虯	chong'jiu
 虯	chong'zhe'shu
 虰	chong'ding
-虱	yi'heng'chong
-虱	yi'yi'chong
+虱	yi'chong
+虱	yi'pie'chong
 虳	chong'shao
 虴	chong'pie'qi
 虴	chong'tuo
 虴	chong'zhe
-虵	chong'zhong
+虵	chong'ye
 虶	chong'yu
 虷	chong'gan
 虸	chong'zi
@@ -26649,8 +27012,12 @@ sort: by_weight
 蚩	cao'yi'chong
 蚩	che'heng'chong
 蚩	che'yi'chong
+蚩	kan'shu'heng'chong
+蚩	kan'shu'yi'chong
 蚩	shan'heng'chong
 蚩	shan'yi'chong
+蚩	xiong'shu'heng'chong
+蚩	xiong'shu'yi'chong
 蚪	chong'dou
 蚫	chong'bao
 蚬	chong'jian
@@ -26839,8 +27206,8 @@ sort: by_weight
 蜲	chong'wei
 蜳	chong'xiang
 蜴	chong'yi
-蜵	chong'pian'heng'pan
-蜵	chong'pian'yi'pan
+蜵	chong'pian'heng'pian
+蜵	chong'pian'yi'pian
 蜶	chong'zu
 蜷	chong'juan
 蜸	chen'you'chong
@@ -27056,8 +27423,6 @@ sort: by_weight
 螽	dong'chong'chong
 螾	chong'yin
 螿	jiang'chong
-螿	qiang'chong
-螿	yang'chong
 蟀	chong'lv
 蟁	min'chong'chong
 蟂	chong'xiao
@@ -27093,6 +27458,7 @@ sort: by_weight
 蟗	yi'kou'shu'tong'chu'chong
 蟘	chong'dai
 蟘	chong'te
+蟙	chong'yin'ge
 蟙	chong'zhi
 蟚	peng'chong
 蟛	chong'peng
@@ -27242,7 +27608,11 @@ sort: by_weight
 蠭	feng'chong'chong
 蠮	chong'yi
 蠯	guang'bei'chong'chong
+蠰	chong'tou'kou'kou'jing'heng'yi
+蠰	chong'tou'kou'kou'jing'yi'yi
 蠰	chong'xiang
+蠰	chong'yi'kou'kou'jing'heng'yi
+蠰	chong'yi'kou'kou'jing'yi'yi
 蠱	chong'min
 蠲	yi'shu
 蠳	chong'ying
@@ -27589,8 +27959,8 @@ sort: by_weight
 裪	yi'bao'fou
 裪	yi'tao
 裪	yi'yao
-裫	yi'pian'heng'pan
-裫	yi'pian'yi'pan
+裫	yi'pian'heng'pian
+裫	yi'pian'yi'pian
 裬	yi'ling
 裬	yi'tu'ba'wen
 裭	yi'hu
@@ -27672,6 +28042,7 @@ sort: by_weight
 褞	yi'yue'min
 褟	yi'ri'yu
 褠	yi'gou
+褠	yi'jing'zai
 褡	yi'cao'he
 褡	yi'da
 褡	yi'ta
@@ -27739,6 +28110,7 @@ sort: by_weight
 襄	yi'kou'kou'jing'heng'yi
 襄	yi'kou'kou'jing'yi'yi
 襆	yi'pu
+襆	yi'ye'ba'san'ren
 襇	yi'jian
 襈	yi'si'si'gong
 襈	yi'xun
@@ -27855,7 +28227,9 @@ sort: by_weight
 覃	xi'zao
 覃	ya'zao
 覅	yao'wu
+覆	xi'chi'fu
 覆	xi'fu
+覆	xi'ren'fu
 覇	xi'ge'yue
 覈	xi'bai'fang'wen
 覈	xi'jiao
@@ -27959,8 +28333,12 @@ sort: by_weight
 覮	ying'xian
 覯	gou'jian
 覯	gou'xian
+覯	jing'zai'jian
+覯	jing'zai'xian
 覰	cuo'jian
 覰	cuo'xian
+覰	hu'qie'jian
+覰	hu'qie'xian
 覱	zhan'jian
 覱	zhan'xian
 覲	jin'jian
@@ -28050,6 +28428,7 @@ sort: by_weight
 觍	dian'jian
 觎	yu'jian
 觏	gou'jian
+觏	jing'zai'jian
 觐	jin'jian
 觐	nian'zhong'san'jian
 觑	xu'jian
@@ -28252,7 +28631,9 @@ sort: by_weight
 詛	yan'qie
 詜	yan'cao'you
 詜	yan'che'you
+詜	yan'kan'shu'you
 詜	yan'shan'you
+詜	yan'xiong'shu'you
 詝	yan'ning
 詞	yan'si
 詟	long'yan
@@ -28467,6 +28848,10 @@ sort: by_weight
 謁	yan'ri'bao'zhe'ren
 謂	yan'wei
 謄	yue'teng
+謅	yan'bao'cao'bao'cao
+謅	yan'bao'cao'bao'che
+謅	yan'bao'che'bao'cao
+謅	yan'bao'che'bao'che
 謅	yan'chu
 謅	yan'zou
 謆	yan'shan
@@ -28496,6 +28881,7 @@ sort: by_weight
 謙	yan'jian
 謚	yan'yi
 講	yan'gou
+講	yan'jing'zai
 謜	yan'yuan
 謝	yan'she
 謞	yan'gao
@@ -28512,6 +28898,8 @@ sort: by_weight
 謥	yan'cong
 謦	keng'yan
 謦	qing'yan
+謦	sheng'ji'you'yan
+謦	sheng'shu'yan
 謦	sheng'yan
 謧	yan'li
 謨	yan'mo
@@ -28533,6 +28921,7 @@ sort: by_weight
 謮	yan'ze
 謮	yan'zhai
 謯	yan'cuo
+謯	yan'hu'qie
 謰	yan'lan
 謰	yan'lian
 謱	yan'lei
@@ -28610,6 +28999,7 @@ sort: by_weight
 譖	yan'zan'ri
 譖	yan'zan'yue
 譗	yan'da
+識	yan'yin'ge
 識	yan'zhi
 譙	yan'jiao
 譚	yan'tan
@@ -28709,7 +29099,11 @@ sort: by_weight
 讐	zhui'zhui'yan
 讑	yan'yue
 讒	yan'chan
+讓	yan'tou'kou'kou'jing'heng'yi
+讓	yan'tou'kou'kou'jing'yi'yi
 讓	yan'xiang
+讓	yan'yi'kou'kou'jing'heng'yi
+讓	yan'yi'kou'kou'jing'yi'yi
 讔	yan'yin
 讕	yan'lan
 讖	yan'xian
@@ -29268,6 +29662,7 @@ sort: by_weight
 賻	bei'po
 賻	bei'zhuan
 購	bei'gou
+購	bei'jing'zai
 賽	bao'jing'da'bei
 賿	bei'liu
 賿	bei'lu
@@ -29498,8 +29893,13 @@ sort: by_weight
 趥	zou'qiu
 趦	zou'zi
 趧	zou'shi
+趨	zou'bao'cao'bao'cao
+趨	zou'bao'cao'bao'che
+趨	zou'bao'che'bao'cao
+趨	zou'bao'che'bao'che
 趨	zou'chu
 趨	zou'zou
+趩	zou'tian'gong
 趩	zou'yi
 趪	zou'huang
 趫	zou'jiao
@@ -29758,8 +30158,6 @@ sort: by_weight
 蹟	zu'zhai
 蹠	zu'shu
 蹡	zu'jiang
-蹡	zu'qiang
-蹡	zu'yang
 蹢	zu'di
 蹢	zu'shi
 蹢	zu'tou'ba'jiong'gu
@@ -29802,6 +30200,7 @@ sort: by_weight
 蹸	zu'mi'chuan
 蹸	zu'mi'xi'fang'shu
 蹸	zu'mi'xi'kuang'shu
+蹹	zu'he'yu
 蹹	zu'xi
 蹺	zu'tu'tu'tu'wu
 蹺	zu'yao
@@ -29809,6 +30208,7 @@ sort: by_weight
 蹻	zu'jiao
 蹻	zu'qiao
 蹼	zu'pu
+蹼	zu'ye'ba'san'ren
 蹽	zu'da'ba'ri'xiao
 蹽	zu'liao
 蹽	zu'shen'xiao
@@ -29863,7 +30263,11 @@ sort: by_weight
 躜	zu'zan
 躝	zu'lan
 躞	zu'xie
+躟	zu'tou'kou'kou'jing'heng'yi
+躟	zu'tou'kou'kou'jing'yi'yi
 躟	zu'xiang
+躟	zu'yi'kou'kou'jing'heng'yi
+躟	zu'yi'kou'kou'jing'yi'yi
 躠	xue'zu
 躡	zu'er'er'er
 躡	zu'nie
@@ -29925,6 +30329,7 @@ sort: by_weight
 軃	shen'shan
 軃	shen'tan
 軃	shen'zhan
+軄	shen'yin'ge
 軄	shen'zhi
 軆	shen'feng
 軇	shen'shou
@@ -30320,7 +30725,9 @@ sort: by_weight
 轏	ju'shi'zhuan
 轏	ju'shi'zi'zi'zi
 轐	che'pu
+轐	che'ye'ba'san'ren
 轐	ju'pu
+轐	ju'ye'ba'san'ren
 轑	che'da'ba'ri'xiao
 轑	che'liao
 轑	che'shen'xiao
@@ -30512,6 +30919,10 @@ sort: by_weight
 辥	cao'hu'zhe'yi'xin
 辥	che'hu'zhe'heng'xin
 辥	che'hu'zhe'yi'xin
+辥	kan'shu'hu'zhe'heng'xin
+辥	kan'shu'hu'zhe'yi'xin
+辥	xiong'shu'hu'zhe'heng'xin
+辥	xiong'shu'hu'zhe'yi'xin
 辦	xin'li'xin
 辧	xin'dao'xin
 辨	xin'dian'pie'xin
@@ -30953,7 +31364,9 @@ sort: by_weight
 遗	chuo'gui
 遗	zhi'gui
 遘	chuo'gou
+遘	chuo'jing'zai
 遘	zhi'gou
+遘	zhi'jing'zai
 遙	chuo'you
 遙	chuo'yue'fou
 遙	chuo'zhao'fou
@@ -31475,6 +31888,14 @@ sort: by_weight
 鄐	chu'yi
 鄑	jin'er
 鄑	jin'yi
+鄒	bao'cao'bao'cao'er
+鄒	bao'cao'bao'cao'yi
+鄒	bao'cao'bao'che'er
+鄒	bao'cao'bao'che'yi
+鄒	bao'che'bao'cao'er
+鄒	bao'che'bao'cao'yi
+鄒	bao'che'bao'che'er
+鄒	bao'che'bao'che'yi
 鄒	chu'er
 鄒	chu'yi
 鄒	zou'er
@@ -31818,9 +32239,8 @@ sort: by_weight
 醪	you'yu'zhen
 醫	yi'you
 醬	jiang'you
-醬	qiang'you
-醬	yang'you
 醭	you'pu
+醭	you'ye'ba'san'ren
 醮	you'jiao
 醯	you'huang'min
 醯	you'liu'min
@@ -31850,7 +32270,11 @@ sort: by_weight
 醽	you'yu'kou'kou'kou
 醾	you'mi
 醿	you'mi
+釀	you'tou'kou'kou'jing'heng'yi
+釀	you'tou'kou'kou'jing'yi'yi
 釀	you'xiang
+釀	you'yi'kou'kou'jing'heng'yi
+釀	you'yi'kou'kou'jing'yi'yi
 釁	jiu'tong'bao'you'fen
 釁	jiu'tong'mi'you'fen
 釂	you'jue
@@ -32250,6 +32674,10 @@ sort: by_weight
 鋻	qin'jin
 鋻	xian'jin
 鋼	jin'gang
+鋼	jin'jiong'ba'heng'shan
+鋼	jin'jiong'ba'yi'shan
+鋼	jin'tong'ba'heng'shan
+鋼	jin'tong'ba'yi'shan
 鋽	jin'zhuo
 鋾	jin'bao'fou
 鋾	jin'tao
@@ -32398,6 +32826,7 @@ sort: by_weight
 鍢	jin'yi'kou'tian
 鍣	jin'shao
 鍤	jin'cha
+鍤	jin'qian'jiu
 鍥	jin'qi
 鍦	jin'shi
 鍧	jin'bao'yan
@@ -32584,8 +33013,6 @@ sort: by_weight
 鏖	lu'jin
 鏗	jin'jian
 鏘	jin'jiang
-鏘	jin'qiang
-鏘	jin'yang
 鏙	jin'cui
 鏚	jin'qi
 鏛	jin'chang
@@ -32605,7 +33032,9 @@ sort: by_weight
 鏦	jin'zong
 鏧	keng'jin
 鏧	qing'jin
+鏧	sheng'ji'you'jin
 鏧	sheng'jin
+鏧	sheng'shu'jin
 鏨	zhan'jin
 鏩	jin'zhan
 鏪	jin'cao
@@ -32620,6 +33049,7 @@ sort: by_weight
 鏵	jin'kua
 鏶	jin'ji
 鏷	jin'pu
+鏷	jin'ye'ba'san'ren
 鏸	jin'hui
 鏹	jin'jiang
 鏹	jin'qiang
@@ -32842,7 +33272,11 @@ sort: by_weight
 鑯	jin'xian
 鑰	jin'yue
 鑱	jin'chan
+鑲	jin'tou'kou'kou'jing'heng'yi
+鑲	jin'tou'kou'kou'jing'yi'yi
 鑲	jin'xiang
+鑲	jin'yi'kou'kou'jing'heng'yi
+鑲	jin'yi'kou'kou'jing'yi'yi
 鑳	jin'jian
 鑴	jin'gui
 鑴	jin'juan
@@ -33099,6 +33533,7 @@ sort: by_weight
 锷	jin'e
 锷	jin'kou'kou'kui
 锸	jin'cha
+锸	jin'qian'jiu
 锹	jin'qiu
 锺	jin'zhong
 锻	jin'duan
@@ -33175,6 +33610,7 @@ sort: by_weight
 镣	jin'shen'xiao
 镣	jin'shen'xiao'liao
 镤	jin'pu
+镤	jin'ye'ba'san'ren
 镥	jin'lu
 镦	jin'dun
 镧	jin'lan
@@ -33197,7 +33633,11 @@ sort: by_weight
 镳	jin'lu'huo
 镴	jin'lie
 镵	jin'chan
+镶	jin'tou'kou'kou'jing'heng'yi
+镶	jin'tou'kou'kou'jing'yi'yi
 镶	jin'xiang
+镶	jin'yi'kou'kou'jing'heng'yi
+镶	jin'yi'kou'kou'jing'yi'yi
 镸	san'shu'heng'si
 镸	san'shu'yi'si
 镹	chang'jiu
@@ -33263,6 +33703,8 @@ sort: by_weight
 閜	men'ke
 閝	men'ling
 閞	men'bian
+閞	men'si'gong
+閞	men'si'nong
 閟	men'bi
 閠	men'yu
 閡	men'hai
@@ -33341,6 +33783,7 @@ sort: by_weight
 關	men'yao'yao'mao
 闝	men'bai
 闞	men'gan
+闟	men'he'yu
 闟	men'xi
 闠	men'gui
 闡	men'chan
@@ -33951,6 +34394,10 @@ sort: by_weight
 雘	dan'wo
 雙	zhui'zhui'you
 雚	cao'kou'kou'zhui
+雛	bao'cao'bao'cao'zhui
+雛	bao'cao'bao'che'zhui
+雛	bao'che'bao'cao'zhui
+雛	bao'che'bao'che'zhui
 雛	chu'zhui
 雛	zou'zhui
 雜	zu'ba'zhui
@@ -33964,6 +34411,12 @@ sort: by_weight
 雟	che'zhui'jiong
 雟	che'zhui'jiong'ba'kou
 雟	che'zhui'tong'ba'kou
+雟	kan'shu'zhui'jiong
+雟	kan'shu'zhui'jiong'ba'kou
+雟	kan'shu'zhui'tong'ba'kou
+雟	xiong'shu'zhui'jiong
+雟	xiong'shu'zhui'jiong'ba'kou
+雟	xiong'shu'zhui'tong'ba'kou
 雠	chou'yan
 雠	zhui'yan'zhui
 雡	liu'zhui
@@ -34112,12 +34565,14 @@ sort: by_weight
 霥	yu'meng
 霦	yu'bin
 霧	yu'mao
+霧	yu'mao'wen
 霧	yu'wu
 霨	yu'wei
 霩	yu'guo
 霪	yu'shui'zhao'ren
 霪	yu'shui'zhua'ren
 霫	yu'xi
+霬	yu'tian'gong
 霬	yu'yi
 霭	yu'ye
 霮	yu'zhan
@@ -34252,6 +34707,7 @@ sort: by_weight
 靣	yi'dian'hui
 靣	yi'na'hui
 靤	mian'bao
+靥	chang'quan'mian
 靥	yan'mian
 靦	mian'jian
 靦	mian'xian
@@ -34341,6 +34797,7 @@ sort: by_weight
 鞯	ge'jian
 鞱	ge'yao
 鞲	ge'gou
+鞲	ge'jing'zai
 鞳	ge'cao'he
 鞳	ge'da
 鞳	ge'ta
@@ -34439,7 +34896,9 @@ sort: by_weight
 韜	hui'yao
 韜	wei'yao
 韝	hui'gou
+韝	hui'jing'zai
 韝	wei'gou
+韝	wei'jing'zai
 韞	hui'ri'min
 韞	hui'wen
 韞	hui'yue'min
@@ -34502,6 +34961,8 @@ sort: by_weight
 韽	yin'yin
 韾	keng'yin
 韾	qing'yin
+韾	sheng'ji'you'yin
+韾	sheng'shu'yin
 韾	sheng'yin
 響	xiang'yin
 頀	yin'huo
@@ -34749,6 +35210,8 @@ sort: by_weight
 顛	zhen'ye
 顜	gou'xie
 顜	gou'ye
+顜	jing'zai'xie
+顜	jing'zai'ye
 顝	gu'xie
 顝	gu'ye
 類	lei'xie
@@ -35064,6 +35527,7 @@ sort: by_weight
 餋	ba'fu'shi
 餋	juan'shi
 餌	shi'er
+餍	chang'quan'shi
 餍	yan'shi
 餎	shi'ge
 餏	shi'yi
@@ -35196,7 +35660,11 @@ sort: by_weight
 饜	yi'shi
 饝	shi'mo
 饞	shi'chan
+饟	shi'tou'kou'kou'jing'heng'yi
+饟	shi'tou'kou'kou'jing'yi'yi
 饟	shi'xiang
+饟	shi'yi'kou'kou'jing'heng'yi
+饟	shi'yi'kou'kou'jing'yi'yi
 饠	shi'luo
 饡	shi'zan
 饢	shi'nang
@@ -35493,6 +35961,10 @@ sort: by_weight
 騴	ma'ri'nv
 騴	ma'yan
 騵	ma'yuan
+騶	ma'bao'cao'bao'cao
+騶	ma'bao'cao'bao'che
+騶	ma'bao'che'bao'cao
+騶	ma'bao'che'bao'che
 騶	ma'chu
 騶	ma'zou
 騷	ma'zao
@@ -35576,7 +36048,11 @@ sort: by_weight
 驢	ma'lu
 驢	ma'lv
 驣	ma'teng
+驤	ma'tou'kou'kou'jing'heng'yi
+驤	ma'tou'kou'kou'jing'yi'yi
 驤	ma'xiang
+驤	ma'yi'kou'kou'jing'heng'yi
+驤	ma'yi'kou'kou'jing'yi'yi
 驥	ma'ji
 驦	ma'shuang
 驧	ma'ju
@@ -35664,7 +36140,11 @@ sort: by_weight
 骤	ma'ju
 骥	ma'ji
 骦	ma'shuang
+骧	ma'tou'kou'kou'jing'heng'yi
+骧	ma'tou'kou'kou'jing'yi'yi
 骧	ma'xiang
+骧	ma'yi'kou'kou'jing'heng'yi
+骧	ma'yi'kou'kou'jing'yi'yi
 骨	jiong'jiong'bao'yue
 骨	jiong'jiong'mi'yue
 骨	jiong'tong'bao'yue
@@ -35678,7 +36158,7 @@ sort: by_weight
 骫	gu'wan
 骬	gu'yu
 骭	gu'gan
-骮	gu'ge
+骮	gu'yi
 骯	gu'kang
 骯	gu'tou'ji
 骯	gu'yi'ji
@@ -37038,15 +37518,51 @@ sort: by_weight
 鬣	san'shu'yi'si'san'lie
 鬣	san'shu'yi'si'shan'lie
 鬣	shan'lie
+鬤	biao'tou'kou'kou'jing'heng'yi
+鬤	biao'tou'kou'kou'jing'yi'yi
 鬤	biao'xiang
+鬤	biao'yi'kou'kou'jing'heng'yi
+鬤	biao'yi'kou'kou'jing'yi'yi
+鬤	chang'san'tou'kou'kou'jing'heng'yi
+鬤	chang'san'tou'kou'kou'jing'yi'yi
 鬤	chang'san'xiang
+鬤	chang'san'yi'kou'kou'jing'heng'yi
+鬤	chang'san'yi'kou'kou'jing'yi'yi
+鬤	chang'shan'tou'kou'kou'jing'heng'yi
+鬤	chang'shan'tou'kou'kou'jing'yi'yi
 鬤	chang'shan'xiang
+鬤	chang'shan'yi'kou'kou'jing'heng'yi
+鬤	chang'shan'yi'kou'kou'jing'yi'yi
+鬤	piao'tou'kou'kou'jing'heng'yi
+鬤	piao'tou'kou'kou'jing'yi'yi
 鬤	piao'xiang
+鬤	piao'yi'kou'kou'jing'heng'yi
+鬤	piao'yi'kou'kou'jing'yi'yi
+鬤	san'shu'heng'si'san'tou'kou'kou'jing'heng'yi
+鬤	san'shu'heng'si'san'tou'kou'kou'jing'yi'yi
 鬤	san'shu'heng'si'san'xiang
+鬤	san'shu'heng'si'san'yi'kou'kou'jing'heng'yi
+鬤	san'shu'heng'si'san'yi'kou'kou'jing'yi'yi
+鬤	san'shu'heng'si'shan'tou'kou'kou'jing'heng'yi
+鬤	san'shu'heng'si'shan'tou'kou'kou'jing'yi'yi
 鬤	san'shu'heng'si'shan'xiang
+鬤	san'shu'heng'si'shan'yi'kou'kou'jing'heng'yi
+鬤	san'shu'heng'si'shan'yi'kou'kou'jing'yi'yi
+鬤	san'shu'yi'si'san'tou'kou'kou'jing'heng'yi
+鬤	san'shu'yi'si'san'tou'kou'kou'jing'yi'yi
 鬤	san'shu'yi'si'san'xiang
+鬤	san'shu'yi'si'san'yi'kou'kou'jing'heng'yi
+鬤	san'shu'yi'si'san'yi'kou'kou'jing'yi'yi
+鬤	san'shu'yi'si'shan'tou'kou'kou'jing'heng'yi
+鬤	san'shu'yi'si'shan'tou'kou'kou'jing'yi'yi
 鬤	san'shu'yi'si'shan'xiang
+鬤	san'shu'yi'si'shan'yi'kou'kou'jing'heng'yi
+鬤	san'shu'yi'si'shan'yi'kou'kou'jing'yi'yi
+鬤	shan'tou'kou'kou'jing'heng'yi
+鬤	shan'tou'kou'kou'jing'yi'yi
 鬤	shan'xiang
+鬤	shan'yi'kou'kou'jing'heng'yi
+鬤	shan'yi'kou'kou'jing'yi'yi
 鬥	shu'wang'wang'gou
 鬦	dou'dou
 鬧	dou'shi
@@ -37255,6 +37771,7 @@ sort: by_weight
 魅	gui'wei
 魆	gui'ge'zhe
 魆	gui'yue
+魇	chang'quan'gui
 魇	yan'gui
 魈	gui'xiao
 魉	gui'liang
@@ -37580,8 +38097,6 @@ sort: by_weight
 鱀	ji'yu
 鱁	yu'zhu
 鱂	yu'jiang
-鱂	yu'qiang
-鱂	yu'yang
 鱃	yu'xiu
 鱄	yu'shuan
 鱄	yu'tuan
@@ -38117,6 +38632,14 @@ sort: by_weight
 鴘	bian'diao
 鴘	bian'niao
 鴘	bian'que
+鴘	si'gong'dao
+鴘	si'gong'diao
+鴘	si'gong'niao
+鴘	si'gong'que
+鴘	si'nong'dao
+鴘	si'nong'diao
+鴘	si'nong'niao
+鴘	si'nong'que
 鴙	shi'dao
 鴙	shi'diao
 鴙	shi'niao
@@ -38905,6 +39428,22 @@ sort: by_weight
 鶴	hu'diao
 鶴	hu'niao
 鶴	hu'que
+鶵	bao'cao'bao'cao'dao
+鶵	bao'cao'bao'cao'diao
+鶵	bao'cao'bao'cao'niao
+鶵	bao'cao'bao'cao'que
+鶵	bao'cao'bao'che'dao
+鶵	bao'cao'bao'che'diao
+鶵	bao'cao'bao'che'niao
+鶵	bao'cao'bao'che'que
+鶵	bao'che'bao'cao'dao
+鶵	bao'che'bao'cao'diao
+鶵	bao'che'bao'cao'niao
+鶵	bao'che'bao'cao'que
+鶵	bao'che'bao'che'dao
+鶵	bao'che'bao'che'diao
+鶵	bao'che'bao'che'niao
+鶵	bao'che'bao'che'que
 鶵	chu'dao
 鶵	chu'diao
 鶵	chu'niao
@@ -39946,7 +40485,7 @@ sort: by_weight
 黑	kou'ba'tu'huo
 黑	li'ba'huo
 黒	li'huo
-黓	hei'ge
+黓	hei'yi
 黔	hei'jin
 黕	hei'bao'pie'gou
 黕	hei'mi'pie'gou
@@ -39963,6 +40502,7 @@ sort: by_weight
 點	hei'zhan
 黟	hei'duo
 黠	hei'ji
+黡	chang'quan'hei
 黡	yan'hei
 黢	hei'qun
 黢	hei'si'ba'wen
@@ -40067,7 +40607,7 @@ sort: by_weight
 鼍	kou'kou'tian'yi'min
 鼍	shou'dian
 鼍	xu'dian
-鼎	mu'pan'pian
+鼎	mu'pian'pian
 鼏	bao'ding
 鼏	mi'ding
 鼐	nai'ding
@@ -40085,8 +40625,8 @@ sort: by_weight
 鼕	gu'dong
 鼖	shi'cao'gu
 鼗	zhao'gu
-鼘	gu'pian'heng'pan
-鼘	gu'pian'yi'pan
+鼘	gu'pian'heng'pian
+鼘	gu'pian'yi'pian
 鼙	gu'bei
 鼚	gu'chang
 鼚	gu'zhang
@@ -40165,6 +40705,7 @@ sort: by_weight
 齆	bi'shun'yi
 齆	bi'yong
 齇	bi'cuo
+齇	bi'hu'qie
 齈	bi'nong
 齈	bi'qu'chen
 齉	bi'nang
@@ -40253,6 +40794,10 @@ sort: by_weight
 齷	chi'wu
 齸	chi'yi
 齹	cha'chi
+齺	chi'bao'cao'bao'cao
+齺	chi'bao'cao'bao'che
+齺	chi'bao'che'bao'cao
+齺	chi'bao'che'bao'che
 齺	chi'chu
 齺	chi'zou
 齻	chi'zhen
@@ -40358,6 +40903,7 @@ sort: by_weight
 𠁼	na'dian'na
 𠁼	na'na'dian
 𠁼	na'na'na
+𠂤	hu'zhe
 𠃄	pai'pai
 𠃏	gou'gou
 𠃐	yi'yi
@@ -40548,6 +41094,8 @@ sort: by_weight
 𡎚	tu'bian
 𡐓	tu'kang
 𡒄	tu'bing
+𡒄	tu'tou'hui'shi
+𡒄	tu'yi'hui'shi
 𡔯	ji'ji
 𡕇	ji'ji'ji
 𡕩	xin'er'wen
@@ -40994,6 +41542,7 @@ sort: by_weight
 𥊙	mu'xiong'ba'wen
 𥊙	mu'zong
 𥊼	mu'cheng
+𥊼	mu'shang'ya
 𥋇	mu'zhang
 𥍙	xian'xian'xian
 𥔲	shi'e
@@ -41106,13 +41655,14 @@ sort: by_weight
 𧭛	yan'yan'yan
 𧮦	men'men'men'men
 𧮪	yan'zhan
-𧰕	shi'dou'zei
+𧰕	shi'dou'dao
 𧰕	zhu'dao
 𧰘	tan'shi'dou
 𧰘	tan'zhu
 𧰡	shi'dou'li
 𧰡	zhu'li
 𧴌	zhi'pu
+𧴌	zhi'ye'ba'san'ren
 𧹖	bei'dian
 𧹗	bei'huan
 𧼂	zou'zou
@@ -41121,6 +41671,7 @@ sort: by_weight
 𨂾	zu'nan
 𨃩	zu'shan
 𨅝	zu'cheng
+𨅝	zu'shang'ya
 𨆪	qing'zu
 𨆬	zu'zu'zu
 𨈓	shen'xiao
@@ -41146,6 +41697,8 @@ sort: by_weight
 𨑂	nie'nie'nie
 𨙸	zhi'er
 𨚕	bian'er
+𨚕	si'gong'er
+𨚕	si'nong'er
 𨛜	yi'yi
 𨟠	mu'mu'zhui'er
 𨟠	qu'er
@@ -41633,6 +42186,7 @@ sort: by_weight
 𫩕	kou'guang
 𫩥	kou'jiu
 𫩪	kou'lan
+𫩫	kou'chang'quan
 𫩫	kou'yan
 𫩺	kou'jin
 𫪁	kou'lai
@@ -41735,7 +42289,11 @@ sort: by_weight
 𬘯	si'xiang
 𬙂	si'yin
 𬙊	si'mo
+𬙋	si'tou'kou'kou'jing'heng'yi
+𬙋	si'tou'kou'kou'jing'yi'yi
 𬙋	si'xiang
+𬙋	si'yi'kou'kou'jing'heng'yi
+𬙋	si'yi'kou'kou'jing'yi'yi
 𬚿	rou'xian
 𬜬	cao'wen
 𬜯	cao'liang
@@ -41765,7 +42323,9 @@ sort: by_weight
 𬣡	yan'jian
 𬣥	yan'cao'you
 𬣥	yan'che'you
+𬣥	yan'kan'shu'you
 𬣥	yan'shan'you
+𬣥	yan'xiong'shu'you
 𬣦	yan'you
 𬣩	yan'you
 𬣭	yan'dang
@@ -42052,7 +42612,6 @@ kg	abc
 %	abc
 ‰	abc
 ‱	abc
-卐	abc
 ∞	abc
 π	abc
 α	abc
