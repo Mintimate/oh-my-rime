@@ -52,6 +52,8 @@ rime配置教程：
   - Squirrel: `~/Library/Rime`
 - Linux
   - iBus:` ~/.config/ibus/rime`
+  - Fcitx5: `~/.local/share/fcitx5/rime`
+- Fctix5 Android(小企鹅入法): `/storage/emulated/0/Android/data/org.fcitx.fcitx5.android/files/data/rime/`
 
 本地rime日志文件默认地址如下：
 
@@ -61,6 +63,8 @@ rime配置教程：
   - Squirrel: `$TMPDIR`
 - Linux
   - iBus:` /tmp`
+  
+如果你需要在同文输入法内使用，需要一个键盘模板和皮肤，可以使用: [薄荷输入法的”蓝水鸭“和”黑水鸭“皮肤布局](https://www.mintimate.cc/zh/demo/diffAppearance.html#android%E5%A4%96%E8%A7%82)
 
 ## 配置文件说明
 

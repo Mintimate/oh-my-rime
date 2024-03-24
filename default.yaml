@@ -1,0 +1,170 @@
+# Rime default settings
+# encoding: utf-8
+
+# Fork From: https://github.com/rime/librime/blob/3bc65c990546aa2062ecd1eb593d54d2949644cd/data/minimal/default.yaml
+config_version: "24.03.24"
+
+# 以下内容，实际会由default.custom.yaml和方案配置所覆写
+
+schema_list:
+  - {schema: rime_mint}           # 薄荷拼音
+  - {schema: double_pinyin_flypy} # 小鹤双拼
+  - {schema: rime_mint_flypy}     # 薄荷拼音-小鹤混输方案
+  - {schema: terra_pinyin}        # 地球拼音-薄荷定制
+  - {schema: wubi98_mint}         # 五笔98-薄荷简版
+
+switcher:
+  # 切换方案时显示的标题
+  caption: 〔方案切换〕
+  # 切换方案的快捷键
+  hotkeys:
+    - Control+grave
+    - Control+Shift+grave
+    # F4 和 JetBrains 的快捷键冲突
+    # - F4
+  # 在切换方案时保留的选项
+  save_options:
+    - full_shape  # 保留全角模式
+    - ascii_punct # 保留西文模式
+    - transcription     # 保留汉字简繁体选项
+    - emoji_suggestion  # Emoji
+  # 折叠选项以节省空间
+  fold_options: true
+  # 对选项进行缩写
+  abbreviate_options: true
+  # 选项之间的分隔符
+  option_list_separator: '／'
+
+menu:
+  # 候选词个数
+  page_size: 6
+
+translator:
+  # 启用自动造词
+  enable_encoder: true
+  # 启用自动句子输入
+  enable_sentence: true
+  # 启用用户词典
+  enable_user_dict: true
+  # 对已上屏的词语进行自动编码以提高下次输入的命中率
+  encode_commit_history: true
+
+punctuator:
+  full_shape:
+    ' ' : { commit: '　' }
+    ',' : { commit: ， }
+    '.' : { commit: 。 }
+    '<' : [ 《, 〈, «, ‹ ]
+    '>' : [ 》, 〉, », › ]
+    '/' : [ ／, ÷ ]
+    '?' : { commit: ？ }
+    ';' : { commit: ； }
+    ':' : { commit: ： }
+    '''' : { pair: [ '‘', '’' ] }
+    '"' : { pair: [ '“', '”' ] }
+    '\' : [ 、, ＼ ]
+    '|' : [ ・, ｜, '§', '¦' ]
+    '`' : ｀
+    '~' : [ 〜, ～, 〰 ]
+    '!' : { commit: ！ }
+    '@' : [ ＠, ☯ ]
+    '#' : [ ＃, ⌘ ]
+    '%' : [ ％, '°', '℃' ]
+    '$' : [ ￥, '$', '€', '£', '¥', '¢', '¤' ]
+    '^' : { commit: …… }
+    '&' : ＆
+    '*' : [ ＊, ・, ·, ×, ※, ❂ ]
+    '(' : （
+    ')' : ）
+    '-' : －
+    '_' : ——
+    '+' : ＋
+    '=' : ＝
+    '[' : [ 「, 【, 〔, ［ ]
+    ']' : [ 」, 】, 〕, ］ ]
+    '{' : [ 『, 〖, ｛ ]
+    '}' : [ 』, 〗, ｝ ]
+  half_shape:
+    ',' : { commit: ， }
+    '.' : { commit: 。 }
+    '<' : [ 《, 〈, «, ‹ ]
+    '>' : [ 》, 〉, », › ]
+    '/' : [ 、, '/', ／, ÷ ]
+    '?' : { commit: ？ }
+    ';' : { commit: ； }
+    ':' : { commit: ： }
+    '''' : { pair: [ '‘', '’' ] }
+    '"' : { pair: [ '“', '”' ] }
+    '\' : [ 、, '\', ＼ ]
+    '|' : [ ・, '|', ｜, '§', '¦' ]
+    '`' : '`'
+    '~' : [ '~', 〜, ～, 〰 ]
+    '!' : { commit: ！ }
+    '@' : '@'
+    '#' : '#'
+    '%' : [ '%', ％, '°', '℃' ]
+    '$' : [ ￥, '$', '€', '£', '¥', '¢', '¤' ]
+    '^' : { commit: …… }
+    '&' : '&'
+    '*' : [ '*', ＊, ・, ·, ×, ※, ❂ ]
+    '(' : （
+    ')' : ）
+    '-' : '-'
+    '_' : ——
+    '+' : '+'
+    '=' : '='
+    '[' : [ 「, 【, 〔, ［ ]
+    ']' : [ 」, 】, 〕,  ］ ]
+    '{' : [ 『, 〖, ｛ ]
+    '}' : [ 』, 〗, ｝ ]
+
+key_binder:
+  bindings:
+    # Emacs 风格的快捷键
+    - { when: composing, accept: Control+p, send: Up }     # composing 时,Control+p 等同于 Up 键
+    - { when: composing, accept: Control+n, send: Down }
+    - { when: composing, accept: Control+b, send: Left }
+    - { when: composing, accept: Control+f, send: Right }
+    - { when: composing, accept: Control+a, send: Home }
+    - { when: composing, accept: Control+e, send: End }
+    - { when: composing, accept: Control+d, send: Delete }
+    - { when: composing, accept: Control+k, send: Shift+Delete } # 删除到行尾
+    - { when: composing, accept: Control+g, send: Escape }       # 退出编码
+    - { when: composing, accept: Alt+v, send: Page_Up }          # 翻页
+    - { when: composing, accept: Control+v, send: Page_Down }
+    # 按词移动光标
+    - { when: composing, accept: ISO_Left_Tab, send: Shift+Left } # ISO_Left_Tab 是 Shift+Tab
+    - { when: composing, accept: Shift+Tab, send: Shift+Left }
+    - { when: composing, accept: Tab, send: Shift+Right }
+    # 翻页
+    - { when: paging, accept: minus, send: Page_Up }             # 编码窗口翻页
+    - { when: has_menu, accept: equal, send: Page_Down }
+    - { when: paging, accept: comma, send: Page_Up }             # 候选窗口翻页
+    - { when: has_menu, accept: period, send: Page_Down }
+    - { when: predicting, accept: comma, send: comma }           # 在预编码模式下,不当作快捷键
+    - { when: predicting, accept: period, send: period }
+    # 切换状态
+    - { when: always, accept: Control+Shift+1, select: .next }   # 切换输入方案
+    - { when: always, accept: Control+Shift+2, toggle: ascii_mode } # 切换中/西文模式
+    - { when: always, accept: Control+Shift+3, toggle: full_shape } # 切换全角/半角
+    - { when: always, accept: Control+Shift+4, toggle: simplification } # 切换简体/繁体
+    - { when: always, accept: Control+Shift+5, toggle: extended_charset } # 切换扩展字符
+    - { when: always, accept: Shift+space, toggle: full_shape } # 另一种切换全角/半角的方式
+    - { when: always, accept: Control+period, toggle: ascii_punct } # 切换中/西文标点
+
+recognizer:
+  # 定义识别码的正则表达式规则
+  patterns:
+    email: "^[a-z][-_.0-9a-z]*@.*$"  # 匹配电子邮件地址
+    uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"  # 匹配大写字母开头的字符串
+    url: "^(www[.]|https?:|ftp:|mailto:).*$|^[a-z]+[.].+$"  # 匹配 URL 或域名
+
+ascii_composer:
+  # 定义切换到西文模式的快捷键
+  switch_key:
+    Caps_Lock: commit_code  # 按下 Caps Lock 会直接上屏
+    Control_L: noop  # 按下左 Control 键不做任何操作
+    Control_R: noop  # 按下右 Control 键不做任何操作
+    Shift_L: commit_code  # 按下左 Shift 键会直接上屏
+    Shift_R: inline_ascii  # 按下右 Shift 键会临时切换到西文模式
+  good_old_caps_lock: true  # 启用经典的 Caps Lock 开启西文模式的方式
