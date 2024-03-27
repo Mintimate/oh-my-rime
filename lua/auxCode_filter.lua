@@ -6,6 +6,10 @@
 
 local AuxFilter = {}
 
+local function alt_lua_punc( s )
+    return s:gsub( '([%.%+%-%*%?%[%]%^%$%(%)%%])', '%%%1' )
+end
+
 -- 日志模块
 -- local log = require 'log'
 -- log.outfile = "aux_code.log"
@@ -20,6 +24,9 @@ function AuxFilter.init(env)
 
     -- 設定預設觸發鍵為分號，並從配置中讀取自訂的觸發鍵
     env.trigger_key = config:get_string("axu_code/trigger_word") or ";"
+    -- 对内容进行替换
+    env.trigger_key = alt_lua_punc( env.trigger_key )
+
     -- 设定是否显示辅助码，默认为显示
     env.show_aux_notice = config:get_string("axu_code/show_aux_notice") or 'always'
 
