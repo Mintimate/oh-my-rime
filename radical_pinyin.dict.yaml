@@ -77,7 +77,7 @@
 
 ---
 name: radical_pinyin
-version: "2024.03.26"
+version: "2024.03.27"
 sort: original
 ...
 
@@ -1095,6 +1095,7 @@ sort: original
 𣬅	bi'bi'bi'bi
 𣬅	bi'bi
 𣫯	mu'mu
+𣦼	e'you
 𣦴	zou'zou'zou
 𣥠	zhi'zhi
 𣥚	yao'zhi
@@ -2067,6 +2068,8 @@ sort: original
 黴	chi'shan'yi'hei'pu
 黴	chi'shan'heng'hei'wen
 黴	chi'shan'heng'hei'pu
+黳	yi'shu'hei
+黳	yi'ji'you'hei
 黳	yi'hei
 黲	hei'shen
 黲	hei'san
@@ -2339,7 +2342,9 @@ sort: original
 鹨	liu'niao
 鹧	shu'niao
 鹦	ying'niao
+鹥	yi'shu'niao
 鹥	yi'niao
+鹥	yi'ji'you'niao
 鹤	hu'niao
 鹣	jian'niao
 鹢	yi'niao
@@ -2944,8 +2949,16 @@ sort: original
 鷗	gou'niao
 鷗	gou'diao
 鷗	gou'dao
+鷖	yi'shu'que
+鷖	yi'shu'niao
+鷖	yi'shu'diao
+鷖	yi'shu'dao
 鷖	yi'que
 鷖	yi'niao
+鷖	yi'ji'you'que
+鷖	yi'ji'you'niao
+鷖	yi'ji'you'diao
+鷖	yi'ji'you'dao
 鷖	yi'diao
 鷖	yi'dao
 鷕	wei'que
@@ -7123,6 +7136,8 @@ sort: original
 餑	shi'bei
 餐	e'you'shi
 餐	dai'you'shi
+餐	bu'xi'you'shi
+餐	bo'xi'you'shi
 餏	shi'yi
 餎	shi'ge
 餍	yan'shi
@@ -7718,6 +7733,8 @@ sort: original
 韱	ren'ren'ge'jiu
 韱	cong'ge'jiu
 韰	e'you'jiu
+韰	bu'xi'you'jiu
+韰	bo'xi'you'jiu
 韯	zai'jiu
 韯	tu'ge'jiu
 韯	shi'ge'jiu
@@ -10428,6 +10445,8 @@ sort: original
 醭	you'pu
 醬	jiang'you
 醫	yi'you
+醫	yi'shu'you
+醫	yi'ji'you'you
 醪	you'yu'zhen
 醪	you'yu'ren'shan
 醪	you'yu'ren'san
@@ -13012,6 +13031,8 @@ sort: original
 贂	bei'can
 贁	bei'bei'wen
 贁	bei'bei'pu
+贀	yi'shu'bei
+贀	yi'ji'you'bei
 贀	yi'bei
 賿	bei'yu'zhen
 賿	bei'yu'ren'shan
@@ -16102,7 +16123,11 @@ sort: original
 薓	cao'shui'zhou'you
 薓	cao'shui'shan'mi'jin'you
 薓	cao'shui'shan'bao'jin'you
+薒	cao'e'you'mi
+薒	cao'can'mi
 薒	cao'can
+薒	cao'bu'xi'you'mi
+薒	cao'bo'xi'you'mi
 薑	cao'yi'tian'yi'tian'yi
 薑	cao'yi'tian'yi'tian'heng
 薑	cao'yi'tian'heng'tian'yi
@@ -18890,6 +18915,8 @@ sort: original
 翴	yu'lian
 翴	yu'lan
 翳	yi'yu
+翳	yi'shu'yu
+翳	yi'ji'you'yu
 翲	piao'yu
 翱	gao'yu
 翰	shi'ri'shi'ren'yu
@@ -19819,7 +19846,11 @@ sort: original
 繅	si'chao
 繅	mi'chao
 繄	yi'si
+繄	yi'shu'si
+繄	yi'shu'mi
 繄	yi'mi
+繄	yi'ji'you'si
+繄	yi'ji'you'mi
 繃	si'beng
 繃	mi'beng
 繂	si'lv
@@ -20850,6 +20881,8 @@ sort: original
 粳	mi'geng
 粲	e'you'mi
 粲	dai'you'mi
+粲	bu'xi'you'mi
+粲	bo'xi'you'mi
 粱	shui'dao'ba'mi
 粰	mi'zhua'zi
 粰	mi'zhao'zi
@@ -22918,7 +22951,9 @@ sort: original
 瞗	mu'niao
 瞗	mu'diao
 瞗	mu'dao
+瞖	yi'shu'mu
 瞖	yi'mu
+瞖	yi'ji'you'mu
 瞕	mu'zhang
 瞔	mu'zhai
 瞔	mu'ze
@@ -24635,8 +24670,16 @@ sort: original
 璪	wang'kou'kou'kou'mu
 璩	yu'ju
 璩	wang'ju
+璨	yu'e'you'mi
+璨	yu'can'mi
 璨	yu'can
+璨	yu'bu'xi'you'mi
+璨	yu'bo'xi'you'mi
+璨	wang'e'you'mi
+璨	wang'can'mi
 璨	wang'can
+璨	wang'bu'xi'you'mi
+璨	wang'bo'xi'you'mi
 璧	pi'yu
 璦	yu'ai
 璦	wang'ai
@@ -24750,6 +24793,8 @@ sort: original
 璀	yu'cui
 璀	wang'cui
 瑿	yi'yu
+瑿	yi'shu'yu
+瑿	yi'ji'you'yu
 瑾	yu'nian'zhong'san
 瑾	yu'jin
 瑾	wang'nian'zhong'san
@@ -26015,7 +26060,11 @@ sort: original
 燨	huo'yang'wo
 燨	huo'xi
 燧	huo'sui
+燦	huo'e'you'mi
+燦	huo'can'mi
 燦	huo'can
+燦	huo'bu'xi'you'mi
+燦	huo'bo'xi'you'mi
 燥	huo'zao
 燥	huo'qiao
 燥	huo'pin'mu
@@ -26879,7 +26928,11 @@ sort: original
 澲	shui'ye
 澱	shui'dian
 澰	shui'qian
+澯	shui'e'you'mi
+澯	shui'can'mi
 澯	shui'can
+澯	shui'bu'xi'you'mi
+澯	shui'bo'xi'you'mi
 澮	shui'kuo
 澮	shui'kuai
 澮	shui'hui
@@ -28311,6 +28364,8 @@ sort: original
 毊	keng'qiao
 毊	keng'jiao
 毉	yi'wu
+毉	yi'shu'wu
+毉	yi'ji'you'wu
 毈	luan'duan
 毇	jiu'mi'shu
 毇	jiu'mi'ji'you
@@ -28402,7 +28457,11 @@ sort: original
 殫	dai'dan
 殫	dai'chan
 殪	dai'yi
+殩	dai'e'you'mi
+殩	dai'can'mi
 殩	dai'can
+殩	dai'bu'xi'you'mi
+殩	dai'bo'xi'you'mi
 殨	dai'gui
 殧	dai'jiu
 殦	dai'que
@@ -28486,7 +28545,6 @@ sort: original
 歺	shu'na'xi
 歺	shu'heng'xi
 歺	shu'dian'xi
-歺	shu'dai
 歺	bu'xi
 歺	bo'xi
 歹	yi'xi
@@ -32083,6 +32141,7 @@ sort: original
 揽	cai'lan
 揼	shou'beng
 揼	cai'beng
+揻	shou'wei
 揺	shou'zhua'ji
 揺	shou'zhao'ji
 揺	cai'zhua'ji
@@ -32269,6 +32328,8 @@ sort: original
 掸	shou'dan
 掷	shou'zheng
 掷	cai'zheng
+掶	shou'geng
+掵	shou'ming
 掴	shou'guo
 掴	cai'guo
 掳	shou'lu
@@ -32509,6 +32570,7 @@ sort: original
 捦	cai'jin
 捥	shou'wan
 捥	cai'wan
+捤	shou'wei
 捣	shou'dao
 捣	cai'dao
 换	shou'huan
@@ -32667,6 +32729,7 @@ sort: original
 挩	cai'dui
 挨	shou'yi
 挨	cai'yi
+挧	shou'yu
 挦	shou'xun
 挥	shou'jun
 挥	cai'jun
@@ -32691,6 +32754,7 @@ sort: original
 挛	yi'shou
 挚	zhi'shou
 挙	xing'shou
+挘	shou'lie
 挗	shou'yi
 挗	cai'yi
 挖	shou'ya
@@ -32954,6 +33018,7 @@ sort: original
 报	cai'er'you
 护	shou'hu
 护	cai'hu
+抣	shou'yun
 抢	shou'cang
 抢	cai'cang
 抡	shou'lun
@@ -33138,6 +33203,7 @@ sort: original
 托	cai'pie'qi
 扗	shou'tu
 扗	cai'tu
+扖	shou'ru
 払	shou'si
 払	cai'si
 扔	shou'nai
@@ -36577,6 +36643,7 @@ sort: original
 嫞	nv'yong
 嫝	nv'kang
 嫜	nv'zhang
+嫛	yi'shu'nv
 嫛	yi'nv
 嫛	yi'ji'you'nv
 嫚	nv'man
@@ -42849,6 +42916,22 @@ sort: original
 㤉	xin'ya
 㤈	xin'xin
 㤇	xin'yao
+㣓	can'shan
+㣓	can'san
+㣒	ceng'shan
+㣒	ceng'san
+㣑	yong'shan
+㣑	yong'san
+㣐	quan'shan
+㣐	quan'san
+㣏	da'zao'shan
+㣏	da'zao'san
+㣎	bai'xiao'shan
+㣎	bai'xiao'san
+㣍	tai'shan
+㣍	tai'san
+㣌	zhan'shan
+㣌	zhan'san
 㢻	gong'wei
 㢺	gong'qie
 㢸	gong'gong'wen
@@ -42956,6 +43039,7 @@ sort: original
 㝉	bao'heng
 㝇	xiang'xiang
 㝅	bei'shu
+㝅	bei'ji'you
 㛹	nv'bian
 㛸	nv'zhu
 㛸	nv'shi'dou
