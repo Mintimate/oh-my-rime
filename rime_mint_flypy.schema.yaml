@@ -143,6 +143,7 @@ reduce_english_filter:
 chineseLunarCalendar_translator: lunar
 
 translator:
+  # enable_correction: true      # Rime自带的按键纠错，适用于手机26键 参考: https://github.com/rime/librime/pull/228
   # 字典文件
   dictionary: rime_mint          # 使用的字典文件
   prism: rime_mint_flypy     # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。

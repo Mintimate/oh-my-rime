@@ -143,6 +143,7 @@ reduce_english_filter:
 chineseLunarCalendar_translator: lunar
 
 translator:
+  # enable_correction: true      # Rime自带的按键纠错，适用于手机26键 参考: https://github.com/rime/librime/pull/228
   # 字典文件
   dictionary: rime_mint          # 使用的字典文件
   spelling_hints: 8              # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
