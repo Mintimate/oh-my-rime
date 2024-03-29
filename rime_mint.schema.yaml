@@ -188,8 +188,6 @@ speller:
     - derive/([aeiou])ng$/$1gn/        # dagn => dang
     - derive/([dtngkhrzcs])o(u|ng)$/$1o/  # zho => zhong|zhou
     - derive/ong$/on/                  # zhonguo => zhong guo
-    - abbrev/^([a-z]).+$/$1/ #简拼（首字母）
-    - abbrev/^([zcs]h).+$/$1/ #简拼（zh, ch, sh）
      ### 自动纠错
     # 有些规则对全拼简拼混输有副作用：如「x'ai 喜爱」被纠错为「xia 下」
     # zh、ch、sh

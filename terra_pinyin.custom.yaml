@@ -147,7 +147,7 @@ patch:
       - derive/ong$/on/                  # zhonguo => zhong guo
       - derive/ao$/oa/                   # hoa => hao
       - derive/([iu])a(o|ng?)$/a$1$2/    # tain => tian
-      - abbrev/^([a-z]).+$/$1/
+      - abbrev/^([a-z])[a-z]*$/$1/       # 简拼（首字母）
       - abbrev/^([zcs]h).+$/$1/
       - derive/^([nl])ve/$1ue/
       - derive/^([jqxy])u/$1v/
