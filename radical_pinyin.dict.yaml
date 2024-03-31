@@ -77,7 +77,7 @@
 
 ---
 name: radical_pinyin
-version: "2024.03.28"
+version: "2024.03.30"
 sort: original
 ...
 
@@ -2275,7 +2275,9 @@ sort: original
 鹥	yi'shu'niao
 鹥	yi'niao
 鹥	yi'ji'you'niao
+鹤	mi'zhui'niao
 鹤	hu'niao
+鹤	bao'zhui'niao
 鹣	jian'niao
 鹢	yi'niao
 鹡	ji'niao
@@ -3097,10 +3099,18 @@ sort: original
 鶵	bao'cao'bao'cao'niao
 鶵	bao'cao'bao'cao'diao
 鶵	bao'cao'bao'cao'dao
+鶴	mi'zhui'que
+鶴	mi'zhui'niao
+鶴	mi'zhui'diao
+鶴	mi'zhui'dao
 鶴	hu'que
 鶴	hu'niao
 鶴	hu'diao
 鶴	hu'dao
+鶴	bao'zhui'que
+鶴	bao'zhui'niao
+鶴	bao'zhui'diao
+鶴	bao'zhui'dao
 鶳	que'shi
 鶳	niao'shi
 鶳	diao'shi
@@ -5868,7 +5878,9 @@ sort: original
 髌	gu'bin
 髋	gu'kuan
 髊	gu'cha
+髉	gu'mi'zhui
 髉	gu'hu
+髉	gu'bao'zhui
 髈	gu'pang
 髇	gu'gao
 髆	gu'po
@@ -15435,7 +15447,9 @@ sort: original
 蒱	cao'bu
 蒰	cao'ban
 蒯	pan'dao
+蒮	cao'mi'zhui
 蒮	cao'hu
+蒮	cao'bao'zhui
 蒭	cao'zou
 蒭	cao'chu
 蒭	cao'bao'che'bao'che
@@ -19880,7 +19894,9 @@ sort: original
 篪	zhu'chang'hu
 篩	zhu'shi
 篨	zhu'chu
+篧	zhu'mi'zhui
 篧	zhu'hu
+篧	zhu'bao'zhui
 篦	zhu'xin'bi
 篥	zhu'li
 篤	zhu'ma
@@ -21169,7 +21185,9 @@ sort: original
 碽	shi'gong
 碼	shi'ma
 碻	shi'gao
+確	shi'mi'zhui
 確	shi'hu
+確	shi'bao'zhui
 碹	shi'xuan
 碸	shi'feng
 碶	shi'qi
@@ -24353,9 +24371,8 @@ sort: original
 爸	fu'ba
 爷	fu'er
 父	ba'yi
-爵	zhua'yu'zheng
-爵	zhao'yu'zheng'zheng
-爵	zhao'yu'zheng
+爵	zhua'si'gen'cun
+爵	zhao'si'gen'cun
 爴	guo'zhao
 爲	zhua'zhe'zhe'zhe'huo'pie
 爲	zhao'zhe'zhe'zhe'huo'pie
@@ -27619,7 +27636,9 @@ sort: original
 榹	mu'si
 榹	mu'chang'hu
 榸	mu'mai
+榷	mu'mi'zhui
 榷	mu'hu
+榷	mu'bao'zhui
 榶	mu'tang
 榵	mu'rong
 榵	mu'cao'er
@@ -30264,8 +30283,12 @@ sort: original
 搊	cai'bao'che'bao'cao
 搊	cai'bao'cao'bao'che
 搊	cai'bao'cao'bao'cao
+搉	shou'mi'zhui
 搉	shou'hu
+搉	shou'bao'zhui
+搉	cai'mi'zhui
 搉	cai'hu
+搉	cai'bao'zhui
 搈	shou'rong
 搈	cai'rong
 搇	shou'qin
@@ -34599,6 +34622,7 @@ sort: original
 媛	nv'yuan
 媚	nv'mei
 媙	nv'wei
+媘	nv'jie
 媗	nv'xuan
 媖	nv'ying
 媕	nv'yan
@@ -34735,6 +34759,7 @@ sort: original
 娶	qu'nv
 娵	nv'qu
 娴	nv'xian
+娳	nv'li
 娲	nv'kou'nei
 娲	nv'guo
 娱	nv'wu
@@ -34773,6 +34798,7 @@ sort: original
 娓	nv'wei
 娒	nv'mei
 娑	sha'nv
+娐	nv'fu
 娏	nv'mang
 娎	zhe'nv
 娍	nv'cheng
@@ -37802,12 +37828,15 @@ sort: original
 匊	bao'mi
 匉	bao'ping
 匈	bao'xiong
+匇	bao'xi
+匇	bao'wen
 匆	wu'na
 匆	wu'dian
 包	bao'si
 匄	bao'wang
 匃	bao'zhe'ren
 匃	bao'wang
+匂	bao'bi
 匀	bao'bing
 勿	bao'pie'pie
 勾	bao'si
@@ -38240,6 +38269,8 @@ sort: original
 凫	niao'ji
 凫	bao'na'shu'zhe'ji
 凫	bao'dian'shu'zhe'ji
+凪	ji'zhi
+凩	ji'mu
 凨	ji'yun
 凧	ji'jin
 処	wen'ji
@@ -38443,6 +38474,8 @@ sort: original
 内	jiong'ren
 冄	tong'er
 冄	jiong'er
+冃	tong'er
+冃	jiong'er
 冂	shu'yi
 冁	dan'zhan
 冀	bei'yi
@@ -38862,7 +38895,9 @@ sort: original
 傗	ren'chu
 傖	ren'chuang
 傖	ren'cang
+傕	ren'mi'zhui
 傕	ren'hu
+傕	ren'bao'zhui
 傔	ren'jian
 傓	ren'shan
 傒	ren'xi
