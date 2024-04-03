@@ -297,16 +297,16 @@ wubi98_mint:
   dictionary: wubi98_mint
   enable_user_dict: false
   enable_completion: true
-  prefix: "uuw"
-  suffix: "'"
+  prefix: "Uw"
+  suffix: " '"
   tips: 〔五笔〕
 
 stroke:
   tag: stroke
   dictionary: stroke
   enable_user_dict: false
-  prefix: 'uui'
-  suffix: "'"
+  prefix: 'Ui'
+  suffix: " '"
   tips: 〔笔画〕
   preedit_format:
     - xlit/hspnz/一丨丿丶乙/
@@ -316,10 +316,9 @@ radical_reverse_lookup:
   dictionary: radical_pinyin
   enable_completion: false
   enable_sentence: false
-  prefix: "uuu"
+  prefix: "Uu"
   suffix: " '"
   comment_format:
-    - erase/^.*$//
     - xform/([nljqxy])v/$1ü/
   tips: 〔拆字〕
 
@@ -354,8 +353,9 @@ recognizer:
   patterns:
     url: "^[a-z]+[.].+$"
     punct: "^/([0-9]0?|[a-z]+)$"
-    wubi98_mint: "uuw[a-z]*'?$"
-    stroke: "uui[a-z]*'?$"
-    radical_lookup: "uuu[a-z]*'?$"
+    wubi98_mint: "Uw[a-z]*'?$"
+    stroke: "Ui[a-z]*'?$"
+    radical_lookup: "Uu[a-z]*'?$"
     rmb: "^R[0-9]+[.]?[0-9]*"        # 响应 lua_translator@number_translator 脚本将自动获取第 2 个字符作为触发前缀
     gregorian_to_lunar: "^N[0-9]{1,8}"  # 响应 lua_translator@Chinese_lunar_calendar 公历转农历，输入 N20240115 得到「二〇二四年腊月初五」，脚本将自动获取第 2 个字符作为触发前缀
+    uppercase: ""  # 覆写默认的 uppercase 使其可以在输入大写后，输入数字

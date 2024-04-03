@@ -252,7 +252,7 @@ patch:
     dictionary: wubi98_mint
     enable_user_dict: false
     enable_completion: true
-    prefix: "uw"
+    prefix: "Uw"
     suffix: "'"
     tips: 〔五笔〕
     comment_format:
@@ -290,7 +290,7 @@ patch:
     tag: stroke
     dictionary: stroke
     enable_user_dict: false
-    prefix: 'ui'
+    prefix: 'Ui'
     suffix: "'"
     tips: 〔笔画〕
     preedit_format:
@@ -331,7 +331,7 @@ patch:
     tag: radical_lookup
     dictionary: radical_pinyin
     enable_completion: true
-    prefix: "uu"
+    prefix: "Uu"
     preedit_format:
       - xform/([nljqxy])v/$1ü/
     comment_format:
@@ -399,6 +399,7 @@ patch:
     patterns:
       url: "^[a-z]+[.].+$"
       punct: "^/([0-9]0?|[a-z]+)$"
-      wubi98_mint: "uw[a-z]*'?$"
-      stroke: "ui[a-z]*'?$"
-      radical_lookup: "uu[a-z]*'?$"
+      wubi98_mint: "Uw[a-z]*'?$"
+      stroke: "Ui[a-z]*'?$"
+      radical_lookup: "Uu[a-z]*'?$"
+      uppercase: ""  # 覆写默认的 uppercase 使其可以在输入大写后，输入数字
