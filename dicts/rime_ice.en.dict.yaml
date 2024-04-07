@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: rime_ice.en
-version: "2024-02-23"
+version: "2024-04-06"
 sort: by_weight
 ...
 # +_+
@@ -7925,6 +7925,7 @@ generates	generates
 generating	generating
 generation	generation
 generations	generations
+generative	generative
 generator	generator
 generators	generators
 generic	generic
@@ -9267,6 +9268,7 @@ immediately	immediately
 immense	immense
 immerse	immerse
 immersion	immersion
+immersive	immersive
 immigrant	immigrant
 immigrants	immigrants
 immigrate	immigrate
