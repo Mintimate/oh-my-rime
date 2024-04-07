@@ -5,7 +5,7 @@
 # 码表：[汉字拆字字典](https://github.com/mirtlecn/chaizi-re)
 
 # 特别注音部件（含有特殊字符，若显示为口或方块，即为显示不正确）
-# '一': [['heng2','yi1']], # 横
+# '一': [['heng2']], # 横
 # '丨': [['shu4']], # 竖
 # '丿': [['pie3']], # 撇
 # '乁': [['na4']], # 捺
@@ -67,6 +67,7 @@
 # '曰': [['yue1','ri4']],
 # '𠙽': [['kuai4']],
 # '𦉼': [['la4']],
+# '將': [['jiang1']],
 # '𭕘': [['mei2']],
 # '𣥚': [['zou3']],
 # '𤽄': [['quan2']],
@@ -74,10 +75,10 @@
 
 # Release tag
 # v1.0.3 -> 2024.03.20
-
+# v1.0.4 -> 2024.04.03
 ---
 name: radical_pinyin
-version: "2024.03.30"
+version: "2024.04.04"
 sort: original
 ...
 
@@ -1601,6 +1602,7 @@ sort: original
 𠙶	kan'le
 𠘻	fan'fan
 𠘬	ji'ji
+𠗦	bing'ma
 𠔻	xing'xing'xing'xing
 𠔻	xing'xing'xing'xin
 𠔻	xing'xing'xin'xing
@@ -4593,6 +4595,7 @@ sort: original
 鯁	yu'geng
 鯀	yu'xi
 鮿	yu'yi
+鮿	yu'er'gou
 鮾	yu'tuo
 鮽	yu'yu
 鮼	yu'shan'mi'you
@@ -9292,6 +9295,7 @@ sort: original
 銺	zhuang'jin
 銹	jin'xiu
 銸	jin'yi
+銸	jin'er'gou
 銷	jin'xiao
 銶	jin'qiu
 銵	jin'shen
@@ -10953,12 +10957,13 @@ sort: original
 辌	che'jing
 辋	che'wang
 辊	che'kun
-辉	che'jun
+辉	guang'jun
 辈	fei'che
 辇	fu'fu'che
 辆	che'liang
 辅	che'fu
 辄	che'yi
+辄	che'er'gou
 较	che'jiao
 辂	che'ge
 辁	che'quan
@@ -10984,6 +10989,7 @@ sort: original
 轲	che'ke
 轱	che'gu
 轰	che'you'you
+轰	che'shuang
 软	che'qian
 轮	che'lun
 轭	che'e
@@ -10991,7 +10997,7 @@ sort: original
 轫	che'ren
 轪	che'da
 轩	che'gan
-轨	che'jiu'gui
+轨	che'jiu
 轧	che'gou
 车	heng'zhe'shi
 轥	ju'lin
@@ -11305,7 +11311,9 @@ sort: original
 輓	ju'mian
 輓	che'mian
 輒	ju'yi
+輒	ju'er'gou
 輒	che'yi
+輒	che'er'gou
 輑	ju'jun
 輑	che'jun
 輐	ju'wan
@@ -11788,6 +11796,7 @@ sort: original
 踄	zu'bu
 踃	zu'xiao
 踂	zu'yi
+踂	zu'er'gou
 踁	zu'xing
 踁	zu'jing
 踀	zu'zu
@@ -14347,6 +14356,7 @@ sort: original
 螫	she'chong
 螪	chong'shang
 螨	chong'cao'liang
+螦	chong'su
 螥	chong'chuang
 螥	chong'cang
 螤	wen'yu
@@ -14400,6 +14410,7 @@ sort: original
 螄	chong'shi
 螃	chong'pang
 螂	chong'lang
+螁	chong'tui
 螀	jiang'chong
 蝿	chong'yue'dian
 蝿	chong'tian'dian
@@ -14494,6 +14505,7 @@ sort: original
 蝍	chong'ji
 蝌	chong'ke
 蝋	chong'shu
+蝊	chong'ding
 蝉	chong'dan
 蝈	chong'guo
 蝇	chong'wei'dian
@@ -14624,6 +14636,7 @@ sort: original
 蛲	chong'yao
 蛱	chong'jia
 蛰	zhi'chong
+蛯	chong'lao
 蛮	yi'chong
 蛭	chong'zhi
 蛬	gong'chong
@@ -14771,6 +14784,8 @@ sort: original
 虴	chong'tuo
 虴	chong'pie'qi
 虳	chong'shao
+虲	chong'bu
+虲	chong'bo
 虱	yi'pie'chong
 虱	yi'chong
 虰	chong'ding
@@ -17157,6 +17172,9 @@ sort: original
 脎	rou'sha
 脍	yue'hui
 脍	rou'hui
+脌	yue'nian
+脋	li'yue
+脋	dao'dao'dao'yue
 脊	yue'ren'er'er
 脊	rou'ren'er'er
 脉	yue'yong
@@ -17193,6 +17211,7 @@ sort: original
 脁	rou'zhao
 脀	cheng'yue
 脀	cheng'rou
+胿	yue'gui
 胾	zai'rou
 胾	tu'ge'rou
 胾	shi'ge'rou
@@ -17514,6 +17533,7 @@ sort: original
 聻	qian'er
 聻	jian'er
 聻	chan'er
+聺	er'cha
 聹	er'ning
 聸	er'zhan
 職	er'zhi
@@ -17544,6 +17564,9 @@ sort: original
 聦	er'cong
 聥	er'yu
 聤	er'ting
+聣	er'ni
+聣	er'er
+聢	er'ding
 聡	er'gong'xin
 聡	er'cong
 聠	er'bing
@@ -17570,6 +17593,7 @@ sort: original
 聖	er'kou'wang
 聕	er'gao
 联	er'guan
+聓	gong'er
 聒	er'she
 聑	er'er
 聐	er'ji
@@ -17588,6 +17612,7 @@ sort: original
 聄	er'ren'san
 聃	er'ran
 聂	er'you'you
+聁	er'fen
 聀	er'ge
 耿	er'huo
 耾	er'hong
@@ -17826,6 +17851,7 @@ sort: original
 羭	yang'yu
 羬	yang'xian
 羫	yang'kong
+羪	yang'liang
 義	yang'wo
 羨	yang'shui'qian
 羧	yang'si'ba'wen
@@ -18277,6 +18303,7 @@ sort: original
 纡	si'yu
 纠	si'zhe'shu
 纠	si'jiu
+纟	yao'heng
 纞	si'lian
 纞	mi'lian
 纝	si'lei
@@ -19477,6 +19504,18 @@ sort: original
 系	pie'mi
 糺	si'gou
 糺	mi'gou
+糹	yao'pie'na'na
+糹	yao'pie'na'dian
+糹	yao'pie'dian'na
+糹	yao'pie'dian'dian
+糹	yao'na'na'na
+糹	yao'na'na'dian
+糹	yao'na'dian'na
+糹	yao'na'dian'dian
+糹	yao'dian'na'na
+糹	yao'dian'na'dian
+糹	yao'dian'dian'na
+糹	yao'dian'dian'dian
 糸	yao'xiao
 糷	mi'lan
 糶	tiao'yu'zhui
@@ -19976,6 +20015,7 @@ sort: original
 箰	xun'zi
 箰	sun'zi
 箯	zhu'bian
+箮	zhu'xuan
 箭	zhu'qian
 箬	zhu'ruo
 箫	zhu'su
@@ -20050,8 +20090,10 @@ sort: original
 筿	zhu'tiao
 签	zhu'ren'heng'xiao'heng
 签	zhu'qian
+筽	zhu'wu
 筼	zhu'yuan
 筻	zhu'geng
+筺	zhu'qu
 筹	zhu'shou
 筸	zhu'han
 筷	zhu'kuai
@@ -20122,10 +20164,12 @@ sort: original
 筀	zhu'gui
 笿	zhu'ge
 笾	zhu'bian
+笽	zhu'min
 笼	zhu'long
 笻	zhu'qiong
 笺	zhu'jian
 笺	zhu'ge'heng
+笹	zhu'shi
 笸	zhu'po
 笷	zhu'mao
 笶	zhu'shi
@@ -20193,6 +20237,7 @@ sort: original
 笅	zhu'yao
 笄	zhu'kai
 笃	zhu'ma
+笂	zhu'wan
 笁	zhu'gong
 笀	zhu'wang
 竿	zhu'gan
@@ -22953,6 +22998,7 @@ sort: original
 甇	huo'huo'bao'wa
 甆	zi'wa
 甆	ci'wa
+甅	wa'li
 甄	yin'wa
 甄	xi'tu'wa
 甃	qiu'wa
@@ -22965,15 +23011,20 @@ sort: original
 瓽	xiao'mi'kou'wa
 瓽	xiao'bao'kou'wa
 瓽	shang'wa
+瓼	wa'li
 瓻	xi'wa
 瓺	chang'wa
 瓹	yuan'wa
 瓹	kou'yue'wa
+瓸	wa'bai
 瓷	ci'wa
 瓶	bing'wa
 瓵	tai'wa
 瓴	ling'wa
 瓳	gu'wa
+瓲	wa'tun
+瓱	wa'mao
+瓰	wa'fen
 瓯	qu'wa
 瓮	gong'wa
 瓭	you'wa
@@ -22983,7 +23034,9 @@ sort: original
 瓬	fang'wa
 瓫	fen'wa
 瓪	wa'fan
+瓩	wa'qian
 瓨	gong'wa
+瓧	wa'shi
 瓦	heng'gou'yi'na
 瓦	heng'gou'yi'dian
 瓥	gua'shi'chong'chong
@@ -23130,6 +23183,7 @@ sort: original
 璶	wang'jin
 璵	yu'yu
 璵	wang'yu
+璴	wang'chu
 璳	yu'zhu'bei
 璳	wang'zhu'bei
 璲	yu'sui
@@ -23187,6 +23241,7 @@ sort: original
 璦	wang'ai
 璥	yu'jing
 璥	wang'jing
+璤	wang'hui
 璣	yu'qi
 璣	yu'ji
 璣	wang'qi
@@ -23480,6 +23535,7 @@ sort: original
 琽	wang'zhe
 琼	yu'jing
 琼	wang'jing
+琻	wang'jin
 琺	yu'fa
 琺	wang'fa
 琹	yu'yu'mu
@@ -23575,6 +23631,9 @@ sort: original
 琔	wang'ding
 琓	yu'wan
 琓	wang'wan
+琒	wang'pang
+琒	wang'feng
+琑	wang'xiao
 琐	yu'xiao'bei
 琐	wang'xiao'bei
 琏	yu'lian
@@ -24989,9 +25048,11 @@ sort: original
 炡	huo'zheng
 炠	huo'jia
 炟	huo'dan
+炞	huo'bian
 炝	huo'cang
 炜	huo'wei
 炛	huo'hua
+炚	ri'huo
 炙	yue'huo
 炙	rou'huo
 炘	huo'jin
@@ -25040,6 +25101,7 @@ sort: original
 灶	huo'tu
 灵	shan'huo
 灴	huo'gong
+灳	bao'huo
 灲	huo'dao
 灱	huo'dao
 灰	heng'pie'huo
@@ -27320,11 +27382,17 @@ sort: original
 橽	mu'ta
 橽	mu'da
 橼	mu'yuan
+橻	mu'chou'chou'chou
 橺	mu'jian
 橹	mu'lu
+橸	mu'jing
 橷	mu'dou
 橷	mu'bei'bai'ji
 橶	mu'ji
+橵	mu'san
+橴	mu'zi
+橳	mu'sheng
+橲	mu'xi
 橱	mu'chu
 橰	mu'gao
 橯	mu'liao
@@ -27456,7 +27524,10 @@ sort: original
 樳	mu'xin
 樲	mu'er
 樱	mu'ying
+樰	mu'xue
 樯	mu'se
+樮	mu'xi'huo
+樭	mu'ji
 樬	mu'cong
 樫	mu'jian
 横	mu'huang
@@ -27584,6 +27655,7 @@ sort: original
 槤	mu'lan
 槣	mu'ji
 槢	mu'xi
+槡	mu'sang
 槠	mu'zhu
 槟	mu'bin
 槜	mu'juan
@@ -29104,6 +29176,7 @@ sort: original
 斑	yu'wen'wang
 斑	wang'wen'wang
 斐	fei'wen
+斏	wen'liang
 斎	wen'pie'er'xiao'shu
 斍	wen'xian
 斍	wen'jian
@@ -31523,6 +31596,7 @@ sort: original
 懵	xin'cao'si'bao'mu
 懴	xin'xian
 懴	xin'qian
+懳	xin'hui
 懲	zheng'xin
 懱	xin'mie
 懰	xin'liu
@@ -31732,6 +31806,8 @@ sort: original
 憀	xin'yu'ren'san
 憀	xin'lu
 憀	xin'liu
+慿	ping'xin
+慿	feng'xin
 慾	yu'xin
 慽	xin'qi
 慼	qi'xin
@@ -31803,6 +31879,7 @@ sort: original
 慓	xin'piao
 慒	xin'cao
 慑	xin'nie
+慐	gong'xin
 慏	xin'ming
 慎	xin'zhen
 慍	xin'qiu'min
@@ -31872,6 +31949,7 @@ sort: original
 愨	shi'bao'heng'ji'you'xin
 愧	xin'gui
 愦	xin'gui
+愥	xin'ying
 愤	xin'shi'cao'bei
 愤	xin'ben
 愣	xin'wang'fang
@@ -32116,6 +32194,7 @@ sort: original
 恹	xin'yan
 恹	xin'chang'quan
 恸	xin'dong
+恷	xiu'xin
 恶	ya'xin
 恵	heng'you'xin
 恴	yi'ri'xin
@@ -32155,6 +32234,7 @@ sort: original
 恙	yang'xin
 恘	xin'xiu
 恗	xin'kua
+恖	xin'xin
 恕	nv'kou'xin
 恔	xin'jiao
 恓	xin'xi
@@ -32182,8 +32262,11 @@ sort: original
 恁	ren'xin
 恀	xin'duo
 怿	xin'you'er'shu
+怾	xin'zhi
+怽	xin'wei
 怼	dui'xin
 总	ba'kou'xin
+怺	xin'yong
 怹	ta'xin
 怸	shu'xin
 怷	zhu'xin
@@ -32493,6 +32576,8 @@ sort: original
 徖	chi'zong
 徕	ren'lai
 徕	chi'lai
+徔	ren'zhi
+徔	chi'zhi
 従	ren'ba'xia'ren
 従	ren'ba'heng'shu'na'ren
 従	ren'ba'heng'shu'heng'ren
@@ -32670,6 +32755,7 @@ sort: original
 彔	ji'shui
 当	xiao'shan
 归	shu'pie'shan
+彐	zhe'heng'heng
 彏	gong'jue
 彎	si'yan'si'gong
 彎	si'yan'gong
@@ -32692,6 +32778,7 @@ sort: original
 彈	gong'chan
 彇	gong'su
 彆	bi'gong
+彅	gong'jian
 彄	gong'qu
 彄	gong'qiu
 彄	gong'ou
@@ -32699,6 +32786,7 @@ sort: original
 彄	gong'gou
 彃	gong'bi
 彂	ye'shen
+彁	gong'ke'ke
 彀	shi'mi'heng'gong'shu
 彀	shi'mi'heng'gong'ji'you
 彀	shi'bao'heng'gong'shu
@@ -37357,6 +37445,7 @@ sort: original
 叓	zhi'kou
 叓	shi'kou'you
 叒	you'you'you
+叒	you'shuang
 发	pie'you'na
 发	pie'you'dian
 发	pie'heng'pie'you'na
@@ -39799,8 +39888,8 @@ sort: original
 丹	tong'dian'heng
 丹	jiong'na'heng
 丹	jiong'dian'heng
-丸	na'jiu
-丸	dian'jiu
+丸	jiu'na
+丸	jiu'dian
 丷	na'pie
 丷	na'na
 丷	na'dian
