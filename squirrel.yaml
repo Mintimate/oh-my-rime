@@ -31,10 +31,10 @@ style:
 
   # 预设选项。如果皮肤没写，则使用这些属性；如果皮肤写了，使用皮肤的。
   
-  # 自 0.36(Squirrel 0.15) 起已弃用
-  # horizontal: false
+  # 自 0.36(Squirrel 0.15) 起已弃用。覆写为横向，建议使用 candidate_list_layout
+  horizontal: false
   # # stacked | linear | tabled 候选项排列方向(如果希望水平，设置linear)
-  candidate_list_layout: stacked  # stacked | linear | tabled
+  # candidate_list_layout: stacked  # stacked | linear | tabled
   
   text_orientation: horizontal  # horizontal | vertical
   # 内嵌预编辑
