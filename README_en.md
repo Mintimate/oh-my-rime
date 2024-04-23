@@ -12,9 +12,10 @@ If you encounter difficulties with downloading, use the mirrored repository push
 
 ## Oh-my-rime guide
 
-rime configuration tutorial:
+Rime configuration tutorial:
 - [Cross-platform open source input method Rime customization guide, create a powerful personalized input method] (https://www.mintimate.cn/2023/03/18/rimeQuickInit)
-- [Bilibili Video: https://www.bilibili.com/video/BV12M411T7gf](https://www.bilibili.com/video/BV12M411T7gf)
+- [Bilibili Video(macOS/Windows/Linux): https://www.bilibili.com/video/BV12M411T7gf](https://www.bilibili.com/video/BV12M411T7gf)
+- [Bilibili Video(iOS/Android): https://www.bilibili.com/video/BV1Mr42137Ns](https://www.bilibili.com/video/BV1Mr42137Ns)
 - [Youtube Video: https://www.youtube.com/watch?v=yc4AivDDpMM](https://www.youtube.com/watch?v=yc4AivDDpMM)
 
 You have a QQ account, you can join the group chat(No Ads!): 703260572

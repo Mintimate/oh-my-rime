@@ -12,9 +12,10 @@
 
 ## Oh-my-rime指南
 
-rime配置教程：
+Rime 配置教程：
 - [跨平臺的開源輸入法Rime定製指南，打造強大的個性化輸入法](https://www.mintimate.cn/2023/03/18/rimeQuickInit)
-- [Bilibili視頻: https://www.bilibili.com/video/BV12M411T7gf](https://www.bilibili.com/video/BV12M411T7gf)
+- [Bilibili視頻(macOS/Windows/Linux): https://www.bilibili.com/video/BV12M411T7gf](https://www.bilibili.com/video/BV12M411T7gf)
+- [Bilibili視頻(iOS/Android)]: https://www.bilibili.com/video/BV1Mr42137Ns](https://www.bilibili.com/video/BV1Mr42137Ns)
 - [Youtube視頻: https://www.youtube.com/watch?v=yc4AivDDpMM](https://www.youtube.com/watch?v=yc4AivDDpMM)
 
 如果你有QQ帳號，可以加入群聊（禁止廣告）: 703260572
