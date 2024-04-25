@@ -7,11 +7,11 @@ config_version: "24.03.24"
 # 以下内容，实际会由default.custom.yaml和方案配置所覆写
 
 schema_list:
-  - {schema: rime_mint}           # 薄荷拼音
-  - {schema: double_pinyin_flypy} # 小鹤双拼
-  - {schema: rime_mint_flypy}     # 薄荷拼音-小鹤混输方案
-  - {schema: terra_pinyin}        # 地球拼音-薄荷定制
-  - {schema: wubi98_mint}         # 五笔98-薄荷简版
+  - schema: rime_mint            # 薄荷拼音
+  - schema: double_pinyin_flypy  # 小鹤双拼
+  - schema: rime_mint_flypy      # 薄荷拼音-小鹤混输方案
+  - schema: terra_pinyin         # 地球拼音-薄荷定制
+  - schema: wubi98_mint          # 五笔98-薄荷简版
 
 switcher:
   # 切换方案时显示的标题
@@ -28,7 +28,7 @@ switcher:
     - ascii_punct # 保留西文模式
     - transcription     # 保留汉字简繁体选项
     - emoji_suggestion  # Emoji
-  # 折叠选项以节省空间
+  # 折叠选项以节省空间，多方案时建议折叠 true ，一个方案建议展开 false
   fold_options: true
   # 对选项进行缩写
   abbreviate_options: true
