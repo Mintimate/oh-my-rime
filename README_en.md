@@ -62,7 +62,11 @@ The default address of the local rime log file is as follows:
 - Linux
   -iBus:`/tmp`
 
-  If you need to use rime in trime with android, you can use oh-my-rime's theme by: [Mint_light_blue and Mint_dark_blue](https://www.mintimate.cc/zh/demo/diffAppearance.html#android%E5%A4%96%E8%A7%82)
+If you need to use rime in trime with android, you can use oh-my-rime's theme by: [Mint_light_blue and Mint_dark_blue](https://www.mintimate.cc/zh/demo/diffAppearance.html#android%E5%A4%96%E8%A7%82)
+
+With the Hamster input method, how is the 9-grid input used?
+
+Inside the Oh-my-rime, the 9-grid layout has been adapted from Hamster's [9-grid arrangement](https://github.com/imfuxiao/Hamster/) and the [rime-ice's 9-grid](https://github.com/iDvel/rime-ice/blob/main/t9.schema.yaml). To utilize the 9-grid input, both the 9-grid scheme (set under Input Scheme settings) and the 9-grid layout (键盘设置 - 键盘布局 - 中文 9 键) need to be enabled simultaneously.
 
 ## Configuration file description
 
