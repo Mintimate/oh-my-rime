@@ -7,7 +7,11 @@
 local AuxFilter = {}
 
 local function alt_lua_punc( s )
-    return s:gsub( '([%.%+%-%*%?%[%]%^%$%(%)%%])', '%%%1' )
+    if s then
+        return s:gsub( '([%.%+%-%*%?%[%]%^%$%(%)%%])', '%%%1' )
+    else
+        return ''
+    end
 end
 
 -- 日志模块
@@ -201,7 +205,7 @@ function AuxFilter.func(input, env)
     local auxStr = ''
     if string.find(inputCode, env.trigger_key_string) then
         -- 字符串中包含輔助碼分隔符
-        local trigger_pattern = env.trigger_key_string:gsub("%W", "%%%1") -- 處理特殊字符
+        local trigger_pattern =  env.trigger_key_string
         local localSplit = inputCode:match(trigger_pattern .. "([^,]+)")
         if localSplit then
             auxStr = string.sub(localSplit, 1, 2)
