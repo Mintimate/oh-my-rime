@@ -142,12 +142,20 @@ reduce_english_filter:
 # 中国农历配置
 chineseLunarCalendar_translator: lunar
 
+# Lua 配置：为 corrector 格式化 comment，占位符为 {comment}
+# 默认 "{comment}" 输入 hun dun 时会在「馄饨」旁边生成 hún tun 的 comment
+# 例如左右加个括号 "({comment})" 就会变成 (hún tun)
+corrector: "{comment}"
+
 translator:
   # enable_correction: true      # Rime自带的按键纠错，适用于手机26键 参考: https://github.com/rime/librime/pull/228
   # 字典文件
   dictionary: rime_mint          # 使用的字典文件
   spelling_hints: 8              # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
   always_show_comments: true     # corrector.lua ：Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供 corrector.lua 做判断用。
+  comment_format:               # 标记拼音注释，供 corrector.lua 做判断用
+    - xform/^/［/
+    - xform/$/］/
   preedit_format:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/
