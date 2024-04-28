@@ -14,6 +14,10 @@ config_version: "2024-03-02"
 app_options:
   firefox.exe:
     inline_preedit: true # 行内显示预编辑区：规避 <https://github.com/rime/weasel/issues/946>
+  iexplore.exe:
+    inline_preedit: true # 兼容 IE
+  browser.exe:
+    inline_preedit: true # 兼容 Yandex
 
 # [global settings]
 show_notifications: true                   # 是否显示状态变化的通知：true；false；option_list（方案内的开头 option）
