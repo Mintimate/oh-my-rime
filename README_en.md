@@ -32,6 +32,10 @@ The input method scheme included:
 
 You can switch between input methods by pressing "Ctrl" + "~" after installation. (Mint Pinyin is activated by default).
 
+Currently, Mint comes with two sets of skins: blue series and green series. You can freely choose to activate within the personalized configuration of Squirrel and Weasel , or you can use your own color matching (it is recommended to use custom to overwrite the mint configuration) (https://www.minitimate.cc/zh/guide /configurationOverride.html#%E4%BF%AE%E6%94%B9%E8%96%84%E8%8D%B7%E8%BE%93%E5%85%A5%E6%B3%95%E7% 9A%84%E9%85%8D%E7%BD%AE)).
+
+![Display effect](https://www.minitimate.cc/image/demo/themeOfOhMyRime.webp)
+
 ### Install
 
 The following tutorials are available for Linux, macOS and Windows (Xp~)

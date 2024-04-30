@@ -32,6 +32,11 @@ Rime 配置教程：
 
 妳可以在安裝後，使用『Ctrl』+『~』進行切換。（預設激活的是『薄荷拼音-全拼輸入』）。
 
+目前薄荷內自帶兩套皮膚： 水鴨繫列、青澀繫列。大家可以在鼠須管和小狼毫的個性化配置內自由選擇激活，也可以使用自己的配色（推薦[使用 custom 對薄荷配置進行覆寫](https://www.mintimate.cc/zh/guide/configurationOverride.html#%E4%BF%AE%E6%94%B9%E8%96%84%E8%8D%B7%E8%BE%93%E5%85%A5%E6%B3%95%E7%9A%84%E9%85%8D%E7%BD%AE)）。
+
+![顯示效果](https://www.mintimate.cc/image/demo/themeOfOhMyRime.webp)
+
+
 ### 安裝
 
 以下教程，適用於Linux、macOS和Windows（Xp~）

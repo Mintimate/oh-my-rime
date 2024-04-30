@@ -14,6 +14,10 @@ config_version: "2024-03-02"
 app_options:
   firefox.exe:
     inline_preedit: true # 行内显示预编辑区：规避 <https://github.com/rime/weasel/issues/946>
+  iexplore.exe:
+    inline_preedit: true # 兼容 IE
+  browser.exe:
+    inline_preedit: true # 兼容 Yandex
 
 # [global settings]
 show_notifications: true                   # 是否显示状态变化的通知：true；false；option_list（方案内的开头 option）
@@ -187,7 +191,49 @@ preset_color_schemes:
     # 第一候选项编号颜色
     hilited_label_color: 0xffffff
     # 注解文字高亮
-    hilited_comment_text_color: 0xffffff 
+    hilited_comment_text_color: 0xffffff
+    
+    
+  mint_light_green:
+    name: "碧皓青／Mint Light Green"
+    author: Mintimate <"Mintimate's Blog">
+    translucency: true                      # 磨砂： false | true
+    mutual_exclusive: false                 # 色不叠加： false | true
+    candidate_list_layout: stacked
+    text_orientation: horizontal
+    color_space: srgb
+    back_color: 0xEFEFEF                    # 底色
+    candidate_text_color: 0x323232          # 文字颜色
+    comment_text_color: 0x878787            # 注颜色
+    label_color: 0x323232                   # 序号颜色
+    hilited_candidate_back_color: 0x7BAE4F  # 选中底色
+    hilited_candidate_text_color: 0xFFFFFF  # 选中文字颜色
+    hilited_comment_text_color: 0xDFF0EE    # 选中注颜色
+    hilited_candidate_label_color: 0xEFEFEF # 选中序号颜色
+    text_color: 0x7BAE4F                    # 拼音颜色 （inline_preedit: false）
+    hilited_text_color: 0xed9564            # 选中拼音颜色 （inline_preedit: false）
+
+    
+  mint_dark_green:
+    name: "碧月青／Mint Dark Green"
+    author: Mintimate <"Mintimate's Blog">
+    translucency: true                      # 磨砂： false | true
+    mutual_exclusive: false                 # 色不叠加： false | true
+    candidate_list_layout: stacked
+    text_orientation: horizontal
+    color_space: srgb
+    back_color: 0x323232                    # 底色
+    candidate_text_color: 0xE8E8E8          # 文字颜色
+    comment_text_color: 0xBEBEBE            # 注颜色
+    label_color: 0xB0B0B0                   # 序号颜色
+    hilited_candidate_back_color: 0x83C81C  # 选中底色
+    hilited_candidate_text_color: 0xEFEFEF  # 选中文字颜色
+    hilited_comment_text_color: 0xF4FAF8    # 选中注颜色
+    hilited_candidate_label_color: 0xEFEFEF # 选中序号颜色
+    text_color: 0x83C81C                    # 拼音颜色 （inline_preedit: false）
+    hilited_text_color: 0xed9564            # 选中拼音颜色 （inline_preedit: false）
+
+
 
   # 以下为 weasel 自带的配色方案
   # source: <https://github.com/rime/weasel/blob/master/output/data/weasel.yaml>
