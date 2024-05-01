@@ -28,9 +28,10 @@ The input method scheme included:
 - Double Pinyin Fly( 小鹤双拼) - Mint Customized: Based on Double Pinyin Fly, with added customizations. Supports input of phonetic and shape (shape code) components.
 - Mint Pinyin (薄荷拼音) - Xiaohe Mixed Input: Supports Double Pinyin Fly input while in full spelling input mode.
 - Terra Pinyin - Mint Customized: Based on Terra Pinyin, with added customizations and extended massive word library.
-- Wubi 98 - Mint Simplified: A simplified version based on Wubi 98, looking forward to your contributions.
+- Wubi 98 (五笔98) - XiaoZhu: A simplified version based on Wubi 98, looking forward to your contributions.
+- Wubi 86 (五笔86) - JiDian: A simplified version based on Wubi 86, looking forward to your contributions.
 
-You can switch between input methods by pressing "Ctrl" + "~" after installation. (Mint Pinyin is activated by default).
+You can switch between input methods by pressing `"Ctrl" + "~"` after installation. (Mint Pinyin is activated by default).
 
 Currently, Mint comes with two sets of skins: blue series and green series. You can freely choose to activate within the personalized configuration of Squirrel and Weasel , or you can use your own color matching (it is recommended to use custom to overwrite the mint configuration) (https://www.minitimate.cc/zh/guide /configurationOverride.html#%E4%BF%AE%E6%94%B9%E8%96%84%E8%8D%B7%E8%BE%93%E5%85%A5%E6%B3%95%E7% 9A%84%E9%85%8D%E7%BD%AE)).
 

@@ -12,6 +12,7 @@ schema_list:
   - schema: rime_mint_flypy      # 薄荷拼音-小鹤混输方案
   - schema: terra_pinyin         # 地球拼音-薄荷定制
   - schema: wubi98_mint          # 五笔98-五笔小筑
+  - schema: wubi86_jidian        # 五笔86-极点86
   - schema: t9                   # 仓九宫格-全拼输入
 
 switcher:

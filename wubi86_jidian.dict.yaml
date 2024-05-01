@@ -1,0 +1,9 @@
+---
+name: wubi86_jidian              # 注意name和文件名一致
+version: "2024.05.01"
+sort: by_weight
+# 此处为 输入法所用到的词库，既补充拓展词库的地方
+import_tables:
+  - dicts/wubi86_core            # wubi98核心基础词典
+  - dicts/other_kaomoji          # 颜文字表情（按`VV`呼出)
+...
