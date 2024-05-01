@@ -3,17 +3,31 @@
 
 schema:
   schema_id: wubi98_mint
-  name: "五笔九八-薄荷定制"
-  version: "6.0"
+  name: "五笔98-五笔小筑"
+  version: "24.05.01"
   author:
     - 發明人 王永民
+    - 修改者 yanhuacuo <https://github.com/yanhuacuo/98wubi>
     - 修改者 Mintimate
   description: |
-    基于五笔98版进行简化
-    碼表源自 yanhuacuo
-    敲 upy 进入拼音反查
+    - 基于五笔98版进行配置
+    - 加入了五笔小筑的部分词库
+    - 部分码表源自 yanhuacuo
   dependencies:
-    - melt_eng # 英文方案
+    - melt_eng  # 英文方案
+    - rime_mint # 薄荷拼音
+
+key_binder:
+  import_preset: default
+  bindings:
+    - {accept: "Control+Shift+E", toggle: emoji_suggestion, when: always}
+    - {accept: "Control+Shift+1", toggle: transcription, when: has_menu}
+    - {accept: "Control+Shift+exclam", toggle: transcription, when: has_menu}
+    - {accept: bracketleft, send: Page_Up, when: paging}      # 使用`[`进行向上翻页（第一页时候无效）
+    - {accept: bracketright, send: Page_Down, when: has_menu} # 使用`]`进行向下翻页
+    - {accept: minus, send: Page_Up, when: paging}     # 使用`-`进行向上翻页（第一页时候无效）
+    - {accept: equal, send: Page_Down, when: has_menu} # 使用`=`进行向下翻页
+
 
 switches:
   - name: ascii_mode
@@ -28,16 +42,9 @@ switches:
     reset: 0
     states: [ 简体 , 繁体 ]
   - name: ascii_punct
-    states: [ 。，, ．， ]
+    states: [ '。，' , '．,' ]
     
 engine:
-  filters:
-    - simplifier
-    - simplifier@emoji_suggestion
-    - lua_filter@*autocap_filter           # 英文自动大写
-    - simplifier@transcription_cc
-    - lua_filter@*reduce_english_filter    # 降低部分英语单词在候选项的位置
-    - uniquifier
   processors:
     - ascii_composer
     - recognizer
@@ -59,40 +66,87 @@ engine:
     - script_translator
     - lua_translator@*mint_date_time_translator          # 时间、日期、星期、月份
     - lua_translator@*number_translator                  # 金额大小写
+    - lua_translator@*chineseLunarCalendar_translator    # 农历
     - table_translator@melt_eng                          # 英文输入（作为子翻译器，优先级需要比原生的低）
+    - reverse_lookup_translator@rime_mint                # 反查薄荷拼音
     # - echo_translator                                   # ※ 没有候选词，返回字符
-    - reverse_lookup_translator@wubi86_jidian
-    - reverse_lookup_translator@chaizi
-    - reverse_lookup_translator@stroke
     # - reverse_lookup_translator                         # 反查模块，多标签情况下去除
-    
-speller:
-  auto_select: true
-  auto_clear: max_length
-  delimiter: "`"
-  max_code_length: 10 # 最大输入字符（为了兼容英文输入）
-  
-  
+  filters:
+    - lua_filter@*autocap_filter           # 英文自动大写
+    - simplifier@emoji_suggestion          # Emoji
+    - lua_filter@*autocap_filter           # 英文自动大写
+    - simplifier@transcription_cc          # 简繁切换
+    - lua_filter@*reduce_english_filter    # 降低部分英语单词在候选项的位置
+    - uniquifier
+
+
 # 简繁切换
 transcription_cc:
   option_name: transcription
   opencc_config: s2t.json             # s2t.json | s2hk.json | s2tw.json | s2twp.json
   tips: none                          # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
   excluded_types: [ reverse_lookup ]  # 不转换反查（两分拼字）的内容
+
+# Emoji模块
+emoji_suggestion:
+  opencc_config: emoji.json
+  option_name: emoji_suggestion
+  tips: all
+  inherit_comment: false
+
+
+# Lua 配置: 降低部分英语单词在候选项的位置。
+# 详细介绍 https://dvel.me/posts/make-rime-en-better/#短单词置顶的问题
+# 正常情况： 输入 rug 得到 「1.rug 2.如果 …… 」
+# 降低之后： 输入 rug 得到 「1.如果 2.rug …… 」
+# 几种模式：
+# all     使用 reduce_english_filter 自带的降频词库（降低所有 3~4 位长度、前 2~3 位是完整拼音、最后一位是声母的单词）
+# none    不降低任何单词，相当于没有启用这个 Lua
+# custom  自定义，只降低 words 里的
+# 『留白』 不设置该选项，使用 reduce_english_filter 内全局设置内容
+# （匹配的是编码，不是单词）
+reduce_english_filter:
+  mode: all  # all | none | custom | 『留白』
+  idx: 2        # 降低到第 idx 个位置
+  # 自定义的单词列表，示例列表没有降低部分常用单词，如 and cat mail Mac but bad shit ……
+  words: [aid, ann,
+  bail, bait, bam, band, bans, bat, bay, bend, bent, benz, bib, bid, bien, biz, boc, bop, bos, bud, buf,
+  cab, cad, cain, cam, cans, cap, cas, cef, chad, chan, chap, chef, cher, chew, chic, chin, chip, chit, coup, cum, cunt, cur,
+  dab, dag, dal, dam, dent, dew, dial, diet, dim, din, dip, dis, dit, doug, dub, dug, dunn,
+  fab, fax, fob, fog, foul, fur,
+  gag, gail, gain, gal, gam, gaol, ged, gel, ger, guam, gus, gut,
+  hail, ham, hank, hans, hat, hay, heil, heir, hem, hep, hud, hum, hung, hunk, hut,
+  jim, jug,
+  kat,
+  lab, lad, lag, laid, lam, laos, lap, lat, lax, lay, led, leg, lex, liam, lib, lid, lied, lien, lies, linn, lip, lit, liz, lob, lug, lund, lung, lux,
+  mag, maid, mann, mar, mat, med, mel, mend, mens, ment, mil, mins, mint, mob, moc, mop, mos, mot, mud, mug, mum, nail,
+  nap, nat, nay, neil, nib, nip, noun, nous, nun, nut,
+  pac, paid, pail, pain, pair, pak, pal, pam, pans, pant, pap, par, pat, paw, pax, pens, pic, pier, pies, pins, pint, pit, pix, pod, pop, pos, pot, pour, pow, pub,
+  rand, rant, rent, rep, res, ret, rex, rib, rid, rig, rim, rub, rug, rum, runc, runs,
+  sac, sail, sal, sam, sans, sap, saw, sax, sew, sham, shaw, shin, sig, sin, sip, sis, suit, sung, suns, sup, sur, sus,
+  tad, tail, taj, tar, tax, tec, ted, tel, ter, tex, tic, tied, tier, ties, tim, tin, tit, tour, tout, tum,
+  wag, wand, womens, wap, wax, weir, won,
+  yan, yen]
+
+
+# 中国农历配置
+chineseLunarCalendar_translator: lunar
+
   
 translator:
-  dictionary: wubi98_mint
-  db_class: tabledb
-  initial_quality: 100000
-  enable_charset_filter: false
-  enable_sentence: false
-  enable_encoder: false
-  encode_commit_history: false
-  max_phrase_length: 4
-  enable_completion: false
-  enable_user_dict: false
-  disable_user_dict_for_patterns:
-    - "^z.*$"
+  dictionary: wubi98_mint           # 使用wubi98_mint词典
+  db_class: tabledb                 # 使用tabledb数据库
+  initial_quality: 1.2              # 初始质量为1.2
+  enable_charset_filter: false      # 禁用字符集过滤器
+  enable_sentence: false            # 禁用句子模式
+  enable_encoder: false             # 禁用编码器
+  encode_commit_history: false      # 禁用编码历史记录
+  max_phrase_length: 4              # 最大短语长度为4
+  enable_completion: false          # 禁用自动完成
+  enable_user_dict: false           # 禁用用户词典
+  disable_user_dict_for_patterns:   # 对于以下模式禁用用户词典
+    - "^z.*$"                       # 以字母"z"开头的任意字符串
+
 
 melt_eng:
   dictionary: melt_eng           # 英文词典
@@ -100,31 +154,34 @@ melt_eng:
   enable_completion: false       # 关闭自动提示
   initial_quality: 0.8
 
-recognizer:
-  import_preset: default
-  patterns:
-    url: "^[a-z]+[.].+$"
-    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
-    punct: "^/([0-9]0?|[A-Za-z]+)$"
-    uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
-    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
-  
-history:
-  input: z
-  size: 1
-  initial_quality: 1
-  
+# 拼写设定
+speller:
+  # 如果不想让什么标点直接上屏，可以加在 alphabet，或者编辑标点符号为两个及以上的映射
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
+  # 为了兼容 英文混输，取消自动上屏
+  # max_code_length: 4                    # 四码上屏
+  # auto_select: true                     # 四码唯一时，自动上屏
+  # auto_clear: max_length                # 空码时自动清空
+  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割字符。
+  delimiter: " `"
 
-key_binder:
-  import_preset: default
-  bindings:
-    - {accept: "Control+Shift+E", toggle: emoji_suggestion, when: always}
-    - {accept: "Control+Shift+1", toggle: transcription, when: has_menu}
-    - {accept: "Control+Shift+exclam", toggle: transcription, when: has_menu}
-    - {accept: bracketleft, send: Page_Up, when: paging}      # 使用`[`进行向上翻页（第一页时候无效）
-    - {accept: bracketright, send: Page_Down, when: has_menu} # 使用`]`进行向下翻页
-    - {accept: minus, send: Page_Up, when: paging}     # 使用`-`进行向上翻页（第一页时候无效）
-    - {accept: equal, send: Page_Down, when: has_menu} # 使用`=`进行向下翻页
+rime_mint:
+  tag: rime_mint
+  dictionary: rime_mint
+  enable_user_dict: false
+  enable_completion: true
+  prefix: "Up"
+  tips: 〔拼音〕
+
+# 反查设置
+reverse_lookup:
+  tags: [rime_mint]
+  overwrite_comment: true
+
+# 输入的编码同时进行拼音反查，实现五笔与拼音的混输
+# abc_segmentor:
+#  extra_tags:
+#    - rime_mint
 
 punctuator:
   import_preset: symbols
@@ -146,6 +203,15 @@ punctuator:
       "$": ["¥", "$", "€", "£", "¢", "¤"]
       "<": ["《", "〈", "«", "<"]
       ">": ["》", "〉", "»", ">"]
-  
-menu:
-  page_size: 9  
+
+# 反查映射
+recognizer:
+  import_preset: default
+  patterns:
+    url: "^[a-z]+[.].+$"
+    punct: "^/([0-9]0?|[a-z]+)$"
+    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
+    rime_mint: "^Up[a-z]*'?$"
+    rmb: "^R[0-9]+[.]?[0-9]*"        # 响应 lua_translator@number_translator 脚本将自动获取第 2 个字符作为触发前缀
+    gregorian_to_lunar: "^N[0-9]{1,8}"  # 响应 lua_translator@Chinese_lunar_calendar 公历转农历，输入 N20240115 得到「二〇二四年腊月初五」，脚本将自动获取第 2 个字符作为触发前缀
+    uppercase: ""
