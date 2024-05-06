@@ -159,6 +159,8 @@ preset_color_schemes:
     # 第一候选项
     hilited_candidate_text_color: 0xefefef
     # 第一候选项编号颜色
+    hilited_candidate_label_color: 0xcac9c8
+    # 第一候选项编号颜色
     hilited_label_color: 0xcac9c8
     # 注解文字高亮
     hilited_comment_text_color: 0xefefef 
@@ -189,6 +191,8 @@ preset_color_schemes:
     # 第一候选项
     hilited_candidate_text_color: 0xefefef
     # 第一候选项编号颜色
+    hilited_candidate_label_color: 0xffffff
+    # 第一候选项编号颜色
     hilited_label_color: 0xffffff
     # 注解文字高亮
     hilited_comment_text_color: 0xffffff
@@ -210,6 +214,7 @@ preset_color_schemes:
     hilited_candidate_text_color: 0xFFFFFF  # 选中文字颜色
     hilited_comment_text_color: 0xDFF0EE    # 选中注颜色
     hilited_candidate_label_color: 0xEFEFEF # 选中序号颜色
+    hilited_label_color: 0xEFEFEF           # 选中序号颜色
     text_color: 0x7BAE4F                    # 拼音颜色 （inline_preedit: false）
     hilited_text_color: 0xed9564            # 选中拼音颜色 （inline_preedit: false）
 
@@ -230,6 +235,7 @@ preset_color_schemes:
     hilited_candidate_text_color: 0xEFEFEF  # 选中文字颜色
     hilited_comment_text_color: 0xF4FAF8    # 选中注颜色
     hilited_candidate_label_color: 0xEFEFEF # 选中序号颜色
+    hilited_label_color: 0xEFEFEF           # 选中序号颜色
     text_color: 0x83C81C                    # 拼音颜色 （inline_preedit: false）
     hilited_text_color: 0xed9564            # 选中拼音颜色 （inline_preedit: false）
 
