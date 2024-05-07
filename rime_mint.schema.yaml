@@ -194,8 +194,13 @@ speller:
     - derive/([aeiou])ng$/$1gn/        # dagn => dang
     - derive/([dtngkhrzcs])o(u|ng)$/$1o/  # zho => zhong|zhou
     - derive/ong$/on/                  # zhonguo => zhong guo
-    - abbrev/^([a-z])[a-z]*$/$1/       # 简拼（首字母）
-    - abbrev/^([zcs]h).+$/$1/          # 简拼（zh, ch, sh）
+    - derive/un$/ong/                  # yuntong = yongtong
+    # - abbrev/^([a-z])[a-z]*$/$1/       # 简拼（首字母）
+    # - abbrev/^([zcs]h).+$/$1/          # 简拼（zh, ch, sh）
+    - derive/^([a-z]).+$/$1/         # 通过正则表达式提取每个拼音的首字母
+    - derive/^([zcs]h).+$/$1/        # 特别处理 zh, ch, sh 的首字母简写
+    - abbrev/^([a-z]).+$/$1/         # 允许使用首字母作为缩写
+    - abbrev/^([a-z]{2,}).+$/$1/     # 允许使用前两个字母作为缩写
      ### 自动纠错
     # 有些规则对全拼简拼混输有副作用：如「x'ai 喜爱」被纠错为「xia 下」
     # zh、ch、sh
