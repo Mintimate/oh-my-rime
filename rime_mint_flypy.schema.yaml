@@ -44,6 +44,7 @@ switches:
     states: [ 简体 , 繁体 ]
   - name: ascii_punct
     states: [ 。，, ．， ]
+    reset: 0
 
 engine:
   processors:
