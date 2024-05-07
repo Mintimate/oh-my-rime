@@ -14,6 +14,12 @@ schema_list:
   - schema: wubi98_mint          # 五笔98-五笔小筑
   - schema: wubi86_jidian        # 五笔86-极点86
   - schema: t9                   # 仓九宫格-全拼输入
+  # 以下方案薄荷进行了适配，但是没有激活
+  # - schema: double_pinyin_abc    # 智能ABC双拼
+  # - schema: double_pinyin_mspy   # 微软双拼
+  # - schema: double_pinyin_sogou  # 搜狗双拼
+  # - schema: double_pinyin_ziguang # 紫光双拼
+  # - schema: double_pinyin         # 自然码双拼
 
 switcher:
   # 切换方案时显示的标题
