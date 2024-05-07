@@ -42,7 +42,8 @@ switches:
     reset: 0
     states: [ 简体 , 繁体 ]
   - name: ascii_punct
-    states: [ '。，' , '．,' ]
+    states: [ "。，", "．，" ]
+    reset: 0
     
 engine:
   processors:
