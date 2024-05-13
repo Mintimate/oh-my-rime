@@ -1,6 +1,9 @@
 # macOS日志文件
 .DS_Store
 
+# Windows folder settings
+desktop.ini
+
 # 用户配置文件
 user.yaml
 installation.yaml
@@ -8,3 +11,14 @@ installation.yaml
 # 部署生成的文件
 build
 *.userdb
+
+# Rime CLI
+rime_api_console*
+rime_console*
+rime_deployer*
+rime_dict_manager*
+rime_patch*
+rime_table_decompiler*
+
+# Rime custom yaml
+*.custom.yaml
