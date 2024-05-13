@@ -1,3 +1,29 @@
-# 设置横向展示
+# ibus-rime configuration
+# https://github.com/rime/ibus-rime/blob/master/ibus_rime.yaml
+
+config_version: '1.10'
+
 style:
+  # candidate list orientation (false|true).
   horizontal: true
+
+  # embed preedit text in the input field (false|true).
+  inline_preedit: true
+
+  # `preedit_style` specifies what to display as inline preedit text.
+  # display inline the input under conversion.
+  preedit_style: composition
+  # preview the converted text.
+  # preedit_style: preview
+
+  # `cursor_type` specifies where the inline cursor is located.
+  # inline cursor is at the insertion point.
+  cursor_type: insert
+  # inline cursor is at the beginning of text under conversion.
+  # cursor_type: select
+
+  # built-in color schemes for highlighting the portion of inline preedit text
+  # that needs focus. (null|aqua|azure|ink|luna)
+  # by default highlighting color is not used.
+  color_scheme: ~
+  # color_scheme: aqua
