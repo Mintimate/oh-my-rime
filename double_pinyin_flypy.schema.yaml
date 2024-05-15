@@ -86,6 +86,7 @@ engine:
     - reverse_lookup_translator@radical_reverse_lookup
     - reverse_lookup_translator@wubi98_mint
     - reverse_lookup_translator@stroke
+    - lua_translator@*force_gc                           # 暴力GC，尝试解决小狼毫长期使用的卡顿
   filters:
     - lua_filter@*corrector_filter            # 错音错字提示
     - lua_filter@*autocap_filter              # 英文自动大写

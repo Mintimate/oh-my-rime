@@ -69,6 +69,7 @@ engine:
     - table_translator@melt_eng                          # 英文输入（作为子翻译器，优先级需要比原生的低）
     - reverse_lookup_translator@rime_mint                # 反查薄荷拼音
     - table_translator
+    - lua_translator@*force_gc                           # 暴力GC，尝试解决小狼毫长期使用的卡顿
   filters:
     - lua_filter@*autocap_filter              # 英文自动大写
     - simplifier@emoji_suggestion             # Emoji
