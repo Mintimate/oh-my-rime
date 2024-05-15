@@ -72,6 +72,7 @@ engine:
     - reverse_lookup_translator@rime_mint                # 反查薄荷拼音
     # - echo_translator                                   # ※ 没有候选词，返回字符
     # - reverse_lookup_translator                         # 反查模块，多标签情况下去除
+    - lua_translator@*force_gc                           # 暴力GC，尝试解决小狼毫长期使用的卡顿
   filters:
     - lua_filter@*autocap_filter           # 英文自动大写
     - simplifier@emoji_suggestion          # Emoji
