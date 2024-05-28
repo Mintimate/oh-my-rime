@@ -11,8 +11,10 @@ name: rime_ice.others
 version: "2023-11-29"
 sort: by_weight
 ...
-##### 容错词
-# 「阿房宫」的注音争议比较大
+空落落	kong luo luo
+空落落	kong lao lao
+空落落的	kong luo luo de
+空落落的	kong lao lao de
 阿房宫	e pang gong
 阿房宫	a pang gong
 阿房宫	e fang gong
@@ -21,13 +23,10 @@ sort: by_weight
 阿房宫赋	a pang gong fu
 阿房宫赋	e fang gong fu
 阿房宫赋	a fang gong fu
-# 「伯伯」方言
 伯伯	bo bo
 伯伯	bai bai
-# 「斜」的古音
 远上寒山石径斜	yuan shang han shan shi jing xie
 远上寒山石径斜	yuan shang han shan shi jing xia
-# 「骑」目前统读 qi
 坐骑	zuo qi
 坐骑	zuo ji
 铁骑	tie qi
@@ -42,7 +41,6 @@ sort: by_weight
 走单骑	zou dan ji
 千里走单骑	qian li zou dan qi
 千里走单骑	qian li zou dan ji
-# 「街」的粤语和东北话读音及常见的两种写法
 仆街	pu jie
 仆街	pu gai
 扑街	pu jie
@@ -53,16 +51,30 @@ sort: by_weight
 仆街仔	pu gai zai
 街溜子	jie liu zi
 街溜子	gai liu zi
-
-
-##### 错音错字提示。与 corrector.lua 配合，上面的是正确的，下面是错误的
-### 错音
+郭明錤	guo ming ji
+郭明錤	guo ming qi
+李昌镐	li chang hao
+曹世镐	cao shi hao
+张镐哲	zhang gao zhe
+姜成镐	jiang cheng hao
+姜镐童	jiang hao tong
+张镐濂	zhang hao lian
+李敏镐	li min hao
+李陈镐	li chen hao
+赵亮镐	zhao liang hao
+郑俊镐	zheng jun hao
 馄饨	hun tun
 馄饨	hun dun
 主角	zhu jue
 主角	zhu jiao
 角色	jue se
 角色	jiao se
+比萨	bi sa
+比萨	pi sa
+比萨饼	bi sa bing
+比萨饼	pi sa bing
+吃比萨	chi bi sa
+吃比萨	chi pi sa
 说服	shuo fu
 说服	shui fu
 道行	dao heng
@@ -163,7 +175,46 @@ sort: by_weight
 脖颈儿	bo jing er
 结扎	jie za
 结扎	jie zha
-### 错字
+海参崴	hai shen wai
+海参崴	hai shen wei
+厚朴	hou po
+厚朴	hou pu
+大宛马	da yuan ma
+大宛马	da wan ma
+龇牙	zi ya
+龇牙	ci ya
+龇着牙	zi zhe ya
+龇着牙	ci zhe ya
+龇牙咧嘴	zi ya lie zui
+龇牙咧嘴	ci ya lie zui
+头皮屑	tou pi xie
+头皮屑	tou pi xue
+六安	lu an
+六安	liu an
+六安县	lu an xian
+六安县	liu an xian
+六安市	lu an shi
+六安市	liu an shi
+六合区	lu he qu
+六合区	liu he qu
+安徽六安	an hui lu an
+安徽六安	an hui liu an
+安徽六安市	an hui lu an shi
+安徽六安市	an hui liu an shi
+安徽省六安市	an hui sheng lu an shi
+安徽省六安市	an hui sheng liu an shi
+南京六合	nan jing lu he
+南京六合	nan jing liu he
+南京六合区	nan jing lu he qu
+南京六合区	nan jing liu he qu
+南京市六合区	nan jing shi lu he qu
+南京市六合区	nan jing shi liu he qu
+偌大	ruo da
+偌大	nuo da
+饮鸩止渴	yin zhen zhi ke
+饮鸩止渴	yin jiu zhi ke
+饮鸩解渴	yin zhen jie ke
+饮鸩解渴	yin jiu jie ke
 曾经	ceng jing
 曾今	ceng jin
 按捺	an na
@@ -179,197 +230,368 @@ sort: by_weight
 血脉喷张	xue mai pen zhang
 契诃夫	qi he fu
 契科夫	qi ke fu
-龇牙	zi ya
-龇牙	ci ya
-龇着牙	zi zhe ya
-龇着牙	ci zhe ya
-龇牙咧嘴	zi ya lie zui
-龇牙咧嘴	ci ya lie zui
 凑合	cou he
 凑活	cou huo
-
-
-##### 叠字
-# 数据来源：https://zh.wikipedia.org/wiki/%E4%B8%89%E5%8F%A0%E5%AD%97 https://zh.wikipedia.org/wiki/%E5%9B%9B%E5%8F%A0%E5%AD%97
-# 三叠字
-三个生
-三个秦
-三个若
+巨惠	ju hui
+钜惠	ju hui
+摩羯座	mo jie zuo
+魔蝎座	mo xie zuo
+两个火	liang ge huo
+两个土	liang ge tu
+两个一	liang ge yi
+两个二	liang ge er
+两个山	liang ge shan
+两个口	liang ge kou
+两个田	liang ge tian
+两个九	liang ge jiu
+两个人	liang ge ren
+两个飞	liang ge fei
+两个戈	liang ge ge
+两个厶	liang ge si
+两个厶	liang ge mou
+两个又	liang ge you
+两个香	liang ge xiang
+两个面	liang ge mian
+两个兀	liang ge wu
+两个女	liang ge nv
+两个𡥦	liang ge ni
+两个臣	liang ge chen
+两个巾	liang ge jin
+两个左	liang ge zuo
+两个母	liang ge mu
+两个来	liang ge lai
+两个凡	liang ge fan
+两个夕	liang ge xi
+两个彐	liang ge ji
+两个𢎘	liang ge han
+两个魚	liang ge yu
+两个明	liang ge ming
+两个朿	liang ge ci
+两个乂	liang ge yi
+两个曰	liang ge yue
+两个尸	liang ge shi
+两个户	liang ge hu
+两个大	liang ge da
+两个八	liang ge ba
+两个而	liang ge er
+两个羊	liang ge yang
+两个吉	liang ge ji
+两个马	liang ge ma
+两个卅	liang ge sa
+两个巛	liang ge chuan
+两个止	liang ge zhi
+两个比	liang ge bi
+两个言	liang ge yan
+两个申	liang ge shen
+两个牛	liang ge niu
+两个余	liang ge yu
+两个束	liang ge shu
+两个罒	liang ge mu
+两个㐅	liang ge wu
+两个金	liang ge jin
+两个木	liang ge mu
+两个水	liang ge shui
+两个火	liang ge huo
+两个風	liang ge feng
+两个石	liang ge shi
+两个口	liang ge kou
+两个日	liang ge ri
+两个月	liang ge yue
+两个目	liang ge mu
+两个白	liang ge bai
+两个百	liang ge bai
+两个耳	liang ge er
+两个山	liang ge shan
+两个屮	liang ge che
+两个屮	liang ge cao
+两个廿	liang ge nian
+两个卄	liang ge nian
+两个虫	liang ge chong
+两个虎	liang ge hu
+两个龍	liang ge long
+两个馬	liang ge ma
+两个犬	liang ge quan
+两个人	liang ge ren
+两个入	liang ge ru
+两个习	liang ge xi
+两个卪	liang ge jie
+两个㔾	liang ge jie
+两个几	liang ge ji
+两个乙	liang ge yi
+两个大	liang ge da
+两个夫	liang ge fu
+两个禾	liang ge he
+两个干	liang ge gan
+两个井	liang ge jing
+两个斤	liang ge jin
+两个片	liang ge pian
+两个牙	liang ge ya
+两个炎	liang ge yan
+两个弓	liang ge gong
+两个永	liang ge yong
+两个亦	liang ge yi
+两个手	liang ge shou
+两个毛	liang ge mao
+两个王	liang ge wang
+两个男	liang ge nan
+两个女	liang ge nv
+两个又	liang ge you
+两个支	liang ge zhi
+两个隻	liang ge zhi
+两个古	liang ge gu
+两个吉	liang ge ji
+两个舌	liang ge she
+两个言	liang ge yan
+两个户	liang ge hu
+两个启	liang ge qi
+两个來	liang ge lai
+两个桼	liang ge qi
+两个旡	liang ge ji
+两个夕	liang ge xi
+两个歹	liang ge dai
+两个匕	liang ge bi
+两个幺	liang ge yao
+两个玄	liang ge xuan
+两个心	liang ge xin
+两个力	liang ge li
+两个欠	liang ge qian
+两个子	liang ge zi
+两个予	liang ge yu
+两个享	liang ge xiang
+两个立	liang ge li
+两个音	liang ge yin
+两个竟	liang ge jing
+两个竞	liang ge jing
+两个兄	liang ge xiong
+两个見	liang ge jian
+两个貝	liang ge bei
+两个辛	liang ge xin
+两个瓜	liang ge gua
+两个呆	liang ge dai
+两个果	liang ge guo
+两个鸟	liang ge niao
+两个巢	liang ge chao
+两个禺	liang ge yu
+两个巿	liang ge fu
+两个句	liang ge ju
+两个奇	liang ge qi
+两个真	liang ge zhen
+两个尹	liang ge yin
+两个昔	liang ge xi
+两个易	liang ge yi
+两个臣	liang ge chen
+两个面	liang ge mian
+两个先	liang ge xian
+两个老	liang ge lao
+两个示	liang ge shi
+两个至	liang ge zhi
+两个生	liang ge sheng
+两个車	liang ge che
+两个車	liang ge ju
+两个足	liang ge zu
+两个區	liang ge qu
+两个香	liang ge xiang
+两个隹	liang ge zhui
+两个牟	liang ge mou
+两个豕	liang ge shi
+两个𠂢	liang ge pai
+两个畐	liang ge fu
+两个㣇	liang ge yi
+两个邑	liang ge yi
+两个堯	liang ge yao
+两个秉	liang ge bing
+两个倉	liang ge cang
+两个東	liang ge dong
+两个善	liang ge shan
+两个僉	liang ge qian
+两个齒	liang ge chi
+两个喜	liang ge xi
+两个走	liang ge zou
+两个止	liang ge zhi
+两个昌	liang ge chang
+两个串	liang ge chuan
+两个米	liang ge mi
+两个束	liang ge shu
+两个隶	liang ge li
+两个不	liang ge bu
+两个龙	liang ge long
+两个乞	liang ge qi
+两个夋	liang ge qun
+两个天	liang ge tian
+三个生	san ge sheng
+三个秦	san ge qin
+三个若	san ge ruo
 三个雲	san ge yun
-三个人
-三个刀
-三个十
-三个力
-三个原
+三个人	san ge ren
+三个刀	san ge dao
+三个十	san ge shi
+三个力	san ge li
+三个原	san ge yuan
 三个厶	san ge si
 三个厶	san ge mou
-三个又
-三个口
-三个七
-三个吉
-三个土
-三个士
-三个女
-三个子
-三个小
-三个心
-三个手
-三个日
-三个木
-三个止
-三个毛
-三个水
-三个泉
-三个火
-三个牛
-三个犬
-三个田
-三个白
-三个目
-三个直
-三个石
-三个羊
-三个耳
-三个舌
+三个又	san ge you
+三个口	san ge kou
+三个七	san ge qi
+三个吉	san ge ji
+三个土	san ge tu
+三个士	san ge shi
+三个女	san ge nv
+三个子	san ge zi
+三个小	san ge xiao
+三个心	san ge xin
+三个手	san ge shou
+三个日	san ge ri
+三个木	san ge mu
+三个止	san ge zhi
+三个毛	san ge mao
+三个水	san ge shui
+三个泉	san ge quan
+三个火	san ge huo
+三个牛	san ge niu
+三个犬	san ge quan
+三个田	san ge tian
+三个白	san ge bai
+三个目	san ge mu
+三个直	san ge zhi
+三个石	san ge shi
+三个羊	san ge yang
+三个耳	san ge er
+三个舌	san ge she
 三个屮	san ge che
 三个屮	san ge cao
-三个虫
-三个言
-三个贝
+三个虫	san ge chong
+三个言	san ge yan
+三个贝	san ge bei
 三个車	san ge che
-三个金
+三个金	san ge jin
 三个隹	san ge zhui
-三个雷
+三个雷	san ge lei
 三个風	san ge feng
 三个飛	san ge fei
-三个香
-三个马
+三个香	san ge xiang
+三个马	san ge ma
 三个魚	san ge yu
-三个鹿
+三个鹿	san ge lu
 三个龍	san ge long
-三个个
+三个个	san ge ge
 三个丶	san ge zhu
 三个丶	san ge dian
-三个了
-三个介
-三个企
-三个舍
+三个了	san ge le
+三个介	san ge jie
+三个企	san ge qi
+三个舍	san ge she
 三个圥	san ge lu
-三个光
-三个兔
-三个全
+三个光	san ge guang
+三个兔	san ge tu
+三个全	san ge quan
 三个𠙽	san ge kuai
 三个𠧪	san ge tiao
 三个𠧪	san ge you
 三个㔾	san ge jie
 三个厡	san ge yuan
-三个可
-三个因
-三个夏
-三个大
-三个天
-三个太
+三个可	san ge ke
+三个因	san ge yin
+三个夏	san ge xia
+三个大	san ge da
+三个天	san ge tian
+三个太	san ge tai
 三个𦉼	san ge ku
-三个宝
-三个宜
-三个客
-三个寒
-三个少
-三个山
-三个市
-三个文
-三个斗
+三个宝	san ge bao
+三个宜	san ge yi
+三个客	san ge ke
+三个寒	san ge han
+三个少	san ge shao
+三个山	san ge shan
+三个市	san ge shi
+三个文	san ge wen
+三个斗	san ge dou
 三个朿	san ge ci
-三个束
-三个林
-三个果
-三个欠
+三个束	san ge shu
+三个林	san ge lin
+三个果	san ge guo
+三个欠	san ge qian
 三个𣥚	san ge zou
-三个爪
-三个妥
-三个用
-三个甲
-三个百
-三个盖
+三个爪	san ge zhao
+三个妥	san ge tuo
+三个用	san ge yong
+三个甲	san ge jia
+三个百	san ge bai
+三个盖	san ge gai
 三个県	san ge xian
-三个空
+三个空	san ge kong
 三个亇	san ge ge
-三个竹
+三个竹	san ge zhu
 三个罒	san ge mu
 三个羗	san ge qiang
-三个老
-三个月
-三个至
+三个老	san ge lao
+三个月	san ge yue
+三个至	san ge zhi
 三个興	san ge xing
-三个足
+三个足	san ge zu
 三个㖖	san ge nie
 三个門	san ge men
-三个面
+三个面	san ge mian
 三个頁	san ge ye
 三个鳥	san ge niao
-三个男
-三个立
-三个九
-三个也
-三个加
+三个男	san ge nan
+三个立	san ge li
+三个九	san ge jiu
+三个也	san ge ye
+三个加	san ge jia
 三个動	san ge dong
-三个千
-三个方
-三个朔
-三个玉
-三个申
+三个千	san ge qian
+三个方	san ge fang
+三个朔	san ge shuo
+三个玉	san ge yu
+三个申	san ge shen
 三个𡿨	san ge quan
-三个去
-三个弓
+三个去	san ge qu
+三个弓	san ge gong
 三个䖝	san ge chong
 三个丿	san ge pie
-三个户
-三个瓜
-三个鸟
-三个米
-# 四叠字
+三个户	san ge hu
+三个瓜	san ge gua
+三个鸟	san ge niao
+三个米	san ge mi
 四个乂	si ge yi
-四个人
+四个人	si ge ren
 四个厶	si ge si
 四个厶	si ge mou
-四个又
-四个匕
-四个工
-四个口
-四个天
-四个小
+四个又	si ge you
+四个匕	si ge bi
+四个工	si ge gong
+四个口	si ge kou
+四个天	si ge tian
+四个小	si ge xiao
 四个屮	si ge che
 四个屮	si ge cao
-四个火
-四个牛
+四个火	si ge huo
+四个牛	si ge niu
 四个魚	si ge yu
-四个月
-四个日
-四个林
-四个水
-四个石
-四个田
-四个甲
-四个且
-四个囚
-四个困
-四个竹
-四个老
+四个月	si ge yue
+四个日	si ge ri
+四个林	si ge lin
+四个水	si ge shui
+四个石	si ge shi
+四个田	si ge tian
+四个甲	si ge jia
+四个且	si ge qie
+四个囚	si ge qiu
+四个困	si ge kun
+四个竹	si ge zhu
+四个老	si ge lao
 四个朿	si ge ci
-四个先
-四个金
-四个泉
-四个言
+四个先	si ge xian
+四个金	si ge jin
+四个泉	si ge quan
+四个言	si ge yan
 四个門	si ge men
-四个果
-四个春
+四个果	si ge guo
+四个春	si ge chun
 四个車	si ge che
 四个風	si ge feng
-四个雷
+四个雷	si ge lei
 四个雲	si ge yun
 四个興	si ge xing
 四个龍	si ge long
-四个土
-# 其他。。。
-男女男
-女男女
+四个土	si ge tu

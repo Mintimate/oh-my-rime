@@ -34,18 +34,12 @@
 # 需要注音的字词设定在 others/script/rime/需要注音.txt
 ---
 name: rime_ice.8105
-version: "2024-05-02"
+version: "2024-05-21"
 sort: by_weight
 ...
-### 按需启用
-# 「这、那」的口语读音
-# 这	zhei	17648808
-# 那	nei	9929703
 
 
-### 扩展，不在《通用规范汉字表》的字:
 𤭢	cei	1000
-𤭢了	cei le	1000
 𰻝	biang	1
 嬢	niang	1
 薙	ti	1
@@ -53,39 +47,15 @@ sort: by_weight
 卻	que	1
 濛	meng	1
 诶	ei	1
+牠	ta	1
 凃	tu	1
 咲	xiao	1
 螓	qin	1
 珮	pei	0
 睆	huan	1
 挼	rua	1
-# 注释掉的这几行已经加入到下面并调整到合适的权重了
-# 〇	ling
-# 囧	jiong
-# 屌	diao
-# 艹	cao
-# 肏	cao
-# 屄	bi
-# 冇	mao
-# 丼	jing
-# 卍	wan
-# 炁	qi
-# 車	ju
-# 祂	ta
-# 觍	tian
-# 𪨊	song
-# 磺	huang
-# 屮	cao
-# 芔	cao
 
 
-### 小时候没学过的拼音。。。
-# 嗯	n	没启用
-# 嗯	ng	没启用
-# 唔	ng  没启用
-# 呣	m	没启用
-# 哼	hng	没启用
-# 噷	hm	在 custom_phrase.txt 里置顶了
 嗯	eng	9179528
 欸	ei	534
 哟	yo	59051
@@ -93,8 +63,6 @@ sort: by_weight
 育	yo	0
 
 
-### 字表
-# +_+
 啊	a	5366043
 阿	a	867275
 吖	a	160000
@@ -3096,12 +3064,12 @@ sort: by_weight
 䌹	jiong	0
 𬳶	jiong	0
 就	jiu	11305679
-酒	jiu	862253
-久	jiu	737479
-九	jiu	506014
-究	jiu	429844
+九	jiu	862253
+酒	jiu	737479
+久	jiu	506014
+旧	jiu	429844
 救	jiu	427315
-旧	jiu	275220
+究	jiu	275220
 舅	jiu	73540
 纠	jiu	69730
 疚	jiu	37765
@@ -6645,6 +6613,7 @@ sort: by_weight
 峿	wu	0
 珸	wu	0
 𣲘	wu	0
+洗	xi	2290306
 西	xi	1778761
 喜	xi	1069981
 系	xi	942245
@@ -6654,7 +6623,6 @@ sort: by_weight
 习	xi	487160
 吸	xi	431549
 戏	xi	347524
-洗	xi	290306
 惜	xi	271651
 席	xi	208395
 袭	xi	189129
@@ -7296,11 +7264,11 @@ sort: by_weight
 𫄧	yan	0
 𬙂	yan	0
 𬸘	yan	0
-样	yang	4769842
+养	yang	1019753
+样	yang	969842
 阳	yang	850226
 杨	yang	633480
 扬	yang	383219
-养	yang	319753
 洋	yang	293496
 仰	yang	159568
 央	yang	146296
