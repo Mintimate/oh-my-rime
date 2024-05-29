@@ -4,7 +4,7 @@
 schema:
   schema_id: rime_mint
   name: 薄荷拼音-全拼输入
-  version: "24.02.15"
+  version: "24.0.29"
   author:
     - mintimate < @Mintimate|https://www.mintimate.cn >
   description: |
@@ -20,36 +20,27 @@ schema:
     - wubi98_mint # 98五笔库 https://github.com/yanhuacuo/98wubi-tables
     - stroke
     - melt_eng # 英文方案
-
-key_binder:
-  import_preset: default
-  bindings:
-    - {accept: "Control+Shift+E", toggle: emoji_suggestion, when: always}
-    - {accept: "Control+Shift+exclam", toggle: transcription, when: has_menu}
-    - {accept: "Control+Shift+1", toggle: transcription, when: has_menu}
-    - {accept: minus, send: Page_Up, when: paging}     # 使用`-`进行向上翻页（第一页时候无效）
-    - {accept: equal, send: Page_Down, when: has_menu} # 使用`=`进行向下翻页
-
 switches:
   - name: ascii_mode
     reset: 0
     states: [ 中文, 英文 ]
   - name: emoji_suggestion
-    reset: 1
     states: [ "😣️","😁️"]
+    reset: 1
   - name: full_shape
     states: [ 半角, 全角 ]
+    reset: 0
   - name: transcription
-    reset: 0
     states: [ 简体 , 繁体 ]
-  - name: ascii_punct
-    states: [ 。，, ．， ]
     reset: 0
-
+  - name: ascii_punct
+    states: [ "。，" , "．，" ]
+    reset: 0
 engine:
   processors:
-    - lua_processor@*select_character              # 以词定字
     - lua_processor@*codeLengthLimit_processor     # 使用Lua限制输入内容的最大长度(防止过长而卡顿)
+    - lua_processor@*select_character
+    - lua_processor@*codeLengthLimit_processor
     - ascii_composer                               # ※ 處理西文模式及中西文切換
     - recognizer                                   # ※ 與 matcher 搭配，處理符合特定規則的輸入碼，如網址、反查等
     - key_binder                                   # ※ 在特定條件下將按鍵綁定到其他按鍵，如重定義逗號、句號爲候選翻頁鍵
@@ -75,12 +66,12 @@ engine:
     - lua_translator@*chineseLunarCalendar_translator    # 农历
     - table_translator@melt_eng                          # 英文输入（作为子翻译器，优先级需要比原生的低）
     - table_translator@cn_en                             # 中英混合词汇
-    # - echo_translator      # ※ 没有候选词，返回字符
     - reverse_lookup_translator@wubi98_mint　
     - reverse_lookup_translator@radical_reverse_lookup
     - reverse_lookup_translator@stroke
-    # - reverse_lookup_translator # 反查模块，多标签情况下去除
-    - lua_translator@*force_gc                           # 暴力GC，尝试解决小狼毫长期使用的卡顿
+    - lua_translator@*force_gc
+    # - reverse_lookup_translator                   # 反查模块，多标签情况下去除
+    # - echo_translator                             # ※ 没有候选词，返回字符
   filters:
     - lua_filter@*corrector_filter            # 错音错字提示
     - lua_filter@*autocap_filter              # 英文自动大写
@@ -120,6 +111,7 @@ reduce_english_filter:
   mode: all  # all | none | custom | 『留白』
   idx: 2        # 降低到第 idx 个位置
   # 自定义的单词列表，示例列表没有降低部分常用单词，如 and cat mail Mac but bad shit ……
+
   words: [aid, ann,
   bail, bait, bam, band, bans, bat, bay, bend, bent, benz, bib, bid, bien, biz, boc, bop, bos, bud, buf,
   cab, cad, cain, cam, cans, cap, cas, cef, chad, chan, chap, chef, cher, chew, chic, chin, chip, chit, coup, cum, cunt, cur,
@@ -138,7 +130,6 @@ reduce_english_filter:
   tad, tail, taj, tar, tax, tec, ted, tel, ter, tex, tic, tied, tier, ties, tim, tin, tit, tour, tout, tum,
   wag, wand, womens, wap, wax, weir, won,
   yan, yen]
-  
 # 中国农历配置
 chineseLunarCalendar_translator: lunar
 
@@ -146,7 +137,6 @@ chineseLunarCalendar_translator: lunar
 # 默认 "{comment}" 输入 hun dun 时会在「馄饨」旁边生成 hún tun 的 comment
 # 例如左右加个括号 "({comment})" 就会变成 (hún tun)
 corrector: "{comment}"
-
 translator:
   # enable_correction: true      # Rime自带的按键纠错，适用于手机26键 参考: https://github.com/rime/librime/pull/228
   # 字典文件
@@ -161,14 +151,13 @@ translator:
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
   initial_quality: 1.2
+  enable_user_dict: false
 
 melt_eng:
   dictionary: melt_eng           # 英文词典
   enable_sentence: false         # 关闭自动造句
   enable_completion: false       # 关闭自动提示
   initial_quality: 0.8
-  
-# 中英混合词汇
 cn_en:
   dictionary: ""                 # 中英混输，直接使用短语词典，普通字典直接留空即可
   user_dict: dicts/rime_ice.cn_en
@@ -178,7 +167,6 @@ cn_en:
   initial_quality: 0.5
   comment_format:
     - xform/^.+$//
-
 speller:
   # 如果不想让什么标点直接上屏，可以加在 alphabet，或者编辑标点符号为两个及以上的映射；默认没用大写字母，使用大写字母方便中英混熟词典生效
   alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
@@ -288,7 +276,6 @@ wubi98_mint:
   enable_completion: true
   prefix: "Uw"
   tips: 〔五笔〕
-
 stroke:
   tag: stroke
   dictionary: stroke
@@ -297,22 +284,19 @@ stroke:
   tips: 〔笔画〕
   preedit_format:
     - xlit/hspnz/一丨丿丶乙/
-
 radical_reverse_lookup:
   tag: radical_lookup
   dictionary: radical_pinyin
   enable_completion: false
   enable_sentence: false
   prefix: "Uu"
-  # comment_format:
+    # comment_format:
   #   - erase/^.*$// # 删除注释
   tips: 〔拆字〕
-
 reverse_lookup:
   tags: [wubi98_mint,stroke,radical_lookup]
   overwrite_comment: true
   dictionary: dicts/rime_ice.8105
-
 punctuator:
   import_preset: symbols
   # 定义部分半角字符
@@ -333,7 +317,6 @@ punctuator:
       "$": ["¥", "$", "€", "£", "¢", "¤"]
       "<": ["《", "〈", "«", "<"]
       ">": ["》", "〉", "»", ">"]
-
 recognizer:
   import_preset: default
   patterns:
@@ -345,3 +328,41 @@ recognizer:
     rmb: "^R[0-9]+[.]?[0-9]*"        # 响应 lua_translator@number_translator 脚本将自动获取第 2 个字符作为触发前缀
     gregorian_to_lunar: "^N[0-9]{1,8}"  # 响应 lua_translator@Chinese_lunar_calendar 公历转农历，输入 N20240115 得到「二〇二四年腊月初五」，脚本将自动获取第 2 个字符作为触发前缀
     uppercase: ""  # 覆写默认的 uppercase 使其可以在输入大写后，输入数字
+
+key_binder:
+  import_preset: default
+  bindings:
+    - {accept: "Control+Shift+E", toggle: emoji_suggestion, when: always}
+    - {accept: "Control+Shift+exclam", toggle: transcription, when: has_menu}
+    - {accept: "Control+Shift+1", toggle: transcription, when: has_menu}
+    - {accept: minus, send: Page_Up, when: paging}     # 使用`-`进行向上翻页（第一页时候无效）
+    - {accept: equal, send: Page_Down, when: has_menu} # 使用`=`进行向下翻页
+    - { when: composing, accept: Control+p, send: Up }
+    - { when: composing, accept: Control+n, send: Down }
+    - { when: composing, accept: Control+b, send: Left }
+    - { when: composing, accept: Control+f, send: Right }
+    - { when: composing, accept: Control+a, send: Home }
+    - { when: composing, accept: Control+e, send: End }
+    - { when: composing, accept: Control+d, send: Delete }
+    - { when: composing, accept: Control+k, send: Shift+Delete }
+    - { when: composing, accept: Control+g, send: Escape }
+    - { when: composing, accept: Alt+v, send: Page_Up }
+    - { when: composing, accept: Control+v, send: Page_Down }
+    - { when: composing, accept: ISO_Left_Tab, send: Shift+Left }
+    - { when: composing, accept: Shift+Tab, send: Shift+Left }
+    - { when: composing, accept: Tab, send: Shift+Right }
+    - { when: paging, accept: minus, send: Page_Up }
+    - { when: has_menu, accept: equal, send: Page_Down }
+    - { when: paging, accept: comma, send: Page_Up }
+    - { when: has_menu, accept: period, send: Page_Down }
+    - { when: predicting, accept: comma, send: comma }
+    - { when: predicting, accept: period, send: period }
+    - { when: always, accept: Control+Shift+1, select: .next }
+    - { when: always, accept: Control+Shift+2, toggle: ascii_mode }
+    - { when: always, accept: Control+Shift+3, toggle: full_shape }
+    - { when: always, accept: Control+Shift+4, toggle: simplification }
+    - { when: always, accept: Control+Shift+5, toggle: extended_charset }
+    - { when: always, accept: Shift+space, toggle: full_shape }
+    - { when: always, accept: Control+period, toggle: ascii_punct }
+menu:
+  page_size: 6
