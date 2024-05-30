@@ -156,6 +156,7 @@ translator:
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
   initial_quality: 1.2
+  enable_user_dict: true         # 开启用户词典，根据用户输入调频（默认开启，此处再次声明）
 
 melt_eng:
   dictionary: melt_eng           # 英文词典
