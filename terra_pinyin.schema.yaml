@@ -160,7 +160,6 @@ speller:
 translator:
   dictionary: terra_pinyin
   initial_quality: 1.2
-  enable_user_dict: false
   spelling_hints: 3  # ～字以內候選標註完整帶調拼音
   preedit_format:
     - xform/([nl])v/$1ü/
@@ -224,6 +223,7 @@ translator:
     - xform/([nljqxy])v/$1ü/
     - xform/eh[0-5]?/ê/
     - xform/([a-z]+)[0-5]/$1/
+  enable_user_dict: true         # 开启用户词典，根据用户输入调频（默认开启，此处再次声明）
 
 custom_phrase:
   dictionary: ""
