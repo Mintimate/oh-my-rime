@@ -20,13 +20,16 @@ schema:
 switches:
   - name: ascii_mode
     states: [ 中文, 英文 ]
+    reset: 0
   - name: emoji_suggestion
-    reset: 1
     states: [ "😣️","😁️"]
+    reset: 1
   - name: full_shape
     states: [ 半角, 全角 ]
+    reset: 0
   - name: transcription
     states: [ 简体 , 繁体 ]
+    reset: 0
   - name: ascii_punct
     states: [ "。，", "．，" ]
     reset: 0
@@ -130,6 +133,7 @@ translator:
   encode_commit_history: false          # 是否对已上屏词自动成词（仅 table_translator 有效）
   disable_user_dict_for_patterns:   # 对于以下模式禁用用户词典
     - "^z.*$"                       # 以字母"z"开头的任意字符串
+  enable_user_dict: false           # 关闭用户词典，根据用户输入调频（默认开启，形码本身字重低或没有，理论上不需要调频）
 
 # 英文输入
 melt_eng:
