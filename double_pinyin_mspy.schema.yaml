@@ -262,7 +262,7 @@ wubi98_mint:
   tips: 〔五笔〕
 
 # 部件拆字反查
-radical_lookup:
+radical_reverse_lookup:
   tag: radical_lookup
   dictionary: radical_pinyin
   enable_user_dict: false
