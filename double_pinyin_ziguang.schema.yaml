@@ -9,7 +9,7 @@
 schema:
   schema_id: double_pinyin_ziguang
   name: "紫光双拼-薄荷定制"
-  version: "24.05.07"
+  version: "24.06.14"
   author:
     - Dvel
     - Mintimate
@@ -19,28 +19,19 @@ schema:
   dependencies:
     - melt_eng        # 英文输入，作为次翻译器挂载到拼音方案
     - radical_pinyin  # 部件拆字，反查及辅码（如果需要把按键映射
-
-key_binder:
-  import_preset: default
-  bindings:
-    - {accept: "Control+Shift+E", toggle: emoji_suggestion, when: always}
-    - {accept: "Control+Shift+exclam", toggle: transcription, when: has_menu}
-    - {accept: "Control+Shift+1", toggle: transcription, when: has_menu}
-    - {accept: minus, send: Page_Up, when: paging}     # 使用`-`进行向上翻页（第一页时候无效）
-    - {accept: equal, send: Page_Down, when: has_menu} # 使用`=`进行向下翻页
-
 switches:
   - name: ascii_mode
     reset: 0
     states: [ 中文, 英文 ]
   - name: emoji_suggestion
-    reset: 1
     states: [ "😣️","😁️"]
+    reset: 1
   - name: full_shape
     states: [ 半角, 全角 ]
-  - name: transcription
     reset: 0
+  - name: transcription
     states: [ 简体 , 繁体 ]
+    reset: 0
   - name: ascii_punct
     states: [ "。，", "．，" ]
     reset: 0
@@ -303,3 +294,47 @@ recognizer:
     rmb: "^R[0-9]+[.]?[0-9]*"        # 响应 lua_translator@number_translator 脚本将自动获取第 2 个字符作为触发前缀
     gregorian_to_lunar: "^N[0-9]{1,8}"  # 响应 lua_translator@Chinese_lunar_calendar 公历转农历，输入 N20240115 得到「二〇二四年腊月初五」，脚本将自动获取第 2 个字符作为触发前缀
     uppercase: ""  # 覆写默认的 uppercase 使其可以在输入大写后，输入数字
+
+key_binder:
+  import_preset: default
+  bindings:
+    - {accept: "Control+Shift+E", toggle: emoji_suggestion, when: always}
+    - {accept: "Control+Shift+exclam", toggle: transcription, when: has_menu}
+    - {accept: "Control+Shift+1", toggle: transcription, when: has_menu}
+    - {accept: "Control+Shift+C", toggle: chaifen, when: has_menu} # 拆字滤镜开关
+    - {accept: minus, send: Page_Up, when: paging}     # 使用`-`进行向上翻页（第一页时候无效）
+    - {accept: equal, send: Page_Down, when: has_menu} # 使用`=`进行向下翻页
+    # Emacs 风格的快捷键
+    - { when: composing, accept: Control+p, send: Up }     # composing 时,Control+p 等同于 Up 键
+    - { when: composing, accept: Control+n, send: Down }
+    - { when: composing, accept: Control+b, send: Left }
+    - { when: composing, accept: Control+f, send: Right }
+    - { when: composing, accept: Control+a, send: Home }
+    - { when: composing, accept: Control+e, send: End }
+    - { when: composing, accept: Control+d, send: Delete }
+    - { when: composing, accept: Control+k, send: Shift+Delete } # 删除到行尾
+    - { when: composing, accept: Control+g, send: Escape }       # 退出编码
+    - { when: composing, accept: Alt+v, send: Page_Up }          # 翻页
+    - { when: composing, accept: Control+v, send: Page_Down }
+    # 按词移动光标
+    - { when: composing, accept: ISO_Left_Tab, send: Shift+Left } # ISO_Left_Tab 是 Shift+Tab
+    - { when: composing, accept: Shift+Tab, send: Shift+Left }
+    - { when: composing, accept: Tab, send: Shift+Right }
+    # 翻页
+    - { when: paging, accept: minus, send: Page_Up }             # 编码窗口翻页
+    - { when: has_menu, accept: equal, send: Page_Down }
+    - { when: paging, accept: comma, send: Page_Up }             # 候选窗口翻页
+    - { when: has_menu, accept: period, send: Page_Down }
+    - { when: predicting, accept: comma, send: comma }           # 在预编码模式下,不当作快捷键
+    - { when: predicting, accept: period, send: period }
+    # 切换状态
+    - { when: always, accept: Control+Shift+1, select: .next }   # 切换输入方案
+    - { when: always, accept: Control+Shift+2, toggle: ascii_mode } # 切换中/西文模式
+    - { when: always, accept: Control+Shift+3, toggle: full_shape } # 切换全角/半角
+    - { when: always, accept: Control+Shift+4, toggle: simplification } # 切换简体/繁体
+    - { when: always, accept: Control+Shift+5, toggle: extended_charset } # 切换扩展字符
+    - { when: always, accept: Shift+space, toggle: full_shape } # 另一种切换全角/半角的方式
+    - { when: always, accept: Control+period, toggle: ascii_punct } # 切换中/西文标点
+menu:
+  # 候选词个数
+  page_size: 6
