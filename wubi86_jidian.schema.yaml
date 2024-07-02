@@ -54,13 +54,12 @@ engine:
     - fallback_segmentor
   translators:
     - punct_translator
-    - script_translator
+    - table_translator
     - lua_translator@*mint_date_time_translator          # 时间、日期、星期、月份
     - lua_translator@*number_translator                  # 金额大小写
     - lua_translator@*chineseLunarCalendar_translator    # 农历
     - table_translator@melt_eng                          # 英文输入（作为子翻译器，优先级需要比原生的低）
     - reverse_lookup_translator@rime_mint                # 反查薄荷拼音
-    - table_translator
     - lua_translator@*force_gc                           # 暴力GC，尝试解决小狼毫长期使用的卡顿
   filters:
     - lua_filter@*autocap_filter              # 英文自动大写
