@@ -38,9 +38,8 @@ switches:
     reset: 0
 engine:
   processors:
-    - lua_processor@*codeLengthLimit_processor     # 使用Lua限制输入内容的最大长度(防止过长而卡顿)
     - lua_processor@*select_character
-    - lua_processor@*codeLengthLimit_processor
+    - lua_processor@*codeLengthLimit_processor     # 使用Lua限制输入内容的最大长度(防止过长而卡顿)
     - ascii_composer                               # ※ 處理西文模式及中西文切換
     - recognizer                                   # ※ 與 matcher 搭配，處理符合特定規則的輸入碼，如網址、反查等
     - key_binder                                   # ※ 在特定條件下將按鍵綁定到其他按鍵，如重定義逗號、句號爲候選翻頁鍵

@@ -139,11 +139,6 @@ reduce_english_filter:
 # 中国农历配置
 chineseLunarCalendar_translator: lunar
 
-# Lua 配置：为 corrector 格式化 comment，占位符为 {comment}
-# 默认 "{comment}" 输入 hun dun 时会在「馄饨」旁边生成 hún tun 的 comment
-# 例如左右加个括号 "({comment})" 就会变成 (hún tun)
-corrector: "{comment}"
-
 # 主翻译器，拼音
 translator:
   dictionary: rime_mint         # 使用的字典文件
@@ -340,6 +335,7 @@ key_binder:
     - { when: always, accept: Control+Shift+5, toggle: extended_charset } # 切换扩展字符
     - { when: always, accept: Shift+space, toggle: full_shape } # 另一种切换全角/半角的方式
     - { when: always, accept: Control+period, toggle: ascii_punct } # 切换中/西文标点
+    
 menu:
   # 候选词个数
   page_size: 6
