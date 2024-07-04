@@ -8,3 +8,6 @@ installation.yaml
 # 部署生成的文件
 build
 *.userdb
+
+# 自定义文件
+*.custom.yaml
