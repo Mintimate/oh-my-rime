@@ -1,0 +1,26 @@
+# encoding: utf-8
+---
+recipe:
+  Rx: plum/full
+  args:
+  description: >-
+    全量安装、更新
+install_files: >-
+  dicts/*.*
+  opencc/*.*
+  lua/*.*
+  lua/aux_code/*.*
+  default.yaml
+  squirrel.yaml
+  weasel.yaml
+  ibus_rime.yaml
+  rime_mint*.yaml
+  double_pinyin*.schema.yaml
+  t9.schema.yaml
+  terra*.yaml
+  stroke*.yaml
+  wubi86*.yaml
+  wubi98*.yaml
+  symbols.yaml
+  radical*.yaml
+  melt_eng*.yaml
