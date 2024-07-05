@@ -20,20 +20,6 @@ name: rime_ice.41448
 version: "2024-05-16"
 sort: by_weight
 ...
-# 注释掉了一些
-# 唔	n
-# 嗯	n
-# 㕶	n
-# 𠮾	n
-# 𧗈	n
-# 呒	m
-# 呣	m
-# 嘸	m
-# 嗯	ng
-# 唔	ng
-# 㕶	ng
-# 哼	hng
-# +_+
 吖	a
 呵	a
 啊	a
@@ -23500,6 +23486,7 @@ sort: by_weight
 溺	ni
 濔	ni
 狔	ni
+祢	ni
 猊	ni
 疑	ni
 眤	ni
