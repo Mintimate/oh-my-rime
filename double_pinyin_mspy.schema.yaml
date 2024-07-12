@@ -67,12 +67,13 @@ engine:
     - reverse_lookup_translator@wubi98_mint
     - lua_translator@*force_gc                           # 暴力GC，尝试解决小狼毫长期使用的卡顿
   filters:
-    - lua_filter@*corrector_filter            # 错音错字提示
-    - lua_filter@*autocap_filter              # 英文自动大写
+    - lua_filter@*corrector_filter               # 错音错字提示
+    - lua_filter@*autocap_filter                 # 英文自动大写
+    - lua_filter@*auxCode_filter@moqi_aux_code   # 无形码双拼使用墨奇辅助码:  https://github.com/gaboolic/rime-shuangpin-fuzhuma/wiki/%E5%A2%A8%E5%A5%87%E7%A0%81%E6%8B%86%E5%88%86%E8%A7%84%E5%88%99
     - simplifier@emoji_suggestion
     - simplifier@transcription_cc
-    - lua_filter@*reduce_english_filter       # 降低部分英语单词在候选项的位置
-    - uniquifier                              # 去重
+    - lua_filter@*reduce_english_filter          # 降低部分英语单词在候选项的位置
+    - uniquifier                                 # 去重
 
 
 # 简繁切换
@@ -91,6 +92,15 @@ emoji_suggestion:
 
 # 最大输入长度
 codeLengthLimit_processor: 25
+
+axu_code:
+  # 激活码
+  trigger_word: "`"
+  # 展示辅码的模式
+  # always:   总是展示(默认)
+  # trigger:  输入激活码后激活辅码
+  # none:     始终不展示辅码
+  show_aux_notice: "trigger"
 
 
 # Lua 配置：为 corrector 格式化 comment，占位符为 {comment}
