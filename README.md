@@ -7,11 +7,13 @@
 一套快速初始化rime的模板方案，因为平时我使用`oh-my-zsh`，希望大家在用这个模板的时候，有种用`omz`的感觉；所以我给它取名叫`oh-my-rime`，你也可以叫它`薄荷输入法`，亦或者`Mint Input`。
 
 如果你下载遇到困难，使用GitHub Action推送的镜像仓库：
+
 - [oh-my-rime: https://gitlab.mintimate.cn/Mintimate/oh-my-rime](https://gitlab.mintimate.cn/Mintimate/oh-my-rime)
 
 ## Oh-my-rime指南
 
 Rime 配置教程：
+
 - [跨平台的开源输入法Rime定制指南，打造强大的个性化输入法](https://www.mintimate.cn/2023/03/18/rimeQuickInit)
 - [Bilibili视频(macOS/Windows/Linux): https://www.bilibili.com/video/BV12M411T7gf](https://www.bilibili.com/video/BV12M411T7gf)
 - [Bilibili视频(iOS/Android): https://www.bilibili.com/video/BV1Mr42137Ns](https://www.bilibili.com/video/BV1Mr42137Ns)
@@ -21,9 +23,10 @@ Rime 配置教程：
 
 **强烈建议[配合文档: https://www.mintimate.cc](https://www.mintimate.cc)进行操作!!!**
 
-本输入方案内包含： 
+本输入方案内包含：
+
 - 薄荷拼音-全拼输入: 全拼输入，适合的人群最多，所以也是默认的输入；
-- 小鹤双拼-薄荷定制: 基于小鹤双拼，添加定制内容。支持输入音形(形码)作为辅助输入；
+- 小鹤双拼-薄荷定制: 基于小鹤双拼，添加定制内容。支持输入音形(形码)、自然码辅助码或墨奇辅助码作为辅助输入；
 - 薄荷拼音-小鹤混输: 全拼输入的同时，支持小鹤双拼；
 - 地球拼音-薄荷定制: 基于地球拼音，添加定制内容，扩展海量词库；
 - 五笔98-五笔小筑: 基于[98wubi](https://github.com/yanhuacuo/98wubi)的精简版本，期待大家的PR。如果想要更好的体验(五笔、拼音混输入等)，欢迎使用五笔98团队做的[五笔98](https://github.com/yanhuacuo/98wubi)；
@@ -35,7 +38,6 @@ Rime 配置教程：
 目前薄荷内自带两套皮肤： 水鸭系列、青涩系列。大家可以在鼠须管和小狼毫的个性化配置内自由选择激活，也可以使用自己的配色（推荐[使用 custom 对薄荷配置进行覆写](https://www.mintimate.cc/zh/guide/configurationOverride.html#%E4%BF%AE%E6%94%B9%E8%96%84%E8%8D%B7%E8%BE%93%E5%85%A5%E6%B3%95%E7%9A%84%E9%85%8D%E7%BD%AE)）。
 
 ![显示效果](https://www.mintimate.cc/image/demo/themeOfOhMyRime.webp)
-
 
 ### 安装
 
@@ -58,7 +60,7 @@ Rime 配置教程：
 - Mac OS X
   - Squirrel: `~/Library/Rime`
 - Linux
-  - iBus:` ~/.config/ibus/rime`
+  - iBus:`~/.config/ibus/rime`
   - Fcitx5: `~/.local/share/fcitx5/rime`
 - Fctix5 Android(小企鹅入法): `/storage/emulated/0/Android/data/org.fcitx.fcitx5.android/files/data/rime/`
 
@@ -69,7 +71,7 @@ Rime 配置教程：
 - Mac OS X
   - Squirrel: `$TMPDIR`
 - Linux
-  - iBus:` /tmp`
+  - iBus:`/tmp`
   
 仓输入法 Hamster 内如何使用九宫格输入？
 
@@ -78,7 +80,7 @@ Rime 配置教程：
 ## 配置文件说明
 
 - `default.yaml` 设置输入法、如何切换输入法、翻页等；建议自行创建`default.custom.yaml`来覆写薄荷配置的`default.yaml`.
-- `squirrel.yaml` 鼠须管( Mac 版本 )设置哪些软件默认英文输入，输入法皮肤等；如需自定义，建议自行创建`squirrel.custom.yaml`来覆写。 
+- `squirrel.yaml` 鼠须管( Mac 版本 )设置哪些软件默认英文输入，输入法皮肤等；如需自定义，建议自行创建`squirrel.custom.yaml`来覆写。
 - `weasel.yaml` 小狼毫( Win 版本 )设置哪些软件默认英文输入，输入法皮肤等；如需自定义，建议自行创建`weasel.custom.yaml`来覆写。
 
 配置文件中大部分都有注释，配合教程：[配置覆写](https://www.mintimate.cc/zh/guide/configurationOverride.html)
@@ -86,11 +88,13 @@ Rime 配置教程：
 ## 词库定制以及更新
 
 本仓库的词库目录[dicts](dicts)，主要有：
+
 - [雾凇拼音词库](https://github.com/iDvel/rime-ice)
 - [98五笔词库](https://github.com/yanhuacuo/98wubi-tables)
 - [86五笔词库](https://github.com/KyleBing/rime-wubi86-jidian)
 
 详细说明：
+
 ```txt
 dicts
 ├── custom_simple.dict.yaml    # 自定义词库（建议自己添加的词库可以放这里）

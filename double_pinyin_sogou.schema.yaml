@@ -94,6 +94,15 @@ emoji_suggestion:
 # 最大输入长度
 codeLengthLimit_processor: 25
 
+axu_code:
+  # 激活码
+  trigger_word: "`"
+  # 展示辅码的模式
+  # always:   总是展示(默认)
+  # trigger:  输入激活码后激活辅码
+  # none:     始终不展示辅码
+  show_aux_notice: "trigger"
+
 
 # Lua 配置：为 corrector 格式化 comment，占位符为 {comment}
 # 默认 "{comment}" 输入 hun dun 时会在「馄饨」旁边生成 hún tun 的 comment
