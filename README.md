@@ -59,6 +59,7 @@ Rime 配置教程：
   - Weasel: `%APPDATA%\Rime`
 - Mac OS X
   - Squirrel: `~/Library/Rime`
+  - Fcitx5 macOS: `~/.local/share/fcitx5/rime`
 - Linux
   - iBus:`~/.config/ibus/rime`
   - Fcitx5: `~/.local/share/fcitx5/rime`
