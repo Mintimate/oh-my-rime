@@ -6,6 +6,7 @@ user.yaml
 installation.yaml
 
 # 部署生成的文件
+icons
 build
 *.userdb
 
