@@ -11,3 +11,6 @@ build
 
 # 自定义文件
 *.custom.yaml
+
+# 同步文件夹
+sync
