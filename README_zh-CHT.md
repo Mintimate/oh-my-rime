@@ -156,7 +156,7 @@ import_tables:
 
 ## 推薦項目
 
-- [98五筆，十分好用的98五筆輸入方案](http://www.98wubi.com/)
+- [98五筆，十分好用的98五筆輸入方案](https://wubi98.github.io/)
 - [86五筆極點碼錶，rime上的86五筆方案](https://github.com/KyleBing/rime-wubi86-jidian)
 - [霧凇拼音，很優秀的中文詞庫](https://github.com/iDvel/rime-ice)
 

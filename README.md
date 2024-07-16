@@ -160,7 +160,7 @@ import_tables:
 
 ## 推荐项目
 
-- [98五笔，十分好用的98五笔输入方案](http://www.98wubi.com/)
+- [98五笔，十分好用的98五笔输入方案](https://wubi98.github.io/)
 - [86五笔极点码表，rime上的86五笔方案](https://github.com/KyleBing/rime-wubi86-jidian)
 - [雾凇拼音，很优秀的中文词库](https://github.com/iDvel/rime-ice)
 

@@ -155,7 +155,7 @@ import_tables:
 > Especially rime-ice, this solution project, a large number of references to rime-ice. For the word library part, use Python to synchronize the basic word library of rime-ice and enable the ext extension word library that rime-ice does not enable by default.
 
 ## Other Recommended
-- [98 Wubi, http://www.98wubi.com/](http://www.98wubi.com/)
+- [98 Wubi, http://www.98wubi.com/](https://wubi98.github.io/)
 - [86 Wubi, https://github.com/KyleBing/rime-wubi86-jidian](https://github.com/KyleBing/rime-wubi86-jidian)
 - [Rime Pinyin, an excellent Chinese thesaurus](https://github.com/iDvel/rime-ice)
 
