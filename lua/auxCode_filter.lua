@@ -32,14 +32,14 @@ function AuxFilter.init(env)
     env.trigger_key_string = alt_lua_punc( env.trigger_key )
     
     -- 设定是否显示辅助码，默认为显示
-    env.show_aux_notice = config:get_string("axu_code/show_aux_notice") or 'always'
+    env.show_aux_notice = config:get_string("axu_code/show_aux_notice") or "always"
 
     ----------------------------
     -- 持續選詞上屏，保持輔助碼分隔符存在 --
     ----------------------------
     env.notifier = engine.context.select_notifier:connect(function(ctx)
         -- 含有輔助碼分隔符才處理
-        if not string.find(ctx.input, env.trigger_key_string) then
+        if not string.find(ctx.input, env.trigger_key_string) and env.show_aux_notice ~= "always" then
             return
         end
 
@@ -205,7 +205,7 @@ function AuxFilter.func(input, env)
     local auxStr = ''
 
     -- 判断字符串中是否包含輔助碼分隔符
-    if not string.find(inputCode, env.trigger_key_string) then
+    if not string.find(inputCode, env.trigger_key_string) and env.show_aux_notice ~= "always" then
         -- 没有输入辅助码引导符，则直接yield所有待选项，不进入后续迭代，提升性能
         for cand in input:iter() do
             yield(cand)
