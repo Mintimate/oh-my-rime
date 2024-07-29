@@ -87,27 +87,30 @@ Rime 配置教程：
 ## 詞庫定制以及更新
 
 本倉庫的詞庫目錄[dicts](dicts)，主要有：
+
 - [霧凇拼音詞庫](https://github.com/iDvel/rime-ice)
+- [白霜詞庫詞庫](https://github.com/gaboolic/rime-frost)
 - [98五筆詞庫](https://github.com/yanhuacuo/98wubi-tables)
-- [86五笔詞庫](https://github.com/KyleBing/rime-wubi86-jidian)
+- [86五筆詞庫](https://github.com/KyleBing/rime-wubi86-jidian)
 
 詳細說明：
+
 ```txt
 dicts
 ├── custom_simple.dict.yaml    # 自定義詞庫（建議自己添加的詞庫可以放這裏）
 ├── other_emoji.dict.yaml      # emoji 詞庫
 ├── other_kaomoji.dict.yaml    # 顏文字詞庫（按vv進行激活）
-├── rime_ice.41448.dict.yaml   # 霧凇詞庫（GitHub action自動更新）
-├── rime_ice.8105.dict.yaml    # 霧凇詞庫（GitHub action自動更新）
-├── rime_ice.base.dict.yaml    # 霧凇詞庫（GitHub action自動更新）
-├── rime_ice.ext.dict.yaml     # 霧凇詞庫（GitHub action自動更新）
-├── rime_ice.cn_en.txt         # 霧凇詞庫（GitHub action自動更新）
-├── rime_ice.en.dict.yaml      # 霧凇詞庫（GitHub action自動更新）
-├── rime_ice.en_ext.dict.yaml  # 霧凇詞庫（GitHub action自動更新）
-├── rime_ice.others.dict.yaml  # 霧凇詞庫（GitHub action自動更新）
+├── rime_ice.41448.dict.yaml   # 白霜詞庫（GitHub action自動更新）
+├── rime_ice.8105.dict.yaml    # 白霜詞庫（GitHub action自動更新）
+├── rime_ice.base.dict.yaml    # 白霜詞庫（GitHub action自動更新）
+├── rime_ice.ext.dict.yaml     # 白霜詞庫（GitHub action自動更新）
+├── rime_ice.cn_en.txt         # 白霜詞庫（GitHub action自動更新）
+├── rime_ice.en.dict.yaml      # 白霜詞庫（GitHub action自動更新）
+├── rime_ice.en_ext.dict.yaml  # 白霜詞庫（GitHub action自動更新）
+├── rime_ice.others.dict.yaml  # 白霜詞庫（GitHub action自動更新）
 ├── terra_pinyin_base.dict.yaml     # 地球拼音自帶詞庫
 ├── terra_pinyin_ext.dict.yaml      # 地球拼音自帶詞庫
-├── terra_rime_ice.base.dict.yaml   # 基於Python腳本自動轉換霧凇併Action自動更新
+├── terra_rime_ice.base.dict.yaml   # 基於Python腳本自動轉換詞庫，Action自動更新
 ├── wubi86_core.dict.yaml           # 86版五筆基礎詞庫
 └── wubi98_base.dict.yaml           # 98版五筆基礎詞庫
 ```
@@ -122,16 +125,16 @@ name: rime_mint                  # 註意name和文件名一致
 version: "2024.02.11"
 sort: by_weight
 # 此處為 輸入法所用到的詞庫，既補充拓展詞庫的地方
-# 霧凇拼音詞庫，由Github Robot自動更新
+# 詞庫，由Github Robot自動更新
 import_tables:
   - dicts/custom_simple          # 自定義
-  - dicts/rime_ice.8105          # 霧凇拼音 常用字集合
-  - dicts/rime_ice.41448         # 霧凇拼音 完整字集合
-  - dicts/rime_ice.base          # 霧凇拼音 https://github.com/iDvel/rime-ice
-  - dicts/rime_ice.ext           # 霧凇拼音 https://github.com/iDvel/rime-ice
-  - dicts/other_kaomoji          # 顏文字錶情（按`vv`呼出)
-  - dicts/other_emoji            # Emoji(僅僅作為補充，實際使用一般是OpenCC生效)
-  - dicts/rime_ice.others        # 霧凇拼音 others詞庫（用於自動糾錯）
+  - dicts/rime_ice.8105          # 白霜詞庫 常用字集合
+  - dicts/rime_ice.41448         # 白霜詞庫 完整字集合
+  - dicts/rime_ice.base          # 白霜詞庫 https://github.com/gaboolic/rime-frost
+  - dicts/rime_ice.ext           # 白霜詞庫 https://github.com/gaboolic/rime-frost
+  - dicts/other_kaomoji          # 顏文字錶情（按`VV`呼出)
+  - dicts/other_emoji            # Emoji(已禁用，目前Emoji是OpenCC生效)
+  - dicts/rime_ice.others        # 白霜詞庫 others詞庫（用於自動糾錯）
 ...
 ```
 
@@ -153,6 +156,7 @@ import_tables:
 5. [rime-radical-pinyin | Rime 部件拆字輸入方案（全拼雙拼）](https://github.com/mirtlecn/rime-radical-pinyin)
 6. [86五筆極點碼錶](https://github.com/KyleBing/rime-wubi86-jidian)
 7. [Extending RIME with Lua scripts](https://github.com/hchunhui/librime-lua/wiki/Scripting)
+8. [白霜詞庫 | 基於霧凇拼音重制的，更純凈、詞頻准確、智能的詞庫](https://github.com/gaboolic/rime-frost)
 
 ## 推薦項目
 
@@ -160,7 +164,8 @@ import_tables:
 - [86五筆極點碼錶，rime上的86五筆方案](https://github.com/KyleBing/rime-wubi86-jidian)
 - [霧凇拼音，很優秀的中文詞庫](https://github.com/iDvel/rime-ice)
 
-> 尤其是霧凇拼音，本方案项目中，大量參考參考了霧凇拼音。詞庫部分，使用Python同步霧凇拼音的基礎詞庫併啟用霧凇拼音預設沒有啟用的ext擴展詞庫。
+> 尤其是霧凇拼音，本方案配置中，大量參考參考了霧凇拼音。詞庫部分，在`2024-07-29`起，拼音詞庫使用白霜詞庫，此前使用霧凇拼音詞庫。
+
 
 ## ⭐⭐⭐
 
