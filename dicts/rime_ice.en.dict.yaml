@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: rime_ice.en
-version: "2024-06-10"
+version: "2024-05-31"
 sort: by_weight
 ...
 AA	AA
@@ -199,6 +199,7 @@ activated	activated
 activation	activation
 active	active
 actively	actively
+ActiveX	ActiveX
 activism	activism
 activist	activist
 activists	activists
@@ -1079,6 +1080,7 @@ artists	artists
 arts	arts
 artwork	artwork
 Aruba	Aruba
+arXiv	arXiv
 as	as
 ASAP	ASAP
 asbestos	asbestos
@@ -1262,7 +1264,7 @@ attributed	attributed
 attributes	attributes
 attribution	attribution
 ATV	ATV
-auburn	auburn
+Auburn	Auburn
 Auch	Auch
 Auckland	Auckland
 auction	auction
@@ -1314,7 +1316,6 @@ auth	auth
 authentic	authentic
 authenticated	authenticated
 authentication	authentication
-authenticator	authenticator
 authenticity	authenticity
 author	author
 authored	authored
@@ -7400,6 +7401,9 @@ Gambia	Gambia
 gamble	gamble
 gambling	gambling
 game	game
+gameboy	gameboy
+gamecube	gamecube
+GameFAQs	GameFAQs
 gameplay	gameplay
 gamer	gamer
 gamers	gamers
@@ -7665,6 +7669,7 @@ gnaw	gnaw
 gnome	gnome
 gnu	gnu
 GNU	GNU
+Go	Go
 go	go
 goal	goal
 goals	goals
@@ -7967,6 +7972,7 @@ gymnastics	gymnastics
 gyms	gyms
 gypsy	gypsy
 Gypsy	Gypsy
+Gzip	Gzip
 habit	habit
 habitat	habitat
 habitats	habitats
@@ -8682,6 +8688,7 @@ Ian	Ian
 Ibiza	Ibiza
 IBM	IBM
 ibn	ibn
+iBook	iBook
 ICANN	ICANN
 ice	ice
 iceberg	iceberg
@@ -9504,6 +9511,7 @@ jasmine	jasmine
 Jason	Jason
 jasper	jasper
 Java	Java
+JavaScript	JavaScript
 jaw	jaw
 jaws	jaws
 jay	jay
@@ -9626,6 +9634,7 @@ Joyce	Joyce
 joystick	joystick
 JPEG	JPEG
 JPG	JPG
+JSP	JSP
 Juan	Juan
 jubilee	jubilee
 Judaism	Judaism
@@ -10194,6 +10203,7 @@ lex	lex
 Lexar	Lexar
 lexicon	lexicon
 Lexington	Lexington
+LexisNexis	LexisNexis
 lexmark	lexmark
 lexus	lexus
 liabilities	liabilities
@@ -10580,7 +10590,7 @@ Lyon	Lyon
 Lyons	Lyons
 lyric	lyric
 lyrics	lyrics
-mac	mac
+Mac	Mac
 Macau	Macau
 MacDonald	MacDonald
 macedonia	macedonia
@@ -12815,6 +12825,8 @@ pays	pays
 PC	PC
 PCI	PCI
 PCMCIA	PCMCIA
+PDF	PDF
+PDFs	PDFs
 pea	pea
 peace	peace
 peaceful	peaceful
@@ -13066,6 +13078,7 @@ photon	photon
 photos	photos
 Photoshop	Photoshop
 PHP	PHP
+phpBB	phpBB
 phrase	phrase
 phrases	phrases
 Phuket	Phuket
@@ -16279,7 +16292,6 @@ snorkeling	snorkeling
 snow	snow
 snowboard	snowboard
 snowboarding	snowboarding
-snowflake	snowflake
 snowmobile	snowmobile
 snowstorm	snowstorm
 snowy	snowy
@@ -17715,6 +17727,7 @@ thing	thing
 things	things
 think	think
 thinking	thinking
+ThinkPad	ThinkPad
 thinks	thinks
 third	third
 thirds	thirds
@@ -18608,6 +18621,8 @@ urging	urging
 URI	URI
 urinary	urinary
 urine	urine
+URL	URL
+URLs	URLs
 urn	urn
 urology	urology
 Uruguay	Uruguay
@@ -19318,8 +19333,6 @@ whores	whores
 whose	whose
 why	why
 Wichita	Wichita
-Wick	Wick
-wick	wick
 wicked	wicked
 wicker	wicker
 wide	wide
@@ -19581,7 +19594,7 @@ XML	XML
 XXL	XXL
 yacht	yacht
 yachts	yachts
-yahoo	yahoo
+Yahoo	Yahoo
 Yakima	Yakima
 Yale	Yale
 Yamaha	Yamaha
@@ -19674,5 +19687,6 @@ zoofilia	zoofilia
 zoology	zoology
 zoom	zoom
 zoophilia	zoophilia
+Zope	Zope
 Zurich	Zurich
 Zyban	Zyban
