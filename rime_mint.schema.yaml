@@ -17,6 +17,7 @@ schema:
       * opencc - 開放中文轉換
   dependencies:
     - radical_pinyin_flypy # 参考 https://github.com/mirtlecn/rime-radical-pinyin
+    - radical_pinyin # 参考 https://github.com/mirtlecn/rime-radical-pinyin
     - wubi98_mint # 98五笔库 https://github.com/yanhuacuo/98wubi-tables
     - stroke
     - melt_eng # 英文方案
