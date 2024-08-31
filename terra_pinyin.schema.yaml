@@ -1,7 +1,7 @@
 schema:
   schema_id: terra_pinyin
   name: "地球拼音-薄荷定制"
-  version: '24.05.29'
+  version: "24.08.31"
   author:
     - 佛振 <chen.sst@gmail.com>
     - mintimate < @Mintimate|https://www.mintimate.cn >
@@ -390,7 +390,7 @@ recognizer:
   import_preset: default
   patterns:
     url: "^[a-z]+[.].+$"
-    punct: "^/([0-9]0?|[a-z]+)$"
+    punct: "^/([0-9]0?|[a-z]|[A-Z]+)$"
     wubi98_mint: "Uw[a-z]*'?$"
     stroke: "Ui[a-z]*'?$"
     radical_lookup: "Uu[a-z]*'?$"
