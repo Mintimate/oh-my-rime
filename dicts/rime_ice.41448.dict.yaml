@@ -1,16 +1,13 @@
 # Rime dictionary
 # encoding: utf-8
 #
-#
 # https://github.com/iDvel/rime-ice
 # ------- 大字表 -------
 # （已经不是最初的 41448 个字了，一直没有改名）
-#
 # 数据来源：
 # 字来自 Unihan https://www.unicode.org/Public/ > 16.0.0 > Unihan.zip > Unihan_Readings.txt > kMandarin
 # 音来自汉典 https://github.com/mozillazg/pinyin-data/ > zdic.txt
 # 因为 Unihan 的音存在错误及缺失的情况，汉典存在过多生僻罕见的字，结合了一下。
-#
 # 使用建议： 多个词库文件有重复时，靠前的词库文件中的权重生效。
 #          将 8105  作为第一字表，放到靠前位置；
 #          将 41448 作为第二字表，放到靠后位置。

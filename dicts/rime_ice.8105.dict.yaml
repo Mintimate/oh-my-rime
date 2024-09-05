@@ -1,25 +1,16 @@
 # Rime dictionary
 # encoding: utf-8
 #
-#
 # https://github.com/iDvel/rime-ice
 # ------- 《通用规范汉字表》8105 字字表 -------
-#
-#
 # 使用的数据：https://zh.wiktionary.org/wiki/Appendix:%E6%B1%89%E8%AF%AD%E6%8B%BC%E9%9F%B3%E7%B4%A2%E5%BC%95/%E9%80%9A%E7%94%A8%E8%A7%84%E8%8C%83%E6%B1%89%E5%AD%97%E8%A1%A8
 # 使用的字频：[25亿字语料汉字字频表](https://faculty.blcu.edu.cn/xinghb/zh_CN/article/167473/content/1437.htm)
-#
-#
 # 这个数据、《现代汉语词典》、《现代汉语规范词典》之间的注音并不都相同，使用前请注意，参照《现汉》增加了一些原数据中没有的读音。
-#
-#
 # 注音：
 # 「nüe 虐」「lüe 略」使用「nve」「lve」的注音。
 # 「句、去、需、与」使用「ju qu xu yu」的注音。
 # 删除「呷ga」（呷呷），《现汉》推荐「嘎嘎」。
 # 删除「虾ha」（虾蟆ha ma），《现汉》推荐「蛤蟆」，保留地名「虾蟆陵ha ma ling」。
-#
-#
 # 多音字的注音问题：
 # 对于没有注音的词汇，如 tencent.dict.yaml 词库，
 # Rime 按照方案中字表自动注音，多音字的权重比值大于 5:100 的就会参与注音。
