@@ -9,7 +9,7 @@
 schema:
   schema_id: double_pinyin
   name: "自然码双拼-薄荷定制"
-  version: "24.08.31"
+  version: "24.09.10"
   author:
     - Dvel
     - Mintimate
@@ -292,7 +292,7 @@ recognizer:
   import_preset: default
   patterns:
     url: "^[a-z]+[.].+$"
-    punct: "^/([0-9]0?|[a-z]|[A-Z]+)$"
+    punct: "^/[0-9a-zA-Z]*'?$"
     wubi98_mint: "Uw[a-z]*'?$"
     radical_lookup: "Uu[a-z]*'?$"
     rmb: "^R[0-9]+[.]?[0-9]*"        # 响应 lua_translator@number_translator 脚本将自动获取第 2 个字符作为触发前缀

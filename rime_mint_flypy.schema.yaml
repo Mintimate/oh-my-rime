@@ -4,7 +4,7 @@
 schema:
   schema_id: rime_mint_flypy
   name: 薄荷拼音-小鹤混输
-  version: "24.08.31"
+  version: "24.09.10"
   author:
     - mintimate < @Mintimate|https://www.mintimate.cn >
   description: |
@@ -365,7 +365,7 @@ recognizer:
   import_preset: default
   patterns:
     url: "^[a-z]+[.].+$"
-    punct: "^/([0-9]0?|[a-z]|[A-Z]+)$"
+    punct: "^/[0-9a-zA-Z]*'?$"
     wubi98_mint: "Uw[a-z]*'?$"
     stroke: "Ui[a-z]*'?$"
     radical_lookup: "Uu[a-z]*'?$"
