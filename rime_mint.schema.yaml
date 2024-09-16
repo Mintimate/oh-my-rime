@@ -16,11 +16,11 @@ schema:
       * Chewing - 新酷音
       * opencc - 開放中文轉換
   dependencies:
-    - radical_pinyin_flypy # 参考 https://github.com/mirtlecn/rime-radical-pinyin
     - radical_pinyin # 参考 https://github.com/mirtlecn/rime-radical-pinyin
     - wubi98_mint # 98五笔库 https://github.com/yanhuacuo/98wubi-tables
     - stroke
     - melt_eng # 英文方案
+    
 switches:
   - name: ascii_mode
     reset: 0
@@ -37,6 +37,7 @@ switches:
   - name: ascii_punct
     states: [ "。，" , "．，" ]
     reset: 0
+    
 engine:
   processors:
     - lua_processor@*select_character
@@ -66,8 +67,8 @@ engine:
     - lua_translator@*chineseLunarCalendar_translator    # 农历
     - table_translator@melt_eng                          # 英文输入（作为子翻译器，优先级需要比原生的低）
     - table_translator@cn_en                             # 中英混合词汇
-    - reverse_lookup_translator@wubi98_mint　
     - reverse_lookup_translator@radical_reverse_lookup
+    - reverse_lookup_translator@wubi98_mint
     - reverse_lookup_translator@stroke
     - lua_translator@*force_gc
     # - reverse_lookup_translator                   # 反查模块，多标签情况下去除
@@ -80,6 +81,7 @@ engine:
     - simplifier@transcription_cc
     - lua_filter@*reduce_english_filter          # 降低部分英语单词在候选项的位置
     - uniquifier                                 # 去重
+
 
 # 简繁切换
 transcription_cc:
@@ -121,7 +123,6 @@ reduce_english_filter:
   mode: all  # all | none | custom | 『留白』
   idx: 2        # 降低到第 idx 个位置
   # 自定义的单词列表，示例列表没有降低部分常用单词，如 and cat mail Mac but bad shit ……
-
   words: [aid, ann,
   bail, bait, bam, band, bans, bat, bay, bend, bent, benz, bib, bid, bien, biz, boc, bop, bos, bud, buf,
   cab, cad, cain, cam, cans, cap, cas, cef, chad, chan, chap, chef, cher, chew, chic, chin, chip, chit, coup, cum, cunt, cur,
@@ -140,6 +141,8 @@ reduce_english_filter:
   tad, tail, taj, tar, tax, tec, ted, tel, ter, tex, tic, tied, tier, ties, tim, tin, tit, tour, tout, tum,
   wag, wand, womens, wap, wax, weir, won,
   yan, yen]
+  
+  
 # 中国农历配置
 chineseLunarCalendar_translator: lunar
 
@@ -286,6 +289,7 @@ wubi98_mint:
   enable_completion: true
   prefix: "Uw"
   tips: 〔五笔〕
+  
 stroke:
   tag: stroke
   dictionary: stroke
@@ -294,6 +298,7 @@ stroke:
   tips: 〔笔画〕
   preedit_format:
     - xlit/hspnz/一丨丿丶乙/
+    
 radical_reverse_lookup:
   tag: radical_lookup
   dictionary: radical_pinyin
@@ -303,10 +308,12 @@ radical_reverse_lookup:
     # comment_format:
   #   - erase/^.*$// # 删除注释
   tips: 〔拆字〕
+  
 reverse_lookup:
   tags: [wubi98_mint,stroke,radical_lookup]
   overwrite_comment: true
   dictionary: dicts/rime_ice.8105
+  
 punctuator:
   import_preset: symbols
   # 定义部分半角字符
@@ -327,6 +334,8 @@ punctuator:
       "$": ["¥", "$", "€", "£", "¢", "¤"]
       "<": ["《", "〈", "«", "<"]
       ">": ["》", "〉", "»", ">"]
+    
+# 反查映射
 recognizer:
   import_preset: default
   patterns:
@@ -374,5 +383,7 @@ key_binder:
     - { when: always, accept: Control+Shift+5, toggle: extended_charset }
     - { when: always, accept: Shift+space, toggle: full_shape }
     - { when: always, accept: Control+period, toggle: ascii_punct }
+    
 menu:
+  # 候选词个数
   page_size: 6
