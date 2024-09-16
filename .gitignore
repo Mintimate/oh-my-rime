@@ -1,7 +1,15 @@
 # macOS日志文件
 .DS_Store
+**/.idea/
+.vscode/
+dist/
 
 # 用户配置文件
+sync/
+installation.yaml
+user.yaml
+*.custom.yaml
+
 user.yaml
 installation.yaml
 
