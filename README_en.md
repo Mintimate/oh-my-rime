@@ -1,4 +1,4 @@
-![style](demo.webp)
+![style](https://www.mintimate.cc/image/demo/guide.webp)
 
 - [中文 - 简体简介](README.md)
 - [中文 - 繁體簡介](README_zh-CHT.md)
