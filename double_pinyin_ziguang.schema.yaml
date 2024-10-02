@@ -9,7 +9,7 @@
 schema:
   schema_id: double_pinyin_ziguang
   name: "紫光双拼-薄荷定制"
-  version: "24.09.25"
+  version: "24.10.02"
   author:
     - Dvel
     - Mintimate
@@ -145,6 +145,11 @@ reduce_english_filter:
     yan, yen,
     zach
   ]
+
+# 错音错字提示
+corrector_filter:
+  # 当文字没有触发错字错音的情况下，保持原本的注释
+  keep_source_comment: false 
 
 # 中国农历配置
 chineseLunarCalendar_translator: lunar

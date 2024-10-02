@@ -14,6 +14,9 @@ local M = {}
 function M.init(env)
     local config = env.engine.schema.config
     local delimiter = config:get_string('speller/delimiter')
+    env.name_space = env.name_space:gsub('^*', '')
+    -- 是否保持原有注释
+    M.keep_source_comment = config:get_bool(env.name_space .. "/keep_source_comment")
     if delimiter and #delimiter > 0 and delimiter:sub(1,1) ~= ' ' then
         env.delimiter = delimiter:sub(1,1)
     end
@@ -24,7 +27,6 @@ function M.init(env)
         ["hun dun"] = { text = "馄饨", comment = "hún tun" },
         ["zhu jiao"] = { text = "主角", comment = "zhǔ jué" },
         ["jiao se"] = { text = "角色", comment = "júe sè" },
-        ["pi sa"] = { text = "比萨", comment = "bǐ sà" },
         ["chi pi sa"] = { text = "吃比萨", comment = "chī bǐ sà" },
         ["pi sa bing"] = { text = "比萨饼", comment = "bǐ sà bǐng" },
         ["shui fu"] = { text = "说服", comment = "shuō fú" },
@@ -94,6 +96,10 @@ function M.init(env)
         ["nan jing liu he"] = { text = "南京六合", comment = "nán jīng lù hé" },
         ["nan jing shi liu he"] = { text = "南京六合区", comment = "nán jīng lù hé qū" },
         ["nan jing shi liu he qu"] = { text = "南京市六合区", comment = "nán jīng shì lù hé qū" },
+        ["nuo da"] = { text = "偌大", comment = "偌(ruò)大" },
+        ["yin jiu zhi ke"] = { text = "饮鸩止渴", comment = "饮鸩(zhèn)止渴" },
+        ["yin jiu jie ke"] = { text = "饮鸩解渴", comment = "饮鸩(zhèn)解渴" },
+        ["gong shang jiao zhi yu"] = { text = "宫商角徵羽", comment = "宫商角(jué)徵羽" },
         -- 错字
         ["pu jie"] = { text = "扑街", comment = "仆街" },
         ["pu gai"] = { text = "扑街", comment = "仆街" },
@@ -113,7 +119,7 @@ function M.init(env)
         ["cou huo"] = { text = "凑活", comment = "凑合(he)" },
         ["ju hui"] = { text = "钜惠", comment = "巨惠" },
         ["mo xie zuo"] = { text = "魔蝎座", comment = "摩羯(jié)座" },
-        ["nuo da"] = { text = "诺大", comment = "偌(ruò)大" },
+        ["pi sa"] = { text = "披萨", comment = "比(bǐ)萨" },
     }
 end
 
@@ -129,7 +135,12 @@ function M.func(input, env)
             if c and cand.text == c.text then
                 cand:get_genuine().comment = string.gsub(M.style, "{comment}", c.comment)
             else
-                cand:get_genuine().comment = ""
+                -- 20241002 是否保持原本注释；如: 拼音
+                if M.keep_source_comment then
+                    cand:get_genuine().comment = string.gsub(M.style, "{comment}", pinyin)
+                else
+                    cand:get_genuine().comment = ""
+                end
             end
         end
         yield(cand)
