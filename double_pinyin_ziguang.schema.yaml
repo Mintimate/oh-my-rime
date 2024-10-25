@@ -341,7 +341,7 @@ key_binder:
     - { when: always, accept: Control+Shift+1, select: .next }   # 切换输入方案
     - { when: always, accept: Control+Shift+2, toggle: ascii_mode } # 切换中/西文模式
     - { when: always, accept: Control+Shift+3, toggle: full_shape } # 切换全角/半角
-    - { when: always, accept: Control+Shift+4, toggle: simplification } # 切换简体/繁体
+    - { when: always, accept: Control+Shift+4, toggle: transcription } # 切换简体/繁体
     - { when: always, accept: Control+Shift+5, toggle: extended_charset } # 切换扩展字符
     - { when: always, accept: Shift+space, toggle: full_shape } # 另一种切换全角/半角的方式
     - { when: always, accept: Control+period, toggle: ascii_punct } # 切换中/西文标点
