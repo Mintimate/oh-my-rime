@@ -6,15 +6,15 @@
 		3. 输入 time 可以出现当前的时间
 		4. 输入 month 可以出现当前的月份
 		5. 输入 datetime 可以出现当前时间节点
-        6. 输入 timestamp 可以出现当前时间戳
+		6. 输入 timestamp 可以出现当前时间戳
 
 	参考借鉴: https://github.com/KyleBing/rime-wubi86-jidian
 
 	Mintimate 修改内容:
 		1. 适配权重
 		2. 注解添加
-    JacianLiu 修改内容：
-        1. 增加时间戳
+	JacianLiu 修改内容：
+		1. 增加时间戳
 
 --]]
 
