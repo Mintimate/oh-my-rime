@@ -245,11 +245,11 @@ function AuxFilter.func(input, env)
                         originalCand.comment .. shadowComment .. '(' .. codeComment .. ')')
                 elseif env.show_aux_notice == "trigger" then
                     if string.find(inputCode,env.trigger_key_string) then
-                        cand.comment = '(' .. codeComment .. ')'
+                        cand.comment = cand.comment .. '(' .. codeComment .. ')'
                     end
                 else
                     -- 其他情况直接给注释添加辅助代码
-                    cand.comment = '(' .. codeComment .. ')'
+                    cand.comment = cand.comment .. '(' .. codeComment .. ')'
                 end
             end
 
