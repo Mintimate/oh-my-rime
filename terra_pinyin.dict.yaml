@@ -1,7 +1,7 @@
 ---
 name: terra_pinyin               # 注意name和文件名一致
 version: "2024.02.11"
-use_preset_vocabulary: true
+use_preset_vocabulary: false
 sort: by_weight
 # 此处为 输入法所用到的词库，既补充拓展词库的地方
 # 雾凇拼音词库，由Github Robot自动更新
