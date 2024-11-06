@@ -54,6 +54,7 @@ engine:
     - punct_segmentor
     - fallback_segmentor
   translators:
+    - lua_translator@*calculator    # 计算器
     - lua_translator@*mint_date_time_translator          # 时间、日期、星期、月份
     - lua_translator@*number_translator                  # 金额大小写
     - lua_translator@*chineseLunarCalendar_translator    # 农历
@@ -90,6 +91,11 @@ emoji_suggestion:
 # 最大输入长度
 codeLengthLimit_processor: 25
 
+# 计算器触发关键字
+calculator: 
+  # 按大写V即可触发计算器功能
+  trigger: V
+  
 # 中国农历配置
 chineseLunarCalendar_translator: lunar
 
@@ -399,7 +405,8 @@ recognizer:
     wubi98_mint: "Uw[a-z]*'?$"
     stroke: "Ui[a-z]*'?$"
     radical_lookup: "Uu[a-z]*'?$"
-    uppercase: ""  # 覆写默认的 uppercase 使其可以在输入大写后，输入数字
+    uppercase: "^[A-Z].*$"  # 使得可以在输入大写后，输入数字，覆写为空则不能
+    
 key_binder:
   bindings:
     - {accept: "Control+Shift+E", toggle: emoji_suggestion, when: always}
@@ -440,6 +447,7 @@ key_binder:
     - { when: always, accept: Control+Shift+5, toggle: extended_charset } # 切换扩展字符
     - { when: always, accept: Shift+space, toggle: full_shape } # 另一种切换全角/半角的方式
     - { when: always, accept: Control+period, toggle: ascii_punct } # 切换中/西文标点
+    
 menu:
   # 候选词个数
   page_size: 6

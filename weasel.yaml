@@ -28,7 +28,7 @@ global_ascii: false                        # 切换为 ascii 模式时，是否�
 # [style]
 # 字体；候选项、候选窗口的行为、布局及样式
 style:
-  color_scheme: mint_light_blue             # 默认配色方案
+  color_scheme: Minimalist_Black             # 默认配色方案
   color_scheme_dark: mint_dark_blue         # 深色模式下，Weasel 的配色方案，Windows 10 1809+ 可用
 
   # 全局字体
@@ -47,8 +47,8 @@ style:
   fullscreen: false                        # 候选窗口全屏显示：true；false
   vertical_text: false                     # 竖排文本：true；false
   # text_orientation: horizontal           # 文本排列方向，效果和 `vertical_text` 相同：horizontal；vertical
-  candidate_list_layout: stacked           # stacked | linear  候选项排列方向（小狼毫可能没有这个参数；如果需要修改为水平布局，可以在custom文件内修改horizontal为true）
-  horizontal: false                        # 候选项水平排列（在custom内和candidate_list_layout的linear效果一样）
+  candidate_list_layout: stacked           # stacked | linear  候选项排列方向（似乎只有在custom内才可以生效）
+  horizontal: false                        # 候选项水平排列（在custom内和andidate_list_layout的linear效果一样）
   vertical_text_left_to_right: false       # 竖排方向是否从左到右：true；false
   vertical_text_with_wrap: false           # 文本竖排模式下，自动换行：true；false
   vertical_auto_reverse: false             # 文本竖排模式下，候选窗口位于光标上方时倒序排列：true；false
@@ -242,6 +242,48 @@ preset_color_schemes:
     text_color: 0x83C81C                    # 拼音颜色 （inline_preedit: false）
     hilited_text_color: 0xed9564            # 选中拼音颜色 （inline_preedit: false）
 
+  #以下两款皮肤，推荐横屏候选框时使用，建议将mark_text属性设置为空字符串，样式会美观一些
+  #根据碧皓青的明亮主题外观改造的外观 
+  Minimalist_White:
+    name: "简约白／Minimalist White"
+    author: mixia <"mixia's Blog">
+    translucency: true                                     # 磨砂： false | true
+    mutual_exclusive: false                              # 色不叠加： false | true
+    text_orientation: horizontal                         # 文本排列方向，效果和 `vertical_text` 相同：horizontal；vertical
+    color_space: abgr				            # 颜色格式：argb（0xaarrggbb）；rgba（0xrrggbbaa）；abgr（0xaabbggrr 默认）
+    back_color: 0xEFEFEF                                # 底色
+    candidate_text_color: 0x323232                  # 文字颜色
+    comment_text_color: 0x878787                   # 注颜色
+    label_color: 0x323232                                # 序号颜色
+    hilited_candidate_back_color: 0xEFEFEF      # 选中底色  
+    hilited_candidate_text_color: 0x323232        # 选中文字颜色 
+    hilited_comment_text_color: 0x878787        # 选中注颜色
+    hilited_candidate_label_color: 0x323232      # 选中序号颜色
+    hilited_label_color: 0x323232                     # 选中序号颜色 
+    text_color: 0x323232                                # 拼音颜色 （inline_preedit: false）
+    hilited_text_color: 0x323232                       # 选中拼音颜色 （inline_preedit: false）
+    hilited_mark_color: 0x7BAE4F                     # 标签前的标记颜色，如果觉得标记太靠近边缘，请修改margin_x属性，根据喜好增加即可
+
+  #根据黑水鸭的黑暗主题外观改造的外观
+  Minimalist_Black:
+    name: "简约墨／Minimalist Black"               # 方案设置中显示的配色名称
+    author: mixia <"mixia's Blog">
+    color_format: abgr				         # 颜色格式：argb（0xaarrggbb）；rgba（0xrrggbbaa）；abgr（0xaabbggrr 默认）
+    text_color: 0xefefef                               # 拼音串  
+    back_color: 0x424242                             # 背景
+    label_color: 0xefefef                               # 预选栏编号颜色
+    border_color: 0x424242                          # 边框
+    shadow_color: 0xb4000000                     # 阴影颜色
+    comment_text_color: 0xBEBEBE               # 注解文字  
+    candidate_text_color: 0xefefef                 # 非第一候选项
+    hilited_text_color: 0xefefef                    # 拼音串高亮  
+    hilited_back_color: 0x424242                   # 拼音串高亮背景
+    hilited_candidate_back_color: 0x424242    # 第一候选项背景  
+    hilited_candidate_text_color: 0xefefef        # 第一候选项
+    hilited_candidate_label_color: 0xffffff        # 第一候选项编号颜色
+    hilited_label_color: 0xffffff                       # 第一候选项编号颜色
+    hilited_comment_text_color: 0xBEBEBE      # 注解文字高亮
+    hilited_mark_color: 0xc6c01a                    # 标签前的标记颜色，如果觉得标记太靠近边缘，请修改margin_x属性，根据喜好增加即可
 
 
   # 以下为 weasel 自带的配色方案

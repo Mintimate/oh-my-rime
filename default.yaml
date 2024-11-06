@@ -29,7 +29,7 @@ switcher:
     - Control+grave
     - Control+Shift+grave
     # F4 和 JetBrains 的快捷键冲突
-    # - F4
+    - F4
   # 在切换方案时保留的选项
   save_options:
     - full_shape  # 保留全角模式
