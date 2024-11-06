@@ -19,6 +19,10 @@ schema:
   dependencies:
     - melt_eng        # 英文输入，作为次翻译器挂载到拼音方案
     - radical_pinyin  # 部件拆字，反查及辅码（如果需要把按键映射
+  icon: icons/double_pinyin_icons/zh.ico           # 更换中文图标
+  ascii_icon: icons/double_pinyin_icons/en.ico     # 更换英文图标
+  full_icon: icons/double_pinyin_icons/full.ico    # 更换全角图标
+  half_icon: icons/double_pinyin_icons/half.ico    # 更换半角图标
 
 switches:
   - name: ascii_mode

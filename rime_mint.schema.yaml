@@ -20,6 +20,10 @@ schema:
     - wubi98_mint # 98五笔库 https://github.com/yanhuacuo/98wubi-tables
     - stroke
     - melt_eng # 英文方案
+  icon: icons/pinyin_icons/zh.ico           # 更换中文图标
+  ascii_icon: icons/pinyin_icons/en.ico     # 更换英文图标
+  full_icon: icons/pinyin_icons/full.ico    # 更换全角图标
+  half_icon: icons/pinyin_icons/half.ico    # 更换半角图标
     
 switches:
   - name: ascii_mode
