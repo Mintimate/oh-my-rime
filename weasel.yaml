@@ -28,7 +28,7 @@ global_ascii: false                        # 切换为 ascii 模式时，是否�
 # [style]
 # 字体；候选项、候选窗口的行为、布局及样式
 style:
-  color_scheme: Minimalist_Black             # 默认配色方案
+  color_scheme: mint_light_green             # 默认配色方案
   color_scheme_dark: mint_dark_blue         # 深色模式下，Weasel 的配色方案，Windows 10 1809+ 可用
 
   # 全局字体
