@@ -26,8 +26,8 @@ switcher:
   caption: 〔方案切换〕
   # 切换方案的快捷键
   hotkeys:
-    - Control+grave
-    - Control+Shift+grave
+    # - Control+grave 
+    - Control+Shift+grave # ~
     # F4 和 JetBrains 的快捷键冲突
     # - F4
   # 在切换方案时保留的选项
