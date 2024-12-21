@@ -76,6 +76,9 @@ Rime 配置教程：
 
 薄荷方案內，基於[Hamster](https://github.com/imfuxiao/Hamster/) 九宮格佈局和[霧凇九宮格](https://github.com/iDvel/rime-ice/blob/main/t9.schema.yaml)移植了九宮格。需要同時啟用九宮格方案（輸入方案設定）和九宮格佈局（鍵盤設定 - 鍵盤佈局 - 中文 9 鍵）。
 
+如果你喜歡使用 Rime 打一些長句，那麼強烈建議配合語言模型來使用。參考教程:
+- [Rime 內如何配置語言模型 -- 薄荷輸入配置教程](https://www.mintimate.cc/zh/guide/languageModel.html)
+
 ## 配置文件說明
 
 - `default.yaml` 設定輸入法、如何切換輸入法、翻頁等；建議自行創建`default.custom.yaml`來覆寫薄荷配置的`default.yaml`.
