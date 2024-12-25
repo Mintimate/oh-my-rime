@@ -144,13 +144,15 @@ chineseLunarCalendar_translator: lunar
 # 默认 "{comment}" 输入 hun dun 时会在「馄饨」旁边生成 hún tun 的 comment
 # 例如左右加个括号 "({comment})" 就会变成 (hún tun)
 corrector: "{comment}"
+
 translator:
   # enable_correction: true      # Rime自带的按键纠错，适用于手机26键 参考: https://github.com/rime/librime/pull/228
   # 字典文件
   dictionary: rime_mint          # 使用的字典文件
+  enable_word_completion: true   # 大于 4 音节的词条自动补全，librime > 1.11.2
   spelling_hints: 8              # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
   always_show_comments: true     # corrector.lua ：Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供 corrector.lua 做判断用。
-  comment_format:               # 标记拼音注释，供 corrector.lua 做判断用
+  comment_format:                # 标记拼音注释，供 corrector.lua 做判断用
     - xform/^/［/
     - xform/$/］/
   preedit_format:
@@ -164,7 +166,10 @@ melt_eng:
   dictionary: melt_eng           # 英文词典
   enable_sentence: false         # 关闭自动造句
   enable_completion: false       # 关闭自动提示
-  initial_quality: 0.8
+  initial_quality: 1.0
+  comment_format:                # 自定义提示码
+    - xform/.*//                 # 清空提示码
+
 cn_en:
   dictionary: ""                 # 中英混输，直接使用短语词典，普通字典直接留空即可
   user_dict: dicts/rime_ice.cn_en
