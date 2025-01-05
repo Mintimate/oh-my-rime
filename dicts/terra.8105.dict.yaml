@@ -25,7 +25,7 @@
 ---
 
 name: terra.8105
-version: "20241205"
+version: "20250105"
 sort: by_weight
 ...
 
@@ -3212,8 +3212,8 @@ sort: by_weight
 懒	lan3	3448
 兰	lan2	2564
 栏	lan2	1603
-揽	lan3	764
 拦	lan2	577
+揽	lan3	564
 篮	lan2	481
 岚	lan2	280
 滥	lan4	250
@@ -7775,6 +7775,7 @@ sort: by_weight
 𬣞	zhu3	0
 抓	zhua1	7786
 髽	zhua1	2
+赚	zhuan4	14472
 专	zhuan1	3220
 砖	zhuan1	2161
 撰	zhuan4	453
@@ -8896,7 +8897,6 @@ sort: by_weight
 转	zhuan	17323
 转	zhuan3	6929
 转	zhuan4	10393
-赚	zhuan	14472
 椎	zhui1	77
 椎	chui2	1
 琢	zhuo2	23
