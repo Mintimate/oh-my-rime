@@ -173,7 +173,7 @@ melt_eng:
 # 中英混合词汇
 cn_en:
   dictionary: ""                 # 中英混输，直接使用短语词典，普通字典直接留空即可
-  user_dict: dicts/rime_ice.cn_en
+  user_dict: dicts/rime_ice.cn_en_flypy
   db_class: stabledb
   enable_completion: false
   enable_sentence: false
