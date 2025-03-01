@@ -10,6 +10,6 @@ import_tables:
   - dicts/terra_rime_ice.base    # 使用Python转义的雾凇拼音base
   - dicts/terra_rime_ice.ext     # 使用Python转义的雾凇拼音ext
   - dicts/other_kaomoji          # 颜文字表情（按`vv`呼出)
-  # 20240608 Emoji完全交友OpenCC，不再使用字典作为补充
+  # 20240608 Emoji完全交由OpenCC，不再使用字典作为补充
   # - dicts/other_emoji            # Emoji(仅仅作为补充，实际使用一般是OpenCC生效)
 ...
