@@ -4,7 +4,7 @@
 schema:
   schema_id: rime_mint
   name: 薄荷拼音-全拼输入
-  version: "24.09.10"
+  version: "24.11.11"
   author:
     - mintimate < @Mintimate|https://www.mintimate.cn >
   description: |
@@ -76,7 +76,6 @@ engine:
   filters:
     - lua_filter@*corrector_filter               # 错音错字提示
     - lua_filter@*autocap_filter                 # 英文自动大写
-    - lua_filter@*auxCode_filter@moqi_aux_code   # 墨奇辅助码https://github.com/gaboolic/rime-shuangpin-fuzhuma/wiki/%E5%A2%A8%E5%A5%87%E7%A0%81%E6%8B%86%E5%88%86%E8%A7%84%E5%88%99
     - simplifier@emoji_suggestion
     - simplifier@transcription_cc
     - lua_filter@*reduce_english_filter          # 降低部分英语单词在候选项的位置
@@ -92,15 +91,6 @@ transcription_cc:
 
 # 最大输入长度
 codeLengthLimit_processor: 25
-
-axu_code:
-  # 激活码
-  trigger_word: "`"
-  # 展示辅码的模式
-  # always:   总是展示(默认)
-  # trigger:  输入激活码后激活辅码
-  # none:     始终不展示辅码
-  show_aux_notice: "trigger"
 
 # Emoji模块
 emoji_suggestion:
@@ -141,7 +131,11 @@ reduce_english_filter:
   tad, tail, taj, tar, tax, tec, ted, tel, ter, tex, tic, tied, tier, ties, tim, tin, tit, tour, tout, tum,
   wag, wand, womens, wap, wax, weir, won,
   yan, yen]
-  
+
+# 错音错字提示
+corrector_filter:
+  # 当文字没有触发错字错音的情况下，保持原本的注释
+  keep_source_comment: false   
   
 # 中国农历配置
 chineseLunarCalendar_translator: lunar
@@ -150,13 +144,15 @@ chineseLunarCalendar_translator: lunar
 # 默认 "{comment}" 输入 hun dun 时会在「馄饨」旁边生成 hún tun 的 comment
 # 例如左右加个括号 "({comment})" 就会变成 (hún tun)
 corrector: "{comment}"
+
 translator:
   # enable_correction: true      # Rime自带的按键纠错，适用于手机26键 参考: https://github.com/rime/librime/pull/228
   # 字典文件
   dictionary: rime_mint          # 使用的字典文件
+  enable_word_completion: true   # 大于 4 音节的词条自动补全，librime > 1.11.2
   spelling_hints: 8              # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
   always_show_comments: true     # corrector.lua ：Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供 corrector.lua 做判断用。
-  comment_format:               # 标记拼音注释，供 corrector.lua 做判断用
+  comment_format:                # 标记拼音注释，供 corrector.lua 做判断用
     - xform/^/［/
     - xform/$/］/
   preedit_format:
@@ -170,7 +166,10 @@ melt_eng:
   dictionary: melt_eng           # 英文词典
   enable_sentence: false         # 关闭自动造句
   enable_completion: false       # 关闭自动提示
-  initial_quality: 0.8
+  initial_quality: 1.0
+  comment_format:                # 自定义提示码
+    - xform/.*//                 # 清空提示码
+
 cn_en:
   dictionary: ""                 # 中英混输，直接使用短语词典，普通字典直接留空即可
   user_dict: dicts/rime_ice.cn_en
@@ -340,7 +339,7 @@ recognizer:
   import_preset: default
   patterns:
     url: "^[a-z]+[.].+$"
-    punct: "^/[0-9a-zA-Z]*'?$"
+    punct: "^/([0-9]0?|[a-zA-Z]+)$"
     wubi98_mint: "Uw[a-z]*'?$"
     stroke: "Ui[a-z]*'?$"
     radical_lookup: "Uu[a-z]*'?$"
@@ -379,7 +378,7 @@ key_binder:
     - { when: always, accept: Control+Shift+1, select: .next }
     - { when: always, accept: Control+Shift+2, toggle: ascii_mode }
     - { when: always, accept: Control+Shift+3, toggle: full_shape }
-    - { when: always, accept: Control+Shift+4, toggle: simplification }
+    - { when: always, accept: Control+Shift+4, toggle: transcription }
     - { when: always, accept: Control+Shift+5, toggle: extended_charset }
     - { when: always, accept: Shift+space, toggle: full_shape }
     - { when: always, accept: Control+period, toggle: ascii_punct }

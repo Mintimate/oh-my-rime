@@ -6,19 +6,34 @@ on:
       - main
 
 env:
-  SSH_KEY: ${{ secrets.GITLAB_DEPLOY_KEY }} # 服务器私钥
-  DEPLOY_REPO: ${{ secrets.GITLAB_DEPLOY_REPO }} # 服务器部署仓库地址
+  SSH_KEY: ${{ secrets.GITLAB_DEPLOY_KEY }}
+  DEPLOY_REPO_HOST: ${{ secrets.GITLAB_DEPLOY_HOST }}
+  DEPLOY_REPO_PORT: ${{ secrets.GITLAB_DEPLOY_PORT }}
+  DEPLOY_REPO: ${{ secrets.GITLAB_DEPLOY_REPO }}
 
 jobs:
   git-mirror:
     runs-on: ubuntu-latest
     if: github.repository_owner == 'Mintimate'
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
-      - uses: yesolutions/mirror-action@master
-        with:
-          REMOTE: ${{ env.DEPLOY_REPO }}
-          GIT_SSH_PRIVATE_KEY: ${{ env.SSH_KEY }}
-          GIT_SSH_NO_VERIFY_HOST: "true"
+          fetch-depth: 0  # 获取完整提交历史
+
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ env.SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -p ${{ env.DEPLOY_REPO_PORT }} ${{ env.DEPLOY_REPO_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Configure Git Identity
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+      - name: Mirror to GitLab
+        run: |
+          git remote add gitlab "${{ env.DEPLOY_REPO }}"
+          # 强制推送分支和标签
+          git push --tags --force --prune gitlab "refs/heads/*:refs/heads/*"

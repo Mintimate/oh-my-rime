@@ -19,3 +19,6 @@ build
 
 # 自定义文件
 *.custom.yaml
+
+# VSCode 项目文件
+*.code-workspace

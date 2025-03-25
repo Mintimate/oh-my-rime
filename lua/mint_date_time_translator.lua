@@ -6,12 +6,15 @@
 		3. 输入 time 可以出现当前的时间
 		4. 输入 month 可以出现当前的月份
 		5. 输入 datetime 可以出现当前时间节点
+		6. 输入 timestamp 可以出现当前时间戳
 
 	参考借鉴: https://github.com/KyleBing/rime-wubi86-jidian
 
 	Mintimate 修改内容:
 		1. 适配权重
 		2. 注解添加
+	JacianLiu 修改内容：
+		1. 增加时间戳
 
 --]]
 
@@ -107,6 +110,10 @@ function mint_date_time_translator(input, seg)
     if (input == "month") then
         yield(make_hight_quality_candidate("month", seg.start, seg._end, os.date("%B"), "全称"))
         yield(make_hight_quality_candidate("month", seg.start, seg._end, os.date("%b"), "缩写"))
+    end
+    
+    if (input == "timestamp") then
+        yield(make_hight_quality_candidate("timestamp", seg.start, seg._end, string.format('%d', os.time()), "秒"))
     end
 end
 

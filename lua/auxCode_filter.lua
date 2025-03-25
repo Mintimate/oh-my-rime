@@ -78,6 +78,9 @@ end
 ----------------
 function AuxFilter.readAuxTxt(txtpath)
     --log.info("** AuxCode filter", 'read Aux code txt:', txtpath)
+    if AuxFilter.cache then
+        return AuxFilter.cache
+    end
 
     local defaultFile = 'ZRM_Aux-code_4.3.txt'
     local userPath = rime_api.get_user_data_dir() .. "/lua/aux_code/"
@@ -104,7 +107,8 @@ function AuxFilter.readAuxTxt(txtpath)
     --     log.info(key, table.concat(value, ','))
     -- end
 
-    return auxCodes
+    AuxFilter.cache = auxCodes
+    return AuxFilter.cache
 end
 
 -- local function getUtf8CharLength(byte)
@@ -245,11 +249,11 @@ function AuxFilter.func(input, env)
                         originalCand.comment .. shadowComment .. '(' .. codeComment .. ')')
                 elseif env.show_aux_notice == "trigger" then
                     if string.find(inputCode,env.trigger_key_string) then
-                        cand.comment = '(' .. codeComment .. ')'
+                        cand.comment = cand.comment .. '(' .. codeComment .. ')'
                     end
                 else
                     -- 其他情况直接给注释添加辅助代码
-                    cand.comment = '(' .. codeComment .. ')'
+                    cand.comment = cand.comment .. '(' .. codeComment .. ')'
                 end
             end
 

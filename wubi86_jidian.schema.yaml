@@ -4,7 +4,7 @@
 schema:
   schema_id: wubi86_jidian
   name: "五笔86-极点五笔"
-  version: "24.09.10"
+  version: "24.09.25"
   author:
     - 创始人 王永民先生
     - 修改者 KyleBing <https://github.com/KyleBing/rime-wubi86-jidian>
@@ -194,7 +194,7 @@ recognizer:
   import_preset: default
   patterns:
     url: "^[a-z]+[.].+$"
-    punct: "^/[0-9a-zA-Z]*'?$"
+    punct: "^/([0-9]0?|[a-zA-Z]+)$"
     email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
     rime_mint: "^Up[a-z]*'?$"
     rmb: "^R[0-9]+[.]?[0-9]*"        # 响应 lua_translator@number_translator 脚本将自动获取第 2 个字符作为触发前缀
@@ -238,7 +238,7 @@ key_binder:
     - { when: always, accept: Control+Shift+1, select: .next }   # 切换输入方案
     - { when: always, accept: Control+Shift+2, toggle: ascii_mode } # 切换中/西文模式
     - { when: always, accept: Control+Shift+3, toggle: full_shape } # 切换全角/半角
-    - { when: always, accept: Control+Shift+4, toggle: simplification } # 切换简体/繁体
+    - { when: always, accept: Control+Shift+4, toggle: transcription } # 切换简体/繁体
     - { when: always, accept: Control+Shift+5, toggle: extended_charset } # 切换扩展字符
     - { when: always, accept: Shift+space, toggle: full_shape } # 另一种切换全角/半角的方式
     - { when: always, accept: Control+period, toggle: ascii_punct } # 切换中/西文标点

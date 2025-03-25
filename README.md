@@ -1,4 +1,4 @@
-![样式](demo.webp)
+![样式](https://www.mintimate.cc/image/demo/guide.webp)
 
 - [中文 - 简体简介](README.md)
 - [中文 - 繁體簡介](README_zh-CHT.md)
@@ -77,6 +77,9 @@ Rime 配置教程：
 仓输入法 Hamster 内如何使用九宫格输入？
 
 薄荷方案内，基于[Hamster](https://github.com/imfuxiao/Hamster/) 九宫格布局和[雾凇九宫格](https://github.com/iDvel/rime-ice/blob/main/t9.schema.yaml)移植了九宫格。需要同时启用九宫格方案（输入方案设置）和九宫格布局（键盘设置 - 键盘布局 - 中文 9 键）。
+
+如果你喜欢使用 Rime 打一些长句，那么强烈建议配合语言模型来使用。参考教程:
+- [Rime 内如何配置语言模型 -- 薄荷输入配置教程](https://www.mintimate.cc/zh/guide/languageModel.html)
 
 ## 配置文件说明
 

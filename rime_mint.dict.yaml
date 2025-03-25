@@ -12,6 +12,6 @@ import_tables:
   - dicts/rime_ice.ext           # 雾凇拼音 扩展词库
   - dicts/other_kaomoji          # 颜文字表情（按`VV`呼出)
   - dicts/rime_ice.others        # 雾凇拼音 others词库（用于自动纠错）
-  # 20240608 Emoji完全交友OpenCC，不再使用字典作为补充
+  # 20240608 Emoji完全交由OpenCC，不再使用字典作为补充
   # - dicts/other_emoji            # Emoji(仅仅作为补充，实际使用一般是OpenCC生效)
 ...

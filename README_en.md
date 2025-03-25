@@ -1,4 +1,4 @@
-![style](demo.webp)
+![style](https://www.mintimate.cc/image/demo/guide.webp)
 
 - [中文 - 简体简介](README.md)
 - [中文 - 繁體簡介](README_zh-CHT.md)
@@ -71,6 +71,10 @@ If you need to use rime in trime with android, you can use oh-my-rime's theme by
 With the Hamster input method, how is the 9-grid input used?
 
 Inside the Oh-my-rime, the 9-grid layout has been adapted from Hamster's [9-grid arrangement](https://github.com/imfuxiao/Hamster/) and the [rime-ice's 9-grid](https://github.com/iDvel/rime-ice/blob/main/t9.schema.yaml). To utilize the 9-grid input, both the 9-grid scheme (set under Input Scheme settings) and the 9-grid layout (键盘设置 - 键盘布局 - 中文 9 键) need to be enabled simultaneously.
+
+If you like to use Rime to type long sentences, it is strongly recommended to use it with a language model. Reference tutorial:
+- [How to Configure Language Model in Rime -- Oh-my-rime Configuration Tutorial](https://www.mintimate.cc/en/guide/languageModel.html)
+
 
 ## Configuration file description
 

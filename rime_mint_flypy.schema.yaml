@@ -4,7 +4,7 @@
 schema:
   schema_id: rime_mint_flypy
   name: 薄荷拼音-小鹤混输
-  version: "24.09.10"
+  version: "24.11.11"
   author:
     - mintimate < @Mintimate|https://www.mintimate.cn >
   description: |
@@ -78,7 +78,6 @@ engine:
   filters:
     - lua_filter@*corrector_filter            # 错音错字提示
     - lua_filter@*autocap_filter              # 英文自动大写
-    - lua_filter@*auxCode_filter@flypy_full   # 小鹤双拼辅码(音形)
     - simplifier@emoji_suggestion
     - simplifier@transcription_cc
     - lua_filter@*reduce_english_filter       # 降低部分英语单词在候选项的位置
@@ -101,14 +100,6 @@ emoji_suggestion:
 # 最大输入长度
 codeLengthLimit_processor: 25
 
-axu_code:
-  # 激活码
-  trigger_word: "`"
-  # 展示辅码的模式
-  # always:   总是展示(默认)
-  # trigger:  输入激活码后激活辅码
-  # none:     始终不展示辅码
-  show_aux_notice: "trigger"
 
 # Lua 配置: 降低部分英语单词在候选项的位置。
 # 详细介绍 https://dvel.me/posts/make-rime-en-better/#短单词置顶的问题
@@ -142,6 +133,11 @@ reduce_english_filter:
   tad, tail, taj, tar, tax, tec, ted, tel, ter, tex, tic, tied, tier, ties, tim, tin, tit, tour, tout, tum,
   wag, wand, womens, wap, wax, weir, won,
   yan, yen]
+
+# 错音错字提示
+corrector_filter:
+  # 当文字没有触发错字错音的情况下，保持原本的注释
+  keep_source_comment: false 
   
 # 中国农历配置
 chineseLunarCalendar_translator: lunar
@@ -177,7 +173,7 @@ melt_eng:
 # 中英混合词汇
 cn_en:
   dictionary: ""                 # 中英混输，直接使用短语词典，普通字典直接留空即可
-  user_dict: dicts/rime_ice.cn_en
+  user_dict: dicts/rime_ice.cn_en_flypy
   db_class: stabledb
   enable_completion: false
   enable_sentence: false
@@ -365,7 +361,7 @@ recognizer:
   import_preset: default
   patterns:
     url: "^[a-z]+[.].+$"
-    punct: "^/[0-9a-zA-Z]*'?$"
+    punct: "^/([0-9]0?|[a-zA-Z]+)$"
     wubi98_mint: "Uw[a-z]*'?$"
     stroke: "Ui[a-z]*'?$"
     radical_lookup: "Uu[a-z]*'?$"
@@ -408,7 +404,7 @@ key_binder:
     - { when: always, accept: Control+Shift+1, select: .next }   # 切换输入方案
     - { when: always, accept: Control+Shift+2, toggle: ascii_mode } # 切换中/西文模式
     - { when: always, accept: Control+Shift+3, toggle: full_shape } # 切换全角/半角
-    - { when: always, accept: Control+Shift+4, toggle: simplification } # 切换简体/繁体
+    - { when: always, accept: Control+Shift+4, toggle: transcription } # 切换简体/繁体
     - { when: always, accept: Control+Shift+5, toggle: extended_charset } # 切换扩展字符
     - { when: always, accept: Shift+space, toggle: full_shape } # 另一种切换全角/半角的方式
     - { when: always, accept: Control+period, toggle: ascii_punct } # 切换中/西文标点
