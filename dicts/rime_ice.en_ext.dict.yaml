@@ -974,6 +974,8 @@ LeanCloud	LeanCloud
 PaperMod	PaperMod
 Vercel	Vercel
 CS	CS
+C++	Cpp
+C#	Csharp
 Counter-Strike	CS
 Backblaze	Backblaze
 WebP	WebP
@@ -1487,8 +1489,6 @@ RNA	RNA
 ribonucleic acid	RNA
 mRNA	mRNA
 messenger RNA	mRNA
-C++	C++
-C++	Cpp
 Python	Python
 MIT	MIT
 Massachusetts Institute of Technology	MIT
@@ -2028,7 +2028,6 @@ Minecraft	Minecraft
 LSP	LSP
 Language Server Protocol	LSP
 Google Pixel	GooglePixel
-C#	C#
 KeyCastr	KeyCastr
 Laugh Tale	LaughTale
 Joy Boy	JoyBoy
