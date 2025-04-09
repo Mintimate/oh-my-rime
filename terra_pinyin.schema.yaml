@@ -57,6 +57,7 @@ engine:
     - lua_translator@*mint_date_time_translator          # 时间、日期、星期、月份
     - lua_translator@*number_translator                  # 金额大小写
     - lua_translator@*chineseLunarCalendar_translator    # 农历
+    - lua_translator@*mint_calculator_translator         # 计算器（lua 动态表达式）
     - punct_translator
     - table_translator@custom_phrase
     - table_translator@melt_eng           # 英文输入（作为子翻译器，优先级需要比原生的低）
@@ -399,6 +400,7 @@ recognizer:
     stroke: "Ui[a-z]*'?$"
     radical_lookup: "Uu[a-z]*'?$"
     rmb: "^R[0-9]+[.]?[0-9]*"        # 响应 lua_translator@number_translator 脚本将自动获取第 2 个字符作为触发前缀
+    expression: "^=.*$"              # 响应 lua_translator@expression_translator 脚本将自动获取第 2 个字符作为触发前缀
     gregorian_to_lunar: "^N[0-9]{1,8}"  # 响应 lua_translator@Chinese_lunar_calendar 公历转农历，输入 N20240115 得到「二〇二四年腊月初五」，脚本将自动获取第 2 个字符作为触发前缀
     uppercase: ""  # 覆写默认的 uppercase 使其可以在输入大写后，输入数字
 key_binder:
