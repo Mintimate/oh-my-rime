@@ -14,3 +14,6 @@ build
 
 # VSCode 项目文件
 *.code-workspace
+
+# 语言模型文件
+*.gram
