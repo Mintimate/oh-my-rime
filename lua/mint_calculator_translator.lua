@@ -335,6 +335,26 @@ end
 -- 随数字
 rdm =  math.random()
 
+-- 阶乘
+function factorial(x)
+    -- 不能为负数
+    if x < 0 then return nil end
+    if x == 0 or x == 1 then return 1 end
+  
+    local result = 1
+    for i = 1, x do
+      result = result * i
+    end
+  
+    return result
+end
+  
+-- 实现阶乘计算(!)
+function replaceToFactorial(str)
+    -- 替换[0-9]!字符为fact([0-9])以实现阶乘
+    return str:gsub("([0-9]+)!", "factorial(%1)")
+end
+
 -- # System
 date = os.date
 time = os.time
@@ -420,8 +440,11 @@ local function calculator_translator(input, seg, env)
         return
     end
 
+    -- 在计算前先处理阶乘表达式
+    local processed_exp = replaceToFactorial(expe)
+
     -- 表达式的计算
-    local result = load("return " .. expe)()
+    local result = load("return " .. processed_exp)()
     if result == nil then
         return
     end
