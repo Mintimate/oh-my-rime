@@ -6,8 +6,13 @@
 
 一套快速初始化rime的模闆方案，因為平時我使用`oh-my-zsh`，希望大家在用這個模闆的時候，有種用`omz`的感覺；所以我給它取名叫`oh-my-rime`，妳也可以叫它`薄荷輸入法`，亦或者`Mint Input`。
 
-如果妳下載遇到睏難，使用GitHub Action推送的鏡像倉庫：
-- [oh-my-rime: https://gitlab.mintimate.cn/Mintimate/oh-my-rime](https://gitlab.mintimate.cn/Mintimate/oh-my-rime)
+如果你下載遇到困難，使用GitHub Action推送的鏡像倉庫：
+
+- [oh-my-rime: https://cnb.cool/Mintimate/rime/oh-my-rime](https://cnb.cool/Mintimate/rime/oh-my-rime)
+
+或者，你只是想下載薄荷方案，並不需要用 Git 克隆倉庫；那麼下載遇到困難，可以使用 [CNB](https://cnb.cool/Mintimate/rime/oh-my-rime) 自動流水線打包的壓縮包:
+
+- [oh-my-rime.zip: https://cnb.cool/Mintimate/rime/oh-my-rime/-/releases/download/latest/oh-my-rime.zip](https://cnb.cool/Mintimate/rime/oh-my-rime/-/releases/download/latest/oh-my-rime.zip)
 
 ## Oh-my-rime指南
 

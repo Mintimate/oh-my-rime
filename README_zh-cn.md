@@ -8,7 +8,11 @@
 
 如果你下载遇到困难，使用GitHub Action推送的镜像仓库：
 
-- [oh-my-rime: https://gitlab.mintimate.cn/Mintimate/oh-my-rime](https://gitlab.mintimate.cn/Mintimate/oh-my-rime)
+- [oh-my-rime: https://cnb.cool/Mintimate/rime/oh-my-rime](https://cnb.cool/Mintimate/rime/oh-my-rime)
+
+或者，你只是想下载薄荷方案，并不需要用 Git 克隆仓库；那么下载遇到困难，可以使用 [CNB](https://cnb.cool/Mintimate/rime/oh-my-rime) 自动流水线打包的压缩包:
+
+- [oh-my-rime.zip: https://cnb.cool/Mintimate/rime/oh-my-rime/-/releases/download/latest/oh-my-rime.zip](https://cnb.cool/Mintimate/rime/oh-my-rime/-/releases/download/latest/oh-my-rime.zip)
 
 ## Oh-my-rime指南
 

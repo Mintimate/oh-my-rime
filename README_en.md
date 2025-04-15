@@ -6,8 +6,13 @@
 
 A template for quickly initializing Rime. Since I use `oh-my-zsh` normally and get a similar feeling when using Rime, I named it `oh-my-rime`. You can also call it `Mint IME` or `Mint`.
 
-If you encounter difficulties with downloading, use the mirrored repository pushed by GitHub Action:
-- [oh-my-rime: https://gitlab.mintimate.cn/Mintimate/oh-my-rime](https://gitlab.mintimate.cn/Mintimate/oh-my-rime)
+If you encounter difficulties downloading, use the mirror repository pushed by GitHub Action:
+
+- [oh-my-rime: https://cnb.cool/Mintimate/rime/oh-my-rime](https://cnb.cool/Mintimate/rime/oh-my-rime)
+
+Or, if you just want to download the Oh-my-rime without cloning the repository via Git, you can use the [CNB](https://cnb.cool/Mintimate/rime/oh-my-rime) automated pipeline packaged zip file when encountering download difficulties:
+
+- [oh-my-rime.zip: https://cnb.cool/Mintimate/rime/oh-my-rime/-/releases/download/latest/oh-my-rime.zip](https://cnb.cool/Mintimate/rime/oh-my-rime/-/releases/download/latest/oh-my-rime.zip)
 
 ## Oh-my-rime guide
 
