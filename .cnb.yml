@@ -1,0 +1,34 @@
+main:
+  push:
+    - stages:
+      - name: release clean
+        image: docker.cnb.cool/cnb/plugins/cnbcool/release-clean:latest
+        settings:
+          filter: "RECENT_N=0"
+          debug: false
+      - name: 删除最新标签
+        script: git push origin --delete latest
+      - name: 重新制作标签
+        script: git tag -fa latest -m "latest" && git push origin latest
+$:
+  tag_push:
+    # 上传二进制包到 release 附件
+    - docker:
+        build: .ide/Dockerfile
+      stages:
+        - name: 更新日志
+          image: cnbcool/changelog
+          exports:
+            latestChangeLog: LATEST_CHANGE_LOG
+        - name: 创建发布标签
+          type: git:release
+          options:
+            title: latest
+            description: ${LATEST_CHANGE_LOG}
+        - name: 打包为zip包
+          script: find ./ -type f ! -name ".*" ! -path "*/.git/*" -exec zip oh-my-rime.zip {} +
+        - name: release 上传附件
+          image: cnbcool/attachments:latest
+          settings:
+            attachments:
+              - oh-my-rime.zip
