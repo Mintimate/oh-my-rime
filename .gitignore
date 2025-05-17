@@ -9,6 +9,9 @@ installation.yaml
 build
 *.userdb
 
+# 同步目录
+sync/
+
 # 自定义文件
 *.custom.yaml
 
