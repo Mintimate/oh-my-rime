@@ -27,8 +27,22 @@ $:
             description: ${LATEST_CHANGE_LOG}
         - name: 打包为zip包
           script: find ./ -type f ! -name ".*" ! -path "*/.git/*" -exec zip oh-my-rime.zip {} +
+        - name: 下载上游客户端
+          script: 
+            # 下载 weasel .exe 文件并设置输出变量
+            - weasel_url=$(curl -sL https://api.github.com/repos/rime/weasel/releases/latest | grep -Eo 'https://[^"]+\.exe' | head -1)
+            - weasel_file=$(basename "$weasel_url")
+            - curl -LO "$weasel_url"
+            - mv "$weasel_file" weasel-installer-latest.exe
+            # 下载 squirrel .pkg 文件并设置输出变量
+            - squirrel_url=$(curl -sL https://api.github.com/repos/rime/squirrel/releases/latest | grep -Eo 'https://[^"]+\.pkg' | head -1)
+            - squirrel_file=$(basename "$squirrel_url")
+            - curl -LO "$squirrel_url"
+            - mv "$squirrel_file" Squirrel-latest.pkg
         - name: release 上传附件
           image: cnbcool/attachments:latest
           settings:
             attachments:
               - oh-my-rime.zip
+              - weasel-installer-latest.exe
+              - Squirrel-latest.pkg
