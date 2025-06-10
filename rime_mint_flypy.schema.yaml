@@ -416,8 +416,8 @@ speller:
 
     - derive/([cdghkrstz])(ui)/$1v
     - derive/(ch)(ui)/iv
-    - derive/(sh)(ui)/iv
-    - derive/(zh)(ui)/iv
+    - derive/(sh)(ui)/uv
+    - derive/(zh)(ui)/vv
 
 wubi98_mint:
   tag: wubi98_mint
