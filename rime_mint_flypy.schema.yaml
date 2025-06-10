@@ -328,6 +328,8 @@ speller:
     - derive/(ch)(an)/ij
     - derive/(sh)(an)/uj
     - derive/(zh)(an)/vj
+    - derive/(sh)(ou)/uz
+    - derive/(zh)(ou)/vz
 
       # 单字母韵母
     - derive/a/aa
