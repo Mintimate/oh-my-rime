@@ -272,35 +272,103 @@ speller:
     - derive/([tl])eng$/$1en/ # ten → teng
     - derive/([qwrtypsdfghjklzxcbnm])([aeio])ng$/$1ng/ # lng → lang、leng、ling、long
     # 双拼适配
-    - derive/^([jqxy])u$/$1v/
-    - derive/^([aoe])([ioun])$/$1$1$2/
-    - derive/^([aoe])(ng)?$/$1$1$2/
-    - derive/iu$/Ⓠ/
-    - derive/(.)ei$/$1Ⓦ/
-    - derive/uan$/Ⓡ/
-    - derive/[uv]e$/Ⓣ/
-    - derive/un$/Ⓨ/
-    - derive/^sh/Ⓤ/
-    - derive/^ch/Ⓘ/
-    - derive/^zh/Ⓥ/
-    - derive/uo$/Ⓞ/
-    - derive/ie$/Ⓟ/
-    - derive/(.)i?ong$/$1Ⓢ/
-    - derive/ing$|uai$/Ⓚ/
-    - derive/(.)ai$/$1Ⓓ/
-    - derive/(.)en$/$1Ⓕ/
-    - derive/(.)eng$/$1Ⓖ/
-    - derive/[iu]ang$/Ⓛ/
-    - derive/(.)ang$/$1Ⓗ/
-    - derive/ian$/Ⓜ/
-    - derive/(.)an$/$1Ⓙ/
-    - derive/(.)ou$/$1Ⓩ/
-    - derive/[iu]a$/Ⓧ/
-    - derive/iao$/Ⓝ/
-    - derive/(.)ao$/$1Ⓒ/
-    - derive/ui$/Ⓥ/
-    - derive/in$/Ⓑ/
-    - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⒿⓀⓁⓏⓍⒸⓋⒷⓃⓂ/qwrtyuiopsdfghjklzxcvbnm/
+    #- derive/^([jqxy])u$/$1v/
+    #- derive/^([aoe])([ioun])$/$1$1$2/
+    #- derive/^([aoe])(ng)?$/$1$1$2/
+    #- derive/iu$/Ⓠ/
+    #- derive/(.)ei$/$1Ⓦ/
+    #- derive/uan$/Ⓡ/
+    #- derive/[uv]e$/Ⓣ/
+    #- derive/un$/Ⓨ/
+    #- derive/^sh/Ⓤ/
+    #- derive/^ch/Ⓘ/
+    #- derive/^zh/Ⓥ/
+    #- derive/uo$/Ⓞ/
+    #- derive/ie$/Ⓟ/
+    #- derive/(.)i?ong$/$1Ⓢ/
+    #- derive/ing$|uai$/Ⓚ/
+    #- derive/(.)ai$/$1Ⓓ/
+    #- derive/(.)en$/$1Ⓕ/
+    #- derive/(.)eng$/$1Ⓖ/
+    #- derive/[iu]ang$/Ⓛ/
+    #- derive/(.)ang$/$1Ⓗ/
+    #- derive/ian$/Ⓜ/
+    #- derive/(.)an$/$1Ⓙ/
+    #- derive/(.)ou$/$1Ⓩ/
+    #- derive/[iu]a$/Ⓧ/
+    #- derive/iao$/Ⓝ/
+    #- derive/(.)ao$/$1Ⓒ/
+    #- derive/ui$/Ⓥ/
+    #- derive/in$/Ⓑ/
+    #- xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⒿⓀⓁⓏⓍⒸⓋⒷⓃⓂ/qwrtyuiopsdfghjklzxcvbnm/
+
+    # 张居正方案（替换原方案小鹤双拼适配）
+    
+      # 需要特殊处理避免歧义的韵母
+    - derive/([bcdfghklmnprstwyz])(ang)/$1h
+    - derive/(ch)(ang)/ih
+    - derive/(sh)(ang)/uh
+    - derive/(zh)(ang)/vh
+
+    - derive/([cdghklnrstyz])(ong)/$1s
+    - derive/(ch)(ong)/is
+    - derive/(zh)(ong)/vs
+
+    - derive/([bcdghklmnpstwz])(ai)/$1d
+    - derive/(ch)(ai)/id
+    - derive/(sh)(ai)/ud
+    - derive/(zh)(ai)/vd
+
+    - derive/([bcdghklmnprstyz])(ao)/$1c
+    - derive/(ch)(ao)/ic
+    - derive/(sh)(ao)/uc
+    - derive/(zh)(ao)/vc
+
+    - derive/([bcdfghklmnprstwyz])(an)/$1j
+    - derive/(ch)(an)/ij
+    - derive/(sh)(an)/uj
+    - derive/(zh)(an)/vj
+
+      # 单字母韵母
+    - derive/a/aa
+    - derive/o/oo
+    - derive/e/ee
+
+      # 三字母韵母
+    - derive/ang/ah
+    - derive/eng/eg
+
+      # 卷舌声母
+    - derive/zh([aeiu])/v$1
+    - derive/ch([aeiu])/i$1
+    - derive/sh([aeiu])/u$1
+
+      # 四字母韵母
+    - derive/([jlnqx])(iang)/$1l
+    - derive/([ighkuv])(uang)/$1l
+    - derive/([jqx])(iong)/$1s
+
+      # 三字母韵母
+    - derive/([bdjlmnpqtxy])(ing)/$1k
+    - derive/([cidghjklnqrsutxyvz])(uan)/$1r
+    - derive/([bicdfghklmnprustwvz])(eng)/$1g
+    - derive/([ighkuv])(uai)/$1k
+    - derive/([bdjlmnpqtx])(iao)/$1n
+    - derive/([bdjlmnpqtx])(ian)/$1m
+
+      # 二字母韵母
+    - derive/([djlmnqx])(iu)/$1q
+    - derive/([bdfghklmnpuwvz])(ei)/$1w
+    - derive/([jlnqxy])[uv]e/$1t
+    - derive/([cidghjklqrustxyvz])(un)/$1y
+    - derive/([cidghklnrustvz])(uo)/$1o
+    - derive/([bdjlmnpqtx])(ie)/$1p
+    - derive/([bcidfghkmnprsuwvz])(en)/$1f
+    - derive/([cidfghklmnprustyvz])(ou)/$1z
+    - derive/([ighkruv])(ua)/$1x
+    - derive/([djlqx])(ia)/$1x
+    - derive/([cidghkrsutvz])(ui)/$1v
+    - derive/([bjlmnpqxy])(in)/$1b   
 
 wubi98_mint:
   tag: wubi98_mint
