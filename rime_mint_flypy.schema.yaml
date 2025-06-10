@@ -328,8 +328,6 @@ speller:
     - derive/(ch)(an)/ij
     - derive/(sh)(an)/uj
     - derive/(zh)(an)/vj
-    - derive/(sh)(ou)/uz
-    - derive/(zh)(ou)/vz
 
       # 单字母韵母
     - derive/a/aa
@@ -347,30 +345,77 @@ speller:
 
       # 四字母韵母
     - derive/([jlnqx])(iang)/$1l
-    - derive/([ighkuv])(uang)/$1l
     - derive/([jqx])(iong)/$1s
 
       # 三字母韵母
     - derive/([bdjlmnpqtxy])(ing)/$1k
-    - derive/([cidghjklnqrsutxyvz])(uan)/$1r
-    - derive/([bicdfghklmnprustwvz])(eng)/$1g
-    - derive/([ighkuv])(uai)/$1k
     - derive/([bdjlmnpqtx])(iao)/$1n
     - derive/([bdjlmnpqtx])(ian)/$1m
 
       # 二字母韵母
     - derive/([djlmnqx])(iu)/$1q
-    - derive/([bdfghklmnpuwvz])(ei)/$1w
     - derive/([jlnqxy])[uv]e/$1t
-    - derive/([cidghjklqrustxyvz])(un)/$1y
-    - derive/([cidghklnrustvz])(uo)/$1o
     - derive/([bdjlmnpqtx])(ie)/$1p
-    - derive/([bcidfghkmnprsuwvz])(en)/$1f
-    - derive/([cidfghklmnprustyvz])(ou)/$1z
-    - derive/([ighkruv])(ua)/$1x
     - derive/([djlqx])(ia)/$1x
-    - derive/([cidghkrsutvz])(ui)/$1v
-    - derive/([bjlmnpqxy])(in)/$1b   
+    - derive/([bjlmnpqxy])(in)/$1b
+
+      # iuv特殊处理
+      # 四字母
+    - derive/([ghk])(uang)/$1l
+    - derive/(ch)(uang)/il
+    - derive/(sh)(uang)/ul
+    - derive/(zh)(uang)/vl
+
+      # 三字母
+    - derive/([cdghjklnqrstxyz])(uan)/$1r
+    - derive/(ch)(uan)/ir
+    - derive/(sh)(uan)/ur
+    - derive/(zh)(uan)/vr
+
+    - derive/([bcdfghklmnprstwz])(eng)/$1g
+    - derive/(ch)(eng)/ig
+    - derive/(sh)(eng)/ug
+    - derive/(zh)(eng)/vg
+
+    - derive/([ghk])(uai)/$1k
+    - derive/(ch)(uai)/ik
+    - derive/(sh)(uai)/uk
+    - derive/(zh)(uai)/vk
+
+      # 二字母
+    - derive/([bdfghklmnpwz])(ei)/$1w
+    - derive/(sh)(ei)/uh
+    - derive/(zh)(ei)/vh
+
+    - derive/([cdghjklqrstxyz])(un)/$1y
+    - derive/(ch)(un)/iy
+    - derive/(sh)(un)/uy
+    - derive/(zh)(un)/vy
+
+    - derive/([cdghklnrstz])(uo)/$1o
+    - derive/(ch)(uo)/io
+    - derive/(sh)(uo)/uo
+    - derive/(zh)(uo)/vo
+
+    - derive/([bcdfghkmnprswz])(en)/$1f
+    - derive/(ch)(en)/if
+    - derive/(sh)(en)/uf
+    - derive/(zh)(en)/vf
+
+    - derive/([cdfghklmnprstyz])(ou)/$1z
+    - derive/(ch)(ou)/iz
+    - derive/(sh)(ou)/uz
+    - derive/(zh)(ou)/vz
+
+    - derive/([ghkr])(ua)/$1x
+    - derive/(ch)(ua)/ix
+    - derive/(sh)(ua)/ux
+    - derive/(zh)(ua)/vx
+
+    - derive/([cdghkrstz])(ui)/$1v
+    - derive/(ch)(ui)/iv
+    - derive/(sh)(ui)/uv
+    - derive/(zh)(ui)/vv
 
 wubi98_mint:
   tag: wubi98_mint
