@@ -175,10 +175,15 @@ import_tables:
 > 尤其是霧凇拼音，本方案配置中，大量參考參考了霧凇拼音。詞庫部分，在`2024-07-29`起，拼音詞庫使用白霜詞庫，此前使用霧凇拼音詞庫。
 
 
-## ⭐⭐⭐
+## Star History
 
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Mintimate/oh-my-rime&type=Timeline&theme=dark" />
 <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Mintimate/oh-my-rime&type=Timeline" />
 <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Mintimate/oh-my-rime&type=Timeline" />
 </picture>
+
+## Contributors ✨
+<a href="https://github.com/Mintimate/oh-my-rime/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Mintimate/oh-my-rime" />
+</a>

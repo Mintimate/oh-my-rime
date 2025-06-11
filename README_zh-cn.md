@@ -175,8 +175,6 @@ import_tables:
 
 > 尤其是雾凇拼音，本方案配置中，大量参考参考了雾凇拼音。词库部分，在`2024-07-29`起，拼音词库使用白霜词库，此前使用雾凇拼音词库。
 
-## ⭐⭐⭐
-
 ## Star History
 
 <picture>
@@ -184,3 +182,8 @@ import_tables:
 <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Mintimate/oh-my-rime&type=Timeline" />
 <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Mintimate/oh-my-rime&type=Timeline" />
 </picture>
+
+## Contributors ✨
+<a href="https://github.com/Mintimate/oh-my-rime/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Mintimate/oh-my-rime" />
+</a>

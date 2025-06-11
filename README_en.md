@@ -171,10 +171,15 @@ import_tables:
 - [86 Wubi, https://github.com/KyleBing/rime-wubi86-jidian](https://github.com/KyleBing/rime-wubi86-jidian)
 - [Rime Pinyin, an excellent Chinese thesaurus](https://github.com/iDvel/rime-ice)
 
-## ⭐⭐⭐
+## Star History
 
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Mintimate/oh-my-rime&type=Timeline&theme=dark" />
 <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Mintimate/oh-my-rime&type=Timeline" />
 <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Mintimate/oh-my-rime&type=Timeline" />
 </picture>
+
+## Contributors ✨
+<a href="https://github.com/Mintimate/oh-my-rime/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Mintimate/oh-my-rime" />
+</a>
