@@ -44,8 +44,7 @@ $:
             # 下载 Fctix5-macOS installer 文件并设置输出变量
             - fctix5_macOS_url=$(curl -sL https://api.github.com/repos/fcitx-contrib/fcitx5-macos-installer/releases/latest | grep -Eo 'https://[^"]+Rime.zip' | head -1)
             - fctix5_macOS_file=$(basename "$fctix5_macOS_url")
-            - curl -LO "$fctix5_macOS_url"
-            - mv "$fctix5_macOS_url" Fcitx5-Rime.zip
+            - curl -LO "$fctix5_macOS_url" -o "$(basename "$fctix5_macOS_url")"
         - name: release 上传附件
           image: cnbcool/attachments:latest
           settings:
