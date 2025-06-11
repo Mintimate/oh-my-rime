@@ -18,6 +18,8 @@ $:
       stages:
         - name: 更新日志
           image: cnbcool/changelog
+          settings:
+            day: 60
           exports:
             latestChangeLog: LATEST_CHANGE_LOG
         - name: 创建发布标签
@@ -39,6 +41,11 @@ $:
             - squirrel_file=$(basename "$squirrel_url")
             - curl -LO "$squirrel_url"
             - mv "$squirrel_file" Squirrel-latest.pkg
+            # 下载 Fctix5-macOS installer 文件并设置输出变量
+            - fctix5_macOS_url=$(curl -sL https://api.github.com/repos/fcitx-contrib/fcitx5-macos-installer/releases/latest | grep -Eo 'https://[^"]+Rime.zip' | head -1)
+            - fctix5_macOS_file=$(basename "$fctix5_macOS_url")
+            - curl -LO "$fctix5_macOS_url"
+            - mv "$fctix5_macOS_url" Fcitx5-Rime.zip
         - name: release 上传附件
           image: cnbcool/attachments:latest
           settings:
@@ -46,3 +53,4 @@ $:
               - oh-my-rime.zip
               - weasel-installer-latest.exe
               - Squirrel-latest.pkg
+              - Fcitx5-Rime.zip
