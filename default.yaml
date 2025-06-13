@@ -1,6 +1,10 @@
 # Rime default settings
 # encoding: utf-8
 
+# 注意⚠️: 因为薄荷想要兼容 https://github.com/yanhuacuo/rimetool ，所以方案内有 default.yaml 配置的冗余
+# 如果修改 page_size、key_binder 等内容，请不要使用 default.custom.yaml ，直接修改方案配置
+# 参考: https://www.mintimate.cc/zh/guide/configurationOverride.html
+
 # Fork From: https://github.com/rime/librime/blob/3bc65c990546aa2062ecd1eb593d54d2949644cd/data/minimal/default.yaml
 config_version: "24.03.24"
 
