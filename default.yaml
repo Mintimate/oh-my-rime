@@ -149,8 +149,8 @@ key_binder:
     - { when: composing, accept: Shift+Tab, send: Shift+Left }
     - { when: composing, accept: Tab, send: Shift+Right }
     # 翻页
-    - { when: paging, accept: minus, send: Page_Up }             # 编码窗口翻页
-    - { when: has_menu, accept: equal, send: Page_Down }
+    - { when: paging, accept: minus, send: Page_Up }             # 使用`-`进行向上翻页（第一页时候无效）
+    - { when: has_menu, accept: equal, send: Page_Down }         # 使用`=`进行向下翻页
     - { when: paging, accept: comma, send: Page_Up }             # 候选窗口翻页
     - { when: has_menu, accept: period, send: Page_Down }
     - { when: predicting, accept: comma, send: comma }           # 在预编码模式下,不当作快捷键

@@ -349,42 +349,13 @@ recognizer:
     gregorian_to_lunar: "^N[0-9]{1,8}"  # 响应 lua_translator@Chinese_lunar_calendar 公历转农历，输入 N20240115 得到「二〇二四年腊月初五」，脚本将自动获取第 2 个字符作为触发前缀
     uppercase: ""  # 覆写默认的 uppercase 使其可以在输入大写后，输入数字
 
+
 key_binder:
   import_preset: default
   bindings:
-    - {accept: "Control+Shift+E", toggle: emoji_suggestion, when: always}
-    - {accept: "Control+Shift+exclam", toggle: transcription, when: has_menu}
-    - {accept: "Control+Shift+1", toggle: transcription, when: has_menu}
-    - {accept: minus, send: Page_Up, when: paging}     # 使用`-`进行向上翻页（第一页时候无效）
-    - {accept: equal, send: Page_Down, when: has_menu} # 使用`=`进行向下翻页
-    - { when: composing, accept: Control+p, send: Up }
-    - { when: composing, accept: Control+n, send: Down }
-    - { when: composing, accept: Control+b, send: Left }
-    - { when: composing, accept: Control+f, send: Right }
-    - { when: composing, accept: Control+a, send: Home }
-    - { when: composing, accept: Control+e, send: End }
-    - { when: composing, accept: Control+d, send: Delete }
-    - { when: composing, accept: Control+k, send: Shift+Delete }
-    - { when: composing, accept: Control+g, send: Escape }
-    - { when: composing, accept: Alt+v, send: Page_Up }
-    - { when: composing, accept: Control+v, send: Page_Down }
-    - { when: composing, accept: ISO_Left_Tab, send: Shift+Left }
-    - { when: composing, accept: Shift+Tab, send: Shift+Left }
-    - { when: composing, accept: Tab, send: Shift+Right }
-    - { when: paging, accept: minus, send: Page_Up }
-    - { when: has_menu, accept: equal, send: Page_Down }
-    - { when: paging, accept: comma, send: Page_Up }
-    - { when: has_menu, accept: period, send: Page_Down }
-    - { when: predicting, accept: comma, send: comma }
-    - { when: predicting, accept: period, send: period }
-    - { when: always, accept: Control+Shift+1, select: .next }
-    - { when: always, accept: Control+Shift+2, toggle: ascii_mode }
-    - { when: always, accept: Control+Shift+3, toggle: full_shape }
-    - { when: always, accept: Control+Shift+4, toggle: transcription }
-    - { when: always, accept: Control+Shift+5, toggle: extended_charset }
-    - { when: always, accept: Shift+space, toggle: full_shape }
-    - { when: always, accept: Control+period, toggle: ascii_punct }
-    
-menu:
+    - {accept: "Control+Shift+E", toggle: emoji_suggestion, when: always}   # Emoji 快捷键
+    - {accept: "Control+Shift+1", toggle: transcription, when: has_menu}    # 当存在候选菜单时，可以切换简体和繁体
+
+
   # 候选词个数
   page_size: 6
