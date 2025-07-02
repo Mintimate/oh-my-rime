@@ -25,6 +25,7 @@ Rime configuration tutorial:
 You have a QQ account, you can join the group chat(No Ads!): 703260572
 
 **It is strongly recommended to refer to the [documentation ↗](https://www.mintimate.cc) for operation!!!**
+> Project documentation CDN acceleration and security protection sponsored by [Tencent EdgeOne](https://edgeone.ai/zh?from=github). <br/><img src="https://edgeone.ai/media/34fe3a45-492d-4ea4-ae5d-ea1087ca7b4b.png" alt="Tencent EdgeOne" height="20">
 
 The input method scheme included:
 - Mint Pinyin (薄荷拼音) - Full Spelling Input: Full spelling input, suitable for the largest population, so it's the default input method.

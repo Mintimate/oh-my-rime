@@ -26,6 +26,8 @@ Rime 配置教程：
 如果你有QQ帐号，可以加入群聊（禁止广告）: 703260572
 
 **强烈建议[配合文档: https://www.mintimate.cc](https://www.mintimate.cc)进行操作!!!**
+> 项目文档 CDN 加速及安全防护由 [Tencent EdgeOne](https://edgeone.ai/zh?from=github) 赞助。<br/><img src="https://edgeone.ai/media/34fe3a45-492d-4ea4-ae5d-ea1087ca7b4b.png" alt="Tencent EdgeOne" height="20">
+
 
 本输入方案内包含：
 

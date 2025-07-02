@@ -25,6 +25,7 @@ Rime 配置教程：
 如果你有QQ帳號，可以加入群聊（禁止廣告）: 703260572
 
 **強烈建議[配合文檔: https://www.mintimate.cc](https://www.mintimate.cc)進行操作!!!**
+> 項目文檔 CDN 加速及安全防護由 [Tencent EdgeOne](https://edgeone.ai/zh?from=github) 贊助。<br/><img src="https://edgeone.ai/media/34fe3a45-492d-4ea4-ae5d-ea1087ca7b4b.png" alt="Tencent EdgeOne" height="20">
 
 本輸入方案內包含： 
 - 薄荷拼音-全拼輸入: 全拼輸入，適合的人群最多，所以也是預設的輸入；
