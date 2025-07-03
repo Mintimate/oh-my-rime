@@ -128,6 +128,8 @@ corrector_filter:
 
 speller:
   alphabet: 'zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA-;/<,>\'
+  # initials 定义仅作为始码的按键，排除-;/<,>\'
+  initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   delimiter: " '"
   algebra:
     - xform/^r5$/er5/
