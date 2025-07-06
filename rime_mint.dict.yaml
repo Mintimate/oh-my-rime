@@ -6,10 +6,8 @@ sort: by_weight
 # 雾凇拼音词库，由Github Robot自动更新
 import_tables:
   - dicts/custom_simple          # 自定义
-  - dicts/rime_ice.8105          # 霧凇拼音 常用字集合
-  - dicts/rime_ice.41448         # 霧凇拼音 完整字集合
-  - dicts/rime_ice.base          # 雾凇拼音 基础词库
-  - dicts/rime_ice.ext           # 雾凇拼音 扩展词库
+  - dicts/rime_mint.chars        # 单字词库（万象拼音词库基础版本）
+  - dicts/rime_mint.base         # 基础词库（万象拼音词库基础版本）
   - dicts/other_kaomoji          # 颜文字表情（按`VV`呼出)
   - dicts/rime_ice.others        # 雾凇拼音 others词库（用于自动纠错）
   # 20240608 Emoji完全交由OpenCC，不再使用字典作为补充

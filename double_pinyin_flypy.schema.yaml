@@ -246,6 +246,11 @@ speller:
   initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA
   delimiter: " `"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
+    - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/  # 万象词库 Start
+    - xform/ń|ň|ǹ/en/ 
+    - xform/\bn\b/en/   #解决𧗈字拼音n通过双拼en打出来
+    - xform/\bng\b/eng/
+    - xform/ńg|ňg|ǹg/eng/                                        # 万象词库 End
     - erase/^xx$/
     - derive/^([jqxy])u$/$1v/
     - derive/^([aoe])([ioun])$/$1$1$2/
