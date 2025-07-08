@@ -15,12 +15,9 @@ function M.init(env)
     local config = env.engine.schema.config
     local delimiter = config:get_string('speller/delimiter')
     env.name_space = env.name_space:gsub('^*', '')
-    -- 是否保持原有注释
-    M.keep_source_comment = config:get_bool(env.name_space .. "/keep_source_comment")
     if delimiter and #delimiter > 0 and delimiter:sub(1,1) ~= ' ' then
         env.delimiter = delimiter:sub(1,1)
     end
-    env.name_space = env.name_space:gsub('^*', '')
     M.style = config:get_string(env.name_space) or '{comment}'
     M.corrections = {
         -- 错音
@@ -126,7 +123,7 @@ end
 function M.func(input, env)
     for cand in input:iter() do
         -- cand.comment 是目前输入的词汇的完整拼音
-        local pinyin = cand.comment:match("^［(.-)］$")
+        local pinyin = cand.comment
         if pinyin and #pinyin > 0 then
             if env.delimiter then
                 pinyin = pinyin:gsub(env.delimiter,' ')
@@ -135,8 +132,9 @@ function M.func(input, env)
             if c and cand.text == c.text then
                 cand:get_genuine().comment = string.gsub(M.style, "{comment}", c.comment)
             else
-                -- 20241002 是否保持原本注释；如: 拼音
-                if M.keep_source_comment then
+                -- 20250708 是否保持原本注释；如: 拼音
+                local keep_source_comment = env.engine.context:get_option("tone_display") or false
+                if keep_source_comment then
                     cand:get_genuine().comment = string.gsub(M.style, "{comment}", pinyin)
                 else
                     cand:get_genuine().comment = ""
