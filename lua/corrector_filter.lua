@@ -130,7 +130,14 @@ function M.func(input, env)
             end
             local c = M.corrections[pinyin]
             if c and cand.text == c.text then
-                cand:get_genuine().comment = string.gsub(M.style, "{comment}", c.comment)
+                local target_comment = '[' .. c.comment .. ']'
+                cand:get_genuine().comment = string.gsub(M.style, "{comment}", target_comment)
+                -- 获取当前 composition 和 segment
+                local context = env.engine.context
+                local composition = context.composition
+                local seg = composition:back()         -- 获取当前 segment
+                -- 设置标签
+                seg.tags = seg.tags + Set({ "correntor" })
             else
                 -- 20250708 是否保持原本注释；如: 拼音
                 local keep_source_comment = env.engine.context:get_option("tone_display") or false

@@ -1,6 +1,7 @@
 -- 复制自<万象拼音方案> https://github.com/amzxyz/rime_wanxiang
 -- @author: amzxyz
 -- @modify: Mintimate
+-- 修改内容: ① 兼容纠错
 
 local function modify_preedit_filter(input, env)
     local config = env.engine.schema.config
@@ -22,19 +23,21 @@ local function modify_preedit_filter(input, env)
     local context = env.engine.context
 
     local seg = context.composition:back()
-    env.is_radical_mode = seg and (
-        seg:has_tag("radical_lookup") or seg:has_tag("reverse_stroke")
+    env.is_special_tag_mode = seg and (
+        seg:has_tag("radical_lookup") or seg:has_tag("reverse_stroke") or seg:has_tag("correntor")
     ) or false
 
     for cand in input:iter() do
-        if env.is_radical_mode then
-            yield(cand)
-            goto continue
-        end
-
         local genuine_cand = cand:get_genuine()
         local preedit = genuine_cand.preedit or ""
         local comment = genuine_cand.comment
+
+        if env.is_special_tag_mode then
+            -- 2025-07-10 Mintimate 使其兼容纠错
+            genuine_cand.preedit = comment:gsub("[%[%]]", "")
+            yield(genuine_cand)
+            goto continue
+        end
 
         if not comment or comment == "" or not is_tone_display then
             yield(cand)
