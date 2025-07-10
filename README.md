@@ -14,6 +14,14 @@
 
 - [oh-my-rime.zip: https://cnb.cool/Mintimate/rime/oh-my-rime/-/releases/download/latest/oh-my-rime.zip](https://cnb.cool/Mintimate/rime/oh-my-rime/-/releases/download/latest/oh-my-rime.zip)
 
+2025-07-09 破坏性变更: 
+- 词库从白霜词库切换到万象词库以提升地球拼音的体验，同时更加兼容万象模型的挂载。
+- 词库内拼音文件更名为`rime_mint`开头，方便后续维护。
+
+因为破坏性变更，当前还需要解决问题:
+- [x] 切换为万象词库后，用户词典(.userdb)需要脚本刷写。否则音调无法显示。提供 Python 脚本以方便用户迁移。
+- [ ] 万象预编辑脚本和纠错脚本冲突问题已经解决，但是纠错样式和万象词库的样式一致，无法区分，考虑后续是否调整。
+
 ## Oh-my-rime指南
 
 Rime 配置教程：
@@ -100,7 +108,8 @@ Rime 配置教程：
 本仓库的词库目录[dicts](dicts)，主要有：
 
 - [雾凇拼音词库](https://github.com/iDvel/rime-ice)
-- [白霜词库词库](https://github.com/gaboolic/rime-frost)
+- [白霜词库](https://github.com/gaboolic/rime-frost)
+- [万象词库](https://github.com/amzxyz/RIME-LMDG)
 - [98五笔词库](https://github.com/yanhuacuo/98wubi-tables)
 - [86五笔词库](https://github.com/KyleBing/rime-wubi86-jidian)
 
@@ -111,17 +120,15 @@ dicts
 ├── custom_simple.dict.yaml    # 自定义词库（建议自己添加的词库可以放这里）
 ├── other_emoji.dict.yaml      # emoji 词库
 ├── other_kaomoji.dict.yaml    # 颜文字词库（按vv进行激活）
-├── rime_ice.41448.dict.yaml   # 白霜词库（GitHub action自动更新）
-├── rime_ice.8105.dict.yaml    # 白霜词库（GitHub action自动更新）
-├── rime_ice.base.dict.yaml    # 白霜词库（GitHub action自动更新）
 ├── rime_ice.ext.dict.yaml     # 白霜词库（GitHub action自动更新）
 ├── rime_ice.cn_en.txt         # 白霜词库（GitHub action自动更新）
 ├── rime_ice.en.dict.yaml      # 白霜词库（GitHub action自动更新）
 ├── rime_ice.en_ext.dict.yaml  # 白霜词库（GitHub action自动更新）
 ├── rime_ice.others.dict.yaml  # 白霜词库（GitHub action自动更新）
-├── terra_pinyin_base.dict.yaml     # 地球拼音自带词库
-├── terra_pinyin_ext.dict.yaml      # 地球拼音自带词库
-├── terra_rime_ice.base.dict.yaml   # 基于Python脚本自动转换词库，Action自动更新
+├── rime_mint.base.dict.yaml            # 万象词库（GitHub action自动更新）
+├── rime_mint.chars.dict.yaml           # 万象词库（GitHub action自动更新）
+├── rime_mint.correlation.dict.yaml     # 万象词库（GitHub action自动更新）
+├── rime_mint.ext.dict.yaml             # 万象词库（GitHub action自动更新）
 ├── wubi86_core.dict.yaml           # 86版五笔基础词库
 └── wubi98_base.dict.yaml           # 98版五笔基础词库
 ```
@@ -133,19 +140,21 @@ dicts
 ```yaml
 ---
 name: rime_mint                  # 注意name和文件名一致
-version: "2024.02.11"
+version: "2025.07.06"
 sort: by_weight
+use_preset_vocabulary: false
 # 此处为 输入法所用到的词库，既补充拓展词库的地方
-# 词库，由Github Robot自动更新
+# 雾凇拼音词库，由Github Robot自动更新
 import_tables:
   - dicts/custom_simple          # 自定义
-  - dicts/rime_ice.8105          # 白霜词库 常用字集合
-  - dicts/rime_ice.41448         # 白霜词库 完整字集合
-  - dicts/rime_ice.base          # 白霜词库 https://github.com/gaboolic/rime-frost
-  - dicts/rime_ice.ext           # 白霜词库 https://github.com/gaboolic/rime-frost
+  - dicts/rime_mint.chars        # 单字词库（万象拼音词库基础版本）
+  - dicts/rime_mint.base         # 基础词库（万象拼音词库基础版本）
+  - dicts/rime_mint.correlation  # 关联词库（万象拼音词库基础版本）
+  - dicts/rime_mint.ext          # 联想词库（万象拼音词库基础版本）
   - dicts/other_kaomoji          # 颜文字表情（按`VV`呼出)
-  - dicts/other_emoji            # Emoji(已禁用，目前Emoji是OpenCC生效)
-  - dicts/rime_ice.others        # 白霜词库 others词库（用于自动纠错）
+  - dicts/rime_ice.others        # 雾凇拼音 others词库（用于自动纠错）
+  # 20240608 Emoji完全交由OpenCC，不再使用字典作为补充
+  # - dicts/other_emoji            # Emoji(仅仅作为补充，实际使用一般是OpenCC生效)
 ...
 ```
 
@@ -168,14 +177,16 @@ import_tables:
 6. [86五笔极点码表](https://github.com/KyleBing/rime-wubi86-jidian)
 7. [Extending RIME with Lua scripts](https://github.com/hchunhui/librime-lua/wiki/Scripting)
 8. [白霜词库 | 基于雾凇拼音重制的，更纯净、词频准确、智能的词库](https://github.com/gaboolic/rime-frost)
+9. [万象词库 | Rime输入法语法模型全流程构建教程，全局带声调词库，最全声调标注工具链](https://github.com/amzxyz/RIME-LMDG)
 
 ## 推荐项目
 
 - [98五笔，十分好用的98五笔输入方案](https://wubi98.github.io/)
 - [86五笔极点码表，rime上的86五笔方案](https://github.com/KyleBing/rime-wubi86-jidian)
 - [雾凇拼音，很优秀的中文词库](https://github.com/iDvel/rime-ice)
+- [万象拼音，强大到复杂的拼音方案](https://github.com/amzxyz/rime_wanxiang)
 
-> 尤其是雾凇拼音，本方案配置中，大量参考参考了雾凇拼音。词库部分，在`2024-07-29`起，拼音词库使用白霜词库，此前使用雾凇拼音词库。
+> 薄荷的词库: ① 在`2024-07-29`起，拼音词库使用白霜词库，此前使用雾凇拼音词库；② 在`2025-07-09`起，词库使用万象拼音词库。
 
 ## Star History
 
