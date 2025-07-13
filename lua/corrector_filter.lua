@@ -18,7 +18,7 @@ function M.init(env)
     if delimiter and #delimiter > 0 and delimiter:sub(1,1) ~= ' ' then
         env.delimiter = delimiter:sub(1,1)
     end
-    M.style = config:get_string(env.name_space) or '{comment}'
+    M.style = '{comment}'
     M.corrections = {
         -- 错音
         ["hun dun"] = { text = "馄饨", comment = "hún tun" },

@@ -121,10 +121,6 @@ reduce_english_filter:
     wag, wand, womens, wap, wax, weir, won,
     yan, yen]
 
-# 错音错字提示
-corrector_filter:
-  # 当文字没有触发错字错音的情况下，保持原本的注释
-  keep_source_comment: false 
 
 speller:
   alphabet: 'zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA-;/<,>\'
