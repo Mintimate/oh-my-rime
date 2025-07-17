@@ -33,6 +33,9 @@ switches:
   - name: full_shape
     states: [ 半角, 全角 ]
     reset: 0
+  - name: tone_display                  #开启后在输入编码的位置实时转换为带声调全拼，不开启则采用系统配置，影响的是preedit_format,归属：super_preedit.lua
+    states: [ 声杳, 声起 ]
+    reset: 0
   - name: transcription
     states: [ 简体 , 繁体 ]
     reset: 0
@@ -78,6 +81,7 @@ engine:
     # - echo_translator      # ※ 没有候选词，返回字符
   filters:
     - lua_filter@*corrector_filter            # 错音错字提示
+    - lua_filter@*super_preedit               # 为候选项添加声调
     - lua_filter@*autocap_filter              # 英文自动大写
     - simplifier@emoji_suggestion
     - simplifier@transcription_cc
@@ -135,18 +139,9 @@ reduce_english_filter:
   wag, wand, womens, wap, wax, weir, won,
   yan, yen]
 
-# 错音错字提示
-corrector_filter:
-  # 当文字没有触发错字错音的情况下，保持原本的注释
-  keep_source_comment: false 
   
 # 中国农历配置
 chineseLunarCalendar_translator: lunar
-
-# Lua 配置：为 corrector 格式化 comment，占位符为 {comment}
-# 默认 "{comment}" 输入 hun dun 时会在「馄饨」旁边生成 hún tun 的 comment
-# 例如左右加个括号 "({comment})" 就会变成 (hún tun)
-corrector: "{comment}"
 
 translator:
   # enable_correction: true      # Rime自带的按键纠错，适用于手机26键 参考: https://github.com/rime/librime/pull/228
@@ -155,9 +150,7 @@ translator:
   prism: rime_mint_flypy     # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
   spelling_hints: 8              # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
   always_show_comments: true     # corrector.lua ：Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供 corrector.lua 做判断用。
-  comment_format:               # 标记拼音注释，供 corrector.lua 做判断用
-    - xform/^/［/
-    - xform/$/］/
+  comment_format: {comment}      # 将注释以词典字符串形式完全暴露，通过super_preedit.lua完全接管，灵活配置。
   preedit_format:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/

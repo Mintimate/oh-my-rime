@@ -1,14 +1,15 @@
 ---
 name: terra_pinyin               # 注意name和文件名一致
-version: "2024.02.11"
+version: "2025.07.06"
 use_preset_vocabulary: false
 sort: by_weight
 # 此处为 输入法所用到的词库，既补充拓展词库的地方
 # 雾凇拼音词库，由Github Robot自动更新
 import_tables:
-  - dicts/terra.8105      # 白霜 8015 转换并人工校验，感谢 @Jian787 人工校验
-  - dicts/terra_rime_ice.base    # 使用Python转义的雾凇拼音base
-  - dicts/terra_rime_ice.ext     # 使用Python转义的雾凇拼音ext
+  - dicts/rime_mint.chars        # 单字词库（万象拼音词库基础版本）
+  - dicts/rime_mint.base         # 基础词库（万象拼音词库基础版本）
+  - dicts/rime_mint.correlation  # 关联词库（万象拼音词库基础版本）
+  - dicts/rime_mint.ext          # 联想词库（万象拼音词库基础版本）
   - dicts/other_kaomoji          # 颜文字表情（按`vv`呼出)
   # 20240608 Emoji完全交由OpenCC，不再使用字典作为补充
   # - dicts/other_emoji            # Emoji(仅仅作为补充，实际使用一般是OpenCC生效)
