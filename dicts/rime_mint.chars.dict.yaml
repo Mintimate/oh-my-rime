@@ -3,8 +3,9 @@
 #https://github.com/amzxyz/RIME-LMDG
 ---
 name: rime_mint.chars
-version: "LTS"
+version: "2025-07-18"
 sort: by_weight
+
 ...
 啊	a	915
 阿	ā	749
@@ -4525,8 +4526,8 @@ sort: by_weight
 𫎛	chí	1
 𫖞	chì	1
 痓	chì	1
-重	chóng	749
 充	chōng	749
+重	chóng	747
 冲	chōng	720
 虫	chóng	657
 宠	chǒng	637
@@ -17265,13 +17266,13 @@ sort: by_weight
 𫞄	jìn	1
 经	jīng	851
 精	jīng	778
-境	jìng	776
+竟	jìng	776
 京	jīng	772
 景	jǐng	770
+境	jìng	752
 警	jǐng	737
 净	jìng	721
-竞	jìng	719
-竟	jìng	716
+竞	jìng	716
 静	jìng	713
 惊	jīng	704
 镜	jìng	703
@@ -27507,8 +27508,8 @@ sort: by_weight
 𡺜	pén	1
 𩸂	pèn	1
 𪂽	pén	1
-朋	péng	771
-碰	pèng	663
+碰	pèng	771
+朋	péng	663
 鹏	péng	612
 彭	péng	609
 烹	pēng	607
@@ -39448,13 +39449,13 @@ sort: by_weight
 下	xià	870
 夏	xià	717
 虾	xiā	680
+瞎	xiā	662
 辖	xiá	655
 侠	xiá	636
 吓	xià	622
 厦	xià	618
 峡	xiá	616
 霞	xiá	595
-瞎	xiā	586
 狭	xiá	586
 瑕	xiá	561
 暇	xiá	537
@@ -46477,8 +46478,8 @@ sort: by_weight
 𫟍	yuàn	1
 𫟨	yuǎn	1
 𫠔	yuān	1
-越	yuè	881
-月	yuè	846
+月	yuè	886
+越	yuè	841
 约	yuē	768
 乐	yuè	737
 阅	yuè	722
