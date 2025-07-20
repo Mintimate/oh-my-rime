@@ -183,10 +183,10 @@ speller:
   # 拼写匹配
   algebra:
     - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/  # 万象词库 Start
+    - xform/^ng$/eng/
+    - xform/ńg|ňg|ǹg/eng/
     - xform/ń|ň|ǹ/en/ 
-    - xform/\bn\b/en/   #解决𧗈字拼音n通过双拼en打出来
-    - xform/\bng\b/eng/
-    - xform/ńg|ňg|ǹg/eng/                                        # 万象词库 End
+    - xform/ḿ/m/                                                 # 万象词库 End
     - erase/^xx$/ # 首选保留
     - derive/([aeiou])ng$/$1gn/        # dagn => dang
     - derive/([dtngkhrzcs])o(u|ng)$/$1o/  # zho => zhong|zhou
