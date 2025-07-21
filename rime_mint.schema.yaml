@@ -184,8 +184,7 @@ speller:
     - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/  # 万象词库 Start
     - xform/^ng$/eng/
     - xform/ńg|ňg|ǹg/eng/
-    - xform/ń|ň|ǹ/en/ 
-    - xform/ḿ/m/                                                 # 万象词库 End
+    - xform/ń|ň|ǹ/en/                                            # 万象词库 End
     - erase/^xx$/ # 首选保留
     # - derive/^([zcs])h/$1/ # zh, ch, sh => z, c, s
     # - derive/^([zcs])([^h])/$1h$2/ # z, c, s => zh, ch, sh

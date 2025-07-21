@@ -218,8 +218,7 @@ speller:
     - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜü/aaaaooooeeeeiiiiuuuuvvvvv/  # 万象词库 Start
     - xform/^ng$/eng/
     - xform/ńg|ňg|ǹg/eng/
-    - xform/ń|ň|ǹ/en/ 
-    - xform/ḿ/m/                                                 # 万象词库 End
+    - xform/ń|ň|ǹ/en/                                            # 万象词库 End
     - erase/^xx$/
     - derive/^([jqxy])u$/$1v/
     - derive/^([aoe].*)$/o$1/
