@@ -19,7 +19,7 @@ Or, if you just want to download the Oh-my-rime without cloning the repository v
 - The pinyin files within the dictionary have been renamed to start with `rime_mint` for easier future maintenance.  
 
 Due to these breaking changes, the following issues still need to be addressed:  
-- [x] After switching to the Wanxiang dictionary, user dictionaries (.userdb) require script rewriting. Otherwise, tone marks will not display. A Python script has been provided to facilitate user migration.  
+- [x] After switching to the Wanxiang dictionary, user dictionaries (.userdb) require script rewriting. Otherwise, tone marks will not display. Provide [offline tools for user migration](https://www.mintimate.cc/en/guide/faQ.html#user-dictionary-phonetic-transcription).  
 - [x] The conflict between the Wanxiang pre-editing script and the error correction script has been resolved, but the error correction style is now consistent with the Wanxiang dictionary style, making them indistinguishable. Consideration is being given to potential adjustments in the future.  
 
 ## Oh-my-rime guide
