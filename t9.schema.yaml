@@ -46,13 +46,11 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    - lua_translator@*date_translator                    # 日期Lua
-    - lua_translator@*time_translator                    # 时间Lua
-    - lua_translator@*week_translator                    # 星期Lua
-    - table_translator@custom_phrase  # 自定义短语 custom_phrase_t9.txt
-    # - table_translator@melt_eng     # 英文输入
+    - lua_translator@*mint_date_time_translator          # 时间、日期、星期、月份
+    - table_translator@custom_phrase                     # 自定义短语 custom_phrase_t9.txt
+    # - table_translator@melt_eng                        # 英文输入
   filters:
-    - simplifier@emoji                    # Emoji
+    - simplifier@emoji_suggestion
     - simplifier@transcription_cc         # 简繁切换
     - uniquifier                          # 去重
 
@@ -83,7 +81,9 @@ custom_phrase:
 # 九宫格 1 键上的符号序列
 punctuator:
   half_shape:
-    "@": [1, "@", ".", "/", ":", "_", "-", "#"]
+    "1": [1, "@", ".", "/", ":", "_", "-", "#"]
+    "@": [1, "@", ！, ：, 、, ……, ～]
+    "#": [0, "#", "$", "%", "^", "&", "*", "(", ")"]
 
 
 # 输入时按 1 可以分词
