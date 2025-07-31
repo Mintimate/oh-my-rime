@@ -1,0 +1,5100 @@
+# Rime dictionary
+# encoding: utf-8
+#https://github.com/amzxyz/RIME-LMDG
+#兼容词库，对于多字词汇两种读音的场景，手动维护到本表以及一些其他的杂项
+---
+name: rime_mint.compatible
+version: "LTS"
+sort: by_weight
+...
+没收	méi shōu	407
+暴晒	pù shài
+大王	dài wang	430
+教会	jiāo huì	702
+爱教	ài jiāo	352
+不教	bù jiāo	491
+回调	huí diào	512
+回调函数	huí diào hán shù	321
+结果	jiē guǒ
+看不了	kàn bù le	259
+卡住	qiǎ zhù	433
+睡着	shuì zhe
+没地	mò dì
+办不了	bàn bù le	230
+报不了	bào bù le	180
+软弹	ruǎn tán
+露出	lù chū
+丁丁	zhēng zhēng	402
+没看着	méi kàn zháo	142
+下不了	xià bù liǎo	221
+有多重	yǒu duō chóng	250
+多重	duō zhòng	631
+不干	bù gān	569
+大夫	dà fū
+薄膜	bó mó	595
+没过了	mò guò le
+没过我	mò guò wǒ
+没过线	mò guò xiàn
+没过	mò guò
+摩挲	mó suō	467
+公差	gōng chā	480
+好高	hào gāo	491
+好强	hào qiáng	485
+攒个	cuán gè	391
+攒个	zǎn gè	391
+背着	bēi zhe	545
+外传	wài chuán	460
+长点儿	cháng diǎn ér	293
+长点儿	zhǎng diǎn ér	293
+有的行	yǒu de háng	230
+就得到	jiù děi dào	498
+就得到	jiù dé dào	498
+调回来	tiáo huí lái	187
+调回了	tiáo huí le	151
+调回去	tiáo huí qù	137
+长了	cháng le	686
+哀乐	āi lè	411
+炸锅	zhá guō	465
+调回	tiáo huí	513
+掉色	diào sè	552
+掉色	diào shǎi	552
+大方	dà fang	676
+落魄	luò tuò	533
+落魄	luò bó	533
+沉甸甸	chén diān diān	380
+沉甸甸	chén diàn diàn	380
+热腾腾	rè téng téng	447
+热腾腾	rè tēng tēng	447
+大爷	dà yé	646
+兄弟	xiōng di	735
+姑父	gū fù	491
+女婿	nǚ xù	600
+朝阳	zhāo yáng	660
+朝阳	cháo yáng	660
+单行	dān xíng	504
+单行	dān háng	602
+串行	chuàn xíng	443
+串行	chuàn háng	543
+同行	tóng háng	714
+同行	tóng xíng	601
+多行	duō xíng	355
+多行	duō háng	491
+不了了	bù liǎo liǎo	542
+不了了	bù liǎo le	413
+肚子	dù zi	650
+肚子	dǔ zi	312
+落了	là le	542
+落了	luò le	603
+迫降	pò xiáng	120
+迫降	pò jiàng	523
+浅浅	jiān jiān	471
+浅浅	qiǎn qiǎn	671
+不了	bù liǎo	892
+不了	bù le	849
+着人	zhuó rén	390
+闲着	xián zhāo	367
+闲着	xián zhe	567
+琢磨	zuó mo	619
+琢磨	zhuó mó	460
+线长	xiàn zhǎng	463
+看好	kàn hǎo	706
+看好	kān hǎo	606
+看着	kàn zhe	797
+看着	kān zhe	697
+好这口	hào zhè kǒu	490
+好这口	hào zhèi kǒu	490
+不得	bù dé	764
+不得	bù děi	221
+调对了	tiáo duì le	312
+调对了	diào duì le	512
+转来转去	zhuàn lái zhuàn qù	604
+转来转去	zhuǎn lái zhuǎn qù	254
+得了	dé liǎo	611
+得了	dé le	734
+赢得了	yíng de liǎo
+得是	de shì	562
+得是	děi shì	412
+还回	huán huí	312
+还回	hái huí	428
+看好他	kān hǎo tā	403
+看好他	kàn hǎo tā	403
+还回去吧	huán huí qù ba	255
+还回去吧	hái huí qù ba	255
+还回去吗	huán huí qù ma	247
+还回去吗	hái huí qù ma	247
+还回来吗	hái huí lái ma	178
+还回来吗	huán huí lái ma	19
+还回来了	huán huí lái le	368
+还回来了	hái huí lái le	255
+还回来啊	huán huí lái a	77
+还回来啊	hái huí lái a	165
+还回来吧	huán huí lái ba	187
+还回来吧	hái huí lái ba	87
+还回去	huán huí qù	485
+还回去	hái huí qù	285
+还回来	huán huí lái	350
+还回来	hái huí lái	460
+还给那	hái gěi nà	94
+还给你	hái gěi nǐ	248
+还给谁	hái gěi shuí	53
+还给他	hái gěi tā	250
+还给她	hái gěi tā	228
+还给我	hái gěi wǒ	285
+还给这	hái gěi zhè	110
+你还给	nǐ hái gěi	138
+他还给	tā hái gěi	129
+我还给	wǒ hái gěi	145
+还给你钱	hái gěi nǐ qián	223
+还给她过	hái gěi tā guò	71
+还给她们	hái gěi tā men	303
+什么时候还	shén me shí hòu huán	10
+下次一定还	xià cì yī dìng huán	10
+还都	huán dū	578
+还都	hái dōu	578
+重载	zhòng zài	500
+重载	chóng zǎi	253
+罢了	bà le	888
+总长	zǒng cháng	705
+总长	zǒng zhǎng	436
+罢了	bà liǎo	647
+白庙	bái miào	1
+便宜	biàn yí	201
+不长	bǔ cháng	570
+不为	bú wèi	609
+不为	bù wéi	623
+不长	bù zhǎng	329
+长的	cháng de	802
+长牙	cháng yá	84
+长头发	cháng tóu fā	503
+长头发	zhǎng tóu fā	503
+长尾巴	cháng wěi bā	399
+长尾巴	zhǎng wěi bā	399
+长细纹	cháng xì wén	250
+长细纹	zhǎng xì wén	250
+长羽毛	cháng yǔ máo	252
+长羽毛	zhǎng yǔ máo	252
+区队长	qū duì zhǎng
+重活	chóng huó	120
+重天	chóng tiān	497
+穿着	chuān zhe	742
+穿着	chuān zhuó	644
+调配	diào pèi	688
+更为	gèng wèi	965
+更为	gēng wéi	915
+行长	háng zhǎng	466
+见长	jiàn cháng	510
+见长	jiàn zhǎng	621
+落下	là xià	764
+累累	léi léi	577
+累累	lěi lěi	511
+落下	luò xià	818
+略长	lüè cháng	447
+掠夺	lüè duó	686
+掠夺	lüě duó	300
+略长	lüè zhǎng	184
+美的	měi dì	467
+命中	mìng zhōng	708
+命中	mìng zhòng	661
+年长	nián cháng	447
+年长	nián zhǎng	522
+便宜	pián yi	560
+数次	shù cì	768
+数次	shuò cì	523
+随行	suí háng	552
+随行	suí xíng	781
+所长	suǒ cháng	611
+所长	suǒ zhǎng	786
+调配	tiáo pèi	622
+调为	tiáo wéi	468
+都为	dōu wéi	630
+我为	wǒ wèi	663
+我为	wǒ wéi	467
+五行	wǔ háng	558
+五行	wǔ xíng	607
+相称	xiāng chèn	404
+相称	xiāng chēng	504
+血晕	xiě yùn	222
+血晕	xuè yùn	68
+一行	yì háng	620
+一通	yí tòng	700
+一通	yì tōng	608
+一行	yì xíng	530
+越长	yuè cháng	271
+越长	yuè zhǎng	347
+炸鱼	zhá yú	544
+炸鱼	zhà yú	28
+长的	zhǎng de	919
+长相	zhǎng xiàng	429
+长牙	zhǎng yá	283
+重活	zhòng huó	391
+重活	chóng huó	265
+按这	àn zhèi	403
+把这	bǎ zhèi	654
+被这	bèi zhèi	530
+比这	bǐ zhèi	602
+从这	cóng zhèi	619
+但这	dàn zhèi	766
+到这	dào zhèi	617
+对这	duì zhèi	651
+而这	ér zhèi	719
+放这	fàng zhèi	402
+干这	gàn zhèi	457
+搁这	gē zhèi	348
+跟这	gēn zhèi	481
+管这	guǎn zhèi	366
+将这	jiāng zhèi	598
+就这	jiù zhèi	640
+看这	kàn zhèi	649
+靠这	kào zhèi	457
+来这	lái zhèi	672
+离这	lí zhèi	448
+没这	méi zhèi	469
+那这	nà zhèi	556
+你这	nǐ zhèi	655
+您这	nín zhèi	505
+瞧这	qiáo zhèi	460
+让这	ràng zhèi	548
+送这	sòng zhèi	340
+他这	tā zhèi	626
+她这	tā zhèi	518
+为这	wèi zhèi	558
+问这	wèn zhèi	602
+我这	wǒ zhèi	691
+用这	yòng zhèi	557
+在这	zài zhèi	797
+咱这	zán zhèi	470
+照这	zhào zhèi	388
+这爱	zhèi ài	359
+这把	zhèi bǎ	591
+这般	zhèi bān	562
+这版	zhèi bǎn	525
+这班	zhèi bān	417
+这半	zhèi bàn	362
+这帮	zhèi bāng	576
+这包	zhèi bāo	431
+这杯	zhèi bēi	495
+这本	zhèi běn	761
+这笔	zhèi bǐ	623
+这比	zhèi bǐ	576
+这边	zhèi biān	734
+这便	zhèi biàn	453
+这表	zhèi biǎo	407
+这并	zhèi bìng	619
+这病	zhèi bìng	493
+这饼	zhèi bǐng	361
+这柄	zhèi bǐng	325
+这波	zhèi bō	604
+这拨	zhèi bō	351
+这部	zhèi bù	778
+这不	zhèi bù	666
+这步	zhèi bù	499
+这才	zhèi cái	604
+这菜	zhèi cài	539
+这餐	zhèi cān	462
+这册	zhèi cè	353
+这侧	zhèi cè	311
+这层	zhèi céng	560
+这茬	zhèi chá	417
+这茶	zhèi chá	389
+这场	zhèi chǎng	731
+这车	zhèi chē	593
+这城	zhèi chéng	325
+这处	zhèi chù	533
+这出	zhèi chū	449
+这串	zhèi chuàn	444
+这船	zhèi chuán	330
+这次	zhèi cì	810
+这词	zhèi cí	508
+这从	zhèi cóng	517
+这村	zhèi cūn	357
+这大	zhèi dà	500
+这代	zhèi dài	512
+这袋	zhèi dài	349
+这单	zhèi dān	473
+这档	zhèi dàng	505
+这道	zhèi dào	627
+这倒	zhèi dào	467
+这到	zhèi dào	417
+这刀	zhèi dāo	349
+这得	zhèi dé	513
+这等	zhèi děng	539
+这灯	zhèi dēng	322
+这地	zhèi dì	463
+这点	zhèi diǎn	750
+这店	zhèi diàn	587
+这碟	zhèi dié	344
+这顶	zhèi dǐng	454
+这栋	zhèi dòng	540
+这都	zhèi dōu	622
+这段	zhèi duàn	772
+这端	zhèi duān	333
+这对	zhèi duì	708
+这堆	zhèi duī	451
+这队	zhèi duì	390
+这顿	zhèi dùn	550
+这多	zhèi duō	473
+这朵	zhèi duǒ	437
+这儿	zhèi ér	653
+这番	zhèi fān	540
+这饭	zhèi fàn	432
+这方	zhèi fāng	435
+这房	zhèi fáng	331
+这份	zhèi fèn	725
+这粉	zhèi fěn	300
+这封	zhèi fēng	580
+这风	zhèi fēng	354
+这幅	zhèi fú	597
+这副	zhèi fù	514
+这该	zhèi gāi	429
+这杆	zhèi gān	326
+这个	zhèi ge	962
+这歌	zhèi gē	494
+这哥	zhèi gē	389
+这给	zhèi gěi	562
+这跟	zhèi gēn	615
+这根	zhèi gēn	536
+这更	zhèi gèng	497
+这狗	zhèi gǒu	441
+这股	zhèi gǔ	581
+这瓜	zhèi guā	315
+这关	zhèi guān	472
+这罐	zhèi guàn	331
+这光	zhèi guāng	320
+这鬼	zhèi guǐ	355
+这锅	zhèi guō	502
+这还	zhèi hái	571
+这好	zhèi hǎo	425
+这号	zhèi hào	408
+这和	zhèi hé	660
+这盒	zhèi hé	402
+这很	zhèi hěn	566
+这户	zhèi hù	443
+这壶	zhèi hú	343
+这话	zhèi huà	627
+这花	zhèi huā	404
+这画	zhèi huà	370
+这会	zhèi huì	620
+这回	zhèi huí	615
+这婚	zhèi hūn	402
+这货	zhèi huò	640
+这活	zhèi huó	438
+这伙	zhèi huǒ	389
+这火	zhèi huǒ	353
+这几	zhèi jǐ	552
+这集	zhèi jí	524
+这既	zhèi jì	503
+这季	zhèi jì	467
+这鸡	zhèi jī	375
+这记	zhèi jì	370
+这家	zhèi jiā	850
+这架	zhèi jià	529
+这价	zhèi jià	470
+这件	zhèi jiàn	684
+这间	zhèi jiān	615
+这将	zhèi jiāng	749
+这叫	zhèi jiào	625
+这脚	zhèi jiǎo	343
+这届	zhèi jiè	570
+这节	zhèi jié	419
+这就	zhèi jiù	763
+这酒	zhèi jiǔ	446
+这句	zhèi jù	642
+这局	zhèi jú	483
+这剧	zhèi jù	482
+这具	zhèi jù	451
+这卷	zhèi juǎn	354
+这卡	zhèi kǎ	435
+这看	zhèi kàn	381
+这颗	zhèi kē	644
+这可	zhèi kě	606
+这棵	zhèi kē	481
+这科	zhèi kē	420
+这课	zhèi kè	405
+这刻	zhèi kè	323
+这口	zhèi kǒu	528
+这块	zhèi kuài	674
+这款	zhèi kuǎn	810
+这来	zhèi lái	408
+这类	zhèi lèi	761
+这里	zhèi lǐ	853
+这粒	zhèi lì	436
+这俩	zhèi liǎ	595
+这脸	zhèi liǎn	415
+这连	zhèi lián	345
+这两	zhèi liǎng	640
+这辆	zhèi liàng	607
+这列	zhèi liè	405
+这令	zhèi lìng	533
+这楼	zhèi lóu	393
+这路	zhèi lù	429
+这轮	zhèi lún	571
+这码	zhèi mǎ	343
+这猫	zhèi māo	402
+这么	zhèi me	831
+这枚	zhèi méi	560
+这门	zhèi mén	607
+这米	zhèi mǐ	355
+这面	zhèi miàn	515
+这名	zhèi míng	681
+这幕	zhèi mù	404
+这哪	zhèi nǎ	376
+这能	zhèi néng	516
+这年	zhèi nián	611
+这鸟	zhèi niǎo	350
+这怕	zhèi pà	254
+这排	zhèi pái	360
+这盘	zhèi pán	522
+这盆	zhèi pén	418
+这批	zhèi pī	641
+这匹	zhèi pǐ	422
+这篇	zhèi piān	779
+这片	zhèi piàn	613
+这票	zhèi piào	407
+这瓶	zhèi píng	510
+这起	zhèi qǐ	647
+这期	zhèi qī	583
+这钱	zhèi qián	547
+这枪	zhèi qiāng	394
+这桥	zhèi qiáo	317
+这球	zhèi qiú	473
+这区	zhèi qū	378
+这曲	zhèi qū	346
+这全	zhèi quán	357
+这圈	zhèi quān	340
+这券	zhèi quàn	304
+这却	zhèi què	448
+这确	zhèi què	304
+这群	zhèi qún	642
+这让	zhèi ràng	681
+这人	zhèi rén	598
+这日	zhèi rì	394
+这肉	zhèi ròu	418
+这啥	zhèi shá	385
+这扇	zhèi shàn	475
+这山	zhèi shān	382
+这身	zhèi shēn	513
+这声	zhèi shēng	349
+这是	zhèi shì	899
+这时	zhèi shí	707
+这事	zhèi shì	677
+这使	zhèi shǐ	547
+这诗	zhèi shī	390
+这首	zhèi shǒu	639
+这手	zhèi shǒu	424
+这书	zhèi shū	690
+这束	zhèi shù	365
+这树	zhèi shù	358
+这双	zhèi shuāng	541
+这水	zhèi shuǐ	433
+这谁	zhèi shuí	411
+这说	zhèi shuō	381
+这厮	zhèi sī	460
+这艘	zhèi sōu	564
+这算	zhèi suàn	557
+这所	zhèi suǒ	621
+这台	zhèi tái	643
+这太	zhèi tài	456
+这摊	zhèi tān	322
+这趟	zhèi tàng	517
+这汤	zhèi tāng	452
+这堂	zhèi táng	358
+这套	zhèi tào	700
+这题	zhèi tí	597
+这天	zhèi tiān	621
+这条	zhèi tiáo	715
+这贴	zhèi tiē	403
+这挺	zhèi tǐng	364
+这同	zhèi tóng	392
+这通	zhèi tōng	340
+这桶	zhèi tǒng	320
+这头	zhèi tóu	535
+这图	zhèi tú	517
+这团	zhèi tuán	409
+这腿	zhèi tuǐ	382
+这娃	zhèi wá	388
+这碗	zhèi wǎn	527
+这晚	zhèi wǎn	367
+这位	zhèi wèi	748
+这为	zhèi wéi	579
+这味	zhèi wèi	415
+这窝	zhèi wō	251
+这屋	zhèi wū	316
+这戏	zhèi xì	395
+这下	zhèi xià	621
+这虾	zhèi xiā	334
+这线	zhèi xiàn	309
+这项	zhèi xiàng	730
+这像	zhèi xiàng	430
+这厢	zhèi xiāng	403
+这些	zhèi xiē	896
+这鞋	zhèi xié	428
+这心	zhèi xīn	345
+这行	zhèi xíng	577
+这样	zhèi yàng	874
+这要	zhèi yào	550
+这药	zhèi yào	442
+这也	zhèi yě	777
+这页	zhèi yè	413
+这夜	zhèi yè	333
+这一	zhèi yī	813
+这已	zhèi yǐ	426
+这又	zhèi yòu	564
+这有	zhèi yǒu	508
+这油	zhèi yóu	331
+这与	zhèi yǔ	676
+这鱼	zhèi yú	465
+这雨	zhèi yǔ	409
+这在	zhèi zài	688
+这则	zhèi zé	613
+这站	zhèi zhàn	374
+这张	zhèi zhāng	752
+这章	zhèi zhāng	409
+这仗	zhèi zhàng	359
+这招	zhèi zhāo	566
+这真	zhèi zhēn	444
+这阵	zhèi zhèn	373
+这只	zhèi zhǐ	700
+这支	zhèi zhī	623
+这纸	zhèi zhǐ	350
+这枝	zhèi zhī	321
+这种	zhèi zhǒng	887
+这周	zhèi zhōu	590
+这株	zhèi zhū	425
+这注	zhèi zhù	364
+这桩	zhèi zhuāng	480
+这幢	zhèi zhuàng	445
+这桌	zhèi zhuō	513
+这字	zhèi zì	419
+这宗	zhèi zōng	462
+这组	zhèi zǔ	611
+这罪	zhèi zuì	332
+这尊	zhèi zūn	512
+这座	zhèi zuò	709
+啊这是	a zhèi shì	520
+啊这些	a zhèi xiē	504
+爱这个	ài zhèi ge	494
+爱这些	ài zhèi xiē	271
+爱这样	ài zhèi yàng	311
+按这个	àn zhèi ge	525
+俺这个	ǎn zhèi ge	351
+按这里	àn zhèi lǐ	278
+俺这里	ǎn zhèi lǐ	235
+按这样	àn zhèi yàng	325
+按这种	àn zhèi zhǒng	404
+把这次	bǎ zhèi cì	407
+把这段	bǎ zhèi duàn	504
+把这个	bǎ zhèi ge	686
+把这集	bǎ zhèi jí	197
+把这类	bǎ zhèi lèi	366
+把这里	bǎ zhèi lǐ	481
+把这两	bǎ zhèi liǎng	388
+把这项	bǎ zhèi xiàng	415
+把这些	bǎ zhèi xiē	657
+把这种	bǎ zhèi zhǒng	573
+白这样	bái zhèi yàng	221
+办这样	bàn zhèi yàng	272
+被这个	bèi zhèi ge	566
+被这些	bèi zhèi xiē	500
+被这样	bèi zhèi yàng	477
+被这种	bèi zhèi zhǒng	485
+比这个	bǐ zhèi ge	586
+比这里	bǐ zhèi lǐ	488
+表这样	biǎo zhèi yàng	262
+别这样	bié zhèi yàng	445
+别这种	bié zhèi zhǒng	98
+不这样	bú zhèi yàng	475
+才这点	cái zhèi diǎn	212
+猜这个	cāi zhèi ge	293
+才这样	cái zhèi yàng	451
+唱这歌	chàng zhèi gē	304
+朝这边	cháo zhèi biān	279
+趁这个	chèn zhèi ge	446
+趁这时	chèn zhèi shí	172
+成这样	chéng zhèi yàng	598
+成这种	chéng zhèi zhǒng	337
+吃这个	chī zhèi ge	615
+吃这类	chī zhèi lèi	370
+吃这里	chī zhèi lǐ	409
+吃这套	chī zhèi tào	321
+持这样	chí zhèi yàng	271
+持这种	chí zhèi zhǒng	424
+穿这个	chuān zhèi ge	407
+穿这件	chuān zhèi jiàn	391
+次这样	cì zhèi yàng	343
+从这个	cóng zhèi ge	679
+从这里	cóng zhèi lǐ	637
+打这个	dǎ zhèi ge	441
+打这里	dǎ zhèi lǐ	220
+带这里	dài zhèi lǐ	248
+但这次	dàn zhèi cì	591
+但这都	dàn zhèi dōu	374
+但这会	dàn zhèi huì	318
+但这些	dàn zhèi xiē	667
+但这种	dàn zhèi zhǒng	654
+当这个	dāng zhèi ge	518
+到这边	dào zhèi biān	522
+到这点	dào zhèi diǎn	399
+到这个	dào zhèi ge	667
+到这来	dào zhèi lái	458
+到这里	dào zhèi lǐ	711
+到这时	dào zhèi shí	395
+得这样	dé zhèi yàng	390
+等这些	děng zhèi xiē	716
+点这个	diǎn zhèi ge	564
+点这里	diǎn zhèi lǐ	521
+点这样	diǎn zhèi yàng	401
+定这个	dìng zhèi ge	340
+都这个	dōu zhèi ge	447
+都这样	dōu zhèi yàng	611
+都这种	dōu zhèi zhǒng	309
+对这帮	duì zhèi bāng	251
+对这次	duì zhèi cì	510
+对这个	duì zhèi ge	722
+对这里	duì zhèi lǐ	511
+对这没	duì zhèi méi	65
+对这种	duì zhèi zhǒng	634
+多这里	duō zhèi lǐ	355
+而这次	ér zhèi cì	561
+而这个	ér zhèi ge	667
+而这里	ér zhèi lǐ	495
+而这时	ér zhèi shí	479
+而这些	ér zhèi xiē	689
+而这样	ér zhèi yàng	484
+而这种	ér zhèi zhǒng	643
+发这个	fā zhèi ge	521
+发这条	fā zhèi tiáo	371
+发这种	fā zhèi zhǒng	404
+犯这种	fàn zhèi zhǒng	399
+放这吧	fàng zhèi ba	188
+放这个	fàng zhèi ge	379
+放这里	fàng zhèi lǐ	383
+放这首	fàng zhèi shǒu	158
+干这个	gàn zhèi ge	501
+干这活	gàn zhèi huó	302
+敢这样	gǎn zhèi yàng	403
+搞这个	gǎo zhèi ge	457
+搞这些	gǎo zhèi xiē	431
+搞这种	gǎo zhèi zhǒng	415
+给这边	gěi zhèi biān	155
+给这类	gěi zhèi lèi	300
+给这里	gěi zhèi lǐ	339
+给这些	gěi zhèi xiē	514
+跟这个	gēn zhèi ge	550
+管这个	guǎn zhèi ge	425
+光这样	guāng zhèi yàng	304
+过这样	guò zhèi yàng	524
+还这样	hái zhèi yàng	466
+还这种	hái zhèi zhǒng	312
+好这里	hǎo zhèi lǐ	319
+和这种	hé zhèi zhǒng	501
+画这个	huà zhèi ge	336
+换这个	huàn zhèi ge	383
+会这样	huì zhèi yàng	572
+会这种	huì zhèi zhǒng	281
+将这个	jiāng zhèi ge	602
+讲这个	jiǎng zhèi ge	507
+讲这话	jiǎng zhèi huà	247
+将这些	jiāng zhèi xiē	672
+讲这些	jiǎng zhèi xiē	605
+讲这种	jiǎng zhèi zhǒng	394
+叫这个	jiào zhèi ge	536
+借这个	jiè zhèi ge	496
+进这个	jìn zhèi ge	442
+就这啊	jiù zhèi a	158
+就这吧	jiù zhèi ba	314
+就这般	jiù zhèi bān	268
+就这大	jiù zhèi dà	98
+就这的	jiù zhèi de	214
+就这点	jiù zhèi diǎn	503
+就这个	jiù zhèi ge	612
+就这话	jiù zhèi huà	132
+就这家	jiù zhèi jiā	507
+就这来	jiù zhèi lái	162
+就这俩	jiù zhèi liǎ	279
+就这仨	jiù zhèi sā	180
+就这些	jiù zhèi xiē	542
+就这样	jiù zhèi yàng	753
+就这种	jiù zhèi zhǒng	486
+据这位	jù zhèi wèi	367
+开这个	kāi zhèi ge	479
+看这个	kàn zhèi ge	641
+看这里	kàn zhèi lǐ	567
+看这样	kàn zhèi yàng	421
+靠这个	kào zhèi ge	517
+考这个	kǎo zhèi ge	418
+考这里	kǎo zhèi lǐ	146
+可这次	kě zhèi cì	429
+可这钱	kě zhèi qián	188
+可这种	kě zhèi zhǒng	408
+快这里	kuài zhèi lǐ	137
+来这吧	lái zhèi ba	310
+来这边	lái zhèi biān	593
+来这点	lái zhèi diǎn	274
+来这个	lái zhèi ge	551
+来这里	lái zhèi lǐ	770
+来这套	lái zhèi tào	287
+老这个	lǎo zhèi ge	261
+老这样	lǎo zhèi yàng	346
+老这种	lǎo zhèi zhǒng	155
+累这样	lèi zhèi yàng	132
+离这里	lí zhèi lǐ	483
+连这个	lián zhèi ge	500
+聊这个	liáo zhèi ge	410
+聊这事	liáo zhèi shì	197
+码这篇	mǎ zhèi piān	169
+买这个	mǎi zhèi ge	599
+买这件	mǎi zhèi jiàn	312
+买这些	mǎi zhèi xiē	460
+卖这些	mài zhèi xiē	336
+毛这种	máo zhèi zhǒng	210
+没这店	méi zhèi diàn	295
+没这个	méi zhèi ge	525
+美这里	měi zhèi lǐ	193
+没这命	méi zhèi mìng	142
+没这样	méi zhèi yàng	333
+没这种	méi zhèi zhǒng	400
+莫这样	mò zhèi yàng	106
+那这不	nà zhèi bù	151
+那这个	nà zhèi ge	580
+拿这个	ná zhèi ge	521
+那这会	nà zhèi huì	120
+那这就	nà zhèi jiù	384
+那这些	nà zhèi xiē	488
+拿这些	ná zhèi xiē	425
+闹这个	nào zhèi ge	199
+嫩这个	nèn zhèi ge	235
+嫩这是	nèn zhèi shì	165
+能这样	néng zhèi yàng	504
+你这般	nǐ zhèi bān	263
+你这边	nǐ zhèi biān	425
+你这不	nǐ zhèi bù	354
+你这次	nǐ zhèi cì	418
+你这的	nǐ zhèi de	253
+你这都	nǐ zhèi dōu	293
+你这份	nǐ zhèi fèn	285
+你这个	nǐ zhèi ge	653
+你这会	nǐ zhèi huì	185
+你这来	nǐ zhèi lái	214
+你这里	nǐ zhèi lǐ	471
+你这面	nǐ zhèi miàn	120
+你这年	nǐ zhèi nián	243
+你这人	nǐ zhèi rén	423
+你这是	nǐ zhèi shì	565
+你这时	nǐ zhèi shí	300
+你这算	nǐ zhèi suàn	281
+你这天	nǐ zhèi tiān	162
+你这图	nǐ zhèi tú	199
+你这娃	nǐ zhèi wá	169
+你这下	nǐ zhèi xià	199
+你这些	nǐ zhèi xiē	410
+你这样	nǐ zhèi yàng	583
+你这也	nǐ zhèi yě	328
+你这种	nǐ zhèi zhǒng	544
+您这边	nín zhèi biān	295
+您这个	nín zhèi ge	444
+您这是	nín zhèi shì	429
+弄这个	nòng zhèi ge	378
+喔这样	ō zhèi yàng	193
+配这个	pèi zhèi ge	389
+气这样	qì zhèi yàng	185
+钱这是	qián zhèi shì	413
+去这里	qù zhèi lǐ	592
+却这样	què zhèi yàng	197
+让这个	ràng zhèi ge	609
+让这颗	ràng zhèi kē	263
+让这些	ràng zhèi xiē	573
+让这种	ràng zhèi zhǒng	477
+人这会	rén zhèi huì	146
+人这样	rén zhèi yàng	469
+上这来	shàng zhèi lái	336
+上这类	shàng zhèi lèi	354
+上这里	shàng zhèi lǐ	443
+是这吧	shì zhèi ba	304
+是这不	shì zhèi bù	259
+是这的	shì zhèi de	411
+是这个	shì zhèi ge	708
+是这话	shì zhèi huà	169
+是这吗	shì zhèi ma	354
+使这些	shǐ zhèi xiē	482
+是这样	shì zhèi yàng	736
+是这种	shì zhèi zhǒng	608
+耍这个	shuǎ zhèi ge	158
+耍这些	shuǎ zhèi xiē	217
+睡这里	shuì zhèi lǐ	172
+说这多	shuō zhèi duō	207
+说这个	shuō zhèi ge	679
+说这话	shuō zhèi huà	542
+说这里	shuō zhèi lǐ	560
+说这事	shuō zhèi shì	445
+说这些	shuō zhèi xiē	603
+说这种	shuō zhèi zhǒng	559
+似这般	sì zhèi bān	304
+他这般	tā zhèi bān	268
+她这般	tā zhèi bān	220
+他这个	tā zhèi ge	544
+她这会	tā zhèi huì	132
+他这人	tā zhèi rén	346
+她这样	tā zhèi yàng	491
+他这种	tā zhèi zhǒng	486
+特这个	tè zhèi ge	293
+特这是	tè zhèi shì	172
+特这样	tè zhèi yàng	201
+提这个	tí zhèi ge	609
+填这个	tián zhèi ge	305
+听这边	tīng zhèi biān	155
+听这歌	tīng zhèi gē	311
+听这句	tīng zhèi jù	106
+听这首	tīng zhèi shǒu	355
+玩这个	wán zhèi ge	536
+玩这套	wán zhèi tào	287
+玩这些	wán zhèi xiē	392
+往这走	wǎng zhèi zǒu	183
+为这个	wèi zhèi gè	600
+为这事	wèi zhèi shì	461
+为这些	wèi zhèi xiē	555
+问这里	wèn zhèi lǐ	278
+我这般	wǒ zhèi bān	300
+我这边	wǒ zhèi biān	560
+我这才	wǒ zhèi cái	424
+我这次	wǒ zhèi cì	523
+我这大	wǒ zhèi dà	226
+我这得	wǒ zhèi dé	142
+我这段	wǒ zhèi duàn	513
+我这份	wǒ zhèi fèn	318
+我这分	wǒ zhèi fēn	210
+我这个	wǒ zhèi ge	684
+我这和	wǒ zhèi hé	78
+我这回	wǒ zhèi huí	304
+我这会	wǒ zhèi huì	230
+我这间	wǒ zhèi jiān	178
+我这叫	wǒ zhèi jiào	320
+我这就	wǒ zhèi jiù	415
+我这块	wǒ zhèi kuài	302
+我这来	wǒ zhèi lái	302
+我这里	wǒ zhèi lǐ	635
+我这面	wǒ zhèi miàn	165
+我这拿	wǒ zhèi ná	120
+我这年	wǒ zhèi nián	317
+我这盘	wǒ zhèi pán	197
+我这人	wǒ zhèi rén	547
+我这是	wǒ zhèi shì	547
+我这时	wǒ zhèi shí	343
+我这手	wǒ zhèi shǒu	212
+我这书	wǒ zhèi shū	231
+我这套	wǒ zhèi tào	324
+我这天	wǒ zhèi tiān	261
+我这下	wǒ zhèi xià	254
+我这样	wǒ zhèi yàng	593
+我这有	wǒ zhèi yǒu	383
+我这正	wǒ zhèi zhèng	199
+我这种	wǒ zhèi zhǒng	618
+我这周	wǒ zhèi zhōu	330
+我这组	wǒ zhèi zǔ	142
+下这个	xià zhèi ge	582
+下这里	xià zhèi lǐ	354
+先这样	xiān zhèi yàng	388
+向这边	xiàng zhèi biān	287
+像这个	xiàng zhèi ge	450
+向这里	xiàng zhèi lǐ	301
+向这些	xiàng zhèi xiē	458
+想这些	xiǎng zhèi xiē	418
+像这样	xiàng zhèi yàng	598
+像这种	xiàng zhèi zhǒng	582
+小这类	xiǎo zhèi lèi	142
+写这段	xiě zhèi duàn	381
+写这个	xiě zhèi ge	545
+写这篇	xiě zhèi piān	542
+写这些	xiě zhèi xiē	462
+熊这个	xióng zhèi ge	210
+选这个	xuǎn zhèi ge	498
+选这种	xuǎn zhèi zhǒng	359
+学这个	xué zhèi ge	508
+呀这里	ya zhèi lǐ	296
+演这种	yǎn zhèi zhǒng	319
+要这样	yào zhèi yàng	527
+也这样	yě zhèi yàng	545
+以这份	yǐ zhèi fèn	193
+以这个	yǐ zhèi ge	552
+以这样	yǐ zhèi yàng	436
+以这种	yǐ zhèi zhǒng	557
+用这个	yòng zhèi ge	652
+用这颗	yòng zhèi kē	165
+用这样	yòng zhèi yàng	469
+用这种	yòng zhèi zhǒng	616
+有这大	yǒu zhèi dà	190
+有这的	yǒu zhèi de	269
+有这多	yǒu zhèi duō	217
+有这个	yǒu zhèi ge	660
+有这好	yǒu zhèi hǎo	207
+有这话	yǒu zhèi huà	106
+有这空	yǒu zhèi kōng	158
+有这钱	yǒu zhèi qián	358
+有这事	yǒu zhèi shì	361
+有这些	yǒu zhèi xiē	176
+由这些	yóu zhèi xiē	142
+有这样	yǒu zhèi yàng	670
+有这种	yǒu zhèi zhǒng	661
+与这些	yǔ zhèi xiē	569
+咋这样	zǎ zhèi yàng	269
+再这里	zài zhèi lǐ	404
+再这样	zài zhèi yàng	531
+咱这个	zán zhèi ge	303
+咱这里	zán zhèi lǐ	255
+咱这些	zán zhèi xiē	242
+早这里	zǎo zhèi lǐ	165
+则这个	zé zhèi ge	417
+站这边	zhàn zhèi biān	205
+站这里	zhàn zhèi lǐ	293
+照这个	zhào zhèi ge	461
+找这个	zhǎo zhèi ge	455
+照这样	zhào zhèi yàng	452
+这爱情	zhèi ài qíng	298
+这安静	zhèi ān jìng	180
+这案子	zhèi àn zi	365
+这把刀	zhèi bǎ dāo	430
+这八卦	zhèi bā guà	178
+这把剑	zhèi bǎ jiàn	424
+这把你	zhèi bǎ nǐ	142
+这八年	zhèi bā nián	359
+这把枪	zhèi bǎ qiāng	427
+这八天	zhèi bā tiān	197
+这版本	zhèi bǎn běn	419
+这班车	zhèi bān chē	341
+这半年	zhèi bàn nián	507
+这班人	zhèi bān rén	269
+这般人	zhèi bān rén	190
+这半天	zhèi bàn tiān	283
+这半夜	zhèi bàn yè	151
+这帮人	zhèi bāng rén	548
+这帮子	zhèi bāng zi	365
+这杯茶	zhèi bēi chá	330
+这背后	zhèi bèi hòu	542
+这杯酒	zhèi bēi jiǔ	409
+这辈人	zhèi bèi rén	330
+这杯水	zhèi bēi shuǐ	349
+这辈子	zhèi bèi zi	630
+这本来	zhèi běn lái	507
+这本身	zhèi běn shēn	545
+这本书	zhèi běn shū	866
+这壁画	zhèi bì huà	151
+这比那	zhèi bǐ nà	151
+这笔钱	zhèi bǐ qián	617
+这逼样	zhèi bī yàng	252
+这笔债	zhèi bǐ zhài	277
+这笔账	zhèi bǐ zhàng	439
+这边好	zhèi biān hǎo	296
+这编辑	zhèi biān jí	242
+这边来	zhèi biān lái	446
+这边买	zhèi biān mǎi	384
+这边请	zhèi biān qǐng	315
+这便是	zhèi biàn shì	577
+这边是	zhèi biān shì	493
+这边厢	zhèi biān xiāng	380
+这边有	zhèi biān yǒu	466
+这边走	zhèi biān zǒu	353
+这表明	zhèi biǎo míng	607
+这表情	zhèi biǎo qíng	401
+这标题	zhèi biāo tí	360
+这病毒	zhèi bìng dú	276
+这并非	zhèi bìng fēi	543
+这柄剑	zhèi bǐng jiàn	239
+这波亏	zhèi bō kuī	29
+这拨人	zhèi bō rén	345
+这不比	zhèi bù bǐ	341
+这不带	zhèi bú dài	126
+这不但	zhèi bú dàn	455
+这不对	zhèi bú duì	339
+这部队	zhèi bù duì	142
+这部分	zhèi bù fèn	658
+这不敢	zhèi bú gǎn	190
+这不关	zhèi bù guān	312
+这不好	zhèi bù hǎo	447
+这不会	zhèi bú huì	411
+这部机	zhèi bù jī	284
+这不叫	zhèi bú jiào	461
+这不仅	zhèi bù jǐn	632
+这不就	zhèi bú jiù	490
+这部剧	zhèi bù jù	626
+这不能	zhèi bù néng	496
+这不去	zhèi bú qù	175
+这不是	zhèi bú shì	749
+这部书	zhèi bù shū	531
+这不说	zhèi bù shuō	223
+这不算	zhèi bú suàn	474
+这不太	zhèi bú tài	372
+这部位	zhèi bù wèi	311
+这部戏	zhèi bù xì	540
+这不行	zhèi bù xíng	383
+这才敢	zhèi cái gǎn	230
+这才刚	zhèi cái gāng	334
+这才好	zhèi cái hǎo	146
+这才回	zhèi cái huí	113
+这才叫	zhèi cái jiào	532
+这才能	zhèi cái néng	425
+这菜鸟	zhèi cài niǎo	195
+这才是	zhèi cái shì	714
+这操行	zhèi cāo xíng	215
+这操作	zhèi cāo zuò	352
+这场火	zhèi chǎng huǒ	241
+这场球	zhèi chǎng qiú	485
+这场雪	zhèi chǎng xuě	313
+这场雨	zhèi chǎng yǔ	416
+这场仗	zhèi chǎng zhàng	377
+这程度	zhèi chéng dù	316
+这成绩	zhèi chéng jì	353
+这城里	zhèi chéng lǐ	193
+这城市	zhèi chéng shì	406
+这充分	zhèi chōng fèn	479
+这出剧	zhèi chū jù	275
+这出戏	zhèi chū xì	423
+这次不	zhèi cì bù	423
+这次的	zhèi cì de	697
+这次第	zhèi cì dì	309
+这次来	zhèi cì lái	528
+这次拿	zhèi cì ná	254
+这次呢	zhèi cì ne	310
+这次你	zhèi cì nǐ	382
+这次您	zhèi cì nín	201
+这次去	zhèi cì qù	581
+这次是	zhèi cì shì	621
+这次我	zhèi cì wǒ	538
+这次在	zhèi cì zài	534
+这村子	zhèi cūn zi	239
+这答案	zhèi dá àn	446
+这大概	zhèi dà gài	552
+这大哥	zhèi dà gē	347
+这大姐	zhèi dà jiě	279
+这大妈	zhèi dà mā	255
+这大叔	zhèi dà shū	295
+这大树	zhèi dà shù	126
+这大雪	zhèi dà xuě	132
+这大爷	zhèi dà yé	292
+这大雨	zhèi dà yǔ	244
+这代表	zhèi dài biǎo	490
+这代码	zhèi dài mǎ	290
+这代人	zhèi dài rén	511
+这呆着	zhèi dāi zhe	207
+这当口	zhèi dāng kǒu	266
+这当然	zhèi dāng rán	547
+这当中	zhèi dāng zhōng	498
+这道菜	zhèi dào cài	678
+这到底	zhèi dào dǐ	573
+这道关	zhèi dào guān	263
+这道坎	zhèi dào kǎn	430
+这捣乱	zhèi dǎo luàn	106
+这倒是	zhèi dào shì	480
+这道汤	zhèi dào tāng	394
+这道题	zhèi dào tí	611
+这导致	zhèi dǎo zhì	581
+这得看	zhèi dé kàn	423
+这得是	zhèi dé shì	348
+这的是	zhèi de shì	317
+这等你	zhèi děng nǐ	215
+这等人	zhèi děng rén	251
+这等事	zhèi děng shì	318
+这等于	zhèi děng yú	442
+这地方	zhèi dì fāng	593
+这的确	zhèi dí què	510
+这地铁	zhèi dì tiě	225
+这地图	zhèi dì tú	296
+这电脑	zhèi diàn nǎo	366
+这点钱	zhèi diǎn qián	526
+这点去	zhèi diǎn qù	256
+这点上	zhèi diǎn shàng	504
+这点血	zhèi diǎn xuè	121
+这点雪	zhèi diǎn xuě	105
+这电影	zhèi diàn yǐng	493
+这点子	zhèi diǎn zi	289
+这东东	zhèi dōng dōng	423
+这东西	zhèi dōng xi	679
+这都被	zhèi dōu bèi	300
+这都不	zhèi dōu bù	494
+这都快	zhèi dōu kuài	323
+这都没	zhèi dōu méi	347
+这都能	zhèi dōu néng	443
+这都是	zhèi dōu shì	667
+这都算	zhèi dōu suàn	338
+这都些	zhèi dōu xiē	98
+这都信	zhèi dōu xìn	162
+这都行	zhèi dōu xíng	280
+这都要	zhèi dōu yào	385
+这都有	zhèi dōu yǒu	365
+这犊子	zhèi dú zi	137
+这段话	zhèi duàn huà	660
+这段情	zhèi duàn qíng	349
+这段字	zhèi duàn zì	230
+这对我	zhèi duì wǒ	450
+这队伍	zhèi duì wǔ	287
+这对于	zhèi duì yú	684
+这对子	zhèi duì zi	175
+这顿饭	zhèi dùn fàn	571
+这多好	zhèi duō hǎo	254
+这朵花	zhèi duǒ huā	385
+这多年	zhèi duō nián	383
+这多钱	zhèi duō qián	193
+这多人	zhèi duō rén	310
+这多天	zhèi duō tiān	308
+这多字	zhèi duō zì	126
+这二货	zhèi èr huò	327
+这二年	zhèi èr nián	314
+这二天	zhèi èr tiān	307
+这二位	zhèi èr wèi	427
+这二者	zhèi èr zhě	484
+这二字	zhèi èr zì	276
+这番话	zhèi fān huà	501
+这翻译	zhèi fān yì	370
+这反映	zhèi fǎn yìng	373
+这方法	zhèi fāng fǎ	467
+这方面	zhèi fāng miàn	671
+这房子	zhèi fáng zi	490
+这份爱	zhèi fèn ài	466
+这份表	zhèi fèn biǎo	236
+这份工	zhèi fèn gōng	305
+这分明	zhèi fēn míng	463
+这份情	zhèi fèn qíng	331
+这份上	zhèi fèn shàng	410
+这氛围	zhèi fēn wéi	280
+这分钟	zhèi fēn zhōng	443
+这封信	zhèi fēng xìn	552
+这副本	zhèi fù běn	195
+这幅画	zhèi fú huà	627
+这附近	zhèi fù jìn	566
+这幅图	zhèi fú tú	482
+这复杂	zhèi fù zá	245
+这嘎达	zhèi gā dá	253
+这感觉	zhèi gǎn jué	509
+这杆枪	zhèi gān qiāng	178
+这岗位	zhèi gǎng wèi	277
+这搞得	zhèi gǎo de	193
+这高的	zhèi gāo de	146
+这高级	zhèi gāo jí	185
+这高兴	zhèi gāo xìng	113
+这个啊	zhèi ge a	473
+这个吧	zhèi ge ba	531
+这个摆	zhèi ge bǎi	155
+这个班	zhèi ge bān	468
+这个板	zhèi ge bǎn	277
+这个本	zhèi ge běn	429
+这个逼	zhèi ge bī	400
+这个表	zhèi ge biǎo	456
+这个标	zhèi ge biāo	306
+这个别	zhèi ge bié	257
+这个兵	zhèi ge bīng	255
+这个不	zhèi ge bù	555
+这个厂	zhèi ge chǎng	363
+这个场	zhèi ge chǎng	344
+这个城	zhèi ge chéng	307
+这个仇	zhèi ge chóu	256
+这个船	zhèi ge chuán	293
+这个词	zhèi ge cí	709
+这疙瘩	zhèi gē da	247
+这个单	zhèi ge dān	369
+这个蛋	zhèi ge dàn	343
+这个岛	zhèi ge dǎo	434
+这个的	zhèi ge de	638
+这个灯	zhèi ge dēng	398
+这个底	zhèi ge dǐ	310
+这个店	zhèi ge diàn	669
+这个点	zhèi ge diǎn	568
+这个度	zhèi ge dù	443
+这个队	zhèi ge duì	398
+这个分	zhèi ge fēn	431
+这个符	zhèi ge fú	201
+这个歌	zhèi ge gē	403
+这个给	zhèi ge gěi	399
+这个梗	zhèi ge gěng	506
+这个股	zhèi ge gǔ	348
+这个瓜	zhèi ge guā	319
+这个锅	zhèi ge guō	525
+这个国	zhèi ge guó	337
+这个还	zhèi ge hái	523
+这个函	zhèi ge hán	188
+这个好	zhèi ge hǎo	548
+这个号	zhèi ge hào	502
+这个和	zhèi ge hé	568
+这个很	zhèi ge hěn	536
+这个灰	zhèi ge huī	197
+这个货	zhèi ge huò	393
+这个价	zhèi ge jià	642
+这个家	zhèi ge jiā	548
+这个键	zhèi ge jiàn	401
+这个奖	zhèi ge jiǎng	490
+这个叫	zhèi ge jiào	533
+这个节	zhèi ge jié	463
+这个井	zhèi ge jǐng	265
+这个就	zhèi ge jiù	595
+这个酒	zhèi ge jiǔ	397
+这个剧	zhèi ge jù	483
+这个局	zhèi ge jú	419
+这个卡	zhèi ge kǎ	472
+这个坎	zhèi ge kǎn	440
+这个课	zhèi ge kè	426
+这个坑	zhèi ge kēng	480
+这个款	zhèi ge kuǎn	383
+这个框	zhèi ge kuāng	304
+这个啦	zhèi ge la	409
+这个来	zhèi ge lái	460
+这个雷	zhèi ge léi	288
+这个冷	zhèi ge lěng	387
+这个理	zhèi ge lǐ	413
+这个列	zhèi ge liè	210
+这个龙	zhèi ge lóng	255
+这个楼	zhèi ge lóu	397
+这个嘛	zhèi ge ma	478
+这个吗	zhèi ge ma	456
+这个忙	zhèi ge máng	400
+这哥们	zhèi gē men	554
+这个门	zhèi ge mén	421
+这个梦	zhèi ge mèng	486
+这个南	zhèi ge nán	188
+这个呢	zhèi ge ne	476
+这个能	zhèi ge néng	452
+这个你	zhèi ge nǐ	484
+这个捏	zhèi ge niē	165
+这个哦	zhèi ge ó	360
+这个片	zhèi ge piàn	360
+这个钱	zhèi ge qián	580
+这个签	zhèi ge qiān	241
+这个秋	zhèi ge qiū	270
+这个群	zhèi ge qún	452
+这个人	zhèi ge rén	726
+这个骚	zhèi ge sāo	214
+这歌声	zhèi gē shēng	274
+这个是	zhèi ge shì	721
+这个事	zhèi ge shì	621
+这个书	zhèi ge shū	569
+这个数	zhèi ge shù	533
+这个怂	zhèi ge sǒng	151
+这个算	zhèi ge suàn	491
+这个挺	zhèi ge tǐng	453
+这个图	zhèi ge tú	541
+这个娃	zhèi ge wá	296
+这个哇	zhèi ge wa	222
+这个外	zhèi ge wài	335
+这个网	zhèi ge wǎng	409
+这个我	zhèi ge wǒ	612
+这个夏	zhèi ge xià	247
+这个邪	zhèi ge xié	372
+这个鞋	zhèi ge xié	345
+这个星	zhèi ge xīng	321
+这个雪	zhèi ge xuě	201
+这个要	zhèi ge yào	557
+这个药	zhèi ge yào	498
+这个也	zhèi ge yě	592
+这个夜	zhèi ge yè	239
+这个有	zhèi ge yǒu	517
+这个院	zhèi ge yuàn	271
+这个月	zhèi ge yuè	628
+这个早	zhèi ge zǎo	277
+这个站	zhèi ge zhàn	402
+这个真	zhèi ge zhēn	483
+这个证	zhèi ge zhèng	463
+这个值	zhèi ge zhí	487
+这个周	zhèi ge zhōu	334
+这个字	zhèi ge zì	601
+这个总	zhèi ge zǒng	336
+这个组	zhèi ge zǔ	385
+这给你	zhèi gěi nǐ	247
+这给我	zhèi gěi wǒ	378
+这根本	zhèi gēn běn	540
+这根刺	zhèi gēn cì	261
+这根梁	zhèi gēn liáng	169
+这跟我	zhèi gēn wǒ	389
+这根弦	zhèi gēn xián	424
+这根线	zhèi gēn xiàn	363
+这功夫	zhèi gōng fū	394
+这功能	zhèi gōng néng	439
+这公司	zhèi gōng sī	449
+这狗的	zhèi gǒu de	142
+这股火	zhèi gǔ huǒ	169
+这估计	zhèi gū jì	392
+这股劲	zhèi gǔ jìn	280
+这姑娘	zhèi gū niáng	526
+这关心	zhèi guān xīn	106
+这管子	zhèi guǎn zi	137
+这光景	zhèi guāng jǐng	209
+这闺女	zhèi guī nǚ	274
+这规则	zhèi guī zé	289
+这哈哈	zhèi hā hā	239
+这还不	zhèi hái bù	523
+这还好	zhèi hái hǎo	276
+这还叫	zhèi hái jiào	370
+这还没	zhèi hái méi	398
+这海上	zhèi hǎi shàng	132
+这还是	zhèi hái shì	610
+这还要	zhèi hái yào	391
+这还用	zhèi hái yòng	396
+这还有	zhèi hái yǒu	420
+这还真	zhèi hái zhēn	426
+这孩子	zhèi hái zi	600
+这行情	zhèi háng qíng	297
+这行业	zhèi háng yè	460
+这好啊	zhèi hǎo a	197
+这好比	zhèi hǎo bǐ	413
+这好的	zhèi hǎo de	258
+这号人	zhèi hào rén	327
+这好事	zhèi hǎo shì	348
+这好像	zhèi hǎo xiàng	478
+这和爱	zhèi hé ài	137
+这合理	zhèi hé lǐ	255
+这和你	zhèi hé nǐ	368
+这黑人	zhèi hēi rén	199
+这黑夜	zhèi hēi yè	155
+这很好	zhèi hěn hǎo	448
+这很难	zhèi hěn nán	440
+这横山	zhèi héng shān	8
+这后来	zhèi hòu lái	322
+这后生	zhèi hòu shēng	199
+这胡子	zhèi hú zi	205
+这话里	zhèi huà lǐ	203
+这话题	zhèi huà tí	416
+这环境	zhèi huán jìng	451
+这会都	zhèi huì dōu	175
+这回跟	zhèi huí gēn	175
+这会还	zhèi huì hái	205
+这回好	zhèi huí hǎo	137
+这回呢	zhèi huí ne	178
+这回却	zhèi huí què	250
+这回事	zhèi huí shì	560
+这会使	zhèi huì shǐ	494
+这回我	zhèi huí wǒ	370
+这回忆	zhèi huí yì	215
+这会在	zhèi huì zài	337
+这徽章	zhèi huī zhāng	126
+这会正	zhèi huì zhèng	203
+这会子	zhèi huì zǐ	322
+这回子	zhèi huí zǐ	146
+这回做	zhèi huí zuò	120
+这婚事	zhèi hūn shì	203
+这活动	zhèi huó dòng	410
+这伙计	zhèi huǒ jì	244
+这伙人	zhèi huǒ rén	423
+这或许	zhèi huò xǔ	576
+这几把	zhèi jǐ bǎ	246
+这鸡巴	zhèi jī bā	165
+这基本	zhèi jī běn	452
+这几本	zhèi jǐ běn	446
+这几笔	zhèi jǐ bǐ	241
+这几波	zhèi jǐ bō	220
+这几部	zhèi jǐ bù	450
+这几场	zhèi jǐ chǎng	393
+这几处	zhèi jǐ chù	344
+这几次	zhèi jǐ cì	464
+这几点	zhèi jǐ diǎn	547
+这激动	zhèi jī dòng	180
+这季度	zhèi jì dù	222
+这几段	zhèi jǐ duàn	341
+这几对	zhèi jǐ duì	259
+这几份	zhèi jǐ fèn	252
+这几个	zhèi jǐ gè	697
+这几行	zhèi jǐ háng	235
+这几家	zhèi jǐ jiā	526
+这季节	zhèi jì jié	375
+这几届	zhèi jǐ jiè	272
+这几句	zhèi jǐ jù	445
+这几颗	zhèi jǐ kē	274
+这几块	zhèi jǐ kuài	374
+这几款	zhèi jǐ kuǎn	550
+这几类	zhèi jǐ lèi	466
+这几辆	zhèi jǐ liàng	284
+这几名	zhèi jǐ míng	377
+这几年	zhèi jǐ nián	714
+这几篇	zhèi jǐ piān	361
+这几日	zhèi jǐ rì	496
+这既是	zhèi jì shì	509
+这几首	zhèi jǐ shǒu	379
+这几套	zhèi jǐ tào	322
+这几天	zhèi jǐ tiān	717
+这几晚	zhèi jǐ wǎn	180
+这几位	zhèi jǐ wèi	532
+这几项	zhèi jǐ xiàng	462
+这几张	zhèi jǐ zhāng	486
+这几只	zhèi jǐ zhī	422
+这几种	zhèi jǐ zhǒng	582
+这家厂	zhèi jiā chǎng	267
+这家店	zhèi jiā diàn	836
+这家伙	zhèi jiā huo	572
+这家你	zhèi jiā nǐ	234
+这家人	zhèi jiā rén	497
+这家是	zhèi jiā shì	619
+这家子	zhèi jiā zǐ	280
+这简单	zhèi jiǎn dān	336
+这件事	zhèi jiàn shì	774
+这简直	zhèi jiǎn zhí	544
+这将是	zhèi jiāng shì	587
+这将有	zhèi jiāng yǒu	151
+这叫爱	zhèi jiào ài	188
+这阶段	zhèi jiē duàn	434
+这节课	zhèi jié kè	465
+这姐们	zhèi jiě men	321
+这节目	zhèi jié mù	458
+这节奏	zhèi jié zòu	362
+这仅是	zhèi jǐn shì	428
+这经济	zhèi jīng jì	244
+这精神	zhèi jīng shén	287
+这就不	zhèi jiù bù	459
+这就带	zhèi jiù dài	288
+这就到	zhèi jiù dào	209
+这就得	zhèi jiù děi	379
+这就对	zhèi jiù duì	397
+这就该	zhèi jiù gāi	195
+这就跟	zhèi jiù gēn	473
+这就好	zhèi jiù hǎo	416
+这就和	zhèi jiù hé	450
+这就会	zhèi jiù huì	404
+这就叫	zhèi jiù jiào	533
+这究竟	zhèi jiū jìng	488
+这就来	zhèi jiù lái	350
+这就去	zhèi jiù qù	300
+这就是	zhèi jiù shì	821
+这就使	zhèi jiù shǐ	451
+这就算	zhèi jiù suàn	408
+这就太	zhèi jiù tài	276
+这就完	zhèi jiù wán	207
+这就要	zhèi jiù yào	509
+这就有	zhèi jiù yǒu	371
+这句好	zhèi jù hǎo	199
+这句话	zhèi jù huà	789
+这局面	zhèi jú miàn	293
+这绝不	zhèi jué bù	370
+这看似	zhèi kàn sì	459
+这靠谱	zhèi kào pǔ	126
+这可能	zhèi kě néng	730
+这可是	zhèi kě shì	624
+这棵树	zhèi kē shù	480
+这颗糖	zhèi kē táng	248
+这颗星	zhèi kē xīng	371
+这可以	zhèi kě yǐ	755
+这可真	zhèi kě zhēn	399
+这肯定	zhèi kěn dìng	471
+这坑爹	zhèi kēng diē	217
+这恐怖	zhèi kǒng bù	205
+这恐怕	zhèi kǒng pà	508
+这口锅	zhèi kǒu guō	377
+这口气	zhèi kǒu qì	465
+这口音	zhèi kǒu yīn	210
+这裤子	zhèi kù zi	324
+这夸张	zhèi kuā zhāng	113
+这块布	zhèi kuài bù	285
+这块地	zhèi kuài dì	475
+这块料	zhèi kuài liào	360
+这块钱	zhèi kuài qián	425
+这块肉	zhèi kuài ròu	351
+这款琴	zhèi kuǎn qín	264
+这老大	zhèi lǎo dà	203
+这老哥	zhèi lǎo gē	327
+这老汉	zhèi lǎo hàn	169
+这老头	zhèi lǎo tóu	393
+这老些	zhèi lǎo xiē	165
+这类词	zhèi lèi cí	151
+这类人	zhèi lèi rén	596
+这里啊	zhèi lǐ a	419
+这里吧	zhèi lǐ ba	519
+这里边	zhèi lǐ biān	475
+这里曾	zhèi lǐ céng	420
+这里的	zhèi lǐ de	849
+这里等	zhèi lǐ děng	360
+这里过	zhèi lǐ guò	317
+这厉害	zhèi lì hài	142
+这里好	zhèi lǐ hǎo	423
+这里会	zhèi lǐ huì	462
+这里建	zhèi lǐ jiàn	280
+这里将	zhèi lǐ jiāng	469
+这里就	zhèi lǐ jiù	635
+这里来	zhèi lǐ lái	513
+这里连	zhèi lǐ lián	350
+这里吗	zhèi lǐ ma	394
+这里买	zhèi lǐ mǎi	572
+这里没	zhèi lǐ méi	457
+这里面	zhèi lǐ miàn	665
+这里木	zhèi lǐ mù	158
+这里那	zhèi lǐ nà	308
+这里能	zhèi lǐ néng	431
+这里是	zhèi lǐ shì	721
+这里耍	zhèi lǐ shuǎ	151
+这里我	zhèi lǐ wǒ	600
+这里雪	zhèi lǐ xuě	146
+这里也	zhèi lǐ yě	606
+这里有	zhèi lǐ yǒu	713
+这理由	zhèi lǐ yóu	354
+这里找	zhèi lǐ zhǎo	381
+这里住	zhèi lǐ zhù	381
+这俩地	zhèi liǎ dì	215
+这俩队	zhèi liǎ duì	203
+这俩个	zhèi liǎ gè	357
+这俩人	zhèi liǎ rén	483
+这俩事	zhèi liǎ shì	188
+这两把	zhèi liǎng bǎ	339
+这两本	zhèi liǎng běn	503
+这两部	zhèi liǎng bù	561
+这辆车	zhèi liàng chē	607
+这两处	zhèi liǎng chù	444
+这两次	zhèi liǎng cì	511
+这两大	zhèi liǎng dà	543
+这两点	zhèi liǎng diǎn	580
+这两份	zhèi liǎng fèn	445
+这两个	zhèi liǎng gè	775
+这两根	zhèi liǎng gēn	335
+这两行	zhèi liǎng háng	268
+这两家	zhèi liǎng jiā	593
+这两件	zhèi liǎng jiàn	488
+这两间	zhèi liǎng jiān	324
+这两句	zhèi liǎng jù	499
+这两颗	zhèi liǎng kē	425
+这两口	zhèi liǎng kǒu	234
+这两块	zhèi liǎng kuài	455
+这两款	zhèi liǎng kuǎn	623
+这两名	zhèi liǎng míng	488
+这两年	zhèi liǎng nián	675
+这两批	zhèi liǎng pī	278
+这两票	zhèi liǎng piào	155
+这两人	zhèi liǎng rén	532
+这两日	zhèi liǎng rì	407
+这两首	zhèi liǎng shǒu	415
+这两双	zhèi liǎng shuāng	263
+这两台	zhèi liǎng tái	429
+这两天	zhèi liǎng tiān	700
+这两条	zhèi liǎng tiáo	545
+这两晚	zhèi liǎng wǎn	158
+这两位	zhèi liǎng wèi	600
+这两项	zhèi liǎng xiàng	552
+这两页	zhèi liǎng yè	266
+这两张	zhèi liǎng zhāng	511
+这两者	zhèi liǎng zhě	600
+这两只	zhèi liǎng zhǐ	493
+这两种	zhèi liǎng zhǒng	700
+这六点	zhèi liù diǎn	306
+这六个	zhèi liù gè	465
+这六年	zhèi liù nián	362
+这六人	zhèi liù rén	261
+这六所	zhèi liù suǒ	240
+这路子	zhèi lù zi	238
+这轮回	zhèi lún huí	142
+这逻辑	zhèi luó jí	420
+这买卖	zhèi mǎi mài	335
+这貌似	zhèi mào sì	382
+这美人	zhèi měi rén	162
+这没啥	zhèi méi shá	363
+这每天	zhèi měi tiān	291
+这没用	zhèi méi yòng	217
+这没有	zhèi méi yǒu	501
+这妹子	zhèi mèi zi	449
+这门课	zhèi mén kè	585
+这门口	zhèi mén kǒu	284
+这门子	zhèi mén zǐ	241
+这面墙	zhèi miàn qiáng	376
+这明显	zhèi míng xiǎn	459
+这名字	zhèi míng zì	554
+这魔鬼	zhèi mó guǐ	207
+这那的	zhèi nà de	313
+这哪是	zhèi nǎ shì	461
+这哪行	zhèi nǎ xíng	215
+这难道	zhèi nán dào	547
+这男的	zhèi nán de	481
+这男人	zhèi nán rén	447
+这脑袋	zhèi nǎo dài	235
+这能力	zhèi néng lì	374
+这能让	zhèi néng ràng	400
+这能忍	zhèi néng rěn	257
+这你就	zhèi nǐ jiù	378
+这你妈	zhèi nǐ mā	201
+这年代	zhèi nián dài	373
+这年纪	zhèi nián jì	347
+这年轻	zhèi nián qīng	240
+这年头	zhèi nián tóu	600
+这年月	zhèi nián yuè	394
+这女的	zhèi nǚ de	467
+这女人	zhèi nǚ rén	458
+这女娃	zhèi nǚ wá	207
+这女子	zhèi nǚ zǐ	364
+这牌子	zhèi pái zi	480
+这盘是	zhèi pán shì	244
+这匹马	zhèi pǐ mǎ	391
+这片海	zhèi piàn hǎi	335
+这片湖	zhèi piàn hú	222
+这篇文	zhèi piān wén	443
+这便宜	zhèi pián yì	327
+这片子	zhèi piān zi	501
+这票的	zhèi piào de	260
+这破店	zhèi pò diàn	222
+这破乎	zhèi pò hū	260
+这婆娘	zhèi pó niáng	210
+这气场	zhèi qì chǎng	316
+这岂非	zhèi qǐ fēi	261
+这七个	zhèi qī gè	438
+这期间	zhèi qī jiān	612
+这其间	zhèi qí jiān	360
+这七款	zhèi qī kuǎn	169
+这七人	zhèi qī rén	229
+这其中	zhèi qí zhōng	652
+这恰恰	zhèi qià qià	454
+这情怀	zhèi qíng huái	250
+这情况	zhèi qíng kuàng	490
+这区区	zhèi qū qū	332
+这泉水	zhèi quán shuǐ	188
+这群狗	zhèi qún gǒu	222
+这群里	zhèi qún lǐ	193
+这群人	zhèi qún rén	549
+这让她	zhèi ràng tā	470
+这让我	zhèi ràng wǒ	628
+这人生	zhèi rén shēng	376
+这日子	zhèi rì zi	468
+这软件	zhèi ruǎn jiàn	370
+这仨人	zhèi sā rén	282
+这三大	zhèi sān dà	536
+这三对	zhèi sān duì	274
+这三份	zhèi sān fèn	318
+这三个	zhèi sān gè	691
+这三国	zhèi sān guó	326
+这三家	zhèi sān jiā	512
+这三类	zhèi sān lèi	483
+这三名	zhèi sān míng	410
+这三年	zhèi sān nián	513
+这三人	zhèi sān rén	470
+这三天	zhèi sān tiān	456
+这三条	zhèi sān tiáo	466
+这三位	zhèi sān wèi	512
+这三项	zhèi sān xiàng	469
+这三只	zhèi sān zhǐ	403
+这三种	zhèi sān zhǒng	611
+这傻逼	zhèi shǎ bī	366
+这社会	zhèi shè huì	433
+这神秘	zhèi shén mì	245
+这深夜	zhèi shēn yè	178
+这身子	zhèi shēn zi	172
+这生活	zhèi shēng huó	364
+这盛世	zhèi shèng shì	379
+这声音	zhèi shēng yīn	439
+这事啊	zhèi shì a	311
+这是爱	zhèi shì ài	374
+这是把	zhèi shì bǎ	411
+这事吧	zhèi shì ba	373
+这是病	zhèi shì bìng	437
+这是从	zhèi shì cóng	514
+这时代	zhèi shí dài	356
+这是带	zhèi shì dài	281
+这世代	zhèi shì dài	233
+这世道	zhèi shì dào	440
+这使得	zhèi shǐ de	686
+这是第	zhèi shì dì	444
+这事都	zhèi shì dōu	315
+这是对	zhèi shì duì	604
+这是非	zhèi shì fēi	333
+这是否	zhèi shì fǒu	576
+这是个	zhèi shì gè	698
+这是给	zhèi shì gěi	471
+这是跟	zhèi shì gēn	382
+这时光	zhèi shí guāng	289
+这是很	zhèi shì hěn	570
+这时候	zhèi shí hòu	701
+这是家	zhèi shì jiā	487
+这世间	zhèi shì jiān	510
+这时间	zhèi shí jiān	459
+这世界	zhèi shì jiè	596
+这时就	zhèi shí jiù	518
+这是嘛	zhèi shì ma	233
+这是没	zhèi shì méi	398
+这是梦	zhèi shì mèng	283
+这是命	zhèi shì mìng	300
+这是哪	zhèi shì nǎ	437
+这时你	zhèi shí nǐ	561
+这是你	zhèi shì nǐ	556
+这十年	zhèi shí nián	505
+这是怕	zhèi shì pà	279
+这视频	zhèi shì pín	426
+这时期	zhèi shí qī	428
+这事情	zhèi shì qíng	523
+这事请	zhèi shì qǐng	126
+这是啥	zhèi shì shá	498
+这世上	zhèi shì shàng	588
+这是神	zhèi shì shén	326
+这是谁	zhèi shì shuí	475
+这是他	zhèi shì tā	621
+这是她	zhèi shì tā	557
+这是我	zhèi shì wǒ	736
+这使我	zhèi shǐ wǒ	432
+这实习	zhèi shí xí	106
+这是想	zhèi shì xiǎng	370
+这是些	zhèi shì xiē	276
+这是由	zhèi shì yóu	554
+这是咋	zhèi shì zǎ	282
+这是在	zhèi shì zài	633
+这是正	zhèi shì zhèng	265
+这首词	zhèi shǒu cí	479
+这首歌	zhèi shǒu gē	714
+这手机	zhèi shǒu jī	484
+这首诗	zhèi shǒu shī	585
+这手速	zhèi shǒu sù	203
+这舒服	zhèi shū fú	229
+这数字	zhèi shù zi	391
+这双手	zhèi shuāng shǒu	346
+这双鞋	zhèi shuāng xié	503
+这谁啊	zhèi shuí a	301
+这谁呀	zhèi shuí ya	207
+这说的	zhèi shuō de	415
+这说明	zhèi shuō míng	653
+这四个	zhèi sì gè	601
+这似乎	zhèi sì hū	554
+这四名	zhèi sì míng	345
+这四年	zhèi sì nián	476
+这四天	zhèi sì tiān	325
+这艘船	zhèi sōu chuán	486
+这速度	zhèi sù dù	458
+这算不	zhèi suàn bù	172
+这算是	zhèi suàn shì	584
+这酸爽	zhèi suān shuǎng	407
+这岁数	zhèi sui shù	315
+这孙子	zhèi sūn zi	402
+这他妈	zhèi tā mā	452
+这台风	zhèi tái fēng	233
+这台机	zhèi tái jī	353
+这太阳	zhèi tài yáng	231
+这堂课	zhèi táng kè	424
+这套房	zhèi tào fáng	422
+这套书	zhèi tào shū	658
+这体格	zhèi tǐ gé	239
+这题目	zhèi tí mù	453
+这题选	zhèi tí xuǎn	215
+这天气	zhèi tiān qì	462
+这天色	zhèi tiān sè	165
+这天下	zhèi tiān xià	368
+这条虫	zhèi tiáo chóng	106
+这条船	zhèi tiáo chuán	376
+这条狗	zhèi tiáo gǒu	403
+这条河	zhèi tiáo hé	445
+这条件	zhèi tiáo jiàn	390
+这条街	zhèi tiáo jiē	561
+这条龙	zhèi tiáo lóng	338
+这条路	zhèi tiáo lù	651
+这条命	zhèi tiáo mìng	409
+这条线	zhèi tiáo xiàn	537
+这挺好	zhèi tǐng hǎo	252
+这头猪	zhèi tóu zhū	351
+这推理	zhèi tuī lǐ	132
+这娃娃	zhèi wá wa	244
+这碗饭	zhèi wǎn fàn	448
+这碗酒	zhèi wǎn jiǔ	258
+这完全	zhèi wán quán	545
+这万是	zhèi wàn shì	337
+这玩玩	zhèi wán wán	195
+这玩意	zhèi wán yì	631
+这万一	zhèi wàn yī	260
+这玩应	zhèi wán yīng	217
+这碗粥	zhèi wǎn zhōu	280
+这网络	zhèi wǎng luò	255
+这网速	zhèi wǎng sù	195
+这未必	zhèi wèi bì	335
+这胃口	zhèi wèi kǒu	203
+这位老	zhèi wèi lǎo	451
+这位是	zhèi wèi shì	439
+这味药	zhèi wèi yào	303
+这位爷	zhèi wèi yé	363
+这问题	zhèi wèn tí	622
+这我就	zhèi wǒ jiù	416
+这五个	zhèi wǔ gè	550
+这五家	zhèi wǔ jiā	361
+这五年	zhèi wǔ nián	444
+这五人	zhèi wǔ rén	317
+这无疑	zhèi wú yí	577
+这五种	zhèi wǔ zhǒng	463
+这习惯	zhèi xí guàn	363
+这喜欢	zhèi xǐ huān	269
+这系列	zhèi xì liè	481
+这系统	zhèi xì tǒng	358
+这下看	zhèi xià kàn	190
+这下面	zhèi xià miàn	356
+这下去	zhèi xià qù	146
+这下子	zhèi xià zǐ	439
+这先生	zhèi xiān shēng	195
+这小哥	zhèi xiǎo gē	327
+这小孩	zhèi xiǎo hái	413
+这小伙	zhèi xiǎo huǒ	351
+这潇洒	zhèi xiāo sǎ	126
+这小样	zhèi xiǎo yàng	155
+这小子	zhèi xiǎo zi	511
+这些表	zhèi xiē biǎo	339
+这些厂	zhèi xiē chǎng	239
+这些场	zhèi xiē chǎng	229
+这些车	zhèi xiē chē	497
+这些词	zhèi xiē cí	533
+这些点	zhèi xiē diǎn	457
+这些都	zhèi xiē dōu	706
+这些队	zhèi xiē duì	223
+这些个	zhèi xiē gè	517
+这些歌	zhèi xiē gē	456
+这些狗	zhèi xiē gǒu	368
+这些股	zhèi xiē gǔ	401
+这些哈	zhèi xiē hā	180
+这些好	zhèi xiē hǎo	371
+这些话	zhèi xiē huà	594
+这些货	zhèi xiē huò	339
+这些课	zhèi xiē kè	414
+这些料	zhèi xiē liào	288
+这些吗	zhèi xiē ma	430
+这些年	zhèi xiē nián	678
+这些票	zhèi xiē piào	331
+这些钱	zhèi xiē qián	596
+这些群	zhèi xiē qún	328
+这些人	zhèi xiē rén	715
+这些是	zhèi xiē shì	604
+这些事	zhèi xiē shì	604
+这些时	zhèi xiē shí	375
+这些书	zhèi xiē shū	564
+这些数	zhèi xiē shù	321
+这些天	zhèi xiē tiān	556
+这些娃	zhèi xiē wá	214
+这些项	zhèi xiē xiàng	275
+这些字	zhèi xiē zì	470
+这鞋子	zhèi xié zi	364
+这些子	zhèi xiē zǐ	312
+这辛苦	zhèi xīn kǔ	165
+这心情	zhèi xīn qíng	299
+这心思	zhèi xīn sī	288
+这心态	zhèi xīn tài	312
+这型号	zhèi xíng hào	292
+这星期	zhèi xīng qī	380
+这形势	zhèi xíng shì	242
+这兄弟	zhèi xiōng dì	378
+这熊样	zhèi xióng yàng	279
+这需要	zhèi xū yào	667
+这学期	zhèi xué qī	558
+这学校	zhèi xué xiào	437
+这丫头	zhèi yā tou	381
+这颜色	zhèi yán sè	407
+这言语	zhèi yán yǔ	120
+这颜值	zhèi yán zhí	387
+这严重	zhèi yán zhòng	392
+这样啊	zhèi yàng a	562
+这样爱	zhèi yàng ài	346
+这样吧	zhèi yàng ba	596
+这样办	zhèi yàng bàn	308
+这样才	zhèi yàng cái	667
+这样穿	zhèi yàng chuān	493
+这样打	zhèi yàng dǎ	409
+这样哒	zhèi yàng dá	323
+这样的	zhèi yàng de	917
+这样滴	zhèi yàng dī	463
+这样地	zhèi yàng dì	385
+这样对	zhèi yàng duì	587
+这样额	zhèi yàng é	252
+这样干	zhèi yàng gàn	412
+这样搞	zhèi yàng gǎo	427
+这样怪	zhèi yàng guài	231
+这样和	zhèi yàng hé	445
+这样合	zhèi yàng hé	205
+这样很	zhèi yàng hěn	486
+这样会	zhèi yàng huì	597
+这样叫	zhèi yàng jiào	412
+这样就	zhèi yàng jiù	679
+这样坑	zhèi yàng kēng	267
+这样快	zhèi yàng kuài	344
+这样啦	zhèi yàng la	450
+这样来	zhèi yàng lái	483
+这样类	zhèi yàng lèi	169
+这样聊	zhèi yàng liáo	222
+这样吗	zhèi yàng ma	569
+这样嘛	zhèi yàng ma	415
+这样能	zhèi yàng néng	533
+这样哦	zhèi yàng ó	363
+这样噢	zhèi yàng ō	165
+这样喔	zhèi yàng ō	165
+这样怕	zhèi yàng pà	217
+这样排	zhèi yàng pái	262
+这样撒	zhèi yàng sā	158
+这样三	zhèi yàng sān	264
+这样事	zhèi yàng shì	297
+这样说	zhèi yàng shuō	645
+这样算	zhèi yàng suàn	485
+这样所	zhèi yàng suǒ	297
+这样天	zhèi yàng tiān	261
+这样填	zhèi yàng tián	199
+这样玩	zhèi yàng wán	481
+这样晚	zhèi yàng wǎn	169
+这样问	zhèi yàng wèn	491
+这样我	zhèi yàng wǒ	593
+这样想	zhèi yàng xiǎng	584
+这样写	zhèi yàng xiě	525
+这样学	zhèi yàng xué	377
+这样呀	zhèi yàng ya	383
+这样也	zhèi yàng yě	579
+这样耶	zhèi yàng yé	120
+这样有	zhèi yàng yǒu	495
+这样在	zhèi yàng zài	576
+这样装	zhèi yàng zhuāng	339
+这样子	zhèi yàng zi	635
+这样紫	zhèi yàng zǐ	172
+这样走	zhèi yàng zǒu	423
+这样做	zhèi yàng zuò	724
+这要看	zhèi yào kàn	517
+这要求	zhèi yāo qiú	486
+这也不	zhèi yě bù	485
+这也成	zhèi yě chéng	352
+这也带	zhèi yě dài	190
+这也得	zhèi yě de	316
+这也跟	zhèi yě gēn	376
+这也叫	zhèi yě jiào	465
+这也就	zhèi yě jiù	584
+这页面	zhèi yè miàn	209
+这也能	zhèi yě néng	459
+这也让	zhèi yě ràng	565
+这也是	zhèi yě shì	800
+这也算	zhèi yě suàn	527
+这也太	zhèi yě tài	511
+这也忒	zhèi yě tè	301
+这也行	zhèi yě xíng	360
+这也许	zhèi yě xǔ	540
+这也要	zhèi yě yào	390
+这一把	zhèi yì bǎ	374
+这一拜	zhèi yí bài	201
+这一版	zhèi yì bǎn	500
+这一般	zhèi yì bān	415
+这一半	zhèi yí bàn	341
+这一辈	zhèi yí bèi	434
+这一杯	zhèi yì bēi	379
+这一本	zhèi yì běn	566
+这一笔	zhèi yì bǐ	413
+这一边	zhèi yì biān	465
+这一别	zhèi yì bié	328
+这一波	zhèi yì bō	550
+这一步	zhèi yí bù	639
+这一部	zhèi yì bù	506
+这一层	zhèi yì céng	506
+这一茬	zhèi yì chá	301
+这一场	zhèi yì chǎng	541
+这一出	zhèi yì chū	413
+这一处	zhèi yí chù	391
+这一串	zhèi yí chuàn	385
+这一次	zhèi yí cì	703
+这一代	zhèi yí dài	603
+这一带	zhèi yí dài	542
+这一刀	zhèi yì dāo	358
+这一点	zhèi yì diǎn	783
+这一定	zhèi yí dìng	492
+这一栋	zhèi yí dòng	254
+这一动	zhèi yí dòng	217
+这一段	zhèi yí duàn	633
+这一对	zhèi yí duì	508
+这一堆	zhèi yì duī	405
+这一发	zhèi yí fā	279
+这一番	zhèi yì fān	419
+这一方	zhèi yì fāng	423
+这一份	zhèi yí fèn	497
+这一分	zhèi yì fēn	350
+这衣服	zhèi yī fú	443
+这一搞	zhèi yì gǎo	178
+这一稿	zhèi yì gǎo	158
+这一个	zhèi yí gè	633
+这一挂	zhèi yí guà	215
+这一关	zhèi yì guān	503
+这一跪	zhèi yí guì	288
+这一锅	zhèi yì guō	380
+这一行	zhèi yì háng	556
+这一号	zhèi yí hào	222
+这以后	zhèi yǐ hòu	441
+这一环	zhèi yì huán	358
+这一回	zhèi yì huí	473
+这一季	zhèi yì jì	549
+这一集	zhèi yì jí	513
+这一级	zhèi yì jí	403
+这一件	zhèi yí jiàn	423
+这一剑	zhèi yí jiàn	288
+这一届	zhèi yí jiè	510
+这一节	zhèi yì jié	432
+这一劫	zhèi yì jié	367
+这一截	zhèi yì jié	239
+这已经	zhèi yǐ jīng	600
+这一句	zhèi yí jù	542
+这一局	zhèi yì jú	429
+这一看	zhèi yí kàn	411
+这一刻	zhèi yí kè	596
+这一课	zhèi yí kè	416
+这一颗	zhèi yì kē	353
+这一块	zhèi yí kuài	630
+这一款	zhèi yì kuǎn	580
+这一来	zhèi yí lái	347
+这一类	zhèi yí lèi	616
+这一路	zhèi yí lù	540
+这一轮	zhèi yì lún	587
+这一面	zhèi yì miàn	461
+这一秒	zhèi yì miǎo	413
+这一幕	zhèi yí mù	605
+这一年	zhèi yì nián	658
+这一弄	zhèi yí nòng	165
+这一排	zhèi yì pái	381
+这一批	zhèi yì pī	494
+这一片	zhèi yí piàn	519
+这一篇	zhèi yì piān	493
+这一票	zhèi yí piào	372
+这一瓶	zhèi yì píng	353
+这一期	zhèi yì qī	532
+这一切	zhèi yí qiè	691
+这一去	zhèi yí qù	378
+这一曲	zhèi yì qǔ	320
+这一日	zhèi yí rì	378
+这一身	zhèi yì shēn	477
+这一生	zhèi yì shēng	583
+这已是	zhèi yǐ shì	496
+这一世	zhèi yí shì	445
+这一事	zhèi yí shì	293
+这一首	zhèi yì shǒu	429
+这一手	zhèi yì shǒu	424
+这意思	zhèi yì sī	425
+这一台	zhèi yì tái	354
+这一趟	zhèi yí tàng	444
+这一套	zhèi yí tào	590
+这一天	zhèi yì tiān	671
+这一跳	zhèi yí tiào	301
+这一通	zhèi yí tòng	320
+这一头	zhèi yì tóu	389
+这一碗	zhèi yì wǎn	417
+这一晚	zhèi yì wǎn	392
+这一网	zhèi yì wǎng	175
+这意味	zhèi yì wèi	443
+这一位	zhèi yí wèi	433
+这一吻	zhèi yì wěn	305
+这一窝	zhèi yì wō	222
+这一物	zhèi yí wù	255
+这一下	zhèi yí xià	445
+这一项	zhèi yí xiàng	570
+这一向	zhèi yí xiàng	238
+这一些	zhèi yì xiē	449
+这一夜	zhèi yí yè	440
+这一页	zhèi yì yè	437
+这一战	zhèi yí zhàn	444
+这一站	zhèi yí zhàn	413
+这一张	zhèi yì zhāng	488
+这一章	zhèi yì zhāng	475
+这一仗	zhèi yí zhàng	426
+这一掌	zhèi yì zhǎng	267
+这一招	zhèi yì zhāo	535
+这一阵	zhèi yí zhèn	365
+这一帧	zhèi yí zhēn	238
+这一支	zhèi yì zhī	432
+这一只	zhèi yì zhī	399
+这一种	zhèi yì zhǒng	541
+这一周	zhèi yì zhōu	523
+这一株	zhèi yì zhū	215
+这一转	zhèi yí zhuǎn	299
+这一字	zhèi yì zì	245
+这一宗	zhèi yì zōng	223
+这一座	zhèi yí zuò	372
+这应该	zhèi yīng gāi	605
+这又不	zhèi yòu bù	347
+这有个	zhèi yǒu gè	395
+这又没	zhèi yòu méi	172
+这有钱	zhèi yǒu qián	185
+这有啥	zhèi yǒu shá	425
+这又是	zhèi yòu shì	573
+这游戏	zhèi yóu xì	594
+这悠闲	zhèi yōu xián	132
+这语气	zhèi yǔ qì	279
+这咋还	zhèi zǎ hái	209
+这在哪	zhèi zài nǎ	172
+这渣男	zhèi zhā nán	185
+这张车	zhèi zhāng chē	78
+这张床	zhèi zhāng chuáng	335
+这张单	zhèi zhāng dān	281
+这张的	zhèi zhāng de	412
+这张好	zhèi zhāng hǎo	259
+这张脸	zhèi zhāng liǎn	473
+这张牌	zhèi zhāng pái	464
+这张图	zhèi zhāng tú	651
+着这座	zhe zhèi zuò	378
+这阵容	zhèi zhèn róng	363
+这真是	zhèi zhēn shì	590
+这阵子	zhèi zhèn zi	436
+这正如	zhèi zhèng rú	383
+这正是	zhèi zhèng shì	609
+这之间	zhèi zhī jiān	423
+这之类	zhèi zhī lèi	180
+这只猫	zhèi zhǐ māo	489
+这只能	zhèi zhǐ néng	455
+这只鸟	zhèi zhǐ niǎo	371
+这只票	zhèi zhǐ piào	301
+这之前	zhèi zhī qián	504
+这智商	zhèi zhì shāng	398
+这只是	zhèi zhǐ shì	697
+这只要	zhèi zhǐ yào	270
+这只鹰	zhèi zhǐ yīng	276
+这只猪	zhèi zhǐ zhū	303
+这种啊	zhèi zhǒng a	283
+这种爱	zhèi zhǒng ài	462
+这种表	zhèi zhǒng biǎo	285
+这种病	zhèi zhǒng bìng	572
+这种车	zhèi zhǒng chē	460
+这种虫	zhèi zhǒng chóng	326
+这种船	zhèi zhǒng chuán	289
+这种词	zhèi zhǒng cí	151
+这种单	zhèi zhǒng dān	328
+这种的	zhèi zhǒng de	561
+这种地	zhèi zhòng dì	299
+这种店	zhèi zhǒng diàn	542
+这种点	zhèi zhǒng diǎn	263
+这种多	zhèi zhǒng duō	348
+这种房	zhèi zhǒng fáng	269
+这种该	zhèi zhǒng gāi	230
+这种给	zhèi zhǒng gěi	312
+这种梗	zhèi zhǒng gěng	322
+这种话	zhèi zhǒng huà	567
+这种花	zhèi zhòng huā	418
+这中间	zhèi zhōng jiān	546
+这种讲	zhèi zhǒng jiǎng	248
+这种课	zhèi zhǒng kè	362
+这种啦	zhèi zhǒng la	223
+这种嘛	zhèi zhǒng ma	276
+这种猫	zhèi zhǒng māo	305
+这种美	zhèi zhǒng měi	410
+这种呢	zhèi zhǒng ne	296
+这种枪	zhèi zhǒng qiāng	300
+这种人	zhèi zhǒng rén	664
+这种事	zhèi zhǒng shì	663
+这种鞋	zhèi zhǒng xié	357
+这种药	zhèi zhǒng yào	468
+这周二	zhèi zhōu èr	274
+这周还	zhèi zhōu hái	234
+这周六	zhèi zhōu liù	390
+这周末	zhèi zhōu mò	486
+这周内	zhèi zhōu nà	243
+这周日	zhèi zhōu rì	339
+这周三	zhèi zhōu sān	287
+这周四	zhèi zhōu sì	280
+这周天	zhèi zhōu tiān	172
+这周五	zhèi zhōu wǔ	384
+这主播	zhèi zhǔ bō	188
+这主意	zhèi zhǔ yì	353
+这专业	zhèi zhuān yè	418
+这幢楼	zhèi zhuàng lóu	410
+这姿势	zhèi zī shì	385
+这滋味	zhèi zī wèi	337
+这最后	zhèi zuì hòu	470
+这最终	zhèi zuì zhōng	406
+这座城	zhèi zuò chéng	455
+这座岛	zhèi zuò dǎo	349
+这作者	zhèi zuò zhě	348
+真这样	zhēn zhèi yàng	334
+整这些	zhěng zhèi xiē	305
+装这种	zhuāng zhèi zhǒng	259
+总这样	zǒng zhèi yàng	381
+走这边	zǒu zhèi biān	256
+走这个	zǒu zhèi ge	399
+做这个	zuò zhèi ge	614
+做这事	zuò zhèi shì	379
+做这些	zuò zhèi xiē	540
+做这种	zuò zhèi zhǒng	520
+谙熟	ān shóu	372
+半熟	bàn shóu	491
+保熟	bǎo shóu	406
+背熟	bèi shóu	461
+变熟	biàn shóu	374
+不熟	bù shóu	576
+常熟	cháng shóu	533
+炒熟	chǎo shóu	571
+成熟	chéng shóu	740
+初熟	chū shóu	248
+纯熟	chún shóu	493
+醇熟	chún shóu	360
+催熟	cuī shóu	479
+大熟	dà shóu	264
+蛋熟	dàn shóu	375
+读熟	dú shóu	359
+炖熟	dùn shóu	442
+耳熟	ěr shóu	424
+腐熟	fǔ shóu	430
+刚熟	gāng shóu	358
+搞熟	gǎo shóu	227
+瓜熟	guā shóu	291
+过熟	guò shóu	443
+果熟	guǒ shóu	322
+很熟	hěn shóu	552
+湖熟	hú shóu	384
+混熟	hùn shóu	457
+记熟	jì shóu	395
+即熟	jí shóu	391
+较熟	jiào shóu	295
+精熟	jīng shóu	365
+烤熟	kǎo shóu	557
+快熟	kuài shóu	397
+烂熟	làn shóu	494
+老熟	lǎo shóu	361
+脸熟	liǎn shóu	454
+练熟	liàn shóu	395
+两熟	liǎng shóu	302
+蛮熟	mán shóu	294
+没熟	méi shóu	410
+面熟	miàn shóu	400
+摸熟	mō shóu	312
+轻熟	qīng shóu	419
+全熟	quán shóu	525
+稔熟	rěn shóu	257
+软熟	ruǎn shóu	380
+杀熟	shā shóu	414
+烧熟	shāo shóu	450
+生熟	shēng shóu	475
+手熟	shǒu shóu	413
+熟啊	shóu a	460
+熟谙	shóu ān	380
+熟背	shóu bèi	377
+熟菜	shóu cài	471
+熟茶	shóu chá	501
+熟成	shóu chéng	459
+熟词	shóu cí	375
+熟的	shóu de	640
+熟得	shóu de	373
+熟地	shóu dì	483
+熟点	shóu diǎn	277
+熟读	shóu dú	524
+熟度	shóu dù	476
+熟饭	shóu fàn	335
+熟果	shóu guǒ	332
+熟后	shóu hòu	526
+熟化	shóu huà	399
+熟记	shóu jì	721
+熟筋	shóu jīn	341
+熟客	shóu kè	533
+熟烂	shóu làn	480
+熟了	shóu le	597
+熟练	shóu liàn	279
+熟脸	shóu liǎn	359
+熟料	shóu liào	454
+熟路	shóu lù	317
+熟络	shóu luò	477
+熟虑	shóu lǜ	316
+熟女	shóu nǚ	515
+熟皮	shóu pí	219
+熟普	shóu pǔ	369
+熟人	shóu rén	640
+熟稔	shóu rěn	436
+熟肉	shóu ròu	450
+熟食	shóu shí	590
+熟识	shóu shí	527
+熟时	shóu shí	455
+熟手	shóu shǒu	440
+熟水	shóu shuǐ	281
+熟铁	shóu tiě	373
+熟透	shóu tòu	602
+熟悉	shóu xī	731
+熟习	shóu xí	381
+熟虾	shóu xiā	328
+熟用	shóu yòng	353
+熟油	shóu yóu	389
+熟语	shóu yǔ	387
+熟知	shóu zhī	573
+熟制	shóu zhì	349
+睡熟	shuì shóu	372
+太熟	tài shóu	429
+挺熟	tǐng shóu	365
+晚熟	wǎn shóu	412
+玩熟	wán shóu	333
+完熟	wán shóu	269
+未熟	wèi shóu	433
+我熟	wǒ shóu	337
+娴熟	xián shóu	561
+相熟	xiāng shóu	481
+眼熟	yǎn shóu	482
+一熟	yì shóu	316
+用熟	yòng shóu	354
+圆熟	yuán shóu	329
+再熟	zài shóu	329
+早熟	zǎo shóu	514
+炸熟	zhà shóu	452
+蒸熟	zhēng shóu	555
+至熟	zhì shóu	519
+煮熟	zhǔ shóu	683
+最熟	zuì shóu	274
+八成熟	bā chéng shóu	226
+八分熟	bā fēn shóu	270
+把熟睡	bǎ shóu shuì	101
+把蒸熟	bǎ zhēng shóu	100
+把煮熟	bǎ zhǔ shóu	135
+半成熟	bàn chéng shóu	134
+扮成熟	bàn chéng shóu	102
+半生熟	bàn shēng shóu	166
+半熟蛋	bàn shóu dàn	179
+半熟的	bàn shóu de	212
+半熟练	bàn shóu liàn	117
+半熟人	bàn shóu rén	147
+半熟时	bàn shóu shí	53
+被催熟	bèi cuī shóu	125
+被烤熟	bèi kǎo shóu	136
+背熟了	bèi shóu le	167
+被煮熟	bèi zhǔ shóu	120
+比较熟	bǐ jiào shóu	8
+变成熟	biàn chéng shóu	192
+并不熟	bìng bù shóu	162
+不成熟	bù chéng shóu	309
+不催熟	bù cuī shóu	79
+不熟啊	bù shóu a	133
+不熟吧	bù shóu ba	162
+不熟练	bù shóu liàn	248
+不熟悉	bù shóu xī	316
+不太熟	bú tài shóu	234
+不娴熟	bù xián shóu	148
+不眼熟	bù yǎn shóu	88
+菜熟了	cài shóu le	100
+常熟的	cháng shóu de	188
+常熟话	cháng shóu huà	95
+常熟路	cháng shóu lù	190
+常熟人	cháng shóu rén	168
+常熟市	cháng shóu shì	302
+常熟县	cháng shóu xiàn	182
+常熟有	cháng shóu yǒu	56
+常熟站	cháng shóu zhàn	82
+炒不熟	chǎo bù shóu	127
+炒熟后	chǎo shóu hòu	222
+炒熟了	chǎo shóu le	158
+成熟啊	chéng shóu a	148
+成熟吧	chéng shóu ba	149
+成熟的	chéng shóu de	418
+成熟点	chéng shóu diǎn	186
+成熟度	chéng shóu dù	280
+成熟范	chéng shóu fàn	49
+成熟风	chéng shóu fēng	136
+成熟感	chéng shóu gǎn	171
+成熟好	chéng shóu hǎo	71
+成熟很	chéng shóu hěn	120
+成熟后	chéng shóu hòu	258
+成熟化	chéng shóu huà	178
+成熟季	chéng shóu jì	122
+成熟了	chéng shóu le	340
+成熟脸	chéng shóu liǎn	56
+成熟林	chéng shóu lín	71
+成熟美	chéng shóu měi	144
+成熟蜜	chéng shóu mì	148
+成熟男	chéng shóu nán	172
+成熟女	chéng shóu nǚ	146
+成熟期	chéng shóu qí	264
+成熟前	chéng shóu qián	156
+成熟区	chéng shóu qū	100
+成熟人	chéng shóu rén	118
+成熟乳	chéng shóu rǔ	120
+成熟时	chéng shóu shí	258
+成熟体	chéng shóu tǐ	94
+成熟些	chéng shóu xiē	167
+成熟性	chéng shóu xìng	235
+成熟型	chéng shóu xíng	185
+成熟早	chéng shóu zǎo	126
+成熟中	chéng shóu zhōng	153
+吃熟食	chī shóu shí	168
+初熟的	chū shóu de	89
+从熟睡	cóng shóu shuì	45
+从熟悉	cóng shóu xī	25
+催熟剂	cuī shóu jì	186
+大家熟	dà jiā shóu	88
+到常熟	dào cháng shóu	239
+的熟了	de shóu le	168
+等熟了	děng shóu le	188
+地不熟	dì bù shóu	479
+东京熟	dōng jīng shóu	50
+都不熟	dōu bù shóu	242
+都成熟	dōu chéng shóu	148
+都熟了	dōu shóu le	85
+都熟悉	dōu shóu xī	212
+都早熟	dōu zǎo shóu	79
+多熟了	duō shóu le	175
+多熟期	duō shóu qī	229
+多熟悉	duō shóu xī	172
+二回熟	èr huí shóu	164
+耳熟啊	ěr shóu a	139
+耳熟吧	ěr shóu ba	174
+耳熟了	ěr shóu le	137
+非常熟	fēi cháng shóu	160
+分熟吧	fēn shóu ba	163
+分熟了	fēn shóu le	158
+干熟么	gàn shóu me	78
+搞熟了	gǎo shóu le	79
+更成熟	gèng chéng shóu	244
+更熟练	gèng shóu liàn	165
+更熟悉	gèng shóu xī	222
+够成熟	gòu chéng shóu	128
+过熟的	guò shóu de	142
+过熟了	guò shóu le	166
+果熟期	guǒ shóu qī	124
+过熟期	guò shóu qī	84
+还不熟	hái bù shóu	182
+还算熟	hái suàn shóu	102
+好成熟	hǎo chéng shóu	73
+好耳熟	hǎo ěr shóu	119
+好面熟	hǎo miàn shóu	135
+好熟悉	hǎo shóu xī	186
+好眼熟	hǎo yǎn shóu	186
+很成熟	hěn chéng shóu	254
+很纯熟	hěn chún shóu	234
+很耳熟	hěn ěr shóu	190
+很面熟	hěn miàn shóu	151
+很熟啊	hěn shóu a	144
+很熟吧	hěn shóu ba	130
+很熟但	hěn shóu dàn	302
+很熟很	hěn shóu hěn	352
+很熟了	hěn shóu le	242
+很熟练	hěn shóu liàn	236
+很熟络	hěn shóu luò	297
+很熟稔	hěn shóu rěn	344
+很熟识	hěn shóu shí	224
+很熟悉	hěn shóu xī	294
+很娴熟	hěn xián shóu	320
+很眼熟	hěn yǎn shóu	80
+很早熟	hěn zǎo shóu	178
+后熟期	hòu shóu qī	81
+回常熟	huí cháng shóu	239
+会熟练	huì shóu liàn	200
+混脸熟	hùn liǎn shóu	172
+混熟吧	hùn shóu ba	184
+混熟了	hùn shóu le	168
+混眼熟	hùn yǎn shóu	102
+几成熟	jǐ chéng shóu	192
+几分熟	jǐ fēn shóu	258
+记熟了	jì shóu le	162
+将熟时	jiāng shóu shí	268
+将熟睡	jiāng shóu shuì	241
+将蒸熟	jiāng zhēng shóu	277
+将煮熟	jiāng zhǔ shóu	128
+较成熟	jiào chéng shóu	184
+九成熟	jiǔ chéng shóu	174
+九分熟	jiǔ fēn shóu	132
+就熟了	jiù shóu le	156
+就熟时	jiù shóu shí	312
+就熟悉	jiù shóu xī	152
+看熟了	kàn shóu le	177
+烤熟后	kǎo shóu hòu	200
+烤熟了	kǎo shóu le	160
+可成熟	kě chéng shóu	126
+可熟了	kě shóu le	87
+可熟悉	kě shóu xī	134
+快熟了	kuài shóu le	144
+快熟面	kuài shóu miàn	102
+快熟时	kuài shóu shí	118
+来常熟	lái cháng shóu	239
+来熟了	lái shóu le	168
+烂熟时	làn shóu shí	482
+老熟客	lǎo shóu kè	140
+老熟人	lǎo shóu rén	209
+脸熟吧	liǎn shóu ba	187
+脸熟了	liǎn shóu le	172
+练熟了	liàn shóu le	162
+两次熟	liǎng cì shóu	50
+六分熟	liù fēn shóu	158
+路不熟	lù bù shóu	159
+卖熟食	mài shóu shí	174
+没炒熟	méi chǎo shóu	94
+没成熟	méi chéng shóu	133
+没烤熟	méi kǎo shóu	444
+没烧熟	méi shāo shóu	65
+没熟吧	méi shóu ba	81
+没熟就	méi shóu jiù	50
+美熟女	měi shóu nǚ	183
+没熟人	méi shóu rén	498
+没熟似	méi shóu sì	226
+没熟透	méi shóu tòu	57
+没有熟	méi yǒu shóu	388
+没蒸熟	méi zhēng shóu	116
+没煮熟	méi zhǔ shóu	114
+面熟吧	miàn shóu ba	189
+摸熟了	mō shóu le	165
+能成熟	néng chéng shóu	116
+能熟练	néng shóu liàn	244
+你不熟	nǐ bù shóu	100
+你成熟	nǐ chéng shóu	143
+你很熟	nǐ hěn shóu	302
+你熟练	nǐ shóu liàn	134
+你熟人	nǐ shóu rén	104
+你熟睡	nǐ shóu shuì	160
+你熟悉	nǐ shóu xī	202
+你熟知	nǐ shóu zhī	86
+你眼熟	nǐ yǎn shóu	178
+你最熟	nǐ zuì shóu	108
+您熟悉	nín shóu xī	165
+弄熟了	nòng shóu le	174
+偏成熟	piān chéng shóu	170
+七成熟	qī chéng shóu	150
+七分熟	qī fēn shóu	50
+情况熟	qíng kuàng shóu	92
+轻熟风	qīng shóu fēng	154
+轻熟感	qīng shóu gǎn	82
+轻熟龄	qīng shóu líng	142
+轻熟男	qīng shóu nán	130
+轻熟女	qīng shóu nǚ	218
+去常熟	qù cháng shóu	239
+去熟悉	qù shóu xī	176
+全熟吧	quán shóu ba	176
+全熟了	quán shóu le	170
+人不熟	rén bù shóu	102
+人熟人	rén shóu rén	39
+容易熟	róng yì shóu	188
+三分熟	sān fēn shóu	190
+烧熟了	shāo shóu le	160
+生变熟	shēng biàn shóu	90
+生吃熟	shēng chī shóu	164
+生熟地	shēng shóu dì	160
+是常熟	shì cháng shóu	130
+十成熟	shí chéng shóu	132
+十分熟	shí fēn shóu	126
+是熟么	shì shóu me	102
+熟不熟	shóu bù shóu	176
+熟菜油	shóu cài yóu	151
+熟吃好	shóu chī hǎo	128
+熟大黄	shóu dài huáng	71
+熟蛋黄	shóu dàn huáng	154
+熟当时	shóu dāng shí	100
+熟的吧	shóu de ba	156
+熟得快	shóu de kuài	166
+熟的了	shóu de le	135
+熟地黄	shóu dì huáng	214
+熟读了	shóu dú le	150
+熟归熟	shóu guī shóu	110
+熟过头	shóu guò tóu	152
+熟花生	shóu huā shēng	174
+熟火腿	shóu huǒ tuǐ	168
+熟鸡蛋	shóu jī dàn	212
+熟客吧	shóu kè ba	167
+熟烂时	shóu làn shí	67
+熟了吧	shóu le ba	232
+熟了后	shóu le hòu	166
+熟了吗	shóu le ma	102
+熟了么	shóu le me	76
+熟了没	shóu le méi	113
+熟梨糕	shóu lí gāo	119
+熟练啊	shóu liàn a	142
+熟练吧	shóu liàn ba	149
+熟练地	shóu liàn de	338
+熟练的	shóu liàn de	288
+熟练度	shóu liàn dù	258
+熟练工	shóu liàn gōng	212
+熟练后	shóu liàn hòu	206
+熟练活	shóu liàn huó	13
+熟练了	shóu liàn le	152
+熟练那	shóu liàn nà	63
+熟练时	shóu liàn shí	172
+熟练性	shóu liàn xìng	112
+熟练于	shóu liàn yú	90
+熟练者	shóu liàn zhě	137
+熟龄肌	shóu líng jī	125
+熟络了	shóu luò le	147
+熟没熟	shóu méi shóu	123
+熟米饭	shóu mǐ fàn	177
+熟面孔	shóu miàn kǒng	199
+熟牛排	shóu niú pái	161
+熟牛肉	shóu niú ròu	191
+熟女网	shóu nǚ wǎng	174
+熟女系	shóu nǚ xì	127
+熟螃蟹	shóu páng xiè	100
+熟朋友	shóu péng yǒu	107
+熟苹果	shóu píng guǒ	146
+熟起来	shóu qǐ lái	170
+熟人啊	shóu rén a	129
+熟人吧	shóu rén ba	158
+熟人带	shóu rén dài	150
+熟人多	shóu rén duō	140
+熟人间	shóu rén jiān	185
+熟稔了	shóu rěn le	142
+熟人了	shóu rén le	141
+熟人们	shóu rén men	102
+熟人圈	shóu rén quān	160
+熟三七	shóu sān qī	95
+树上熟	shù shàng shóu	79
+熟食吧	shóu shí ba	172
+熟食店	shóu shí diàn	280
+熟石膏	shóu shí gāo	126
+熟食柜	shóu shí guì	82
+熟石灰	shóu shí huī	167
+熟识了	shóu shí le	147
+熟食类	shóu shí lèi	151
+熟食品	shóu shí pǐn	168
+熟食区	shóu shí qū	182
+熟熟的	shóu shóu de	98
+熟睡的	shóu shuì de	293
+熟睡了	shóu shuì le	147
+熟睡时	shóu shuì shí	84
+熟睡中	shóu shuì zhōng	221
+熟铜棍	shóu tóng gùn	70
+熟桐油	shóu tóng yóu	82
+熟透后	shóu tòu hòu	193
+熟透了	shóu tòu le	214
+熟透时	shóu tòu shí	245
+熟悉啊	shóu xī a	178
+熟悉吧	shóu xī ba	117
+熟悉不	shóu xī bù	166
+熟悉的	shóu xī de	367
+熟悉度	shóu xī dù	209
+熟悉感	shóu xī gǎn	213
+熟悉很	shóu xī hěn	81
+熟悉后	shóu xī hòu	200
+熟悉了	shóu xī le	341
+熟悉吗	shóu xī ma	180
+熟悉你	shóu xī nǐ	168
+熟悉人	shóu xī rén	123
+熟悉时	shóu xī shí	119
+熟悉他	shóu xī tā	172
+熟悉下	shóu xī xià	181
+熟一个	shóu yí gè	90
+熟一些	shóu yì xiē	12
+熟语料	shóu yǔ liào	764
+熟玉米	shóu yù mǐ	111
+熟知的	shóu zhī de	308
+熟芝麻	shóu zhī má	206
+熟制品	shóu zhì pǐn	105
+熟猪油	shóu zhū yóu	212
+睡不熟	shuì bù shóu	98
+睡熟了	shuì shóu le	161
+四书熟	sì shū shóu	16
+所熟悉	suǒ shóu xī	218
+所熟知	suǒ shóu zhī	288
+他不熟	tā bù shóu	114
+他成熟	tā chéng shóu	204
+他很熟	tā hěn shóu	67
+他混熟	tā hùn shóu	78
+他熟读	tā shóu dú	166
+他熟练	tā shóu liàn	188
+他熟络	tā shóu luò	94
+他熟稔	tā shóu rěn	101
+他熟识	tā shóu shí	66
+他熟睡	tā shóu shuì	160
+他熟悉	tā shóu xī	120
+他熟知	tā shóu zhī	72
+他睡熟	tā shuì shóu	253
+他太熟	tā tài shóu	160
+他娴熟	tā xián shóu	118
+他相熟	tā xiāng shóu	71
+他眼熟	tā yǎn shóu	118
+他早熟	tā zǎo shóu	150
+太成熟	tài chéng shóu	198
+太熟了	tài shóu le	204
+太熟练	tài shóu liàn	151
+太熟悉	tài shóu xī	252
+太早熟	tài zǎo shóu	112
+烫熟后	tàng shóu hòu	170
+烫熟了	tàng shóu le	126
+特眼熟	tè yǎn shóu	84
+挺成熟	tǐng chéng shóu	136
+托熟人	tuō shóu rén	158
+晚熟的	wǎn shóu de	148
+玩熟了	wán shóu le	183
+晚熟期	wǎn shóu qī	229
+喂不熟	wèi bù shóu	117
+未成熟	wèi chéng shóu	220
+未熟的	wèi shóu de	172
+未熟透	wèi shóu tòu	170
+未煮熟	wèi zhǔ shóu	210
+我不熟	wǒ bù shóu	170
+我成熟	wǒ chéng shóu	146
+我都熟	wǒ dōu shóu	202
+我很熟	wǒ hěn shóu	87
+我们熟	wǒ men shóu	175
+我熟得	wǒ shóu de	82
+我熟的	wǒ shóu de	66
+我熟练	wǒ shóu liàn	122
+我熟识	wǒ shóu shí	124
+我熟睡	wǒ shóu shuì	112
+我熟悉	wǒ shóu xī	128
+我熟知	wǒ shóu zhī	132
+我睡熟	wǒ shuì shóu	85
+我相熟	wǒ xiāng shóu	52
+我眼熟	wǒ yǎn shóu	108
+我早熟	wǒ zǎo shóu	144
+五成熟	wǔ chéng shóu	195
+五分熟	wǔ fēn shóu	222
+显成熟	xiǎn chéng shóu	148
+娴熟地	xián shóu dì	200
+娴熟了	xián shóu le	138
+先熟悉	xiān shóu xī	203
+相熟了	xiāng shóu le	138
+小成熟	xiǎo chéng shóu	92
+性成熟	xìng chéng shóu	233
+性早熟	xìng zǎo shóu	248
+眼熟啊	yǎn shóu a	141
+眼熟吧	yǎn shóu ba	170
+眼熟了	yǎn shóu le	135
+眼熟吗	yǎn shóu ma	168
+养不熟	yǎng bù shóu	139
+也不熟	yě bù shóu	234
+也熟了	yě shóu le	83
+也熟悉	yě shóu xī	164
+已成熟	yǐ chéng shóu	194
+一锅熟	yì guō shóu	102
+异熟果	yì shóu guǒ	134
+异熟识	yì shóu shí	104
+用熟了	yòng shóu le	175
+又不熟	yòu bù shóu	162
+有熟人	yǒu shóu rén	231
+园梅熟	yuán méi shóu	4
+在常熟	zài cháng shóu	239
+在成熟	zài chéng shóu	250
+再成熟	zài chéng shóu	153
+再熟了	zài shóu le	172
+再熟悉	zài shóu xī	246
+早成熟	zǎo chéng shóu	100
+早熟吧	zǎo shóu ba	185
+早熟的	zǎo shóu de	219
+早熟禾	zǎo shóu hé	196
+早熟梨	zǎo shóu lí	102
+早熟性	zǎo shóu xìng	112
+这么熟	zhè me shóu	166
+真不熟	zhēn bù shóu	92
+蒸不熟	zhēng bù shóu	123
+蒸熟的	zhēng shóu de	236
+蒸熟后	zhēng shóu hòu	234
+蒸熟了	zhēng shóu le	160
+中晚熟	zhōng wǎn shóu	110
+中早熟	zhōng zǎo shóu	50
+煮不熟	zhǔ bù shóu	206
+煮熟后	zhǔ shóu hòu	287
+煮熟了	zhǔ shóu le	235
+煮熟时	zhǔ shóu shí	82
+装成熟	zhuāng chéng shóu	137
+自来熟	zì lái shóu	206
+自然熟	zì rán shóu	129
+最成熟	zuì chéng shóu	39
+最熟的	zuì shóu de	156
+最熟悉	zuì shóu xī	228
+做熟了	zuò shóu le	102
+爱谁	ài shéi	423
+把谁	bǎ shéi	382
+帮谁	bāng shéi	335
+被谁	bèi shéi	499
+比谁	bǐ shéi	559
+吃谁	chī shéi	298
+打谁	dǎ shéi	413
+带谁	dài shéi	296
+到谁	dào shéi	366
+等谁	děng shéi	327
+对谁	duì shéi	487
+放谁	fàng shéi	282
+服谁	fú shéi	347
+该谁	gāi shéi	362
+给谁	gěi shéi	555
+跟谁	gēn shéi	573
+怪谁	guài shéi	437
+归谁	guī shéi	442
+和谁	hé shéi	573
+恨谁	hèn shéi	310
+换谁	huàn shéi	423
+见谁	jiàn shéi	412
+叫谁	jiào shéi	326
+看谁	kàn shéi	566
+靠谁	kào shéi	373
+可谁	kě shéi	413
+坑谁	kēng shéi	306
+赖谁	lài shéi	250
+骂谁	mà shéi	349
+没谁	méi shéi	410
+蒙谁	méng shéi	199
+那谁	nà shéi	491
+怕谁	pà shéi	307
+陪谁	péi shéi	262
+娶谁	qǔ shéi	276
+让谁	ràng shéi	452
+惹谁	rě shéi	312
+任谁	rèn shéi	423
+是谁	shì shéi	762
+谁啊	shéi a	508
+谁把	shéi bǎ	473
+谁不	shéi bù	541
+谁曾	shéi céng	338
+谁吃	shéi chī	386
+谁出	shéi chū	376
+谁错	shéi cuò	290
+谁带	shéi dài	344
+谁当	shéi dāng	424
+谁的	shéi de	680
+谁等	shéi děng	242
+谁定	shéi dìng	238
+谁懂	shéi dǒng	399
+谁都	shéi dōu	686
+谁对	shéi duì	469
+谁负	shéi fù	299
+谁改	shéi gǎi	214
+谁敢	shéi gǎn	574
+谁干	shéi gàn	350
+谁高	shéi gāo	402
+谁给	shéi gěi	525
+谁跟	shéi gēn	358
+谁管	shéi guǎn	420
+谁还	shéi hái	557
+谁喊	shéi hǎn	275
+谁好	shéi hǎo	463
+谁坏	shéi huài	378
+谁会	shéi huì	632
+谁家	shéi jiā	554
+谁将	shéi jiāng	523
+谁叫	shéi jiào	553
+谁教	shéi jiào	344
+谁接	shéi jiē	285
+谁就	shéi jiù	572
+谁开	shéi kāi	338
+谁看	shéi kàn	408
+谁肯	shéi kěn	347
+谁快	shéi kuài	354
+谁来	shéi lái	639
+谁料	shéi liào	465
+谁买	shéi mǎi	481
+谁卖	shéi mài	291
+谁拿	shéi ná	382
+谁呢	shéi ne	547
+谁能	shéi néng	719
+谁哦	shéi ó	235
+谁怕	shéi pà	367
+谁去	shéi qù	513
+谁让	shéi ràng	594
+谁人	shéi rén	500
+谁傻	shéi shǎ	332
+谁上	shéi shàng	367
+谁是	shéi shì	678
+谁输	shéi shū	430
+谁谁	shéi shéi	539
+谁说	shéi shuō	643
+谁送	shéi sòng	288
+谁玩	shéi wán	330
+谁问	shéi wèn	298
+谁无	shéi wú	299
+谁先	shéi xiān	536
+谁想	shéi xiǎng	501
+谁信	shéi xìn	414
+谁选	shéi xuǎn	235
+谁呀	shéi ya	427
+谁演	shéi yǎn	362
+谁养	shéi yǎng	295
+谁要	shéi yào	532
+谁也	shéi yě	670
+谁赢	shéi yíng	470
+谁用	shéi yòng	511
+谁有	shéi yǒu	628
+谁又	shéi yòu	550
+谁与	shéi yǔ	400
+谁在	shéi zài	579
+谁再	shéi zài	417
+谁真	shéi zhēn	302
+谁知	shéi zhī	595
+谁最	shéi zuì	539
+谁做	shéi zuò	453
+说谁	shuō shéi	504
+送谁	sòng shéi	297
+挑谁	tiāo shéi	215
+听谁	tīng shéi	332
+为谁	wéi shéi	527
+问谁	wèn shéi	459
+向谁	xiàng shéi	471
+像谁	xiàng shéi	401
+笑谁	xiào shéi	235
+选谁	xuǎn shéi	466
+用谁	yòng shéi	374
+有谁	yǒu shéi	630
+由谁	yóu shéi	495
+与谁	yǔ shéi	455
+怨谁	yuàn shéi	349
+找谁	zhǎo shéi	530
+招谁	zhāo shéi	280
+这谁	zhè shéi	411
+指谁	zhǐ shéi	296
+追谁	zhuī shéi	303
+啊有谁	a yǒu shéi	338
+爱过谁	ài guò shéi	303
+爱看谁	ài kàn shéi	209
+爱上谁	ài shàng shéi	342
+爱谁啊	ài shéi a	106
+爱谁谁	ài shéi shéi	418
+爱着谁	ài zhe shéi	280
+把谁谁	bǎ shéi shéi	113
+帮助谁	bāng zhù shéi	256
+比谁差	bǐ shéi chà	268
+比谁都	bǐ shéi dōu	514
+不到谁	bú dào shéi	172
+不管谁	bù guǎn shéi	449
+不过谁	bú guò shéi	363
+不能谁	bù néng shéi	195
+不是谁	bú shì shéi	465
+不为谁	bù wéi shéi	338
+不知谁	bù zhī shéi	403
+不准谁	bù zhǔn shéi	106
+猜猜谁	cāi cāi shéi	308
+传给谁	chuán gěi shéi	233
+打给谁	dǎ gěi shéi	277
+代表谁	dài biǎo shéi	287
+但谁也	dàn shéi yě	438
+到底谁	dào dǐ shéi	547
+到谁了	dào shéi le	309
+爹是谁	diē shì shéi	239
+都是谁	dōu shì shéi	452
+都谁啊	dōu shéi a	137
+都有谁	dōu yǒu shéi	483
+对谁都	duì shéi dōu	468
+对谁说	duì shéi shuō	279
+发给谁	fā gěi shéi	310
+放到谁	fàng dào shéi	172
+分给谁	fēn gěi shéi	247
+分跟谁	fēn gēn shéi	155
+扶持谁	fú chí shéi	256
+付给谁	fù gěi shéi	142
+该给谁	gāi gěi shéi	273
+该怪谁	gāi guài shéi	257
+该归谁	gāi guī shéi	235
+该是谁	gāi shì shéi	172
+该谁出	gāi shéi chū	162
+该信谁	gāi xìn shéi	336
+该选谁	gāi xuǎn shéi	311
+该由谁	gāi yóu shéi	398
+该找谁	gāi zhǎo shéi	402
+干掉谁	gàn diào shéi	238
+告诉谁	gào sù shéi	230
+给谁啊	gěi shéi a	210
+给谁了	gěi shéi le	346
+给谁买	gěi shéi mǎi	169
+给谁说	gěi shéi shuō	158
+跟谁啊	gēn shéi a	197
+跟谁打	gēn shéi dǎ	209
+跟谁都	gēn shéi dōu	383
+跟谁过	gēn shéi guò	285
+跟谁急	gēn shéi jí	397
+跟谁去	gēn shéi qù	327
+跟谁睡	gēn shéi shuì	312
+跟谁谈	gēn shéi tán	169
+跟谁玩	gēn shéi wán	251
+跟谁姓	gēn shéi xìng	321
+跟谁也	gēn shéi yě	158
+跟谁走	gēn shéi zǒu	285
+跟着谁	gēn zhe shéi	261
+更像谁	gèng xiàng shéi	132
+勾引谁	gōu yǐn shéi	185
+关于谁	guān yú shéi	279
+归谁管	guī shéi guǎn	339
+还是谁	hái shì shéi	351
+还有谁	hái yǒu shéi	536
+和那谁	hé nà shéi	244
+和谁啊	hé shéi a	188
+和谁家	hé shéi jiā	151
+和谁了	hé shéi le	151
+和谁去	hé shéi qù	300
+和谁说	hé shéi shuō	266
+怀疑谁	huái yí shéi	137
+还给谁	huán gěi shéi	106
+会是谁	huì shì shéi	448
+会选谁	huì xuǎn shéi	291
+会有谁	huì yǒu shéi	296
+几个谁	jǐ gè shéi	151
+寄给谁	jì gěi shéi	203
+嫁给谁	jià gěi shéi	377
+见到谁	jiàn dào shéi	295
+见过谁	jiàn guò shéi	316
+见了谁	jiàn le shéi	243
+交给谁	jiāo gěi shéi	345
+介是谁	jiè shì shéi	205
+究竟谁	jiū jìng shéi	479
+就看谁	jiù kàn shéi	387
+就是谁	jiù shì shéi	421
+看到谁	kàn dào shéi	377
+看好谁	kàn hǎo shéi	360
+看见谁	kàn jiàn shéi	297
+看看谁	kàn kàn shéi	445
+看上谁	kàn shàng shéi	231
+看是谁	kàn shì shéi	327
+看谁快	kàn shéi kuài	195
+可谁曾	kě shéi céng	199
+可谁想	kě shéi xiǎng	229
+可谁有	kě shéi yǒu	65
+可谁知	kě shéi zhī	393
+坑谁呢	kēng shéi ne	188
+离开谁	lí kāi shéi	314
+联系谁	lián xì shéi	306
+留给谁	liú gěi shéi	234
+轮到谁	lún dào shéi	273
+落谁家	luò shéi jiā	330
+买的谁	mǎi de shéi	158
+没谁了	méi shéi le	481
+没有谁	méi yǒu shéi	550
+模仿谁	mó fǎng shéi	291
+那个谁	nà gè shéi	429
+那是谁	nà shì shéi	356
+那谁谁	nà shéi shéi	375
+内小谁	nèi xiǎo shéi	113
+能怪谁	néng guài shéi	358
+能有谁	néng yǒu shéi	252
+你爱谁	nǐ ài shéi	295
+你跟谁	nǐ gēn shéi	339
+你和谁	nǐ hé shéi	387
+你救谁	nǐ jiù shéi	282
+你看谁	nǐ kàn shéi	291
+你俩谁	nǐ liǎ shéi	231
+你骂谁	nǐ mà shéi	219
+你是谁	nǐ shì shéi	543
+你谁啊	nǐ shéi a	375
+你谁来	nǐ shéi lái	89
+你谁呀	nǐ shéi ya	238
+你谁也	nǐ shéi yě	235
+你说谁	nǐ shuō shéi	364
+你听谁	nǐ tīng shéi	183
+你问谁	nǐ wèn shéi	214
+你选谁	nǐ xuǎn shéi	382
+你站谁	nǐ zhàn shéi	137
+你找谁	nǐ zhǎo shéi	330
+您是谁	nín shì shéi	250
+弄死谁	nòng sǐ shéi	199
+怕过谁	pà guò shéi	297
+骗谁呢	piàn shéi ne	334
+偏向谁	piān xiàng shéi	276
+凭谁问	píng shéi wèn	276
+欺负谁	qī fù shéi	268
+气死谁	qì sǐ shéi	197
+取代谁	qǔ dài shéi	253
+去谁家	qù shéi jiā	278
+饶过谁	ráo guò shéi	383
+惹了谁	rě le shéi	279
+惹谁了	rě shéi le	294
+人是谁	rén shì shéi	510
+认识谁	rèn shi shéi	357
+任谁都	rèn shéi dōu	410
+任谁看	rèn shéi kàn	190
+人问谁	rén wèn shéi	162
+杀了谁	shā le shéi	245
+是个谁	shì gè shéi	175
+适合谁	shì hé shéi	282
+是谁啊	shì shéi a	499
+是谁吧	shì shéi ba	358
+是谁的	shì shéi de	564
+是谁家	shì shéi jiā	362
+是谁教	shì shéi jiào	223
+是谁来	shì shéi lái	346
+是谁了	shì shéi le	449
+是谁吗	shì shéi ma	468
+是谁呢	shì shéi ne	528
+是谁让	shì shéi ràng	331
+是谁人	shì shéi rén	190
+是谁偷	shì shéi tōu	180
+是谁先	shì shéi xiān	375
+是谁呀	shì shéi ya	401
+是谁也	shì shéi yě	421
+是谁在	shì shéi zài	493
+属于谁	shǔ yú shéi	383
+谁爱你	shéi ài nǐ	183
+谁爱谁	shéi ài shéi	299
+谁爱我	shéi ài wǒ	229
+谁把你	shéi bǎ nǐ	283
+谁霸气	shéi bà qì	151
+谁伴我	shéi bàn wǒ	258
+谁帮你	shéi bāng nǐ	261
+谁帮谁	shéi bāng shéi	165
+谁帮我	shéi bāng wǒ	432
+谁保护	shéi bǎo hù	268
+谁背锅	shéi bèi guō	222
+谁比和	shéi bǐ hé	158
+谁比较	shéi bǐ jiào	405
+谁不爱	shéi bú ài	399
+谁不曾	shéi bù céng	320
+谁不懂	shéi bù dǒng	269
+谁不对	shéi bú duì	146
+谁不服	shéi bù fú	316
+谁不好	shéi bù hǎo	337
+谁不会	shéi bú huì	444
+谁不来	shéi bù lái	193
+谁不怕	shéi bú pà	254
+谁不去	shéi bú qù	215
+谁不是	shéi bú shì	473
+谁不说	shéi bù shuō	301
+谁不想	shéi bù xiǎng	512
+谁不信	shéi bú xìn	230
+谁不行	shéi bù xíng	230
+谁不要	shéi bú yào	270
+谁不愿	shéi bú yuàn	255
+谁不在	shéi bú zài	240
+谁不知	shéi bù zhī	287
+谁才是	shéi cái shì	529
+谁曾见	shéi céng jiàn	151
+谁曾想	shéi céng xiǎng	403
+谁唱的	shéi chàng de	381
+谁唱歌	shéi chàng gē	180
+谁承担	shéi chéng dān	352
+谁承想	shéi chéng xiǎng	305
+谁吃亏	shéi chī kuī	314
+谁吃谁	shéi chī shéi	367
+谁出的	shéi chū de	339
+谁出轨	shéi chū guǐ	201
+谁出来	shéi chū lái	256
+谁出钱	shéi chū qián	353
+谁出去	shéi chū qù	210
+谁出资	shéi chū zī	178
+谁聪明	shéi cōng míng	234
+谁错了	shéi cuò le	333
+谁打的	shéi dǎ dī	313
+谁打你	shéi dǎ nǐ	188
+谁打谁	shéi dǎ shéi	326
+谁打我	shéi dǎ wǒ	285
+谁带来	shéi dài lái	169
+谁带你	shéi dài nǐ	165
+谁带我	shéi dài wǒ	227
+谁带走	shéi dài zǒu	98
+谁担责	shéi dān zé	316
+谁当家	shéi dāng jiā	243
+谁到了	shéi dào le	172
+谁倒霉	shéi dǎo méi	380
+谁的啊	shéi de a	265
+谁的爱	shéi de ài	229
+谁的车	shéi de chē	289
+谁的错	shéi de cuò	383
+谁的大	shéi de dà	178
+谁的歌	shéi de gē	317
+谁的光	shéi de guāng	222
+谁的锅	shéi de guō	246
+谁的号	shéi de hào	151
+谁的话	shéi de huà	360
+谁的家	shéi de jiā	324
+谁的脚	shéi de jiǎo	215
+谁的了	shéi de le	233
+谁的脸	shéi de liǎn	348
+谁的梦	shéi de mèng	205
+谁的钱	shéi de qián	417
+谁的群	shéi de qún	146
+谁的人	shéi de rén	230
+谁的事	shéi de shì	223
+谁的手	shéi de shǒu	323
+谁的谁	shéi de shéi	322
+谁的心	shéi de xīn	340
+谁的呀	shéi de ya	250
+谁的眼	shéi de yǎn	183
+谁第一	shéi dì yī	300
+谁掉的	shéi diào de	132
+谁订的	shéi dìng de	155
+谁懂啊	shéi dǒng a	215
+谁懂得	shéi dǒng de	239
+谁动了	shéi dòng le	420
+谁懂我	shéi dǒng wǒ	180
+谁都爱	shéi dōu ài	268
+谁都不	shéi dōu bù	559
+谁都懂	shéi dōu dǒng	381
+谁都会	shéi dōu huì	512
+谁都能	shéi dōu néng	516
+谁都怕	shéi dōu pà	320
+谁都去	shéi dōu qù	98
+谁都是	shéi dōu shì	437
+谁都想	shéi dōu xiǎng	465
+谁都行	shéi dōu xíng	294
+谁都有	shéi dōu yǒu	493
+谁都在	shéi dōu zài	272
+谁对谁	shéi duì shéi	520
+谁儿子	shéi ér zi	132
+谁发的	shéi fā de	292
+谁发明	shéi fā míng	363
+谁发现	shéi fā xiàn	234
+谁放在	shéi fàng zài	65
+谁付费	shéi fù fèi	234
+谁付钱	shéi fù qián	291
+谁服务	shéi fú wù	271
+谁负责	shéi fù zé	492
+谁改的	shéi gǎi de	331
+谁敢把	shéi gǎn bǎ	226
+谁敢不	shéi gǎn bù	251
+谁干的	shéi gàn de	422
+谁干净	shéi gān jìng	65
+谁敢拦	shéi gǎn lán	172
+谁敢娶	shéi gǎn qǔ	236
+谁敢惹	shéi gǎn rě	269
+谁敢上	shéi gǎn shàng	146
+谁告诉	shéi gào sù	403
+谁高兴	shéi gāo xìng	243
+谁给了	shéi gěi le	284
+谁给你	shéi gěi nǐ	411
+谁给谁	shéi gěi shéi	307
+谁给说	shéi gěi shuō	106
+谁给我	shéi gěi wǒ	455
+谁给咱	shéi gěi zán	146
+谁跟你	shéi gēn nǐ	389
+谁跟谁	shéi gēn shéi	372
+谁跟他	shéi gēn tā	302
+谁跟我	shéi gēn wǒ	377
+谁更爱	shéi gèng ài	253
+谁更惨	shéi gèng cǎn	246
+谁更大	shéi gèng dà	288
+谁更好	shéi gèng hǎo	412
+谁更狠	shéi gèng hěn	151
+谁更红	shéi gèng hóng	258
+谁更快	shéi gèng kuài	259
+谁更美	shéi gèng měi	366
+谁更牛	shéi gèng niú	288
+谁更强	shéi gèng qiáng	440
+谁更帅	shéi gèng shuài	319
+谁更像	shéi gèng xiàng	273
+谁公开	shéi gōng kāi	175
+谁共我	shéi gòng wǒ	205
+谁管理	shéi guǎn lǐ	262
+谁管你	shéi guǎn nǐ	395
+谁管钱	shéi guǎn qián	303
+谁管他	shéi guǎn tā	180
+谁规定	shéi guī dìng	395
+谁过来	shéi guò lái	227
+谁还敢	shéi hái gǎn	480
+谁还管	shéi hái guǎn	320
+谁还会	shéi hái huì	476
+谁还没	shéi hái méi	427
+谁还能	shéi hái néng	424
+谁害怕	shéi hài pà	210
+谁还去	shéi hái qù	358
+谁还要	shéi hái yào	310
+谁还用	shéi hái yòng	312
+谁还有	shéi hái yǒu	401
+谁还在	shéi hái zài	307
+谁好看	shéi hǎo kàn	287
+谁好像	shéi hǎo xiàng	158
+谁和你	shéi hé nǐ	317
+谁和我	shéi hé wǒ	343
+谁画的	shéi huà de	305
+谁花钱	shéi huā qián	244
+谁会得	shéi huì de	98
+谁会跟	shéi huì gēn	247
+谁会来	shéi huì lái	326
+谁回来	shéi huí lái	165
+谁会买	shéi huì mǎi	336
+谁会去	shéi huì qù	412
+谁会想	shéi huì xiǎng	309
+谁会信	shéi huì xìn	250
+谁记得	shéi jì de	317
+谁家里	shéi jiā lǐ	333
+谁家去	shéi jiā qù	113
+谁家有	shéi jiā yǒu	371
+谁家做	shéi jiā zuò	188
+谁建的	shéi jiàn de	165
+谁监管	shéi jiān guǎn	301
+谁见过	shéi jiàn guò	407
+谁见了	shéi jiàn le	383
+谁讲的	shéi jiǎng de	265
+谁教的	shéi jiào de	262
+谁叫你	shéi jiào nǐ	433
+谁教你	shéi jiào nǐ	247
+谁叫他	shéi jiào tā	366
+谁教他	shéi jiào tā	29
+谁叫我	shéi jiào wǒ	451
+谁教我	shéi jiào wǒ	312
+谁接的	shéi jiē de	175
+谁结婚	shéi jié hūn	278
+谁借我	shéi jiè wǒ	262
+谁进的	shéi jìn de	236
+谁就能	shéi jiù néng	470
+谁就是	shéi jiù shì	482
+谁举报	shéi jǔ bào	308
+谁举证	shéi jǔ zhèng	397
+谁开车	shéi kāi chē	220
+谁开的	shéi kāi de	269
+谁开发	shéi kāi fā	272
+谁看到	shéi kàn dào	347
+谁看的	shéi kàn de	322
+谁看过	shéi kàn guò	384
+谁看了	shéi kàn le	376
+谁看你	shéi kàn nǐ	219
+谁看谁	shéi kàn shéi	382
+谁可比	shéi kě bǐ	205
+谁可以	shéi kě yǐ	531
+谁坑谁	shéi kēng shéi	162
+谁来帮	shéi lái bāng	331
+谁来出	shéi lái chū	284
+谁来打	shéi lái dǎ	188
+谁来带	shéi lái dài	226
+谁来的	shéi lái de	225
+谁来扶	shéi lái fú	254
+谁来干	shéi lái gàn	250
+谁来管	shéi lái guǎn	391
+谁来讲	shéi lái jiǎng	197
+谁来教	shéi lái jiào	272
+谁来接	shéi lái jiē	260
+谁来看	shéi lái kàn	175
+谁来了	shéi lái le	314
+谁来买	shéi lái mǎi	265
+谁来赔	shéi lái péi	304
+谁来陪	shéi lái péi	199
+谁来收	shéi lái shōu	132
+谁来问	shéi lái wèn	158
+谁来演	shéi lái yǎn	345
+谁来养	shéi lái yǎng	231
+谁来找	shéi lái zhǎo	183
+谁来着	shéi lái zhe	286
+谁来做	shéi lái zuò	388
+谁了么	shéi le me	146
+谁了呢	shéi le ne	199
+谁乐意	shéi lè yì	268
+谁厉害	shéi lì hài	432
+谁理你	shéi lǐ nǐ	279
+谁了解	shéi liǎo jiě	377
+谁骂谁	shéi mà shéi	238
+谁买单	shéi mǎi dān	362
+谁买的	shéi mǎi de	306
+谁买了	shéi mǎi le	336
+谁没点	shéi méi diǎn	274
+谁没事	shéi méi shì	398
+谁每天	shéi měi tiān	225
+谁没有	shéi méi yǒu	487
+谁明白	shéi míng bái	308
+谁拿的	shéi ná de	229
+谁哪个	shéi nǎ gè	212
+谁拿了	shéi ná le	355
+谁能把	shéi néng bǎ	405
+谁能保	shéi néng bǎo	113
+谁能比	shéi néng bǐ	343
+谁能吃	shéi néng chī	180
+谁能带	shéi néng dài	193
+谁能敌	shéi néng dí	230
+谁能懂	shéi néng dǒng	324
+谁能干	shéi néng gàn	165
+谁能给	shéi néng gěi	480
+谁能管	shéi néng guǎn	188
+谁能及	shéi néng jí	151
+谁能记	shéi néng jì	29
+谁能接	shéi néng jiē	120
+谁能说	shéi néng shuō	411
+谁能向	shéi néng xiàng	146
+谁能知	shéi néng zhī	180
+谁能做	shéi néng zuò	312
+谁尼玛	shéi ní mǎ	317
+谁怕谁	shéi pà shéi	405
+谁拍的	shéi pāi de	333
+谁排的	shéi pái de	132
+谁陪你	shéi péi nǐ	248
+谁陪我	shéi péi wǒ	298
+谁批准	shéi pī zhǔn	201
+谁漂亮	shéi piào liang	282
+谁破坏	shéi pò huài	245
+谁欺负	shéi qī fù	269
+谁欠谁	shéi qiàn shéi	297
+谁签字	shéi qiān zì	280
+谁清楚	shéi qīng chǔ	250
+谁请客	shéi qǐng kè	322
+谁去接	shéi qù jiē	155
+谁去呢	shéi qù ne	223
+谁娶谁	shéi qǔ shéi	223
+谁去做	shéi qù zuò	276
+谁让你	shéi ràng nǐ	497
+谁让您	shéi ràng nín	132
+谁让谁	shéi ràng shéi	219
+谁让他	shéi ràng tā	399
+谁让她	shéi ràng tā	329
+谁让我	shéi ràng wǒ	488
+谁人能	shéi rén néng	293
+谁认识	shéi rèn shi	397
+谁人识	shéi rén shí	262
+谁人知	shéi rén zhī	322
+谁扔的	shéi rēng de	243
+谁杀谁	shéi shā shéi	236
+谁上班	shéi shàng bān	137
+谁审核	shéi shěn hé	250
+谁生病	shéi shēng bìng	212
+谁生日	shéi shēng rì	212
+谁是爹	shéi shì diē	193
+谁是狗	shéi shì gǒu	275
+谁是谁	shéi shì shéi	468
+谁是我	shéi shì wǒ	273
+谁使用	shéi shǐ yòng	283
+谁是主	shéi shì zhǔ	229
+谁是猪	shéi shì zhū	175
+谁收藏	shéi shōu cáng	132
+谁手机	shéi shǒu jī	165
+谁受益	shéi shòu yì	375
+谁输了	shéi shū le	338
+谁谁是	shéi shéi shì	244
+谁谁谁	shéi shéi shéi	520
+谁说到	shéi shuō dào	78
+谁说的	shéi shuō de	504
+谁说过	shéi shuō guò	372
+谁说话	shéi shuō huà	335
+谁说谎	shéi shuō huǎng	142
+谁说来	shéi shuō lái	89
+谁说你	shéi shuō nǐ	272
+谁说女	shéi shuō nǚ	212
+谁说我	shéi shuō wǒ	375
+谁送的	shéi sòng de	334
+谁送我	shéi sòng wǒ	311
+谁他妈	shéi tā mā	417
+谁掏钱	shéi tāo qián	269
+谁提的	shéi tí de	285
+谁提供	shéi tí gōng	306
+谁听谁	shéi tīng shéi	242
+谁同意	shéi tóng yì	201
+谁统一	shéi tǒng yī	165
+谁投资	shéi tóu zī	291
+谁玩过	shéi wán guò	282
+谁玩谁	shéi wán shéi	278
+谁为你	shéi wéi nǐ	290
+谁为谁	shéi wéi shéi	284
+谁为我	shéi wèi wǒ	252
+谁维修	shéi wéi xiū	126
+谁为主	shéi wéi zhǔ	234
+谁问的	shéi wèn de	230
+谁污染	shéi wū rǎn	317
+谁侮辱	shéi wǔ rǔ	155
+谁稀罕	shéi xī hǎn	339
+谁喜欢	shéi xǐ huān	398
+谁洗碗	shéi xǐ wǎn	285
+谁先到	shéi xiān dào	280
+谁先来	shéi xiān lái	246
+谁先上	shéi xiān shàng	246
+谁先说	shéi xiān shuō	212
+谁先死	shéi xiān sǐ	312
+谁先走	shéi xiān zǒu	269
+谁相伴	shéi xiāng bàn	132
+谁想到	shéi xiǎng dào	435
+谁想的	shéi xiǎng de	263
+谁想干	shéi xiǎng gàn	137
+谁想看	shéi xiǎng kàn	235
+谁想买	shéi xiǎng mǎi	205
+谁像你	shéi xiàng nǐ	212
+谁想去	shéi xiǎng qù	256
+谁像谁	shéi xiàng shéi	293
+谁相信	shéi xiāng xìn	294
+谁想要	shéi xiǎng yào	357
+谁晓得	shéi xiǎo de	347
+谁写的	shéi xiě de	431
+谁信啊	shéi xìn a	346
+谁信道	shéi xìn dào	155
+谁信呐	shéi xìn nà	169
+谁信呢	shéi xìn ne	255
+谁信呀	shéi xìn ya	172
+谁需要	shéi xū yào	359
+谁学得	shéi xué dé	49
+谁呀我	shéi ya wǒ	222
+谁演的	shéi yǎn de	326
+谁要的	shéi yào de	262
+谁要和	shéi yào hé	203
+谁要看	shéi yào kàn	257
+谁要来	shéi yào lái	245
+谁要买	shéi yào mǎi	215
+谁要是	shéi yào shì	483
+谁也不	shéi yě bù	582
+谁也会	shéi yě huì	155
+谁也没	shéi yě méi	502
+谁也能	shéi yě néng	120
+谁也是	shéi yě shì	203
+谁也想	shéi yě xiǎng	175
+谁也有	shéi yě yǒu	165
+谁一个	shéi yí gè	302
+谁一起	shéi yì qǐ	279
+谁一天	shéi yì tiān	155
+谁赢了	shéi yíng le	392
+谁影响	shéi yǐng xiǎng	217
+谁用过	shéi yòng guò	461
+谁拥有	shéi yōng yǒu	414
+谁有病	shéi yǒu bìng	230
+谁有发	shéi yǒu fā	142
+谁有空	shéi yǒu kòng	345
+谁有理	shéi yǒu lǐ	320
+谁又能	shéi yòu néng	476
+谁有钱	shéi yǒu qián	351
+谁与共	shéi yǔ gòng	280
+谁与谁	shéi yǔ shéi	287
+谁愿意	shéi yuàn yì	528
+谁允许	shéi yǔn xǔ	308
+谁再敢	shéi zài gǎn	256
+谁在家	shéi zài jiā	203
+谁在叫	shéi zài jiào	151
+谁在看	shéi zài kàn	234
+谁在买	shéi zài mǎi	328
+谁在卖	shéi zài mài	220
+谁在那	shéi zài nà	225
+谁在说	shéi zài shuō	276
+谁在玩	shéi zài wán	231
+谁在线	shéi zài xiàn	89
+谁在意	shéi zài yì	288
+谁在用	shéi zài yòng	312
+谁照顾	shéi zhào gù	285
+谁找你	shéi zhǎo nǐ	180
+谁挣钱	shéi zhèng qián	222
+谁值班	shéi zhí bān	120
+谁知此	shéi zhī cǐ	172
+谁知道	shéi zhī dào	707
+谁值得	shéi zhí de	250
+谁制定	shéi zhì dìng	180
+谁执法	shéi zhí fǎ	277
+谁之过	shéi zhī guò	412
+谁知过	shéi zhī guò	65
+谁治理	shéi zhì lǐ	320
+谁知是	shéi zhī shì	298
+谁知我	shéi zhī wǒ	276
+谁知有	shéi zhī yǒu	155
+谁之责	shéi zhī zé	205
+谁重要	shéi zhòng yào	277
+谁主导	shéi zhǔ dǎo	368
+谁主动	shéi zhǔ dòng	303
+谁主管	shéi zhǔ guǎn	368
+谁主张	shéi zhǔ zhāng	387
+谁追谁	shéi zhuī shéi	302
+谁走了	shéi zǒu le	235
+谁组队	shéi zǔ duì	165
+谁组织	shéi zǔ zhī	217
+谁最惨	shéi zuì cǎn	172
+谁最丑	shéi zuì chǒu	165
+谁最大	shéi zuì dà	230
+谁最高	shéi zuì gāo	256
+谁最好	shéi zuì hǎo	297
+谁最红	shéi zuì hóng	205
+谁最快	shéi zuì kuài	209
+谁最美	shéi zuì měi	326
+谁最能	shéi zuì néng	279
+谁最牛	shéi zuì niú	267
+谁最强	shéi zuì qiáng	359
+谁最帅	shéi zuì shuài	313
+谁做的	shéi zuò de	410
+谁做饭	shéi zuò fàn	276
+谁做主	shéi zuò zhǔ	373
+说的谁	shuō de shéi	244
+说谁的	shuō shéi de	274
+说谁了	shuō shéi le	201
+说谁呢	shuō shéi ne	307
+思念谁	sī niàn shéi	263
+送给谁	sòng gěi shéi	351
+算谁的	suàn shéi de	368
+所以谁	suǒ yǐ shéi	378
+他是谁	tā shì shéi	491
+她是谁	tā shì shéi	445
+淘汰谁	táo tài shéi	238
+讨厌谁	tǎo yàn shéi	344
+听谁的	tīng shéi de	440
+听谁说	tīng shéi shuō	331
+投给谁	tóu gěi shéi	332
+投靠谁	tóu kào shéi	210
+忘记谁	wàng jì shéi	209
+忘了谁	wàng le shéi	277
+为了谁	wèi le shéi	425
+为谁开	wéi shéi kāi	256
+为谁留	wéi shéi liú	158
+为谁落	wéi shéi luò	178
+为谁忙	wéi shéi máng	241
+为谁去	wéi shéi qù	89
+问是谁	wèn shì shéi	347
+问谁来	wèn shéi lái	89
+问谁能	wèn shéi néng	215
+问谁是	wèn shéi shì	323
+问谁在	wèn shéi zài	180
+问有谁	wèn yǒu shéi	265
+我爱谁	wǒ ài shéi	199
+我和谁	wǒ hé shéi	302
+我骂谁	wǒ mà shéi	162
+我怕谁	wǒ pà shéi	339
+我是谁	wǒ shì shéi	545
+我问谁	wǒ wèn shéi	240
+我像谁	wǒ xiàng shéi	120
+无论谁	wú lùn shéi	445
+喜欢谁	xǐ huān shéi	461
+吓唬谁	xià hu shéi	217
+先救谁	xiān jiù shéi	377
+想起谁	xiǎng qǐ shéi	338
+像是谁	xiàng shì shéi	190
+想谁的	xiǎng shéi de	98
+想谁呢	xiǎng shéi ne	89
+向谁说	xiàng shéi shuō	225
+向谁诉	xiàng shéi sù	207
+相信谁	xiāng xìn shéi	375
+想要谁	xiǎng yào shéi	188
+想着谁	xiǎng zhe shéi	245
+写给谁	xiě gěi shéi	305
+需要谁	xū yào shéi	250
+选择谁	xuǎn zé shéi	443
+也没谁	yě méi shéi	302
+依靠谁	yī kào shéi	320
+依赖谁	yī lài shéi	188
+因为谁	yīn wèi shéi	419
+用谁的	yòng shéi de	305
+又被谁	yòu bèi shéi	219
+又是谁	yòu shì shéi	469
+有谁把	yǒu shéi bǎ	183
+有谁家	yǒu shéi jiā	201
+有谁看	yǒu shéi kàn	240
+由谁来	yóu shéi lái	466
+有谁来	yǒu shéi lái	314
+有谁怜	yǒu shéi lián	284
+优谁劣	yōu shéi liè	1
+有谁呢	yǒu shéi ne	295
+有谁能	yǒu shéi néng	535
+又谁能	yòu shéi néng	162
+有谁是	yǒu shéi shì	314
+有谁问	yǒu shéi wèn	29
+有谁也	yǒu shéi yě	146
+有谁知	yǒu shéi zhī	350
+又谁知	yòu shéi zhī	244
+又有谁	yòu yǒu shéi	455
+遇到谁	yù dào shéi	318
+遇见谁	yù jiàn shéi	349
+与谁共	yǔ shéi gòng	172
+与谁同	yǔ shéi tóng	242
+在等谁	zài děng shéi	276
+在和谁	zài hé shéi	264
+在乎谁	zài hū shéi	290
+在谁家	zài shéi jiā	265
+怎么谁	zěn me shéi	178
+照顾谁	zhào gù shéi	201
+找谁啊	zhǎo shéi a	291
+找谁帮	zhǎo shéi bāng	49
+招谁了	zhāo shéi le	190
+找谁呀	zhǎo shéi ya	190
+找谁做	zhǎo shéi zuò	246
+这是谁	zhè shì shéi	475
+这谁啊	zhè shéi a	301
+这谁呀	zhè shéi ya	207
+针对谁	zhēn duì shéi	444
+支持谁	zhī chí shéi	386
+知道谁	zhī dào shéi	436
+指望谁	zhǐ wàng shéi	307
+只有谁	zhǐ yǒu shéi	321
+转给谁	zhuǎn gěi shéi	188
+资料谁	zī liào shéi	205
+最后谁	zuì hòu shéi	401
+爱谁谁吧	ài shéi shéi ba	285
+暗恋过谁	àn liàn guò shéi	1
+白云谁侣	bái yún shéi lǚ	1
+被谁抛弃	bèi shéi pāo qì	327
+被谁杀了	bèi shéi shā le	142
+被谁调戏	bèi shéi tiáo xì	1
+比谁都多	bǐ shéi dōu duō	353
+比谁都快	bǐ shéi dōu kuài	473
+变成了谁	biàn chéng le shéi	228
+不比谁弱	bù bǐ shéi ruò	58
+不嘲笑谁	bù cháo xiào shéi	1
+不怀疑谁	bù huái yí shéi	1
+不知道谁	bù zhī dào shéi	600
+猜我是谁	cāi wǒ shì shéi	313
+曾共谁倚	céng gòng shéi yǐ	1
+唱给谁听	chàng gěi shéi tīng	187
+出自谁手	chū zì shéi shǒu	308
+此恨谁知	cǐ hèn shéi zhī	58
+此情谁会	cǐ qíng shéi huì	1
+此情谁托	cǐ qíng shéi tuō	1
+逮谁咬谁	dǎi shéi yǎo shéi	233
+但谁曾想	dàn shéi céng xiǎng	149
+当年谁种	dāng nián shéi zhǒng	1
+当是谁呢	dàng shì shéi ne	1
+到底投谁	dào dǐ tóu shéi	1
+的你和谁	de nǐ hé shéi	92
+得罪了谁	dé zuì le shéi	364
+都谁能来	dōu shéi néng lái	1
+都谁在啊	dōu shéi zài a	1
+都有谁了	dōu yǒu shéi le	1
+都有谁去	dōu yǒu shéi qù	77
+都有谁在	dōu yǒu shéi zài	1
+都有些谁	dōu yǒu xiē shéi	149
+对不起谁	duì bù qǐ shéi	415
+对谁都好	duì shéi dōu hǎo	395
+蛾眉谁妒	é méi shéi dù	1
+发给谁了	fā gěi shéi le	1
+翻谁牌子	fān shéi pái zi	35
+飞傍谁家	fēi bàng shéi jiā	1
+非谁不可	fēi shéi bù kě	262
+飞向谁家	fēi xiàng shéi jiā	105
+分不出谁	fēn bù chū shéi	219
+分付他谁	fēn fù tā shéi	1
+夫谁畏惧	fū shéi wèi jù	58
+该归谁管	gāi guī shéi guǎn	168
+该相信谁	gāi xiāng xìn shéi	383
+给别人谁	gěi bié rén shéi	35
+给谁看呢	gěi shéi kàn ne	410
+给谁买呢	gěi shéi mǎi ne	1
+跟谁赌气	gēn shéi dǔ qì	142
+跟谁俩呢	gēn shéi liǎ ne	216
+跟谁聊呢	gēn shéi liáo ne	77
+跟谁有仇	gēn shéi yǒu chóu	290
+更为谁羞	gēng wéi shéi xiū	58
+更喜欢谁	gèng xǐ huān shéi	456
+更有谁知	gèng yǒu shéi zhī	1
+共谁同航	gòng shéi tóng háng	284
+关心过谁	guān xīn guò shéi	1
+归谁管啊	guī shéi guǎn a	58
+哈谁知道	hā shéi zhī dào	156
+还有那谁	hái yǒu nà shéi	213
+还有谁了	hái yǒu shéi le	142
+还有谁去	hái yǒu shéi qù	249
+还有谁在	hái yǒu shéi zài	1
+孩子像谁	hái zi xiàng shéi	173
+和谁交往	hé shéi jiāo wǎng	255
+和谁结婚	hé shéi jié hūn	418
+和谁聊了	hé shéi liáo le	238
+和谁聊呢	hé shéi liáo ne	1
+和谁聊天	hé shéi liáo tiān	289
+和谁去的	hé shéi qù de	195
+和谁去了	hé shéi qù le	116
+和谁玩呢	hé shéi wán ne	1
+和谁一起	hé shéi yì qǐ	506
+和谁在家	hé shéi zài jiā	1
+和谁在聊	hé shéi zài liáo	1
+花落谁家	huā luò shéi jiā	576
+会是谁呢	huì shì shéi ne	483
+会选择谁	huì xuǎn zé shéi	376
+寂寞谁同	jì mò shéi tóng	1
+见谁秒谁	jiàn shéi miǎo shéi	225
+解组谁逼	jiě zǔ shéi bī	125
+今倩谁温	jīn qiàn shéi wēn	58
+今谁存者	jīn shéi cún zhě	77
+就给谁吃	jiù gěi shéi chī	92
+就卖给谁	jiù mài gěi shéi	222
+绝艳谁怜	jué yàn shéi lián	35
+君谁与守	jūn shéi yǔ shǒu	1
+开口谁亲	kāi kǒu shéi qīn	222
+看不出谁	kàn bù chū shéi	255
+看不惯谁	kàn bù guàn shéi	275
+看不起谁	kàn bù qǐ shéi	338
+看不清谁	kàn bu qīng shéi	156
+看出来谁	kàn chū lái shéi	302
+看得起谁	kàn de qǐ shéi	207
+看看谁先	kàn kàn shéi xiān	1
+看看谁硬	kàn kàn shéi yìng	1
+看谁都像	kàn shéi dōu xiàng	344
+看谁先得	kàn shéi xiān dé	1
+看谁先死	kàn shéi xiān sǐ	1
+可谁想到	kě shéi xiǎng dào	275
+可谁知道	kě shéi zhī dào	421
+离不开谁	lí bù kāi shéi	1
+帘影谁摇	lián yǐng shéi yáo	58
+鹿死谁手	lù sǐ shéi shǒu	505
+卖给了谁	mài gěi le shéi	296
+卖给谁了	mài gěi shéi le	1
+满庭谁扫	mǎn tíng shéi sǎo	1
+没看好谁	méi kàn hǎo shéi	1
+明年谁健	míng nián shéi jiàn	58
+名之者谁	míng zhī zhě shéi	142
+莫敢谁何	mò gǎn shéi hé	125
+莫之谁何	mò zhī shéi hé	1
+那个谁谁	nà gè shéi shéi	389
+那是谁的	nà shì shéi de	1
+那是谁了	nà shì shéi le	105
+那谁到了	nà shéi dào le	1
+那谁谁谁	nà shéi shéi shéi	452
+那谁知道	nà shéi zhī dào	282
+能代表谁	néng dài biǎo shéi	162
+你猜是谁	nǐ cāi shì shéi	275
+你跟谁过	nǐ gēn shéi guò	1
+你跟谁俩	nǐ gēn shéi liǎ	92
+你管他谁	nǐ guǎn tā shéi	1
+你和谁过	nǐ hé shéi guò	1
+你觉得谁	nǐ jué de shéi	464
+你看好谁	nǐ kàn hǎo shéi	340
+你骂谁的	nǐ mà shéi de	1
+你买的谁	nǐ mǎi de shéi	1
+你买了谁	nǐ mǎi le shéi	1
+你们俩谁	nǐ men liǎ shéi	216
+你能对谁	nǐ néng duì shéi	1
+你认识谁	nǐ rèn shi shéi	272
+你是谁啦	nǐ shì shéi la	35
+你是谁了	nǐ shì shéi le	275
+你是谁么	nǐ shì shéi me	35
+你是谁呀	nǐ shì shéi ya	364
+你谁啊你	nǐ shéi a nǐ	281
+你谁都怕	nǐ shéi dōu pà	1
+你谁一个	nǐ shéi yí gè	1
+你说谁的	nǐ shuō shéi de	1
+你为了谁	nǐ wèi le shéi	168
+你稀罕谁	nǐ xī hǎn shéi	1
+你喜欢谁	nǐ xǐ huān shéi	416
+你先救谁	nǐ xiān jiù shéi	436
+你想要谁	nǐ xiǎng yào shéi	173
+你又是谁	nǐ yòu shì shéi	296
+你遇见谁	nǐ yù jiàn shéi	434
+你在想谁	nǐ zài xiǎng shéi	92
+你找谁呀	nǐ zhǎo shéi ya	125
+你支持谁	nǐ zhī chí shéi	352
+你知道谁	nǐ zhī dào shéi	301
+哦那个谁	ó nà gè shéi	105
+凭谁妙笔	píng shéi miào bǐ	1
+其谁从焉	qí shéi cóng yān	92
+其谁知之	qí shéi zhī zhī	35
+倩谁摘取	qiàn shéi zhāi qǔ	1
+瞧不起谁	qiáo bù qǐ shéi	346
+清韵谁敲	qīng yùn shéi qiāo	35
+认不出谁	rèn bù chū shéi	77
+人谁无过	rén shéi wú guò	329
+人在谁边	rén zài shéi biān	116
+舍你其谁	shě nǐ qí shéi	1
+舍他其谁	shě tā qí shéi	251
+舍我复谁	shě wǒ fù shéi	1
+舍我其谁	shě wǒ qí shéi	543
+生父是谁	shēng fù shì shéi	266
+生母是谁	shēng mǔ shì shéi	235
+师父是谁	shī fu shì shéi	228
+是输给谁	shì shū gěi shéi	1
+是谁的错	shì shéi de cuò	459
+是谁的锅	shì shéi de guō	308
+是谁照的	shì shéi zhào de	125
+书谁看过	shū shéi kàn guò	1
+谁伴孤吟	shéi bàn gū yín	1
+谁帮帮我	shéi bāng bāng wǒ	406
+谁帮我收	shéi bāng wǒ shōu	1
+谁帮我找	shéi bāng wǒ zhǎo	213
+谁比得上	shéi bǐ dé shàng	257
+谁比较好	shéi bǐ jiào hǎo	286
+谁比谁强	shéi bǐ shéi qiáng	310
+谁比我帅	shéi bǐ wǒ shuài	1
+谁不爱呢	shéi bú ài ne	433
+谁不懂啊	shéi bù dǒng a	210
+谁不会啊	shéi bú huì a	394
+谁不理你	shéi bù lǐ nǐ	1
+谁不欠谁	shéi bú qiàn shéi	1
+谁不是的	shéi bú shì de	77
+谁不是有	shéi bú shì yǒu	1
+谁不信呢	shéi bú xìn ne	1
+谁不要脸	shéi bú yào liǎn	1
+谁不着觉	shéi bù zhuó jué	77
+谁曾想到	shéi céng xiǎng dào	358
+谁曾想过	shéi céng xiǎng guò	219
+谁唱的了	shéi chàng de le	125
+谁吃的饭	shéi chī de fàn	1
+谁处对象	shéi chù duì xiàng	105
+谁传道之	shéi chuán dào zhī	187
+谁穿谁美	shéi chuān shéi měi	149
+谁打开的	shéi dǎ kāi de	77
+谁搭理你	shéi dā lǐ nǐ	213
+谁大谁小	shéi dà shéi xiǎo	365
+谁带孩子	shéi dài hái zi	255
+谁的爱情	shéi de ài qíng	253
+谁的车身	shéi de chē shēn	1
+谁的初吻	shéi de chū wěn	1
+谁的蛋糕	shéi de dàn gāo	253
+谁的地方	shéi de dì fāng	1
+谁的电话	shéi de diàn huà	339
+谁的电脑	shéi de diàn nǎo	1
+谁的儿子	shéi de ér zi	329
+谁的房子	shéi de fáng zi	213
+谁的粉丝	shéi de fěn sī	382
+谁的父母	shéi de fù mǔ	281
+谁的功劳	shéi de gōng láo	305
+谁的故事	shéi de gù shì	347
+谁的孩子	shéi de hái zi	424
+谁的好啊	shéi de hǎo a	1
+谁的好看	shéi de hǎo kàn	134
+谁的历史	shéi de lì shǐ	372
+谁的妈妈	shéi de mā ma	210
+谁的名片	shéi de míng piàn	1
+谁的名字	shéi de míng zì	455
+谁的女儿	shéi de nǚ ér	288
+谁的皮肤	shéi de pí fū	203
+谁的妻子	shéi de qī zǐ	210
+谁的青春	shéi de qīng chūn	564
+谁的人生	shéi de rén shēng	431
+谁的身体	shéi de shēn tǐ	262
+谁的生活	shéi de shēng huó	383
+谁的声音	shéi de shēng yīn	335
+谁的手机	shéi de shǒu jī	348
+谁的手里	shéi de shǒu lǐ	368
+谁的问题	shéi de wèn tí	516
+谁的眼睛	shéi de yǎn jīng	259
+谁的眼泪	shéi de yǎn lèi	320
+谁的造型	shéi de zào xíng	207
+谁的最好	shéi de zuì hǎo	149
+谁顶得住	shéi dǐng dé zhù	288
+谁懂我心	shéi dǒng wǒ xīn	1
+谁都不服	shéi dōu bù fú	323
+谁都不理	shéi dōu bù lǐ	353
+谁都不傻	shéi dōu bù shǎ	358
+谁都认识	shéi dōu rèn shi	303
+谁多谁少	shéi duō shéi shǎo	361
+谁饿肚子	shéi è dǔ zi	1
+谁发明的	shéi fā míng de	1
+谁负得起	shéi fù dé qǐ	1
+谁负刚肠	shéi fù gāng cháng	1
+谁负了谁	shéi fù le shéi	191
+谁负责啊	shéi fù zé a	260
+谁该负责	shéi gāi fù zé	319
+谁敢不服	shéi gǎn bù fú	304
+谁敢挡关	shéi gǎn dǎng guān	35
+谁干得好	shéi gàn dé hǎo	187
+谁敢动我	shéi gǎn dòng wǒ	280
+谁搞的鬼	shéi gǎo de guǐ	213
+谁告你的	shéi gào nǐ de	1
+谁告诉你	shéi gào sù nǐ	543
+谁告诉我	shéi gào sù wǒ	543
+谁个不晓	shéi gè bù xiǎo	1
+谁给的啊	shéi gěi de a	35
+谁给了你	shéi gěi le nǐ	235
+谁跟谁呀	shéi gēn shéi ya	134
+谁更出色	shéi gèng chū sè	294
+谁更聪明	shéi gèng cōng míng	338
+谁更好看	shéi gèng hǎo kàn	340
+谁更合适	shéi gèng hé shì	288
+谁更可爱	shéi gèng kě ài	228
+谁更漂亮	shéi gèng piào liang	361
+谁更容易	shéi gèng róng yì	344
+谁更适合	shéi gèng shì hé	474
+谁更帅呢	shéi gèng shuài ne	58
+谁更伟大	shéi gèng wěi dà	409
+谁更无聊	shéi gèng wú liáo	35
+谁更有钱	shéi gèng yǒu qián	308
+谁更优秀	shéi gèng yōu xiù	377
+谁更重要	shéi gèng zhòng yào	408
+谁攻谁受	shéi gōng shéi shòu	251
+谁管得着	shéi guǎn de zháo	195
+谁规定的	shéi guī dìng de	421
+谁还打牌	shéi hái dǎ pái	1
+谁还以为	shéi hái yǐ wéi	35
+谁和你在	shéi hé nǐ zài	1
+谁和我开	shéi hé wǒ kāi	1
+谁和我约	shéi hé wǒ yuē	1
+谁会搭理	shéi huì dā lǐ	92
+谁毁谁誉	shéi huǐ shéi yù	58
+谁寄相思	shéi jì xiāng sī	1
+谁家璧人	shéi jiā bì rén	1
+谁家的狗	shéi jiā de gǒu	327
+谁家的了	shéi jiā de le	199
+谁家姝丽	shéi jiā shū lì	1
+谁家小院	shéi jiā xiǎo yuàn	35
+谁家种的	shéi jiā zhǒng de	35
+谁讲过我	shéi jiǎng guò wǒ	1
+谁教你的	shéi jiào nǐ de	1
+谁叫你手	shéi jiào nǐ shǒu	1
+谁结婚呢	shéi jié hūn ne	1
+谁就指挥	shéi jiù zhǐ huī	1
+谁开的房	shéi kāi de fáng	1
+谁扛得住	shéi káng de zhù	199
+谁可知道	shéi kě zhī dào	1
+谁坑你了	shéi kēng nǐ le	35
+谁来接班	shéi lái jiē bān	255
+谁来救我	shéi lái jiù wǒ	262
+谁来主宰	shéi lái zhǔ zǎi	156
+谁来阻止	shéi lái zǔ zhǐ	156
+谁拦得住	shéi lán dé zhù	210
+谁厉害呢	shéi lì hài ne	1
+谁怜夭折	shéi lián yāo zhé	35
+谁临晚眺	shéi lín wǎn tiào	1
+谁领风骚	shéi lǐng fēng sāo	267
+谁骂你了	shéi mà nǐ le	35
+谁没点儿	shéi méi diǎn ér	203
+谁没事儿	shéi méi shì ér	325
+谁没有爱	shéi méi yǒu ài	58
+谁没有爹	shéi méi yǒu diē	1
+谁没有娘	shéi méi yǒu niáng	1
+谁没有情	shéi méi yǒu qíng	1
+谁那么早	shéi nà me zǎo	77
+谁哪知道	shéi nǎ zhī dào	1
+谁能不听	shéi néng bù tīng	1
+谁能猜到	shéi néng cāi dào	318
+谁能挡我	shéi néng dǎng wǒ	225
+谁能极之	shéi néng jí zhī	134
+谁能解开	shéi néng jiě kāi	199
+谁能晋级	shéi néng jìn jí	253
+谁能尽善	shéi néng jìn shàn	1
+谁能像你	shéi néng xiàng nǐ	92
+谁念行人	shéi niàn xíng rén	1
+谁怕谁了	shéi pà shéi le	77
+谁怕谁呀	shéi pà shéi ya	235
+谁跑得快	shéi pǎo dé kuài	342
+谁陪你打	shéi péi nǐ dǎ	1
+谁批准的	shéi pī zhǔn dì	168
+谁骗你了	shéi piàn nǐ le	1
+谁品春词	shéi pǐn chūn cí	1
+谁欺负你	shéi qī fù nǐ	297
+谁欺负谁	shéi qī fù shéi	238
+谁强谁弱	shéi qiáng shéi ruò	447
+谁轻谁重	shéi qīng shéi zhòng	309
+谁求知道	shéi qiú zhī dào	1
+谁去打球	shéi qù dǎ qiú	1
+谁娶到你	shéi qǔ dào nǐ	105
+谁去给我	shéi qù gěi wǒ	58
+谁去谁留	shéi qù shéi liú	278
+谁让你碰	shéi ràng nǐ pèng	58
+谁让你丫	shéi ràng nǐ yā	134
+谁惹你了	shéi rě nǐ le	156
+谁人不晓	shéi rén bù xiǎo	275
+谁认识你	shéi rèn shi nǐ	1
+谁荣谁辱	shéi róng shéi rǔ	1
+谁入地狱	shéi rù dì yù	412
+谁杀了谁	shéi shā le shéi	168
+谁伤了你	shéi shāng le nǐ	58
+谁上谁下	shéi shàng shéi xià	247
+谁烧毁的	shéi shāo huǐ de	1
+谁少谁多	shéi shǎo shéi duō	1
+谁胜谁败	shéi shèng shéi bài	289
+谁胜谁负	shéi shèng shéi fù	476
+谁生谁死	shéi shēng shéi sǐ	259
+谁胜算大	shéi shèng suàn dà	125
+谁生下来	shéi shēng xià lái	264
+谁是傻冒	shéi shì shǎ mào	1
+谁是傻子	shéi shì shǎ zǐ	1
+谁使神州	shéi shǐ shén zhōu	1
+谁是首富	shéi shì shǒu fù	77
+谁是谁的	shéi shì shéi de	485
+谁是谁非	shéi shì shéi fēi	491
+谁是闲人	shéi shì xián rén	1
+谁是知心	shéi shì zhī xīn	1
+谁是知音	shéi shì zhī yīn	1
+谁是主人	shéi shì zhǔ rén	249
+谁受得了	shéi shòu dé liǎo	473
+谁谁谁去	shéi shéi shéi qù	230
+谁谁谁谁	shéi shéi shéi shéi	245
+谁说的啊	shéi shuō de a	288
+谁说的了	shéi shuō de le	352
+谁说的清	shéi shuō de qīng	1
+谁说的呀	shéi shuō de ya	125
+谁说谎了	shéi shuō huǎng le	35
+谁死鹿手	shéi sǐ lù shǒu	1
+谁死谁活	shéi sǐ shéi huó	173
+谁送过来	shéi sòng guò lái	1
+谁算计谁	shéi suàn jì shéi	156
+谁所极焉	shéi suǒ jí yān	58
+谁他妈的	shéi tā mā de	320
+谁他妈信	shéi tā mā xìn	58
+谁偷了我	shéi tōu le wǒ	272
+谁玩得过	shéi wán dé guò	134
+谁为情种	shéi wéi qíng zhǒng	210
+谁为为之	shéi wéi wéi zhī	58
+谁问旗亭	shéi wèn qí tíng	1
+谁我喜欢	shéi wǒ xǐ huān	35
+谁喜欢谁	shéi xǐ huān shéi	332
+谁下地狱	shéi xià dì yù	318
+谁羡骖鸾	shéi xiàn cān luán	1
+谁先动手	shéi xiān dòng shǒu	326
+谁先开口	shéi xiān kāi kǒu	293
+谁先谁后	shéi xiān shéi hòu	449
+谁先主动	shéi xiān zhǔ dòng	235
+谁想得到	shéi xiǎng dé dào	295
+谁像你啊	shéi xiàng nǐ a	1
+谁像你们	shéi xiàng nǐ men	1
+谁想听你	shéi xiǎng tīng nǐ	1
+谁呀谁呀	shéi ya shéi ya	222
+谁言寸草	shéi yán cùn cǎo	409
+谁言琼树	shéi yán qióng shù	1
+谁言人易	shéi yán rén yì	1
+谁也不服	shéi yě bù fú	441
+谁也不理	shéi yě bù lǐ	387
+谁也不弄	shéi yě bú nòng	1
+谁一会儿	shéi yí huì er	142
+谁又不是	shéi yòu bú shì	399
+谁又复活	shéi yòu fù huó	1
+谁又是谁	shéi yòu shì shéi	162
+谁优谁劣	shéi yōu shéi liè	407
+谁又在乎	shéi yòu zài hū	286
+谁又知道	shéi yòu zhī dào	1
+谁与共饮	shéi yǔ gòng yǐn	105
+谁与温存	shéi yǔ wēn cún	1
+谁与争锋	shéi yǔ zhēng fēng	524
+谁与争疯	shéi yǔ zhēng fēng	168
+谁与争风	shéi yǔ zhēng fēng	125
+谁于争锋	shéi yú zhēng fēng	1
+谁与争功	shéi yǔ zhēng gōng	58
+谁愿为首	shéi yuàn wéi shǒu	77
+谁在背后	shéi zài bèi hòu	316
+谁在北京	shéi zài běi jīng	207
+谁在唱歌	shéi zài chàng gē	1
+谁在打我	shéi zài dǎ wǒ	270
+谁在风中	shéi zài fēng zhōng	156
+谁在杭州	shéi zài háng zhōu	58
+谁在呼唤	shéi zài hū huàn	1
+谁在乎呢	shéi zài hū ne	394
+谁在乎你	shéi zài hū nǐ	329
+谁在济南	shéi zài jǐ nán	1
+谁在家的	shéi zài jiā de	58
+谁在浪费	shéi zài làng fèi	1
+谁在里面	shéi zài lǐ miàn	207
+谁在裸泳	shéi zài luǒ yǒng	453
+谁在那里	shéi zài nà lǐ	253
+谁在秋千	shéi zài qiū qiān	105
+谁在撒谎	shéi zài sā huǎng	267
+谁在说话	shéi zài shuō huà	318
+谁在说谎	shéi zài shuō huǎng	350
+谁在踢你	shéi zài tī nǐ	1
+谁在武汉	shéi zài wǔ hàn	1
+谁在西安	shéi zài xī ān	1
+谁在一起	shéi zài yì qǐ	421
+谁在意我	shéi zài yì wǒ	1
+谁在这里	shéi zài zhè lǐ	264
+谁在追你	shéi zài zhuī nǐ	1
+谁怎么说	shéi zěn me shuō	116
+谁照的呀	shéi zhào de ya	35
+谁照顾你	shéi zhào gù nǐ	1
+谁招你了	shéi zhāo nǐ le	35
+谁这么早	shéi zhè me zǎo	1
+谁真谁假	shéi zhēn shéi jiǎ	364
+谁知道啊	shéi zhī dào a	516
+谁知道的	shéi zhī dào de	464
+谁知道来	shéi zhī dào lái	125
+谁知道了	shéi zhī dào le	282
+谁知道里	shéi zhī dào lǐ	134
+谁知道呐	shéi zhī dào nà	149
+谁知到那	shéi zhī dào nà	142
+谁知道囊	shéi zhī dào náng	1
+谁知道呢	shéi zhī dào ne	595
+谁知道你	shéi zhī dào nǐ	465
+谁知道去	shéi zhī dào qù	253
+谁知道啥	shéi zhī dào shá	105
+谁知道也	shéi zhī dào yě	134
+谁知娇养	shéi zhī jiāo yǎng	58
+谁知其数	shéi zhī qí shù	116
+谁指使你	shéi zhǐ shǐ nǐ	183
+谁知我心	shéi zhī wǒ xīn	195
+谁知云路	shéi zhī yún lù	1
+谁知昨天	shéi zhī zuó tiān	199
+谁主沉浮	shéi zhǔ chén fú	484
+谁主浮沉	shéi zhǔ fú chén	264
+谁主君心	shéi zhǔ jūn xīn	1
+谁主天下	shéi zhǔ tiān xià	77
+谁住院了	shéi zhù yuàn le	1
+谁主中原	shéi zhǔ zhōng yuán	92
+谁走谁留	shéi zǒu shéi liú	275
+谁组织的	shéi zǔ zhī de	1
+谁最带种	shéi zuì dài zhǒng	134
+谁做的饭	shéi zuò de fàn	1
+说给谁听	shuō gěi shéi tīng	371
+说谁呢你	shuō shéi ne nǐ	1
+她是谁啊	tā shì shéi a	327
+他是谁啊	tā shì shéi a	1
+他是谁呀	tā shì shéi ya	191
+听谁唱的	tīng shéi chàng de	1
+听谁说的	tīng shéi shuō de	403
+听谁说了	tīng shéi shuō le	58
+忘记了谁	wàng jì le shéi	253
+为谁而鸣	wéi shéi ér míng	440
+为谁而战	wéi shéi ér zhàn	332
+为谁而做	wéi shéi ér zuò	225
+为谁凝伫	wéi shéi níng zhù	1
+为谁攀折	wéi shéi pān zhé	1
+问花笑谁	wèn huā xiào shéi	125
+问你问谁	wèn nǐ wèn shéi	58
+我跟谁过	wǒ gēn shéi guò	1
+我是谁的	wǒ shì shéi de	415
+我是谁呀	wǒ shì shéi ya	203
+我问谁去	wǒ wèn shéi qù	222
+我相信谁	wǒ xiāng xìn shéi	213
+我找谁去	wǒ zhǎo shéi qù	1
+我找谁惹	wǒ zhǎo shéi rě	1
+吓不了谁	xià bù liǎo shéi	1
+想掐死谁	xiǎng qiā sǐ shéi	1
+向谁倾诉	xiàng shéi qīng sù	311
+心里比谁	xīn lǐ bǐ shéi	314
+心事谁同	xīn shì shéi tóng	1
+心事谁知	xīn shì shéi zhī	58
+姓甚名谁	xìng shèn míng shéi	433
+演给谁看	yǎn gěi shéi kàn	1
+也没谁了	yě méi shéi le	399
+以为是谁	yǐ wéi shì shéi	1
+以为谁呢	yǐ wéi shéi ne	1
+用的谁的	yòng de shéi de	1
+又会是谁	yòu huì shì shéi	329
+有没有谁	yǒu méi yǒu shéi	465
+又杀了谁	yòu shā le shéi	210
+由谁承担	yóu shéi chéng dān	450
+由谁负责	yóu shéi fù zé	427
+有谁会懂	yǒu shéi huì dǒng	134
+又谁咎也	yòu shéi jiù yě	92
+由谁来做	yóu shéi lái zuò	301
+有谁能懂	yǒu shéi néng dǒng	225
+有谁认识	yǒu shéi rèn shi	364
+有谁谁谁	yǒu shéi shéi shéi	210
+有谁真得	yǒu shéi zhēn dé	1
+欲凭谁省	yù píng shéi shěng	1
+与谁共眠	yǔ shéi gòng mián	35
+与谁同行	yǔ shéi tóng xíng	454
+与谁同去	yǔ shéi tóng qù	1
+与谁同坐	yǔ shéi tóng zuò	238
+与谁相倚	yǔ shéi xiāng yǐ	1
+怨谁始得	yuàn shéi shǐ dé	1
+在想是谁	zài xiǎng shì shéi	77
+在意过谁	zài yì guò shéi	1
+责任在谁	zé rèn zài shéi	414
+长得像谁	zhǎng de xiàng shéi	332
+找不出谁	zhǎo bù chū shéi	105
+招谁惹谁	zhāo shéi rě shéi	520
+这个谁懂	zhè ge shéi dǒng	58
+这是谁的	zhè shì shéi de	505
+这是谁啦	zhè shì shéi la	1
+这是谁了	zhè shì shéi le	92
+这是谁吗	zhè shì shéi ma	235
+这是谁呀	zhè shì shéi ya	334
+这谁家娃	zhè shéi jiā wá	1
+这谁说话	zhè shéi shuō huà	1
+这谁做的	zhè shéi zuò de	1
+争道谁家	zhēng dào shéi jiā	77
+指的是谁	zhǐ de shì shéi	1
+终日谁来	zhōng rì shéi lái	105
+周幽谁诛	zhōu yōu shéi zhū	58
+主人是谁	zhǔ rén shì shéi	375
+赚谁的钱	zhuàn shéi de qián	387
+装给谁看	zhuāng gěi shéi kàn	1
+准不准谁	zhǔn bù zhǔn shéi	1
+捉兔	zhuō tù	199
+白石塔	bái shí tǎ	1
+板凳宽	bǎn dèng kuān	1
+扁担长	biǎn dàn cháng	1
+剥桔子	bō jú zi	1
+常练习	cháng liàn xí	1
+盛鱼翅	chéng yú chì	1
+醋湿布	cù shī bù	1
+打罢秋	dǎ bà qiū	1
+打翻醋	dǎ fān cù	1
+打了醋	dǎ le cù	1
+灯映星	dēng yìng xīng	1
+弟弟说	dì di shuō	1
+董两家	dǒng liǎng jiā	1
+放下布	fàng xià bù	1
+飞了鹰	fēi le yīng	1
+粉凤凰	fěn fèng huáng	1
+干不干	gàn bú gàn	380
+干不干	gān bù gān	80
+哥哥说	gē ge shuō	1
+搁下醋	gē xià cù	1
+红凤凰	hóng fèng huáng	1
+红凤凰	hóng fèng huáng	1
+花凤凰	huā fèng huáng	1
+花鸟叫	huā niǎo jiào	1
+黄凤凰	huáng fèng huáng	1
+接住豆	jiē zhù dòu	1
+九重天	jiǔ chóng tiān	560
+两个八	liǎng gè bā	1
+两个白	liǎng gè bái	1
+两个百	liǎng gè bǎi	1
+两个貝	liǎng gè bèi	1
+两个比	liǎng gè bǐ	1
+两个匕	liǎng gè bǐ	1
+两个秉	liǎng gè bǐng	1
+两个不	liǎng gè bù	1
+两个倉	liǎng gè cāng	1
+两个昌	liǎng gè chāng	1
+两个巢	liǎng gè cháo	1
+两个屮	liǎng gè chè	1
+两个屮	liǎng gè chè	1
+两个車	liǎng gè chē	1
+两个車	liǎng gè chē	1
+两个臣	liǎng gè chén	1
+两个齒	liǎng gè chǐ	1
+两个虫	liǎng gè chóng	1
+两个巛	liǎng gè chuān	1
+两个串	liǎng gè chuàn	1
+两个朿	liǎng gè cì	1
+两个大	liǎng gè dà	1
+两个歹	liǎng gè dǎi	1
+两个呆	liǎng gè dāi	1
+两个東	liǎng gè dōng	1
+两个二	liǎng gè èr	1
+两个而	liǎng gè ér	1
+两个耳	liǎng gè ěr	1
+两个凡	liǎng gè fán	1
+两个飞	liǎng gè fēi	1
+两个風	liǎng gè fēng	1
+两个夫	liǎng gè fū	1
+两个巿	liǎng gè fú	1
+两个畐	liǎng gè fú	1
+两个干	liǎng gè gàn	1
+两个戈	liǎng gè gē	1
+两个弓	liǎng gè gōng	1
+两个古	liǎng gè gǔ	1
+两个瓜	liǎng gè guā	1
+两个果	liǎng gè guǒ	1
+两个𢎘	liǎng gè hàn	1
+两个禾	liǎng gè hé	1
+两个户	liǎng gè hù	1
+两个虎	liǎng gè hǔ	1
+两个火	liǎng gè huǒ	1
+两个彐	liǎng gè jì	1
+两个吉	liǎng gè jí	1
+两个几	liǎng gè jǐ	1
+两个旡	liǎng gè jì	1
+两个見	liǎng gè jiàn	1
+两个卪	liǎng gè jié	1
+两个巾	liǎng gè jīn	1
+两个金	liǎng gè jīn	1
+两个斤	liǎng gè jīn	1
+两个井	liǎng gè jǐng	1
+两个竟	liǎng gè jìng	1
+两个竞	liǎng gè jìng	1
+两个九	liǎng gè jiǔ	1
+两个句	liǎng gè jù	1
+两个口	liǎng gè kǒu	1
+两个来	liǎng gè lái	1
+两个來	liǎng gè lái	1
+两个老	liǎng gè lǎo	1
+两个力	liǎng gè lì	1
+两个立	liǎng gè lì	1
+两个隶	liǎng gè lì	1
+两个龍	liǎng gè lóng	1
+两个龙	liǎng gè lóng	1
+两个马	liǎng gè mǎ	1
+两个馬	liǎng gè mǎ	1
+两个毛	liǎng gè máo	1
+两个米	liǎng gè mǐ	1
+两个面	liǎng gè miàn	1
+两个明	liǎng gè míng	1
+两个牟	liǎng gè móu	1
+两个母	liǎng gè mǔ	1
+两个木	liǎng gè mù	1
+两个目	liǎng gè mù	1
+两个男	liǎng gè nán	1
+两个𡥦	liǎng gè nǐ	1
+两个廿	liǎng gè niàn	1
+两个卄	liǎng gè niàn	1
+两个鸟	liǎng gè niǎo	1
+两个牛	liǎng gè niú	1
+两个女	liǎng gè nǚ	1
+两个𠂢	liǎng gè pài	1
+两个片	liǎng gè piàn	1
+两个启	liǎng gè qǐ	1
+两个桼	liǎng gè qī	1
+两个奇	liǎng gè qí	1
+两个乞	liǎng gè qǐ	1
+两个欠	liǎng gè qiàn	1
+两个僉	liǎng gè qiān	1
+两个區	liǎng gè qū	1
+两个犬	liǎng gè quǎn	1
+两个夋	liǎng gè qūn	1
+两个人	liǎng gè rén	1
+两个日	liǎng gè rì	1
+两个入	liǎng gè rù	1
+两个卅	liǎng gè sà	1
+两个山	liǎng gè shān	1
+两个善	liǎng gè shàn	1
+两个舌	liǎng gè shé	1
+两个申	liǎng gè shēn	1
+两个生	liǎng gè shēng	1
+两个尸	liǎng gè shī	1
+两个石	liǎng gè shí	1
+两个示	liǎng gè shì	1
+两个豕	liǎng gè shǐ	1
+两个手	liǎng gè shǒu	1
+两个束	liǎng gè shù	1
+两个水	liǎng gè shuǐ	1
+两个厶	liǎng gè sī	1
+两个厶	liǎng gè sī	1
+两个田	liǎng gè tián	1
+两个天	liǎng gè tiān	1
+两个土	liǎng gè tǔ	1
+两个罒	liǎng gè wǎng	1
+两个王	liǎng gè wáng	1
+两个兀	liǎng gè wù	1
+两个㐅	liǎng gè wǔ	1
+两个夕	liǎng gè xī	1
+两个习	liǎng gè xí	1
+两个昔	liǎng gè xī	1
+两个喜	liǎng gè xǐ	1
+两个㔾	liǎng gè xiān	1
+两个先	liǎng gè xiān	1
+两个香	liǎng gè xiāng	1
+两个享	liǎng gè xiǎng	1
+两个心	liǎng gè xīn	1
+两个辛	liǎng gè xīn	1
+两个兄	liǎng gè xiōng	1
+两个玄	liǎng gè xuán	1
+两个牙	liǎng gè yá	1
+两个言	liǎng gè yán	1
+两个炎	liǎng gè yán	1
+两个羊	liǎng gè yáng	1
+两个幺	liǎng gè yāo	1
+两个堯	liǎng gè yáo	1
+两个一	liǎng gè yī	1
+两个乂	liǎng gè yì	1
+两个乙	liǎng gè yǐ	1
+两个亦	liǎng gè yì	1
+两个易	liǎng gè yì	1
+两个㣇	liǎng gè yì	1
+两个邑	liǎng gè yì	1
+两个音	liǎng gè yīn	1
+两个尹	liǎng gè yǐn	1
+两个永	liǎng gè yǒng	1
+两个又	liǎng gè yòu	1
+两个魚	liǎng gè yú	1
+两个余	liǎng gè yú	1
+两个予	liǎng gè yǔ	1
+两个禺	liǎng gè yú	1
+两个月	liǎng gè yuè	1
+两个曰	liǎng gè yuē	1
+两个真	liǎng gè zhēn	1
+两个止	liǎng gè zhǐ	1
+两个支	liǎng gè zhī	1
+两个隻	liǎng gè zhī	1
+两个至	liǎng gè zhì	1
+两个隹	liǎng gè zhuī	1
+两个子	liǎng gè zi	1
+两个走	liǎng gè zǒu	1
+两个足	liǎng gè zú	1
+两个左	liǎng gè zuǒ	1
+买了布	mǎi le bù	1
+那是蝉	nà shì chán	1
+跑了兔	pǎo le tù	1
+青葡萄	qīng pú táo	1
+认真学	rèn zhēn xué	1
+如雾里	rú wù lǐ	1
+软舌头	ruǎn shé tou	1
+三个白	sān gè bái	1
+三个百	sān gè bǎi	1
+三个宝	sān gè bǎo	1
+三个贝	sān gè bèi	1
+三个屮	sān gè chè	1
+三个屮	sān gè chè	1
+三个車	sān gè chē	1
+三个虫	sān gè chóng	1
+三个䖝	sān gè chóng	1
+三个朿	sān gè cì	1
+三个大	sān gè dà	1
+三个刀	sān gè dāo	1
+三个動	sān gè dòng	1
+三个斗	sān gè dòu	1
+三个耳	sān gè ěr	1
+三个方	sān gè fāng	1
+三个飛	sān gè fēi	1
+三个風	sān gè fēng	1
+三个盖	sān gè gài	1
+三个个	sān gè gè	1
+三个弓	sān gè gōng	1
+三个瓜	sān gè guā	1
+三个光	sān gè guāng	1
+三个果	sān gè guǒ	1
+三个寒	sān gè hán	1
+三个户	sān gè hù	1
+三个火	sān gè huǒ	1
+三个吉	sān gè jí	1
+三个甲	sān gè jiǎ	1
+三个加	sān gè jiā	1
+三个介	sān gè jiè	1
+三个金	sān gè jīn	1
+三个九	sān gè jiǔ	1
+三个可	sān gè kě	1
+三个客	sān gè kè	1
+三个空	sān gè kōng	1
+三个口	sān gè kǒu	1
+三个老	sān gè lǎo	1
+三个了	sān gè le	1
+三个雷	sān gè léi	1
+三个力	sān gè lì	1
+三个立	sān gè lì	1
+三个林	sān gè lín	1
+三个龍	sān gè lóng	1
+三个鹿	sān gè lù	1
+三个圥	sān gè lù	1
+三个马	sān gè mǎ	1
+三个亇	sān gè ma	1
+三个毛	sān gè máo	1
+三个門	sān gè mén	1
+三个米	sān gè mǐ	1
+三个面	sān gè miàn	1
+三个木	sān gè mù	1
+三个目	sān gè mù	1
+三个男	sān gè nán	1
+三个鳥	sān gè niǎo	1
+三个鸟	sān gè niǎo	1
+三个㖖	sān gè niè	1
+三个牛	sān gè niú	1
+三个女	sān gè nǚ	1
+三个丿	sān gè piě	1
+三个七	sān gè qī	1
+三个企	sān gè qǐ	1
+三个欠	sān gè qiàn	1
+三个千	sān gè qiān	1
+三个羗	sān gè qiāng	1
+三个秦	sān gè qín	1
+三个去	sān gè qù	1
+三个泉	sān gè quán	1
+三个犬	sān gè quǎn	1
+三个全	sān gè quán	1
+三个𡿨	sān gè quǎn	1
+三个人	sān gè rén	1
+三个日	sān gè rì	1
+三个若	sān gè ruò	1
+三个山	sān gè shān	1
+三个少	sān gè shǎo	1
+三个舌	sān gè shé	1
+三个舍	sān gè shě	1
+三个申	sān gè shēn	1
+三个生	sān gè shēng	1
+三个市	sān gè shì	1
+三个十	sān gè shí	1
+三个士	sān gè shì	1
+三个石	sān gè shí	1
+三个手	sān gè shǒu	1
+三个束	sān gè shù	1
+三个水	sān gè shuǐ	1
+三个朔	sān gè shuò	1
+三个厶	sān gè sī	1
+三个厶	sān gè sī	1
+三个太	sān gè tài	1
+三个田	sān gè tián	1
+三个天	sān gè tiān	1
+三个𠧪	sān gè tiáo	1
+三个𠧪	sān gè tiáo	1
+三个土	sān gè tǔ	1
+三个兔	sān gè tù	1
+三个妥	sān gè tuǒ	1
+三个罒	sān gè wǎng	1
+三个文	sān gè wén	1
+三个夏	sān gè xià	1
+三个㔾	sān gè xiān	1
+三个県	sān gè xiàn	1
+三个香	sān gè xiāng	1
+三个小	sān gè xiǎo	1
+三个心	sān gè xīn	1
+三个興	sān gè xìng	1
+三个言	sān gè yán	1
+三个羊	sān gè yáng	1
+三个頁	sān gè yè	1
+三个也	sān gè yě	1
+三个宜	sān gè yí	1
+三个因	sān gè yīn	1
+三个用	sān gè yòng	1
+三个又	sān gè yòu	1
+三个魚	sān gè yú	1
+三个玉	sān gè yù	1
+三个原	sān gè yuán	1
+三个厡	sān gè yuán	1
+三个月	sān gè yuè	1
+三个雲	sān gè yún	1
+三个爪	sān gè zhǎo	1
+三个止	sān gè zhǐ	1
+三个直	sān gè zhí	1
+三个𠙽	sān gè zhì	1
+三个𦉼	sān gè zhì	1
+四个曰	sān gè zhì	1
+三个𣥚	sān gè zhì	1
+三个至	sān gè zhì	1
+三个丶	sān gè zhǔ	1
+三个丶	sān gè zhǔ	1
+三个竹	sān gè zhú	1
+三个隹	sān gè zhuī	1
+三个子	sān gè zi	1
+三个足	sān gè zú	1
+十和四	shí hé sì	1
+十是十	shí shì shí	1
+史肖石	shǐ xiào shí	1
+史肖石	shǐ xiào shí	1
+石小四	shí xiǎo sì	1
+石小四	shí xiǎo sì	1
+手指头	shǒu zhǐ tou	1
+四个匕	sì gè bǐ	1
+四个屮	sì gè chè	1
+四个屮	sì gè chè	1
+四个車	sì gè chē	1
+四个春	sì gè chūn	1
+四个朿	sì gè cì	1
+四个風	sì gè fēng	1
+四个工	sì gè gōng	1
+四个果	sì gè guǒ	1
+四个火	sì gè huǒ	1
+四个甲	sì gè jiǎ	1
+四个金	sì gè jīn	1
+四个口	sì gè kǒu	1
+四个困	sì gè kùn	1
+四个老	sì gè lǎo	1
+四个雷	sì gè léi	1
+四个林	sì gè lín	1
+四个龍	sì gè lóng	1
+四个門	sì gè mén	1
+四个牛	sì gè niú	1
+四个且	sì gè qiě	1
+四个囚	sì gè qiú	1
+四个泉	sì gè quán	1
+四个人	sì gè rén	1
+四个日	sì gè rì	1
+四个石	sì gè shí	1
+四个水	sì gè shuǐ	1
+四个厶	sì gè sī	1
+四个厶	sì gè sī	1
+四个天	sì gè tiān	1
+四个田	sì gè tián	1
+四个土	sì gè tǔ	1
+四个先	sì gè xiān	1
+四个小	sì gè xiǎo	1
+四个興	sì gè xìng	1
+四个言	sì gè yán	1
+四个乂	sì gè yì	1
+四个又	sì gè yòu	1
+四个魚	sì gè yú	1
+四个月	sì gè yuè	1
+四个雲	sì gè yún	1
+四个竹	sì gè zhú	1
+四是四	sì shì sì	1
+四十四	sì shí sì	1
+提锡壶	tí xī hú	1
+听物理	tīng wù lǐ	1
+腿说嘴	tuǐ shuō zuǐ	1
+为一名	wéi yì míng	1
+为一名	wèi yì míng	1
+星映灯	xīng yìng dēng	1
+杨家羊	yáng jiā yáng	1
+硬石头	yìng shí tou	1
+游西湖	yóu xī hú	1
+越长越	yuè cháng yuè	1
+越长大	yuè zhǎng dà	1
+越长越	yuè zhǎng yuè	1
+这是蚕	zhè shì cán	1
+紫瓷盘	zǐ cí pán	1
+紫葡萄	zǐ pú táo	1
+嘴不黑	zuǐ bù hēi	1
+嘴说腿	zuǐ shuō tuǐ	1
+白白的鹅	bái bái de é	1
+便不便宜	biàn bú biàn yí	1
+便宜行事	biàn yí xíng shì	1
+便宜之内	biàn yí zhī nèi	1
+不剥桔子	bù bō jú zi	1
+不吃桔子	bù chī jú zi	1
+不是字纸	bú shì zì zhǐ	1
+鹅要过河	é yào guò hé	1
+肥肥的鹅	féi féi de é	1
+粉红凤凰	fěn hóng fèng huáng	1
+河要渡鹅	hé yào dù é	1
+红粉凤凰	hóng fěn fèng huáng	1
+蒋家的墙	jiǎng jiā de qiáng	1
+宽宽的河	kuān kuān de hé	1
+略长一些	lüè cháng yì xiē	42
+略长几岁	lüè zhǎng jǐ suì	1
+啪啪砰砰	pā pā pēng pēng	1
+砰砰啪啪	pēng pēng pā pā	1
+同种冬瓜	tóng zhǒng dōng guā	1
+勿理物理	wù lǐ wù lǐ	1
+惜乎锡壶	xī hū xī hú	1
+小直摇头	xiǎo zhí yáo tóu	1
+越长越好	yuè cháng yuè hǎo	1
+越长越快	yuè zhǎng yuè kuài	1
+安心唱爱歌	ān xīn chàng ài gē	1
+昂首吸飞蛾	áng shǒu xī fēi é	1
+遨游真快活	áo yóu zhēn kuài huó	1
+拔腿就逃掉	bá tuǐ jiù táo diào	1
+白鹅与灰鹅	bái é yǔ huī é	1
+白石搭石塔	bái shí dā shí tǎ	1
+白塔白石搭	bái tǎ bái shí dā	1
+白塔白又滑	bái tǎ bái yòu huá	1
+本是虎捉虎	běn shì hǔ zhuō hǔ	1
+不会吹喇叭	bú huì chuī lǎ bā	1
+不会折喇叭	bú huì zhé lǎ bā	1
+不能再挨饿	bù néng zài ái è	1
+不要扔了梨	bú yào rēng le lí	1
+草窝暗又矮	cǎo wō àn yòu ǎi	1
+唱得渴又饿	chàng dé kě yòu è	1
+锄头怨猪头	chú tou yuàn zhū tóu	1
+锄头撞石头	chú tou zhuàng shí tou	1
+窗上一支枪	chuāng shàng yì zhī qiāng	1
+窗下一箩糠	chuāng xià yī luó kāng	1
+窗要糠让枪	chuāng yào kāng ràng qiāng	1
+吹着小喇叭	chuī zhe xiǎo lǎ bā	1
+搭好白石塔	dā hǎo bái shí tǎ	1
+带着腊梅花	dài zhe là méi huā	1
+地上满山灯	dì shàng mǎn shān dēng	1
+地上七块冰	dì shàng qī kuài bīng	1
+地上一只猫	dì shàng yì zhī māo	1
+地上有只猫	dì shàng yǒu zhǐ māo	1
+地下有石头	dì xià yǒu shí tou	1
+弟子三十三	dì zǐ sān shí sān	1
+雕吓走了猫	diāo xià zǒu le māo	1
+都说要小个	dōu shuō yào xiǎo gè	1
+多多让哥哥	duō duō ràng gē ge	1
+哥哥让多多	gē ge ràng duō duō	1
+鼓上画老虎	gǔ shàng huà lǎo hǔ	1
+还是布补虎	hái shì bù bǔ hǔ	1
+还是狗怕猴	hái shì gǒu pà hóu	1
+还是狗咬猴	hái shì gǒu yǎo hóu	1
+还是河渡鹅	hái shì hé dù é	1
+还是盆碰瓶	hái shì pén pèng píng	1
+还是热日头	hái shì rè rì tou	1
+河边两只鹅	hé biān liǎng zhǐ é	1
+河里真暖和	hé lǐ zhēn nuǎn huo	1
+黑猫白鼻子	hēi māo bái bí zi	1
+互相不退让	hù xiāng bú tuì ràng	1
+胡子打驼子	hú zi dǎ tuó zi	1
+花粉花凤凰	huā fěn huā fèng huáng	1
+花鸟怕灰猫	huā niǎo pà huī māo	1
+黄贺搞木刻	huáng hè gǎo mù kè	1
+假梨差不离	jiǎ lí chà bù lí	1
+教练和主力	jiào liàn hé zhǔ lì	1
+糠赶不走枪	kāng gǎn bù zǒu qiāng	1
+糠埋住了枪	kāng mái zhù le qiāng	1
+糠要枪上墙	kāng yào qiāng shàng qiáng	1
+吭哧吭哧走	kēng chī kēng chī zǒu	1
+口渴要吃梨	kǒu kě yào chī lí	1
+来到山坡坡	lái dào shān pō pō	1
+老刘夸小牛	lǎo liú kuā xiǎo niú	1
+李虎满屋转	lǐ hǔ mǎn wū zhuǎn	1
+梨子掉下地	lí zǐ diào xià dì	1
+猫赶飞了雕	māo gǎn fēi le diāo	1
+面铺门朝南	miàn pù mén cháo nán	1
+哦哦爱唱歌	ó ó ài chàng gē	1
+盆里有个瓶	pén lǐ yǒu gè píng	1
+瓶口有塞头	píng kǒu yǒu sāi tóu	1
+婆婆和嬷嬷	pó pó hé mó mó	1
+枪落进了糠	qiāng luò jìn le kāng	1
+墙上七枚钉	qiáng shàng qī méi dīng	1
+墙要枪上窗	qiáng yào qiāng shàng chuāng	1
+撒了羊骨头	sā le yáng gǔ tou	1
+山里有个寺	shān lǐ yǒu gè sì	1
+山外有个市	shān wài yǒu gè shì	1
+伸手拿骨头	shēn shǒu ná gǔ tou	1
+师傅四十四	shī fù sì shí sì	1
+十四和四十	shí sì hé sì shí	1
+十四是十四	shí sì shì shí sì	1
+石头砸猪头	shí tou zá zhū tóu	1
+树上七只莺	shù shàng qī zhǐ yīng	1
+树下蹲条狗	shù xià dūn tiáo gǒu	1
+四十和十四	sì shí hé shí sì	1
+四十是四十	sì shí shì sì shí	1
+台上七盏灯	tái shàng qī zhǎn dēng	1
+天上七颗星	tiān shàng qī kē xīng	1
+驼子打胡子	tuó zi dǎ hú zi	1
+驼子挑螺蛳	tuó zi tiāo luó sī	1
+外婆乐呵呵	wài pó lè hē hē	1
+王克写诗歌	wáng kè xiě shī gē	1
+雾里看物理	wù lǐ kàn wù lǐ	1
+锡壶掉西湖	xī hú diào xī hú	1
+下了一天雨	xià le yì tiān yǔ	1
+小鸟唱枝头	xiǎo niǎo chàng zhī tóu	1
+小猪扭头瞅	xiǎo zhū niǔ tóu chǒu	1
+小猪怨锄头	xiǎo zhū yuàn chú tou	1
+一盘生鱼翅	yì pán shēng yú chì	1
+一盘熟鱼翅	yì pán shú yú chì	1
+一天天下雨	yì tiān tiān xià yǔ	1
+有吃又有喝	yǒu chī yòu yǒu hē	1
+沾了一身泥	zhān le yì shēn ní	1
+只得去过河	zhǐ de qù guò hé	1
+只需洗掉泥	zhǐ xū xǐ diào ní	1
+嘴里有舌头	zuǐ lǐ yǒu shé tou	1
+坐下分果果	zuò xià fēn guǒ guǒ	1
+绊倒了秃丫头	bàn dǎo le tū yā tou	1
+板凳比扁担宽	bǎn dèng bǐ biǎn dàn kuān	1
+扁担比板凳长	biǎn dàn bǐ bǎn dèng cháng	1
+别喇叭的哑巴	bié lǎ bā de yǎ bā	1
+不知是鹅过河	bù zhī shì é guò hé	1
+不知是猴咬狗	bù zhī shì hóu yǎo gǒu	1
+不知是瓶碰盆	bù zhī shì píng pèng pén	1
+蚕常在叶里藏	cán cháng zài yè lǐ cáng	1
+蝉常在林里唱	chán cháng zài lín lǐ chàng	1
+吃桔子吃桔子	chī jú zi chī jú zi	1
+到底是布补鼓	dào dǐ shì bù bǔ gǔ	1
+地上有只白猫	dì shàng yǒu zhǐ bái māo	1
+地下的硬石头	dì xià de yìng shí tou	1
+地下有块石头	dì xià yǒu kuài shí tou	1
+二班有个王克	èr bān yǒu gè wáng kè	1
+房子里有箱子	fáng zi lǐ yǒu xiāng zi	1
+光动腿不动嘴	guāng dòng tuǐ bú dòng zuǐ	1
+光动嘴不动腿	guāng dòng zuǐ bú dòng tuǐ	1
+盒子里有镯子	hé zi lǐ yǒu zhuó zi	1
+盒子外有匣子	hé zi wài yǒu xiá zi	1
+黑猫的白鼻子	hēi māo de bái bí zi	1
+红红想要红花	hóng hóng xiǎng yào hóng huā	1
+华华想要黄花	huá huá xiǎng yào huáng huā	1
+花鸟瞧灰猫跳	huā niǎo qiáo huī māo tiào	1
+回家去见妈妈	huí jiā qù jiàn mā ma	1
+灰猫听花鸟叫	huī māo tīng huā niǎo jiào	1
+究竟是猴怕狗	jiū jìng shì hóu pà gǒu	1
+拉拉会折喇叭	lā lā huì zhé lǎ bā	1
+妈妈用布来补	mā ma yòng bù lái bǔ	1
+牛牛要顶妞妞	niú niú yào dǐng niū niū	1
+史肖石年四十	shǐ xiào shí nián sì shí	1
+石小四年十四	shí xiǎo sì nián shí sì	1
+手上的手指头	shǒu shàng de shǒu zhǐ tou	1
+四和十四和十	sì hé shí sì hé shí	1
+天上有个日头	tiān shàng yǒu gè rì tou	1
+腿说嘴爱卖嘴	tuǐ shuō zuǐ ài mài zuǐ	1
+匣子里有盒子	xiá zi lǐ yǒu hé zi	1
+匣子外有箱子	xiá zi wài yǒu xiāng zi	1
+箱子里有匣子	xiāng zi lǐ yǒu xiá zi	1
+箱子外有房子	xiāng zi wài yǒu fáng zi	1
+丫丫会吹喇叭	yā yā huì chuī lǎ bā	1
+一班有个黄贺	yì bān yǒu gè huáng hè	1
+镯子外有盒子	zhuó zi wài yǒu hé zi	1
+嘴里的软舌头	zuǐ lǐ de ruǎn shé tou	1
+嘴里有个舌头	zuǐ lǐ yǒu gè shé tou	1
+嘴说腿爱跑腿	zuǐ shuō tuǐ ài pǎo tuǐ	1
+八百标兵奔北坡	bā bǎi biāo bīng bēn běi pō	1
+八朵粉红大荷花	bā duǒ fěn hóng dà hé huā	1
+板凳没有扁担长	bǎn dèng méi yǒu biǎn dàn cháng	1
+搬来白石搭白塔	bān lái bái shí dā bái tǎ	1
+北坡炮兵并排跑	běi pō pào bīng bìng pái pǎo	1
+彼此匆匆跑回头	bǐ cǐ cōng cōng pǎo huí tóu	1
+壁虎不敢咬李虎	bì hǔ bú gǎn yǎo lǐ hǔ	1
+扁担没有板凳宽	biǎn dàn méi yǒu bǎn dèng kuān	1
+标兵怕碰炮兵炮	biāo bīng pà pèng pào bīng pào	1
+不如不长腿和嘴	bù rú bù cháng tuǐ hé zuǐ	1
+不是鸡卵品种乱	bú shì jī luǎn pǐn zhǒng luàn	1
+吃完柿子玩石子	chī wán shì zi wán shí zǐ	1
+从北边来个哑吧	cóng běi biān lái gè yǎ ba	1
+大渠水流进小渠	dà qú shuǐ liú jìn xiǎo qú	1
+到了家里吃柿子	dào le jiā lǐ chī shì zi	1
+地下有块破砖头	dì xià yǒu kuài pò zhuān tóu	1
+二人山前来比腿	èr rén shān qián lái bǐ tuǐ	1
+二人山前来比眼	èr rén shān qián lái bǐ yǎn	1
+而是鸡卵皮太软	ér shì jī luǎn pí tài ruǎn	1
+反正都是练舌头	fǎn zhèng dōu shì liàn shé tou	1
+粉红墙上画凤凰	fěn hóng qiáng shàng huà fèng huáng	1
+风吹藤动铜铃动	fēng chuī téng dòng tóng líng dòng	1
+凤凰画在粉红墙	fèng huáng huà zài fěn hóng qiáng	1
+风停藤停铜铃停	fēng tíng téng tíng tóng líng tíng	1
+刚往窗上糊字纸	gāng wǎng chuāng shàng hú zì zhǐ	1
+狗翻起来咬住猴	gǒu fān qǐ lái yǎo zhù hóu	1
+狗回头来望望猴	gǒu huí tóu lái wàng wàng hóu	1
+挂上蓝布棉门帘	guà shàng lán bù mián mén lián	1
+红红有两朵黄花	hóng hóng yǒu liǎng duǒ huáng huā	1
+猴回头来望望狗	hóu huí tóu lái wàng wàng gǒu	1
+猴跳下来撞了狗	hóu tiào xià lái zhuàng le gǒu	1
+湖州有个胡梳子	hú zhōu yǒu gè hú shū zi	1
+花了硬币四毛四	huā le yìng bì sì máo sì	1
+黄贺完成了木刻	huáng hè wán chéng le mù kè	1
+回家吃饭路又远	huí jiā chī fàn lù yòu yuǎn	1
+灰猫跳起抓花鸟	huī māo tiào qǐ zhuā huā niǎo	1
+回头看见鹰抓兔	huí tóu kàn jiàn yīng zhuā tù	1
+蒋家要杨家赔墙	jiǎng jiā yào yáng jiā péi qiáng	1
+经常练说十和四	jīng cháng liàn shuō shí hé sì	1
+拉拉只会折喇叭	lā lā zhǐ huì zhé lǎ bā	1
+蓝教练是女教练	lán jiào liàn shì nǚ jiào liàn	1
+蓝南是男篮主力	lán nán shì nán lán zhǔ lì	1
+老李拉了一车栗	lǎo lǐ lā le yì chē lì	1
+老李拉栗去换梨	lǎo lǐ lā lì qù huàn lí	1
+老李人称李大力	lǎo lǐ rén chēng lǐ dà lì	1
+老罗拉了一车梨	lǎo luó lā le yì chē lí	1
+老罗拉梨做梨酒	lǎo luó lā lí zuò lí jiǔ	1
+老罗人称大力罗	lǎo luó rén chēng dà lì luó	1
+里头有堆羊骨头	lǐ tou yǒu duī yáng gǔ tou	1
+两个乐得笑哈哈	liǎng gè lè de xiào hā hā	1
+龙洞困龙在深洞	lóng dòng kùn lóng zài shēn dòng	1
+龙去农田做农工	lóng qù nóng tián zuò nóng gōng	1
+吕教练是男教练	lǚ jiào liàn shì nán jiào liàn	1
+吕楠是女篮主力	lǚ nán shì nǚ lán zhǔ lì	1
+妈妈见了笑哈哈	mā ma jiàn le xiào hā hā	1
+买了十个小柿子	mǎi le shí gè xiǎo shì zi	1
+卖卵卖卵使劲喊	mài luǎn mài luǎn shǐ jìn hǎn	1
+满山灯接满天星	mǎn shān dēng jiē mǎn tiān xīng	1
+满天星亮满天庭	mǎn tiān xīng liàng mǎn tiān tíng	1
+面铺还是门朝南	miàn pù hái shì mén cháo nán	1
+莫把四字说成十	mò bǎ sì zì shuō chéng shí	1
+嬷嬷默默拔萝卜	mó mó mò mò bá luó bo	1
+拿着四个小篮子	ná zhe sì gè xiǎo lán zi	1
+泥里两对鸟倒吊	ní lǐ liǎng duì niǎo dào diào	1
+妞妞赶牛牛不走	niū niū gǎn niú niú bù zǒu	1
+妞妞护柳牛扭头	niū niū hù liǔ niú niǔ tóu	1
+妞妞护柳要赶牛	niū niū hù liǔ yào gǎn niú	1
+妞妞捡起小石头	niū niū jiǎn qǐ xiǎo shí tóu	1
+妞妞扭牛牛更拗	niū niū niǔ niú niú gèng ǎo	1
+妞妞扭牛牛更牛	niū niū niǔ niú niú gèng niú	1
+牛牛扭头瞅妞妞	niú niú niǔ tóu chǒu niū niū	1
+牛牛要吃河边柳	niú niú yào chī hé biān liǔ	1
+牛牛要顶小妞妞	niú niú yào dǐng xiǎo niū niū	1
+趴着八只活蛤蟆	pā zhe bā zhǐ huó há má	1
+趴着一只活蛤蟆	pā zhe yì zhī huó há má	1
+炮兵怕把标兵碰	pào bīng pà bǎ biāo bīng pèng	1
+婆婆默默采蘑菇	pó pó mò mò cǎi mó gū	1
+坡上立着一只鹅	pō shàng lì zhe yì zhī é	1
+坡上卧着一只鹅	pō shàng wò zhe yì zhī é	1
+坡下就是一条河	pō xià jiù shì yì tiáo hé	1
+坡下流着一条河	pō xià liú zhe yì tiáo hé	1
+桥西走来一只猴	qiáo xī zǒu lái yì zhī hóu	1
+青龙洞中涌出龙	qīng lóng dòng zhōng yǒng chū lóng	1
+青龙做梦出龙洞	qīng lóng zuò mèng chū lóng dòng	1
+山后有个崔腿粗	shān hòu yǒu gè cuī tuǐ cū	1
+山后有个严眼圆	shān hòu yǒu gè yán yǎn yuán	1
+山前有个崔粗腿	shān qián yǒu gè cuī cū tuǐ	1
+山前有个严圆眼	shān qián yǒu gè yán yuán yǎn	1
+上街打醋又买布	shàng jiē dǎ cù yòu mǎi bù	1
+上前去追鹰和兔	shàng qián qù zhuī yīng hé tù	1
+拾了四十小石子	shí le sì shí xiǎo shí zi	1
+石小四和史肖石	shí xiǎo sì hé shǐ xiào shí	1
+树上结了白果果	shù shàng jié le bái guǒ guǒ	1
+谁都不来买鸡卵	shuí dōu bù lái mǎi jī luǎn	1
+谁说十四是适时	shuí shuō shí sì shì shì shí	1
+谁说四十是细席	shuí shuō sì shí shì xì xí	1
+四个孩子出果市	sì gè hái zi chū guǒ shì	1
+送在口里啃骨头	sòng zài kǒu lǐ kěn gǔ tou	1
+他的舌头没伸直	tā de shé tou méi shēn zhí	1
+他的舌头没用力	tā de shé tou méi yòng lì	1
+藤条头上挂铜铃	téng tiáo tóu shàng guà tóng líng	1
+踢倒老刘一瓶油	tī dào lǎo liú yì píng yóu	1
+提个篮子卖鸡卵	tí gè lán zi mài jī luǎn	1
+提拉塔嘛的喇嘛	tí lā tǎ ma de lǎ ma	1
+提拉着五斤塔嘛	tí lā zhe wǔ jīn tǎ ma	1
+王克二人搞创作	wáng kè èr rén gǎo chuàng zuò	1
+王克写好了诗歌	wáng kè xiě hǎo le shī gē	1
+吓得牛牛扭头溜	xià dé niú niú niǔ tóu liū	1
+吓得牛牛扭头走	xià dé niú niú niǔ tóu zǒu	1
+先画一朵腊梅花	xiān huà yì duǒ là méi huā	1
+小葛画了朵黄花	xiǎo gé huà le duǒ huáng huā	1
+小郭画了朵红花	xiǎo guō huà le duǒ hóng huā	1
+小丽用泥学捏梨	xiǎo lì yòng ní xué niē lí	1
+小牛回家取来油	xiǎo niú huí jiā qǔ lái yóu	1
+小渠水流进大渠	xiǎo qú shuǐ liú jìn dà qú	1
+小猪小猪扛锄头	xiǎo zhū xiǎo zhū káng chú tou	1
+行到桥心碰了头	xíng dào qiáo xīn pèng le tóu	1
+休将十字说成四	xiū jiāng shí zì shuō chéng sì	1
+压死了杨家的羊	yā sǐ le yáng jiā de yáng	1
+丫丫只会吹喇叭	yā yā zhǐ huì chuī lǎ bā	1
+眼看着梨手捏泥	yǎn kàn zhe lí shǒu niē ní	1
+杨家养了一只羊	yáng jiā yǎng le yì zhī yáng	1
+杨家要蒋家赔羊	yáng jiā yào jiǎng jiā péi yáng	1
+要吃清蒸美鱼翅	yào chī qīng zhēng měi yú chì	1
+腰里别着个喇叭	yāo lǐ bié zhe gè lǎ bā	1
+一次撕下横字纸	yí cì sī xià héng zì zhǐ	1
+一次撕下竖字纸	yí cì sī xià shù zì zhǐ	1
+一口鱼翅刚到嘴	yì kǒu yú chì gāng dào zuǐ	1
+一同来到阅览室	yì tóng lái dào yuè lǎn shì	1
+一位爷爷他姓顾	yí wèi yé ye tā xìng gù	1
+有个懒汉本姓阮	yǒu gè lǎn hàn běn xìng ruǎn	1
+有个面铺门朝南	yǒu gè miàn pù mén cháo nán	1
+又画一个小喇叭	yòu huà yí gè xiǎo lǎ bā	1
+由于二人搞协作	yóu yú èr rén gǎo xié zuò	1
+鱼刺刺进齿缝里	yú cì cì jìn chǐ fèng lǐ	1
+愚公捅开青龙洞	yú gōng tǒng kāi qīng lóng dòng	1
+摘了蓝布棉门帘	zhāi le lán bù mián mén lián	1
+撞塌了蒋家的墙	zhuàng tā le jiǎng jiā de qiáng	1
+桌上放块橡皮泥	zhuō shàng fàng kuài xiàng pí ní	1
+自从来了新愚公	zì cóng lái le xīn yú gōng	1
+做了千年万载梦	zuò le qiān nián wàn zǎi mèng	1
+白猫的黑鼻子破了	bái māo de hēi bí zi pò le	1
+白猫山上有座白庙	bái māo shān shàng yǒu zuò bái miào	1
+白石塔白石白又滑	bái shí tǎ bái shí bái yòu huá	1
+扁担和板凳板凳宽	biǎn dàn hé bǎn dèng bǎn dèng kuān	1
+扁担要绑在板凳上	biǎn dàn yào bǎng zài bǎn dèng shàng	1
+吃葡萄不吐葡萄皮	chī pú táo bù tǔ pú táo pí	1
+从南边来了个喇嘛	cóng nán biān lái le gè lǎ ma	1
+雕与猫树上有只雕	diāo yǔ māo shù shàng yǒu zhǐ diāo	1
+董家都懂得种冬瓜	dǒng jiā dōu dǒng de zhǒng dōng guā	1
+分不清是灯还是星	fēn bù qīng shì dēng hái shì xīng	1
+分果果多多和哥哥	fēn guǒ guǒ duō duō hé gē ge	1
+公园有四排石狮子	gōng yuán yǒu sì pái shí shī zi	1
+狗与猴树上卧只猴	gǒu yǔ hóu shù shàng wò zhǐ hóu	1
+还是不让小牛不油	hái shì bú ràng xiǎo niú bù yóu	1
+黑猫的白鼻子不破	hēi māo de bái bí zi bú pò	1
+灰猫追花鸟灰猫跳	huī māo zhuī huā niǎo huī māo tiào	1
+桔皮丢在垃圾箱里	jú pí diū zài lā jī xiāng lǐ	1
+拉拉教丫丫折喇叭	lā lā jiào yā yā zhé lǎ bā	1
+来到董家学种冬瓜	lái dào dǒng jiā xué zhǒng dōng guā	1
+蓝教练不是男教练	lán jiào liàn bú shì nán jiào liàn	1
+老刘不要小牛还油	lǎo liú bú yào xiǎo niú hái yóu	1
+梨和犁耕地要用犁	lí hé lí gēng dì yào yòng lí	1
+李虎也捉不住壁虎	lǐ hǔ yě zhuō bú zhù bì hǔ	1
+吕教练不是女教练	lǚ jiào liàn bú shì nǚ jiào liàn	1
+卖不出鸡卵难买饭	mài bù chū jī luǎn nán mǎi fàn	1
+猫鼻子白猫黑鼻子	māo bí zi bái māo hēi bí zi	1
+门东董家懂种冬瓜	mén dōng dǒng jiā dǒng zhǒng dōng guā	1
+鸟和猫树上一只鸟	niǎo hé māo shù shàng yì zhī niǎo	1
+盆和瓶桌上放个盆	pén hé píng zhuō shàng fàng gè pén	1
+碰破了白猫黑鼻子	pèng pò le bái māo hēi bí zi	1
+枪和糠墙上一个窗	qiāng hé kāng qiáng shàng yí gè chuāng	1
+枪也上不了窗和墙	qiāng yě shàng bù liǎo chuāng hé qiáng	1
+青葡萄没籽葡萄紫	qīng pú táo méi zǐ pú táo zǐ	1
+三娘找到三只山羊	sān niáng zhǎo dào sān zhǐ shān yáng	1
+三只山羊翻过山梁	sān zhǐ shān yáng fān guò shān liáng	1
+是字纸你就撕字纸	shì zì zhǐ nǐ jiù sī zì zhǐ	1
+手上有五个手指头	shǒu shàng yǒu wǔ gè shǒu zhǐ tou	1
+四个头天上有日头	sì gè tóu tiān shàng yǒu rì tou	1
+向老刘道歉又赔油	xiàng lǎo liú dào qiàn yòu péi yóu	1
+小花鼓一面小花鼓	xiǎo huā gǔ yì miàn xiǎo huā gǔ	1
+丫丫教拉拉吹喇叭	yā yā jiào lā lā chuī lǎ bā	1
+羊蒋家砌了一垛墙	yáng jiǎng jiā qì le yī duǒ qiáng	1
+捉壁虎李虎捉壁虎	zhuō bì hǔ lǐ hǔ zhuō bì hǔ	1
+白家门前一棵白果树	bái jiā mén qián yì kē bái guǒ shù	1
+扁担绑在那个板凳上	biǎn dàn bǎng zài nà gè bǎn dèng shàng	1
+别喇叭的哑巴吹喇叭	bié lǎ bā de yǎ bā chuī lǎ bā	1
+剥了秕谷壳儿补鼻子	bō le bǐ gǔ ké er bǔ bí zi	1
+不剥秕谷壳儿补鼻子	bù bō bǐ gǔ ké er bǔ bí zi	1
+不吃葡萄倒吐葡萄皮	bù chī pú táo dào tǔ pú táo pí	1
+不管是天上的热日头	bù guǎn shì tiān shàng de rè rì tou	1
+不知是严圆眼的眼圆	bù zhī shì yán yuán yǎn de yǎn yuán	1
+打那百十百个白斑鸠	dǎ nà bǎi shí bǎi gè bái bān jiū	1
+地下是石头不是日头	dì xià shì shí tou bú shì rì tou	1
+董两家的冬瓜比桶大	dǒng liǎng jiā de dōng guā bǐ tǒng dà	1
+胳膊上挎着个破笆斗	gē bo shàng kuà zhe gè pò bā dǒu	1
+黑猪听罢笑得嘿嘿嘿	hēi zhū tīng bà xiào dé hēi hēi hēi	1
+胡乱烧把烂草取取暖	hú luàn shāo bǎ làn cǎo qǔ qǔ nuǎn	1
+黄贺帮助王克写诗歌	huáng hè bāng zhù wáng kè xiě shī gē	1
+借给六斗六升绿绿豆	jiè gěi liù dòu liù shēng lǜ lǜ dòu	1
+吭唷吭唷拔脱七枚钉	kēng yō kēng yō bá tuō qī méi dīng	1
+来教东门童家种冬瓜	lái jiào dōng mén tóng jiā zhòng dōng guā	1
+门上挂着蓝布棉门帘	mén shàng guà zhe lán bù mián mén lián	1
+嬷嬷带了一个薄笸箩	mó mó dài le yí gè báo pǒ luó	1
+嬷嬷卖了萝卜买馍馍	mó mó mài le luó bo mǎi mó mó	1
+你猜老刘让小牛还油	nǐ cāi lǎo liú ràng xiǎo niú hái yóu	1
+你就隔着窗户撕字纸	nǐ jiù gé zhe chuāng hù sī zì zhǐ	1
+喔嘘喔嘘赶走七只莺	ō xū ō xū gǎn zǒu qī zhǐ yīng	1
+乒乒乓乓踏坏七块冰	pīng pīng pāng pāng tà huài qī kuài bīng	1
+瓶中是塞头不是舌头	píng zhōng shì sāi tóu bú shì shé tou	1
+婆婆采了蘑菇换饽饽	pó pó cǎi le mó gū huàn bō bō	1
+婆婆拿了一个破簸箕	pó pó ná le yí gè pò bò ji	1
+若要分清四十和十四	ruò yào fēn qīng sì shí hé shí sì	1
+三只山羊躲在杉树旁	sān zhǐ shān yáng duǒ zài shān shù páng	1
+是做游戏还是玩玩具	shì zuò yóu xì hái shì wán wán jù	1
+树上的鸟想啄猫的毛	shù shàng de niǎo xiǎng zhuó māo de máo	1
+送花华华有两朵红花	sòng huā huá huá yǒu liǎng duǒ hóng huā	1
+疼得小池拍腿挠牙齿	téng dé xiǎo chí pāi tuǐ náo yá chǐ	1
+天上是日头不是石头	tiān shàng shì rì tou bú shì shí tou	1
+童家知道董家冬瓜大	tóng jiā zhī dào dǒng jiā dōng guā dà	1
+驼子拖住胡子的驴子	tuó zi tuō zhù hú zi de lǘ zǐ	1
+王克帮助黄贺搞木刻	wáng kè bāng zhù huáng hè gǎo mù kè	1
+乌鸦说它身比黑猪黑	wū yā shuō tā shēn bǐ hēi zhū hēi	1
+小花猫小花猫爱画画	xiǎo huā māo xiǎo huā māo ài huà huà	1
+小渠养小鱼不养大鱼	xiǎo qú yǎng xiǎo yú bù yǎng dà yú	1
+一片乌云遮掉七颗星	yí piàn wū yún zhē diào qī kē xīng	1
+一阵风来吹来七盏灯	yí zhèn fēng lái chuī lái qī zhǎn dēng	1
+嘴里是舌头不是塞头	zuǐ lǐ shì shé tou bú shì sāi tóu	1
+白果果我走白家门前过	bái guǒ guǒ wǒ zǒu bái jiā mén qián guò	1
+白果树上歇了只白八哥	bái guǒ shù shàng xiē le zhǐ bái bā gē	1
+白果树我从伯伯门前过	bái guǒ shù wǒ cóng bó bo mén qián guò	1
+不把桔皮丢在垃圾箱里	bù bǎ jú pí diū zài lā jī xiāng lǐ	1
+迟小池拿了一把瓷汤匙	chí xiǎo chí ná le yì bǎ cí tāng chí	1
+倒吊鸟梁上两对倒吊鸟	dào diào niǎo liáng shàng liǎng duì dào diào niǎo	1
+弟弟叫丽丽出来做游戏	dì di jiào lì lì chū lái zuò yóu xì	1
+地上的猫想咬树上的鸟	dì shàng de māo xiǎng yǎo shù shàng de niǎo	1
+惦着泥里的两对鸟倒吊	diàn zhe ní lǐ de liǎng duì niǎo dào diào	1
+鹅过河哥哥弟弟坡前坐	é guò hé gē ge dì di pō qián zuò	1
+飞蛾啄不住岸边去找窝	fēi é zhuó bú zhù àn biān qù zhǎo wō	1
+河要渡鹅不知是鹅过河	hé yào dù é bù zhī shì é guò hé	1
+红红送给华华一朵黄花	hóng hóng sòng gěi huá huá yì duǒ huáng huā	1
+猴过桥桥东走来一条狗	hóu guò qiáo qiáo dōng zǒu lái yì tiáo gǒu	1
+胡梳子买把斧子做梳子	hú shū zi mǎi bǎ fǔ zi zuò shū zi	1
+胡子骑驴子胡子骑驴子	hú zi qí lǘ zǐ hú zi qí lǘ zǐ	1
+胡子去打挑螺蛳的驼子	hú zi qù dǎ tiāo luó sī de tuó zi	1
+胡子撞翻了驼子的螺蛳	hú zi zhuàng fān le tuó zi de luó sī	1
+华华送给红红一朵红花	huá huá sòng gěi hóng hóng yì duǒ hóng huā	1
+可怜梁上的两对倒吊鸟	kě lián liáng shàng de liǎng duì dào diào niǎo	1
+可怜泥里的两对鸟倒吊	kě lián ní lǐ de liǎng duì niǎo dào diào	1
+蓝教练在女篮训练吕楠	lán jiào liàn zài nǚ lán xùn liàn lǚ nán	1
+丽丽和弟弟拿不定主意	lì lì hé dì di ná bú dìng zhǔ yì	1
+吕教练在男篮训练蓝南	lǚ jiào liàn zài nán lán xùn liàn lán nán	1
+忙递给年十四的石小四	máng dì gěi nián shí sì de shí xiǎo sì	1
+忙递给年四十的史肖石	máng dì gěi nián sì shí de shǐ xiào shí	1
+每排是十四只大石狮子	měi pái shì shí sì zhǐ dà shí shī zi	1
+嬷嬷拔了一笸箩大萝卜	mó mó bá le yī pǒ luó dà luó bo	1
+婆婆采了半簸箕小蘑菇	pó pó cǎi le bàn bò ji xiǎo mó gū	1
+青龙洞青龙洞中龙做梦	qīng lóng dòng qīng lóng dòng zhōng lóng zuò mèng	1
+上果市四个孩子上果市	shàng guǒ shì sì gè hái zi shàng guǒ shì	1
+是灯还是星天上满天星	shì dēng hái shì xīng tiān shàng mǎn tiān xīng	1
+梳胡子苏州有个苏胡子	shū hú zi sū zhōu yǒu gè sū hú zi	1
+树上的雕啄猫身上的毛	shù shàng de diāo zhuó māo shēn shàng de máo	1
+苏胡子买把梳子梳胡子	sū hú zi mǎi bǎ shū zi shū hú zi	1
+提拉塔嘛的喇嘛敦塔嘛	tí lā tǎ ma de lǎ ma dūn tǎ ma	1
+天上七颗星天上七颗星	tiān shàng qī kē xīng tiān shàng qī kē xīng	1
+驼子来打骑驴子的胡子	tuó zi lái dǎ qí lǘ zǐ de hú zi	1
+小牛硬要把油还给老刘	xiǎo niú yìng yào bǎ yóu huán gěi lǎo liú	1
+学捏梨盘里放着一个梨	xué niē lí pán lǐ fàng zhe yí gè lí	1
+白发老公公掉了一顶白帽	bái fà lǎo gōng gōng diào le yì dǐng bái mào	1
+白猫叼着白帽跑进一白庙	bái māo diāo zhe bái mào pǎo jìn yī bái miào	1
+板凳不让扁担绑在板凳上	bǎn dèng bú ràng biǎn dàn bǎng zài bǎn dèng shàng	1
+大渠里有了小鱼不见大鱼	dà qú lǐ yǒu le xiǎo yú bú jiàn dà yú	1
+地上的猫想叼走树上的雕	dì shàng de māo xiǎng diāo zǒu shù shàng de diāo	1
+黑猪说乌鸦比黑猪还要黑	hēi zhū shuō wū yā bǐ hēi zhū hái yào hēi	1
+你就不要胡乱地撕一地纸	nǐ jiù bú yào hú luàn dì sī yí dì zhǐ	1
+年十四的石小四爱看诗词	nián shí sì de shí xiǎo sì ài kàn shī cí	1
+年四十的史肖石爱看报纸	nián sì shí de shǐ xiào shí ài kàn bào zhǐ	1
+秃丫头从南来了个秃丫头	tū yā tou cóng nán lái le gè tū yā tou	1
+我就拣了百十百块白石头	wǒ jiù jiǎn le bǎi shí bǎi kuài bái shí tóu	1
+小牛赔油小牛放学去打球	xiǎo niú péi yóu xiǎo niú fàng xué qù dǎ qiú	1
+小渠里有了大鱼不见小鱼	xiǎo qú lǐ yǒu le dà yú bú jiàn xiǎo yú	1
+养鱼大渠养大鱼不养小鱼	yǎng yú dà qú yǎng dà yú bù yǎng xiǎo yú	1
+也惦着梁上的两对倒吊鸟	yě diàn zhe liáng shàng de liǎng duì dào diào niǎo	1
+再吃掉篮子里几个软鸡卵	zài chī diào lán zi lǐ jǐ gè ruǎn jī luǎn	1
+种冬瓜东门童家门东董家	zhǒng dōng guā dōng mén tóng jiā mén dōng dǒng jiā	1
+板凳不让扁担绑在那板凳上	bǎn dèng bú ràng biǎn dàn bǎng zài nà bǎn dèng shàng	1
+还是崔腿粗比崔粗腿的腿粗	hái shì cuī tuǐ cū bǐ cuī cū tuǐ de tuǐ cū	1
+还是严眼圆比严圆眼的眼圆	hái shì yán yǎn yuán bǐ yán yuán yǎn de yǎn yuán	1
+荷花和蛤蟆一朵粉红大荷花	hé huā hé há má yì duǒ fěn hóng dà hé huā	1
+六叔和六舅好六叔和好六舅	liù shū hé liù jiù hǎo liù shū hé hǎo liù jiù	1
+年十四的石小四见了好报纸	nián shí sì de shí xiǎo sì jiàn le hǎo bào zhǐ	1
+妞妞和牛牛牛牛要吃河边柳	niū niū hé niú niú niú niú yào chī hé biān liǔ	1
+三娘翻过山梁去找三只山羊	sān niáng fān guò shān liáng qù zhǎo sān zhǐ shān yáng	1
+三十三的弟子在寺里练写字	sān shí sān de dì zǐ zài sì lǐ liàn xiě zì	1
+石狮寺前有四十四个石狮子	shí shī sì qián yǒu sì shí sì gè shí shī zi	1
+说好四和十得靠舌头和牙齿	shuō hǎo sì hé shí de kào shé tou hé yá chǐ	1
+四十四的师傅到市里去办事	sì shí sì de shī fù dào shì lǐ qù bàn shì	1
+白果树上站着百十百个白斑鸠	bái guǒ shù shàng zhàn zhe bǎi shí bǎi gè bái bān jiū	1
+不知是崔粗腿比崔腿粗的腿粗	bù zhī shì cuī cū tuǐ bǐ cuī tuǐ cū de tuǐ cū	1
+横竖两次撕了四十四张湿字纸	héng shù liǎng cì sī le sì shí sì zhāng shī zì zhǐ	1
+看见伯爹伯妈门前种着白果树	kàn jiàn bó diē bó mā mén qián zhǒng zhe bái guǒ shù	1
+丽丽和弟弟丽丽家来了小弟弟	lì lì hé dì di lì lì jiā lái le xiǎo dì dì	1
+那个扁担偏要绑在那个板凳上	nà gè biǎn dàn piān yào bǎng zài nà gè bǎn dèng shàng	1
+年四十的史肖石发现了好诗词	nián sì shí de shǐ xiào shí fā xiàn le hǎo shī cí	1
+三十三的弟子用了四十四小时	sān shí sān de dì zǐ yòng le sì shí sì xiǎo shí	1
+寺前树上结了四十四个涩柿子	sì qián shù shàng jié le sì shí sì gè sè shì zi	1
+四十四的师傅走了三十三里地	sì shí sì de shī fù zǒu le sān shí sān lǐ dì	1
+要拿塔嘛换别喇叭哑巴的喇叭	yào ná tǎ ma huàn bié lǎ bā yǎ bā de lǎ bā	1
+再还六叔六舅六斗六升绿绿豆	zài hái liù shū liù jiù liù dòu liù shēng lǜ lǜ dòu	1
+扁担偏要板凳让扁担绑在板凳上	biǎn dàn piān yào bǎn dèng ràng biǎn dàn bǎng zài bǎn dèng shàng	1
+高高山上一条藤高高山上一条藤	gāo gāo shān shàng yì tiáo téng gāo gāo shān shàng yì tiáo téng	1
+小葛把他的黄花换了小郭的红花	xiǎo gé bǎ tā de huáng huā huàn le xiǎo guō de hóng huā	1
+小郭想拿他的红花换小葛的黄花	xiǎo guō xiǎng ná tā de hóng huā huàn xiǎo gé de huáng huā	1
+每只大石狮子背上是一只小石狮子	měi zhǐ dà shí shī zi bèi shàng shì yì zhī xiǎo shí shī zi	1
+每只大石狮子脚边是四只小石狮子	měi zhǐ dà shí shī zi jiǎo biān shì sì zhǐ xiǎo shí shī zi	1
+拿喇叭打了提拉塔嘛的喇嘛一喇叭	ná lǎ bā dǎ le tí lā tǎ ma de lǎ ma yī lǎ bā	1
+三娘找山羊三娘在山上放三只山羊	sān niáng zhǎo shān yáng sān niáng zài shān shàng fàng sān zhǐ shān yáng	1
+史老师领四十四个学生去数石狮子	shǐ lǎo shī lǐng sì shí sì gè xué shēng qù shù shí shī zi	1
+用了四十四小时才写了三十三个字	yòng le sì shí sì xiǎo shí cái xiě le sān shí sān gè zì	1
+走了三十三里地就办了四十四件事	zǒu le sān shí sān lǐ dì jiù bàn le sì shí sì jiàn shì	1
+不愿意拿喇叭换提拉塔嘛喇嘛的塔嘛	bú yuàn yì ná lǎ bā huàn tí lā tǎ ma lǎ ma de tǎ ma	1
+四十四个涩柿子倒吃四十四个石狮子	sì shí sì gè sè shì zi dào chī sì shí sì gè shí shī zi	1
+四十四个石狮子不吃四十四个涩柿子	sì shí sì gè shí shī zi bù chī sì shí sì gè sè shì zi	1
+乌鸦说猪黑乌鸦站在黑猪脊上说黑猪黑	wū yā shuō zhū hēi wū yā zhàn zài hēi zhū jí shàng shuō hēi zhū hēi	1
+你说共数出多少只大石狮子和多少只小石狮子	nǐ shuō gòng shǔ chū duō shǎo zhǐ dà shí shī zi hé duō shǎo zhǐ xiǎo shí shī zi	1
+提拉塔嘛的喇嘛拿塔嘛打了别喇叭的哑巴一塔嘛	tí lā tǎ ma de lǎ ma ná tǎ ma dǎ le bié lǎ bā de yǎ bā yī tǎ ma	1
+也不知别喇叭的哑巴拿喇巴打坏了提拉塔嘛喇嘛的塔嘛	yě bù zhī bié lǎ bā de yǎ bā ná lǎ bā dǎ huài le tí lā tǎ ma lǎ ma de tǎ ma	1
+也不知提拉塔嘛的喇嘛拿塔嘛打坏了别喇叭哑巴的喇叭	yě bù zhī tí lā tǎ ma de lǎ ma ná tǎ ma dǎ huài le bié lǎ bā yǎ bā de lǎ bā	1
