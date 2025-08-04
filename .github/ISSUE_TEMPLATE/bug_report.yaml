@@ -1,0 +1,88 @@
+name: Bug 报告
+description: 我遇到了一个 bug 或是非预期行为
+title: '[Bug]: '
+
+body:
+  - type: input
+    id: input
+    attributes:
+      label: 摘要
+      description: 一两句话概述遇到的问题
+    validations:
+      required: true
+  - type: checkboxes
+    id: check_box
+    attributes:
+      label: 我确认以下信息
+      description: 必要检查
+      options:
+        - label: 我使用的是薄荷输入法-oh-my-rime
+          required: true
+        - label: 我搜索了过往的 issue、官方文档、常见问题，都没找到解决办法：https://github.com/Mintimate/oh-my-rime/issues?q=
+          required: true
+        - label: 如果此 issue 不符合模板，或者长时间不活跃，会被无条件关闭
+          required: true
+  - type: dropdown
+    id: is_custom
+    attributes:
+      label: 是否和自定义配置相关？
+      description: 不对薄荷默认配置进行任何修改，仅使用官方配置，有没有这个问题
+      options:
+        - "-- 请选择 --"
+        - "我不清楚"
+        - "使用原版配置，则没有这个问题（请在「自定义配置」栏贴出配置）"
+        - "使用原版配置，也有这个问题"
+    validations:
+      required: true
+  - type: dropdown
+    id: has_read_doc
+    attributes:
+      label: 是否搜索过薄荷输入法的文档？
+      description: 在薄荷输入法的文档上进行搜索，并使用右上角的 AI 进行提问。
+      options:
+        - "-- 请选择 --"
+        - "我不清楚"
+        - "搜索后，没有找到相关的回答"
+        - "搜索后，回答不符合预期"
+    validations:
+      required: true
+  - type: input
+    id: os_version
+    attributes:
+      label: 系统信息
+      description: 这个议题涉及的，或者是你在使用的系统及版本号（Unix/Linux 请提供具体发行版名称，Android 请说明 Android 版本以及 ROM 名，如 HyperOS、Flyme）
+      placeholder: macOS 14.5 / Windows 11 23H2 / Ubuntu 24.04 LTS
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: 应用信息
+      description: 提供议题涉及的、或者你使用的 RIME 前端和版本号，自构建前端请说明
+      placeholder: Squirrel 1.0.2 / Weasel 0.16.1
+    validations:
+      required: true
+  - type: textarea
+    id: step_to_reproduce
+    attributes:
+      label: 复现办法和预期行为
+      description: 重现该问题的办法，薄荷在你预期中应当如何行为
+      value: |
+        1.
+        2.
+    validations:
+      required: true
+  - type: textarea
+    id: info
+    attributes:
+      label: '补充信息'
+      description: ' 请提供你认为重要的其他信息，例如截图、视频、Rime 的报错信息等'
+  - type: textarea
+    id: config
+    attributes:
+      label: 自定义配置
+      description: 如果你对薄荷进行了修改或者打了补丁，请在此处提供你的自定义配置
+      placeholder: |
+        你可以将自定义文件打包为 zip（请不要包含 build 文件夹和 userdb 文件夹），拖放到此处。
+
+        也可以将配置片段放在 Markdown 的代码块中。
