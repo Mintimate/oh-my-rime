@@ -60,6 +60,12 @@ $:
             squirrel_file: squirrel_file
             fctix5_macOS_file: fctix5_macOS_file
             wanxiang_file: wanxiang_file
+        - name: 自动打包在线方案包
+          image: docker.cnb.cool/mintimate/rime/deploy-schema
+          settings:
+            user_recipe_list: 'Mintimate/oh-my-rime:plum/full'
+            package_items: 'build opencc lua'
+            zip_file: oh-my-rime-online.zip
         - name: release 上传附件
           image: cnbcool/attachments:latest
           settings:
@@ -69,3 +75,4 @@ $:
               - Squirrel-latest.pkg
               - Fcitx5-Rime.zip
               - $wanxiang_file
+              - oh-my-rime-online.zip
