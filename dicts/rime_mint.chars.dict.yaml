@@ -3,7 +3,7 @@
 #https://github.com/amzxyz/RIME-LMDG
 ---
 name: rime_mint.chars
-version: "2025-07-29"
+version: "2025-08-29"
 sort: by_weight
 
 ...
@@ -3002,6 +3002,7 @@ sort: by_weight
 𧵡	cè	1
 𨶨	cè	1
 𩒄	cè	1
+𤭢	cèi	19
 参	cēn	501
 岑	cén	499
 涔	cén	352
@@ -7538,7 +7539,6 @@ sort: by_weight
 㝎	dìng	1
 奵	dīng	1
 掟	dìng	1
-町	dīng	1
 甼	dīng	1
 艼	dǐng	1
 釘	dìng	1
@@ -7573,6 +7573,7 @@ sort: by_weight
 𩾚	dīng	1
 𪔂	dǐng	1
 𫂫	dìng	1
+町	dīng	1
 丢	diū	647
 丟	diū	343
 铥	diū	285
@@ -13898,16 +13899,16 @@ sort: by_weight
 幻	huàn	670
 唤	huàn	601
 焕	huàn	553
+涣	huàn	547
 桓	huán	526
 痪	huàn	509
 歡	huān	503
+浣	huàn	500
 嬛	huán	491
 宦	huàn	488
 寰	huán	478
 環	huán	471
-浣	huàn	462
 奂	huàn	453
-涣	huàn	442
 換	huàn	425
 鬟	huán	424
 獾	huān	406
@@ -14862,6 +14863,7 @@ sort: by_weight
 锪	huō	1
 即	jí	895
 及	jí	874
+既	jì	870
 计	jì	862
 积	jī	855
 暨	jì	845
@@ -14886,7 +14888,6 @@ sort: by_weight
 绩	jì	712
 急	jí	710
 吉	jí	708
-既	jì	696
 疾	jí	694
 几	jī	691
 肌	jī	691
@@ -15805,17 +15806,17 @@ sort: by_weight
 件	jiàn	800
 简	jiǎn	766
 健	jiàn	762
-荐	jiàn	758
-减	jiǎn	756
+键	jiàn	760
+减	jiǎn	758
 监	jiān	747
 检	jiǎn	745
+尖	jiān	745
+荐	jiàn	725
 坚	jiān	723
-键	jiàn	722
 渐	jiàn	697
 舰	jiàn	673
 兼	jiān	669
 剑	jiàn	663
-尖	jiān	658
 鉴	jiàn	657
 践	jiàn	655
 剪	jiǎn	647
@@ -18871,10 +18872,10 @@ sort: by_weight
 柯	kē	618
 渴	kě	608
 咳	ké	598
+氪	kè	556
 磕	kē	545
 苛	kē	544
 坷	kě	498
-氪	kè	495
 恪	kè	495
 珂	kē	488
 轲	kē	473
@@ -19125,9 +19126,6 @@ sort: by_weight
 𨌶	kēng	1
 𨍑	kēng	1
 𫟥	kēng	1
-迲	keop	1
-唟	keos	1
-厼	keum	1
 空	kōng	782
 控	kòng	760
 恐	kǒng	687
@@ -31905,7 +31903,6 @@ sort: by_weight
 𩨞	sǎ	1
 𫂿	sà	1
 挲	sā	1
-栍	saeng	1
 塞	sāi	779
 赛	sài	685
 塞	sài	532
@@ -32223,7 +32220,6 @@ sort: by_weight
 鬙	sēng	92
 䒏	sēng	1
 𡬙	sèng	1
-縇	seon	1
 啥	shá	728
 杀	shā	723
 沙	shā	686
@@ -33681,6 +33677,7 @@ sort: by_weight
 熟	shú	715
 树	shù	707
 舒	shū	707
+数	shǔ	699
 束	shù	695
 署	shǔ	668
 蔬	shū	667
@@ -33690,13 +33687,12 @@ sort: by_weight
 暑	shǔ	624
 疏	shū	623
 薯	shǔ	615
-数	shǔ	599
+竖	shù	598
 梳	shū	589
 赎	shú	587
 枢	shū	582
 墅	shù	580
 蜀	shǔ	578
-竖	shù	567
 淑	shū	564
 抒	shū	534
 漱	shù	532
@@ -36430,6 +36426,7 @@ sort: by_weight
 蝏	tíng	439
 廳	tīng	423
 铤	tǐng	408
+町	tǐng	377
 庁	tīng	363
 葶	tíng	335
 珽	tǐng	334
@@ -36475,7 +36472,6 @@ sort: by_weight
 忊	tìng	1
 梃	tìng	1
 濎	tìng	1
-町	tǐng	1
 鋌	tǐng	1
 閮	tǐng	1
 㓅	tīng	1
@@ -51042,6 +51038,11 @@ sort: by_weight
 𫝷	zuò	1
 呒	ḿ	1
 呣	ḿ	1
+迲	无	1
+唟	无	1
+厼	无	1
+栍	无	1
+縇	无	1
 怾	无	1
 莻	无	1
 朰	无	1
