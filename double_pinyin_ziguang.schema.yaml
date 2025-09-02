@@ -265,7 +265,7 @@ radical_reverse_lookup:
 reverse_lookup:
   tags: [wubi98_mint,radical_lookup]
   overwrite_comment: true
-  dictionary: dicts/rime_mint.chars
+  dictionary: rime_mint
 
 
 punctuator:
