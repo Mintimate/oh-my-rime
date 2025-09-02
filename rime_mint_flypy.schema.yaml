@@ -447,7 +447,7 @@ radical_reverse_lookup:
 reverse_lookup:
   tags: [wubi98_mint,stroke,radical_lookup]
   overwrite_comment: true
-  dictionary: dicts/rime_mint.chars
+  dictionary: rime_mint
 
 punctuator:
   import_preset: symbols
@@ -495,3 +495,4 @@ key_binder:
 menu:
   # 候选词个数
   page_size: 6
+
