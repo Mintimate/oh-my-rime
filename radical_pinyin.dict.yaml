@@ -85,7 +85,7 @@
 
 ---
 name: radical_pinyin
-version: "2025.01.18"
+version: "2025-10-05"
 
 sort: original
 
@@ -98,6 +98,7 @@ sort: original
 # 繁体字频
 # vocabulary: essay # 繁体字频，需要安装 rime/essay（多数平台预装）
 # max_phrase_length: 1 # 仅调整单字
+
 ...
 
 # 丣
