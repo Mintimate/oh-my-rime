@@ -120,7 +120,25 @@ function M.init(env)
     }
 end
 
+
+local tone_map = {
+    ["ā"] = "a", ["á"] = "a", ["ǎ"] = "a", ["à"] = "a",
+    ["ō"] = "o", ["ó"] = "o", ["ǒ"] = "o", ["ò"] = "o",
+    ["ē"] = "e", ["é"] = "e", ["ě"] = "e", ["è"] = "e",
+    ["ī"] = "i", ["í"] = "i", ["ǐ"] = "i", ["ì"] = "i",
+    ["ū"] = "u", ["ú"] = "u", ["ǔ"] = "u", ["ù"] = "u",
+    ["ǖ"] = "v", ["ǘ"] = "v", ["ǚ"] = "v", ["ǜ"] = "v", ["ü"] = "v",
+    [" "] = ""
+}
+local function normalize_pinyin(input)
+    return input:gsub(utf8.charpattern, function(c)
+        return tone_map[c] or c
+    end)
+end
+
 function M.func(input, env)
+    local input_str = env.engine.context.input
+    local input_len = #input_str
     for cand in input:iter() do
         -- cand.comment 是目前输入的词汇的完整拼音
         local pinyin = cand.comment
@@ -142,7 +160,13 @@ function M.func(input, env)
                 -- 20250708 是否保持原本注释；如: 拼音
                 local keep_source_comment = env.engine.context:get_option("tone_display") or false
                 if keep_source_comment then
-                    cand:get_genuine().comment = string.gsub(M.style, "{comment}", pinyin)
+                    -- 输入的拼音<=候选词的注音时，该候选词不显示注音
+                    local normal_pinyin = normalize_pinyin(pinyin)
+                    if #normal_pinyin <= input_len and normal_pinyin.find(input_str, normal_pinyin) then
+                        cand:get_genuine().comment = ""
+                    else
+                        cand:get_genuine().comment = string.gsub(M.style, "{comment}", pinyin)
+                    end
                 else
                     cand:get_genuine().comment = ""
                 end
