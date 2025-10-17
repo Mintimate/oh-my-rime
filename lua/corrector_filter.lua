@@ -165,7 +165,6 @@ function M.func(input, env)
                     -- 输入的拼音<=候选词的注音时，该候选词不显示注音
                     if M.is_pure_pinyin then
                         local normal_pinyin = normalize_pinyin(pinyin)
-                        log.error("normal_pinyin".. tostring(normal_pinyin))
                         if #normal_pinyin <= input_len and normal_pinyin.find(input_str, normal_pinyin) then
                             cand:get_genuine().comment = ""
                         else
