@@ -197,7 +197,6 @@ speller:
     - derive/ong$/on/                  # zhonguo => zhong guo
     - derive/un$/ong/                  # yuntong = yongtong
     ## 简拼
-    - derive/^([a-z]).+$/$1/         # 通过正则表达式提取每个拼音的首字母
     - derive/^([zcs]h).+$/$1/        # 特别处理 zh, ch, sh 的首字母简写
     - abbrev/^([a-z]).+$/$1/         # 允许使用首字母作为缩写
     # 简拼: 允许使用前两个字母作为缩写
@@ -358,4 +357,5 @@ key_binder:
 
   # 候选词个数
   page_size: 6
+
 
