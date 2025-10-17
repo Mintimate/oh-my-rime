@@ -19,6 +19,8 @@ function M.init(env)
         env.delimiter = delimiter:sub(1,1)
     end
     M.style = '{comment}'
+    local schema_id = env.engine.schema.schema_id
+    M.is_pure_pinyin = schema_id and schema_id == "rime_mint"
     M.corrections = {
         -- 错音
         ["hun dun"] = { text = "馄饨", comment = "hún tun" },
@@ -161,9 +163,14 @@ function M.func(input, env)
                 local keep_source_comment = env.engine.context:get_option("tone_display") or false
                 if keep_source_comment then
                     -- 输入的拼音<=候选词的注音时，该候选词不显示注音
-                    local normal_pinyin = normalize_pinyin(pinyin)
-                    if #normal_pinyin <= input_len and normal_pinyin.find(input_str, normal_pinyin) then
-                        cand:get_genuine().comment = ""
+                    if M.is_pure_pinyin then
+                        local normal_pinyin = normalize_pinyin(pinyin)
+                        log.error("normal_pinyin".. tostring(normal_pinyin))
+                        if #normal_pinyin <= input_len and normal_pinyin.find(input_str, normal_pinyin) then
+                            cand:get_genuine().comment = ""
+                        else
+                            cand:get_genuine().comment = string.gsub(M.style, "{comment}", pinyin)
+                        end
                     else
                         cand:get_genuine().comment = string.gsub(M.style, "{comment}", pinyin)
                     end
