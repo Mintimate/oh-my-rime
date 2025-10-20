@@ -4,11 +4,12 @@
 schema:
   schema_id: stroke
   name: "五筆畫"
-  version: "0.5"
+  version: "0.6"
   author:
     - 四季的風
     - 雪齋
     - Kunki Chou
+    - 宋天
   description: |
     五筆畫
     h,s,p,n,z 代表橫、豎、撇、捺、折
