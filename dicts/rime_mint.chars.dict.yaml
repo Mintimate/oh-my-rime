@@ -3,7 +3,7 @@
 #https://github.com/amzxyz/RIME-LMDG
 ---
 name: rime_mint.chars
-version: "2025-09-29"
+version: "2025-10-29"
 sort: by_weight
 
 ...
@@ -2343,6 +2343,7 @@ sort: by_weight
 髉	bó	38
 襏	bó	23
 鵓	bó	23
+狛	bó	6
 紴	bō	1
 懪	bó	1
 䶈	bó	1
@@ -6812,19 +6813,19 @@ sort: by_weight
 低	dī	776
 底	dǐ	758
 递	dì	742
+敌	dí	740
 弟	dì	737
 的	dì	733
 帝	dì	706
 迪	dí	699
-的	dí	677
+的	dī	680
 抵	dǐ	672
 滴	dī	668
-敌	dí	662
 蒂	dì	657
-的	dī	612
 堤	dī	559
 笛	dí	556
 狄	dí	555
+的	dí	549
 缔	dì	544
 涤	dí	544
 提	dī	521
@@ -7489,8 +7490,6 @@ sort: by_weight
 𪑧	dié	1
 𪮟	diē	1
 𫶇	dié	1
-嚸	dím	1
-𨈖	dìn	1
 定	dìng	842
 顶	dǐng	706
 订	dìng	706
@@ -8688,10 +8687,10 @@ sort: by_weight
 呃	e	1
 诶	éi	534
 誒	éi	281
-欸	èi	1
-欸	éi	1
-欸	ēi	1
-欸	ěi	1
+欸	èi	2
+欸	éi	2
+欸	ēi	2
+欸	ěi	2
 誒	èi	1
 誒	ēi	1
 誒	ěi	1
@@ -16536,6 +16535,7 @@ sort: by_weight
 嘐	jiāo	1
 學	jiào	1
 徼	jiào	1
+徼	jiāo	1
 悎	jiào	1
 憢	jiāo	1
 摎	jiǎo	1
@@ -16687,9 +16687,10 @@ sort: by_weight
 𪖄	jiào	1
 𪚰	jiāo	1
 𫈇	jiāo	1
-解	jiě	817
-结	jié	809
-接	jiē	805
+解	jiě	887
+接	jiē	839
+结	jié	811
+姐	jiě	788
 节	jié	785
 界	jiè	783
 介	jiè	738
@@ -16697,7 +16698,6 @@ sort: by_weight
 阶	jiē	707
 借	jiè	706
 届	jiè	702
-姐	jiě	693
 洁	jié	691
 截	jié	685
 杰	jié	679
@@ -17458,10 +17458,10 @@ sort: by_weight
 𫞬	jìng	1
 经	jìng	1
 囧	jiǒng	543
-窘	jiǒng	495
+炯	jiǒng	500
+炅	jiǒng	495
+窘	jiǒng	482
 迥	jiǒng	478
-炯	jiǒng	471
-炅	jiǒng	469
 冏	jiǒng	336
 颎	jiǒng	301
 煚	jiǒng	281
@@ -20753,6 +20753,7 @@ sort: by_weight
 𨈓	léng	1
 𩩡	léng	1
 里	lǐ	868
+离	lí	855
 理	lǐ	843
 力	lì	841
 利	lì	817
@@ -20761,7 +20762,6 @@ sort: by_weight
 立	lì	791
 历	lì	779
 例	lì	775
-离	lí	762
 丽	lì	724
 礼	lǐ	717
 励	lì	693
@@ -28293,6 +28293,7 @@ sort: by_weight
 鏺	pō	50
 尀	pǒ	38
 櫇	pó	23
+狛	pò	3
 砶	pò	1
 駊	pǒ	1
 𩕏	pó	1
@@ -28309,7 +28310,6 @@ sort: by_weight
 泺	pō	1
 湐	pò	1
 濼	pō	1
-狛	pò	1
 猼	pò	1
 箥	pǒ	1
 繁	pó	1
@@ -29934,6 +29934,7 @@ sort: by_weight
 琴	qín	659
 勤	qín	651
 秦	qín	649
+覃	qín	581
 寝	qǐn	572
 钦	qīn	567
 芹	qín	567
@@ -30018,7 +30019,6 @@ sort: by_weight
 肣	qín	1
 臤	qìn	1
 菳	qīn	1
-覃	qín	1
 㓎	qìn	1
 㓎	qǐn	1
 㕋	qín	1
@@ -33607,6 +33607,7 @@ sort: by_weight
 售	shòu	746
 守	shǒu	705
 授	shòu	698
+熟	shóu	680
 寿	shòu	672
 瘦	shòu	663
 兽	shòu	645
@@ -33630,7 +33631,6 @@ sort: by_weight
 嘼	shòu	1
 扌	shǒu	1
 敊	shōu	1
-熟	shóu	1
 醻	shòu	1
 龵	shǒu	1
 㖟	shòu	1
@@ -37430,12 +37430,12 @@ sort: by_weight
 𪉭	wāi	1
 𪑷	wài	1
 万	wàn	850
-萬	wàn	818
 碗	wǎn	810
 完	wán	798
 玩	wán	759
 晚	wǎn	755
 湾	wān	719
+萬	wàn	667
 卍	wàn	649
 卐	wàn	644
 丸	wán	642
@@ -43223,6 +43223,7 @@ sort: by_weight
 邎	yáo	23
 纅	yào	23
 柼	yǎo	23
+徼	yāo	3
 袎	yào	1
 鴁	yāo	1
 蘨	yáo	1
