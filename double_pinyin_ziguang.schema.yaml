@@ -15,7 +15,6 @@ schema:
     - Mintimate
   description: |
     薄荷拼音 - 紫光双拼
-    词库基于[雾凇拼音](https://github.com/iDvel/rime-ice)
   dependencies:
     - melt_eng        # 英文输入，作为次翻译器挂载到拼音方案
     - radical_pinyin  # 部件拆字，反查及辅码（如果需要把按键映射
@@ -63,7 +62,7 @@ engine:
   translators:
     - punct_translator                                   # ※ 轉換標點符號
     - script_translator
-    - lua_translator@*mint_date_time_translator          # 时间、日期、星期、月份
+    - lua_translator@*shijian                            # 时间、日期、星期、月份、问候、节气、节日，N模式
     - lua_translator@*number_translator                  # 金额大小写
     - lua_translator@*chineseLunarCalendar_translator    # 农历
     - lua_translator@*mint_calculator_translator         # 计算器（lua 动态表达式）
@@ -81,6 +80,28 @@ engine:
     - lua_filter@*reduce_english_filter          # 降低部分英语单词在候选项的位置
     - uniquifier                                 # 去重
 
+#shijian:仅仅作为提示使用，编码已经写死，引导键可以在key_binder下修改前缀
+#时间：osj
+#日期：orq
+#农历：onl
+#星期：oxq
+#今年第几周：oww
+#节气：ojq
+#日期+时间：ors
+#时间戳：ott
+#大写N日期：N20250315 或者N0312不带年
+#节日：ojr
+#问候模板：oday
+#下面用于对orq和N20250101这样的日期候选自定义（顺序、类型、候选个数）由你完全掌控，前面是对于公历后面默认携带农历
+#Y=年，m=月，d=日，数字前面带0如02月09日；y代表后两位年如15年，nj代表不带0的 如2月9日
+date_formats:
+  - "Y年m月d日"
+  - "Y-m-d"
+  - "Y/m/d"
+  - "Y.m.d"
+  - "Ymd"
+  - "Y年n月j日"
+  - "y年n月j日"
 
 # 简繁切换
 transcription_cc:
@@ -306,6 +327,8 @@ recognizer:
 
 key_binder:
   import_preset: default
+  # Lua 配置: shijian.lua 的引导符，涉及：日期、时间、节日、节气、生日、问候模板等功能
+  shijian_keys: ["o"]
   bindings:
     - {accept: "Control+Shift+E", toggle: emoji_suggestion, when: always}   # Emoji 快捷键
     - {accept: "Control+Shift+1", toggle: transcription, when: has_menu}           # 当存在候选菜单时，可以切换简体和繁体
