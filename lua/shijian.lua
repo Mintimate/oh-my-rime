@@ -4,7 +4,7 @@
 ------------------------------------
 ------wirting by 98wubi Group-------
 ------http://98wb.ys168.com/--------
------万象新增节日候选,格式化问候语,重写农历倒计，节气、节日、N模式、外部自定义
+-----万象新增节日候选,格式化问候语,重写农历倒计
 -- *******农历节气计算部分
 -- ========角度变换===============
 local rad = 180 * 3600 / math.pi -- 每弧度的角秒数
@@ -1720,25 +1720,72 @@ function IsLeap(y)
         return 365
     end
 end
--- 日期格式化函数，用于自定义日期格式。N20150101和/rq使用
-function format_date(today, format_str)
-    local result = format_str
-    
-    -- 处理四位年份
-    result = result:gsub("Y", string.format("%04d", today.year))
-    
-    -- 处理两位年份
-    result = result:gsub("y", string.format("%02d", today.year % 100))
-    
-    -- 处理带前导零的月日
-    result = result:gsub("m", string.format("%02d", today.month))
-    result = result:gsub("d", string.format("%02d", today.day))
-    
-    -- 处理不带前导零的月日
-    result = result:gsub("n", tostring(today.month))
-    result = result:gsub("j", tostring(today.day))
-    
-    return result
+-- 日期格式化函数，用于自定义日期格式。N20150101和/rq使用，自定义时间/sj /dt
+-- 转义规则：
+--   \X       —— 将 X 按字面量输出（X 为任意单个字符，如 Y/m/d/H/M/S 等）
+--   [[...]]  —— 区块整体按字面量输出
+function format_dt(dt, format_str)
+    -- ---- 兜底，避免 string.format(nil) 报错 ----
+    dt = dt or {}
+    dt.year = tonumber(dt.year) or 0
+    dt.month = tonumber(dt.month) or 1
+    dt.day = tonumber(dt.day) or 1
+    dt.hour = tonumber(dt.hour) or 0
+    dt.min  = tonumber(dt.min)  or 0
+    dt.sec  = tonumber(dt.sec)  or 0
+
+    local s = format_str or ""
+
+    -- 1) 保护 [[...]] 字面量区块
+    local blocks = {}
+    s = s:gsub("%[%[(.-)%]%]", function(txt)
+        blocks[#blocks+1] = txt
+        return "\0BLK" .. #blocks .. "\0"
+    end)
+
+    -- 2) 保护 \X（单字符转义）
+    local escs = {}
+    s = s:gsub("\\(.)", function(c)
+        escs[#escs+1] = c
+        return "\0ESC" .. #escs .. "\0"
+    end)
+
+    -- 3) 占位符替换（先长再短，避免相互影响）
+    -- 日期
+    s = s:gsub("Y", string.format("%04d", dt.year))
+    s = s:gsub("y", string.format("%02d", dt.year % 100))
+    s = s:gsub("m", string.format("%02d", dt.month))
+    s = s:gsub("d", string.format("%02d", dt.day))
+    s = s:gsub("n", tostring(dt.month))
+    s = s:gsub("j", tostring(dt.day))
+
+    -- 时间
+    s = s:gsub("H", string.format("%02d", dt.hour))
+    s = s:gsub("G", tostring(dt.hour))
+    local h12 = dt.hour % 12; if h12 == 0 then h12 = 12 end
+    s = s:gsub("I", string.format("%02d", h12))
+    s = s:gsub("l", tostring(h12))
+
+    s = s:gsub("M", string.format("%02d", dt.min))
+    s = s:gsub("S", string.format("%02d", dt.sec))
+
+    local ampm = (dt.hour < 12) and "AM" or "PM"
+    s = s:gsub("p", ampm:lower())
+    s = s:gsub("P", ampm)
+
+    -- 时区
+    local raw_tz = os.date("%z") or "+0000"         -- 形如 +0800
+    local tz_colon = raw_tz:sub(1,3) .. ":" .. raw_tz:sub(4,5)  -- +08:00
+    s = s:gsub("O", tz_colon)
+    s = s:gsub("o", raw_tz)
+
+    -- 4) 还原 \X
+    s = s:gsub("\0ESC(%d+)\0", function(i) return escs[tonumber(i)] or "" end)
+
+    -- 5) 还原 [[...]]
+    s = s:gsub("\0BLK(%d+)\0", function(i) return blocks[tonumber(i)] or "" end)
+
+    return s
 end
 
 -- 修改后的 QueryLunarInfo 函数
@@ -1793,7 +1840,7 @@ local function QueryLunarInfo(env, date)
                 result = {}
                 for i = 1, custom_formats.size do
                     local format_str = custom_formats:get_value_at(i-1):get_string()
-                    local formatted_date = format_date({year = y, month = m, day = d}, format_str)
+                    local formatted_date = format_dt({year = y, month = m, day = d}, format_str)
                     if formatted_date then
                         table.insert(result, { formatted_date, "" })
                     end
@@ -2383,99 +2430,118 @@ local function translator(input, seg, env)
     local context = engine.context
     local config  = engine.schema.config
     local segment = context.composition:back()
+    local function set_ndate_tag(ctx, on)
+        local comp = ctx and ctx.composition
+        if not comp or comp:empty() then return end
+        local back_seg = comp:back()
+        if not back_seg then return end
+        if on then
+            back_seg.tags = back_seg.tags + Set({ "Ndate" })
+        else
+            back_seg.tags = back_seg.tags - Set({ "Ndate" })
+        end
+    end
+    local handled = false  -- 仅当我们真正产出了候选，才设置为 true 并 return
 
+    local function set_ndate_tag(context, on)
+        local comp = context and context.composition
+        if not comp or comp:empty() then return end
+        local seg = comp:back()
+        if not seg then return end
+        if on then
+            seg.tags = seg.tags + Set({ "Ndate" })
+        else
+            seg.tags = seg.tags - Set({ "Ndate" })
+        end
+    end
+
+    -- 你的 translator 主体里（只贴 N 分支及其结构）
     if input:sub(1, 1) == "N" then
-        local n = input:sub(2)
-        local yr = os.date("%Y")
-        segment.tags = segment.tags + Set({ "Ndate" })
-        -- N0101–N1231（仅月日）
-        if #n == 4 and n:match("^%d%d%d%d$") then
-            context:set_property("sequence_adjustment_code", "Nmmdd")
+        local n   = input:sub(2)
+        local len = #n
+        local only_digits = (n:match("^%d*$") ~= nil)
+        local ndate_mode  = (only_digits and len >= 1 and len <= 8)
+        local handled = false
 
-            local mm = tonumber(n:sub(1, 2))
-            local dd = tonumber(n:sub(3, 4))
-            if mm and dd and mm >= 1 and mm <= 12 and dd >= 1 and dd <= 31 then
-                local display_year = " 〔" .. yr .. "年" .. "〕"
+        -- 仅按形态开/关标签，不提前 return
+        set_ndate_tag(context, ndate_mode)
 
-                if not DateExists(yr, mm, dd) then
-                    set_prompt_if_invalid(context, " 〔日期不存在〕")
-                    return
+        if ndate_mode then
+            local yr = os.date("%Y")
+
+            -- NMMDD：长度=4，且“不是年份（19xx/20xx）”时才当作月日
+            if (len == 4) and not (n:match("^19%d%d$") or n:match("^20%d%d$")) then
+                context:set_property("sequence_adjustment_code", "Nmmdd")
+
+                local mm = tonumber(n:sub(1, 2))
+                local dd = tonumber(n:sub(3, 4))
+
+                -- 粗校验 + 精校验（不 return；合法时再产出、并结束）
+                local ok = (mm and dd and mm >= 1 and mm <= 12 and dd >= 1 and dd <= 31)
+                if ok then
+                    ok = DateExists(tonumber(yr), mm, dd)
                 end
-                
-                set_prompt_if_invalid(context, display_year)
-                local mm_str = string.format("%02d", mm)
-                local dd_str = string.format("%02d", dd)
-                local date_str = yr .. mm_str .. dd_str .. "01"
-                local lunar = QueryLunarInfo(env, date_str)
-                
-                if #lunar > 0 then
-                    local candidates = {
-                        { string.format("%d月%d日", mm, dd), "" },
-                        { string.format("%02d月%02d日", mm, dd), "" }
-                    }
-                    
-                    -- 生肖列表
-                    local zodiacs = {"鼠", "牛", "虎", "兔", "龙", "蛇", "马", "羊", "猴", "鸡", "狗", "猪"}
-                    
-                    -- 遍历所有候选项
-                    for i, candidate in ipairs(lunar) do
-                        local text = candidate[1]
-                        
-                        -- 如果文本不包含数字，使用正则表达式处理
-                        if not text:match("%d") then
-                            -- 检查是否包含生肖
-                            local has_zodiac = false
-                            for _, zodiac in ipairs(zodiacs) do
-                                if text:match(zodiac) then
-                                    has_zodiac = true
-                                    break
+
+                if not ok then
+                    set_prompt_if_invalid(context, " 〔日期不存在〕")
+                else
+                    -- 合法 → 产出候选并结束
+                    set_prompt_if_invalid(context, " 〔" .. yr .. "年" .. "〕")
+
+                    local mm_str = string.format("%02d", mm)
+                    local dd_str = string.format("%02d", dd)
+                    local date_str = yr .. mm_str .. dd_str .. "01"
+                    local lunar = QueryLunarInfo(env, date_str)
+
+                    if #lunar > 0 then
+                        local candidates = {
+                            { string.format("%d月%d日", mm, dd), "" },
+                            { string.format("%02d月%02d日", mm, dd), "" }
+                        }
+                        local zodiacs = {"鼠","牛","虎","兔","龙","蛇","马","羊","猴","鸡","狗","猪"}
+                        for _, cand in ipairs(lunar) do
+                            local text = cand[1]
+                            if not text:match("%d") then
+                                if text:find("%b()") then
+                                    text = text:gsub("%b()", "")
                                 end
+                                local processed = text:match("年(.+)") or text
+                                table.insert(candidates, { processed, "" })
                             end
-                            
-                            -- 如果包含生肖，去掉生肖部分
-                            if has_zodiac then
-                                text = text:gsub("%(.*%)", "")  -- 去掉括号及括号内的内容
-                            end
-                            
-                            -- 提取"年"字后面的内容
-                            local processed_text = text:gsub(".*%)", "")
-                            if processed_text == text then
-                                processed_text = text:gsub("^.-年", ""):gsub("^.-%)", "")
-                            end
-                            
-                            table.insert(candidates, { processed_text, "" })
                         end
-                        -- 如果文本包含数字，则丢弃（不做任何处理）
+                        generate_candidates(input, seg, candidates)
+                        handled = true
                     end
-                    
+                end
+            end
+            -- NYYYY...：以 19/20 开头的年份（N2025 / N20250101 / N2025010101）
+            -- 提示“日期不存在”仅在长度 >= 8（yyyyMMdd）时进行
+            if not handled and (n:match("^20%d%d") or n:match("^19%d%d")) then
+                context:set_property("sequence_adjustment_code", "N")
+
+                if len >= 8 then
+                    local yyyy = tonumber(n:sub(1, 4))
+                    local mm   = tonumber(n:sub(5, 6))
+                    local dd   = tonumber(n:sub(7, 8))
+                    if not DateExists(yyyy, mm, dd) then
+                        set_prompt_if_invalid(context, " 〔日期不存在〕")
+                    end
+                end
+
+                local lunar = QueryLunarInfo(env, n)
+                if #lunar > 0 then
+                    local candidates = {}
+                    for i = 1, #lunar do
+                        candidates[#candidates + 1] = { lunar[i][1], lunar[i][2] }
+                    end
                     generate_candidates(input, seg, candidates)
+                    handled = true
                 end
-                return
             end
         end
 
-        -- N2025 或 N20250101 等
-        if n:match("^(20)%d%d") or n:match("^(19)%d%d") then
-            --- 设置手动排序的排序编码，以启用手动排序支持
-            context:set_property("sequence_adjustment_code", "N")
-
-            if #n >= 8 then
-                local yyyy = tonumber(n:sub(1, 4))
-                local mm = tonumber(n:sub(5, 6))
-                local dd = tonumber(n:sub(7, 8))
-                if not DateExists(yyyy, mm, dd) then
-                    set_prompt_if_invalid(context, " 〔日期不存在〕")
-                    return
-                end
-            end
-            local lunar = QueryLunarInfo(env, n)
-            local candidates = {}
-            for i = 1, #lunar do
-                table.insert(candidates, { lunar[i][1], lunar[i][2] })
-            end
-            generate_candidates(input, seg, candidates)
-            return
-        end
+        -- 只有当我们确实生成了候选，才结束本 translator。
+        if handled then return end
     end
 
     -- 以下为需要通过 shijian_keys 触发的功能
@@ -2517,13 +2583,11 @@ local function translator(input, seg, env)
         local date_variants = {}
         local custom_formats = config:get_list("date_formats")
         
-        if custom_formats then
+        if custom_formats and custom_formats.size > 0 then
             for i = 1, custom_formats.size do
                 local format_str = custom_formats:get_value_at(i-1):get_string()
-                
-                -- 根据格式字符串生成日期
-                local formatted_date = format_date(today, format_str)
-                if formatted_date then
+                local formatted_date = format_dt(today, format_str)
+                if formatted_date and formatted_date ~= "" then
                     table.insert(date_variants, { formatted_date, "" })
                 end
             end
@@ -2569,16 +2633,97 @@ local function translator(input, seg, env)
         --- 设置手动排序的排序编码，以启用手动排序支持
         context:set_property("sequence_adjustment_code", "/sj")
 
+        local now = os.date("*t")
         local time_discrpt = " 〔" .. GetLunarSichen(os.date("%H"), 1) .. "〕"
-        local time_variants = { { os.date("%H:%M"), "" }, --同一个时间首选看到时辰即可
-            { format_Time() .. os.date("%I:%M"), "" },
-            { os.date("%H:%M:%S"), "" },
-            { string.gsub(os.date("%H点%M分%S秒"), "^0", ""), "" } }
+
+        -- 优先读 YAML 里的 time_formats
+        local time_variants = {}
+        local custom_time_formats = config:get_list("time_formats")
+
+        if custom_time_formats and custom_time_formats.size > 0 then
+            for i = 1, custom_time_formats.size do
+                local fmt = custom_time_formats:get_value_at(i - 1):get_string()
+                local formatted = format_dt(now, fmt)
+                if formatted and formatted ~= "" then
+                    table.insert(time_variants, { formatted, "" })
+                end
+            end
+        else
+            -- 没配就走默认
+            time_variants = {
+                { os.date("%H:%M"), "" },
+                { os.date("%H:%M:%S"), "" },
+                { format_Time() .. os.date("%I:%M"), "" },
+                { (string.gsub(os.date("%H点%M分%S秒"), "^0", "")), "" },
+            }
+        end
+
+        -- 时辰
+        table.insert(time_variants, { GetLunarSichen(os.date("%H"), 1), "" })
+
         generate_candidates("time", seg, time_variants)
         set_prompt_if_invalid(context, time_discrpt)
         return
     end
+    -- **日期+时间（/dt，别名）**
+    if (command == "dt") then
+        context:set_property("sequence_adjustment_code", "/dt")
 
+        local now = os.date("*t")
+        local dt_variants = {}
+        local custom_dt_formats = config:get_list("datetime_formats")
+
+        if custom_dt_formats and custom_dt_formats.size > 0 then
+            for i = 1, custom_dt_formats.size do
+                local fmt = custom_dt_formats:get_value_at(i - 1):get_string()
+                local out = format_dt(now, fmt)
+                if out and out ~= "" then
+                    table.insert(dt_variants, { out, "" })
+                end
+            end
+        else
+            dt_variants = {
+                { os.date("%Y-%m-%d %H:%M:%S"), "" },
+                { os.date("%Y-%m-%dT%H:%M:%S"), "" },
+                { os.date("%Y%m%d%H%M%S"),      "" },
+            }
+        end
+
+        generate_candidates("time", seg, dt_variants)
+        return
+    end
+
+    -- **时间戳（/tt）
+    if (command == "tt") then
+        -- 启用手动排序支持
+        context:set_property("sequence_adjustment_code", "/tt")
+
+        -- 当前本地时间表 & 对应 Unix 秒
+        local now = os.date("*t")
+        local epoch_s = os.time{
+            year  = now.year,
+            month = now.month,
+            day   = now.day,
+            hour  = now.hour,
+            min   = now.min,
+            sec   = now.sec,
+            isdst = now.isdst
+        }
+
+        -- 本地时区偏移，转成 +08:00 这种带冒号格式
+        local tz_raw   = os.date("%z") or "+0000"                -- +0800 / -0430
+        local tz_colon = tz_raw:sub(1,3) .. ":" .. tz_raw:sub(4,5) -- +08:00 / -04:30
+
+        local timestamp_variants = {
+            { tostring(epoch_s),                         "〔Unix秒〕" },
+            { tostring(epoch_s * 1000),                  "〔Unix毫秒〕" },
+            { os.date("%Y-%m-%dT%H:%M:%S") .. tz_colon,  "〔RFC3339 本地+偏移〕" },
+            { os.date("%Y%m%d%H%M%S"),                   "〔YYYYMMDDHHMMSS〕" },
+        }
+
+        generate_candidates("time", seg, timestamp_variants)
+        return
+    end
     -- **农历候选项**
     if (command == "nl") then
         --- 设置手动排序的排序编码，以启用手动排序支持
@@ -2666,30 +2811,6 @@ local function translator(input, seg, env)
             end
         end
         generate_candidates("ojq", seg, jq_variants)
-        return
-    end
-
-    -- **时间戳**
-    if (command == "tt") then
-        --- 设置手动排序的排序编码，以启用手动排序支持
-        context:set_property("sequence_adjustment_code", "/tt")
-
-        local current_time = os.time()
-        local timestamp_variants = { { string.format('%d', current_time), "〔时间戳〕" } }
-        generate_candidates("time", seg, timestamp_variants)
-        return
-    end
-
-    -- **日期+时间**
-    if (command == "rs") then
-        --- 设置手动排序的排序编码，以启用手动排序支持
-        context:set_property("sequence_adjustment_code", "/rs")
-
-        local current_time = os.time()
-        local time_variants = { { os.date('%Y-%m-%d %H:%M:%S', current_time), "〔年-月-日 时:分:秒〕" },
-            { os.date('%Y-%m-%dT%H:%M:%S+08:00', current_time), "〔年-月-日T时:分:秒+时区〕" },
-            { os.date('%Y%m%d%H%M%S', current_time), "〔年月日时分秒〕" } }
-        generate_candidates("time", seg, time_variants)
         return
     end
 
@@ -2868,7 +2989,7 @@ local function translator(input, seg, env)
         -- 你可以根据需要调整长度
         local line = generate_line(14) -- 控制符号线的宽度为 50
         -- 生成最终信息字符串
-        local summary = string.format("※嗨，薄荷小助手来报时，%s\n", greeting) .. line .. "\n" ..
+        local summary = string.format("※嗨，我是万象小助手，%s\n", greeting) .. line .. "\n" ..
             string.format("☉ 今天是：%s%s%s\n", zero_holiday or "", zero_jieqi or "", sanfu) ..
             string.format("☉ %d年%d月%d日 %s\n", year, month, day, week_day_str) ..
             string.format("☉ 农历：%s\n", lunar_info_str) .. line .. "\n" ..
