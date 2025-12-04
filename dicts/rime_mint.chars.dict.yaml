@@ -3,7 +3,7 @@
 #https://github.com/amzxyz/RIME-LMDG
 ---
 name: rime_mint.chars
-version: "2025-10-29"
+version: "2025-12-04"
 sort: by_weight
 
 ...
@@ -839,6 +839,7 @@ sort: by_weight
 艕	bàng	50
 稖	bàng	38
 縍	bāng	23
+𪹚	bàng	18
 邫	bāng	1
 捠	bāng	1
 䧛	bàng	1
@@ -5001,6 +5002,7 @@ sort: by_weight
 膪	chuài	124
 膗	chuái	97
 揣	chuài	68
+嘬	chuài	23
 䦷	chuài	1
 欼	chuài	1
 㪓	chuái	1
@@ -6834,7 +6836,7 @@ sort: by_weight
 谛	dì	497
 翟	dí	497
 嫡	dí	491
-嘀	dí	481
+嘀	dī	481
 棣	dì	476
 诋	dǐ	475
 砥	dǐ	455
@@ -6844,6 +6846,7 @@ sort: by_weight
 坻	dǐ	428
 娣	dì	420
 氐	dī	391
+𬱖	dí	375
 頔	dí	370
 碲	dì	366
 遞	dì	352
@@ -6878,6 +6881,7 @@ sort: by_weight
 詆	dǐ	162
 厎	dǐ	159
 蔕	dì	151
+嘀	dí	140
 踶	dì	139
 篴	dí	139
 蝃	dì	134
@@ -6930,7 +6934,6 @@ sort: by_weight
 蔋	dí	1
 唙	dí	1
 䃅	dī	1
-𬱖	dí	1
 蔐	dí	1
 嶳	dì	1
 適	dí	1
@@ -7260,6 +7263,7 @@ sort: by_weight
 窎	diào	151
 铞	diào	146
 蓧	diào	146
+鸟	diǎo	134
 簓	diāo	132
 藋	diào	130
 鼦	diāo	109
@@ -9707,7 +9711,7 @@ sort: by_weight
 跗	fū	382
 蜉	fú	377
 蝮	fù	375
-頫	fǔ	372
+𫖯	fǔ	370
 芾	fú	368
 罘	fú	368
 巿	fú	366
@@ -9734,6 +9738,7 @@ sort: by_weight
 黼	fǔ	310
 賦	fù	308
 鲋	fù	303
+頫	fǔ	302
 稃	fū	299
 阝	fù	284
 祔	fù	283
@@ -9864,7 +9869,6 @@ sort: by_weight
 翇	fú	1
 𫚒	fú	1
 𫓧	fū	1
-𫖯	fǔ	1
 捬	fǔ	1
 䃼	fú	1
 糐	fū	1
@@ -11692,6 +11696,7 @@ sort: by_weight
 癸	guǐ	515
 鲑	guī	487
 皈	guī	462
+晷	guǐ	458
 貴	guì	455
 簋	guǐ	435
 蟡	guǐ	419
@@ -11703,7 +11708,6 @@ sort: by_weight
 刽	guì	394
 槻	guī	391
 匮	guì	390
-晷	guǐ	387
 歸	guī	375
 妫	guī	362
 帰	guī	362
@@ -12988,6 +12992,7 @@ sort: by_weight
 姮	héng	301
 鑅	héng	209
 烆	héng	119
+行	héng	110
 鴴	héng	109
 啈	hēng	101
 鵆	héng	97
@@ -13024,7 +13029,6 @@ sort: by_weight
 𪏓	héng	1
 𫰟	héng	1
 堼	hèng	1
-行	héng	1
 红	hóng	769
 洪	hóng	655
 宏	hóng	654
@@ -15607,6 +15611,7 @@ sort: by_weight
 㴔	jí	1
 嵴	jí	1
 𠽤	jī	1
+𱉼	jī	1
 加	jiā	898
 家	jiā	871
 价	jià	824
@@ -19936,6 +19941,7 @@ sort: by_weight
 鑞	là	50
 鬎	là	38
 揧	là	38
+癞	là	3
 𬶟	là	1
 㻋	là	1
 䓥	là	1
@@ -20111,8 +20117,8 @@ sort: by_weight
 𫓳	lǎi	1
 𫝫	lái	1
 𪮶	lài	1
-兰	lán	744
-蓝	lán	705
+蓝	lán	744
+兰	lán	705
 览	lǎn	678
 篮	lán	660
 烂	làn	657
@@ -22372,9 +22378,9 @@ sort: by_weight
 六	liù	871
 陆	liù	833
 刘	liú	815
-柳	liǔ	801
-流	liú	795
-留	liú	748
+留	liú	801
+柳	liǔ	795
+流	liú	747
 浏	liú	628
 瘤	liú	625
 溜	liū	594
@@ -24920,11 +24926,11 @@ sort: by_weight
 𪁼	mián	1
 𪏊	miǎn	1
 眄	miàn	1
-描	miáo	700
-秒	miǎo	667
+秒	miǎo	767
 苗	miáo	661
 妙	miào	654
 庙	miào	643
+描	miáo	600
 喵	miāo	557
 瞄	miáo	552
 渺	miǎo	518
@@ -26681,9 +26687,9 @@ sort: by_weight
 𫛢	níng	1
 𫝱	níng	1
 牛	niú	753
-纽	niǔ	654
-扭	niǔ	629
-钮	niǔ	587
+扭	niǔ	689
+钮	niǔ	607
+纽	niǔ	582
 妞	niū	551
 拗	niù	426
 紐	niǔ	315
@@ -27945,6 +27951,7 @@ sort: by_weight
 骗	piàn	675
 翩	piān	515
 骈	pián	390
+谝	piǎn	377
 扁	piān	359
 騙	piàn	357
 胼	pián	344
@@ -27977,7 +27984,6 @@ sort: by_weight
 璸	pián	1
 緶	pián	1
 缏	pián	1
-谝	piǎn	1
 㓲	piàn	1
 㸤	piàn	1
 㼐	pián	1
@@ -37762,6 +37768,7 @@ sort: by_weight
 苇	wěi	495
 娓	wěi	494
 痿	wěi	472
+遗	wèi	470
 煨	wēi	467
 衞	wèi	463
 圩	wéi	460
@@ -43676,6 +43683,7 @@ sort: by_weight
 邑	yì	538
 沂	yí	531
 倚	yǐ	526
+羿	yì	524
 驿	yì	522
 翌	yì	517
 懿	yì	516
@@ -43697,7 +43705,6 @@ sort: by_weight
 佚	yì	448
 議	yì	441
 醫	yī	439
-羿	yì	431
 旖	yǐ	429
 咿	yī	427
 苡	yǐ	424
@@ -45579,13 +45586,13 @@ sort: by_weight
 语	yǔ	808
 预	yù	778
 雨	yǔ	776
-育	yù	774
+玉	yù	774
+育	yù	764
 域	yù	757
 鱼	yú	756
 遇	yù	730
 余	yú	720
 与	yù	700
-玉	yù	700
 娱	yú	687
 予	yǔ	683
 宇	yǔ	676
@@ -46247,9 +46254,10 @@ sort: by_weight
 於	yū	1
 蔚	yù	1
 原	yuán	818
-缘	yuán	810
-元	yuán	806
+元	yuán	810
+缘	yuán	804
 员	yuán	800
+袁	yuán	785
 院	yuàn	782
 源	yuán	778
 远	yuǎn	752
@@ -46258,7 +46266,6 @@ sort: by_weight
 圆	yuán	690
 援	yuán	657
 怨	yuàn	628
-袁	yuán	608
 苑	yuàn	585
 渊	yuān	578
 冤	yuān	558
@@ -48234,7 +48241,7 @@ sort: by_weight
 𩤜	zhě	1
 𪁊	zhé	1
 𪐏	zhé	1
-这	zhèi	1
+这	zhèi	651
 真	zhēn	814
 镇	zhèn	735
 针	zhēn	706
