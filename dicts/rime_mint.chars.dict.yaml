@@ -3,7 +3,7 @@
 #https://github.com/amzxyz/RIME-LMDG
 ---
 name: rime_mint.chars
-version: "2025-12-04"
+version: "2025-12-29"
 sort: by_weight
 
 ...
@@ -57,6 +57,7 @@ sort: by_weight
 僾	ài	182
 嬡	ài	182
 敳	ái	181
+乂	aì	175
 藹	ǎi	171
 靄	ǎi	168
 壒	ài	166
@@ -10226,8 +10227,8 @@ sort: by_weight
 𣬫	gà	1
 𪜃	gā	1
 戛	gā	1
-该	gāi	808
-改	gǎi	788
+改	gǎi	808
+该	gāi	788
 概	gài	729
 盖	gài	708
 钙	gài	608
@@ -32867,15 +32868,15 @@ sort: by_weight
 𫒱	shè	1
 谁	shéi	353
 誰	shéi	1
-什	shén	828
-身	shēn	812
-神	shén	784
+神	shén	884
+伸	shēn	853
 深	shēn	781
+沈	shěn	745
 甚	shèn	726
 审	shěn	718
 申	shēn	716
-伸	shēn	653
-沈	shěn	645
+身	shēn	712
+什	shén	678
 慎	shèn	642
 肾	shèn	634
 参	shēn	599
@@ -34127,17 +34128,17 @@ sort: by_weight
 𪰖	shùn	1
 说	shuō	859
 硕	shuò	646
-說	shuō	553
 朔	shuò	538
 烁	shuò	518
+数	shuò	434
 铄	shuò	383
 説	shuō	381
+說	shuō	377
 蒴	shuò	364
 槊	shuò	349
 妁	shuò	317
 碩	shuò	292
 搠	shuò	255
-数	shuò	234
 爍	shuò	201
 矟	shuò	197
 鑠	shuò	146
@@ -50283,8 +50284,8 @@ sort: by_weight
 𩲃	zhuó	1
 𩷹	zhuó	1
 𪟣	zhuó	1
-自	zì	868
-字	zì	833
+字	zì	863
+自	zì	838
 子	zǐ	780
 资	zī	778
 咨	zī	676
