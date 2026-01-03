@@ -248,8 +248,8 @@ speller:
     - erase/^xx$/ # 首选保留
     # - derive/^([zcs])h/$1/ # zh, ch, sh => z, c, s
     # - derive/^([zcs])([^h])/$1h$2/ # z, c, s => zh, ch, sh
-    # - derive/([aei])n$/$1ng/ # en => eng, in => ing
-    # - derive/([aei])ng$/$1n/ # eng => en, ing => in
+    # - derive/([aei])n$/$1ng/ # an => ang, en => eng, in => ing
+    # - derive/([aei])ng$/$1n/ # ang => an, eng => en, ing => in
     # - derive/([iu])an$/$lan/ # ian => iang, uan => uang
     # - derive/([iu])ang$/$lan/ # iang => ian, uang => uan
     - derive/([aeiou])ng$/$1gn/        # dagn => dang
@@ -419,6 +419,7 @@ key_binder:
 
   # 候选词个数
   page_size: 6
+
 
 
 
