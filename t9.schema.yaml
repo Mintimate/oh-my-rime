@@ -1,10 +1,5 @@
 # Rime schema
 # encoding: utf-8
-
-
-# 适配了仓输入法 [Hamster](https://github.com/imfuxiao/Hamster/) 九宫格布局。
-# 参考于仓老师 [morse.hsiao](https://github.com/imfuxiao) 的示例
-#
 # 可选，支持英文：
 # 1. 解开 `engine/translators` 下的注释
 # 2. 将 `tools/Hamster/melt_eng.custom.yaml` 里的文件拷贝至配置目录，该补丁转写了英文的拼写规则到九宫格；
@@ -12,23 +7,28 @@
 
 __include: rime_mint.schema.yaml:/
 
+t9:
+  # 是否显示 rime 中原始的预编辑文本，默认为 true
+  # true: 对 preedit 不做处理，显示 rime 返回的原始 preedit 值。
+  #       如果想通过 lua 自己调整 preedit 的显示，可以设置为 true。
+  # false: 根据候选字 comment 显示转换后的 preedit 内容。
+  #        注意：请务必保证候选字 comment 有效且正确，否则可能导致预编辑文本显示异常。
+  isDisplayOriginalPreedit: false
 
 schema:
   schema_id: t9
-  name: 仓九宫格-全拼输入
-  version: "24.04.25"
+  name: 中文九键
+  version: "3.0.0"
   author:
     - Dvel
     - '[morse.hsiao](https://github.com/imfuxiao)'
     - Mintimate
   description: |
-    九宫格 for 仓输入法
-  dependencies:
-    - melt_eng  # 英文输入，作为次翻译器挂载到拼音方案
-
+    九宫格 for 仓输入法/元书输入法
 
 engine:
   processors:
+    - t9_processor
     - ascii_composer
     - recognizer
     - key_binder
@@ -46,87 +46,46 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    - lua_translator@*shijian                            # 时间、日期、星期、月份、问候、节气、节日，N模式
     - table_translator@custom_phrase                     # 自定义短语 custom_phrase_t9.txt
-    # - table_translator@melt_eng                        # 英文输入
+    - lua_translator@*mint_calculator_translator         # 计算器（lua 动态表达式）
+    - lua_translator@*force_gc
   filters:
     - simplifier@emoji_suggestion
     - simplifier@transcription_cc         # 简繁切换
     - uniquifier                          # 去重
 
-# 简繁切换
-transcription_cc:
-  option_name: transcription
-  opencc_config: s2t.json             # s2t.json | s2hk.json | s2tw.json | s2twp.json
-  tips: none                          # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
-  excluded_types: [ reverse_lookup ]  # 不转换反查（两分拼字）的内容
-
 translator:
-  prism: t9
-  spelling_hints: 100
-  comment_format: []
+  dictionary: rime_mint         # 挂载主词库
+#  packs: user                  #导入根目录下名称为user.dict.yaml的自定义固定词典
+  prism: rime_mint_t9             # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
+  enable_completion: true      # 启用候选词补全
+#  user_dict: zrm.userdb       # 用户词典的文件名称
+#  db_class: tabledb           #开启后就不会产生wanxiang.userdb这样的文件夹，会直接输出文本wanxiang.txt同时无法使用同步能力，可设 tabledb〔文本〕或 userdb〔二进制〕
+  enable_user_dict: true       # 是否开启自动调频，即开启用户词典
+  enable_encoder: true         #是否开启自动造词
+  enable_sentence: false       #是否开启自动造句
+  enable_correction: false     #是否开启自动纠错
+  encode_commit_history: true  # 预留历史上屏自动编码成词
+  contextual_suggestions: false  #模型预测，假设模型里面有的四个字的词汇 现在智能 而首选组合 现在只能 当你输入 现在 上屏后下一次输入zhi neng就会输出，智能前提是没有权重更高的了，很明显这与你的预期“现在只能”不符。很明显实际上又要预测又要连续句子，放一起是很难优雅的。
+  max_homophones: 5
+  max_homographs: 5
+  core_word_length: 4          # >0 启用，按段学词 + 相邻段拼接
+  max_word_length: 7           # >0 启用，过长短语不记整词，只加元素权重
+  initial_quality: 3           #初始质量拼音的权重应该比英文大
+  spelling_hints: 30           #将注释以词典code字符串形式完全暴露，通过super_comment.lua完全接管，灵活配置。
+  always_show_comments: true   # Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供super_comment.lua做判断用。
+  comment_format:
+    - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜüńňǹḿm̀/aaaaooooeeeeiiiiuuuuvvvvvnnnmmm/
+    - xform/^(.*);.*$/$1/
+  #disable_user_dict_for_patterns:  #如果你开启调频，需要一并考虑这个配置是否需要，基本的6码3字不调频，你可以自定义，目前的逻辑是依然记录用户词但满足规则的不输出不被使用
+  #  - "^[a-z]{1,6}"
 
-#shijian:仅仅作为提示使用，编码已经写死，引导键可以在key_binder下修改前缀
-#时间：osj 或者 /sj
-#日期：orq 或者 /rq
-#农历：onl 或者 /nl
-#星期：oxq 或者 /xq
-#今年第几周：oww 或者 /ww
-#节气：ojq 或者 /jq
-#日期+时间：odt 或者 /dt
-#时间戳：ott 或者 /tt
-#大写N日期：N20250315 或者N0312不带年
-#节日：ojr 或者 /jr
-#问候模板：/day 或者 oday
-# 通用日期时间格式化函数（供 /rq、/sj、/dt、N0101、N20150101 场景复用）
-# 支持转义：
-#   \X       —— 转义单个字符 X，按字面量输出（如 \Y \m \H 等）
-#   [[...]]  —— 区块整体按字面量输出
-#
-# 约定占位符：
-# 【日期】
-#   Y  四位年份           0000-9999  例：2025
-#   y  两位年份           00-99      例：25
-#   m  月（前导零）        01-12      例：02
-#   n  月（不带前导零）     1-12       例：2
-#   d  日（前导零）        01-31      例：09
-#   j  日（不带前导零）     1-31       例：9
-#
-# 【时间】
-#   H  24小时（前导零）   00-23      例：08
-#   G  24小时（不带零）   0-23       例：8
-#   I  12小时（前导零）   01-12      例：08
-#   l  12小时（不带零）   1-12       例：8   （注意是小写 L）
-#   M  分钟（前导零）     00-59      例：05
-#   S  秒（前导零）       00-59      例：09
-#   p  am/pm（小写）     am / pm
-#   P  AM/PM（大写）     AM / PM
-# 【时区】
-#   O  带冒号格式        +08:00、-04:30、+05:45
-#   o  不带冒号格式      +0800、-0430、+0545
-date_formats:
-  - "Y年m月d日"
-  - "Y-m-d"
-  - "Y/m/d"
-  - "Y.m.d"
-  - "Ymd"
-  - "Y年n月j日"
-  - "y年n月j日"
-  - "n月j日"
-time_formats:
-  - "H:M"
-  - "H点M分"
-  - "H:M:S"
-  - "H时M分S秒"
-  - "下午I:M"
-  - "I:M P"
-datetime_formats:
-  - "Y-m-d H:M:S"
-  - "Y-m-dTH:M:S O"
-  - "YmdHMS"
-  - "Y年m月d日 H点M分"
-  - "y/m/d I:M p"
-
+# 反查映射
+recognizer:
+  #import_preset: default  # 从 default.yaml 继承通用的
+  patterns:  
+    expression: "^=.*$"                 # = 作为触发前缀，计算器功能引导
+    
 # 自定义短语：custom_phrase_t9.txt
 # ⚠️ 编码要用数字
 custom_phrase:
@@ -137,44 +96,38 @@ custom_phrase:
   enable_sentence: false
   initial_quality: 99
 
-
 # 九宫格 1 键上的符号序列
 punctuator:
-  half_shape:
+  digit_separators: ",."  #数字分隔符，系统逻辑是在中文状态下输入数字后继续输入句号按下两次即输入半角状态
+  import_preset: symbols
+  __patch: t9_sym
+t9_sym:
+  half_shape/+:
+    "'": "'"
     "1": [1, "@", ".", "/", ":", "_", "-", "#"]
     "@": [1, "@", ！, ：, 、, ……, ～]
     "#": [0, "#", "$", "%", "^", "&", "*", "(", ")"]
 
-
 # 输入时按 1 可以分词
 key_binder:
   bindings:
-    - { when: has_menu, accept: at, send: apostrophe }
-
+    - { when: has_menu, accept: 1, send: apostrophe }
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA987654321
-  initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA987654321
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA9876543210=
+  initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA9876543210=
+  delimiter: " '"        # 系统配置，第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
   algebra:
-    # ### 超级简拼
-    - abbrev/^([a-z]).+$/$1/ # 超级简拼
-    - abbrev/^([zcs]h).+$/$1/ # 超级简拼中，zh ch sh 视为整体（ch'sh → 城市），而不是像这样分开（c'h's'h → 吃好睡好）。
+    - xform/^(.*);.*$/$1/
+    - xlit/āáǎàōóǒòēéěèīíǐìūúǔùǖǘǚǜüńňǹḿm̀/aaaaooooeeeeiiiiuuuuvvvvvnnnmmm/
+    - derive/^ng$/eng/
+    - xform/^n$/en/
+    - xform/^m$/me/
+    - derive/^(.*)$/\U$1/
+    #- abbrev/^([A-Z]).+$/$1/
+    #- abbrev/^([ZCS]H).+$/$1/
     - derive/^([nl])ve$/$1ue/
+    - derive/^([NL])VE$/$1UE/
     - derive/^([jqxy])u/$1v/
-    - derive/un$/uen/
-    - derive/ui$/uei/
-    - derive/iu$/iou/
-    - derive/([aeiou])ng$/$1gn/
-    - derive/([dtngkhrzcs])o(u|ng)$/$1o/
-    - derive/ong$/on/
-    - derive/ao$/oa/
-    - derive/([iu])a(o|ng?)$/a$1$2/
-    # ### 九宫格数字映射
-    - derive/[abc]/2/
-    - derive/[def]/3/
-    - derive/[hgi]/4/
-    - derive/[jkl]/5/
-    - derive/[omn]/6/
-    - derive/[pqrs]/7/
-    - derive/[tuv]/8/
-    - derive/[wxyz]/9/
+    - derive/^([JQXY])U/$1V/
+    - xlit/ABCDEFGHIJKLMNOPQRSTUVWXYZ/22233344455566677778889999/
