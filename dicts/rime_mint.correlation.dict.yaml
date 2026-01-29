@@ -4,7 +4,7 @@
 #错音错字对照表
 ---
 name: rime_mint.correlation
-version: "2025-12-29"
+version: "2026-01-29"
 sort: by_weight
 
 ...
@@ -94,7 +94,7 @@ sort: by_weight
 自怨自艾	zi yuan zi ai	520	自怨自艾(yì)
 洪洞	hong dong	420	hóng tóng
 蔚县	wei xian	430	yù xiàn
-嵊州	cheng zhou	440	shèng zhōu
+嵊州	cheng zhou	382	shèng zhōu
 吱声	zhi sheng	220	zī shēng
 主角	zhu jiao	541	zhǔ jué
 脖颈儿	bo jing er	10	bó gěng er
