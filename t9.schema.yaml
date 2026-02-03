@@ -46,6 +46,7 @@ engine:
   translators:
     - punct_translator
     - script_translator
+    - lua_translator@*shijian              #农历、日期、节气、节日、时间、周、问候模板等等，触发清单看下文
     - table_translator@custom_phrase                     # 自定义短语 custom_phrase_t9.txt
     - lua_translator@*mint_calculator_translator         # 计算器（lua 动态表达式）
     - lua_translator@*force_gc
@@ -53,6 +54,70 @@ engine:
     - simplifier@emoji_suggestion
     - simplifier@transcription_cc         # 简繁切换
     - uniquifier                          # 去重
+
+#shijian:仅仅作为提示使用，编码已经写死，引导键可以在key_binder下修改前缀
+#时间：osj 或者 /sj
+#日期：orq 或者 /rq
+#农历：onl 或者 /nl
+#星期：oxq 或者 /xq
+#今年第几周：oww 或者 /ww
+#节气：ojq 或者 /jq 这个数字对应655因为九键重复
+#日期+时间：odt 或者 /dt
+#时间戳：ott 或者 /tt
+#大写N日期：N20250315 或者N0312不带年
+#节日：ojr 或者 /jr
+#问候模板：/day 或者 oday
+#九键输入以上字母对应数字编码即可
+# 通用日期时间格式化函数（供 /rq、/sj、/dt、N0101、N20150101 场景复用）
+# 支持转义：
+#   \X       —— 转义单个字符 X，按字面量输出（如 \Y \m \H 等）
+#   [[...]]  —— 区块整体按字面量输出
+#
+# 约定占位符：
+# 【日期】
+#   Y  四位年份           0000-9999  例：2025
+#   y  两位年份           00-99      例：25
+#   m  月（前导零）        01-12      例：02
+#   n  月（不带前导零）     1-12       例：2
+#   d  日（前导零）        01-31      例：09
+#   j  日（不带前导零）     1-31       例：9
+#
+# 【时间】
+#   H  24小时（前导零）   00-23      例：08
+#   G  24小时（不带零）   0-23       例：8
+#   I  12小时（前导零）   01-12      例：08
+#   l  12小时（不带零）   1-12       例：8   （注意是小写 L）
+#   M  分钟（前导零）     00-59      例：05
+#   S  秒（前导零）       00-59      例：09
+#   p  am/pm（小写）     am / pm
+#   P  AM/PM（大写）     AM / PM
+# 【时区】
+#   O  带冒号格式        +08:00、-04:30、+05:45
+#   o  不带冒号格式      +0800、-0430、+0545
+#   A  中文时段    凌晨 / 上午 / 中午 / 下午 / 晚上
+date_formats:
+  - "Y年m月d日"
+  - "Y-m-d"
+  - "Y/m/d"
+  - "Y.m.d"
+  - "Ymd"
+  - "Y年n月j日"
+  - "y年n月j日"
+  - "n月j日"
+time_formats:
+  - "H:M"
+  - "H点M分"
+  - "H:M:S"
+  - "H时M分S秒"
+  - "AI:M"
+  - "I:M P"
+datetime_formats:
+  - "Y-m-d H:M:S"
+  - "Y-m-dTH:M:S O"
+  - "YmdHMS"
+  - "Y年m月d日 H点M分"
+  - "y/m/d I:M p"
+
 
 translator:
   dictionary: rime_mint         # 挂载主词库
@@ -110,6 +175,8 @@ t9_sym:
 
 # 输入时按 1 可以分词
 key_binder:
+  # Lua 配置: shijian.lua 的引导符，涉及：日期、时间、节日、节气、生日、问候模板等功能
+  shijian_keys: ["/", "6"]
   bindings:
     - { when: has_menu, accept: 1, send: apostrophe }
 
