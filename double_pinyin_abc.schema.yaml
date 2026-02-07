@@ -159,7 +159,7 @@ emoji_suggestion:
 # 最大输入长度
 codeLengthLimit_processor: 25
 
-axu_code:
+aux_code:
   # 激活码
   trigger_word: "`"
   # 展示辅码的模式

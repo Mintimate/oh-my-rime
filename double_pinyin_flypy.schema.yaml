@@ -188,7 +188,7 @@ codeLengthLimit_processor: 25
 
 
 # 小鹤音形配置
-axu_code:
+aux_code:
   # 激活码
   trigger_word: ";"
   # 展示辅码的模式
