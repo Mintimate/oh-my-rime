@@ -418,6 +418,7 @@ key_binder:
     - {accept: "Control+Shift+exclam", toggle: transcription, when: has_menu}      # 当存在候选菜单时，可以切换简体和繁体（小狼毫可能读取这个）
 
 
+menu:
   # 候选词个数
   page_size: 6
 
