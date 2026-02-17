@@ -6,14 +6,6 @@
 
 local AuxFilter = {}
 
-local function alt_lua_punc( s )
-    if s then
-        return s:gsub( '([%.%+%-%*%?%[%]%^%$%(%)%%])', '%%%1' )
-    else
-        return ''
-    end
-end
-
 -- 日志模块
 -- local log = require 'log'
 -- log.outfile = "aux_code.log"
@@ -29,7 +21,8 @@ function AuxFilter.init(env)
     -- 設定預設觸發鍵為分號，並從配置中讀取自訂的觸發鍵
     env.trigger_key = config:get_string("aux_code/trigger_word") or ";"
     -- 对内容进行替换
-    env.trigger_key_string = alt_lua_punc( env.trigger_key )
+    -- 使用 Upstream 的 inline escaping 逻辑，但在 init 中预处理好供 notifier 使用
+    env.trigger_key_string = env.trigger_key:gsub("(%W)", "%%%1")
     
     -- 设定是否显示辅助码，默认为显示
     env.show_aux_notice = config:get_string("aux_code/show_aux_notice") or "always"
@@ -97,8 +90,11 @@ function AuxFilter.readAuxTxt(txtpath)
         line = line:match("[^\r\n]+") -- 去掉換行符，不然 value 是帶著 \n 的
         local key, value = line:match("([^=]+)=(.+)") -- 分割 = 左右的變數
         if key and value then
-            auxCodes[key] = auxCodes[key] or {}
-            table.insert(auxCodes[key], value)
+            if auxCodes[key] then
+                auxCodes[key] = auxCodes[key] .. " " .. value
+            else
+                auxCodes[key] = value
+            end
         end
     end
     file:close()
@@ -110,18 +106,6 @@ function AuxFilter.readAuxTxt(txtpath)
     AuxFilter.cache = auxCodes
     return AuxFilter.cache
 end
-
--- local function getUtf8CharLength(byte)
---     if byte < 128 then
---         return 1
---     elseif byte < 224 then
---         return 2
---     elseif byte < 240 then
---         return 3
---     else
---         return 4
---     end
--- end
 
 -- 輔助函數，用於獲取表格的所有鍵
 local function table_keys(t)
@@ -160,7 +144,7 @@ function AuxFilter.fullAux(env, word)
         local char = utf8.char(codePoint)
         local charAuxCodes = AuxFilter.aux_code[char] -- 每個字的輔助碼組
         if charAuxCodes then -- 輔助碼存在
-            for _, code in ipairs(charAuxCodes) do
+            for code in charAuxCodes:gmatch("%S+") do
                 for i = 1, #code do
                     fullAuxCodes[i] = fullAuxCodes[i] or {}
                     fullAuxCodes[i][code:sub(i, i)] = true
@@ -231,29 +215,30 @@ function AuxFilter.func(input, env)
         for cand in input:iter() do
             local auxCodes = AuxFilter.aux_code[cand.text] -- 仅单字非 nil
             local fullAuxCodes = AuxFilter.fullAux(env, cand.text)
-            -- 查看 auxCodes
-            -- log.info(cand.text, #auxCodes)
-            -- for i, cl in ipairs(auxCodes) do
-            --     log.info(i, table.concat(cl, ',', 1, #cl))
-            -- end
-
+            
             -- 给候选项添加辅助代码提示
             if env.show_aux_notice and auxCodes and #auxCodes > 0 then
-                local codeComment = table.concat(auxCodes, ',')
-                -- 处理 simplifier
-                if cand:get_dynamic_type() == "Shadow" then
-                    local shadowText = cand.text
-                    local shadowComment = cand.comment
-                    local originalCand = cand:get_genuine()
-                    cand = ShadowCandidate(originalCand, originalCand.type, shadowText,
-                        originalCand.comment .. shadowComment .. '(' .. codeComment .. ')')
+                local codeComment = auxCodes:gsub(' ', ',')
+                local showComment = false
+                if env.show_aux_notice == "always" or env.show_aux_notice == true then
+                   showComment = true
                 elseif env.show_aux_notice == "trigger" then
-                    if string.find(inputCode,env.trigger_key_string) then
+                   if string.find(inputCode, env.trigger_key_string) then
+                       showComment = true
+                   end
+                end
+
+                if showComment then
+                    -- 处理 simplifier
+                    if cand:get_dynamic_type() == "Shadow" then
+                        local shadowText = cand.text
+                        local shadowComment = cand.comment
+                        local originalCand = cand:get_genuine()
+                        cand = ShadowCandidate(originalCand, originalCand.type, shadowText,
+                            originalCand.comment .. shadowComment .. '(' .. codeComment .. ')')
+                    else
                         cand.comment = cand.comment .. '(' .. codeComment .. ')'
                     end
-                else
-                    -- 其他情况直接给注释添加辅助代码
-                    cand.comment = cand.comment .. '(' .. codeComment .. ')'
                 end
             end
 
@@ -261,7 +246,7 @@ function AuxFilter.func(input, env)
             if #auxStr == 0 then
                 -- 沒有輔助碼、不需篩選，直接返回待選項
                 yield(cand)
-            elseif #auxStr > 0 and fullAuxCodes and (cand.type == 'user_phrase' or cand.type == 'phrase') and
+            elseif #auxStr > 0 and fullAuxCodes and (cand.type == 'user_phrase' or cand.type == 'phrase' or cand.type == 'simplified') and
                 AuxFilter.match(fullAuxCodes, auxStr) then
                 -- 匹配到辅助码的待选项，直接插入到候选框中( 获得靠前的位置 )
                 yield(cand)
