@@ -77,7 +77,7 @@ Rime 配置教程：
 - Linux
   - iBus:`~/.config/ibus/rime`
   - Fcitx5: `~/.local/share/fcitx5/rime`
-- Fctix5 Android(小企鹅入法): `/storage/emulated/0/Android/data/org.fcitx.fcitx5.android/files/data/rime/`
+- Fctix5 Android(小企鹅输入法): `/storage/emulated/0/Android/data/org.fcitx.fcitx5.android/files/data/rime/`
 
 本地rime日志文件默认地址如下：
 
