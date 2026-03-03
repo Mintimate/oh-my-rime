@@ -4,7 +4,7 @@
 #错音错字对照表
 ---
 name: rime_mint.correlation
-version: "2026-01-29"
+version: "2026-03-03"
 sort: by_weight
 
 ...
@@ -20,6 +20,7 @@ sort: by_weight
 杉杉来吃	shān shān lái chī	42	书名
 食话食说	shí huà shí shuō	25	节目
 零零总总	ling ling zong zong	6	林林总总
+太差劲	tai cha jing	89	jìn
 文绉绉	wen zou zou	16	zhōu
 大栅栏	da zha lan	23	dà shí làn
 粘贴	nian tie	382	粘(zhān)贴
@@ -154,3 +155,4 @@ sort: by_weight
 南京市六合区	nan jing shi liu he qu	1	nán jīng shì lù hé qū
 南无阿弥陀佛	nan wu a mi tuo fo	4	nā mó ē mí tuó fó
 南无阿弥陀佛	nan wu e mi tuo fo	4	nā mó ē mí tuó fó
+蓦然回首	mu ran hui shou	39	蓦(mò)然回首

@@ -3,7 +3,7 @@
 #https://github.com/amzxyz/RIME-LMDG
 ---
 name: rime_mint.chars
-version: "2026-01-29"
+version: "2026-03-03"
 sort: by_weight
 
 ...
@@ -3059,9 +3059,6 @@ sort: by_weight
 𤛢	céng	1
 𦠇	céng	1
 𧲅	céng	1
-硛	ceok	1
-硳	ceok	1
-猠	ceon	1
 查	chá	771
 差	chà	740
 茶	chá	731
@@ -6167,9 +6164,9 @@ sort: by_weight
 戴	dài	674
 袋	dài	666
 呆	dāi	627
-大	dài	620
+歹	dǎi	620
 黛	dài	584
-歹	dǎi	540
+大	dài	540
 逮	dài	537
 怠	dài	525
 逮	dǎi	503
@@ -7719,8 +7716,8 @@ sort: by_weight
 陡	dǒu	528
 荳	dòu	428
 蚪	dǒu	420
-闘	dòu	386
-鬥	dòu	349
+鬥	dòu	386
+鬦	dòu	349
 读	dòu	332
 篼	dōu	309
 鬪	dòu	306
@@ -7733,7 +7730,7 @@ sort: by_weight
 鬭	dòu	179
 吺	dōu	143
 酘	dòu	134
-鬦	dòu	124
+闘	dòu	124
 橷	dōu	97
 閗	dòu	97
 兠	dōu	87
@@ -8422,7 +8419,8 @@ sort: by_weight
 驮	duò	1
 额	é	741
 俄	é	688
-恶	è	686
+呃	è	686
+恶	è	680
 饿	è	630
 鹅	é	625
 恶	ě	590
@@ -8432,7 +8430,6 @@ sort: by_weight
 鳄	è	537
 阿	ē	533
 遏	è	529
-呃	è	524
 峨	é	521
 娥	é	518
 扼	è	515
@@ -18476,8 +18473,8 @@ sort: by_weight
 𫔎	jué	1
 𫞝	jué	1
 𫟔	jué	1
-军	jūn	781
-均	jūn	746
+均	jūn	781
+军	jūn	746
 君	jūn	674
 菌	jūn	664
 郡	jùn	628
@@ -19460,8 +19457,8 @@ sort: by_weight
 款	kuǎn	768
 宽	kuān	690
 髋	kuān	472
-寛	kuān	396
-寬	kuān	349
+寬	kuān	396
+寛	kuān	349
 欵	kuǎn	184
 歀	kuǎn	176
 窾	kuǎn	154
@@ -20017,18 +20014,18 @@ sort: by_weight
 濑	lài	531
 籁	lài	486
 徕	lái	467
-瀬	lài	452
+瀨	lài	452
 涞	lái	400
 崃	lái	399
 癞	lài	396
 赉	lài	379
-頼	lài	355
+賴	lài	355
 铼	lái	346
-賴	lài	331
+頼	lài	331
 萊	lái	317
 唻	lài	275
 梾	lái	245
-瀨	lài	242
+瀬	lài	242
 睞	lài	198
 庲	lái	196
 騋	lái	195
@@ -20136,14 +20133,14 @@ sort: by_weight
 斓	lán	489
 阑	lán	481
 蘭	lán	405
-覧	lǎn	389
+覽	lǎn	389
 藍	lán	379
 褴	lán	372
 镧	lán	371
 爛	làn	360
 懶	lǎn	337
 嵐	lán	335
-覽	lǎn	331
+覧	lǎn	331
 籃	lán	298
 欄	lán	289
 谰	lán	279
@@ -20557,16 +20554,16 @@ sort: by_weight
 羸	léi	402
 縲	léi	402
 耒	lěi	399
-涙	lèi	354
+淚	lèi	354
 罍	léi	351
 嫘	léi	349
-淚	lèi	318
+涙	lèi	318
 诔	lěi	309
 酹	lèi	293
-塁	lěi	276
+壘	lěi	276
 畾	léi	271
 缧	léi	233
-壘	lěi	214
+塁	lěi	214
 檑	léi	212
 礌	léi	211
 纍	léi	198
@@ -20821,7 +20818,7 @@ sort: by_weight
 唳	lì	408
 蠡	lǐ	408
 豊	lǐ	406
-郦	lì	405
+郦	lí	405
 禮	lǐ	404
 栃	lì	402
 麗	lì	394
@@ -21427,8 +21424,8 @@ sort: by_weight
 梿	lián	325
 憐	lián	310
 奁	lián	306
-錬	liàn	304
-鍊	liàn	299
+鍊	liàn	304
+錬	liàn	299
 煉	liàn	291
 蔹	liǎn	278
 臁	lián	276
@@ -22140,8 +22137,8 @@ sort: by_weight
 𪯜	lǐn	1
 𫃅	lǐn	1
 𫓞	lín	1
-领	lǐng	779
-另	lìng	747
+另	lìng	779
+领	lǐng	747
 令	lìng	724
 灵	líng	718
 零	líng	694
@@ -25885,9 +25882,9 @@ sort: by_weight
 馕	náng	460
 囊	nāng	433
 囔	nāng	411
-擃	nǎng	351
+攮	nǎng	351
 曩	nǎng	324
-攮	nǎng	231
+擃	nǎng	231
 嚢	náng	207
 乪	náng	202
 齉	nàng	195
@@ -26396,8 +26393,8 @@ sort: by_weight
 𫝹	niàn	1
 娘	niáng	682
 酿	niàng	595
-嬢	niáng	365
-孃	niáng	298
+孃	niáng	365
+嬢	niáng	298
 釀	niàng	295
 醸	niàng	258
 䖆	niàng	1
@@ -30536,7 +30533,7 @@ sort: by_weight
 璩	qú	341
 鸲	qú	341
 趨	qū	333
-駆	qū	330
+驅	qū	330
 蕖	qú	318
 袪	qū	318
 蘧	qú	298
@@ -30544,7 +30541,7 @@ sort: by_weight
 佉	qū	291
 麹	qū	290
 劬	qú	288
-驅	qū	286
+駆	qū	286
 蠼	qú	266
 阒	qù	265
 诎	qū	264
@@ -32059,9 +32056,9 @@ sort: by_weight
 臊	sāo	410
 掃	sǎo	326
 缫	sāo	316
-騒	sāo	313
+騷	sāo	313
 埽	sào	283
-騷	sāo	280
+騒	sāo	280
 溞	sāo	262
 髞	sào	208
 鳋	sāo	178
@@ -33092,9 +33089,9 @@ sort: by_weight
 昇	shēng	412
 聖	shèng	385
 勝	shèng	382
-縄	shéng	352
+繩	shéng	352
 陞	shēng	278
-繩	shéng	277
+縄	shéng	277
 剰	shèng	266
 枡	shēng	249
 眚	shěng	243
@@ -34804,13 +34801,13 @@ sort: by_weight
 祟	suì	465
 雖	suī	454
 隨	suí	432
-歳	suì	430
 睢	suī	430
+歲	suì	430
 遂	suí	413
 燧	suì	407
 穂	suì	403
 荽	suī	397
-歲	suì	390
+歳	suì	390
 濉	suī	371
 眭	suī	317
 夊	suī	298
@@ -37772,7 +37769,7 @@ sort: by_weight
 痿	wěi	472
 遗	wèi	470
 煨	wēi	467
-衞	wèi	463
+衛	wèi	463
 圩	wéi	460
 爲	wèi	456
 桅	wéi	442
@@ -37786,7 +37783,7 @@ sort: by_weight
 鲔	wěi	391
 鳚	wèi	387
 葳	wēi	387
-衛	wèi	386
+衞	wèi	386
 囗	wéi	382
 嵬	wéi	378
 闱	wéi	378
@@ -40131,12 +40128,13 @@ sort: by_weight
 飨	xiǎng	410
 骧	xiāng	404
 庠	xiáng	396
-郷	xiāng	392
+鄉	xiāng	392
 項	xiàng	387
+鄕	xiāng	384
 芗	xiāng	377
 餉	xiǎng	367
 詳	xiáng	362
-鄉	xiāng	354
+郷	xiāng	355
 鲞	xiǎng	335
 缃	xiāng	297
 廂	xiāng	296
@@ -40144,7 +40142,6 @@ sort: by_weight
 嚮	xiàng	255
 鑲	xiāng	253
 瓖	xiāng	246
-鄕	xiāng	244
 葙	xiāng	235
 饗	xiǎng	185
 衖	xiàng	182
@@ -42245,6 +42242,7 @@ sort: by_weight
 齾	yà	127
 掗	yà	127
 圠	yà	116
+呀	ya	112
 圔	yà	109
 挜	yà	105
 孲	yā	101
@@ -42383,7 +42381,6 @@ sort: by_weight
 𪘬	yá	1
 𪘲	yà	1
 𪘲	yá	1
-呀	ya	1
 玡	yá	1
 言	yán	784
 研	yán	776
@@ -47858,8 +47855,8 @@ sort: by_weight
 𪘪	zhàn	1
 𫗞	zhān	1
 𰵨	zhān	1
-长	zhǎng	802
-张	zhāng	780
+张	zhāng	802
+长	zhǎng	780
 章	zhāng	744
 涨	zhǎng	719
 障	zhàng	703
@@ -48621,12 +48618,12 @@ sort: by_weight
 支	zhī	845
 值	zhí	838
 知	zhī	820
-之	zhī	817
+指	zhǐ	817
+之	zhī	810
 直	zhí	802
 质	zhì	802
 制	zhì	800
 至	zhì	800
-指	zhǐ	789
 智	zhì	779
 治	zhì	778
 致	zhì	767
