@@ -1347,14 +1347,6 @@ function diffDate(date1, date2)
     return total
 end
 
--- 公历倒计时(每年)
-local function diffDate2(date1, date2)
-    while diffDate(date1, date2) == -1 do
-        date2 = tointeger(date2 + 1000000)
-    end
-    result = diffDate(date1, date2)
-    return result
-end
 -- 公历倒计时结束
 
 -- 返回当年过了多少天
@@ -1891,35 +1883,6 @@ for i=1,#n do
 end
 --]] ----------------------------------
 
---[[
--- 农历倒计时
-local function nl_shengri(y, m, d)
-  nlsrsj = y .. m .. d -- 农历时间
-  date1 = os.date("%Y%m%d")
-  date2 = LunarDate2Date(nlsrsj, 0)
-  m = string.match(date2, "年(.-)月")
-  if #m == "2" then
-    date2 = string.gsub(date2, "年", "", "1")
-  else
-    date2 = string.gsub(date2, "年", "0", "1")
-  end
-  d = string.match(date2, "月(.-)日")
-  if #d == "2" then
-    date2 = string.gsub(date2, "月", "", "1")
-  else
-    date2 = string.gsub(date2, "月", "0", "1")
-  end
-  date2 = string.gsub(date2, "日", "", "1")
-
-end
-
-local function nl_shengri2(y, m, d)
-  while nl_shengri(y, m, d) == -1 do
-    y = tointeger(y + 1)
-  end
-  result = nl_shengri(y, m, d)
-  return result
-end  ]] --
 -- 万象新增三伏天计算函数
 -- 输入yyyymmdd返回:初伏(1)形式字符串
 -- 起点：夏至之后(查询节气表找到夏至的日期)
