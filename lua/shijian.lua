@@ -916,7 +916,8 @@ function GetNowTimeJq(date)
     end
     JQtable2 = GetNextJQ(date)
     if tonumber(string.sub(date, 5, 8)) < 322 then
-        JQtable1 = GetNextJQ(tonumber(string.sub(date, 1, 4)) - 1 .. string.sub(date, 5, 8))
+        --JQtable1 = GetNextJQ(tonumber(string.sub(date, 1, 4)) - 1 .. string.sub(date, 5, 8))
+        JQtable1 = GetNextJQ(tonumber(string.sub(date, 1, 4)) - 1 .. "0101")
         -- log.info(#JQtable1)
         if tonumber(string.sub(date, 5, 8)) < 108 then
             for i = 20, 24 do
