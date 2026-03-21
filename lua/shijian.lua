@@ -2099,7 +2099,7 @@ local month_map = {
 local function nl_shengri(y, m, d)
     -- 获取当前日期
     local date1 = os.date("%Y%m%d")
-    nlsrsj = y .. m .. d                  -- 农历时间
+    local nlsrsj = y .. m .. d             -- 农历时间
     -- 提取农历日期的年份
     local year = string.sub(nlsrsj, 1, 4) -- 提取“2015”从“20150621”
 
@@ -2152,7 +2152,7 @@ local function nl_shengri(y, m, d)
     date2 = string.gsub(date2, "日", "", 1)
 
     -- 计算日期差异
-    result = diffDate(date1, date2)
+    local result = diffDate(date1, date2)
     return result
 end
 -- 二次循环跨年调用
@@ -2160,7 +2160,7 @@ local function nl_shengri2(y, m, d)
     while nl_shengri(y, m, d) == -1 do
         y = math.floor(y + 1)
     end
-    result = nl_shengri(y, m, d)
+    local result = nl_shengri(y, m, d)
     return result
 end
 
