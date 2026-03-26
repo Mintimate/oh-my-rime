@@ -156,7 +156,7 @@ import_tables:
 ## Support
 
 - [Mintimate's Blog: https://www.mintimate.cn](https://www.mintimate.cn)
-- [Mintimate's 爱发电: Join the electric circle and support creation!](https://afdian.net/a/mintimate)
+- [Mintimate's 爱发电: Join the electric circle and support creation!](https://ifdian.net/a/mintimate)
 - [Bilibili: @Mintimate](https://space.bilibili.com/355567627)
 - [Youtube: @Mintimate](https://www.youtube.com/channel/UCI7LLdUGNzkcKOE7grAqCoA)
 

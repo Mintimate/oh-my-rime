@@ -163,7 +163,7 @@ import_tables:
 ## 支持
 
 - [Mintimate's Blog: https://www.mintimate.cn](https://www.mintimate.cn)
-- [Mintimate的爱发电: 加入电圈，支持创造!](https://afdian.net/a/mintimate)
+- [Mintimate的爱发电: 加入电圈，支持创造!](https://ifdian.net/a/mintimate)
 - [Bilibili：@Mintimate](https://space.bilibili.com/355567627)
 - [Youtube：@Mintimate](https://www.youtube.com/channel/UCI7LLdUGNzkcKOE7grAqCoA)
 
