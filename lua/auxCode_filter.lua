@@ -87,8 +87,8 @@ function AuxFilter.readAuxTxt(txtpath)
 
     local auxCodes = {}
     for line in file:lines() do
-        line = line:match("[^\r\n]+") -- 去掉換行符，不然 value 是帶著 \n 的
-        local key, value = line:match("([^=]+)=(.+)") -- 分割 = 左右的變數
+        local clean_line = line:match("[^\r\n]+") -- 去掉換行符，不然 value 是帶著 \n 的
+        local key, value = clean_line:match("([^=]+)=(.+)") -- 分割 = 左右的變數
         if key and value then
             if auxCodes[key] then
                 auxCodes[key] = auxCodes[key] .. " " .. value
@@ -213,8 +213,9 @@ function AuxFilter.func(input, env)
 
         -- 遍歷每一個待選項
         for cand in input:iter() do
-            local auxCodes = AuxFilter.aux_code[cand.text] -- 仅单字非 nil
-            local fullAuxCodes = AuxFilter.fullAux(env, cand.text)
+            local current_cand = cand
+            local auxCodes = AuxFilter.aux_code[current_cand.text] -- 仅单字非 nil
+            local fullAuxCodes = AuxFilter.fullAux(env, current_cand.text)
             
             -- 给候选项添加辅助代码提示
             if env.show_aux_notice and auxCodes and #auxCodes > 0 then
@@ -230,14 +231,14 @@ function AuxFilter.func(input, env)
 
                 if showComment then
                     -- 处理 simplifier
-                    if cand:get_dynamic_type() == "Shadow" then
-                        local shadowText = cand.text
-                        local shadowComment = cand.comment
-                        local originalCand = cand:get_genuine()
-                        cand = ShadowCandidate(originalCand, originalCand.type, shadowText,
+                    if current_cand:get_dynamic_type() == "Shadow" then
+                        local shadowText = current_cand.text
+                        local shadowComment = current_cand.comment
+                        local originalCand = current_cand:get_genuine()
+                        current_cand = ShadowCandidate(originalCand, originalCand.type, shadowText,
                             originalCand.comment .. shadowComment .. '(' .. codeComment .. ')')
                     else
-                        cand.comment = cand.comment .. '(' .. codeComment .. ')'
+                        current_cand.comment = current_cand.comment .. '(' .. codeComment .. ')'
                     end
                 end
             end
@@ -245,14 +246,14 @@ function AuxFilter.func(input, env)
             -- 過濾輔助碼
             if #auxStr == 0 then
                 -- 沒有輔助碼、不需篩選，直接返回待選項
-                yield(cand)
-            elseif #auxStr > 0 and fullAuxCodes and (cand.type == 'user_phrase' or cand.type == 'phrase' or cand.type == 'simplified') and
+                yield(current_cand)
+            elseif #auxStr > 0 and fullAuxCodes and (current_cand.type == 'user_phrase' or current_cand.type == 'phrase' or current_cand.type == 'simplified') and
                 AuxFilter.match(fullAuxCodes, auxStr) then
                 -- 匹配到辅助码的待选项，直接插入到候选框中( 获得靠前的位置 )
-                yield(cand)
+                yield(current_cand)
             else
                 -- 待选项字词 没有 匹配到当前的辅助码，插入到列表中，最后插入到候选框里( 获得靠后的位置 )
-                -- table.insert(insertLater, cand)
+                -- table.insert(insertLater, current_cand)
                 -- 更新逻辑：没有匹配上就不出现再候选框里，提升性能
             end
         end
