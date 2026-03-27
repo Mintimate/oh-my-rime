@@ -1,0 +1,390 @@
+# Rime schema
+# encoding: utf-8
+
+# 适配了双拼
+# 双拼键位映射复制自 https://github.com/rime/rime-double-pinyin
+# 双拼之间主要就是 speller/algebra 和 translator/preedit_format 这里有区别。
+
+# 方案说明
+schema:
+  schema_id: flypy_stroke
+  name: "薄荷小鹤-笔顺辅码"
+  version: "26.01.14"
+  author:
+    - Mintimate
+    - MowMark
+  description: |
+    沿用Mintimate的薄荷小鹤双拼方案。
+    添加笔顺辅码hspdz
+  dependencies:
+    - rime_mint     # 参考 https://github.com/Mintimate/oh-my-rime
+    - radical_pinyin_flypy    # 参考 https://github.com/mirtlecn/rime-radical-pinyin
+    - wubi98_mint       # 98五笔库 https://github.com/yanhuacuo/98wubi-tables
+    - stroke
+    - melt_eng          # 英文方案
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 英文 ]
+  - name: emoji_suggestion
+    states: [ "😣️","😁️"]
+    reset: 1
+  - name: full_shape
+    states: [ 半角, 全角 ]
+    reset: 0
+  - name: transcription
+    states: [ 简体 , 繁体 ]
+    reset: 0
+  - name: ascii_punct
+    states: [ "。，", "．，" ]
+    reset: 0
+  - name: chaifen        # 拆字滤镜
+    states: [ 🙈, 🐵 ]     # 快捷键 「Control+Shift+C」
+    reset: 0
+
+engine:
+  processors:
+    - lua_processor@*select_character              # 以词定字
+    - lua_processor@*codeLengthLimit_processor     # 使用Lua限制输入内容的最大长度(防止过长而卡顿)
+    - ascii_composer                               # ※ 處理西文模式及中西文切換
+    - recognizer                                   # ※ 與 matcher 搭配，處理符合特定規則的輸入碼，如網址、反查等
+    - key_binder                                   # ※ 在特定條件下將按鍵綁定到其他按鍵，如重定義逗號、句號爲候選翻頁鍵
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor                                    # 標識西文段落
+    - matcher                                            # 標識符合特定規則的段落，如網址、反查等
+    - affix_segmentor@wubi98_mint
+    - affix_segmentor@radical_reverse_lookup
+    - affix_segmentor@stroke
+    - abc_segmentor                                      # 標識常規的文字段落
+    - punct_segmentor                                    # 標識句讀段落
+    - fallback_segmentor                                 # 標識其他未標識段落
+  translators:
+    - punct_translator                                   # ※ 轉換標點符號
+    - script_translator
+    - lua_translator@*mint_date_time_translator          # 时间、日期、星期、月份
+    - lua_translator@*number_translator                  # 金额大小写
+    - lua_translator@*chineseLunarCalendar_translator    # 农历
+    - lua_translator@*mint_calculator_translator         # 计算器（lua 动态表达式）
+    - table_translator@melt_eng                          # 英文输入（作为子翻译器，优先级需要比原生的低）
+    - table_translator@cn_en                             # 中英混合词汇
+    - reverse_lookup_translator@radical_reverse_lookup
+    - reverse_lookup_translator@wubi98_mint
+    - reverse_lookup_translator@stroke
+    - lua_translator@*force_gc                           # 暴力GC，尝试解决小狼毫长期使用的卡顿
+  filters:
+    - lua_filter@*corrector_filter            # 错音错字提示
+    - lua_filter@*autocap_filter              # 英文自动大写
+    - simplifier@emoji_suggestion
+    - simplifier@transcription_cc
+    - simplifier@chaifen_cc                   # 鹤形拆字辅助滤镜
+    # - lua_filter@*AuxCode_Filter_Enhance@flypy_full   # 小鹤双拼辅码(音形)
+    # - lua_filter@*AuxCode_Filter_Enhance@moqi_aux_code   # 墨奇辅码(音形)
+    # - lua_filter@*AuxCode_Filter_Enhance@Stroke_gb2312   # 笔顺辅码(音形)
+    - lua_filter@*AuxCode_Filter_Enhance@Stroke_flypy # 不定长笔顺辅码
+    - lua_filter@*reduce_english_filter       # 降低部分英语单词在候选项的位置
+    - uniquifier                              # 去重
+
+
+# 简繁切换
+transcription_cc:
+  option_name: transcription
+  opencc_config: s2t.json             # s2t.json | s2hk.json | s2tw.json | s2twp.json
+  tips: none                          # 转换提示: all 都显示 | char 仅单字显示 | none 不显示。
+  excluded_types: [ reverse_lookup ]  # 不转换反查（两分拼字）的内容
+
+# Emoji模块
+emoji_suggestion:
+  opencc_config: emoji.json
+  option_name: emoji_suggestion
+  tips: all
+  inherit_comment: false
+  
+# 鹤形拆字辅助滤镜
+chaifen_cc:
+  opencc_config: fly_Chaifen.json
+  option_name: chaifen
+  show_in_comment: true  # 是否仅将转换结果显示在备注中
+  comment_format:
+    - "xform/&nbsp;/ /"
+  tags:                  # 设置其作用范围
+    - abc
+    - storkfly
+    - reverse_lookup
+  tips: char             #  单字加滤镜: char; 全部: all，
+
+ # 最大输入长度
+codeLengthLimit_processor: 25
+
+
+# 小鹤音形配置
+axu_code:
+  # 激活码
+  trigger_word: ";"
+  # 展示辅码的模式
+  # always:   总是展示(默认)
+  # trigger:  输入激活码后激活辅码
+  # none:     始终不展示辅码
+  show_aux_notice: "trigger"
+
+
+# Lua 配置: 降低部分英语单词在候选项的位置。
+# 详细介绍 https://dvel.me/posts/make-rime-en-better/#短单词置顶的问题
+# 正常情况： 输入 rug 得到 「1.rug 2.如果 …… 」
+# 降低之后： 输入 rug 得到 「1.如果 2.rug …… 」
+# 几种模式：
+# all     使用 reduce_english_filter 自带的降频词库（降低所有 3~4 位长度、前 2~3 位是完整拼音、最后一位是声母的单词）
+# none    不降低任何单词，相当于没有启用这个 Lua
+# custom  自定义，只降低 words 里的
+# 『留白』 不设置该选项，使用 reduce_english_filter 内全局设置内容
+# （匹配的是编码，不是单词）
+reduce_english_filter:
+  mode: all  # all | none | custom | 『留白』
+  idx: 2        # 降低到第 idx 个位置
+  # 自定义的单词列表，示例列表没有降低部分常用单词，如 and cat mail Mac but bad shit ……
+  words: [aid, ann,
+  bail, bait, bam, band, bans, bat, bay, bend, bent, benz, bib, bid, bien, biz, boc, bop, bos, bud, buf,
+  cab, cad, cain, cam, cans, cap, cas, cef, chad, chan, chap, chef, cher, chew, chic, chin, chip, chit, coup, cum, cunt, cur,
+  dab, dag, dal, dam, dent, dew, dial, diet, dim, din, dip, dis, dit, doug, dub, dug, dunn,
+  fab, fax, fob, fog, foul, fur,
+  gag, gail, gain, gal, gam, gaol, ged, gel, ger, guam, gus, gut,
+  hail, ham, hank, hans, hat, hay, heil, heir, hem, hep, hud, hum, hung, hunk, hut,
+  jim, jug,
+  kat,
+  lab, lad, lag, laid, lam, laos, lap, lat, lax, lay, led, leg, lex, liam, lib, lid, lied, lien, lies, linn, lip, lit, liz, lob, lug, lund, lung, lux,
+  mag, maid, mann, mar, mat, med, mel, mend, mens, ment, mil, mins, mint, mob, moc, mop, mos, mot, mud, mug, mum, nail,
+  nap, nat, nay, neil, nib, nip, noun, nous, nun, nut,
+  pac, paid, pail, pain, pair, pak, pal, pam, pans, pant, pap, par, pat, paw, pax, pens, pic, pier, pies, pins, pint, pit, pix, pod, pop, pos, pot, pour, pow, pub,
+  rand, rant, rent, rep, res, ret, rex, rib, rid, rig, rim, rub, rug, rum, runc, runs,
+  sac, sail, sal, sam, sans, sap, saw, sax, sew, sham, shaw, shin, sig, sin, sip, sis, suit, sung, suns, sup, sur, sus,
+  tad, tail, taj, tar, tax, tec, ted, tel, ter, tex, tic, tied, tier, ties, tim, tin, tit, tour, tout, tum,
+  wag, wand, womens, wap, wax, weir, won,
+  yan, yen]
+
+# 错音错字提示
+corrector_filter:
+  # 当文字没有触发错字错音的情况下，保持原本的注释
+  keep_source_comment: false 
+  
+# 中国农历配置
+chineseLunarCalendar_translator: lunar
+
+translator:
+  # 字典文件
+  dictionary: rime_mint          # 使用的字典文件
+  prism: double_pinyin_flypy     # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
+  spelling_hints: 8              # corrector.lua ：为了让错音错字提示的 Lua 同时适配全拼双拼，将拼音显示在 comment 中
+  always_show_comments: true     # corrector.lua ：Rime 默认在 preedit 等于 comment 时取消显示 comment，这里强制一直显示，供 corrector.lua 做判断用。
+  comment_format:               # 标记拼音注释，供 corrector.lua 做判断用
+    - xform/^/［/
+    - xform/$/］/
+  preedit_format:
+    - xform/([bpmfdtnljqx])n/$1iao/
+    - xform/(\w)g/$1eng/
+    - xform/(\w)q/$1iu/
+    - xform/(\w)w/$1ei/
+    - xform/([dtnlgkhjqxyvuirzcs])r/$1uan/
+    - xform/(\w)t/$1ve/
+    - xform/(\w)y/$1un/
+    - xform/([dtnlgkhvuirzcs])o/$1uo/
+    - xform/(\w)p/$1ie/
+    - xform/([jqx])s/$1iong/
+    - xform/(\w)s/$1ong/
+    - xform/(\w)d/$1ai/
+    - xform/(\w)f/$1en/
+    - xform/(\w)h/$1ang/
+    - xform/(\w)j/$1an/
+    - xform/([gkhvuirzcs])k/$1uai/
+    - xform/(\w)k/$1ing/
+    - xform/([jqxnl])l/$1iang/
+    - xform/(\w)l/$1uang/
+    - xform/(\w)z/$1ou/
+    - xform/([gkhvuirzcs])x/$1ua/
+    - xform/(\w)x/$1ia/
+    - xform/(\w)c/$1ao/
+    - xform/([dtgkhvuirzcs])v/$1ui/
+    - xform/(\w)b/$1in/
+    - xform/(\w)m/$1ian/
+    - xform/([aoe])\1(\w)/$1$2/
+    - "xform/(^|[ '])v/$1zh/"
+    - "xform/(^|[ '])i/$1ch/"
+    - "xform/(^|[ '])u/$1sh/"
+    - xform/([jqxy])v/$1u/
+    - xform/([nl])v/$1ü/
+    - xform/ü/v/  # ü 显示为 v
+  initial_quality: 1.2
+  enable_user_dict: true         # 开启用户词典，根据用户输入调频（默认开启，此处再次声明）
+
+melt_eng:
+  dictionary: melt_eng           # 英文词典
+  enable_sentence: false         # 关闭自动造句
+  enable_completion: false       # 关闭自动提示
+  initial_quality: 0.8
+
+
+# 中英混合词汇
+cn_en:
+  dictionary: ""
+  user_dict: dicts/rime_ice.cn_en_flypy
+  db_class: stabledb
+  enable_completion: false
+  enable_sentence: false
+  initial_quality: 0.5
+  comment_format:
+    - xform/^.+$//
+
+# 拼写设定
+speller:
+  # 如果不想让什么标点直接上屏，可以加在 alphabet，或者编辑标点符号为两个及以上的映射
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA~;
+  delimiter: " `"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
+  algebra:
+    - erase/^xx$/
+    - derive/^([jqxy])u$/$1v/
+    - derive/^([aoe])([ioun])$/$1$1$2/
+    - xform/^([aoe])(ng)?$/$1$1$2/
+    - xform/iu$/Ⓠ/
+    - xform/(.)ei$/$1Ⓦ/
+    - xform/uan$/Ⓡ/
+    - xform/[uv]e$/Ⓣ/
+    - xform/un$/Ⓨ/
+    - xform/^sh/Ⓤ/
+    - xform/^ch/Ⓘ/
+    - xform/^zh/Ⓥ/
+    - xform/uo$/Ⓞ/
+    - xform/ie$/Ⓟ/
+    - xform/(.)i?ong$/$1Ⓢ/
+    - xform/ing$|uai$/Ⓚ/
+    - xform/(.)ai$/$1Ⓓ/
+    - xform/(.)en$/$1Ⓕ/
+    - xform/(.)eng$/$1Ⓖ/
+    - xform/[iu]ang$/Ⓛ/
+    - xform/(.)ang$/$1Ⓗ/
+    - xform/ian$/Ⓜ/
+    - xform/(.)an$/$1Ⓙ/
+    - xform/(.)ou$/$1Ⓩ/
+    - xform/[iu]a$/Ⓧ/
+    - xform/iao$/Ⓝ/
+    - xform/(.)ao$/$1Ⓒ/
+    - xform/ui$/Ⓥ/
+    - xform/in$/Ⓑ/
+    - xlit/ⓆⓌⓇⓉⓎⓊⒾⓄⓅⓈⒹⒻⒼⒽⒿⓀⓁⓏⓍⒸⓋⒷⓃⓂ/qwrtyuiopsdfghjklzxcvbnm/
+    # - abbrev/^(.).+$/$1/  # 首字母简拼，开启后会导致 3 个字母时 kj'x 变成 k'jx 的问题
+
+wubi98_mint:
+  tag: wubi98_mint
+  dictionary: wubi98_mint
+  enable_user_dict: false
+  enable_completion: true
+  prefix: "Uw"
+  tips: 〔五笔〕
+
+stroke:
+  tag: stroke
+  dictionary: stroke
+  enable_user_dict: false
+  prefix: 'Ui'
+  tips: 〔笔画〕
+  preedit_format:
+    - xlit/hspnz/一丨丿丶乙/
+
+radical_reverse_lookup:
+  tag: radical_lookup
+  dictionary: radical_pinyin
+  prism: flypy_radical_pinyin
+  enable_completion: false
+  enable_sentence: false
+  prefix: "Uu"
+  # comment_format:
+  #   - erase/^.*$// # 删除注释
+  tips: 〔拆字〕
+
+reverse_lookup:
+  tags: [wubi98_mint,stroke,radical_lookup]
+  overwrite_comment: true
+  dictionary: dicts/rime_ice.8105
+
+punctuator:
+  import_preset: symbols
+  # 定义部分半角字符
+  half_shape:
+      "#": "#"
+      "*": "*"
+      '.' : { commit: 。 }
+      "`": "`"
+      "~": "~"
+      "@": "@"
+      "=": "="
+      "/": ["/", "÷",]
+      '\': "、"
+      "_" : "──"
+      "'": {pair: ["「", "」"]}
+      "[": ["【", "["]
+      "]": ["】", "]"]
+      "$": ["¥", "$", "€", "£", "¢", "¤"]
+      "<": ["《", "〈", "«", "<"]
+      ">": ["》", "〉", "»", ">"]
+
+
+# 反查映射
+recognizer:
+  import_preset: default
+  patterns:
+    url: "^[a-z]+[.].+$"
+    punct: "^/([0-9]0?|[a-zA-Z]+)$"
+    wubi98_mint: "Uw[a-z]*'?$"
+    stroke: "Ui[a-z]*'?$"
+    radical_lookup: "Uu[a-z]*'?$"
+    rmb: "^R[0-9]+[.]?[0-9]*"        # 响应 lua_translator@number_translator 脚本将自动获取第 2 个字符作为触发前缀
+    expression: "^=.*$"              # 响应 lua_translator@expression_translator 脚本将自动获取第 2 个字符作为触发前缀
+    gregorian_to_lunar: "^N[0-9]{1,8}"  # 响应 lua_translator@Chinese_lunar_calendar 公历转农历，输入 N20240115 得到「二〇二四年腊月初五」，脚本将自动获取第 2 个字符作为触发前缀
+    uppercase: ""  # 覆写默认的 uppercase 使其可以在输入大写后，输入数字
+key_binder:
+  import_preset: default
+  bindings:
+    - {accept: "Control+Shift+E", toggle: emoji_suggestion, when: always}
+    - {accept: "Control+Shift+exclam", toggle: transcription, when: has_menu}
+    - {accept: "Control+Shift+1", toggle: transcription, when: has_menu}
+    - {accept: "Control+Shift+C", toggle: chaifen, when: has_menu} # 拆字滤镜开关
+    - {accept: minus, send: Page_Up, when: paging}     # 使用`-`进行向上翻页（第一页时候无效）
+    - {accept: equal, send: Page_Down, when: has_menu} # 使用`=`进行向下翻页
+    # Emacs 风格的快捷键
+    - { when: composing, accept: Control+p, send: Up }     # composing 时,Control+p 等同于 Up 键
+    - { when: composing, accept: Control+n, send: Down }
+    - { when: composing, accept: Control+b, send: Left }
+    - { when: composing, accept: Control+f, send: Right }
+    - { when: composing, accept: Control+a, send: Home }
+    - { when: composing, accept: Control+e, send: End }
+    - { when: composing, accept: Control+d, send: Delete }
+    - { when: composing, accept: Control+k, send: Shift+Delete } # 删除到行尾
+    - { when: composing, accept: Control+g, send: Escape }       # 退出编码
+    - { when: composing, accept: Alt+v, send: Page_Up }          # 翻页
+    - { when: composing, accept: Control+v, send: Page_Down }
+    # 按词移动光标
+    - { when: composing, accept: ISO_Left_Tab, send: Shift+Left } # ISO_Left_Tab 是 Shift+Tab
+    - { when: composing, accept: Shift+Tab, send: Shift+Left }
+    - { when: composing, accept: Tab, send: Shift+Right }
+    # 翻页
+    - { when: paging, accept: minus, send: Page_Up }             # 编码窗口翻页
+    - { when: has_menu, accept: equal, send: Page_Down }
+    - { when: paging, accept: comma, send: Page_Up }             # 候选窗口翻页
+    - { when: has_menu, accept: period, send: Page_Down }
+    - { when: predicting, accept: comma, send: comma }           # 在预编码模式下,不当作快捷键
+    - { when: predicting, accept: period, send: period }
+    # 切换状态
+    - { when: always, accept: Control+Shift+1, select: .next }   # 切换输入方案
+    - { when: always, accept: Control+Shift+2, toggle: ascii_mode } # 切换中/西文模式
+    - { when: always, accept: Control+Shift+3, toggle: full_shape } # 切换全角/半角
+    - { when: always, accept: Control+Shift+4, toggle: transcription } # 切换简体/繁体
+    - { when: always, accept: Control+Shift+5, toggle: extended_charset } # 切换扩展字符
+    - { when: always, accept: Shift+space, toggle: full_shape } # 另一种切换全角/半角的方式
+    - { when: always, accept: Control+period, toggle: ascii_punct } # 切换中/西文标点
+    
+menu:
+  # 候选词个数
+  page_size: 6
