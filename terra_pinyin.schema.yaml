@@ -1,7 +1,7 @@
 schema:
   schema_id: terra_pinyin
   name: "地球拼音-薄荷定制"
-  version: "24.10.02"
+  version: "26.03.27"
   author:
     - 佛振 <chen.sst@gmail.com>
     - mintimate < @Mintimate|https://www.mintimate.cn >
@@ -217,7 +217,8 @@ speller:
     - xform/^(.*)ǘ(.*)$/$1v$2②/
     - xform/^(.*)ǚ(.*)$/$1v$2③/
     - xform/^(.*)ǜ(.*)$/$1v$2④/
-    - xform/^(.*)ü(.*)$/$1v$2①/
+    - xform/^(.*)ü(.+)$/$1v$2/      # ü 后还有内容（如 nüe④），声调在其他元音上，不额外加声调
+    - xform/^(.*)ü$/$1v①/            # ü 在末尾（如轻声 nü），近似为一声
     - xlit/①②③④/1234                  # 万象 END
     - xform/^r5$/er5/
     - erase/^xx$/
@@ -231,6 +232,7 @@ speller:
     - abbrev/^([a-z])[a-z]*$/$1/       # 简拼（首字母）
     - abbrev/^([zcs]h).+$/$1/
     - derive/^([nl])ve/$1ue/
+    - derive/^([nl])ue/$1ve/
     - derive/^([jqxy])u/$1v/
     - derive/([dtnlgkhrzcs])un/$1uen/
     - derive/ui/uei/
