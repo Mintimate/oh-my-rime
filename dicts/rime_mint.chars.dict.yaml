@@ -3,7 +3,7 @@
 #https://github.com/amzxyz/RIME-LMDG
 ---
 name: rime_mint.chars
-version: "2026-03-03"
+version: "2026-03-29"
 sort: by_weight
 
 ...
@@ -1253,9 +1253,9 @@ sort: by_weight
 镚	bèng	334
 甏	bèng	270
 祊	bēng	244
-繃	běng	238
+绷	běng	238
 琫	běng	234
-绷	běng	175
+綳	běng	175
 絣	bēng	164
 埄	běng	159
 琣	běng	154
@@ -1270,6 +1270,7 @@ sort: by_weight
 閍	bēng	68
 鏰	bèng	60
 嵭	bēng	38
+繃	běng	30
 痭	bēng	23
 䨻	bèng	1
 鞛	běng	1
@@ -1280,7 +1281,6 @@ sort: by_weight
 揼	bèng	1
 甮	béng	1
 綳	bèng	1
-綳	běng	1
 繃	bèng	1
 繃	bēng	1
 跰	bèng	1
@@ -7740,10 +7740,11 @@ sort: by_weight
 餖	dòu	68
 唗	dōu	50
 郖	dòu	50
-鈄	dǒu	50
+钭	dǒu	50
 阧	dǒu	38
 斣	dòu	38
 毭	dòu	23
+鈄	dǒu	1
 㪷	dǒu	1
 㞳	dǒu	1
 䇺	dòu	1
@@ -7756,7 +7757,6 @@ sort: by_weight
 瞗	dōu	1
 讀	dòu	1
 鋀	dòu	1
-钭	dǒu	1
 㐙	dòu	1
 㛒	dòu	1
 㢄	dòu	1
@@ -14331,7 +14331,7 @@ sort: by_weight
 洃	huī	171
 溃	huì	164
 佪	huí	157
-撝	huī	157
+㧑	huī	157
 僡	huì	150
 楎	huī	150
 詼	huī	150
@@ -14393,6 +14393,7 @@ sort: by_weight
 褘	huī	23
 媈	huī	23
 獩	huì	23
+撝	huī	15
 屷	huì	1
 檅	huì	1
 蘳	huī	1
@@ -14579,7 +14580,6 @@ sort: by_weight
 𫖐	huī	1
 𫝨	huī	1
 𬭬	huì	1
-㧑	huī	1
 婚	hūn	734
 混	hùn	700
 魂	hún	640
@@ -22573,9 +22573,9 @@ sort: by_weight
 笼	lóng	614
 垄	lǒng	567
 拢	lǒng	545
-笼	lǒng	521
+聋	lóng	521
 咙	lóng	520
-聋	lóng	516
+笼	lǒng	516
 陇	lǒng	512
 珑	lóng	506
 胧	lóng	496
@@ -23010,7 +23010,6 @@ sort: by_weight
 觻	lù	1
 賁	lù	1
 輅	lù	1
-馿	lú	1
 鴼	lù	1
 㓐	lù	1
 㔪	lǔ	1
@@ -23532,6 +23531,7 @@ sort: by_weight
 穭	lǚ	23
 繂	lǜ	23
 膢	lǘ	23
+馿	lǘ	11
 焒	lǚ	1
 䕡	lǘ	1
 僂	lǚ	1
