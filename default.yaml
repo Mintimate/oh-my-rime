@@ -163,6 +163,25 @@ key_binder:
     - { when: always, accept: Control+Shift+5, toggle: extended_charset } # 切换扩展字符
     - { when: always, accept: Shift+space, toggle: full_shape } # 另一种切换全角/半角的方式
     - { when: always, accept: Control+period, toggle: ascii_punct } # 切换中/西文标点
+    # 将小键盘 0~9 . 映射到主键盘，数字金额大写的 Lua 如 R1234.5678 可使用小键盘输入
+    - {accept: KP_0, send: 0, when: composing}
+    - {accept: KP_1, send: 1, when: composing}
+    - {accept: KP_2, send: 2, when: composing}
+    - {accept: KP_3, send: 3, when: composing}
+    - {accept: KP_4, send: 4, when: composing}
+    - {accept: KP_5, send: 5, when: composing}
+    - {accept: KP_6, send: 6, when: composing}
+    - {accept: KP_7, send: 7, when: composing}
+    - {accept: KP_8, send: 8, when: composing}
+    - {accept: KP_9, send: 9, when: composing}
+    - {accept: KP_Decimal, send: period, when: composing}
+    # 将小键盘 + - * / 映射到主键盘，使计算器 如 1+2-3*4 可使用小键盘输入
+    - {accept: KP_Multiply, send: asterisk, when: composing}
+    - {accept: KP_Add,      send: plus,     when: composing}
+    - {accept: KP_Subtract, send: minus,    when: composing}
+    - {accept: KP_Divide,   send: slash,    when: composing}
+    # 将小键盘回车映射到主键盘回车
+    - {accept: KP_Enter,    send: Return,   when: composing}
 
 recognizer:
   # 定义识别码的正则表达式规则
