@@ -4,133 +4,135 @@
 #错音错字对照表
 ---
 name: rime_mint.correlation
-version: "2026-04-29"
+version: "2026-05-29"
 sort: by_weight
 
 ...
-株木琅玛	zhū mù láng mǎ	1	有声
-衾何以堪	qīn hé yǐ kān	36	小说
-墨明棋妙	mò míng qí miào	38	乐队
-压力山大	yā lì shān dà	19	网络语
-鸭梨山大	yā lí shān dà	48	网络语
+株木琅玛	zhū mù láng mǎ	205	有声
+衾何以堪	qīn hé yǐ kān	43	小说
+墨明棋妙	mò míng qí miào	13032	乐队
+压力山大	yā lì shān dà	5312	网络语
+鸭梨山大	yā lí shān dà	5342	网络语
 麻麻赖赖	má má lài lài	16	网络语
-绝代双椒	jué dài shuāng jiāo	30	网络语
-毁人不倦	huǐ rén bú juàn	43	歌曲名
-佛教胜地	fó jiào shèng dì	1	佛教(圣)地
-杉杉来吃	shān shān lái chī	42	书名
-食话食说	shí huà shí shuō	25	节目
+绝代双椒	jué dài shuāng jiāo	858	网络语
+毁人不倦	huǐ rén bú juàn	146	歌曲名
+佛教胜地	fó jiào shèng dì	67	佛教(圣)地
+杉杉来吃	shān shān lái chī	1091	书名
+食话食说	shí huà shí shuō	259	节目
 零零总总	ling ling zong zong	6	林林总总
+味噌	wei zeng	1043	cēng
+味噌汤	wei zeng tang	1008	味噌(cēng)汤
 太差劲	tai cha jing	89	jìn
 文绉绉	wen zou zou	16	zhōu
 大栅栏	da zha lan	23	dà shí làn
-粘贴	nian tie	382	粘(zhān)贴
-曝光	pu guang	410	曝(bào)光
-东庠岛	dong yang dao	10	东庠(xiáng)岛
-视频	shi ping	490	视频(pín)
+粘贴	nian tie	884	粘(zhān)贴
+曝光	pu guang	682	曝(bào)光
+东庠岛	dong yang dao	4	东庠(xiáng)岛
+视频	shi ping	682	视频(pín)
 剖腹产	pao fu chan	170	剖(pōu)腹产
 阻塞	zu sai	20	阻塞(sè)
-着想	zhao xiang	370	着(zhuó)想
+着想	zhao xiang	862	着(zhuó)想
 崩溃	ben kui	480	崩(bēng)溃
-句芒	ju mang	320	句(gōu)芒
-烘焙	hong pei	400	hōng bèi
-谄媚	xian mei	300	chǎn mèi
+句芒	ju mang	428	句(gōu)芒
+烘焙	hong pei	966	hōng bèi
+谄媚	xian mei	510	chǎn mèi
 着落	zhao luo	470	zhuó luò
-胁差	lei cha	430	xié chā
-刚劲	gang jin	420	gāng jìng
-井陉	jing jing	420	jǐng xíng
-猇亭	hu ting	340	xiāo tíng
-猇亭区	hu ting qu	130	猇(xiāo)亭区
-屎溺	shi ni	320	shǐ niào
-东庠	dong yang	230	dōng xiáng
-莒县	lü xian	440	jǔ xiàn
-浚县	jun xian	390	xùn xiàn
-郯城	ye cheng	390	tán chéng
-丽水	lì shuǐ	530	lí shuǐ
-珲春	hui chun	460	hún chūn
-甪直	yong zhi	440	lù zhí
-五厍	wu ku	360	wú shè
-台州	tái zhōu	400	tāi zhōu
-膻中	shan zhong	360	膻(dàn)中
-渑池	yin chi	400	miǎn chí
-渑池	sheng chi	400	miǎn chí
-铅山	qian shan	350	yán shān
+胁差	lei cha	73	xié chā
+刚劲	gang jin	3301	gāng jìng
+井陉	jing jing	1237	jǐng xíng
+猇亭	hu ting	146	xiāo tíng
+猇亭区	hu ting qu	88	猇(xiāo)亭区
+屎溺	shi ni	29646	shǐ niào
+东庠	dong yang	826	dōng xiáng
+莒县	lü xian	737	jǔ xiàn
+浚县	jun xian	1348	xùn xiàn
+郯城	ye cheng	897	tán chéng
+丽水	lì shuǐ	580	lí shuǐ
+珲春	hui chun	667	hún chūn
+甪直	yong zhi	888	lù zhí
+五厍	wu ku	218	wú shè
+台州	tái zhōu	720	tāi zhōu
+膻中	shan zhong	2450	膻(dàn)中
+渑池	yin chi	624	miǎn chí
+渑池	sheng chi	1092	miǎn chí
+铅山	qian shan	434	yán shān
 铅山县	qian shan xian	180	铅(yán)山县
 按耐	an nai	30	按捺(nà)
-甭介	béng jie	60	甭价(jie)
-别介	bié jie	30	别价(jie)
+甭介	béng jie	794	甭价(jie)
+别介	bié jie	769	别价(jie)
 槟榔	bin lang	630	bīng láng
 脖颈	bo jing	480	bó gěng
-草薙	cao zhi	90	cǎo tì
-掺和	chan he	440	chān huo
-称职	cheng zhi	90	chèn zhí
-龇牙	ci ya	60	zī yá
-凑活	còu huo	250	凑合(he)
-道行	dao hang	270	dào héng
+草薙	cao zhi	948	cǎo tì
+掺和	chan he	538	chān huo
+称职	cheng zhi	1119	chèn zhí
+龇牙	ci ya	11	zī yá
+凑活	còu huo	984	凑合(he)
+道行	dao hang	10928	dào héng
 给予	gei yu	350	jǐ yǔ
-厚朴	hou pu	50	hòu pò
-馄饨	hun dun	400	hún tun
-角色	jiao se	200	jué sè
+厚朴	hou pu	588	hòu pò
+馄饨	hun dun	8209	hún tun
+角色	jiao se	686	jué sè
 结扎	jie zha	130	jié zā
-钜惠	jù huì	550	(巨)惠
-六安	liu an	110	lù ān
+钜惠	jù huì	1033	(巨)惠
+六安	liu an	628	lù ān
 女主角	nv zhu jiao	200	女主角(jué)
-埋怨	mai yuan	140	mán yuàn
-模板	mo ban	467	mú bǎn
-模具	mo ju	194	mú jù
+埋怨	mai yuan	439	mán yuàn
+模板	mo ban	1172	mú bǎn
+模具	mo ju	218	mú jù
 模样	mo yang	519	mú yàng
 木讷	mu na	470	mù nè
-弄堂	nong tang	130	lòng táng
+弄堂	nong tang	855	lòng táng
 暖和	nuan he	590	nuǎn huo
 偌大	nuo da	680	偌(ruò)大
-强劲	qiang jin	281	qiáng jìng
-说服	shui fu	564	shuō fú
-似的	si de	700	似(shì)的
+强劲	qiang jin	568	qiáng jìng
+说服	shui fu	1033	shuō fú
+似的	si de	821	似(shì)的
 藤蔓	teng man	320	téng wàn
 调换	tiao huan	620	diào huàn
-胴体	tong ti	80	dòng tǐ
-荨麻	xun ma	70	qián má
+胴体	tong ti	837	dòng tǐ
+荨麻	xun ma	124	qián má
 亳州	hao zhou	500	bó zhōu
 天秤座	tian ping zuo	100	秤(chèng)
 戛然而止	ga ran er zhi	590	戛(jiá)然而止
 自怨自艾	zi yuan zi ai	520	自怨自艾(yì)
-洪洞	hong dong	420	hóng tóng
-蔚县	wei xian	430	yù xiàn
-嵊州	cheng zhou	382	shèng zhōu
-吱声	zhi sheng	220	zī shēng
-主角	zhu jiao	541	zhǔ jué
+洪洞	hong dong	2918	hóng tóng
+蔚县	wei xian	1094	yù xiàn
+嵊州	cheng zhou	762	shèng zhōu
+吱声	zhi sheng	1468	zī shēng
+主角	zhu jiao	1195	zhǔ jué
 脖颈儿	bo jing er	10	bó gěng er
-草薙剑	cao zhi jian	20	cǎo tì jiàn
-草薙京	cao zhi jing	140	cǎo tì jīng
+草薙剑	cao zhi jian	318	cǎo tì jiàn
+草薙京	cao zhi jing	254	cǎo tì jīng
 龇着牙	ci zhe ya	10	zī zhe yá
 大宛马	da wan ma	10	dà yuān mǎ
 独乐乐	du le le	10	dú yuè lè
-海参崴	hai shen wei	300	hǎi shēn wǎi
+海参崴	hai shen wei	385	hǎi shēn wǎi
 贾平凹	jia ping ao	250	jià píng wā
 卡脖子	ka bo zi	310	qiǎ bó zi
-六安市	liu an shi	20	lù ān shì
+六安市	liu an shi	88	lù ān shì
 六安县	liu an xian	10	lù ān xiàn
-六合区	liu he qū	10	lù hé qū
-螺蛳粉	luo shi fen	650	luó sī fěn
+六合区	liu he qū	115	lù hé qū
+螺蛳粉	luo shi fen	150	luó sī fěn
 温庭筠	wen ting jun	210	温庭筠(yún)
-关卡	guan ka	640	guān qiǎ
+关卡	guan ka	14734	guān qiǎ
 牛皮癣	niu pi xian	289	(癣)xuǎn
 三昧真火	san wei zhen huo	440	三昧(mèi)真火
 优惠券	you hui juan	420	优惠券(quàn)
-没食子	mei shi zi	70	没(mò)食子
-魔蝎座	mó xiē zuò	10	摩羯(jié)座
-鄱阳湖	pan yang hu	134	pó yáng hú
-契科夫	qī kē fū	10	契诃(hē)夫
+没食子	mei shi zi	304	没(mò)食子
+魔蝎座	mó xiē zuò	403	摩羯(jié)座
+鄱阳湖	pan yang hu	250	pó yáng hú
+契科夫	qī kē fū	524	契诃(hē)夫
 荨麻疹	qian ma zhen	200	xún má zhěn
 太行山	tai xing shan	390	tài háng shān
 头皮屑	tou pi xue	530	tóu pi xiè
 万柏林	wàn bó lín	10	万柏(bǎi)林
 雪佛兰	xue fo lan	370	xuě fú lán
 鸭绿江	ya lv jiang	150	yā lù jiāng
-张柏芝	zhang bai zhi	75	zhāng bó zhī
+张柏芝	zhang bai zhi	1056	zhāng bó zhī
 众乐乐	zhong le le	20	zhòng yuè lè
 阿弥陀佛	a mi tuo fo	37	ē mí tuó fó
 安徽六安	an hui liu an	2	ān huī lù ān
-按耐不住	àn nài bú zhù	1	按捺(nà)不住
+按耐不住	àn nài bú zhù	948	按捺(nà)不住
 龇牙咧嘴	ci ya lie zui	17	zī yá liě zuǐ
 大腹便便	da fu bian bian	15	dà fù pián pián
 歇斯底里	jie si di li	88	xiē sī dǐ lǐ
@@ -140,12 +142,12 @@ sort: by_weight
 人模狗样	ren mo gou yang	15	rén mú góu yàng
 心宽体胖	xin kuan ti pang	4	xīn kūan tǐ pán
 虚与委蛇	xu yu wei she	9	xū yǔ wēi yí
-血脉偾张	xuè mài fèn zhāng	1	血脉贲(bēn)张 | 血脉偾(fèn)张
-血脉喷张	xuè mài pēn zhāng	1	血脉贲(bēn)张 | 血脉偾(fèn)张
-一模一样	yi mo yi yang	508	yì mú yí yàng
+血脉偾张	xuè mài fèn zhāng	265	血脉贲(bēn)张 | 血脉偾(fèn)张
+血脉喷张	xuè mài pēn zhāng	750	血脉贲(bēn)张 | 血脉偾(fèn)张
+一模一样	yi mo yi yang	902	yì mú yí yàng
 饮鸩解渴	yin jiu jie ke	1	饮鸩(zhèn)解渴
 饮鸩止渴	yin jiu zhi ke	34	饮鸩(zhèn)止渴
-饮鸩解渴	yin zhen jie ke	1	饮鸩(zhèn)解渴
+饮鸩解渴	yin zhen jie ke	48	饮鸩(zhèn)解渴
 有模有样	you mo you yang	28	yǒu mú yǒu yàng
 装模作样	zhuang mo zuo yang	49	zhuāng mú zuò yàng
 安徽六安市	an hui liu an shi	1	ān huī lù ān shì
@@ -156,3 +158,4 @@ sort: by_weight
 南无阿弥陀佛	nan wu a mi tuo fo	4	nā mó ē mí tuó fó
 南无阿弥陀佛	nan wu e mi tuo fo	4	nā mó ē mí tuó fó
 蓦然回首	mu ran hui shou	39	蓦(mò)然回首
+拾级而上	shi ji er shang	64	拾(shè)级而上
