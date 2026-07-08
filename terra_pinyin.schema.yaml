@@ -50,6 +50,7 @@ engine:
     - affix_segmentor@wubi98_mint
     - affix_segmentor@radical_reverse_lookup
     - affix_segmentor@stroke
+    - affix_segmentor@unicode                         # Unicode 编码候选
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
@@ -65,12 +66,14 @@ engine:
     - reverse_lookup_translator@radical_reverse_lookup
     - reverse_lookup_translator@stroke
     - script_translator
+    - script_translator@unicode                         # Unicode 编码候选
     - lua_translator@*force_gc                           # 暴力GC，尝试解决小狼毫长期使用的卡顿
   filters:
     - lua_filter@*autocap_filter           # 英文自动大写
     - simplifier@emoji_suggestion         # Emoji OpenCC
     - simplifier@transcription_cc         # 繁体&简体 OpenCC
     - lua_filter@*reduce_english_filter    # 降低部分英语单词在候选项的位置
+    - lua_filter@*unicode_filter          # Unicode 编码候选
     - uniquifier                          # 去重
 
 #shijian:仅仅作为提示使用，编码已经写死，引导键可以在key_binder下修改前缀
@@ -317,6 +320,13 @@ translator:
     - xform/([a-z]+)[0-5]/$1/
   enable_user_dict: true         # 开启用户词典，根据用户输入调频（默认开启，此处再次声明）
 
+unicode:
+  tag: unicode
+  dictionary: terra_pinyin
+  enable_user_dict: false
+  enable_sentence: false
+  prefix: "Uc"
+  tips: 〔Unicode〕
 custom_phrase:
   dictionary: ""
   user_dict: custom_phrase
@@ -481,6 +491,7 @@ punctuator:
 recognizer:
   import_preset: default
   patterns:
+    unicode: "^Uc[a-z0-9;]*'?$"
     url: "^[a-z]+[.].+$"
     punct: "^/([0-9]0?|[a-zA-Z]+)$"
     wubi98_mint: "Uw[a-z]*'?$"

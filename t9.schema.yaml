@@ -40,12 +40,14 @@ engine:
   segmentors:
     - ascii_segmentor
     - matcher
+    - affix_segmentor@unicode                         # Unicode 编码候选
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
   translators:
     - punct_translator
     - script_translator
+    - script_translator@unicode                         # Unicode 编码候选
     - lua_translator@*shijian              #农历、日期、节气、节日、时间、周、问候模板等等，触发清单看下文
     - table_translator@custom_phrase                     # 自定义短语 custom_phrase_t9.txt
     - lua_translator@*mint_calculator_translator         # 计算器（lua 动态表达式）
@@ -53,6 +55,7 @@ engine:
   filters:
     - simplifier@emoji_suggestion
     - simplifier@transcription_cc         # 简繁切换
+    - lua_filter@*unicode_filter          # Unicode 编码候选
     - uniquifier                          # 去重
 
 #shijian:仅仅作为提示使用，编码已经写死，引导键可以在key_binder下修改前缀
@@ -121,6 +124,14 @@ datetime_formats:
 
 translator:
   dictionary: rime_mint         # 挂载主词库
+
+unicode:
+  tag: unicode
+  dictionary: rime_mint
+  enable_user_dict: false
+  enable_sentence: false
+  prefix: "Uc"
+  tips: 〔Unicode〕
 #  packs: user                  #导入根目录下名称为user.dict.yaml的自定义固定词典
   prism: rime_mint_t9             # 多方案共用一个词库时，为避免冲突，需要用 prism 指定一个名字。
   enable_completion: true      # 启用候选词补全
@@ -149,6 +160,7 @@ translator:
 recognizer:
   #import_preset: default  # 从 default.yaml 继承通用的
   patterns:  
+    unicode: "^Uc[a-z0-9;]*'?$"
     expression: "^=.*$"                 # = 作为触发前缀，计算器功能引导
     
 # 自定义短语：custom_phrase_t9.txt

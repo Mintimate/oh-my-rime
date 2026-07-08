@@ -45,12 +45,14 @@ engine:
     - ascii_segmentor
     - matcher
     - affix_segmentor@rime_mint                # 拼音
+    - affix_segmentor@unicode                         # Unicode 编码候选
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
   translators:
     - punct_translator
     - table_translator
+    - table_translator@unicode                          # Unicode 编码候选
     - lua_translator@*shijian                            # 时间、日期、星期、月份、问候、节气、节日，N模式
     - lua_translator@*number_translator                  # 金额大小写
     - lua_translator@*chineseLunarCalendar_translator    # 农历
@@ -64,6 +66,7 @@ engine:
     - lua_filter@*autocap_filter              # 英文自动大写
     - simplifier@transcription_cc             # 简繁切换
     - lua_filter@*reduce_english_filter       # 降低部分英语单词在候选项的位置
+    - lua_filter@*unicode_filter          # Unicode 编码候选
     - uniquifier                              # 去重
 #shijian:仅仅作为提示使用，编码已经写死，引导键可以在key_binder下修改前缀
 #时间：osj 或者 /sj
@@ -190,6 +193,14 @@ translator:
     - "^z.*$"
   enable_user_dict: false           # 关闭用户词典，根据用户输入调频（默认开启，形码本身字重低或没有，理论上不需要调频）
 
+
+unicode:
+  tag: unicode
+  dictionary: wubi98_mint
+  enable_user_dict: false
+  enable_sentence: false
+  prefix: "Uc"
+  tips: 〔Unicode〕
 # 英文输入
 melt_eng:
   dictionary: melt_eng           # 英文词典
@@ -249,6 +260,7 @@ punctuator:
 recognizer:
   import_preset: default
   patterns:
+    unicode: "^Uc[a-z0-9;]*'?$"
     url: "^[a-z]+[.].+$"
     punct: "^/([0-9]0?|[a-zA-Z]+)$"
     email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
