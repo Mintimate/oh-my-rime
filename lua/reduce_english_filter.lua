@@ -12,7 +12,8 @@ function M.init(env)
     env.name_space = env.name_space:gsub("^*", "")
 
     -- 要降低到的位置
-    M.idx = config:get_int(env.name_space .. "/idx")
+    local idx = config:get_int(env.name_space .. "/idx")
+    env.idx = (idx and idx > 0) and idx or 2
 
     -- 所有 3~4 位长度、前 2~3 位是完整拼音、最后一位是声母的单词
     local all = { "aid", "aim", "air", "and", "ann", "ant", "any", "bad", "bag", "bail", "bait", "bam", "ban", "band",
@@ -49,13 +50,13 @@ function M.init(env)
         -- 下面是其他长度的
         "quanx", "eg",
 	}
-    M.all = {}
+    local all_map = {}
     for _, v in ipairs(all) do
-        M.all[v] = true
+        all_map[v] = true
     end
 
     -- 自定义
-    M.words = {}
+    local words = {}
     local list = config:get_list(env.name_space .. "/words")
 
     -- 当 words 没有定义，赋值长度为0
@@ -63,7 +64,7 @@ function M.init(env)
 
     for i = 0, listSize - 1 do
         local word = list:get_value_at(i).value
-        M.words[word] = true
+        words[word] = true
     end
 
     -- 模式(YummyCocoa: all 会合并默认全降内容)
@@ -71,46 +72,61 @@ function M.init(env)
     if mode == "all" then
         -- 合并 all 和 words
         local mergedTable = {}
-        for key in pairs(M.all) do
+        for key in pairs(all_map) do
             mergedTable[key] = true
         end
-        for key in pairs(M.words) do
+        for key in pairs(words) do
             mergedTable[key] = true
         end
-        M.map = mergedTable
+        env.map = mergedTable
     elseif mode == "custom" then
-        M.map = M.words
+        env.map = words
     elseif mode == "none" then
-        M.map = {}
+        env.map = {}
     else 
-        M.map = M.all
+        env.map = all_map
     end
 end
 
 function M.func(input, env)
     -- filter start
     local code = env.engine.context.input
-    if M.map[code] then
+    if env.map[code] then
+        -- Translation 可重复迭代，但原实现会产生重复候选，再依赖 uniquifier
+        -- 去重。这里一次遍历就完成同样的稳定降频排序。
+        local all_cands = {}
+        local result = {}
         local pending_cands = {}
         local index = 0
+        local released = false
         for cand in input:iter() do
             index = index + 1
-            -- 找到要降低的英文词，加入 pending_cands
-            if cand.preedit:find(" ") or not cand.text:match("[a-zA-Z]") then
-                yield(cand)
+            all_cands[#all_cands + 1] = cand
+
+            if released then
+                result[#result + 1] = cand
+            elseif (cand.preedit or ""):find(" ", 1, true) or not cand.text:match("[a-zA-Z]") then
+                result[#result + 1] = cand
             else
-                table.insert(pending_cands, cand)
+                pending_cands[#pending_cands + 1] = cand
             end
-            if index >= M.idx + #pending_cands - 1 then
+
+            if not released and index >= env.idx + #pending_cands - 1 then
                 for _, cand in ipairs(pending_cands) do
-                    yield(cand)
+                    result[#result + 1] = cand
                 end
-                break
+                released = true
             end
         end
+
+        -- 候选不足以把英文词真正后移时，保持原始顺序。
+        for _, cand in ipairs(released and result or all_cands) do
+            yield(cand)
+        end
+        return
     end
 
-    -- yield other
+    -- 未命中降频码，直接透传。
     for cand in input:iter() do
         yield(cand)
     end
