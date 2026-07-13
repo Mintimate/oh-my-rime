@@ -67,6 +67,7 @@ engine:
     - affix_segmentor@wubi98_mint
     - affix_segmentor@radical_reverse_lookup
     - affix_segmentor@stroke
+    - affix_segmentor@unicode
     - abc_segmentor                                      # 標識常規的文字段落
     - punct_segmentor                                    # 標識句讀段落
     - fallback_segmentor                                 # 標識其他未標識段落
@@ -397,9 +398,15 @@ punctuator:
 
 
 # 反查映射
+unicode:
+  tag: unicode
+  prefix: "Uc"
+  tips: 〔Unicode〕
+
 recognizer:
   import_preset: default
   patterns:
+    unicode: "^Uc[a-z]*'?$"
     url: "^[a-z]+[.].+$"
     punct: "^/([0-9]0?|[a-zA-Z]+)$"
     wubi98_mint: "Uw[a-z]*'?$"

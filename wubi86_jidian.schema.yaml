@@ -49,6 +49,7 @@ engine:
     - ascii_segmentor
     - matcher
     - affix_segmentor@rime_mint                # 拼音
+    - affix_segmentor@unicode
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
@@ -254,9 +255,15 @@ punctuator:
       ">": ["》", "〉", "»", ">"]
 
 # 反查映射
+unicode:
+  tag: unicode
+  prefix: "Uc"
+  tips: 〔Unicode〕
+
 recognizer:
   import_preset: default
   patterns:
+    unicode: "^Uc[a-z]*'?$"
     url: "^[a-z]+[.].+$"
     punct: "^/([0-9]0?|[a-zA-Z]+)$"
     email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"

@@ -50,6 +50,7 @@ engine:
     - affix_segmentor@wubi98_mint
     - affix_segmentor@radical_reverse_lookup
     - affix_segmentor@stroke
+    - affix_segmentor@unicode
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
@@ -479,9 +480,15 @@ punctuator:
       "<": ["《", "〈", "«", "<"]
       ">": ["》", "〉", "»", ">"]
 
+unicode:
+  tag: unicode
+  prefix: "Uc"
+  tips: 〔Unicode〕
+
 recognizer:
   import_preset: default
   patterns:
+    unicode: "^Uc[a-z]*'?$"
     url: "^[a-z]+[.].+$"
     punct: "^/([0-9]0?|[a-zA-Z]+)$"
     wubi98_mint: "Uw[a-z]*'?$"
