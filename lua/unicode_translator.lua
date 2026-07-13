@@ -1,8 +1,10 @@
 -- Unicode 编码候选过滤器。
 -- 作者：[Mintimate](https://github.com/Mintimate)
--- 在方案的 speller/algebra 中给普通小鹤编码派生一个大写 U 前缀后，
--- 本过滤器把对应汉字候选转换为多种 Unicode 表示。例如：
---   Ucvs -> 中 -> U+4E2D / 4E2D / \u4E2D / &#x4E2D; / \x{4E2D}
+-- Unicode 功能必须作为独立 translator 工作，不能用全局 Lua filter
+-- 包裹普通 script_translator；后者会在部分 librime 版本中破坏简拼的
+-- 延迟候选展开。
+
+local unicode_translator = {}
 
 local function format_u_plus(cp)
     return string.format("U+%04X", cp)
@@ -60,16 +62,12 @@ local function unique_candidates(candidates)
     return result
 end
 
-local function candidate_end(cand, code)
-    return cand._end or cand.end_pos or cand.start + #code
-end
 
 local function js_escape(cp)
     if cp <= 0xFFFF then
         return string.format("\\u%04X", cp)
     end
 
-    -- JSON/JavaScript 的 \u 转义只接受 4 位十六进制，需使用代理对。
     local value = cp - 0x10000
     local high = 0xD800 + math.floor(value / 0x400)
     local low = 0xDC00 + (value % 0x400)
@@ -86,28 +84,68 @@ local function unicode_candidates(points)
     })
 end
 
-local function unicode_filter(input, env)
-    local context = env.engine.context
-    local code = context.input or ""
+function unicode_translator.init(env)
+    env.unicode_memory = Memory(env.engine, env.engine.schema)
+end
 
-    if not code:match("^Uc.+") then
-        for cand in input:iter() do
-            yield(cand)
-        end
+function unicode_translator.fini(env)
+    if env.unicode_memory then
+        env.unicode_memory:disconnect()
+        env.unicode_memory = nil
+    end
+end
+
+function unicode_translator.func(input, seg, env)
+    local code
+    if input:sub(1, 2) == "Uc" then
+        code = input:sub(3)
+    elseif seg:has_tag("unicode") then
+        -- affix_segmentor 在部分 librime 版本中会先移除前缀。
+        code = input
+    else
         return
     end
 
-    for cand in input:iter() do
-        local points = codepoints(cand.text)
+    if code == "" then
+        return
+    end
+
+    if not env.unicode_memory or not env.unicode_memory:dict_lookup(code, true, 50) then
+        return
+    end
+
+    local entries_by_text = {}
+    for entry in env.unicode_memory:iter_dict() do
+        local weight = tonumber(entry.weight) or 0
+        local saved = entries_by_text[entry.text]
+        if not saved or weight > saved.weight then
+            entries_by_text[entry.text] = {
+                text = entry.text,
+                weight = weight,
+            }
+        end
+    end
+
+    local entries = {}
+    for _, entry in pairs(entries_by_text) do
+        entries[#entries + 1] = entry
+    end
+    table.sort(entries, function(a, b)
+        if a.weight == b.weight then
+            return a.text < b.text
+        end
+        return a.weight > b.weight
+    end)
+
+    for _, entry in ipairs(entries) do
+        local points = codepoints(entry.text)
 
         if points and #points > 0 then
-            local comment = "〔" .. cand.text .. " · Unicode〕"
-
             for _, text in ipairs(unicode_candidates(points)) do
-                yield(Candidate("unicode", cand.start, candidate_end(cand, code), text, comment))
+                yield(Candidate("unicode", seg.start, seg._end, text, "[" .. entry.text .. "]"))
             end
         end
     end
 end
 
-return unicode_filter
+return unicode_translator

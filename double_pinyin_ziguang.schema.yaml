@@ -56,14 +56,13 @@ engine:
     - matcher                                            # 標識符合特定規則的段落，如網址、反查等
     - affix_segmentor@wubi98_mint
     - affix_segmentor@radical_reverse_lookup
-    - affix_segmentor@unicode                         # Unicode 编码候选
     - abc_segmentor                                      # 標識常規的文字段落
     - punct_segmentor                                    # 標識句讀段落
     - fallback_segmentor                                 # 標識其他未標識段落
   translators:
     - punct_translator                                   # ※ 轉換標點符號
     - script_translator
-    - script_translator@unicode                         # Unicode 编码候选
+    - lua_translator@*unicode_translator                # Unicode 编码候选
     - lua_translator@*shijian                            # 时间、日期、星期、月份、问候、节气、节日，N模式
     - lua_translator@*number_translator                  # 金额大小写
     - lua_translator@*chineseLunarCalendar_translator    # 农历
@@ -80,7 +79,6 @@ engine:
     - simplifier@emoji_suggestion
     - simplifier@transcription_cc
     - lua_filter@*reduce_english_filter          # 降低部分英语单词在候选项的位置
-    - lua_filter@*unicode_filter          # Unicode 编码候选
     - uniquifier                                 # 去重
 
 #shijian:仅仅作为提示使用，编码已经写死，引导键可以在key_binder下修改前缀
@@ -257,14 +255,6 @@ translator:
     - xform/([nljqxy])v/$1ü/   # 這樣纔是漢語拼音 :-)
     - xform/ü/v/  # ü 显示为 v
 
-unicode:
-  tag: unicode
-  dictionary: rime_mint
-  prism: double_pinyin_ziguang
-  enable_user_dict: false
-  enable_sentence: false
-  prefix: "Uc"
-  tips: 〔Unicode〕
 # 次翻译器，英文
 melt_eng:
   dictionary: melt_eng     # 挂载词库 melt_eng.dict.yaml
@@ -365,7 +355,6 @@ punctuator:
 recognizer:
   import_preset: default
   patterns:
-    unicode: "^Uc[a-z0-9;]*'?$"
     url: "^[a-z]+[.].+$"
     punct: "^/([0-9]0?|[a-zA-Z]+)$"
     wubi98_mint: "Uw[a-z]*'?$"

@@ -60,14 +60,14 @@ engine:
     - affix_segmentor@wubi98_mint
     - affix_segmentor@radical_reverse_lookup
     - affix_segmentor@stroke
-    - affix_segmentor@unicode                         # Unicode 编码候选
+    - affix_segmentor@unicode
     - abc_segmentor                                      # 標識常規的文字段落
     - punct_segmentor                                    # 標識句讀段落
     - fallback_segmentor                                 # 標識其他未標識段落
   translators:
     - punct_translator                                   # ※ 轉換標點符號
     - script_translator
-    - script_translator@unicode                         # Unicode 编码候选
+    - lua_translator@*unicode_translator                # Unicode 编码候选
     - lua_translator@*shijian                            # 时间、日期、星期、月份、问候、节气、节日，N模式
     - lua_translator@*number_translator                  # 金额大小写
     - lua_translator@*chineseLunarCalendar_translator    # 农历
@@ -87,7 +87,6 @@ engine:
     - simplifier@emoji_suggestion
     - simplifier@transcription_cc
     - lua_filter@*reduce_english_filter          # 降低部分英语单词在候选项的位置
-    - lua_filter@*unicode_filter          # Unicode 编码候选
     - uniquifier                                 # 去重
 
 #shijian:仅仅作为提示使用，编码已经写死，引导键可以在key_binder下修改前缀
@@ -222,14 +221,6 @@ translator:
   initial_quality: 1.2
   enable_user_dict: true         # 开启用户词典，根据用户输入调频（默认开启，此处再次声明）
 
-
-unicode:
-  tag: unicode
-  dictionary: rime_mint
-  enable_user_dict: false
-  enable_sentence: false
-  prefix: "Uc"
-  tips: 〔Unicode〕
 melt_eng:
   dictionary: melt_eng           # 英文词典
   enable_sentence: false         # 关闭自动造句
@@ -378,6 +369,11 @@ radical_reverse_lookup:
     # comment_format:
   #   - erase/^.*$// # 删除注释
   tips: 〔拆字〕
+
+unicode:
+  tag: unicode
+  prefix: "Uc"
+  tips: 〔Unicode〕
   
 reverse_lookup:
   tags: [wubi98_mint,stroke,radical_lookup]
@@ -409,7 +405,7 @@ punctuator:
 recognizer:
   import_preset: default
   patterns:
-    unicode: "^Uc[a-z0-9;]*'?$"
+    unicode: "^Uc[a-z]*'?$"
     url: "^[a-z]+[.].+$"
     punct: "^/([0-9]0?|[a-zA-Z]+)$"
     wubi98_mint: "Uw[a-z]*'?$"

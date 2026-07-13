@@ -120,34 +120,42 @@ function M.init(env)
     }
 end
 
+local function update_comment(cand, env)
+    -- 只处理拼音候选。其他 translator 的 comment 属于其展示数据，原样透传。
+    if cand.type == "unicode" then
+        return
+    end
+
+    local pinyin = cand.comment
+    if not pinyin or #pinyin == 0 then
+        return
+    end
+
+    if env.delimiter then
+        pinyin = pinyin:gsub(env.delimiter, ' ')
+    end
+
+    local genuine = cand:get_genuine()
+    local correction = M.corrections[pinyin]
+    if correction and cand.text == correction.text then
+        local target_comment = '[' .. correction.comment .. ']'
+        genuine.comment = M.style:gsub("{comment}", target_comment)
+
+        local seg = env.engine.context.composition:back()
+        seg.tags = seg.tags + Set({ "correntor" })
+        return
+    end
+
+    if env.engine.context:get_option("tone_display") then
+        genuine.comment = M.style:gsub("{comment}", pinyin)
+    else
+        genuine.comment = ""
+    end
+end
+
 function M.func(input, env)
     for cand in input:iter() do
-        -- cand.comment 是目前输入的词汇的完整拼音
-        local pinyin = cand.comment
-        if pinyin and #pinyin > 0 then
-            if env.delimiter then
-                pinyin = pinyin:gsub(env.delimiter,' ')
-            end
-            local c = M.corrections[pinyin]
-            if c and cand.text == c.text then
-                local target_comment = '[' .. c.comment .. ']'
-                cand:get_genuine().comment = string.gsub(M.style, "{comment}", target_comment)
-                -- 获取当前 composition 和 segment
-                local context = env.engine.context
-                local composition = context.composition
-                local seg = composition:back()         -- 获取当前 segment
-                -- 设置标签
-                seg.tags = seg.tags + Set({ "correntor" })
-            else
-                -- 20250708 是否保持原本注释；如: 拼音
-                local keep_source_comment = env.engine.context:get_option("tone_display") or false
-                if keep_source_comment then
-                    cand:get_genuine().comment = string.gsub(M.style, "{comment}", pinyin)
-                else
-                    cand:get_genuine().comment = ""
-                end
-            end
-        end
+        update_comment(cand, env)
         yield(cand)
     end
 end
