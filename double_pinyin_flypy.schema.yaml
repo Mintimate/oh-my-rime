@@ -92,7 +92,7 @@ engine:
     - simplifier@emoji_suggestion
     - simplifier@transcription_cc
     - simplifier@chaifen_cc                   # 鹤形拆字辅助滤镜
-    - lua_filter@*auxCode_filter@flypy_full   # 小鹤双拼辅码(音形)
+    - lua_filter@*aux_code_filter@flypy_full   # 小鹤双拼辅码(音形)
     - lua_filter@*reduce_english_filter       # 降低部分英语单词在候选项的位置
     - uniquifier                              # 去重
 
