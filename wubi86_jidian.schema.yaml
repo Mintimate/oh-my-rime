@@ -68,7 +68,7 @@ engine:
     - lua_filter@*autocap_filter              # 英文自动大写
     - simplifier@emoji_suggestion             # Emoji
     - simplifier@transcription_cc             # 简繁切换
-    - lua_filter@*reduce_english_filter       # 降低部分英语单词在候选项的位置
+    - lua_filter@*reduce_english_filter       # 将部分英文候选调整到指定位置
     - uniquifier                              # 去重
 
 #shijian:仅仅作为提示使用，编码已经写死，引导键可以在key_binder下修改前缀
@@ -148,20 +148,20 @@ emoji_suggestion:
   inherit_comment: false
 
 
-# Lua 配置: 降低部分英语单词在候选项的位置。
+# Lua 配置: 将部分英文候选调整到指定位置。
 # 详细介绍 https://dvel.me/posts/make-rime-en-better/#短单词置顶的问题
-# 正常情况： 输入 rug 得到 「1.rug 2.如果 …… 」
-# 降低之后： 输入 rug 得到 「1.如果 2.rug …… 」
+# 万象高词频下，英文可能被压到较后位置
+# 调整后：命中的英文会移到 idx 指定的候选位
 # 几种模式：
-# all     使用 reduce_english_filter 自带的降频词库（降低所有 3~4 位长度、前 2~3 位是完整拼音、最后一位是声母的单词）
-# none    不降低任何单词，相当于没有启用这个 Lua
-# custom  自定义，只降低 words 里的
+# all     使用 reduce_english_filter 自带的候选位词库（调整所有 3~4 位长度、前 2~3 位是完整拼音、最后一位是声母的单词）
+# none    不调整任何单词，相当于没有启用这个 Lua
+# custom  自定义，只调整 words 里的
 # 『留白』 不设置该选项，使用 reduce_english_filter 内全局设置内容
 # （匹配的是编码，不是单词）
 reduce_english_filter:
   mode: all  # all | none | custom | 『留白』
-  idx: 2        # 降低到第 idx 个位置
-  # 自定义的单词列表，示例列表没有降低部分常用单词，如 and cat mail Mac but bad shit ……
+  idx: 2        # 调整到第 idx 个位置
+  # 自定义的单词列表，示例列表没有调整部分常用单词，如 and cat mail Mac but bad shit ……
   words: [aid, ann,
   bail, bait, bam, band, bans, bat, bay, bend, bent, benz, bib, bid, bien, biz, boc, bop, bos, bud, buf,
   cab, cad, cain, cam, cans, cap, cas, cef, chad, chan, chap, chef, cher, chew, chic, chin, chip, chit, coup, cum, cunt, cur,
@@ -171,7 +171,7 @@ reduce_english_filter:
   hail, ham, hank, hans, hat, hay, heil, heir, hem, hep, hud, hum, hung, hunk, hut,
   jim, jug,
   kat,
-  lab, lad, lag, laid, lam, laos, lap, lat, lax, lay, led, leg, lex, liam, lib, lid, lied, lien, lies, linn, lip, lit, liz, lob, lug, lund, lung, lux,
+  lab, lad, lag, laid, lam, laos, lap, lat, lax, lay, led, leg, lex, liam, lib, lid, lied, lien, lies, linn, lip, lit, liz, lob, lua, lug, lund, lung, lux,
   mag, maid, mann, mar, mat, med, mel, mend, mens, ment, mil, mins, mint, mob, moc, mop, mos, mot, mud, mug, mum, nail,
   nap, nat, nay, neil, nib, nip, noun, nous, nun, nut,
   pac, paid, pail, pain, pair, pak, pal, pam, pans, pant, pap, par, pat, paw, pax, pens, pic, pier, pies, pins, pint, pit, pix, pod, pop, pos, pot, pour, pow, pub,
