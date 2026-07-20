@@ -191,9 +191,9 @@ import_tables:
 ## Star History
 
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Mintimate/oh-my-rime&type=Timeline&theme=dark" />
-<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Mintimate/oh-my-rime&type=Timeline" />
-<img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Mintimate/oh-my-rime&type=Timeline" />
+<source media="(prefers-color-scheme: dark)" srcset="https://dev-stats.mintimate.cn/api/star-history?username=Mintimate&theme=catppuccin_mocha&show_icons=true&repo=oh-my-rime" />
+<source media="(prefers-color-scheme: light)" srcset="https://dev-stats.mintimate.cn/api/star-history?username=Mintimate&theme=catppuccin_latte&show_icons=true&repo=oh-my-rime" />
+<img alt="Star History Chart" src="https://dev-stats.mintimate.cn/api/star-history?username=Mintimate&theme=catppuccin_latte&show_icons=true&repo=oh-my-rime" />
 </picture>
 
 ## Contributors ✨
