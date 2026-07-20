@@ -127,7 +127,9 @@ dicts
 ├── rime_ice.others.dict.yaml  # 白霜词库（GitHub action自动更新）
 ├── rime_mint.base.dict.yaml            # 万象词库（GitHub action自动更新）
 ├── rime_mint.chars.dict.yaml           # 万象词库（GitHub action自动更新）
+├── rime_mint.compatible.dict.yaml      # 万象多音兼容词库（GitHub action自动更新）
 ├── rime_mint.correlation.dict.yaml     # 万象词库（GitHub action自动更新）
+├── rime_mint.places.dict.yaml          # 万象地名词库（GitHub action自动更新）
 ├── rime_mint.ext.dict.yaml             # 万象词库（GitHub action自动更新）
 ├── wubi86_core.dict.yaml           # 86版五笔基础词库
 └── wubi98_base.dict.yaml           # 98版五笔基础词库
@@ -150,6 +152,8 @@ import_tables:
   - dicts/rime_mint.chars        # 单字词库（万象拼音词库基础版本）
   - dicts/rime_mint.base         # 基础词库（万象拼音词库基础版本）
   - dicts/rime_mint.correlation  # 关联词库（万象拼音词库基础版本）
+  - dicts/rime_mint.compatible   # 多音兼容词库（万象拼音词库基础版本）
+  - dicts/rime_mint.places       # 地名词库（万象拼音词库基础版本）
   - dicts/rime_mint.ext          # 联想词库（万象拼音词库基础版本）
   - dicts/other_kaomoji          # 颜文字表情（按`VV`呼出)
   - dicts/rime_ice.others        # 雾凇拼音 others词库（用于自动纠错）
