@@ -1,8 +1,9 @@
 ---
 name: melt_eng         # 注意name和文件名一致
-version: "2024.02.11"
+version: "2026.07.22"
 sort: by_weight
-use_preset_vocabulary: true
+# 英文词典不加载中文预设词汇，避免以英文编码规则处理中文词条。
+use_preset_vocabulary: false
 # 此处为 输入法所用到的词库，既补充拓展词库的地方
 import_tables:
   - dicts/rime_ice.en_ext   # 雾凇拼音-英文扩展
