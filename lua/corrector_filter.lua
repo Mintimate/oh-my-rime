@@ -120,9 +120,21 @@ function M.init(env)
     }
 end
 
+local passthrough_types = {
+    unicode = true, -- unicode_translator.lua
+    shijian = true, -- shijian.lua：时间、日期、时间戳、节气……
+    lunar   = true, -- chineseLunarCalendar_translator.lua
+}
+
+-- 数字、计算器等 translator 把 type 设成了输入码，无法逐个枚举，改用 comment 形状兜底：
+-- spelling_hints 生成的注释只含拉丁字母、分隔符和 ü，含其他字节的一律当作展示数据。
+local function is_spelling_hint(comment)
+    return comment:match("^[a-zA-ZüÜ '`\"%-]+$") ~= nil
+end
+
 local function update_comment(cand, env)
     -- 只处理拼音候选。其他 translator 的 comment 属于其展示数据，原样透传。
-    if cand.type == "unicode" then
+    if passthrough_types[cand.type] then
         return
     end
 
@@ -133,6 +145,10 @@ local function update_comment(cand, env)
 
     if env.delimiter then
         pinyin = pinyin:gsub(env.delimiter, ' ')
+    end
+
+	if not is_spelling_hint(pinyin) then
+        return
     end
 
     local genuine = cand:get_genuine()
