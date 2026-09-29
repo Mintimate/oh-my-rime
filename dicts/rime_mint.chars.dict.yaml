@@ -3,7 +3,7 @@
 #https://github.com/amzxyz/RIME-LMDG
 ---
 name: rime_mint.chars
-version: "2026-08-29"
+version: "2026-09-29"
 sort: by_weight
 
 ...
@@ -3526,6 +3526,7 @@ sort: by_weight
 常	cháng	36860
 长	cháng	36122
 场	chǎng	14815
+场	cháng	5159
 尝	cháng	2836
 唱	chàng	2779
 厂	chǎng	2027
@@ -3571,7 +3572,6 @@ sort: by_weight
 淐	chāng	168
 悵	chàng	167
 焻	chàng	166
-场	cháng	159
 琩	chāng	154
 倘	cháng	152
 倡	chāng	149
@@ -9651,16 +9651,16 @@ sort: by_weight
 富	fù	2828
 福	fú	2545
 负	fù	2417
+付	fù	1831
 副	fù	1391
 幅	fú	1233
 符	fú	1216
+辅	fǔ	929
 夫	fū	811
 父	fù	770
 肤	fū	759
 妇	fù	754
 腐	fǔ	735
-付	fù	731
-辅	fǔ	729
 佛	fú	718
 腹	fù	712
 覆	fù	710
@@ -12215,9 +12215,9 @@ sort: by_weight
 汉	hàn	4039
 韩	hán	3958
 寒	hán	3878
-函	hán	2314
+喊	hǎn	2314
 汗	hàn	2198
-喊	hǎn	704
+函	hán	704
 涵	hán	668
 罕	hǎn	656
 撼	hàn	622
@@ -12545,6 +12545,7 @@ sort: by_weight
 豪	háo	2631
 毫	háo	2368
 耗	hào	1534
+薅	hāo	1424
 浩	hào	690
 皓	hào	586
 蒿	hāo	570
@@ -12557,7 +12558,6 @@ sort: by_weight
 灏	hào	494
 昊	hào	453
 郝	hǎo	440
-薅	hāo	424
 颢	hào	400
 貉	háo	393
 嗥	háo	372
@@ -17550,6 +17550,7 @@ sort: by_weight
 僦	jiù	329
 氿	jiǔ	314
 㠇	jiù	304
+蹴	jiù	301
 舊	jiù	262
 柾	jiù	245
 糾	jiū	230
@@ -23956,6 +23957,7 @@ sort: by_weight
 釯	máng	38
 哤	máng	38
 蛖	máng	23
+𬲹	māng	3
 硥	mǎng	1
 浝	máng	1
 𩷶	máng	1
@@ -26183,6 +26185,7 @@ sort: by_weight
 鿭	nǐ	23
 觬	ní	23
 淣	ní	23
+祢	nǐ	2
 秜	ní	1
 誽	nì	1
 愵	nì	1
@@ -27946,12 +27949,12 @@ sort: by_weight
 偏	piān	15400
 篇	piān	15092
 片	piān	14892
-便	pián	14594
 骗	piàn	8829
+骈	pián	5390
+便	pián	4594
+谝	piǎn	1351
 翩	piān	566
-骈	pián	390
 騙	piàn	357
-谝	piǎn	351
 胼	pián	333
 蹁	pián	276
 犏	piān	230
@@ -28572,6 +28575,7 @@ sort: by_weight
 器	qì	19132
 齐	qí	11441
 起	qǐ	10868
+骑	qí	9749
 祁	qí	1946
 期	qī	933
 戚	qī	926
@@ -28581,7 +28585,6 @@ sort: by_weight
 启	qǐ	811
 弃	qì	799
 旗	qí	767
-骑	qí	749
 棋	qí	746
 欺	qī	727
 歧	qí	645
@@ -40281,11 +40284,11 @@ sort: by_weight
 𪂼	xiāng	1
 𣚺	xiàng	1
 小	xiǎo	305330
-效	xiào	3542
+笑	xiào	39452
+效	xiào	13542
 消	xiāo	3305
 校	xiào	3238
 销	xiāo	2582
-笑	xiào	2452
 晓	xiǎo	781
 肖	xiào	741
 孝	xiào	703
@@ -43004,6 +43007,8 @@ sort: by_weight
 咉	yāng	33
 玚	yáng	29
 详	yáng	25
+䱀	yāng	4
+𫚐	yāng	3
 懩	yǎng	1
 雵	yāng	1
 慃	yǎng	1
@@ -43051,7 +43056,6 @@ sort: by_weight
 䬺	yàng	1
 䭐	yàng	1
 䭥	yàng	1
-䱀	yāng	1
 䵮	yàng	1
 𠍵	yàng	1
 𠢴	yǎng	1
@@ -43502,6 +43506,7 @@ sort: by_weight
 鎁	yé	23
 瞸	yè	23
 驜	yè	23
+𬲼	yè	3
 曗	yè	1
 漜	yě	1
 枽	yè	1
@@ -45590,11 +45595,11 @@ sort: by_weight
 预	yù	16664
 雨	yǔ	16330
 玉	yù	10705
-育	yù	1602
+余	yú	1602
 域	yù	1521
 鱼	yú	1444
 遇	yù	1371
-余	yú	935
+育	yù	935
 与	yù	927
 娱	yú	776
 予	yǔ	757
@@ -46267,6 +46272,7 @@ sort: by_weight
 园	yuán	3489
 愿	yuàn	3314
 圆	yuán	1188
+媛	yuán	1120
 援	yuán	747
 怨	yuàn	742
 苑	yuàn	729
@@ -46324,7 +46330,6 @@ sort: by_weight
 轅	yuán	133
 鋺	yuǎn	133
 圜	yuán	124
-媛	yuán	120
 猨	yuán	115
 囦	yuān	111
 謜	yuán	106

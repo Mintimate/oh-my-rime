@@ -4,7 +4,7 @@
 #兼容词库，对于多字词汇两种读音的场景，手动维护到本表以及一些其他的杂项
 ---
 name: rime_mint.compatible
-version: "2026-08-29"
+version: "2026-09-29"
 sort: by_weight
 
 ...
@@ -16,9 +16,24 @@ sort: by_weight
 还给他们	hái gěi tā men	142
 很得劲	hěn dé jìn	121
 真得劲	zhēn dé jìn	322
+释迦牟尼	shì jiā mù ní	1184
 可得劲儿	kě dé jìn er	178
 乐山乐水	yào shān yào shuǐ	12
+于思于思	yú sāi yú sāi	144
 伤着了	shāng zhe le	130
+不落下	bú là xià	100
+横行	héng háng	554
+倒数	dǎo shù	1010
+省得	xǐng de	100
+不省得	bù xǐng de	100
+长住	zhǎng zhù	330
+满血	mǎn xiě	386
+血肠	xiě cháng	226
+给付	jǐ fù	277
+水磨	shuǐ mó	100
+长平	zhǎng píng	300
+重听	zhòng tīng	211
+于思	yú sāi	131
 一场	yì cháng	17575
 事了	shì liǎo	337
 会得	huì dé	554
@@ -136,6 +151,7 @@ sort: by_weight
 出血线	chū xuè xiàn	261
 出血	chū xuè	6149
 逻辑	luó jí	4689
+露点	lù diǎn	443
 此行	cí háng	1292
 上头	shàng tou	101
 长虫	zhǎng chóng	377
@@ -523,6 +539,7 @@ sort: by_weight
 赶场	gǎn cháng	126
 调配	diào pèi	690
 更为	gèng wèi	1313
+可调	kě diào	268
 更为	gēng wéi	143
 行长	háng zhǎng	470
 见长	jiàn cháng	851
@@ -541,7 +558,7 @@ sort: by_weight
 年长	nián cháng	1450
 年长	nián zhǎng	2520
 便宜	pián yi	3423
-大都	dà dū		350
+大都	dà dū	350
 数次	shù cì	6083
 数次	shuò cì	5006
 随行	suí háng	550
@@ -4756,7 +4773,6 @@ sort: by_weight
 三个老	sān gè lǎo	835
 三个了	sān gè le	786
 三个雷	sān gè léi	0
-三个力	sān gè lì	1
 三个立	sān gè lì	0
 三个林	sān gè lín	1
 三个龍	sān gè lóng	1
@@ -4819,7 +4835,6 @@ sort: by_weight
 三个㔾	sān gè xiān	1
 三个県	sān gè xiàn	1
 三个香	sān gè xiāng	380
-三个小	sān gè xiǎo	1465
 三个心	sān gè xīn	799
 三个興	sān gè xìng	1
 三个言	sān gè yán	457
@@ -4834,7 +4849,6 @@ sort: by_weight
 三个玉	sān gè yù	1
 三个原	sān gè yuán	606
 三个厡	sān gè yuán	576
-三个月	sān gè yuè	24223
 三个雲	sān gè yún	1
 三个爪	sān gè zhǎo	1
 三个止	sān gè zhǐ	664
@@ -4877,7 +4891,6 @@ sort: by_weight
 四个且	sì gè qiě	1
 四个囚	sì gè qiú	610
 四个泉	sì gè quán	1082
-四个人	sì gè rén	7000
 四个日	sì gè rì	1
 四个石	sì gè shí	520
 四个水	sì gè shuǐ	1

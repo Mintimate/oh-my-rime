@@ -4,7 +4,7 @@
 #错音错字对照表
 ---
 name: rime_mint.correlation
-version: "2026-08-29"
+version: "2026-09-29"
 sort: by_weight
 
 ...
@@ -152,15 +152,15 @@ sort: by_weight
 嵊州	chéng zhōu	762	shèng zhōu
 吱声	zhī shēng	1468	zī shēng
 脖颈	bó jǐng	480	bó gěng
-脖颈儿	bó jǐng er	10	bó gěng er
-草薙剑	cao zhi jian	318	cǎo tì jiàn
-草薙京	cao zhi jing	254	cǎo tì jīng
-大宛马	dà wǎn mǎ	10	dà yuān mǎ
+脖颈儿	bó jǐng er	10	脖颈(gěng)儿
+草薙剑	cao zhi jian	318	草薙(tì)剑
+草薙京	cao zhi jing	254	草薙(tì)京
+大宛马	dà wǎn mǎ	10	大宛(yuān)马
 独乐乐	dú lè lè	10	dú yuè lè
-众乐乐	zhoòng lè lè	20	zhòng yuè lè
-海参崴	hǎi shēn wēi	385	hǎi shēn wǎi
-贾平凹	jià píng wā	250	jiǎ píng āo
-卡脖子	kǎ bó zi	310	qiǎ bó zi
+众乐乐	zhòng lè lè	20	zhòng yuè lè
+海参崴	hǎi shēn wēi	385	海参崴(wǎi)
+贾平凹	jiǎ píng āo	250	贾平凹(wā)
+卡脖子	kǎ bó zi	310	卡(qiǎ)脖子
 六安	liù ān	628	lù ān
 六安市	liù ān shì	88	lù ān shì
 六安县	liù ān xiàn	10	lù ān xiàn
@@ -171,7 +171,7 @@ sort: by_weight
 南京六合区	nán jīng liù hé qū	1	nán jīng lù hé qū
 安徽省六安市	ān huī shěng liù ān shì	1	ān huī shěng lù ān shì
 南京市六合区	nán jīng shì liù hé qū	1	nán jīng shì lù hé qū
-螺蛳粉	luó shī fěn	150	luó sī fěn
+螺蛳粉	luó shī fěn	150	螺蛳(sī)粉
 温庭筠	wēn tíng jūn	210	温庭筠(yún)
 关卡	guān kǎ	14734	guān qiǎ
 牛皮癣	niú pí xiǎn	289	(癣)xuǎn
@@ -181,12 +181,12 @@ sort: by_weight
 魔蝎座	mó xiē zuò	403	摩羯(jié)座
 鄱阳湖	pan yang hu	250	pó yáng hú
 契科夫	qī kē fū	524	契诃(hē)夫
-太行山	tài xíng shān	390	tài háng shān
-头皮屑	tóu pí xuè	530	tóu pi xiè
+太行山	tài xíng shān	390	太行(háng)山
+头皮屑	tóu pí xuè	530	头皮屑(xiè)
 万柏林	wàn bó lín	10	万柏(bǎi)林
-雪佛兰	xuě fó lán	370	xuě fú lán
+雪佛兰	xuě fó lán	370	雪佛(fú)兰
 鸭绿江	yā lǜ jiāng	150	yā lù jiāng
-张柏芝	zhāng bǎi zhī	1056	zhāng bó zhī
+张柏芝	zhāng bǎi zhī	1056	张柏(bó)芝
 阿弥陀佛	ā mí tuó fó	37	ē mí tuó fó
 南无阿弥陀佛	nā mó ā mí tuó fó	4	nā mó ē mí tuó fó
 南无阿弥陀佛	nán wú ā mí tuó fó	4	nā mó ē mí tuó fó
