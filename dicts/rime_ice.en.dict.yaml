@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: rime_ice.en
-version: "2026-08-05"
+version: "2026-09-01"
 sort: by_weight
 ...
 # +_+
@@ -842,6 +842,7 @@ angle	angle
 angles	angles
 Anglican	Anglican
 Anglo	Anglo
+anglophone	anglophone
 Angola	Angola
 angry	angry
 Anguilla	Anguilla
@@ -2884,6 +2885,7 @@ Calgary	Calgary
 Calhoun	Calhoun
 caliber	caliber
 calibration	calibration
+calico	calico
 California	California
 call	call
 Callaway	Callaway
@@ -4366,6 +4368,10 @@ conscience	conscience
 conscientious	conscientious
 conscious	conscious
 consciousness	consciousness
+consecrate	consecrate
+consecrated	consecrated
+consecrates	consecrates
+consecrating	consecrating
 consecutive	consecutive
 consensus	consensus
 consent	consent
@@ -5456,6 +5462,11 @@ demand	demand
 demanded	demanded
 demanding	demanding
 demands	demands
+demarcate	demarcate
+demarcated	demarcated
+demarcates	demarcates
+demarcating	demarcating
+demarcation	demarcation
 dementia	dementia
 # demi	demi
 demise	demise
@@ -5970,6 +5981,9 @@ diseases	diseases
 disgrace	disgrace
 disguise	disguise
 disgust	disgust
+disgusted	disgusted
+disgusting	disgusting
+disgusts	disgusts
 dish	dish
 Dish Network	DishNetwork
 dishes	dishes
@@ -9991,6 +10005,7 @@ ICANN	ICANN
 ice	ice
 # ice cream	icecream
 iceberg	iceberg
+iced	iced
 Iceland	Iceland
 Icelander	Icelander
 Icelandic	Icelandic
@@ -10615,6 +10630,7 @@ interconnect	interconnect
 interconnection	interconnection
 intercontinental	intercontinental
 intercourse	intercourse
+interdict	interdict
 interdisciplinary	interdisciplinary
 interest	interest
 interested	interested
@@ -11220,6 +11236,7 @@ Keller	Keller
 kelley	kelley
 Kellogg	Kellogg
 Kelly	Kelly
+kelp	kelp
 # ken	ken
 Kendall	Kendall
 Kennedy	Kennedy
@@ -11496,6 +11513,7 @@ lands	lands
 landscape	landscape
 landscapes	landscapes
 landscaping	landscaping
+landslide	landslide
 lane	lane
 lanes	lanes
 lang	lang
@@ -15233,7 +15251,11 @@ philosophy	philosophy
 phishing	phishing
 phoenix	phoenix
 phone	phone
+phoneme	phoneme
+phonemic	phonemic
 phones	phones
+phonetic	phonetic
+phonetics	phonetics
 phoney	phoney
 phoneys	phoneys
 phonier	phonier
@@ -18707,6 +18729,7 @@ siege	siege
 siemens	siemens
 Siena	Siena
 sierra	sierra
+sieve	sieve
 sig	sig
 sigh	sigh
 sight	sight
@@ -21331,6 +21354,7 @@ trojan	trojan
 trojans	trojans
 troll	troll
 trolley	trolley
+trombone	trombone
 # trong	trong
 troop	troop
 troops	troops
