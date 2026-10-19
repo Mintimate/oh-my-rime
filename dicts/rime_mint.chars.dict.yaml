@@ -1,9 +1,9 @@
 # Rime dictionary
 # encoding: utf-8
-#https://github.com/amzxyz/RIME-LMDG
+#https://github.com/amzxyz/rime-wanxiang-data
 ---
 name: rime_mint.chars
-version: "2026-09-29"
+version: "2026-10-19"
 sort: by_weight
 
 ...
@@ -44,7 +44,7 @@ sort: by_weight
 砹	ài	335
 嫒	ài	324
 叆	ài	322
-乂	aì	310
+乂	ài	310
 瑷	ài	304
 毐	ǎi	258
 锿	āi	220
@@ -9471,6 +9471,7 @@ sort: by_weight
 锋	fēng	2278
 凤	fèng	2164
 疯	fēng	2055
+冯	féng	1966
 奉	fèng	1952
 逢	féng	800
 缝	fèng	796
@@ -9478,7 +9479,6 @@ sort: by_weight
 讽	fěng	637
 枫	fēng	630
 缝	féng	623
-冯	féng	610
 烽	fēng	474
 俸	fèng	459
 沣	fēng	457
@@ -12491,6 +12491,7 @@ sort: by_weight
 颃	háng	246
 桁	háng	134
 垳	háng	134
+行	hàng	122
 斻	háng	109
 迒	háng	101
 絎	háng	101
@@ -12975,10 +12976,10 @@ sort: by_weight
 䓳	hěn	1
 𦚣	hén	1
 哼	hēng	9137
-衡	héng	2974
-横	héng	2677
+横	héng	2974
+衡	héng	2677
 恒	héng	2409
-亨	hēng	2065
+亨	hēng	1465
 横	hèng	1120
 桁	héng	440
 蘅	héng	370
@@ -16688,10 +16689,11 @@ sort: by_weight
 𪖄	jiào	1
 𪚰	jiāo	1
 𫈇	jiāo	1
-解	jiě	27356
+姐	jiě	27356
+借	jiè	8614
 接	jiē	3776
 结	jié	3398
-姐	jiě	3058
+解	jiě	3058
 节	jié	2748
 界	jiè	1801
 届	jiè	980
@@ -16708,7 +16710,6 @@ sort: by_weight
 阶	jiē	653
 竭	jié	649
 芥	jiè	638
-借	jiè	614
 睫	jié	554
 结	jiē	549
 诫	jiè	537
@@ -20817,6 +20818,7 @@ sort: by_weight
 枥	lì	234
 鲡	lí	226
 猁	lì	216
+郦	lì	206
 逦	lǐ	204
 粝	lì	202
 疠	lì	194

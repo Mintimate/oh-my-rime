@@ -1,10 +1,10 @@
 # Rime dictionary
 # encoding: utf-8
-#https://github.com/amzxyz/RIME-LMDG
+#https://github.com/amzxyz/rime-wanxiang-data
 #兼容词库，对于多字词汇两种读音的场景，手动维护到本表以及一些其他的杂项
 ---
 name: rime_mint.compatible
-version: "2026-09-29"
+version: "2026-10-19"
 sort: by_weight
 
 ...
@@ -21,13 +21,20 @@ sort: by_weight
 乐山乐水	yào shān yào shuǐ	12
 于思于思	yú sāi yú sāi	144
 伤着了	shāng zhe le	130
+可能得	kě néng děi	67
 不落下	bú là xià	100
 横行	héng háng	554
-倒数	dǎo shù	1010
+转转	zhuǎn zhuǎn	100
+转一转	zhuǎn yì zhuǎn	39
+倒数	dào shù	1010
 省得	xǐng de	100
 不省得	bù xǐng de	100
 长住	zhǎng zhù	330
+行行	háng háng	300
+行子	xíng zǐ	10
+行子	hàng zi	54
 满血	mǎn xiě	386
+校时	xiào shí	76
 血肠	xiě cháng	226
 给付	jǐ fù	277
 水磨	shuǐ mó	100
@@ -37,6 +44,7 @@ sort: by_weight
 一场	yì cháng	17575
 事了	shì liǎo	337
 会得	huì dé	554
+小种	xiǎo zhǒng	34
 越长越	yuè zhǎng yuè	211
 哦哦	ò ò	1080
 吱吱	zī zī	100
@@ -473,6 +481,7 @@ sort: by_weight
 什么时候还	shén me shí hòu huán	1
 下次一定还	xià cì yī dìng huán	1
 还都	huán dū	95
+弹弹	tán tán	163
 还都	hái dōu	2580
 重载	zhòng zài	472
 重载	chóng zài	808
@@ -2545,73 +2554,57 @@ sort: by_weight
 做这事	zuò zhèi shì	380
 做这些	zuò zhèi xiē	540
 做这种	zuò zhèi zhǒng	520
-谙熟	ān shóu	1
 半熟	bàn shóu	98
 保熟	bǎo shóu	481
 背熟	bèi shóu	318
 变熟	biàn shóu	937
 不熟	bù shóu	3674
-常熟	cháng shóu	1006
 炒熟	chǎo shóu	158
-成熟	chéng shóu	19557
-初熟	chū shóu	2315
 纯熟	chún shóu	794
-醇熟	chún shóu	764
-催熟	cuī shóu	1888
 大熟	dà shóu	384
 蛋熟	dàn shóu	1010
 读熟	dú shóu	359
 炖熟	dùn shóu	862
 耳熟	ěr shóu	754
-腐熟	fǔ shóu	608
 刚熟	gāng shóu	1948
 搞熟	gǎo shóu	333
 瓜熟	guā shóu	51
 过熟	guò shóu	500
 果熟	guǒ shóu	470
 很熟	hěn shóu	2095
-湖熟	hú shóu	924
 混熟	hùn shóu	460
 记熟	jì shóu	490
 即熟	jí shóu	460
 较熟	jiào shóu	1038
-精熟	jīng shóu	1643
 烤熟	kǎo shóu	1040
 快熟	kuài shóu	9610
 烂熟	làn shóu	171
 老熟	lǎo shóu	4925
 脸熟	liǎn shóu	4563
 练熟	liàn shóu	4533
-两熟	liǎng shóu	3308
 蛮熟	mán shóu	526
 没熟	méi shóu	206
 面熟	miàn shóu	688
 摸熟	mō shóu	821
-轻熟	qīng shóu	198
 全熟	quán shóu	2020
-稔熟	rěn shóu	1150
 软熟	ruǎn shóu	380
 杀熟	shā shóu	12147
 烧熟	shāo shóu	255
 生熟	shēng shóu	120
 手熟	shǒu shóu	319
 熟啊	shóu a	460
-熟谙	shóu ān	192
 熟背	shóu bèi	1581
 熟菜	shóu cài	869
 熟茶	shóu chá	158
-熟成	shóu chéng	396
 熟词	shóu cí	641
 熟的	shóu de	2849
 熟得	shóu de	2819
-熟地	shóu dì	68
 熟点	shóu diǎn	318
 熟读	shóu dú	10272
 熟度	shóu dù	10242
 熟饭	shóu fàn	42
 熟果	shóu guǒ	673
 熟后	shóu hòu	1043
-熟化	shóu huà	296
 熟记	shóu jì	1743
 熟筋	shóu jīn	500
 熟客	shóu kè	239
@@ -2619,37 +2612,24 @@ sort: by_weight
 熟了	shóu le	5194
 熟练	shóu liàn	1173
 熟脸	shóu liǎn	1203
-熟料	shóu liào	450
 熟路	shóu lù	1177
 熟络	shóu luò	205
-熟虑	shóu lǜ	1147
-熟女	shóu nǚ	520
-熟皮	shóu pí	3895
 熟普	shóu pǔ	822
 熟人	shóu rén	792
-熟稔	shóu rěn	762
 熟肉	shóu ròu	2287
 熟食	shóu shí	3615
-熟识	shóu shí	3585
 熟时	shóu shí	3555
 熟手	shóu shǒu	349
 熟水	shóu shuǐ	2510
-熟铁	shóu tiě	632
 熟透	shóu tòu	8313
 熟悉	shóu xī	268
-熟习	shóu xí	238
 熟虾	shóu xiā	1696
 熟用	shóu yòng	853
 熟油	shóu yóu	189
-熟语	shóu yǔ	469
-熟知	shóu zhī	1184
-熟制	shóu zhì	1154
 睡熟	shuì shóu	2974
 太熟	tài shóu	2861
 挺熟	tǐng shóu	776
-晚熟	wǎn shóu	189
 玩熟	wán shóu	159
-完熟	wán shóu	129
 未熟	wèi shóu	318
 我熟	wǒ shóu	399
 娴熟	xián shóu	340
@@ -2657,9 +2637,7 @@ sort: by_weight
 眼熟	yǎn shóu	751
 一熟	yì shóu	478
 用熟	yòng shóu	12213
-圆熟	yuán shóu	230
 再熟	zài shóu	2104
-早熟	zǎo shóu	11647
 炸熟	zhà shóu	208
 蒸熟	zhēng shóu	4262
 至熟	zhì shóu	1699
@@ -2668,26 +2646,19 @@ sort: by_weight
 难煮熟	nán zhǔ shóu	272
 八成熟	bā chéng shóu	230
 八分熟	bā fēn shóu	565
-把熟睡	bǎ shóu shuì	100
 把蒸熟	bǎ zhēng shóu	100
 把煮熟	bǎ zhǔ shóu	140
-半成熟	bàn chéng shóu	130
-扮成熟	bàn chéng shóu	100
 半生熟	bàn shēng shóu	170
 半熟蛋	bàn shóu dàn	180
 半熟的	bàn shóu de	210
 半熟练	bàn shóu liàn	120
 半熟人	bàn shóu rén	1395
 半熟时	bàn shóu shí	50
-被催熟	bèi cuī shóu	390
 被烤熟	bèi kǎo shóu	140
 背熟了	bèi shóu le	655
 被煮熟	bèi zhǔ shóu	120
 比较熟	bǐ jiào shóu	938
-变成熟	biàn chéng shóu	190
 并不熟	bìng bù shóu	160
-不成熟	bù chéng shóu	310
-不催熟	bù cuī shóu	80
 不熟啊	bù shóu a	130
 不熟吧	bù shóu ba	272
 不熟练	bù shóu liàn	822
@@ -2696,67 +2667,20 @@ sort: by_weight
 不娴熟	bù xián shóu	462
 不眼熟	bù yǎn shóu	20
 菜熟了	cài shóu le	588
-常熟的	cháng shóu de	190
-常熟话	cháng shóu huà	155
-常熟路	cháng shóu lù	11
-常熟人	cháng shóu rén	170
-常熟市	cháng shóu shì	223
-常熟县	cháng shóu xiàn	180
-常熟有	cháng shóu yǒu	60
-常熟站	cháng shóu zhàn	80
 炒不熟	chǎo bù shóu	130
 炒熟后	chǎo shóu hòu	220
 炒熟了	chǎo shóu le	160
-成熟啊	chéng shóu a	372
-成熟吧	chéng shóu ba	412
-成熟的	chéng shóu de	420
-成熟点	chéng shóu diǎn	190
-成熟度	chéng shóu dù	1979
-成熟范	chéng shóu fàn	50
-成熟风	chéng shóu fēng	140
-成熟感	chéng shóu gǎn	170
-成熟好	chéng shóu hǎo	70
-成熟很	chéng shóu hěn	120
-成熟后	chéng shóu hòu	260
-成熟化	chéng shóu huà	180
-成熟季	chéng shóu jì	120
-成熟了	chéng shóu le	1822
-成熟脸	chéng shóu liǎn	60
-成熟林	chéng shóu lín	70
-成熟美	chéng shóu měi	140
-成熟蜜	chéng shóu mì	150
-成熟男	chéng shóu nán	170
-成熟女	chéng shóu nǚ	150
-成熟期	chéng shóu qí	260
-成熟前	chéng shóu qián	272
-成熟区	chéng shóu qū	100
-成熟人	chéng shóu rén	39
-成熟乳	chéng shóu rǔ	120
-成熟时	chéng shóu shí	430
-成熟体	chéng shóu tǐ	90
-成熟些	chéng shóu xiē	170
-成熟性	chéng shóu xìng	240
-成熟型	chéng shóu xíng	190
-成熟早	chéng shóu zǎo	130
-成熟中	chéng shóu zhōng	150
 吃熟食	chī shóu shí	170
-初熟的	chū shóu de	1272
-从熟睡	cóng shóu shuì	50
 从熟悉	cóng shóu xī	30
-催熟剂	cuī shóu jì	190
 大家熟	dà jiā shóu	90
-到常熟	dào cháng shóu	240
 的熟了	de shóu le	177
 等熟了	děng shóu le	277
 地不熟	dì bù shóu	480
 东京熟	dōng jīng shóu	50
 都不熟	dōu bù shóu	240
-都成熟	dōu chéng shóu	150
 都熟了	dōu shóu le	117
 都熟悉	dōu shóu xī	210
-都早熟	dōu zǎo shóu	80
 多熟了	duō shóu le	794
-多熟期	duō shóu qī	230
 多熟悉	duō shóu xī	170
 二回熟	èr huí shóu	160
 耳熟啊	ěr shóu a	140
@@ -2767,22 +2691,16 @@ sort: by_weight
 分熟了	fēn shóu le	2874
 干熟么	gàn shóu me	80
 搞熟了	gǎo shóu le	804
-更成熟	gèng chéng shóu	240
 更熟练	gèng shóu liàn	170
 更熟悉	gèng shóu xī	220
-够成熟	gòu chéng shóu	130
 过熟的	guò shóu de	140
 过熟了	guò shóu le	170
-果熟期	guǒ shóu qī	120
-过熟期	guò shóu qī	80
 还不熟	hái bù shóu	161
 还算熟	hái suàn shóu	100
-好成熟	hǎo chéng shóu	70
 好耳熟	hǎo ěr shóu	120
 好面熟	hǎo miàn shóu	140
 好熟悉	hǎo shóu xī	190
 好眼熟	hǎo yǎn shóu	190
-很成熟	hěn chéng shóu	250
 很纯熟	hěn chún shóu	230
 很耳熟	hěn ěr shóu	190
 很面熟	hěn miàn shóu	150
@@ -2793,14 +2711,9 @@ sort: by_weight
 很熟了	hěn shóu le	240
 很熟练	hěn shóu liàn	416
 很熟络	hěn shóu luò	300
-很熟稔	hěn shóu rěn	340
-很熟识	hěn shóu shí	484
 很熟悉	hěn shóu xī	290
 很娴熟	hěn xián shóu	754
 很眼熟	hěn yǎn shóu	80
-很早熟	hěn zǎo shóu	180
-后熟期	hòu shóu qī	80
-回常熟	huí cháng shóu	7
 会熟练	huì shóu liàn	750
 混脸熟	hùn liǎn shóu	170
 混熟吧	hùn shóu ba	180
@@ -2810,10 +2723,8 @@ sort: by_weight
 几分熟	jǐ fēn shóu	260
 记熟了	jì shóu le	570
 将熟时	jiāng shóu shí	421
-将熟睡	jiāng shóu shuì	240
 将蒸熟	jiāng zhēng shóu	516
 将煮熟	jiāng zhǔ shóu	376
-较成熟	jiào chéng shóu	180
 九成熟	jiǔ chéng shóu	170
 九分熟	jiǔ fēn shóu	1078
 就熟了	jiù shóu le	621
@@ -2822,13 +2733,11 @@ sort: by_weight
 看熟了	kàn shóu le	367
 烤熟后	kǎo shóu hòu	200
 烤熟了	kǎo shóu le	160
-可成熟	kě chéng shóu	988
 可熟了	kě shóu le	90
 可熟悉	kě shóu xī	130
 快熟了	kuài shóu le	493
 快熟面	kuài shóu miàn	100
 快熟时	kuài shóu shí	650
-来常熟	lái cháng shóu	240
 来熟了	lái shóu le	458
 烂熟时	làn shóu shí	480
 老熟客	lǎo shóu kè	140
@@ -2841,12 +2750,10 @@ sort: by_weight
 路不熟	lù bù shóu	160
 卖熟食	mài shóu shí	95
 没炒熟	méi chǎo shóu	90
-没成熟	méi chéng shóu	130
 没烤熟	méi kǎo shóu	440
 没烧熟	méi shāo shóu	70
 没熟吧	méi shóu ba	80
 没熟就	méi shóu jiù	50
-美熟女	měi shóu nǚ	180
 没熟人	méi shóu rén	500
 没熟似	méi shóu sì	230
 没熟透	méi shóu tòu	60
@@ -2855,30 +2762,19 @@ sort: by_weight
 没煮熟	méi zhǔ shóu	110
 面熟吧	miàn shóu ba	190
 摸熟了	mō shóu le	689
-能成熟	néng chéng shóu	3863
 能熟练	néng shóu liàn	240
 你不熟	nǐ bù shóu	477
-你成熟	nǐ chéng shóu	718
 你很熟	nǐ hěn shóu	488
 你熟练	nǐ shóu liàn	370
 你熟人	nǐ shóu rén	100
-你熟睡	nǐ shóu shuì	160
 你熟悉	nǐ shóu xī	200
-你熟知	nǐ shóu zhī	578
 你眼熟	nǐ yǎn shóu	180
 你最熟	nǐ zuì shóu	466
 您熟悉	nín shóu xī	170
 弄熟了	nòng shóu le	170
-偏成熟	piān chéng shóu	170
 七成熟	qī chéng shóu	150
 七分熟	qī fēn shóu	50
 情况熟	qíng kuàng shóu	90
-轻熟风	qīng shóu fēng	150
-轻熟感	qīng shóu gǎn	80
-轻熟龄	qīng shóu líng	140
-轻熟男	qīng shóu nán	130
-轻熟女	qīng shóu nǚ	220
-去常熟	qù cháng shóu	434
 去熟悉	qù shóu xī	180
 全熟吧	quán shóu ba	180
 全熟了	quán shóu le	552
@@ -2889,21 +2785,17 @@ sort: by_weight
 烧熟了	shāo shóu le	502
 生变熟	shēng biàn shóu	90
 生吃熟	shēng chī shóu	160
-生熟地	shēng shóu dì	160
-是常熟	shì cháng shóu	130
 十成熟	shí chéng shóu	130
 十分熟	shí fēn shóu	130
 是熟么	shì shóu me	100
 熟不熟	shóu bù shóu	224
 熟菜油	shóu cài yóu	150
 熟吃好	shóu chī hǎo	130
-熟大黄	shóu dài huáng	70
 熟蛋黄	shóu dàn huáng	150
 熟当时	shóu dāng shí	629
 熟的吧	shóu de ba	283
 熟得快	shóu de kuài	14
 熟的了	shóu de le	356
-熟地黄	shóu dì huáng	210
 熟读了	shóu dú le	448
 熟归熟	shóu guī shóu	110
 熟过头	shóu guò tóu	150
@@ -2932,15 +2824,12 @@ sort: by_weight
 熟练性	shóu liàn xìng	315
 熟练于	shóu liàn yú	606
 熟练者	shóu liàn zhě	140
-熟龄肌	shóu líng jī	367
 熟络了	shóu luò le	488
 熟没熟	shóu méi shóu	29
 熟米饭	shóu mǐ fàn	180
 熟面孔	shóu miàn kǒng	200
 熟牛排	shóu niú pái	160
 熟牛肉	shóu niú ròu	858
-熟女网	shóu nǚ wǎng	170
-熟女系	shóu nǚ xì	130
 熟螃蟹	shóu páng xiè	100
 熟朋友	shóu péng yǒu	110
 熟苹果	shóu píng guǒ	430
@@ -2950,28 +2839,17 @@ sort: by_weight
 熟人带	shóu rén dài	150
 熟人多	shóu rén duō	140
 熟人间	shóu rén jiān	552
-熟稔了	shóu rěn le	502
 熟人了	shóu rén le	472
 熟人们	shóu rén men	660
 熟人圈	shóu rén quān	160
-熟三七	shóu sān qī	100
 树上熟	shù shàng shóu	80
 熟食吧	shóu shí ba	20
 熟食店	shóu shí diàn	67
-熟石膏	shóu shí gāo	596
 熟食柜	shóu shí guì	80
-熟石灰	shóu shí huī	170
-熟识了	shóu shí le	408
 熟食类	shóu shí lèi	416
 熟食品	shóu shí pǐn	574
 熟食区	shóu shí qū	180
 熟熟的	shóu shóu de	485
-熟睡的	shóu shuì de	290
-熟睡了	shóu shuì le	150
-熟睡时	shóu shuì shí	80
-熟睡中	shóu shuì zhōng	220
-熟铜棍	shóu tóng gùn	70
-熟桐油	shóu tóng yóu	80
 熟透后	shóu tòu hòu	190
 熟透了	shóu tòu le	210
 熟透时	shóu tòu shí	250
@@ -2992,79 +2870,54 @@ sort: by_weight
 熟悉下	shóu xī xià	180
 熟一个	shóu yí gè	240
 熟一些	shóu yì xiē	560
-熟语料	shóu yǔ liào	760
 熟玉米	shóu yù mǐ	552
-熟知的	shóu zhī de	1168
 熟芝麻	shóu zhī má	210
-熟制品	shóu zhì pǐn	110
 熟猪油	shóu zhū yóu	210
 睡不熟	shuì bù shóu	100
 睡熟了	shuì shóu le	336
 四书熟	sì shū shóu	20
 所熟悉	suǒ shóu xī	220
-所熟知	suǒ shóu zhī	290
 他不熟	tā bù shóu	20
-他成熟	tā chéng shóu	704
 他很熟	tā hěn shóu	434
 他混熟	tā hùn shóu	80
 他熟读	tā shóu dú	570
 他熟练	tā shóu liàn	542
 他熟络	tā shóu luò	90
-他熟稔	tā shóu rěn	390
-他熟识	tā shóu shí	808
-他熟睡	tā shóu shuì	160
 他熟悉	tā shóu xī	120
-他熟知	tā shóu zhī	848
 他睡熟	tā shuì shóu	250
 他太熟	tā tài shóu	321
 他娴熟	tā xián shóu	120
 他相熟	tā xiāng shóu	321
 他眼熟	tā yǎn shóu	120
-他早熟	tā zǎo shóu	624
-太成熟	tài chéng shóu	200
 太熟了	tài shóu le	416
 太熟练	tài shóu liàn	150
 太熟悉	tài shóu xī	250
-太早熟	tài zǎo shóu	110
 烫熟后	tàng shóu hòu	170
 烫熟了	tàng shóu le	524
 特眼熟	tè yǎn shóu	80
-挺成熟	tǐng chéng shóu	140
 托熟人	tuō shóu rén	160
-晚熟的	wǎn shóu de	150
 玩熟了	wán shóu le	180
-晚熟期	wǎn shóu qī	169
 喂不熟	wèi bù shóu	120
-未成熟	wèi chéng shóu	220
 未熟的	wèi shóu de	1478
 未熟透	wèi shóu tòu	170
 未煮熟	wèi zhǔ shóu	210
 我不熟	wǒ bù shóu	511
-我成熟	wǒ chéng shóu	745
 我都熟	wǒ dōu shóu	642
 我很熟	wǒ hěn shóu	786
 我们熟	wǒ men shóu	478
 我熟得	wǒ shóu de	80
 我熟的	wǒ shóu de	70
 我熟练	wǒ shóu liàn	462
-我熟识	wǒ shóu shí	242
-我熟睡	wǒ shóu shuì	110
 我熟悉	wǒ shóu xī	349
-我熟知	wǒ shóu zhī	686
 我睡熟	wǒ shuì shóu	90
 我相熟	wǒ xiāng shóu	848
 我眼熟	wǒ yǎn shóu	110
-我早熟	wǒ zǎo shóu	588
 五成熟	wǔ chéng shóu	200
 五分熟	wǔ fēn shóu	220
-显成熟	xiǎn chéng shóu	150
 娴熟地	xián shóu dì	200
 娴熟了	xián shóu le	560
 先熟悉	xiān shóu xī	200
 相熟了	xiāng shóu le	1200
-小成熟	xiǎo chéng shóu	90
-性成熟	xìng chéng shóu	230
-性早熟	xìng zǎo shóu	250
 眼熟啊	yǎn shóu a	140
 眼熟吧	yǎn shóu ba	170
 眼熟了	yǎn shóu le	76
@@ -3074,41 +2927,25 @@ sort: by_weight
 也熟了	yě shóu le	606
 也熟悉	yě shóu xī	470
 烫熟	tàng shóu	990
-已成熟	yǐ chéng shóu	190
 一锅熟	yì guō shóu	100
-异熟果	yì shóu guǒ	130
-异熟识	yì shóu shí	2274
 用熟了	yòng shóu le	180
 又不熟	yòu bù shóu	160
 有熟人	yǒu shóu rén	286
 园梅熟	yuán méi shóu	10
-在常熟	zài cháng shóu	668
-在成熟	zài chéng shóu	250
-再成熟	zài chéng shóu	150
 再熟了	zài shóu le	480
 再熟悉	zài shóu xī	250
-早成熟	zǎo chéng shóu	100
-早熟吧	zǎo shóu ba	190
-早熟的	zǎo shóu de	220
-早熟禾	zǎo shóu hé	200
-早熟梨	zǎo shóu lí	100
-早熟性	zǎo shóu xìng	110
 这么熟	zhè me shóu	812
 真不熟	zhēn bù shóu	90
 蒸不熟	zhēng bù shóu	120
 蒸熟的	zhēng shóu de	240
 蒸熟后	zhēng shóu hòu	230
 蒸熟了	zhēng shóu le	583
-中晚熟	zhōng wǎn shóu	110
-中早熟	zhōng zǎo shóu	50
 煮不熟	zhǔ bù shóu	210
 煮熟后	zhǔ shóu hòu	290
 煮熟了	zhǔ shóu le	475
 煮熟时	zhǔ shóu shí	340
-装成熟	zhuāng chéng shóu	140
 自来熟	zì lái shóu	210
 自然熟	zì rán shóu	416
-最成熟	zuì chéng shóu	40
 最熟的	zuì shóu de	160
 最熟悉	zuì shóu xī	230
 做熟了	zuò shóu le	100
@@ -4418,9 +4255,6 @@ sort: by_weight
 谁与共饮	shéi yǔ gòng yǐn	11
 谁与温存	shéi yǔ wēn cún	1
 谁与争锋	shéi yǔ zhēng fēng	52
-谁与争疯	shéi yǔ zhēng fēng	17
-谁与争风	shéi yǔ zhēng fēng	13
-谁于争锋	shéi yú zhēng fēng	1
 谁与争功	shéi yǔ zhēng gōng	6
 谁愿为首	shéi yuàn wéi shǒu	8
 谁在背后	shéi zài bèi hòu	32
@@ -4715,7 +4549,6 @@ sort: by_weight
 两个余	liǎng gè yú	571
 两个予	liǎng gè yǔ	541
 两个禺	liǎng gè yú	511
-两个月	liǎng gè yuè	18847
 两个曰	liǎng gè yuē	18817
 两个真	liǎng gè zhēn	808
 两个止	liǎng gè zhǐ	709

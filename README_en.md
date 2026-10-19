@@ -119,14 +119,19 @@ dicts
 ├── rime_ice.en.dict.yaml      # Frost dictionary (auto-updated via GitHub Actions)  
 ├── rime_ice.en_ext.dict.yaml  # Frost dictionary (auto-updated via GitHub Actions)  
 ├── rime_ice.others.dict.yaml  # Frost dictionary (auto-updated via GitHub Actions)  
-├── rime_mint.base.dict.yaml            # Wanxiang dictionary (auto-updated via GitHub Actions)  
-├── rime_mint.chars.dict.yaml           # Wanxiang dictionary (auto-updated via GitHub Actions)  
-├── rime_mint.compatible.dict.yaml      # Wanxiang polyphonic compatibility dictionary (auto-updated via GitHub Actions)  
-├── rime_mint.correlation.dict.yaml     # Wanxiang dictionary (auto-updated via GitHub Actions)  
-├── rime_mint.places.dict.yaml          # Wanxiang place-name dictionary (auto-updated via GitHub Actions)  
-├── rime_mint.ext.dict.yaml             # Wanxiang dictionary (auto-updated via GitHub Actions)  
+├── rime_mint.base.dict.yaml            # Basic vocabulary (Wanxiang Pinyin dictionary)
+├── rime_mint.chars.dict.yaml           # Single characters (Wanxiang Pinyin dictionary)
+├── rime_mint.compatible.dict.yaml      # Multiple-pronunciation compatibility (Wanxiang Pinyin dictionary)
+├── rime_mint.correlation.dict.yaml     # Mispronunciation and typo compatibility (Wanxiang Pinyin dictionary)
+├── rime_mint.places.dict.yaml          # Place names (Wanxiang Pinyin dictionary)
+├── rime_mint.artists.dict.yaml         # Artist names (Wanxiang Pinyin dictionary)
+├── rime_mint.famous.dict.yaml          # Famous people’s names (Wanxiang Pinyin dictionary)
+├── rime_mint.ext.dict.yaml             # Empty compatibility dictionary for older configs (no sync or default import)
 ├── wubi86_core.dict.yaml           # Wubi 86 core dictionary  
 └── wubi98_base.dict.yaml           # Wubi 98 base dictionary  
+```
+
+On 2026-10-15, Wanxiang reorganized its dictionaries and removed the standalone `lianxiang` association dictionary. `rime_mint.base` provides basic vocabulary. `rime_mint.ext.dict.yaml` is now an empty placeholder for older configurations; it is no longer synchronized or loaded by default. You can remove `dicts/rime_mint.ext` from existing custom `import_tables` lists.
 
 For subsequent updates to the dictionaries, you can download the files inside the `dicts` directory of this repository and replace the existing files, except for the `custom_simple.dict.yaml` file.
 
@@ -139,15 +144,16 @@ version: "2025.07.06"
 sort: by_weight
 use_preset_vocabulary: false
 # 此处为 输入法所用到的词库，既补充拓展词库的地方
-# 雾凇拼音词库，由Github Robot自动更新
+# Wanxiang Pinyin dictionary, updated by the sync tool
 import_tables:
   - dicts/custom_simple          # 自定义
-  - dicts/rime_mint.chars        # 单字词库（万象拼音词库基础版本）
-  - dicts/rime_mint.base         # 基础词库（万象拼音词库基础版本）
-  - dicts/rime_mint.correlation  # 关联词库（万象拼音词库基础版本）
-  - dicts/rime_mint.compatible   # 多音兼容词库（万象拼音词库基础版本）
-  - dicts/rime_mint.places       # 地名词库（万象拼音词库基础版本）
-  - dicts/rime_mint.ext          # 联想词库（万象拼音词库基础版本）
+  - dicts/rime_mint.chars        # Single characters (Wanxiang Pinyin dictionary)
+  - dicts/rime_mint.base         # Basic vocabulary (Wanxiang Pinyin dictionary)
+  - dicts/rime_mint.correlation  # Mispronunciation and typo compatibility (Wanxiang Pinyin dictionary)
+  - dicts/rime_mint.compatible   # Multiple-pronunciation compatibility (Wanxiang Pinyin dictionary)
+  - dicts/rime_mint.places       # Place names (Wanxiang Pinyin dictionary)
+  - dicts/rime_mint.artists      # Artist names (Wanxiang Pinyin dictionary)
+  - dicts/rime_mint.famous       # Famous people’s names (Wanxiang Pinyin dictionary)
   - dicts/other_kaomoji          # 颜文字表情（按`VV`呼出)
   - dicts/rime_ice.others        # 雾凇拼音 others词库（用于自动纠错）
   # 20240608 Emoji完全交由OpenCC，不再使用字典作为补充

@@ -125,15 +125,19 @@ dicts
 ├── rime_ice.en.dict.yaml      # 白霜詞庫（GitHub action自動更新）
 ├── rime_ice.en_ext.dict.yaml  # 白霜詞庫（GitHub action自動更新）
 ├── rime_ice.others.dict.yaml  # 白霜詞庫（GitHub action自動更新）
-├── rime_mint.base.dict.yaml            # 萬象詞庫（GitHub action自動更新）
-├── rime_mint.chars.dict.yaml           # 萬象詞庫（GitHub action自動更新）
-├── rime_mint.compatible.dict.yaml      # 萬象多音兼容詞庫（GitHub action自動更新）
-├── rime_mint.correlation.dict.yaml     # 萬象詞庫（GitHub action自動更新）
-├── rime_mint.places.dict.yaml          # 萬象地名詞庫（GitHub action自動更新）
-├── rime_mint.ext.dict.yaml             # 萬象詞庫（GitHub action自動更新）
+├── rime_mint.base.dict.yaml            # 基礎詞（萬象拼音詞庫）
+├── rime_mint.chars.dict.yaml           # 單字（萬象拼音詞庫）
+├── rime_mint.compatible.dict.yaml      # 多音相容（萬象拼音詞庫）
+├── rime_mint.correlation.dict.yaml     # 錯音錯字相容（萬象拼音詞庫）
+├── rime_mint.places.dict.yaml          # 地名（萬象拼音詞庫）
+├── rime_mint.artists.dict.yaml         # 藝人姓名（萬象拼音詞庫）
+├── rime_mint.famous.dict.yaml          # 名人姓名（萬象拼音詞庫）
+├── rime_mint.ext.dict.yaml             # 舊設定相容空詞庫（不再同步或預設載入）
 ├── wubi86_core.dict.yaml           # 86版五筆基礎詞庫
 └── wubi98_base.dict.yaml           # 98版五筆基礎詞庫
 ```
+
+2026-10-15，萬象上游重組詞庫並取消獨立的 `lianxiang` 聯想詞庫。基礎詞由 `rime_mint.base` 提供；`rime_mint.ext.dict.yaml` 僅保留為空詞庫以相容舊設定，不再同步或預設載入。已有自訂 `import_tables` 中的 `dicts/rime_mint.ext` 可以移除。
 
 後續更新詞庫；可以下載本倉庫`dicts`內的文件，除了`custom_simple.dict.yaml`的文件，其他都進行覆蓋替換即可。
 
@@ -146,15 +150,16 @@ version: "2025.07.06"
 sort: by_weight
 use_preset_vocabulary: false
 # 此處為 輸入法所用到的詞庫，既補充拓展詞庫的地方
-# 霧凇拼音詞庫，由Github Robot自動更新
+# 萬象拼音詞庫，由同步工具自動更新
 import_tables:
   - dicts/custom_simple          # 自定義
-  - dicts/rime_mint.chars        # 單字詞庫（萬象拼音詞庫基礎版本）
-  - dicts/rime_mint.base         # 基礎詞庫（萬象拼音詞庫基礎版本）
-  - dicts/rime_mint.correlation  # 關聯詞庫（萬象拼音詞庫基礎版本）
-  - dicts/rime_mint.compatible   # 多音兼容詞庫（萬象拼音詞庫基礎版本）
-  - dicts/rime_mint.places       # 地名詞庫（萬象拼音詞庫基礎版本）
-  - dicts/rime_mint.ext          # 聯想詞庫（萬象拼音詞庫基礎版本）
+  - dicts/rime_mint.chars        # 單字（萬象拼音詞庫）
+  - dicts/rime_mint.base         # 基礎詞（萬象拼音詞庫）
+  - dicts/rime_mint.correlation  # 錯音錯字相容（萬象拼音詞庫）
+  - dicts/rime_mint.compatible   # 多音相容（萬象拼音詞庫）
+  - dicts/rime_mint.places       # 地名（萬象拼音詞庫）
+  - dicts/rime_mint.artists      # 藝人姓名（萬象拼音詞庫）
+  - dicts/rime_mint.famous       # 名人姓名（萬象拼音詞庫）
   - dicts/other_kaomoji          # 顏文字錶情（按`VV`呼出)
   - dicts/rime_ice.others        # 霧凇拼音 others詞庫（用於自動糾錯）
   # 20240608 Emoji完全交由OpenCC，不再使用字典作為補充
