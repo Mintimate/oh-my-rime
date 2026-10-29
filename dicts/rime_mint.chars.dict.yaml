@@ -3,7 +3,7 @@
 #https://github.com/amzxyz/rime-wanxiang-data
 ---
 name: rime_mint.chars
-version: "2026-10-19"
+version: "2026-10-29"
 sort: by_weight
 
 ...
@@ -6814,31 +6814,30 @@ sort: by_weight
 递	dì	2597
 敌	dí	1702
 弟	dì	811
-的	dì	770
-的	dī	680
 抵	dǐ	666
 帝	dì	657
 滴	dī	650
 蒂	dì	647
+狄	dí	630
 堤	dī	629
 笛	dí	622
 迪	dí	613
-的	dí	591
 缔	dì	549
 涤	dí	546
 提	dī	542
 嘀	dī	522
 嘀	dí	514
 提	dǐ	503
-狄	dí	501
 邸	dǐ	499
 睇	dì	497
 谛	dì	487
 嫡	dí	468
 棣	dì	452
 诋	dǐ	444
+的	dī	430
 砥	dǐ	428
 骶	dǐ	425
+的	dì	420
 荻	dí	411
 坻	dǐ	394
 娣	dì	380
@@ -6858,6 +6857,7 @@ sort: by_weight
 禘	dì	215
 杕	dì	206
 踶	dì	194
+的	dí	191
 媂	dì	174
 蹢	dí	169
 翟	dí	161
@@ -14929,9 +14929,9 @@ sort: by_weight
 亟	jí	313
 跻	jī	298
 伎	jì	297
-荠	jì	277
+蓟	jì	277
 畿	jī	266
-蓟	jì	255
+荠	jì	255
 笈	jí	241
 骥	jì	237
 稷	jì	229
@@ -22376,13 +22376,13 @@ sort: by_weight
 𫟀	líng	1
 𫟑	líng	1
 六	liù	27707
-陆	liù	5322
 刘	liú	5215
 留	liú	5110
 流	liú	5100
 柳	liǔ	2843
 浏	liú	691
 瘤	liú	656
+陆	liù	646
 溜	liū	623
 硫	liú	590
 琉	liú	583
@@ -48492,11 +48492,11 @@ sort: by_weight
 诤	zhèng	400
 钲	zhēng	379
 烝	zhēng	347
-憕	zhèng	321
 證	zhèng	313
 箏	zhēng	308
 爭	zhēng	307
 徴	zhēng	305
+怔	zhèng	303
 鄭	zhèng	291
 証	zhèng	289
 掟	zhěng	267
@@ -48512,7 +48512,7 @@ sort: by_weight
 撜	zhěng	166
 凧	zhēng	160
 氶	zhěng	151
-怔	zhèng	147
+憕	zhèng	147
 錚	zhēng	146
 篜	zhēng	127
 崝	zhēng	124

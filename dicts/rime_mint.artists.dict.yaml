@@ -5,7 +5,7 @@
 # --目前加入的与主词库不构成干扰--
 ---
 name: rime_mint.artists
-version: "2026-10-19"
+version: "2026-10-29"
 sort: by_weight
 
 ...
@@ -2208,13 +2208,13 @@ sort: by_weight
 赵让	zhào ràng	435
 赵衰	zhào shuāi	1522
 赵爽	zhào shuǎng	1135
-赵思	zhào sī	1441
+赵思	zhào sī	455
 赵四	zhào sì	364
 赵涛	zhào tāo	792
 赵庭	zhào tíng	618
 赵薇	zhào wēi	2606
 赵昕	zhào xīn	182
-赵轩	zhào xuān	7726
+赵轩	zhào xuān	772
 赵煊	zhào xuān	18
 赵荀	zhào xún	8
 赵阳	zhào yáng	163
@@ -9795,7 +9795,7 @@ sort: by_weight
 薛泽源	xuē zé yuán	12
 薛之谦	xuē zhī qiān	2898
 荀慧生	xún huì shēng	41
-丫蛋儿	yā dàn ér	9
+丫蛋儿	yā dàn er	9
 芽森滴	yá sēn dī	10
 亚树直	yà shù zhí	194
 押尾学	yā wěi xué	243

@@ -4,7 +4,7 @@
 #------行政区划
 ---
 name: rime_mint.places
-version: "2026-10-19"
+version: "2026-10-29"
 sort: by_weight
 
 ...
@@ -13,6 +13,7 @@ sort: by_weight
 坝乡	bà xiāng	256
 巴宜	bā yí	229
 保德	bǎo dé	120
+包集	bāo jí	492
 堡镇	bǎo zhèn	303
 宾县	bīn xiàn	614
 蔡村	cài cūn	518
@@ -146,6 +147,7 @@ sort: by_weight
 后龙	hòu lóng	6203
 侯镇	hóu zhèn	127
 厚镇	hòu zhèn	97
+湖沟	hú gōu	42
 鄠邑	hù yì	92
 华安	huá ān	593
 华埠	huá bù	293
@@ -7404,7 +7406,7 @@ sort: by_weight
 贯洞镇	guàn dòng zhèn	10
 官渡区	guān dù qū	259
 官渡镇	guān dù zhèn	10
-官儿乡	guān ér xiāng	10
+官儿乡	guān er xiāng	10
 关防乡	guān fáng xiāng	601
 官坊乡	guān fāng xiāng	571
 官港镇	guān gǎng zhèn	10
@@ -16427,7 +16429,7 @@ sort: by_weight
 内坑镇	nèi kēng zhèn	10
 内良乡	nèi liáng xiāng	10
 内门区	nèi mén qū	570
-内蒙古	nèi méng gǔ	720
+内蒙古	nèi měng gǔ	720
 内丘县	nèi qiū xiàn	178
 内邱县	nèi qiū xiàn	84
 内丘镇	nèi qiū zhèn	10
@@ -41284,7 +41286,7 @@ sort: by_weight
 锅厂坪村	guō chǎng píng cūn	10
 郭城驿镇	guō chéng yì zhèn	10
 国瓷街道	guó cí jiē dào	10
-过当涂县	guò dāng tú xiàn	10
+过当涂县	guò dàng tú xiàn	10
 国道旁村	guó dào páng cūn	10
 郭店街道	guō diàn jiē dào	10
 郭店屯乡	guō diàn tún xiāng	10
@@ -49070,7 +49072,7 @@ sort: by_weight
 李子行村	lǐ zi xíng cūn	10
 李子垭村	lǐ zi yā cūn	10
 李子峪村	lǐ zi yù cūn	10
-李子园村	lǐ zǐ yuán cūn	10
+李子园村	lǐ zi yuán cūn	10
 梨子园村	lí zi yuán cūn	10
 栗子园村	lì zi yuán cūn	10
 俩母山村	liǎ mǔ shān cūn	10
@@ -72899,7 +72901,7 @@ sort: by_weight
 渔儿沟村	yú ér gōu cūn	10
 与儿街镇	yǔ ér jiē zhèn	10
 玉尔其乡	yù ěr qí xiāng	10
-鱼儿山镇	yú ér shān zhèn	10
+鱼儿山镇	yú er shān zhèn	10
 峪耳崖镇	yù ěr yá zhèn	10
 鱼峰公园	yú fēng gōng yuán	153
 玉丰街道	yù fēng jiē dào	10
@@ -79682,13 +79684,13 @@ sort: by_weight
 脑木更苏木	nǎo mù gèng sū mù	10
 内江威远县	nèi jiāng wēi yuǎn xiàn	10
 内江资中县	nèi jiāng zī zhōng xiàn	10
-内蒙古包头	nèi méng gǔ bāo tóu	10
-内蒙古赤峰	nèi méng gǔ chì fēng	10
-内蒙古街道	nèi méng gǔ jiē dào	10
-内蒙古通辽	nèi méng gǔ tōng liáo	10
-内蒙古武川	nèi méng gǔ wǔ chuān	10
-内蒙古乌海	nèi méng gǔ wū hǎi	10
-内蒙古乡镇	nèi méng gǔ xiāng zhèn	10
+内蒙古包头	nèi měng gǔ bāo tóu	10
+内蒙古赤峰	nèi měng gǔ chì fēng	10
+内蒙古街道	nèi měng gǔ jiē dào	10
+内蒙古通辽	nèi měng gǔ tōng liáo	10
+内蒙古武川	nèi měng gǔ wǔ chuān	10
+内蒙古乌海	nèi měng gǔ wū hǎi	10
+内蒙古乡镇	nèi měng gǔ xiāng zhèn	10
 能科德千寺	néng kē dé qiān sì	10
 腻脚彝族乡	nì jiǎo yí zú xiāng	10
 尼科巴群岛	ní kē bā qún dǎo	10
@@ -84663,13 +84665,13 @@ sort: by_weight
 内江市市中区	nèi jiāng shì shì zhōng qū	10
 内江市威远县	nèi jiāng shì wēi yuǎn xiàn	10
 内江市资中县	nèi jiāng shì zī zhōng xiàn	10
-内蒙古包头市	nèi méng gǔ bāo tóu shì	10
-内蒙古赤峰市	nèi méng gǔ chì fēng shì	10
-内蒙古鄂托克	nèi méng gǔ è tuō kè	10
-内蒙古通辽市	nèi méng gǔ tōng liáo shì	10
-内蒙古乌海市	nèi méng gǔ wū hǎi shì	10
-内蒙古兴安盟	nèi méng gǔ xīng ān méng	10
-内蒙古自治区	nèi méng gǔ zì zhì qū	10
+内蒙古包头市	nèi měng gǔ bāo tóu shì	10
+内蒙古赤峰市	nèi měng gǔ chì fēng shì	10
+内蒙古鄂托克	nèi měng gǔ è tuō kè	10
+内蒙古通辽市	nèi měng gǔ tōng liáo shì	10
+内蒙古乌海市	nèi měng gǔ wū hǎi shì	10
+内蒙古兴安盟	nèi měng gǔ xīng ān méng	10
+内蒙古自治区	nèi měng gǔ zì zhì qū	10
 内蒙呼和浩特	nèi méng hū hé hào tè	10
 年丰朝鲜族乡	nián fēng cháo xiǎn zú xiāng	10
 鸟洞国家公园	niǎo dòng guó jiā gōng yuán	10
@@ -87341,7 +87343,7 @@ sort: by_weight
 南平市武夷山市	nán píng shì wǔ yí shān shì	10
 南山华侨茶果场	nán shān huá qiáo chá guǒ chǎng	10
 南伊珞巴民族乡	nán yī luò bā mín zú xiāng	10
-内蒙古呼和浩特	nèi méng gǔ hū hé hào tè	10
+内蒙古呼和浩特	nèi měng gǔ hū hé hào tè	10
 宁城县铁东街道	níng chéng xiàn tiě dōng jiē dào	10
 宁城县铁西街道	níng chéng xiàn tiě xī jiē dào	10
 宁城县温泉街道	níng chéng xiàn wēn quán jiē dào	10
@@ -88118,7 +88120,7 @@ sort: by_weight
 唐山市汉沽管理区	táng shān shì hàn gū guǎn lǐ qū	10
 天乐社区服务中心	tiān lè shè qū fú wù zhōng xīn	10
 天桥土家族苗族乡	tiān qiáo tǔ jiā zú miáo zú xiāng	10
-通红甸彝族苗族乡	tòng hóng diān yí zú miáo zú xiāng	10
+通红甸彝族苗族乡	tōng hóng diān yí zú miáo zú xiāng	10
 通辽市霍林郭勒市	tōng liáo shì huò lín guō lè shì	10
 吐鲁番市托克逊县	tǔ lǔ fān shì tuō kè xùn xiàn	10
 图木舒克市五家渠	tú mù shū kè shì wǔ jiā qú	10
@@ -88395,12 +88397,12 @@ sort: by_weight
 南通市海门区种羊场	nán tōng shì hǎi mén qū zhǒng yáng chǎng	10
 南通苏通科技产业园	nán tōng sū tōng kē jì chǎn yè yuán	10
 南阳高新区张衡街道	nán yáng gāo xīn qū zhāng héng jiē dào	10
-内蒙古和林格尔新区	nèi méng gǔ hé lín gé ěr xīn qū	10
-内蒙古自治区包头市	nèi méng gǔ zì zhì qū bāo tóu shì	10
-内蒙古自治区赤峰市	nèi méng gǔ zì zhì qū chì fēng shì	10
-内蒙古自治区通辽市	nèi méng gǔ zì zhì qū tōng liáo shì	10
-内蒙古自治区乌海市	nèi méng gǔ zì zhì qū wū hǎi shì	10
-内蒙古自治区兴安盟	nèi méng gǔ zì zhì qū xīng ān méng	10
+内蒙古和林格尔新区	nèi měng gǔ hé lín gé ěr xīn qū	10
+内蒙古自治区包头市	nèi měng gǔ zì zhì qū bāo tóu shì	10
+内蒙古自治区赤峰市	nèi měng gǔ zì zhì qū chì fēng shì	10
+内蒙古自治区通辽市	nèi měng gǔ zì zhì qū tōng liáo shì	10
+内蒙古自治区乌海市	nèi měng gǔ zì zhì qū wū hǎi shì	10
+内蒙古自治区兴安盟	nèi měng gǔ zì zhì qū xīng ān méng	10
 牛河林业开发管理区	niú hé lín yè kāi fā guǎn lǐ qū	10
 坪地场仡佬族侗族乡	píng dì chǎng gē lǎo zú dòng zú xiāng	10
 平顺经济技术开发区	píng shùn jīng jì jì shù kāi fā qū	10
@@ -88791,7 +88793,7 @@ sort: by_weight
 南阳高新区百里奚街道	nán yáng gāo xīn qū bǎi lǐ xī jiē dào	10
 南阳市黄牛良种繁育场	nán yáng shì huáng niú liáng zhǒng fán yù chǎng	10
 垴阿巴提塔吉克民族乡	nǎo ā bā tí tǎ jí kè mín zú xiāng	10
-内蒙古自治区阿拉善盟	nèi méng gǔ zì zhì qū ā lā shàn méng	10
+内蒙古自治区阿拉善盟	nèi měng gǔ zì zhì qū ā lā shàn méng	10
 宁洱哈尼族彝族自治县	níng ěr hā ní zú yí zú zì zhì xiàn	10
 宁夏回族自治区固原市	níng xià huí zú zì zhì qū gù yuán shì	10
 宁夏回族自治区吴忠市	níng xià huí zú zì zhì qū wú zhōng shì	10
@@ -89002,13 +89004,13 @@ sort: by_weight
 南通市海门区永隆沙农场	nán tōng shì hǎi mén qū yǒng lóng shā nóng chǎng	10
 南阳高新技术产业开发区	nán yáng gāo xīn jì shù chǎn yè kāi fā qū	10
 南阳市城乡一体化示范区	nán yáng shì chéng xiāng yì tǐ huà shì fàn qū	10
-内蒙古自治区巴彦淖尔市	nèi méng gǔ zì zhì qū bā yàn nào ěr shì	10
-内蒙古自治区鄂尔多斯市	nèi méng gǔ zì zhì qū è ěr duō sī shì	10
-内蒙古自治区呼和浩特市	nèi méng gǔ zì zhì qū hū hé hào tè shì	10
-内蒙古自治区呼伦贝尔市	nèi méng gǔ zì zhì qū hū lún bèi ěr shì	10
-内蒙古自治区乌兰察布市	nèi méng gǔ zì zhì qū wū lán chá bù shì	10
-内蒙古自治区五一种畜场	nèi méng gǔ zì zhì qū wǔ yī zhǒng chù chǎng	10
-内蒙古自治区锡林郭勒盟	nèi méng gǔ zì zhì qū xī lín guō lè méng	10
+内蒙古自治区巴彦淖尔市	nèi měng gǔ zì zhì qū bā yàn nào ěr shì	10
+内蒙古自治区鄂尔多斯市	nèi měng gǔ zì zhì qū è ěr duō sī shì	10
+内蒙古自治区呼和浩特市	nèi měng gǔ zì zhì qū hū hé hào tè shì	10
+内蒙古自治区呼伦贝尔市	nèi měng gǔ zì zhì qū hū lún bèi ěr shì	10
+内蒙古自治区乌兰察布市	nèi měng gǔ zì zhì qū wū lán chá bù shì	10
+内蒙古自治区五一种畜场	nèi měng gǔ zì zhì qū wǔ yī zhǒng chù chǎng	10
+内蒙古自治区锡林郭勒盟	nèi měng gǔ zì zhì qū xī lín guō lè méng	10
 宁夏回族自治区石嘴山市	níng xià huí zú zì zhì qū shí zuǐ shān shì	10
 怒江傈僳族自治州福贡县	nù jiāng lì sù zú zì zhì zhōu fú gòng xiàn	10
 怒江傈僳族自治州泸水市	nù jiāng lì sù zú zì zhì zhōu lú shuǐ shì	10
@@ -89312,8 +89314,8 @@ sort: by_weight
 南通市海门区经济技术开发区	nán tōng shì hǎi mén qū jīng jì jì shù kāi fā qū	10
 南通市海门区长江芦荡养殖场	nán tōng shì hǎi mén qū zhǎng jiāng lú dàng yǎng zhí chǎng	10
 南通市经济技术开发区老洪港	nán tōng shì jīng jì jì shù kāi fā qū lǎo hóng gǎng	10
-内蒙古赤峰商贸服务物流园区	nèi méng gǔ chì fēng shāng mào fú wù wù liú yuán qū	10
-内蒙古自治区国营杜尔基农场	nèi méng gǔ zì zhì qū guó yíng dù ěr jī nóng chǎng	10
+内蒙古赤峰商贸服务物流园区	nèi měng gǔ chì fēng shāng mào fú wù wù liú yuán qū	10
+内蒙古自治区国营杜尔基农场	nèi měng gǔ zì zhì qū guó yíng dù ěr jī nóng chǎng	10
 农村改革发展综合试验核心区	nóng cūn gǎi gé fā zhǎn zōng hé shì yàn hé xīn qū	10
 普洱市江城哈尼族彝族自治县	pǔ ěr shì jiāng chéng hā ní zú yí zú zì zhì xiàn	10
 普洱市宁洱哈尼族彝族自治县	pǔ ěr shì níng ěr hā ní zú yí zú zì zhì xiàn	10

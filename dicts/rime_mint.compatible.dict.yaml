@@ -4,7 +4,7 @@
 #兼容词库，对于多字词汇两种读音的场景，手动维护到本表以及一些其他的杂项
 ---
 name: rime_mint.compatible
-version: "2026-10-19"
+version: "2026-10-29"
 sort: by_weight
 
 ...
@@ -33,6 +33,7 @@ sort: by_weight
 行行	háng háng	300
 行子	xíng zǐ	10
 行子	hàng zi	54
+系着	jì zhe	686
 满血	mǎn xiě	386
 校时	xiào shí	76
 血肠	xiě cháng	226
@@ -267,13 +268,13 @@ sort: by_weight
 忒长了	tēi zhǎng le	60
 没落到	méi luò dào	220
 没落地	mò luò de	310
-血债血还	xuè zhài xiě huán
-血债血偿	xuè zhài xiě cháng
+血债血还	xuè zhài xiě huán	71
+血债血偿	xuè zhài xiě cháng	71
 难兄难弟	nán xiōng nàn dì	717
 卡在那里	qiǎ zài nà lǐ	39
 卡在哪里	qiǎ zài nǎ lǐ	32
 就卡在那里了	jiù qiǎ zài nà lǐ le	1
-碍着您了	ài zháo nín le
+碍着您了	ài zháo nín le	4
 忒矮了吧	tēi ǎi le ba	43
 忒白了吧	tēi bái le ba	60
 忒薄了吧	tēi báo le ba	60
@@ -349,7 +350,7 @@ sort: by_weight
 看不了	kàn bù le	260
 卡住	qiǎ zhù	3355
 睡着	shuì zhe	664
-没地	mò dì
+没地	mò dì	12
 办不了	bàn bù le	1213
 报不了	bào bù le	180
 软弹	ruǎn tán	55
@@ -362,9 +363,9 @@ sort: by_weight
 不干	bù gān	4362
 大夫	dà fū	1191
 薄膜	bó mó	858
-没过了	mò guò le
-没过我	mò guò wǒ
-没过线	mò guò xiàn
+没过了	mò guò le	121
+没过我	mò guò wǒ	41
+没过线	mò guò xiàn	12
 没过	mò guò	1291
 摩挲	mó suō	14040
 公差	gōng chā	853
@@ -412,10 +413,13 @@ sort: by_weight
 多行	duō háng	1490
 不了了	bù liǎo liǎo	1622
 不了了	bù liǎo le	1081
-爿字旁	chuáng zì páng
-爿字旁	pán zì páng
+爿字旁	chuáng zì páng	13
+爿字旁	pán zì páng	13
+钉死	dīng sǐ	126
 肚子	dù zi	13420
 肚子	dǔ zi	597
+躯壳	qū ké	93
+姓种	xìng chóng	3
 落了	là le	6074
 落了	luò le	4731
 迫降	pò xiáng	290

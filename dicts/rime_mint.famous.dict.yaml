@@ -4,7 +4,7 @@
 #(历史人物、学者、作家、政治家、企业家、公众人物等)
 ---
 name: rime_mint.famous
-version: "2026-10-19"
+version: "2026-10-29"
 sort: by_weight
 
 ...
@@ -1807,6 +1807,7 @@ sort: by_weight
 王澍	wáng shù	449
 王朔	wáng shuò	996
 王肃	wáng sù	77
+王涛	wáng tāo	893
 王伟	wáng wěi	3196
 王维	wáng wéi	579
 王微	wáng wēi	48
@@ -2438,6 +2439,7 @@ sort: by_weight
 赵普	zhào pǔ	697
 赵强	zhào qiáng	946
 赵奢	zhào shē	1394
+赵昚	zhào shèn	53
 赵佗	zhào tuó	742
 赵王	zhào wáng	2528
 赵伟	zhào wěi	2476
@@ -2465,6 +2467,7 @@ sort: by_weight
 郑敏	zhèng mǐn	112
 郑强	zhèng qiáng	613
 郑獬	zhèng xiè	240
+郑燮	zhèng xiè	63
 郑信	zhèng xìn	60
 郑袖	zhèng xiù	339
 郑玄	zhèng xuán	238
@@ -2662,6 +2665,7 @@ sort: by_weight
 埃尔莎	āi ěr shā	466
 艾尔文	ài ěr wén	408
 埃弗拉	āi fú lā	264
+艾弗森	ài fú sēn	18
 埃格努	āi gé nǔ	69
 矮脚虎	ǎi jiǎo hǔ	518
 埃克曼	āi kè màn	170
@@ -2767,6 +2771,7 @@ sort: by_weight
 奥维尔	ào wéi ěr	832
 奥威尔	ào wēi ěr	612
 敖幼祥	áo yòu xiáng	6
+芭芭拉	bā bā lā	18
 八重樱	bā chóng yīng	63
 八村垒	bā cūn lěi	283
 拔刀斋	bá dāo zhāi	410
@@ -3089,6 +3094,7 @@ sort: by_weight
 布鲁姆	bù lǔ mǔ	518
 布卢姆	bù lú mǔ	466
 布鲁诺	bù lǔ nuò	892
+布迈丁	bù mài dīng	18
 步鑫生	bù xīn shēng	3
 不知火	bù zhī huǒ	837
 蔡哀侯	cài āi hóu	82
@@ -3325,6 +3331,7 @@ sort: by_weight
 陈白露	chén bái lù	16
 陈宝生	chén bǎo shēng	22
 陈璧君	chén bì jūn	113
+陈伯吹	chén bó chuī	18
 陈伯达	chén bó dá	44
 陈布雷	chén bù léi	63
 陈昌浩	chén chāng hào	25
@@ -3648,7 +3655,6 @@ sort: by_weight
 戴建业	dài jiàn yè	4
 戴锦华	dài jǐn huá	540
 戴克林	dài kè lín	238
-呆妹儿	dāi mèi ér	3
 戴名世	dài míng shì	6
 戴乃迭	dài nǎi dié	63
 黛绮丝	dài qǐ sī	129
@@ -7137,6 +7143,7 @@ sort: by_weight
 卡德加	kǎ dé jiā	999
 卡尔玛	kǎ ěr mǎ	129
 卡尔曼	kǎ ěr màn	50
+卡尔森	kǎ ěr sēn	18
 卡夫卡	kǎ fū kǎ	7994
 卡哈尔	kǎ hā ěr	9
 卡拉斯	kǎ lā sī	273
@@ -7159,8 +7166,10 @@ sort: by_weight
 卡舒吉	kǎ shū jí	31
 卡特曼	kǎ tè màn	3
 卡维尔	kǎ wéi ěr	220
+卡翁达	kǎ wēng dá	18
 卡希尔	kǎ xī ěr	261
 卡西尼	kǎ xī ní	317
+卡耶夫	kǎ yé fū	18
 卡扎菲	kǎ zhā fēi	320
 卡卓儿	kǎ zhuó ér	9
 凯恩斯	kǎi ēn sī	4082
@@ -9197,6 +9206,7 @@ sort: by_weight
 尼克森	ní kè sēn	53
 尼克松	ní kè sōng	1444
 尼克扬	ní kè yáng	477
+尼雷尔	ní léi ěr	18
 倪梁康	ní liáng kāng	31
 霓漫天	ní màn tiān	346
 尼米兹	ní mǐ zī	135
@@ -12138,7 +12148,7 @@ sort: by_weight
 魏翊东	wèi yì dōng	315
 卫懿公	wèi yì gōng	41
 韦奕礼	wéi yì lǐ	220
-韦一笑	wéi yí xiào	336
+韦一笑	wéi yī xiào	336
 卫奕信	wèi yì xìn	38
 韦应物	wéi yìng wù	267
 魏元忠	wèi yuán zhōng	104
@@ -15443,7 +15453,7 @@ sort: by_weight
 祝英台	zhù yīng tái	119
 朱永新	zhū yǒng xīn	28
 朱由检	zhū yóu jiǎn	317
-朱祐樘	zhū yòu táng	52
+朱佑樘	zhū yòu táng	43
 朱由校	zhū yóu xiào	132
 朱玉辰	zhū yù chén	12
 朱聿键	zhū yù jiàn	526
@@ -18996,7 +19006,7 @@ sort: by_weight
 蒙古不花	méng gǔ bù huā	180
 蒙古大汗	méng gǔ dà hàn	698
 蒙古帝国	méng gǔ dì guó	1438
-蒙古汗国	méng gǔ hàn guó	192
+蒙古汗国	méng gǔ hán guó	192
 蒙克利夫	méng kè lì fū	302
 蒙雷亚尔	méng léi yà ěr	428
 蒙莫朗西	méng mò lǎng xī	612
@@ -19881,15 +19891,15 @@ sort: by_weight
 森泽晴行	sēn zé qíng xíng	252
 僧格林沁	sēng gé lín qìn	210
 僧格仁钦	sēng gé rén qīn	0
-僧伽跋澄	sēng jiā bá chéng	270
-僧伽跋摩	sēng jiā bá mó	387
-僧伽蓝摩	sēng jiā lán mó	202
-僧伽罗刹	sēng jiā luó chà	230
-僧伽蜜多	sēng jiā mì duō	261
-僧伽难提	sēng jiā nán tí	99
-僧伽婆罗	sēng jiā pó luó	320
-僧伽斯那	sēng jiā sī nà	234
-僧伽提婆	sēng jiā tí pó	364
+僧伽跋澄	sēng qié bá chéng	270
+僧伽跋摩	sēng qié bá mó	387
+僧伽蓝摩	sēng qié lán mó	202
+僧伽罗刹	sēng qié luó chà	230
+僧伽蜜多	sēng qié mì duō	261
+僧伽难提	sēng qié nán tí	99
+僧伽婆罗	sēng qié pó luó	320
+僧伽斯那	sēng qié sī nà	234
+僧伽提婆	sēng qié tí pó	364
 砂川启介	shā chuān qǐ jiè	225
 沙茨基赫	shā cí jī hè	130
 沙克尔顿	shā kè ěr dùn	720
