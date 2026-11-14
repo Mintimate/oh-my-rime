@@ -191,6 +191,56 @@ local function ensure_anchor(p)
     return p
 end
 
+-- 读一个原子：转义（%x）、字符类（[...]）、分组（(...)）或单字符
+local function read_atom(pat, i)
+    local c = pat:sub(i, i)
+    if c == "%" then
+        return pat:sub(i, i + 1), i + 2
+    elseif c == "[" then
+        local j = i + 1
+        if pat:sub(j, j) == "^" then j = j + 1 end
+        while j <= #pat and pat:sub(j, j) ~= "]" do
+            j = j + (pat:sub(j, j) == "%" and 2 or 1)
+        end
+        return pat:sub(i, j), j + 1
+    elseif c == "(" then
+        local depth, j = 1, i + 1
+        while j <= #pat and depth > 0 do
+            local ch = pat:sub(j, j)
+            if pat:sub(j - 1, j - 1) ~= "%" then
+                if ch == "(" then depth = depth + 1
+                elseif ch == ")" then depth = depth - 1 end
+            end
+            j = j + 1
+        end
+        return pat:sub(i, j - 1), j
+    end
+    return c, i + 1
+end
+
+-- 把 "原子{m,n}" 精确展开成等价的重复/可选写法（Lua 模式没有有界量词）
+--   X{1,8} → X X? X? X? X? X? X? X?   X{3} → X X X
+--   X{2,}  → X X X*                   X{0,} → X*
+local function expand_bounded(pat)
+    local out, atom = {}, ""
+    local i = 1
+    while i <= #pat do
+        -- 带起始位置的 match 不会复制后缀；非「{」位置在首字符就失败，整体仍是 O(n)
+        local lo, comma, hi = pat:match("^{(%d+)(,?)(%d*)}", i)
+        if lo and atom ~= "" then
+            local min = tonumber(lo)
+            local max = (comma == "") and min or (hi == "" and nil or tonumber(hi))
+            atom = atom:rep(min) .. (max == nil and atom .. "*" or (atom .. "?"):rep(max - min))
+            out[#out] = atom
+            i = i + #lo + #comma + #hi + 2
+        else
+            atom, i = read_atom(pat, i)
+            out[#out + 1] = atom
+        end
+    end
+    return table.concat(out)
+end
+
 function RegexParser.convert(regex_str)
     if not regex_str or regex_str == "" then return {} end
     local norm = RegexParser.normalize(regex_str)
@@ -207,6 +257,8 @@ function RegexParser.convert(regex_str)
     -- 3. 展开 ? 量词
     -- 这会将带 ? 的正则裂变成多个确定的正则
     list = expand_optional(list)
+    -- 3.5 展开有界量词 {m,n}（Lua 模式没有这个语法，必须复制原子）
+    for i, p in ipairs(list) do list[i] = expand_bounded(p) end
     -- 4. 补全锚点
     for i, p in ipairs(list) do list[i] = ensure_anchor(p) end
     return list
