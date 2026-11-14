@@ -19,7 +19,8 @@ local MONEY_UNITS = { "角", "分", "厘", "毫" }
 
 -- 切出整数、小数点、小数三段："1234.56" → int="1234" dot="." dec="56"
 local function split_num(str)
-	local int, dot, dec = string.match(str, "^(%d*)(%.?)(%d*)")
+	local int, dot, dec = string.match(str, "^(%d*)(%.?)(%d*)$")
+	if not int or (int == "" and dec == "") then return nil end
 	return { int = int, dot = dot, dec = dec }
 end
 
@@ -101,6 +102,7 @@ end
 -- 组装四条候选：数字小写/大写、金额小写/大写
 local function number_translatorFunc(num)
 	local part = split_num(num)
+	if not part then return {} end
 	-- 去掉前导零（"00012" 与 "12" 等价）；全零或没写整数位（".05"）按 0 处理
 	local int_str = part.int:gsub("^0+", "")
 	if int_str == "" then int_str = "0" end
@@ -139,16 +141,10 @@ end
 local function number_translator(input, seg, env)
 	-- 获取 recognizer/patterns/number 的第 2 个字符作为触发前缀
 	env.number_keyword = env.number_keyword or env.engine.schema.config:get_string('recognizer/patterns/rmb'):sub(2, 2)
-    local str, num, numberPart
-    if env.number_keyword ~= '' and input:sub(1, 1) == env.number_keyword then
-        str = string.gsub(input, "^(%a+)", "")
-        numberPart = number_translatorFunc(str)
-        if str and #str > 0 and #numberPart > 0 then
-            for i = 1, #numberPart do
-                yield(Candidate(input, seg.start, seg._end, numberPart[i][1], numberPart[i][2]))
-            end
-        end
-    end
+	if env.number_keyword == "" or input:sub(1, 1) ~= env.number_keyword then return end
+	for _, candidate in ipairs(number_translatorFunc(input:sub(2))) do
+		yield(Candidate(input, seg.start, seg._end, candidate[1], candidate[2]))
+	end
 end
 
 -- print(#number_translatorFunc(3355.433))
