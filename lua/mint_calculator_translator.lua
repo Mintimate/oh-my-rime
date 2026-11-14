@@ -2417,8 +2417,14 @@ local function prime_factorization(n)
     if type(n) ~= "number" or n <= 0 or math.floor(n) ~= n then
         return "参数必须是正整数"
     end
-    local digits = #tostring(n)
-    if digits > 18 then
+    -- 只有 float 型运行时（LuaJIT / Lua 5.1）会丢精度：超过 2^53 的输入在 tonumber 阶段
+    -- 已被舍入，再分解只会得到错误答案；Lua 5.3+ 的整数字面量是精确的，不受影响。
+    local exact_integer = math.type ~= nil and math.type(n) == "integer"
+    if not exact_integer and n > 2 ^ 53 then
+        return "数字超限! 超过 2^53 的整数会丢失精度，无法保证结果正确。"
+    end
+    -- 位数判断不能用 #tostring：tostring(1e16) 是 "1e+16"，长度只有 5。
+    if #string.format("%.0f", n) > 18 then
         return "数字超限! 最大支持18位数字的质因数分解。"
     end
     -- 处理特殊情况
@@ -2427,7 +2433,7 @@ local function prime_factorization(n)
     -- 处理2的因子
     while n % 2 == 0 do
         factors[2] = (factors[2] or 0) + 1
-        n = n // 2
+        n = math.floor(n / 2) -- LuaJIT 无 // 运算符
     end
     -- 处理奇数因子
     local divisor = 3
@@ -2435,7 +2441,7 @@ local function prime_factorization(n)
     while divisor <= max_divisor and n > 1 do
         while n % divisor == 0 do
             factors[divisor] = (factors[divisor] or 0) + 1
-            n = n // divisor
+            n = math.floor(n / divisor)
             max_divisor = math.floor(math.sqrt(n))
         end
         divisor = divisor + 2
@@ -2470,7 +2476,8 @@ local function prime_factorization(n)
     -- 生成输出字符串
     local output = {}
     for factor, count in pairs(factors) do
-        local str = tostring(factor)
+        -- 因子必为整数；tostring 在 >= 1e15 时会输出 "9.007e+15"，既显示错也让排序键失效
+        local str = string.format("%.0f", factor)
         if count > 1 then
             str = str .. to_superscript(count)
         end
