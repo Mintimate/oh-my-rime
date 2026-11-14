@@ -1764,12 +1764,8 @@ function format_dt(dt, format_str)
     s = s:gsub("M", string.format("%02d", dt.min))
     s = s:gsub("S", string.format("%02d", dt.sec))
 
-    -- 英文 AM/PM
-    local ampm = (dt.hour < 12) and "AM" or "PM"
-    s = s:gsub("p", ampm:lower())
-    s = s:gsub("P", ampm)
-
     -- 中文时段变量 A
+    -- 必须先于 p/P：P 会展开成 "AM"，晚一步替换 A 就会把 AM 里的 A 变成「上午」
     local zh_period = ""
     local h = dt.hour
     if h < 6 then zh_period = "凌晨"
@@ -1778,6 +1774,11 @@ function format_dt(dt, format_str)
     elseif h < 18 then zh_period = "下午"
     else zh_period = "晚上" end
     s = s:gsub("A", zh_period)
+
+    -- 英文 AM/PM
+    local ampm = (dt.hour < 12) and "AM" or "PM"
+    s = s:gsub("p", ampm:lower())
+    s = s:gsub("P", ampm)
 
     -- 时区
     local raw_tz = os.date("%z") or "+0000"
