@@ -2998,7 +2998,7 @@ local function translator(input, seg, env)
         local week_of_month = math.ceil(tonumber(os.date("%d", now)) / 7) -- 当月的第几周
 
         -- 计算一年的总天数，判断是否为闰年
-        local days_in_year = IsLeap(year) == "闰年" and 366 or 365 -- 判断是否为闰年
+        local days_in_year = IsLeap(year) -- 返回 366/365，不是 "闰年" 字符串
         local year_progress = (day_of_year / days_in_year) * 100 -- 今年进度
         -- 获取星期数据
         local week_day_str = chinese_weekday2(os.date("%w")) -- 获取中文星期（例如 "星期三"）
