@@ -157,6 +157,8 @@ end
 local function fn(n)
     -- 将数字转换为字符串以便处理
     local s = tostring(n)
+    -- 指数形式（1.1e-10）末尾的 0 属于指数，不是小数尾零，剥掉会把值改错
+    if string.find(s, "[eE]") then return n end
     -- 查找小数点的位置
     local i = string.find(s, "%.")
     if i == nil then
@@ -182,6 +184,8 @@ end
 local function fs(n)
     -- 将数字转换为字符串以便处理
     local s = tostring(n)
+    -- 同 fn：指数形式下的末尾 0 属于指数，不是小数尾零
+    if string.find(s, "[eE]") then return n end
     -- 查找小数点的位置
     local i = string.find(s, "%.")
     if i == nil then
