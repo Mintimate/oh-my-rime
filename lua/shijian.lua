@@ -1369,7 +1369,11 @@ function leaveDate(y)
     return tonumber(total)
 end
 
--- 公历转农历，支持转化范围公元1900-2100年
+-- 农历数据的支持范围：公历/农历互转与节日倒计时共用
+-- 数据表从 1900 年起（下标 = 年份 - 1900 + 2），对外支持到 2100
+local LUNAR_YEAR_FIRST, LUNAR_YEAR_LAST = 1900, 2100
+
+-- 公历转农历，支持转化范围公元 LUNAR_YEAR_FIRST..LUNAR_YEAR_LAST 年
 -- 公历日期 Gregorian:格式 YYYYMMDD
 -- <返回值>农历日期 中文 天干地支属相
 function Date2LunarDate(Gregorian)
@@ -1421,12 +1425,12 @@ function Date2LunarDate(Gregorian)
     Year = tonumber(Gregorian.sub(Gregorian, 1, 4))
     Month = tonumber(Gregorian.sub(Gregorian, 5, 6))
     Day = tonumber(Gregorian.sub(Gregorian, 7, 8))
-    if (Year > 2100 or Year < 1899 or Month > 12 or Month < 1 or Day < 1 or Day > 31 or string.len(Gregorian) < 8) then
+    if (Year > LUNAR_YEAR_LAST or Year < LUNAR_YEAR_FIRST or Month > 12 or Month < 1 or Day < 1 or Day > 31 or string.len(Gregorian) < 8) then
         return "无效日期"
     end
     -- log.info(Year .. "-" .. Month .. "-" .. Day)
     -- 获取两百年内的农历数据
-    Pos = Year - 1900 + 2
+    Pos = Year - LUNAR_YEAR_FIRST + 2
     Data0 = wNongliData[Pos - 1]
     Data1 = wNongliData[Pos]
     -- 判断农历年份
@@ -1584,12 +1588,12 @@ function LunarDate2Date(Gregorian, IsLeap)
     Year = tonumber(Gregorian.sub(Gregorian, 1, 4))
     Month = tonumber(Gregorian.sub(Gregorian, 5, 6))
     Day = tonumber(Gregorian.sub(Gregorian, 7, 8))
-    if (Year > 2100 or Year < 1900 or Month > 12 or Month < 1 or Day > 30 or Day < 1 or string.len(Gregorian) < 8) then
+    if (Year > LUNAR_YEAR_LAST or Year < LUNAR_YEAR_FIRST or Month > 12 or Month < 1 or Day > 30 or Day < 1 or string.len(Gregorian) < 8) then
         return "无效日期"
     end
 
     -- 获取当年农历数据
-    Pos = (Year - 1899) + 1
+    Pos = Year - LUNAR_YEAR_FIRST + 2
     Data = LunarData[Pos]
     -- log.info(Data)
     -- 判断公历日期
@@ -2104,12 +2108,14 @@ local function nl_shengri(y, m, d)
     end
     -- 继续处理年份和月份，格式化为公历格式
     m = string.match(date2, "年(.-)月")
+    if not m then return -1 end -- LunarDate2Date 对超范围日期返回「无效日期」等非日期串
     if #m == 2 then
         date2 = string.gsub(date2, "年", "", 1)
     else
         date2 = string.gsub(date2, "年", "0", 1)
     end
     d = string.match(date2, "月(.-)日")
+    if not d then return -1 end
     if #d == 2 then
         date2 = string.gsub(date2, "月", "", 1)
     else
@@ -2123,10 +2129,13 @@ local function nl_shengri(y, m, d)
 end
 -- 二次循环跨年调用
 local function nl_shengri2(y, m, d)
-    while nl_shengri(y, m, d) == -1 do
-        y = math.floor(y + 1)
-    end
+    y = tonumber(y) -- 调用方会传 os.date("%Y") 或 os.date("%Y") + 1，统一成数字
     local result = nl_shengri(y, m, d)
+    -- 超出农历表上限的年份不再试算：再往下查只会一直返回 -1
+    while result == -1 and y < LUNAR_YEAR_LAST do
+        y = math.floor(y + 1)
+        result = nl_shengri(y, m, d)
+    end
     return result
 end
 
