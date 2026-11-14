@@ -69,10 +69,23 @@ function number2cnChar(num,flag,digitUnit,wordFigure)    --flag=0中文小写反
 			digitUnit = digitUnit or {[1]="万";[2]="亿"}  wordFigure = wordFigure or {[1]="零"; [2]="壹"; [3]="拾"; [4]="元"}
 		end
 		local lens=string.len(num1)
-		if lens<5 then result=formatNum(num1,flag) elseif lens<9 then result=formatNum(string.sub(num1,1,-5),flag) .. digitUnit[1].. formatNum(string.sub(num1,-4,-1),flag)
-		elseif lens<13 then result=formatNum(string.sub(num1,1,-9),flag) .. digitUnit[2] .. formatNum(string.sub(num1,-8,-5),flag) .. digitUnit[1] .. formatNum(string.sub(num1,-4,-1),flag) else result="" end
-		result=result:gsub("^" .. wordFigure[1],"") result=result:gsub(wordFigure[1] .. digitUnit[1],"") result=result:gsub(wordFigure[1] .. digitUnit[2],"")
-		result=result:gsub(wordFigure[1] .. wordFigure[1],wordFigure[1]) result=result:gsub(wordFigure[1] .. "$","")
+		if lens>12 then return "数值超限！" end
+		-- 从高位到低位按 4 位分段；整段为零时，若下面还有非零段就补一个零
+		local zero=wordFigure[1]
+		local parts,pending={},false
+		for i=math.ceil(lens/4),1,-1 do
+			local last=lens-(i-1)*4
+			local chunk=string.sub(num1,math.max(1,last-3),last)
+			local value=tonumber(chunk)
+			if value==0 then
+				if #parts>0 then pending=true end
+			else
+				if #parts>0 and (pending or value<1000) then parts[#parts+1]=zero end
+				pending=false
+				parts[#parts+1]=formatNum(value,flag) .. (digitUnit[i-1] or "")
+			end
+		end
+		result=table.concat(parts)
 		if lens>4 then result=result:gsub("^"..wordFigure[2].. wordFigure[3],wordFigure[3]) end
 		if result~="" then result=result .. wordFigure[4] else result="数值超限！" end
 	else return "数值超限！" end
@@ -90,8 +103,7 @@ local function number2zh(num,t)
 	for pos=1,string.len(num) do
 		result=result..wordFigure[tonumber(string.sub(num, pos, pos)+1)]
 	end
-	result=result:gsub(wordFigure[1] .. wordFigure[1],wordFigure[1])
-	return result:gsub(wordFigure[1] .. wordFigure[1],wordFigure[1])
+	return result
 end
 
 local function number_translatorFunc(num)
@@ -104,7 +116,7 @@ local function number_translatorFunc(num)
 	local int_str = (numberPart.int == "") and "0" or numberPart.int
 	if numberPart.dot~="" then
 		local int_small, int_big = number2cnChar(int_str,0,{"万", "亿"},{"〇","一","十","点"}),
-			number2cnChar(int_str,1,{"萬", "億"},{"〇","一","十","点"})
+			number2cnChar(int_str,1,{"万", "亿"},{"零","壹","拾","点"})
 		if int_zero then int_small, int_big = "〇点", "零点" end
 		table.insert(result,{int_small..number2zh(numberPart.dec,0),"〔数字小写〕"})
 		table.insert(result,{int_big..number2zh(numberPart.dec,1),"〔数字大写〕"})
@@ -113,7 +125,7 @@ local function number_translatorFunc(num)
 		table.insert(result,{"零","〔数字大写〕"})
 	else
 		table.insert(result,{number2cnChar(int_str,0,{"万", "亿"},{"〇","一","十",""}),"〔数字小写〕"})
-		table.insert(result,{number2cnChar(int_str,1,{"萬", "億"},{"零","壹","拾",""}),"〔数字大写〕"})
+		table.insert(result,{number2cnChar(int_str,1,{"万", "亿"},{"零","壹","拾",""}),"〔数字大写〕"})
 	end
 	-- 金额：整数为 0 时不写「零元」（由小数部分承担）；整数 0 且无小数时写「零元」
 	local amount_small = number2cnChar(int_str,0)
