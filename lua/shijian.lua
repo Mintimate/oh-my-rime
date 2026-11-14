@@ -1311,11 +1311,10 @@ end
 -- 年天数判断
 local function IsLeap(y)
     local year = tonumber(y)
-    if math.fmod(year, 400) ~= 0 and math.fmod(year, 4) == 0 or math.fmod(year, 400) == 0 then
+    if year % 400 == 0 or (year % 4 == 0 and year % 100 ~= 0) then
         return 366
-    else
-        return 365
     end
+    return 365
 end
 
 -- 计算日期差，两个8位数日期之间相隔的天数，date2>date1
@@ -1708,15 +1707,6 @@ function CnDate_translator(y)
     return t
 end
 
--- 年天数判断
-function IsLeap(y)
-    local year = tonumber(y)
-    if math.floor(year % 400) ~= 0 and math.floor(year % 4) == 0 or math.floor(year % 400) == 0 then
-        return 366
-    else
-        return 365
-    end
-end
 -- 日期格式化函数，用于自定义日期格式。N20150101和/rq使用，自定义时间/sj /dt
 -- 转义规则：
 --   \X       —— 将 X 按字面量输出（X 为任意单个字符，如 Y/m/d/H/M/S 等）
@@ -2048,95 +2038,19 @@ initSanfuCache()
 --三伏天计算结束
 
 
--- 万象修改的新的农历倒计时模块
--- 定义一个月映射表，采用明确的字符串键
-local month_map = {
-    ["正月"] = "01",
-    ["二月"] = "02",
-    ["三月"] = "03",
-    ["四月"] = "04",
-    ["五月"] = "05",
-    ["六月"] = "06",
-    ["七月"] = "07",
-    ["八月"] = "08",
-    ["九月"] = "09",
-    ["十月"] = "10",
-    ["冬月"] = "11",
-    ["腊月"] = "12"
-}
-
--- 功能：将农历日期转换为公历日期
-local function nl_shengri(y, m, d)
-    -- 获取当前日期
-    local date1 = os.date("%Y%m%d")
-    local nlsrsj = y .. m .. d             -- 农历时间
-    -- 提取农历日期的年份
-    local year = string.sub(nlsrsj, 1, 4) -- 提取“2015”从“20150621”
-
-    -- 第二步：扩展为该年份的所有可能日期（每月15号）
-    local dates = {}
-    for month = 1, 12 do
-        local date = year .. string.format("%02d", month) .. "15" -- 例如：20150115, 20150215...20151215取15日保险
-        table.insert(dates, date)
-    end
-
-    -- 第三步：调用 Date2LunarDate 验证这些日期，检查是否为闰月
-    local leap_month = nil                               -- 默认没有闰月
-    for _, date in ipairs(dates) do
-        local lunar_date = Date2LunarDate(os.date(date)) -- 返回:乙巳年(蛇)正月三十/
-
-        if string.match(lunar_date, "闰") then
-            local lunar_month = string.match(lunar_date, "(.-)月") -- 提取“闰”后面的月份
-            leap_month = month_map[lunar_month] -- 闰月对应的数字（例如“闰二月” -> "02"）
+-- 腊月的节日可能落在次年公历年初，需从上一农历年开始查找。
+local function next_lunar_holiday(today, current_year, lunar_date)
+    local first_year = math.max(LUNAR_YEAR_FIRST, current_year - 1)
+    for lunar_year = first_year, LUNAR_YEAR_LAST do
+        local solar_date = LunarDate2Date(lunar_year .. lunar_date, 0)
+        local year, month, day = solar_date:match("^(%d+)年(%d+)月(%d+)日$")
+        if year then
+            local countdown = diffDate(today, year .. month .. day)
+            if countdown >= 0 then
+                return solar_date, countdown
+            end
         end
     end
-
-    -- 第四步：从数字日期（如“20250607”）中提取月份02
-    local lunar_month_str = string.sub(nlsrsj, 5, 6) -- 提取月份部分（如“02”）
-
-    -- 第五步：根据已识别的闰月进行判断
-    local lunar_month = lunar_month_str -- 直接使用提取的月份（例如“02”）
-
-    -- 第六步：检查输入的农历月份是否为闰月
-    local date2 = nil
-    if leap_month and lunar_month == leap_month then
-        -- 如果是闰月，传递1
-        date2 = LunarDate2Date(nlsrsj, 1) -- 闰月传递1
-    else
-        -- 非闰月，传递0
-        date2 = LunarDate2Date(nlsrsj, 0) -- 非闰月传递0
-    end
-    -- 继续处理年份和月份，格式化为公历格式
-    m = string.match(date2, "年(.-)月")
-    if not m then return -1 end -- LunarDate2Date 对超范围日期返回「无效日期」等非日期串
-    if #m == 2 then
-        date2 = string.gsub(date2, "年", "", 1)
-    else
-        date2 = string.gsub(date2, "年", "0", 1)
-    end
-    d = string.match(date2, "月(.-)日")
-    if not d then return -1 end
-    if #d == 2 then
-        date2 = string.gsub(date2, "月", "", 1)
-    else
-        date2 = string.gsub(date2, "月", "0", 1)
-    end
-    date2 = string.gsub(date2, "日", "", 1)
-
-    -- 计算日期差异
-    local result = diffDate(date1, date2)
-    return result
-end
--- 二次循环跨年调用
-local function nl_shengri2(y, m, d)
-    y = tonumber(y) -- 调用方会传 os.date("%Y") 或 os.date("%Y") + 1，统一成数字
-    local result = nl_shengri(y, m, d)
-    -- 超出农历表上限的年份不再试算：再往下查只会一直返回 -1
-    while result == -1 and y < LUNAR_YEAR_LAST do
-        y = math.floor(y + 1)
-        result = nl_shengri(y, m, d)
-    end
-    return result
 end
 
 local function chinese_weekday(wday)
@@ -2277,7 +2191,9 @@ end
 -- 获取即将到来的节日（公历和农历）
 local function get_upcoming_holidays()
     local upcoming_holidays = {}
-    local current_year = os.date("%Y")
+    local today = os.date("%Y%m%d")
+    local current_year = today:sub(1, 4)
+    local year_number = tonumber(current_year)
 
     -- 处理公历节日
     for holiday, date in pairs(solar_holidays) do
@@ -2292,35 +2208,16 @@ local function get_upcoming_holidays()
     end
     -- 处理农历节日
     for holiday, lunar_date in pairs(lunar_holidays) do
-        local days_ymd = os.date("%Y%m%d") -- 获取当前年月日
-        -- 使用农历倒计时
-        local countdown = nl_shengri2(os.date("%Y"), lunar_date:sub(1, 2), lunar_date:sub(3, 4))
+        local solar_date, countdown = next_lunar_holiday(today, year_number, lunar_date)
+        if solar_date then
+            table.insert(upcoming_holidays, { holiday, solar_date, countdown })
 
-        -- 如果倒计时为负，说明节日已过，需要加一年
-        if countdown < 0 then
-            countdown = nl_shengri2(os.date("%Y") + 1, lunar_date:sub(1, 2), lunar_date:sub(3, 4))
-        end
-
-        -- 使用倒计时和GettotalDay函数计算农历节日的公历日期
-        local solar_date = GettotalDay(days_ymd, countdown)
-
-        -- 直接使用完整的公历日期格式（假设 GettotalDay 返回 "yyyy年mm月dd日"）
-        table.insert(upcoming_holidays, { holiday, solar_date, countdown })
-
-        -- 如果是春节，计算除夕
-        if holiday == "春节" then
-            -- 计算春节的公历日期
-            local year, month, day = solar_date:match("^(%d+)年(%d+)月(%d+)日")
-            -- 将日期减去一天来获得除夕的日期
-            local previous_day = os.time {
-                year = tonumber(year),
-                month = tonumber(month),
-                day = tonumber(day)
-            } - 24 * 60 * 60
-            -- 格式化除夕的日期为 "yyyy年mm月dd日"
-            local eve_date = os.date("%Y年%m月%d日", previous_day)
-            -- 将除夕的日期插入到节日列表中
-            table.insert(upcoming_holidays, { "除夕", eve_date, countdown - 1 })
+            if holiday == "春节" and countdown > 0 then
+                local year, month, day = solar_date:match("^(%d+)年(%d+)月(%d+)日$")
+                local eve = os.time { year = tonumber(year), month = tonumber(month), day = tonumber(day) - 1 }
+                local eve_date = os.date("%Y年%m月%d日", eve)
+                table.insert(upcoming_holidays, { "除夕", eve_date, countdown - 1 })
+            end
         end
     end
 
