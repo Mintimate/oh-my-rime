@@ -1,142 +1,137 @@
 ﻿-- 来源 https://github.com/yanhuacuo/98wubi-tables > http://98wb.ysepan.com/
 -- 数字、金额大写 (任意大写字母引导+数字)
 
-local function splitNumPart(str)
-	local part = {}
-	part.int, part.dot, part.dec = string.match(str, "^(%d*)(%.?)(%d*)")
-	return part
+-- 两套书写体：lower 是普通数字（〇一二…十百千），upper 是票据大写（零壹贰…拾佰仟）
+-- digits[1] 同时充当零的占位符，整数段末的零清理都围绕它进行
+local STYLE = {
+	lower = {
+		digits   = { "〇", "一", "二", "三", "四", "五", "六", "七", "八", "九" },
+		units    = { "", "十", "百", "千" },
+		sections = { "万", "亿" },
+	},
+	upper = {
+		digits   = { "零", "壹", "贰", "叁", "肆", "伍", "陆", "柒", "捌", "玖" },
+		units    = { "", "拾", "佰", "仟" },
+		sections = { "万", "亿" },
+	},
+}
+local MONEY_UNITS = { "角", "分", "厘", "毫" }
+
+-- 切出整数、小数点、小数三段："1234.56" → int="1234" dot="." dec="56"
+local function split_num(str)
+	local int, dot, dec = string.match(str, "^(%d*)(%.?)(%d*)")
+	return { int = int, dot = dot, dec = dec }
 end
 
-local function GetPreciseDecimal(nNum, n)
-	if type(nNum) ~= "number" then nNum =tonumber(nNum) end
-	n = n or 0;
-	n = math.floor(n)
-	if n < 0 then n = 0 end
-	local nDecimal = 10 ^ n
-	local nTemp = math.floor(nNum * nDecimal);
-	local nRet = nTemp / nDecimal;
-	return nRet;
-end
-
-local function decimal_func(str, posMap, valMap)
-	local dec
-	posMap = posMap or {[1]="角"; [2]="分"; [3]="厘"; [4]="毫"}
-	valMap = valMap or {[0]="零"; "壹"; "贰"; "叁" ;"肆"; "伍"; "陆"; "柒"; "捌"; "玖"}
-	if #str>4 then dec = string.sub(tostring(str), 1, 4) else dec =tostring(str) end
-	dec = string.gsub(dec, "0+$", "")
-	
-	if dec == "" then return "整" end
-
-	local result = ""
-	for pos =1, #dec do
-		local val = tonumber(string.sub(dec, pos, pos))
-		if val~=0 then result = result .. valMap[val] .. posMap[pos] else result = result .. valMap[val] end
+-- 段内 4 位以内转中文："1001" → 一千〇一；"0" → 〇
+local function format_section(num, style)
+	local s = tostring(num)
+	local zero = style.digits[1]
+	if #s > 4 or tonumber(s) == 0 then return zero end
+	local out = ""
+	for i = 1, #s do
+		local digit = style.digits[tonumber(s:sub(-i, -i)) + 1]
+		out = (digit ~= zero and digit .. style.units[i] or digit) .. out
 	end
-	result=result:gsub(valMap[0]..valMap[0] ,valMap[0])
-	return result:gsub(valMap[0]..valMap[0] ,valMap[0])
+	out = out:gsub(zero .. zero, zero)
+	out = out:gsub(zero .. "$", "")
+	out = out:gsub(zero .. "$", "")
+	return out
 end
 
--- 把数字串按千分位四位数分割，进行转换为中文
-local function formatNum(num,t)
-	local digitUnit,wordFigure
-	local result=""
-	num=tostring(num)
-	if tonumber(t) < 1 then digitUnit = {"", "十", "百","千"} else digitUnit = {"","拾","佰","仟"} end
-	if tonumber(t) <1 then
-		wordFigure = {"〇","一","二","三","四","五","六","七","八","九"}
-	else wordFigure = {"零","壹","贰","叁","肆","伍","陆","柒","捌","玖"} end
-	if string.len(num)>4 or tonumber(num)==0 then return wordFigure[1] end
-	local lens=string.len(num)
-	for i=1,lens do
-		local n=wordFigure[tonumber(string.sub(num,-i,-i))+1]
-		if n~=wordFigure[1] then result=n .. digitUnit[i] .. result else result=n .. result end
-	end
-	result=result:gsub(wordFigure[1]..wordFigure[1] ,wordFigure[1])
-	result=result:gsub(wordFigure[1].."$","") result=result:gsub(wordFigure[1].."$","")
-
-	return result
-end
-
--- 数值转换为中文
-function number2cnChar(num,flag,digitUnit,wordFigure)    --flag=0中文小写反之为大写
-	local st,result
-	num=tostring(num) result=""
-	local num1,num2=math.modf(num)
-	if tonumber(num2)==0 then
-		if tonumber(flag) < 1 then
-			digitUnit = digitUnit or {[1]="万";[2]="亿"}  wordFigure = wordFigure or {[1]="〇"; [2]="一"; [3]="十"; [4]="元"}
+-- 整数串 → 中文，不含「元」「点」等后缀；超过 12 位返回 nil
+-- 从高位到低位按 4 位分段；整段为零时，若后面还有非零段就补一个「零」
+local function int2cn(num_str, style)
+	local len = #num_str
+	if len > 12 then return nil end
+	local zero = style.digits[1]
+	local out, pending_zero = {}, false
+	local section_count = math.ceil(len / 4)
+	for i = section_count, 1, -1 do
+		local chunk_end = len - (i - 1) * 4
+		local chunk = num_str:sub(math.max(1, chunk_end - 3), chunk_end)
+		local value = tonumber(chunk)
+		if value == 0 then
+			-- 整段为零：等下面出现非零段时再补零，避免「〇万」「〇亿」这类空段
+			if #out > 0 then pending_zero = true end
 		else
-			digitUnit = digitUnit or {[1]="万";[2]="亿"}  wordFigure = wordFigure or {[1]="零"; [2]="壹"; [3]="拾"; [4]="元"}
+			if #out > 0 and (pending_zero or value < 1000) then out[#out + 1] = zero end
+			pending_zero = false
+			out[#out + 1] = format_section(value, style) .. (style.sections[i - 1] or "")
 		end
-		local lens=string.len(num1)
-		if lens>12 then return "数值超限！" end
-		-- 从高位到低位按 4 位分段；整段为零时，若下面还有非零段就补一个零
-		local zero=wordFigure[1]
-		local parts,pending={},false
-		for i=math.ceil(lens/4),1,-1 do
-			local last=lens-(i-1)*4
-			local chunk=string.sub(num1,math.max(1,last-3),last)
-			local value=tonumber(chunk)
-			if value==0 then
-				if #parts>0 then pending=true end
-			else
-				if #parts>0 and (pending or value<1000) then parts[#parts+1]=zero end
-				pending=false
-				parts[#parts+1]=formatNum(value,flag) .. (digitUnit[i-1] or "")
-			end
-		end
-		result=table.concat(parts)
-		if lens>4 then result=result:gsub("^"..wordFigure[2].. wordFigure[3],wordFigure[3]) end
-		if result~="" then result=result .. wordFigure[4] else result="数值超限！" end
-	else return "数值超限！" end
-
-	return result
-end
-
-local function number2zh(num,t)
-	local result,wordFigure
-	result="" 
-	if tonumber(t) <1 then
-		wordFigure = {"〇","一","二","三","四","五","六","七","八","九"}
-	else wordFigure = {"零","壹","贰","叁","肆","伍","陆","柒","捌","玖"} end
-	if tostring(num)==nil then return "" end
-	for pos=1,string.len(num) do
-		result=result..wordFigure[tonumber(string.sub(num, pos, pos)+1)]
 	end
-	return result
+	local text = table.concat(out)
+	-- 「一十」念作「十」：十万、十一，而不是一十万、一十一
+	if len > 4 then text = text:gsub("^" .. style.digits[2] .. style.units[2], style.units[2]) end
+	return text
 end
 
+-- 小数逐位读："56" → 五六
+local function digits2cn(dec, style)
+	local zero = style.digits[1]
+	local out = {}
+	for i = 1, #dec do
+		out[#out + 1] = style.digits[tonumber(dec:sub(i, i)) + 1]
+	end
+	return table.concat(out)
+end
+
+-- 金额小数（角分厘毫）："56" → 五角六分；小数全为零 → 整
+local function money2cn(dec, style)
+	local s = #dec > 4 and dec:sub(1, 4) or dec
+	-- 末位的零不发音：1.50 → 五角，而不是五角〇分
+	s = s:gsub("0+$", "")
+	if s == "" then return "整" end
+	local zero = style.digits[1]
+	local out = {}
+	for pos = 1, #s do
+		local val = tonumber(s:sub(pos, pos))
+		if val ~= 0 then
+			out[#out + 1] = style.digits[val + 1] .. MONEY_UNITS[pos]
+		else
+			out[#out + 1] = zero
+		end
+	end
+	-- 连续零只念一个。gsub 一次只合并相邻的两个，金额小数最多 4 位，两轮即可
+	local text = table.concat(out)
+	text = text:gsub(zero .. zero, zero)
+	return (text:gsub(zero .. zero, zero))
+end
+
+-- 组装四条候选：数字小写/大写、金额小写/大写
 local function number_translatorFunc(num)
-	local numberPart=splitNumPart(num)
-	local result={}
-	-- 整数部分为 0（或干脆没写，如 ".05"）时 number2cnChar 会返回「数值超限！」，
-	-- 需要单独处理前缀，否则 R0.05 这类输入的四条候选全是错误提示
-	local int_zero = (numberPart.int == "" or tonumber(numberPart.int) == 0)
-	-- ".05" 这类没写整数位的输入，number2cnChar 里 math.modf("") 会直接抛错
-	local int_str = (numberPart.int == "") and "0" or numberPart.int
-	if numberPart.dot~="" then
-		local int_small, int_big = number2cnChar(int_str,0,{"万", "亿"},{"〇","一","十","点"}),
-			number2cnChar(int_str,1,{"万", "亿"},{"零","壹","拾","点"})
-		if int_zero then int_small, int_big = "〇点", "零点" end
-		table.insert(result,{int_small..number2zh(numberPart.dec,0),"〔数字小写〕"})
-		table.insert(result,{int_big..number2zh(numberPart.dec,1),"〔数字大写〕"})
-	elseif int_zero then
-		table.insert(result,{"〇","〔数字小写〕"})
-		table.insert(result,{"零","〔数字大写〕"})
-	else
-		table.insert(result,{number2cnChar(int_str,0,{"万", "亿"},{"〇","一","十",""}),"〔数字小写〕"})
-		table.insert(result,{number2cnChar(int_str,1,{"万", "亿"},{"零","壹","拾",""}),"〔数字大写〕"})
+	local part = split_num(num)
+	-- 去掉前导零（"00012" 与 "12" 等价）；全零或没写整数位（".05"）按 0 处理
+	local int_str = part.int:gsub("^0+", "")
+	if int_str == "" then int_str = "0" end
+	local int_zero = int_str == "0"
+	local has_dec = part.dot ~= ""
+	local result = {}
+
+	-- 数字式：整数 + 「点」+ 逐位小数
+	local function numeric(style)
+		if int_zero then
+			return has_dec and (style.digits[1] .. "点" .. digits2cn(part.dec, style)) or style.digits[1]
+		end
+		local text = int2cn(int_str, style)
+		if text == nil then
+			return "数值超限！" .. (has_dec and digits2cn(part.dec, style) or "")
+		end
+		return has_dec and (text .. "点" .. digits2cn(part.dec, style)) or text
 	end
-	-- 金额：整数为 0 时不写「零元」（由小数部分承担）；整数 0 且无小数时写「零元」
-	local amount_small = number2cnChar(int_str,0)
-	local amount_big   = number2cnChar(int_str,1)
-	if int_zero then
-		-- 元位为 0 时也显式写「元」：规范要求角位是 0 时元后写「零」，且各档都带「元」
-		-- 位，票据上无法在最前方加字（0.05 元 → 零元零伍分，而不是零伍分/伍分）
-		amount_small, amount_big = "〇元", "零元"
+	result[#result + 1] = { numeric(STYLE.lower), "〔数字小写〕" }
+	result[#result + 1] = { numeric(STYLE.upper), "〔数字大写〕" }
+
+	-- 金额式：整数 + 「元」+ 角分厘毫；元位为 0 时也写「元」
+	local function money(style)
+		local text = int_zero and style.digits[1] or int2cn(int_str, style)
+		if text == nil then
+			return "数值超限！" .. money2cn(part.dec, style)
+		end
+		return text .. "元" .. money2cn(part.dec, style)
 	end
-	table.insert(result,{amount_small..decimal_func(numberPart.dec,{[1]="角"; [2]="分"; [3]="厘"; [4]="毫"},{[0]="〇"; "一"; "二"; "三" ;"四"; "五"; "六"; "七"; "八"; "九"}),"〔金额小写〕"})
-	table.insert(result,{amount_big..decimal_func(numberPart.dec,{[1]="角"; [2]="分"; [3]="厘"; [4]="毫"},{[0]="零"; "壹"; "贰"; "叁" ;"肆"; "伍"; "陆"; "柒"; "捌"; "玖"}),"〔金额大写〕"})
+	result[#result + 1] = { money(STYLE.lower), "〔金额小写〕" }
+	result[#result + 1] = { money(STYLE.upper), "〔金额大写〕" }
 	return result
 end
 
