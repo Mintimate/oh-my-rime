@@ -20,8 +20,13 @@ local tone_map = {
     ["ǖ"] = "v", ["ǘ"] = "v", ["ǚ"] = "v", ["ǜ"] = "v", ["ü"] = "v",
 }
 
+-- Lua 5.3 的 utf8.charpattern 是 "[\0-\x7F\xC2-\xF4][\x80-\xBF]*"，含内嵌 \0。
+-- LuaJIT 的模式引擎沿用 5.1 规则（模式串不能含 \0），扫描到 \0 就截断，
+-- 于是 gsub 抛 malformed pattern (missing ']')；改用 %z 的等价写法。
+local UTF8_CHAR = "[%z\1-\127\194-\244][\128-\191]*"
+
 local function compact_code(code)
-    code = code:gsub(utf8.charpattern, function(char)
+    code = code:gsub(UTF8_CHAR, function(char)
         return tone_map[char] or char
     end)
     return code:gsub("[ '`]", "")
