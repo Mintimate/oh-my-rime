@@ -97,15 +97,34 @@ end
 local function number_translatorFunc(num)
 	local numberPart=splitNumPart(num)
 	local result={}
+	-- 整数部分为 0（或干脆没写，如 ".05"）时 number2cnChar 会返回「数值超限！」，
+	-- 需要单独处理前缀，否则 R0.05 这类输入的四条候选全是错误提示
+	local int_zero = (numberPart.int == "" or tonumber(numberPart.int) == 0)
+	-- ".05" 这类没写整数位的输入，number2cnChar 里 math.modf("") 会直接抛错
+	local int_str = (numberPart.int == "") and "0" or numberPart.int
 	if numberPart.dot~="" then
-		table.insert(result,{number2cnChar(numberPart.int,0,{"万", "亿"},{"〇","一","十","点"})..number2zh(numberPart.dec,0),"〔数字小写〕"})
-		table.insert(result,{number2cnChar(numberPart.int,1,{"萬", "億"},{"〇","一","十","点"})..number2zh(numberPart.dec,1),"〔数字大写〕"})
+		local int_small, int_big = number2cnChar(int_str,0,{"万", "亿"},{"〇","一","十","点"}),
+			number2cnChar(int_str,1,{"萬", "億"},{"〇","一","十","点"})
+		if int_zero then int_small, int_big = "〇点", "零点" end
+		table.insert(result,{int_small..number2zh(numberPart.dec,0),"〔数字小写〕"})
+		table.insert(result,{int_big..number2zh(numberPart.dec,1),"〔数字大写〕"})
+	elseif int_zero then
+		table.insert(result,{"〇","〔数字小写〕"})
+		table.insert(result,{"零","〔数字大写〕"})
 	else
-		table.insert(result,{number2cnChar(numberPart.int,0,{"万", "亿"},{"〇","一","十",""}),"〔数字小写〕"})
-		table.insert(result,{number2cnChar(numberPart.int,1,{"萬", "億"},{"零","壹","拾",""}),"〔数字大写〕"})
+		table.insert(result,{number2cnChar(int_str,0,{"万", "亿"},{"〇","一","十",""}),"〔数字小写〕"})
+		table.insert(result,{number2cnChar(int_str,1,{"萬", "億"},{"零","壹","拾",""}),"〔数字大写〕"})
 	end
-	table.insert(result,{number2cnChar(numberPart.int,0)..decimal_func(numberPart.dec,{[1]="角"; [2]="分"; [3]="厘"; [4]="毫"},{[0]="〇"; "一"; "二"; "三" ;"四"; "五"; "六"; "七"; "八"; "九"}),"〔金额小写〕"})
-	table.insert(result,{number2cnChar(numberPart.int,1)..decimal_func(numberPart.dec,{[1]="角"; [2]="分"; [3]="厘"; [4]="毫"},{[0]="零"; "壹"; "贰"; "叁" ;"肆"; "伍"; "陆"; "柒"; "捌"; "玖"}),"〔金额大写〕"})
+	-- 金额：整数为 0 时不写「零元」（由小数部分承担）；整数 0 且无小数时写「零元」
+	local amount_small = number2cnChar(int_str,0)
+	local amount_big   = number2cnChar(int_str,1)
+	if int_zero then
+		-- 元位为 0 时也显式写「元」：规范要求角位是 0 时元后写「零」，且各档都带「元」
+		-- 位，票据上无法在最前方加字（0.05 元 → 零元零伍分，而不是零伍分/伍分）
+		amount_small, amount_big = "〇元", "零元"
+	end
+	table.insert(result,{amount_small..decimal_func(numberPart.dec,{[1]="角"; [2]="分"; [3]="厘"; [4]="毫"},{[0]="〇"; "一"; "二"; "三" ;"四"; "五"; "六"; "七"; "八"; "九"}),"〔金额小写〕"})
+	table.insert(result,{amount_big..decimal_func(numberPart.dec,{[1]="角"; [2]="分"; [3]="厘"; [4]="毫"},{[0]="零"; "壹"; "贰"; "叁" ;"肆"; "伍"; "陆"; "柒"; "捌"; "玖"}),"〔金额大写〕"})
 	return result
 end
 
