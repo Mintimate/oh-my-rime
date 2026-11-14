@@ -1733,14 +1733,16 @@ function format_dt(dt, format_str)
     local blocks = {}
     s = s:gsub("%[%[(.-)%]%]", function(txt)
         blocks[#blocks+1] = txt
-        return "\0BLK" .. #blocks .. "\0"
+        -- 占位符不能用 \0 当定界：LuaJIT 的 gsub 把 pattern 当 C 串，遇 \0 就截断，
+        -- 且 "ESC" 里的 S 会被后面的秒替换吃掉；改用 \1 定界、单字母卫兵（B/E 都不是格式指令）
+        return "\1B" .. #blocks .. "\1"
     end)
 
     -- 2) 保护 \X
     local escs = {}
     s = s:gsub("\\(.)", function(c)
         escs[#escs+1] = c
-        return "\0ESC" .. #escs .. "\0"
+        return "\1E" .. #escs .. "\1"
     end)
 
     -- 3) 占位符替换
@@ -1784,8 +1786,8 @@ function format_dt(dt, format_str)
     s = s:gsub("o", raw_tz)
 
     -- 4) 还原
-    s = s:gsub("\0ESC(%d+)\0", function(i) return escs[tonumber(i)] or "" end)
-    s = s:gsub("\0BLK(%d+)\0", function(i) return blocks[tonumber(i)] or "" end)
+    s = s:gsub("\1E(%d+)\1", function(i) return escs[tonumber(i)] or "" end)
+    s = s:gsub("\1B(%d+)\1", function(i) return blocks[tonumber(i)] or "" end)
 
     return s
 end
