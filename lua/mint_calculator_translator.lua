@@ -2272,7 +2272,8 @@ local function ggs(...)
         else
             local parts = {}
             for _, t in ipairs(unique) do
-                table.insert(parts, string.format("(%d,%d,%d)", t[1], t[2], t[3]))
+                -- %d 会走整数转换：LuaJIT 下超过 2^63 回绕成负数，Lua 5.4 下直接抛错
+                table.insert(parts, string.format("(%.0f,%.0f,%.0f)", t[1], t[2], t[3]))
             end
             return "勾股数为: " .. table.concat(parts, " 和 ")
         end
@@ -2324,7 +2325,8 @@ local function ggs(...)
         else
             local parts = {}
             for _, t in ipairs(unique) do
-                table.insert(parts, string.format("(%d,%d,%d)", t[1], t[2], t[3]))
+                -- %d 会走整数转换：LuaJIT 下超过 2^63 回绕成负数，Lua 5.4 下直接抛错
+                table.insert(parts, string.format("(%.0f,%.0f,%.0f)", t[1], t[2], t[3]))
             end
             return "勾股数为: " .. table.concat(parts, " 和 ")
         end
