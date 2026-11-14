@@ -2427,7 +2427,7 @@ local function prime_factorization(n)
     -- 处理2的因子
     while n % 2 == 0 do
         factors[2] = (factors[2] or 0) + 1
-        n = n // 2
+        n = math.floor(n / 2) -- LuaJIT 无 // 运算符
     end
     -- 处理奇数因子
     local divisor = 3
@@ -2435,7 +2435,7 @@ local function prime_factorization(n)
     while divisor <= max_divisor and n > 1 do
         while n % divisor == 0 do
             factors[divisor] = (factors[divisor] or 0) + 1
-            n = n // divisor
+            n = math.floor(n / divisor)
             max_divisor = math.floor(math.sqrt(n))
         end
         divisor = divisor + 2
